@@ -413,11 +413,11 @@ html, body {
           }
 
           .title-area h1 {
-            font-size: 20px !important;
+            font-size: 17px !important;
           }
 
           .title-area p {
-            font-size: 13px !important;
+            font-size: 12px !important;
             font-weight: 600 !important;
           }
 
@@ -2278,7 +2278,7 @@ html, body {
 
           /* رفع دوائر محتوى اللعبة لفوق شوية */
           .mobile-target {
-            transform: translate(-50%, -75%) !important;
+            transform: translate(-50%, -95%) !important;
           }
 
           /* المدفع */
@@ -2328,7 +2328,7 @@ html, body {
 
           /* رسالة الفوز */
           .mobile-win-title {
-            font-size: 1.55rem !important;
+            font-size: 1.40rem !important;
             margin-bottom: 8px !important;
           }
 
