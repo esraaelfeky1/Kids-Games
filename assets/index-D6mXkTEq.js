@@ -2352,13 +2352,19 @@ html, body {
           }
         }
 
+        /* =========================
+           MOBILE ONLY
+        ========================= */
+
         @media (max-width: 600px) {
+
           .responsive-box {
             padding: 5px 8px !important;
             font-size: 13px !important;
             border-radius: 8px !important;
           }
 
+          /* الأزرار أكبر 2px */
           .responsive-btn {
             width: 41px !important;
             height: 41px !important;
@@ -2369,17 +2375,18 @@ html, body {
             height: 21px !important;
           }
 
+          /* القوار تطلع لفوق */
           .game-grid-container {
             grid-template-columns: repeat(4, 70px) !important;
-            margin-top: 21vh !important;
+            margin-top: 19vh !important;
           }
 
-          /* تصغير العنوان 2px على الموبايل */
+          /* تصغير العنوان 2px */
           .mainTitle {
             font-size: 23px !important;
           }
 
-          /* تصغير التعليمات */
+          /* تصغير الفقرة */
           .instruction {
             font-size: 14px !important;
             padding: 2px 8px !important;
@@ -2393,7 +2400,7 @@ html, body {
 
           /* شريط الطاقة يطلع لفوق */
           .energy-bar-mobile {
-            bottom: 105px !important;
+            bottom: 115px !important;
           }
 
           /* الأزرار تطلع لفوق */
@@ -2401,6 +2408,10 @@ html, body {
             bottom: 30px !important;
           }
         }
+
+        /* =========================
+           TABLET
+           ========================= */
 
         @media (max-width: 1024px) and (min-width: 601px) {
           .game-grid-container {
