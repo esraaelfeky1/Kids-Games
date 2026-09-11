@@ -584,13 +584,16 @@ html, body {
 
           /* تصغير العنوان في الموبايل فقط */
           .title-area h1 {
-            font-size: 15px !important;
+            font-size: 16px !important;
+            left: 10px !important;
           }
 
           /* تصغير الفقرة في الموبايل فقط */
           .title-area h3 {
-            font-size: 12px !important;
+            font-size: 13px !important;
             font-weight: 800 !important;
+            left: 10px !important;
+             bold:10px !important;
           }
 
           .nav-btns {
