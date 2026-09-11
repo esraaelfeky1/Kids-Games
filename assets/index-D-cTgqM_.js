@@ -489,110 +489,447 @@ html, body {
             height: 300px !important;
           }
         }
-      `}),(0,M.jsxs)(`div`,{className:`nav-btns`,children:[(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>e(`/home`),children:(0,M.jsx)(vr,{})}),(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>i(!r),children:r?(0,M.jsx)(gr,{}):(0,M.jsx)(_r,{})})]}),(0,M.jsxs)(`div`,{className:`title-area`,children:[(0,M.jsx)(`div`,{className:`title-main`,children:(0,M.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,M.jsx)(`div`,{className:`title-sub`,children:(0,M.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,M.jsx)(`main`,{className:`main-wrapper`,children:s.map((r,i)=>(0,M.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,M.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let s=t===r.id;return(0,M.jsx)(`img`,{src:r.img,className:`game-image`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{...o[r.id],transform:s?`scale(1.15)`:`scale(1)`,filter:s?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:s?999:1},alt:`لعبة`},i)})]},i))})]})},Vr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Hr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Ur=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Wr=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Gr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Kr=`/Kids-Games/assets/lion-BCc-x0Je.png`,qr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Jr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Yr=`/Kids-Games/assets/icce-DngGPNER.png`,Xr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Zr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Qr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,$r=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,ei=`/Kids-Games/assets/btar-ISpqIK3P.png`,ti=()=>{let[e,t]=(0,b.useState)(null),[n,r]=(0,b.useState)(!1),i=()=>{n||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},a={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},o=[{title:`حركة الفتح`,board:Hr,games:[{id:`imgBubbles`,img:Gr,path:`/Fathaice`},{id:`imgLion`,img:Kr,path:`/Fathalion`},{id:`imgComplete`,img:qr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Jr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Ur,games:[{id:`imgIce`,img:Yr,path:`/Damasnow`},{id:`imgSpace`,img:Xr,path:`/Damaspace`},{id:`imgBasket`,img:Zr,path:`/Damamaze`},{id:`imgEgg`,img:Qr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Wr,games:[{id:`imgBee`,img:$r,path:`/Kasrabee`},{id:`imgIce2`,img:Yr,path:`/Kasrasnow`},{id:`imgButterflies`,img:ei,path:`/Kasratreas`},{id:`imgComplete2`,img:qr,path:`/Kasracomplete`}]}];return(0,M.jsxs)(`div`,{style:{backgroundImage:`url(${Vr})`,backgroundSize:`cover`,backgroundPosition:`center`,minHeight:`100vh`,display:`flex`,flexDirection:`column`,alignItems:`center`,width:`100%`,paddingBottom:`30px`,position:`relative`},children:[(0,M.jsx)(`style`,{children:`
-        /* إخفاء شريط السكرول تماماً مع السماح بالتمرير والحركة بالأصبع أو الماوس */
-        html, body {
+      `}),(0,M.jsxs)(`div`,{className:`nav-btns`,children:[(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>e(`/home`),children:(0,M.jsx)(vr,{})}),(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>i(!r),children:r?(0,M.jsx)(gr,{}):(0,M.jsx)(_r,{})})]}),(0,M.jsxs)(`div`,{className:`title-area`,children:[(0,M.jsx)(`div`,{className:`title-main`,children:(0,M.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,M.jsx)(`div`,{className:`title-sub`,children:(0,M.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,M.jsx)(`main`,{className:`main-wrapper`,children:s.map((r,i)=>(0,M.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,M.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let s=t===r.id;return(0,M.jsx)(`img`,{src:r.img,className:`game-image`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{...o[r.id],transform:s?`scale(1.15)`:`scale(1)`,filter:s?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:s?999:1},alt:`لعبة`},i)})]},i))})]})},Vr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Hr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Ur=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Wr=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Gr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Kr=`/Kids-Games/assets/lion-BCc-x0Je.png`,qr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Jr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Yr=`/Kids-Games/assets/icce-DngGPNER.png`,Xr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Zr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Qr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,$r=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,ei=`/Kids-Games/assets/btar-ISpqIK3P.png`,ti=()=>{let e=A(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:Hr,games:[{id:`imgBubbles`,img:Gr,path:`/Fathaice`},{id:`imgLion`,img:Kr,path:`/Fathalion`},{id:`imgComplete`,img:qr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Jr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Ur,games:[{id:`imgIce`,img:Yr,path:`/Damasnow`},{id:`imgSpace`,img:Xr,path:`/Damaspace`},{id:`imgBasket`,img:Zr,path:`/Damamaze`},{id:`imgEgg`,img:Qr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Wr,games:[{id:`imgBee`,img:$r,path:`/Kasrabee`},{id:`imgIce2`,img:Yr,path:`/Kasrasnow`},{id:`imgButterflies`,img:ei,path:`/Kasratreas`},{id:`imgComplete2`,img:qr,path:`/Kasracomplete`}]}];return(0,M.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Vr})`},children:[(0,M.jsx)(`style`,{children:`
+        html,
+        body,
+        #root {
+          width: 100%;
+          min-height: 100%;
           margin: 0;
           padding: 0;
-          overflow-y: auto !important;
+
           overflow-x: hidden !important;
-          width: 100vw !important;
+          overflow-y: auto !important;
+
           -webkit-overflow-scrolling: touch;
         }
 
-        /* إخفاء شريط التمرير لجميع المتصفحات */
+        * {
+          box-sizing: border-box;
+        }
+
         html::-webkit-scrollbar,
         body::-webkit-scrollbar {
           display: none !important;
           width: 0 !important;
           background: transparent !important;
         }
-        
+
         html {
           scrollbar-width: none !important;
           -ms-overflow-style: none !important;
         }
 
-        /* 💻 اللاب توب والشاشات الكبيرة: الثلاثة جنب بعض بالتصميم الأصلي تماماً */
-        .main-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-top: 70px;
-          flex-direction: row;
-          width: 100%;
-        }
+        /* =========================
+           الصفحة الرئيسية
+        ========================= */
 
-        .board-item {
-          width: 448px;
-          height: 340px;
-          position: relative;
+        .tashkeel-page {
+          width: 100%;
+          min-height: 100vh;
+          min-height: 100dvh;
+
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
           display: flex;
           flex-direction: column;
           align-items: center;
-          background-size: 100% 100%;
-          margin-left: -95px;
-          margin-right: -70px;
-          flex-shrink: 0;
+
+          position: relative;
+
+          padding-top: 1px;
+          padding-bottom: 40px;
+
+          overflow-x: hidden;
         }
 
-        /* 📱 شاشات التابلت */
-        @media (min-width: 769px) and (max-width: 1150px) {
+        /* =========================
+           أزرار التنقل
+        ========================= */
+
+        .nav-btns {
+          position: absolute;
+
+          top: 17px;
+          left: 20px;
+
+          display: flex;
+          align-items: center;
+
+          gap: 15px;
+
+          z-index: 1000;
+        }
+
+        .nav-btn {
+          width: 55px;
+          height: 55px;
+
+          min-width: 55px;
+          min-height: 55px;
+
+          border-radius: 50%;
+          border: none;
+
+          background-color: rgba(255, 255, 255, 0.9);
+
+          font-size: 35px;
+          color: #4a2c2a;
+
+          cursor: pointer;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+          padding: 0;
+        }
+
+        /* =========================
+           العنوان
+        ========================= */
+
+        .title-area {
+          margin-top: 17px;
+
+          text-align: center;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          position: relative;
+
+          z-index: 20;
+        }
+
+        .title-main {
+          background-color: rgba(255, 255, 255, 0.7);
+
+          padding: 5px 20px;
+
+          border-radius: 30px;
+
+          margin-bottom: 10px;
+
+          white-space: nowrap;
+        }
+
+        .title-main h1 {
+          margin: 0;
+
+          font-size: 27px;
+
+          color: #111111;
+        }
+
+        .title-sub {
+          background-color: rgba(255, 255, 255, 0.5);
+
+          padding: 5px 15px;
+
+          border-radius: 40px;
+
+          white-space: nowrap;
+        }
+
+        .title-sub h3 {
+          margin: 0;
+
+          font-size: 19px;
+
+          color: #333;
+
+          font-weight: bold;
+        }
+
+        /* =========================
+           الكاردات
+        ========================= */
+
+        .main-wrapper {
+          display: flex;
+
+          justify-content: center;
+          align-items: center;
+
+          margin-top: 30px;
+
+          flex-direction: row;
+
+          gap: 20px;
+
+          width: 100%;
+
+          flex-wrap: nowrap;
+
+          padding: 0 10px;
+        }
+
+        .board-item {
+          width: 405px;
+          height: 340px;
+
+          position: relative;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+
+          flex-shrink: 0;
+
+          overflow: hidden;
+        }
+
+        .board-title {
+          color: '#ffffff';
+
+          margin-top: 38px;
+
+          font-size: 25px;
+
+          text-shadow: 1px 1px 2px #000;
+
+          text-align: center;
+
+          position: relative;
+
+          z-index: 20;
+        }
+
+        /* =========================
+           صور الألعاب
+        ========================= */
+
+        .game-image {
+          position: absolute;
+
+          cursor: pointer;
+
+          object-fit: contain;
+
+          transition: none;
+
+          pointer-events: auto;
+        }
+
+        /* =========================
+           التابلت
+        ========================= */
+
+        @media (min-width: 769px) and (max-width: 1250px) {
+
           .main-wrapper {
             display: grid !important;
-            grid-template-columns: repeat(2, 448px) !important;
+
+            grid-template-columns: repeat(2, 405px) !important;
+
             justify-content: center !important;
             justify-items: center !important;
-            gap: 15px 20px !important;
-            margin-top: 30px !important;
+
+            align-items: center !important;
+
+            gap: 20px !important;
+
             width: 100% !important;
-            max-width: 950px !important;
-            padding: 0 15px;
+
+            max-width: 850px !important;
+
+            margin-top: 30px !important;
+
+            padding: 0 15px !important;
           }
+
           .board-item {
-            margin: 0 !important;
+            width: 405px !important;
+            height: 340px !important;
           }
+
           .board-item:nth-child(3) {
             grid-column: span 2;
+
             justify-self: center;
+          }
+
+          .nav-btn {
+            width: 48px !important;
+            height: 48px !important;
+
+            min-width: 48px !important;
+            min-height: 48px !important;
+
+            font-size: 30px !important;
+          }
+
+          .nav-btns {
+            top: 15px !important;
+            left: 15px !important;
+          }
+
+          .title-main h1 {
+            font-size: 24px !important;
+          }
+
+          .title-sub h3 {
+            font-size: 17px !important;
           }
         }
 
-        /* 📱 شاشات الموبايل */
+        /* =========================
+           الموبايل
+        ========================= */
+
         @media (max-width: 768px) {
+
+          .tashkeel-page {
+            min-height: 100dvh;
+
+            padding-bottom: 30px;
+          }
+
+          .nav-btns {
+            top: 14px !important;
+            left: 10px !important;
+
+            gap: 10px !important;
+          }
+
+          .nav-btn {
+            width: 42px !important;
+            height: 42px !important;
+
+            min-width: 42px !important;
+            min-height: 42px !important;
+
+            font-size: 25px !important;
+          }
+
+          .title-area {
+            margin-top: 10px !important;
+
+            padding: 0 10px !important;
+
+            width: 100%;
+          }
+
+          .title-main {
+            padding: 6px 15px !important;
+
+            margin-bottom: 8px !important;
+
+            border-radius: 20px !important;
+          }
+
+          .title-main h1 {
+            font-size: 20px !important;
+          }
+
+          .title-sub {
+            padding: 5px 12px !important;
+
+            border-radius: 30px !important;
+          }
+
+          .title-sub h3 {
+            font-size: 14px !important;
+          }
+
           .main-wrapper {
             display: flex !important;
+
             flex-direction: column !important;
+
+            flex-wrap: nowrap !important;
+
+            justify-content: flex-start !important;
+
             align-items: center !important;
-            gap: 15px !important;
-            margin-top: 15px !important;
+
+            gap: 12px !important;
+
             width: 100% !important;
+
+            max-width: 100% !important;
+
+            padding: 0 8px 20px !important;
+
+            margin-top: 18px !important;
           }
+
           .board-item {
+            width: min(405px, calc(100vw - 20px)) !important;
+
+            height: 340px !important;
+
             margin: 0 !important;
+
+            flex-shrink: 0 !important;
           }
-          .title-area {
-            margin-top: 15px !important;
-            padding: 0 10px;
-          }
-          .title-area h1 {
-            font-size: 24px !important;
-          }
-          .title-area h3 {
-            font-size: 15px !important;
-            font-weight: 800 !important;
-          }
-          .nav-btns {
-            top: 10px !important;
-            left: 10px !important;
-          }
-          .nav-btn {
-            width: 40px !important;
-            height: 40px !important;
+
+          .board-title {
+            margin-top: 30px !important;
+
             font-size: 22px !important;
           }
         }
-      `}),(0,M.jsxs)(`div`,{className:`nav-btns`,style:{position:`absolute`,top:`20px`,left:`20px`,display:`flex`,gap:`15px`,zIndex:100},children:[(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>window.location.href=`/home`,style:{width:`60px`,height:`60px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`30px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`},children:(0,M.jsx)(vr,{})}),(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>r(!n),style:{width:`60px`,height:`60px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`30px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`},children:n?(0,M.jsx)(gr,{}):(0,M.jsx)(_r,{})})]}),(0,M.jsxs)(`div`,{className:`title-area`,style:{marginTop:`20px`,textAlign:`center`},children:[(0,M.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.7)`,padding:`5px 25px`,borderRadius:`30px`,marginBottom:`10px`},children:(0,M.jsx)(`h1`,{style:{margin:0,fontSize:`28px`,color:`#111111`},children:`مرحبا بك في عالم الحركات`})}),(0,M.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.5)`,padding:`5px 20px`,borderRadius:`40px`},children:(0,M.jsx)(`h3`,{style:{margin:0,fontSize:`17px`,color:`#333`,fontWeight:`bold`},children:`اختر الحركة التي تريد اللعب بها`})})]}),(0,M.jsx)(`main`,{className:`main-wrapper`,children:o.map((n,r)=>(0,M.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${n.board})`},children:[(0,M.jsx)(`h2`,{style:{color:`#ffffff`,marginTop:`38px`,fontSize:`25px`,textShadow:`1px 1px 2px #000`},children:n.title}),n.games.map((n,r)=>{let o=e===n.id;return(0,M.jsx)(`img`,{src:n.img,onClick:()=>{i(),window.location.href=n.path},onMouseEnter:()=>{t(n.id),i()},onMouseLeave:()=>t(null),style:{position:`absolute`,cursor:`pointer`,objectFit:`contain`,transition:`all 0.3s ease`,transform:o?`scale(1.15)`:`scale(1)`,filter:o?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:o?10:1,...a[n.id]},alt:`لعبة`},r)})]},r))})]})},ni=`/Kids-Games/assets/madbbg-J3LozGdx.jpeg`,ri=`/Kids-Games/assets/essmad-DBYc5yBI.png`,ii=`/Kids-Games/assets/madh-BHRHFnxX.png`,ai=`/Kids-Games/assets/mad456-CGPpmXWE.png`,oi=`/Kids-Games/assets/567-D2dm7MDK.png`,si=`/Kids-Games/assets/88-3nO0Z5Pa.png`,ci=`/Kids-Games/assets/ffw-qFHG56GZ.png`,li=`/Kids-Games/assets/magic2-yil1RYDe.png`,ui=`/Kids-Games/assets/ee-BoggQPpq.png`,di=`/Kids-Games/assets/bowling-BCtS_ewH.png`,fi=`/Kids-Games/assets/lisen-DjkWOIiY.png`,pi=`/Kids-Games/assets/sss-CNRTQgcx.png`,mi=`/Kids-Games/assets/lll-Bw5WvqwN.png`,hi=`/Kids-Games/assets/ball-B0SnoKPY.png`,gi=`/Kids-Games/assets/fff-3KDQWEJV.png`,_i=()=>{let e=A(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o=[{title:`مد بالألف`,board:ri,games:[{id:`imgBubbles`,img:oi,path:`/Madmadfa`},{id:`imgLion`,img:si,path:`/Madfarm`},{id:`imgComplete`,img:Yr,path:`/Madsnow`},{id:`imgBeeHive`,img:ci,path:`/Emphaticgame`}]},{title:`مد بالياء`,board:ii,games:[{id:`imgIce`,img:li,path:`/Madyaamagic`},{id:`imgSpace`,img:ui,path:`/Madyaatreasure`},{id:`imgBasket`,img:di,path:`/Madyaabowling`},{id:`imgEgg`,img:fi,path:`/Madyaalisen`}]},{title:`مد بالواو`,board:ai,games:[{id:`imgBee`,img:pi,path:`/Madwawwheel`},{id:`imgIce2`,img:hi,path:`/Madwawballon`},{id:`imgButterflies`,img:mi,path:`/Madwawlicen`},{id:`imgComplete2`,img:gi,path:`/Madwawdrag`}]}];return(0,M.jsxs)(`div`,{style:{backgroundImage:`url(${ni})`,backgroundSize:`cover`,backgroundPosition:`center`,minHeight:`100vh`,display:`flex`,flexDirection:`column`,alignItems:`center`,width:`100%`,paddingBottom:`30px`,position:`relative`},children:[(0,M.jsx)(`style`,{children:`
+
+        /* =========================
+           موبايلات صغيرة
+        ========================= */
+
+        @media (max-width: 400px) {
+
+          .nav-btns {
+            top: 10px !important;
+            left: 8px !important;
+
+            gap: 8px !important;
+          }
+
+          .nav-btn {
+            width: 38px !important;
+            height: 38px !important;
+
+            min-width: 38px !important;
+            min-height: 38px !important;
+
+            font-size: 22px !important;
+          }
+
+          .title-area {
+            margin-top: 8px !important;
+          }
+
+          .title-main {
+            padding: 5px 12px !important;
+          }
+
+          .title-main h1 {
+            font-size: 18px !important;
+          }
+
+          .title-sub {
+            padding: 4px 10px !important;
+          }
+
+          .title-sub h3 {
+            font-size: 13px !important;
+          }
+
+          .board-item {
+            width: calc(100vw - 14px) !important;
+
+            height: 330px !important;
+          }
+        }
+      `}),(0,M.jsxs)(`div`,{className:`nav-btns`,children:[(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>e(`/home`),children:(0,M.jsx)(vr,{})}),(0,M.jsx)(`button`,{className:`nav-btn`,onClick:()=>i(!r),children:r?(0,M.jsx)(gr,{}):(0,M.jsx)(_r,{})})]}),(0,M.jsxs)(`div`,{className:`title-area`,children:[(0,M.jsx)(`div`,{className:`title-main`,children:(0,M.jsx)(`h1`,{children:`مرحبا بك في عالم الحركات`})}),(0,M.jsx)(`div`,{className:`title-sub`,children:(0,M.jsx)(`h3`,{children:`اختر الحركة التي تريد اللعب بها`})})]}),(0,M.jsx)(`main`,{className:`main-wrapper`,children:s.map((r,i)=>(0,M.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,M.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let s=t===r.id;return(0,M.jsx)(`img`,{src:r.img,className:`game-image`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{...o[r.id],transform:s?`scale(1.15)`:`scale(1)`,filter:s?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:s?999:1},alt:`لعبة`},i)})]},i))})]})},ni=`/Kids-Games/assets/madbbg-J3LozGdx.jpeg`,ri=`/Kids-Games/assets/essmad-DBYc5yBI.png`,ii=`/Kids-Games/assets/madh-BHRHFnxX.png`,ai=`/Kids-Games/assets/mad456-CGPpmXWE.png`,oi=`/Kids-Games/assets/567-D2dm7MDK.png`,si=`/Kids-Games/assets/88-3nO0Z5Pa.png`,ci=`/Kids-Games/assets/ffw-qFHG56GZ.png`,li=`/Kids-Games/assets/magic2-yil1RYDe.png`,ui=`/Kids-Games/assets/ee-BoggQPpq.png`,di=`/Kids-Games/assets/bowling-BCtS_ewH.png`,fi=`/Kids-Games/assets/lisen-DjkWOIiY.png`,pi=`/Kids-Games/assets/sss-CNRTQgcx.png`,mi=`/Kids-Games/assets/lll-Bw5WvqwN.png`,hi=`/Kids-Games/assets/ball-B0SnoKPY.png`,gi=`/Kids-Games/assets/fff-3KDQWEJV.png`,_i=()=>{let e=A(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o=[{title:`مد بالألف`,board:ri,games:[{id:`imgBubbles`,img:oi,path:`/Madmadfa`},{id:`imgLion`,img:si,path:`/Madfarm`},{id:`imgComplete`,img:Yr,path:`/Madsnow`},{id:`imgBeeHive`,img:ci,path:`/Emphaticgame`}]},{title:`مد بالياء`,board:ii,games:[{id:`imgIce`,img:li,path:`/Madyaamagic`},{id:`imgSpace`,img:ui,path:`/Madyaatreasure`},{id:`imgBasket`,img:di,path:`/Madyaabowling`},{id:`imgEgg`,img:fi,path:`/Madyaalisen`}]},{title:`مد بالواو`,board:ai,games:[{id:`imgBee`,img:pi,path:`/Madwawwheel`},{id:`imgIce2`,img:hi,path:`/Madwawballon`},{id:`imgButterflies`,img:mi,path:`/Madwawlicen`},{id:`imgComplete2`,img:gi,path:`/Madwawdrag`}]}];return(0,M.jsxs)(`div`,{style:{backgroundImage:`url(${ni})`,backgroundSize:`cover`,backgroundPosition:`center`,minHeight:`100vh`,display:`flex`,flexDirection:`column`,alignItems:`center`,width:`100%`,paddingBottom:`30px`,position:`relative`},children:[(0,M.jsx)(`style`,{children:`
         html, body {
           margin: 0;
           padding: 0;
