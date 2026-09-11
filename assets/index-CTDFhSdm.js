@@ -3170,7 +3170,7 @@ html, body {
 
             padding: 18px !important;
 
-            top: 80px !important;
+            top: 120px !important;
 
             left: 50% !important;
             transform: translateX(-50%) !important;
