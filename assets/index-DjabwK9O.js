@@ -6775,7 +6775,7 @@ html, body {
 
           /* مسافة مناسبة بين المربعات على الموبايل */
           .games-grid {
-            gap: 20px;
+            gap: 30px;
           }
 
           .game-btn {
