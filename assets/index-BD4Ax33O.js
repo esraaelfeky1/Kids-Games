@@ -2476,7 +2476,7 @@ html, body {
             line-height: 1 !important;
           }
           .subtitle-custom {
-            top: 48px !important; /* مسافة واضحة بين العنوان والفقرة */
+            top: 28px !important; /* مسافة واضحة بين العنوان والفقرة */
             padding: 4px 10px !important;
             font-size: 12px !important;
             max-width: 90% !important;
@@ -2485,23 +2485,23 @@ html, body {
           .grid-container-custom {
             width: clamp(350px, 95vw, 460px) !important;
             height: clamp(280px, 78vw, 360px) !important;
-            top: 56% !important; /* إنزال الخلية للأسفل وتكبيرها قليلاً */
+            top: 36% !important; /* إنزال الخلية للأسفل وتكبيرها قليلاً */
           }
           .hive-img-custom {
             right: 4% !important;
-            top: 14% !important;
-            width: clamp(110px, 26vw, 150px) !important; /* تكبير خلية الهدف */
+            top: 16% !important;
+            width: clamp(120px, 26vw, 150px) !important; /* تكبير خلية الهدف */
           }
           .letter-font-custom {
             font-size: clamp(33px, 9vw, 45px) !important;
-            transform: translateY(-1px) !important; /* رفع الحروف 1 بكسل للأعلى */
+            transform: translateY(-2px) !important; /* رفع الحروف 1 بكسل للأعلى */
             text-shadow: 1px 1px 3px #000 !important;
           }
           .bee-container-custom img {
             width: clamp(65px, 16vw, 90px) !important;
           }
           .bottom-buttons-custom {
-            bottom: 25px !important; /* الأزرار مرفوعة وباينة بوضوح */
+            bottom: 65px !important; /* الأزرار مرفوعة وباينة بوضوح */
             gap: 14px !important;
           }
           .circle-btn-custom {
