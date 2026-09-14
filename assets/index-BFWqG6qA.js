@@ -1774,7 +1774,7 @@ html, body {
           }
 
           .mobile-bottom-buttons {
-            margin-top: -20px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
+            margin-top: 60px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
             margin-bottom: 10px !important;
             gap: 3.5vw !important;
             position: relative !important;
@@ -1782,13 +1782,13 @@ html, body {
           }
 
           .mobile-circle-btn {
-            width: clamp(34px, 10vw, 44px) !important;
-            height: clamp(34px, 10vw, 44px) !important;
+            width: clamp(45px, 10vw, 44px) !important;
+            height: clamp(45px, 10vw, 44px) !important;
           }
 
           .mobile-circle-btn svg {
-            width: clamp(16px, 5vw, 22px) !important;
-            height: clamp(16px, 5vw, 22px) !important;
+            width: clamp(18px, 5vw, 22px) !important;
+            height: clamp(18px, 5vw, 22px) !important;
           }
         }
       `}),(0,M.jsxs)(`div`,{style:{...Ta.page,backgroundImage:`url(${Ca})`},className:`mobile-page`,children:[(0,M.jsxs)(`div`,{style:Ta.top,className:`mobile-top`,children:[(0,M.jsxs)(`div`,{style:Ta.box,className:`mobile-top-box`,children:[`⏰ `,c]}),(0,M.jsx)(`div`,{style:Ta.header,className:`mobile-header`,children:`لعبة اسمع واختر الحروف المفخمة`}),(0,M.jsxs)(`div`,{style:Ta.box,className:`mobile-top-box`,children:[`⭐ `,o]})]}),g&&(0,M.jsx)(`div`,{style:Ta.overlay,children:(0,M.jsx)(`div`,{style:Ta.popup,children:`ممتاز 👏`})}),v&&(0,M.jsx)(`div`,{style:Ta.overlay,children:(0,M.jsxs)(`div`,{style:Ta.finalPopup,children:[`🎉 أحسنت`,(0,M.jsx)(`br`,{}),`⭐ حصلت على `,o,` نقطة`]})}),(0,M.jsxs)(`div`,{style:Ta.card,className:`mobile-card`,children:[(0,M.jsx)(`p`,{style:Ta.gameText,className:`mobile-game-text`,children:`استمع ثم اختر الحرف الصحيح`}),(0,M.jsx)(`div`,{style:Ta.sound,className:`mobile-sound`,onClick:()=>C(i),children:`🔊`}),(0,M.jsx)(`div`,{style:Ta.choices,className:`mobile-choices`,children:n.map((e,t)=>(0,M.jsx)(`div`,{onClick:()=>E(e),className:`mobile-choice`,style:{...Ta.choice,border:u===e?e===i?`4px solid green`:`4px solid red`:`2px solid #ddd`,transform:u===e?`scale(1.08)`:`scale(1)`},children:e},t))})]}),(0,M.jsxs)(`div`,{style:Ta.bottomButtons,className:`mobile-bottom-buttons`,children:[(0,M.jsx)(`button`,{onClick:D,style:Ta.circleBtn,className:`mobile-circle-btn`,children:(0,M.jsx)(F,{color:`white`})}),(0,M.jsx)(`button`,{onClick:O,style:Ta.circleBtn,className:`mobile-circle-btn`,children:(0,M.jsx)(P,{color:`white`})}),(0,M.jsx)(`button`,{onClick:k,style:Ta.circleBtn,className:`mobile-circle-btn`,children:(0,M.jsx)(N,{color:`white`})}),(0,M.jsx)(`button`,{onClick:w,style:{...Ta.circleBtn,background:x?`#7f57e7`:`#e63946`},className:`mobile-circle-btn`,children:x?(0,M.jsx)(I,{color:`white`}):(0,M.jsx)(L,{color:`white`})})]})]})]})}var Ta={page:{minHeight:`100vh`,padding:`clamp(5px, 4vw, 20px)`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,boxSizing:`border-box`},top:{display:`flex`,justifyContent:`space-between`,alignItems:`center`,flexWrap:`nowrap`,gap:`10px`,marginBottom:`20px`},box:{background:`white`,padding:`clamp(8px, 2vw, 12px) clamp(14px, 2vw, 20px)`,borderRadius:`14px`,fontWeight:`bold`,fontSize:`clamp(15px, 2vw, 18px)`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`},header:{background:`#fcbf49`,padding:`clamp(10px, 1.5vw, 12px) clamp(15px, 3vw, 40px)`,borderRadius:`18px`,fontSize:`clamp(14px, 2.5vw, 20px)`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,whiteSpace:`nowrap`},card:{background:`rgba(255,255,255,0.95)`,width:`min(80%, 450px)`,marginBottom:`20px`,margin:`auto`,marginTop:`20px`,padding:`clamp(5px, 2vw, 25px)`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`},gameText:{fontSize:`clamp(19px, 2.5vw, 25px)`,fontWeight:`bold`,marginBottom:`clamp(40px,2vw,5px)`,color:`#333`},sound:{width:`clamp(70px, 10vw, 90px)`,height:`clamp(70px, 10vw, 90px)`,background:`#6a4c93`,color:`white`,fontSize:`clamp(34px, 7vw, 44px)`,borderRadius:`50%`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`18px auto`,cursor:`pointer`,boxShadow:`0 6px 14px rgba(0,0,0,0.2)`,transition:`0.2s`},choices:{display:`flex`,justifyContent:`center`,gap:`clamp(12px, 3vw, 20px)`,flexWrap:`wrap`,marginTop:`15px`},choice:{width:`clamp(50px, 14vw, 80px)`,height:`clamp(50px, 14vw, 80px)`,marginTop:`15px`,marginBottom:`20px`,background:`#f8fafc`,borderRadius:`20px`,fontSize:`clamp(30px, 6vw, 35px)`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 4px 10px rgba(0,0,0,0.08)`},bottomButtons:{display:`flex`,justifyContent:`center`,gap:`16px`,flexWrap:`wrap`,marginTop:`30px`},circleBtn:{width:`clamp(30px, 11vw, 58px)`,height:`clamp(30px, 11vw, 58px)`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`clamp(12px, 2vw, 10px)`,borderRadius:`24px`,fontSize:`clamp(22px, 2vw, 30px)`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`clamp(20px, 5vw, 35px)`,borderRadius:`24px`,fontSize:`clamp(20px, 4vw, 28px)`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`}},Ea=`/Kids-Games/assets/WhatsApp%20Image%202026-05-12%20at%205.27.12%20PM-DSgJcCz2.jpeg`,Da=`/Kids-Games/assets/love-Baw9WrnM.png`,Oa=`/Kids-Games/assets/frog-B5GQKA3E.png`,ka=`/Kids-Games/assets/aeroplane-BnaNbqNm.png`,Aa=`/Kids-Games/assets/email-DeDHh3vp.png`,ja=`/Kids-Games/assets/in-love-DxYtmkSn.png`,Ma=`/Kids-Games/assets/drum-DXyL_ciA.png`,Na=`/Kids-Games/assets/sheep-BKewDJFQ.png`,Pa=`/Kids-Games/assets/ducks-CmP0Z8jw.png`,Fa=`/Kids-Games/assets/africa-BUPWoF6i.png`,Ia=`/Kids-Games/assets/tooth-BHfl27Vu.png`,La=`/Kids-Games/assets/manicure-Cj9JRM-v.png`;function Ra(){let e=A(),t=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`)),n=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),a=[{image:Da,word:`صقر`,missing:`ص`,display:`_قر`,choices:[`س`,`ص`,`ث`]},{image:Oa,word:`ضفدع`,missing:`ض`,display:`_فدع`,choices:[`ض`,`د`,`ظ`]},{image:ka,word:`طائرة`,missing:`ط`,display:`_ائرة`,choices:[`ت`,`ط`,`ث`]},{image:Aa,word:`ظرف`,missing:`ظ`,display:`_رف`,choices:[`ز`,`ظ`,`ذ`]},{image:ja,word:`قطة`,missing:`ق`,display:`_طة`,choices:[`ك`,`ق`,`ف`]},{image:Ma,word:`طبلة`,missing:`ط`,display:`_بلة`,choices:[`ت`,`د`,`ط`]},{image:Na,word:`خروف`,missing:`خ`,display:`_روف`,choices:[`ح`,`خ`,`ج`]},{image:Pa,word:`بطة`,missing:`ط`,display:`ب_ة`,choices:[`ت`,`ش`,`ط`]},{image:Fa,word:`غزال`,missing:`غ`,display:`_زال`,choices:[`غ`,`خ`,`ع`]},{image:Ia,word:`ضرس`,missing:`ض`,display:`_رس`,choices:[`ت`,`ض`,`د`]},{image:La,word:`ظفر`,missing:`ظ`,display:`_فر`,choices:[`ز`,`ذ`,`ظ`]}],[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(``),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(0),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(0),[C,w]=(0,b.useState)(!0),T=a[o];(0,b.useEffect)(()=>{if(g)return;let e=setInterval(()=>{S(e=>e+1)},1e3);return()=>clearInterval(e)},[g]);let E=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,D=()=>{C&&(r.current.currentTime=0,r.current.play()),s(0),l(``),h(0),_(!1),p(0),S(0),d(!1),y(!1)},O=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/AlHorof1`)},k=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/home`)},ee=e=>{g||(l(e),e===T.missing?(C&&(t.current.currentTime=0,t.current.play()),d(!0),h(m+1),p(e=>e+10),setTimeout(()=>{o<a.length-1?(s(o+1),l(``),d(!1)):(C&&(i.current.currentTime=0,i.current.play()),_(!0),y(!0),setTimeout(()=>{y(!1)},3e3))},700)):C&&(n.current.currentTime=0,n.current.play()))},te=()=>{w(e=>!e)};return(0,M.jsxs)(M.Fragment,{children:[(0,M.jsx)(`style`,{children:`
@@ -2045,7 +2045,7 @@ html, body {
 
           /* تكبير الفقرة الإرشادية وتحسين مظهرها */
           .question-box-custom {
-            padding: 1vh 2vw !important;
+            padding: 0.99vh 2vw !important;
             border-radius: 16px !important;
             font-size: clamp(14px, 4.2vw, 18px) !important;
             margin: 6px auto 0 auto !important;
@@ -2057,7 +2057,7 @@ html, body {
             width: clamp(270px, 86vw, 350px) !important;
             min-height: auto !important;
             padding: 2.5vh 3vw !important;
-            margin: 8vh auto 0 auto !important;
+            margin: 5vh auto 0 auto !important;
             border-width: 4px !important;
             border-radius: 28px !important;
             display: flex !important;
@@ -2138,7 +2138,7 @@ html, body {
           /* نزول الأزرار الأربعة تحت بمسافة إضافية تقارب 40 بكسل */
           .bottom-buttons-custom {
             position: absolute !important;
-            bottom: -20px !important;
+            bottom: 50px !important;
             left: 50% !important;
             transform: translateX(-50%) !important;
             gap: 4vw !important;
