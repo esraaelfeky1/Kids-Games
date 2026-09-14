@@ -1742,8 +1742,8 @@ html, body {
           .mobile-card {
             width: 85% !important;
             max-width: 320px !important;
-            margin: 30px auto 0 auto !important; /* مسافة 30 بكسل بين الهيدر والمربع تماماً */
-            padding: 15px 10px !important;
+            margin: 35px auto 0 auto !important; /* مسافة 30 بكسل بين الهيدر والمربع تماماً */
+            padding: 12px 10px !important;
             border-radius: 20px !important;
           }
 
@@ -1774,7 +1774,7 @@ html, body {
           }
 
           .mobile-bottom-buttons {
-            margin-top: -60px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
+            margin-top: -20px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
             margin-bottom: 10px !important;
             gap: 3.5vw !important;
             position: relative !important;
@@ -1881,7 +1881,7 @@ html, body {
             position: absolute !important;
             left: 50% !important;
             transform: translateX(-50%) !important;
-            bottom: -80px !important;
+            bottom: -140px !important;
             flex-direction: row !important;
             flex-wrap: nowrap !important;
             gap: 10px !important;
@@ -1980,7 +1980,7 @@ html, body {
 
           .mobile-bottom-buttons {
             margin-top: 0 !important;
-            margin-bottom: 8px !important;
+            margin-bottom: 20px !important;
             gap: 12px !important;
           }
 
@@ -2045,7 +2045,7 @@ html, body {
 
           /* تكبير الفقرة الإرشادية وتحسين مظهرها */
           .question-box-custom {
-            padding: 1vh 4vw !important;
+            padding: 1vh 2vw !important;
             border-radius: 16px !important;
             font-size: clamp(14px, 4.2vw, 18px) !important;
             margin: 6px auto 0 auto !important;
@@ -2057,7 +2057,7 @@ html, body {
             width: clamp(270px, 86vw, 350px) !important;
             min-height: auto !important;
             padding: 2.5vh 3vw !important;
-            margin: 11vh auto 0 auto !important;
+            margin: 8vh auto 0 auto !important;
             border-width: 4px !important;
             border-radius: 28px !important;
             display: flex !important;
@@ -2138,7 +2138,7 @@ html, body {
           /* نزول الأزرار الأربعة تحت بمسافة إضافية تقارب 40 بكسل */
           .bottom-buttons-custom {
             position: absolute !important;
-            bottom: -45px !important;
+            bottom: -20px !important;
             left: 50% !important;
             transform: translateX(-50%) !important;
             gap: 4vw !important;
