@@ -69,7 +69,7 @@ html, body {
     margin-top: 30px !important;
   }
 }
-`;if(typeof document<`u`){let e=document.createElement(`style`);e.innerHTML=er,document.head.appendChild(e)}var tr=()=>(0,M.jsx)(M.Fragment,{children:(0,M.jsx)(Zn,{})}),nr={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},rr=b.createContext&&b.createContext(nr),ir=[`attr`,`size`,`title`];function ar(e,t){if(e==null)return{};var n,r,i=or(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function or(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function sr(){return sr=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},sr.apply(null,arguments)}function cr(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function lr(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?cr(Object(n),!0).forEach(function(t){ur(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):cr(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function ur(e,t,n){return(t=dr(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function dr(e){var t=fr(e,`string`);return typeof t==`symbol`?t:t+``}function fr(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function pr(e){return e&&e.map((e,t)=>b.createElement(e.tag,lr({key:t},e.attr),pr(e.child)))}function mr(e){return t=>b.createElement(hr,sr({attr:lr({},e.attr)},t),pr(e.child))}function hr(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=ar(e,ir),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),b.createElement(`svg`,sr({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:lr(lr({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&b.createElement(`title`,null,i),e.children)};return rr===void 0?t(nr):b.createElement(rr.Consumer,null,e=>t(e))}function gr(e){return mr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeMiterlimit:`10`,strokeWidth:`32`,d:`M416 432 64 80`},child:[]},{tag:`path`,attr:{d:`M243.33 98.86a23.89 23.89 0 0 0-25.55 1.82l-.66.51-28.52 23.35a8 8 0 0 0-.59 11.85l54.33 54.33a8 8 0 0 0 13.66-5.66v-64.49a24.51 24.51 0 0 0-12.67-21.71zm8 236.43L96.69 180.69A16 16 0 0 0 85.38 176H56a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h69.76l92 75.31a23.9 23.9 0 0 0 25.87 1.69A24.51 24.51 0 0 0 256 391.45v-44.86a16 16 0 0 0-4.67-11.3zM352 256c0-24.56-5.81-47.87-17.75-71.27a16 16 0 1 0-28.5 14.55C315.34 218.06 320 236.62 320 256q0 4-.31 8.13a8 8 0 0 0 2.32 6.25l14.36 14.36a8 8 0 0 0 13.55-4.31A146 146 0 0 0 352 256zm64 0c0-51.18-13.08-83.89-34.18-120.06a16 16 0 0 0-27.64 16.12C373.07 184.44 384 211.83 384 256c0 23.83-3.29 42.88-9.37 60.65a8 8 0 0 0 1.9 8.26L389 337.4a8 8 0 0 0 13.13-2.79C411 311.76 416 287.26 416 256z`},child:[]},{tag:`path`,attr:{d:`M480 256c0-74.25-20.19-121.11-50.51-168.61a16 16 0 1 0-27 17.22C429.82 147.38 448 189.5 448 256c0 46.19-8.43 80.27-22.43 110.53a8 8 0 0 0 1.59 9l11.92 11.92a8 8 0 0 0 12.92-2.16C471.6 344.9 480 305 480 256z`},child:[]}]})(e)}function _r(e){return mr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M232 416a23.88 23.88 0 0 1-14.2-4.68 8.27 8.27 0 0 1-.66-.51L125.76 336H56a24 24 0 0 1-24-24V200a24 24 0 0 1 24-24h69.75l91.37-74.81a8.27 8.27 0 0 1 .66-.51A24 24 0 0 1 256 120v272a24 24 0 0 1-24 24zm-106.18-80zm-.27-159.86zM320 336a16 16 0 0 1-14.29-23.19c9.49-18.87 14.3-38 14.3-56.81 0-19.38-4.66-37.94-14.25-56.73a16 16 0 0 1 28.5-14.54C346.19 208.12 352 231.44 352 256c0 23.86-6 47.81-17.7 71.19A16 16 0 0 1 320 336z`},child:[]},{tag:`path`,attr:{d:`M368 384a16 16 0 0 1-13.86-24C373.05 327.09 384 299.51 384 256c0-44.17-10.93-71.56-29.82-103.94a16 16 0 0 1 27.64-16.12C402.92 172.11 416 204.81 416 256c0 50.43-13.06 83.29-34.13 120a16 16 0 0 1-13.87 8z`},child:[]},{tag:`path`,attr:{d:`M416 432a16 16 0 0 1-13.39-24.74C429.85 365.47 448 323.76 448 256c0-66.5-18.18-108.62-45.49-151.39a16 16 0 1 1 27-17.22C459.81 134.89 480 181.74 480 256c0 64.75-14.66 113.63-50.6 168.74A16 16 0 0 1 416 432z`},child:[]}]})(e)}function vr(e){return mr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M261.56 101.28a8 8 0 0 0-11.06 0L66.4 277.15a8 8 0 0 0-2.47 5.79L63.9 448a32 32 0 0 0 32 32H192a16 16 0 0 0 16-16V328a8 8 0 0 1 8-8h80a8 8 0 0 1 8 8v136a16 16 0 0 0 16 16h96.06a32 32 0 0 0 32-32V282.94a8 8 0 0 0-2.47-5.79z`},child:[]},{tag:`path`,attr:{d:`m490.91 244.15-74.8-71.56V64a16 16 0 0 0-16-16h-48a16 16 0 0 0-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0 0 43 267.56L250.5 69.28a8 8 0 0 1 11.06 0l207.52 198.28a16 16 0 0 0 22.59-.44c6.14-6.36 5.63-16.86-.76-22.97z`},child:[]}]})(e)}var yr=`/Kids-Games/assets/hh12-C8e7BMQE.jpeg`,br=`/Kids-Games/assets/cat1-4TrCDg4u.png`,xr=`/Kids-Games/assets/cat2-D5xChXUI.png`,Sr=`/Kids-Games/assets/cat33-7NSsFc-y.png`,Cr=`/Kids-Games/assets/cat44-DXtuvVPW.png`,wr=`/Kids-Games/assets/match-BKXkYpf0.png`,Tr=`/Kids-Games/assets/drop-DFrZrEet.png`,Er=`/Kids-Games/assets/12333-D9LKWy95.png`,Dr=`/Kids-Games/assets/ffff-93Zr9YwM.png`,Or=`/Kids-Games/assets/1111111111112-SojhzGdI.png`,kr=`/Kids-Games/assets/dddd-DkexMVyI.png`,Ar=`/Kids-Games/assets/12lf-BcwSxrJS.png`,jr=`/Kids-Games/assets/dddqq-CkSM9NcV.png`,Mr=`/Kids-Games/assets/sbac-BXwxyfXS.png`,Nr=`/Kids-Games/assets/complet-C15l2EVh.png`,Pr=`/Kids-Games/assets/wee-Dk5dgl3F.png`,Fr=`/Kids-Games/assets/licn-DGFfYDok.png`,Ir=`/Kids-Games/assets/1111111111-D8u2rqos.png`,Lr=`/Kids-Games/assets/jjjj-hDdlifM7.png`,Rr=`/Kids-Games/assets/fash-CxTetjhK.png`,zr=`/Kids-Games/assets/fffp-DRviz1F9.png`,Br=()=>{let e=A(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!0);(0,b.useEffect)(()=>{let e=()=>{o(window.scrollY<=20)};return window.addEventListener(`scroll`,e,{passive:!0}),()=>{window.removeEventListener(`scroll`,e)}},[]);let s=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},c={imgBubbles:{top:`15%`,left:`15%`,width:`33%`,height:`55%`},imgLion:{top:`25%`,left:`50%`,width:`33%`,height:`35%`},imgComplete:{top:`55%`,left:`15%`,width:`33%`,height:`36%`},imgBeeHive:{top:`55%`,left:`50%`,width:`32%`,height:`38%`},imgIce:{top:`28%`,left:`10%`,width:`45%`,height:`30%`},imgSpace:{top:`27%`,left:`48%`,width:`38%`,height:`30%`},imgBasket:{top:`55%`,left:`15%`,width:`33%`,height:`40%`},imgEgg:{top:`60%`,left:`44%`,width:`44%`,height:`30%`},imgBee:{top:`26%`,left:`11%`,width:`40%`,height:`30%`},imgIce2:{top:`25%`,left:`50%`,width:`34%`,height:`33%`},imgButterflies:{top:`59%`,left:`15%`,width:`33%`,height:`32%`},imgComplete2:{top:`58%`,left:`24%`,width:`84%`,height:`32%`},imgBee2:{top:`28%`,left:`10%`,width:`47%`,height:`29%`},imgIce3:{top:`27%`,left:`52%`,width:`31%`,height:`32%`},imgButterflies2:{top:`42%`,left:`17%`,width:`31%`,height:`63%`},imgComplete3:{top:`60%`,left:`43%`,width:`48%`,height:`28%`}},l=[{title:`حروف اللثوية`,board:br,games:[{id:`imgBubbles`,img:wr,path:`/Interdentalparrot`},{id:`imgLion`,img:Tr,path:`/Interdentaldrop`},{id:`imgComplete`,img:Er,path:`/Interdentaltreasure`},{id:`imgBeeHive`,img:Dr,path:`/Interdentalspace`}]},{title:`حروف القطع`,board:xr,games:[{id:`imgIce`,img:Or,path:`/Cutsbee`},{id:`imgSpace`,img:kr,path:`/Cutsfish`},{id:`imgBasket`,img:Ar,path:`/Cutsspace`},{id:`imgEgg`,img:jr,path:`/Cutsfrog`}]},{title:`حروف المفخمة`,board:Sr,games:[{id:`imgBee`,img:Mr,path:`/EmphaticRace`},{id:`imgIce2`,img:Nr,path:`/CompleteWord`},{id:`imgButterflies`,img:Pr,path:`/Emphaticolorl`},{id:`imgComplete2`,img:Fr,path:`/ListenChoose`}]},{title:`حروف المرققة`,board:Cr,games:[{id:`imgBee2`,img:Ir,path:`/Marqqaeats`},{id:`imgIce3`,img:Lr,path:`/Marqqaapple`},{id:`imgButterflies2`,img:Rr,path:`/Marqqafish`},{id:`imgComplete3`,img:zr,path:`/Marqqabee`}]}];return(0,M.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${yr})`},children:[(0,M.jsx)(`style`,{children:`
+`;if(typeof document<`u`){let e=document.createElement(`style`);e.innerHTML=er,document.head.appendChild(e)}var tr=()=>(0,M.jsx)(M.Fragment,{children:(0,M.jsx)(Zn,{})}),nr={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},rr=b.createContext&&b.createContext(nr),ir=[`attr`,`size`,`title`];function ar(e,t){if(e==null)return{};var n,r,i=or(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function or(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function sr(){return sr=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},sr.apply(null,arguments)}function cr(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function lr(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?cr(Object(n),!0).forEach(function(t){ur(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):cr(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function ur(e,t,n){return(t=dr(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function dr(e){var t=fr(e,`string`);return typeof t==`symbol`?t:t+``}function fr(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function pr(e){return e&&e.map((e,t)=>b.createElement(e.tag,lr({key:t},e.attr),pr(e.child)))}function mr(e){return t=>b.createElement(hr,sr({attr:lr({},e.attr)},t),pr(e.child))}function hr(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=ar(e,ir),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),b.createElement(`svg`,sr({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:lr(lr({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&b.createElement(`title`,null,i),e.children)};return rr===void 0?t(nr):b.createElement(rr.Consumer,null,e=>t(e))}function gr(e){return mr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeMiterlimit:`10`,strokeWidth:`32`,d:`M416 432 64 80`},child:[]},{tag:`path`,attr:{d:`M243.33 98.86a23.89 23.89 0 0 0-25.55 1.82l-.66.51-28.52 23.35a8 8 0 0 0-.59 11.85l54.33 54.33a8 8 0 0 0 13.66-5.66v-64.49a24.51 24.51 0 0 0-12.67-21.71zm8 236.43L96.69 180.69A16 16 0 0 0 85.38 176H56a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h69.76l92 75.31a23.9 23.9 0 0 0 25.87 1.69A24.51 24.51 0 0 0 256 391.45v-44.86a16 16 0 0 0-4.67-11.3zM352 256c0-24.56-5.81-47.87-17.75-71.27a16 16 0 1 0-28.5 14.55C315.34 218.06 320 236.62 320 256q0 4-.31 8.13a8 8 0 0 0 2.32 6.25l14.36 14.36a8 8 0 0 0 13.55-4.31A146 146 0 0 0 352 256zm64 0c0-51.18-13.08-83.89-34.18-120.06a16 16 0 0 0-27.64 16.12C373.07 184.44 384 211.83 384 256c0 23.83-3.29 42.88-9.37 60.65a8 8 0 0 0 1.9 8.26L389 337.4a8 8 0 0 0 13.13-2.79C411 311.76 416 287.26 416 256z`},child:[]},{tag:`path`,attr:{d:`M480 256c0-74.25-20.19-121.11-50.51-168.61a16 16 0 1 0-27 17.22C429.82 147.38 448 189.5 448 256c0 46.19-8.43 80.27-22.43 110.53a8 8 0 0 0 1.59 9l11.92 11.92a8 8 0 0 0 12.92-2.16C471.6 344.9 480 305 480 256z`},child:[]}]})(e)}function _r(e){return mr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M232 416a23.88 23.88 0 0 1-14.2-4.68 8.27 8.27 0 0 1-.66-.51L125.76 336H56a24 24 0 0 1-24-24V200a24 24 0 0 1 24-24h69.75l91.37-74.81a8.27 8.27 0 0 1 .66-.51A24 24 0 0 1 256 120v272a24 24 0 0 1-24 24zm-106.18-80zm-.27-159.86zM320 336a16 16 0 0 1-14.29-23.19c9.49-18.87 14.3-38 14.3-56.81 0-19.38-4.66-37.94-14.25-56.73a16 16 0 0 1 28.5-14.54C346.19 208.12 352 231.44 352 256c0 23.86-6 47.81-17.7 71.19A16 16 0 0 1 320 336z`},child:[]},{tag:`path`,attr:{d:`M368 384a16 16 0 0 1-13.86-24C373.05 327.09 384 299.51 384 256c0-44.17-10.93-71.56-29.82-103.94a16 16 0 0 1 27.64-16.12C402.92 172.11 416 204.81 416 256c0 50.43-13.06 83.29-34.13 120a16 16 0 0 1-13.87 8z`},child:[]},{tag:`path`,attr:{d:`M416 432a16 16 0 0 1-13.39-24.74C429.85 365.47 448 323.76 448 256c0-66.5-18.18-108.62-45.49-151.39a16 16 0 1 1 27-17.22C459.81 134.89 480 181.74 480 256c0 64.75-14.66 113.63-50.6 168.74A16 16 0 0 1 416 432z`},child:[]}]})(e)}function vr(e){return mr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M261.56 101.28a8 8 0 0 0-11.06 0L66.4 277.15a8 8 0 0 0-2.47 5.79L63.9 448a32 32 0 0 0 32 32H192a16 16 0 0 0 16-16V328a8 8 0 0 1 8-8h80a8 8 0 0 1 8 8v136a16 16 0 0 0 16 16h96.06a32 32 0 0 0 32-32V282.94a8 8 0 0 0-2.47-5.79z`},child:[]},{tag:`path`,attr:{d:`m490.91 244.15-74.8-71.56V64a16 16 0 0 0-16-16h-48a16 16 0 0 0-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0 0 43 267.56L250.5 69.28a8 8 0 0 1 11.06 0l207.52 198.28a16 16 0 0 0 22.59-.44c6.14-6.36 5.63-16.86-.76-22.97z`},child:[]}]})(e)}var yr=`/Kids-Games/assets/hh12-C8e7BMQE.jpeg`,br=`/Kids-Games/assets/cat1-4TrCDg4u.png`,xr=`/Kids-Games/assets/cat2-D5xChXUI.png`,Sr=`/Kids-Games/assets/cat33-7NSsFc-y.png`,Cr=`/Kids-Games/assets/cat44-DXtuvVPW.png`,wr=`/Kids-Games/assets/match-BKXkYpf0.png`,Tr=`/Kids-Games/assets/drop-DFrZrEet.png`,Er=`/Kids-Games/assets/12333-D9LKWy95.png`,Dr=`/Kids-Games/assets/ffff-93Zr9YwM.png`,Or=`/Kids-Games/assets/1111111111112-SojhzGdI.png`,kr=`/Kids-Games/assets/dddd-DkexMVyI.png`,Ar=`/Kids-Games/assets/12lf-BcwSxrJS.png`,jr=`/Kids-Games/assets/dddqq-CkSM9NcV.png`,Mr=`/Kids-Games/assets/sbac-BXwxyfXS.png`,Nr=`/Kids-Games/assets/complet-C15l2EVh.png`,Pr=`/Kids-Games/assets/wee-Dk5dgl3F.png`,Fr=`/Kids-Games/assets/licn-DGFfYDok.png`,Ir=`/Kids-Games/assets/1111111111-D8u2rqos.png`,Lr=`/Kids-Games/assets/jjjj-hDdlifM7.png`,Rr=`/Kids-Games/assets/fash-CxTetjhK.png`,zr=`/Kids-Games/assets/fffp-DRviz1F9.png`,Br=()=>{let e=A(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`15%`,left:`15%`,width:`33%`,height:`55%`},imgLion:{top:`25%`,left:`50%`,width:`33%`,height:`35%`},imgComplete:{top:`55%`,left:`15%`,width:`33%`,height:`36%`},imgBeeHive:{top:`55%`,left:`50%`,width:`32%`,height:`38%`},imgIce:{top:`28%`,left:`10%`,width:`45%`,height:`30%`},imgSpace:{top:`27%`,left:`48%`,width:`38%`,height:`30%`},imgBasket:{top:`55%`,left:`15%`,width:`33%`,height:`40%`},imgEgg:{top:`60%`,left:`44%`,width:`44%`,height:`30%`},imgBee:{top:`26%`,left:`11%`,width:`40%`,height:`30%`},imgIce2:{top:`25%`,left:`50%`,width:`34%`,height:`33%`},imgButterflies:{top:`59%`,left:`15%`,width:`33%`,height:`32%`},imgComplete2:{top:`58%`,left:`24%`,width:`84%`,height:`32%`},imgBee2:{top:`28%`,left:`10%`,width:`47%`,height:`29%`},imgIce3:{top:`27%`,left:`52%`,width:`31%`,height:`32%`},imgButterflies2:{top:`42%`,left:`17%`,width:`31%`,height:`63%`},imgComplete3:{top:`60%`,left:`43%`,width:`48%`,height:`28%`}},s=[{title:`حروف اللثوية`,board:br,games:[{id:`imgBubbles`,img:wr,path:`/Interdentalparrot`},{id:`imgLion`,img:Tr,path:`/Interdentaldrop`},{id:`imgComplete`,img:Er,path:`/Interdentaltreasure`},{id:`imgBeeHive`,img:Dr,path:`/Interdentalspace`}]},{title:`حروف القطع`,board:xr,games:[{id:`imgIce`,img:Or,path:`/Cutsbee`},{id:`imgSpace`,img:kr,path:`/Cutsfish`},{id:`imgBasket`,img:Ar,path:`/Cutsspace`},{id:`imgEgg`,img:jr,path:`/Cutsfrog`}]},{title:`حروف المفخمة`,board:Sr,games:[{id:`imgBee`,img:Mr,path:`/EmphaticRace`},{id:`imgIce2`,img:Nr,path:`/CompleteWord`},{id:`imgButterflies`,img:Pr,path:`/Emphaticolorl`},{id:`imgComplete2`,img:Fr,path:`/ListenChoose`}]},{title:`حروف المرققة`,board:Cr,games:[{id:`imgBee2`,img:Ir,path:`/Marqqaeats`},{id:`imgIce3`,img:Lr,path:`/Marqqaapple`},{id:`imgButterflies2`,img:Rr,path:`/Marqqafish`},{id:`imgComplete3`,img:zr,path:`/Marqqabee`}]}];return(0,M.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${yr})`},children:[(0,M.jsx)(`style`,{children:`
         html,
         body,
         #root {
@@ -131,14 +131,52 @@ html, body {
         }
 
         /* =========================
-           أزرار التنقل
+           منطقة العنوان والأزرار
         ========================= */
+
+        .title-area {
+          margin-top: 17px;
+
+          width: 100%;
+
+          text-align: center;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          position: relative;
+          z-index: 20;
+
+          opacity: 1;
+          visibility: visible;
+        }
+
+        /* =========================
+           الأزرار
+           داخل منطقة العنوان
+           عشان تختفي معاه في الـ scroll
+        ========================= */
+
+        .top-buttons {
+          position: absolute;
+
+          top: 0;
+
+          left: 0;
+
+          width: 100%;
+
+          height: 57px;
+
+          pointer-events: none;
+        }
 
         .home-btn,
         .sound-btn {
-          position: fixed;
+          position: absolute;
 
-          top: 17px;
+          top: 0;
 
           z-index: 1000;
 
@@ -164,11 +202,10 @@ html, body {
 
           padding: 0;
 
-          /* اختفاء ناعم عند النزول */
-          transition: opacity 0.15s ease, visibility 0.15s ease;
+          pointer-events: auto;
         }
 
-        /* دخلنا الزرارين لجوه */
+        /* دخلناهم لجوه */
         .home-btn {
           left: 28px;
         }
@@ -177,33 +214,9 @@ html, body {
           right: 28px;
         }
 
-        /* يختفوا لما ننزل تحت */
-        .home-btn.hide-top,
-        .sound-btn.hide-top {
-          opacity: 0;
-          visibility: hidden;
-          pointer-events: none;
-        }
-
         /* =========================
            العنوان
         ========================= */
-
-        .title-area {
-          margin-top: 17px;
-
-          text-align: center;
-
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          position: relative;
-          z-index: 20;
-
-          opacity: 1;
-          visibility: visible;
-        }
 
         .title-main {
           background-color: rgba(255, 255, 255, 0.7);
@@ -353,6 +366,10 @@ html, body {
             font-size: 24px !important;
           }
 
+          .top-buttons {
+            height: 50px !important;
+          }
+
           .home-btn,
           .sound-btn {
             width: 50px !important;
@@ -361,12 +378,10 @@ html, body {
           }
 
           .home-btn {
-            top: 15px !important;
             left: 23px !important;
           }
 
           .sound-btn {
-            top: 15px !important;
             right: 23px !important;
           }
 
@@ -390,9 +405,21 @@ html, body {
             padding-bottom: 30px;
           }
 
+          .title-area {
+            margin-top: 10px !important;
+
+            padding: 0 10px !important;
+
+            width: 100%;
+          }
+
+          .top-buttons {
+            height: 44px !important;
+          }
+
           .home-btn,
           .sound-btn {
-            top: 14px !important;
+            top: 0 !important;
 
             /* أكبر 2px */
             width: 44px !important;
@@ -404,21 +431,13 @@ html, body {
             font-size: 25px !important;
           }
 
-          /* دخلناهم لجوه شوية */
+          /* دخلناهم لجوه */
           .home-btn {
             left: 16px !important;
           }
 
           .sound-btn {
             right: 16px !important;
-          }
-
-          .title-area {
-            margin-top: 10px !important;
-
-            padding: 0 10px !important;
-
-            width: 100%;
           }
 
           .title-main {
@@ -488,9 +507,13 @@ html, body {
 
         @media (max-width: 400px) {
 
+          .top-buttons {
+            height: 40px !important;
+          }
+
           .home-btn,
           .sound-btn {
-            top: 10px !important;
+            top: 0 !important;
 
             /* أكبر 2px */
             width: 40px !important;
@@ -535,7 +558,7 @@ html, body {
             height: 300px !important;
           }
         }
-      `}),(0,M.jsx)(`button`,{className:`home-btn ${a?``:`hide-top`}`,onClick:()=>e(`/home`),children:(0,M.jsx)(vr,{})}),(0,M.jsx)(`button`,{className:`sound-btn ${a?``:`hide-top`}`,onClick:()=>i(!r),children:r?(0,M.jsx)(gr,{}):(0,M.jsx)(_r,{})}),(0,M.jsxs)(`div`,{className:`title-area`,children:[(0,M.jsx)(`div`,{className:`title-main`,children:(0,M.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,M.jsx)(`div`,{className:`title-sub`,children:(0,M.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,M.jsx)(`main`,{className:`main-wrapper`,children:l.map((r,i)=>(0,M.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,M.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let a=t===r.id;return(0,M.jsx)(`img`,{src:r.img,className:`game-image`,onClick:()=>{s(),e(r.path)},onMouseEnter:()=>{n(r.id),s()},onMouseLeave:()=>{n(null)},style:{...c[r.id],transform:a?`scale(1.15)`:`scale(1)`,filter:a?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:a?999:1},alt:`لعبة`},i)})]},i))})]})},Vr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Hr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Ur=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Wr=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Gr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Kr=`/Kids-Games/assets/lion-BCc-x0Je.png`,qr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Jr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Yr=`/Kids-Games/assets/icce-DngGPNER.png`,Xr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Zr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Qr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,$r=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,ei=`/Kids-Games/assets/btar-ISpqIK3P.png`,ti=()=>{let e=A(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:Hr,games:[{id:`imgBubbles`,img:Gr,path:`/Fathaice`},{id:`imgLion`,img:Kr,path:`/Fathalion`},{id:`imgComplete`,img:qr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Jr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Ur,games:[{id:`imgIce`,img:Yr,path:`/Damasnow`},{id:`imgSpace`,img:Xr,path:`/Damaspace`},{id:`imgBasket`,img:Zr,path:`/Damamaze`},{id:`imgEgg`,img:Qr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Wr,games:[{id:`imgBee`,img:$r,path:`/Kasrabee`},{id:`imgIce2`,img:Yr,path:`/Kasrasnow`},{id:`imgButterflies`,img:ei,path:`/Kasratreas`},{id:`imgComplete2`,img:qr,path:`/Kasracomplete`}]}];return(0,M.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Vr})`},children:[(0,M.jsx)(`style`,{children:`
+      `}),(0,M.jsxs)(`div`,{className:`title-area`,children:[(0,M.jsxs)(`div`,{className:`top-buttons`,children:[(0,M.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),children:(0,M.jsx)(vr,{})}),(0,M.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),children:r?(0,M.jsx)(gr,{}):(0,M.jsx)(_r,{})})]}),(0,M.jsx)(`div`,{className:`title-main`,children:(0,M.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,M.jsx)(`div`,{className:`title-sub`,children:(0,M.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,M.jsx)(`main`,{className:`main-wrapper`,children:s.map((r,i)=>(0,M.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,M.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let s=t===r.id;return(0,M.jsx)(`img`,{src:r.img,className:`game-image`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{...o[r.id],transform:s?`scale(1.15)`:`scale(1)`,filter:s?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:s?999:1},alt:`لعبة`},i)})]},i))})]})},Vr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Hr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Ur=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Wr=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Gr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Kr=`/Kids-Games/assets/lion-BCc-x0Je.png`,qr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Jr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Yr=`/Kids-Games/assets/icce-DngGPNER.png`,Xr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Zr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Qr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,$r=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,ei=`/Kids-Games/assets/btar-ISpqIK3P.png`,ti=()=>{let e=A(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:Hr,games:[{id:`imgBubbles`,img:Gr,path:`/Fathaice`},{id:`imgLion`,img:Kr,path:`/Fathalion`},{id:`imgComplete`,img:qr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Jr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Ur,games:[{id:`imgIce`,img:Yr,path:`/Damasnow`},{id:`imgSpace`,img:Xr,path:`/Damaspace`},{id:`imgBasket`,img:Zr,path:`/Damamaze`},{id:`imgEgg`,img:Qr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Wr,games:[{id:`imgBee`,img:$r,path:`/Kasrabee`},{id:`imgIce2`,img:Yr,path:`/Kasrasnow`},{id:`imgButterflies`,img:ei,path:`/Kasratreas`},{id:`imgComplete2`,img:qr,path:`/Kasracomplete`}]}];return(0,M.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Vr})`},children:[(0,M.jsx)(`style`,{children:`
         html,
         body,
         #root {
