@@ -1774,7 +1774,7 @@ html, body {
           }
 
           .mobile-bottom-buttons {
-            margin-top: 60px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
+            margin-top: 90px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
             margin-bottom: 10px !important;
             gap: 3.5vw !important;
             position: relative !important;
@@ -2138,7 +2138,7 @@ html, body {
           /* نزول الأزرار الأربعة تحت بمسافة إضافية تقارب 40 بكسل */
           .bottom-buttons-custom {
             position: absolute !important;
-            bottom: 50px !important;
+            bottom: 120px !important;
             left: 50% !important;
             transform: translateX(-50%) !important;
             gap: 4vw !important;
