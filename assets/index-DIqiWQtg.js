@@ -1774,7 +1774,7 @@ html, body {
           }
 
           .mobile-bottom-buttons {
-            margin-top: 90px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
+            margin-top: 120px !important; /* رفع الأزرار للأعلى بمقدار 60 بكسل كما طلبت */
             margin-bottom: 10px !important;
             gap: 3.5vw !important;
             position: relative !important;
@@ -2131,14 +2131,14 @@ html, body {
           }
 
           .palette-btn-eraser svg {
-            width: clamp(12px, 4vw, 16px) !important;
-            height: clamp(12px, 4vw, 16px) !important;
+            width: clamp(15px, 4vw, 16px) !important;
+            height: clamp(15px, 4vw, 16px) !important;
           }
 
           /* نزول الأزرار الأربعة تحت بمسافة إضافية تقارب 40 بكسل */
           .bottom-buttons-custom {
             position: absolute !important;
-            bottom: 120px !important;
+            bottom: 140px !important;
             left: 50% !important;
             transform: translateX(-50%) !important;
             gap: 4vw !important;
@@ -2149,8 +2149,8 @@ html, body {
           }
 
           .circle-btn-custom {
-            width: clamp(34px, 10vw, 44px) !important;
-            height: clamp(34px, 10vw, 44px) !important;
+            width: clamp(44px, 10vw, 44px) !important;
+            height: clamp(44px, 10vw, 44px) !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
