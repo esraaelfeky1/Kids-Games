@@ -3910,7 +3910,7 @@ html, body {
           .meat-grid-mobile {
             grid-template-columns: repeat(3, 1fr) !important;
             width: clamp(280px, 88vw, 500px) !important;
-            margin-top: 3px !important;
+            margin-top: -3px !important;
             gap: clamp(6px, 1.5vh, 12px) !important;
           }
 
@@ -3923,18 +3923,18 @@ html, body {
 
           /*
             رفع الحروف والحركات لفوق
-            والمسافة بينهم 2px
+            وتقليل المسافة بينهم
           */
           .meat-grid-mobile .charText {
-            transform: translateY(-5px) !important;
+            transform: translateY(-18px) !important;
           }
 
           .meat-grid-mobile .harakah-mobile {
-            margin-bottom: -40px !important;
+            margin-bottom: -47px !important;
           }
 
           /*
-            رفع الأسد شوية عن مكانه السابق
+            رفع الأسد لفوق شوية كمان
           */
           .lion-img {
             width: 165px !important;
@@ -3942,7 +3942,7 @@ html, body {
 
           #lion-character {
             margin-top: auto !important;
-            margin-bottom: -72px !important;
+            margin-bottom: -62px !important;
           }
 
           /*
@@ -3952,7 +3952,7 @@ html, body {
             position: fixed !important;
             left: 8px !important;
             right: auto !important;
-            bottom: 45px !important;
+            bottom: 25px !important;
             top: auto !important;
             transform: none !important;
             flex-direction: column !important;
@@ -3982,27 +3982,34 @@ html, body {
 
           .meat-grid-mobile {
             width: 88vw !important;
-            margin-top: 2px !important;
+            margin-top: -4px !important;
           }
 
           .meat-grid-mobile img {
             width: 76px !important;
           }
 
+          /*
+            رفع الحروف والحركات أكتر شوية
+            وتقريب الحركة من الحرف
+          */
           .meat-grid-mobile .charText {
-            transform: translateY(-12px) !important;
+            transform: translateY(-18px) !important;
           }
 
           .meat-grid-mobile .harakah-mobile {
-            margin-bottom: -38px !important;
+            margin-bottom: -45px !important;
           }
 
+          /*
+            رفع الأسد لفوق شوية كمان
+          */
           .lion-img {
             width: 165px !important;
           }
 
           #lion-character {
-            margin-bottom: -72px !important;
+            margin-bottom: -62px !important;
           }
 
           .action-buttons-mobile,
