@@ -3863,15 +3863,7 @@ html, body {
             ${v}px !important;
           }
         `),()=>{s.current?.removeAttribute(`data-motion-pop-id`),b.contains(y)&&b.removeChild(y)}},[t]),(0,M.jsx)(Ng,{isPresent:t,childRef:s,sizeRef:c,pop:a,children:a===!1?e:b.cloneElement(e,{ref:u})})}var Fg=({children:e,initial:t,isPresent:n,onExitComplete:r,custom:i,presenceAffectsLayout:a,mode:o,anchorX:s,anchorY:c,root:l})=>{let u=Gs(Ig),d=(0,b.useId)(),f=!0,p=(0,b.useMemo)(()=>(f=!1,{id:d,initial:t,isPresent:n,custom:i,onExitComplete:e=>{u.set(e,!0);for(let e of u.values())if(!e)return;r&&r()},register:e=>(u.set(e,!1),()=>u.delete(e))}),[n,u,r]);return a&&f&&(p={...p}),(0,b.useMemo)(()=>{u.forEach((e,t)=>u.set(t,!1))},[n]),b.useEffect(()=>{!n&&!u.size&&r&&r()},[n]),e=(0,M.jsx)(Pg,{pop:o===`popLayout`,isPresent:n,anchorX:s,anchorY:c,root:l,children:e}),(0,M.jsx)(qs.Provider,{value:p,children:e})};function Ig(){return new Map}function Lg(e=!0){let t=(0,b.useContext)(qs);if(t===null)return[!0,null];let{isPresent:n,onExitComplete:r,register:i}=t,a=(0,b.useId)();(0,b.useEffect)(()=>{if(e)return i(a)},[e]);let o=(0,b.useCallback)(()=>e&&r&&r(a),[a,r,e]);return!n&&r?[!1,o]:[!0]}var Rg=e=>e.key||``;function zg(e){let t=[];return b.Children.forEach(e,e=>{(0,b.isValidElement)(e)&&t.push(e)}),t}var Bg=({children:e,custom:t,initial:n=!0,onExitComplete:r,presenceAffectsLayout:i=!0,mode:a=`sync`,propagate:o=!1,anchorX:s=`left`,anchorY:c=`top`,root:l})=>{let[u,d]=Lg(o),f=(0,b.useMemo)(()=>zg(e),[e]),p=o&&!u?[]:f.map(Rg),m=(0,b.useRef)(!0),h=(0,b.useRef)(f),g=Gs(()=>new Map),_=(0,b.useRef)(new Set),[v,y]=(0,b.useState)(f),[x,S]=(0,b.useState)(f);Ks(()=>{m.current=!1,h.current=f;for(let e=0;e<x.length;e++){let t=Rg(x[e]);p.includes(t)?(g.delete(t),_.current.delete(t)):g.get(t)!==!0&&g.set(t,!1)}},[x,p.length,p.join(`-`)]);let C=[];if(f!==v){let e=[...f];for(let t=0;t<x.length;t++){let n=x[t],r=Rg(n);p.includes(r)||(e.splice(t,0,n),C.push(n))}return a===`wait`&&C.length&&(e=C),S(zg(e)),y(f),null}let{forceRender:w}=(0,b.useContext)(Ws);return(0,M.jsx)(M.Fragment,{children:x.map(e=>{let v=Rg(e),y=o&&!u?!1:f===x||p.includes(v);return(0,M.jsx)(Fg,{isPresent:y,initial:!m.current||n?void 0:!1,custom:t,presenceAffectsLayout:i,mode:a,root:l,onExitComplete:y?void 0:()=>{if(_.current.has(v))return;if(g.has(v))_.current.add(v),g.set(v,!0);else return;let e=!0;g.forEach(t=>{t||(e=!1)}),e&&(w?.(),S(h.current),o&&d?.(),r&&r())},anchorX:s,anchorY:c,children:e},v)})})},Vg=(0,b.createContext)({strict:!1}),Hg={animation:[`animate`,`variants`,`whileHover`,`whileTap`,`exit`,`whileInView`,`whileFocus`,`whileDrag`],exit:[`exit`],drag:[`drag`,`dragControls`],focus:[`whileFocus`],hover:[`whileHover`,`onHoverStart`,`onHoverEnd`],tap:[`whileTap`,`onTap`,`onTapStart`,`onTapCancel`],pan:[`onPan`,`onPanStart`,`onPanSessionStart`,`onPanEnd`],inView:[`whileInView`,`onViewportEnter`,`onViewportLeave`],layout:[`layout`,`layoutId`]},Ug=!1;function Wg(){if(Ug)return;let e={};for(let t in Hg)e[t]={isEnabled:e=>Hg[t].some(t=>!!e[t])};Kp(e),Ug=!0}function Gg(){return Wg(),qp()}function Kg(e){let t=Gg();for(let n in e)t[n]={...t[n],...e[n]};Kp(t)}var qg=new Set(`animate.exit.variants.initial.style.values.variants.transition.transformTemplate.custom.inherit.onBeforeLayoutMeasure.onAnimationStart.onAnimationComplete.onUpdate.onDragStart.onDrag.onDragEnd.onMeasureDragConstraints.onDirectionLock.onDragTransitionEnd._dragX._dragY.onHoverStart.onHoverEnd.onViewportEnter.onViewportLeave.globalTapTarget.propagate.ignoreStrict.viewport`.split(`.`));function Jg(e){return e.startsWith(`while`)||e.startsWith(`drag`)&&e!==`draggable`||e.startsWith(`layout`)||e.startsWith(`onTap`)||e.startsWith(`onPan`)||e.startsWith(`onLayout`)||qg.has(e)}var Yg=c({default:()=>Xg}),Xg,Zg=o((()=>{throw Xg={},Error(`Could not resolve "@emotion/is-prop-valid" imported by "framer-motion". Is it installed?`)})),Qg=e=>!Jg(e);function $g(e){typeof e==`function`&&(Qg=t=>t.startsWith(`on`)?!Jg(t):e(t))}try{$g((Zg(),d(Yg)).default)}catch{}function e_(e,t,n){let r={};for(let i in e)i===`values`&&typeof e.values==`object`||uf(e[i])||(Qg(i)||n===!0&&Jg(i)||!t&&!Jg(i)||e.draggable&&i.startsWith(`onDrag`))&&(r[i]=e[i]);return r}var t_=(0,b.createContext)({});function n_(e,t){if(Lp(e)){let{initial:t,animate:n}=e;return{initial:t===!1||Pp(t)?t:void 0,animate:Pp(n)?n:void 0}}return e.inherit===!1?{}:t}function r_(e){let{initial:t,animate:n}=n_(e,(0,b.useContext)(t_));return(0,b.useMemo)(()=>({initial:t,animate:n}),[i_(t),i_(n)])}function i_(e){return Array.isArray(e)?e.join(` `):e}var a_=()=>({style:{},transform:{},transformOrigin:{},vars:{}});function o_(e,t,n){for(let r in t)!uf(t[r])&&!Dm(r,n)&&(e[r]=t[r])}function s_({transformTemplate:e},t){return(0,b.useMemo)(()=>{let n=a_();return xm(n,t,e),Object.assign({},n.vars,n.style)},[t])}function c_(e,t){let n=e.style||{},r={};return o_(r,n,e),Object.assign(r,s_(e,t)),r}function l_(e,t){let n={},r=c_(e,t);return e.drag&&e.dragListener!==!1&&(n.draggable=!1,r.userSelect=r.WebkitUserSelect=r.WebkitTouchCallout=`none`,r.touchAction=e.drag===!0?`none`:`pan-${e.drag===`x`?`y`:`x`}`),e.tabIndex===void 0&&(e.onTap||e.onTapStart||e.whileTap)&&(n.tabIndex=0),n.style=r,n}var u_=()=>({...a_(),attrs:{}});function d_(e,t,n,r){let i=(0,b.useMemo)(()=>{let n=u_();return Fm(n,t,Lm(r),e.transformTemplate,e.style),{...n.attrs,style:{...n.style}}},[t]);if(e.style){let t={};o_(t,e.style,e),i.style={...t,...i.style}}return i}var f_=[`animate`,`circle`,`defs`,`desc`,`ellipse`,`g`,`image`,`line`,`filter`,`marker`,`mask`,`metadata`,`path`,`pattern`,`polygon`,`polyline`,`rect`,`stop`,`switch`,`symbol`,`svg`,`text`,`tspan`,`use`,`view`];function p_(e){return typeof e!=`string`||e.includes(`-`)?!1:!!(f_.indexOf(e)>-1||/[A-Z]/u.test(e))}function m_(e,t,n,{latestValues:r},i,a=!1,o){let s=(o??p_(e)?d_:l_)(t,r,i,e),c=e_(t,typeof e==`string`,a),l=e===b.Fragment?{}:{...c,...s,ref:n},{children:u}=t,d=(0,b.useMemo)(()=>uf(u)?u.get():u,[u]);return(0,b.createElement)(e,{...l,children:d})}function h_({scrapeMotionValuesFromProps:e,createRenderState:t},n,r,i){return{latestValues:g_(n,r,i,e),renderState:t()}}function g_(e,t,n,r){let i={},a=r(e,{});for(let e in a)i[e]=Wh(a[e]);let{initial:o,animate:s}=e,c=Lp(e),l=Rp(e);t&&l&&!c&&e.inherit!==!1&&(o===void 0&&(o=t.initial),s===void 0&&(s=t.animate));let u=n?n.initial===!1:!1;u||=o===!1;let d=u?s:o;if(d&&typeof d!=`boolean`&&!Np(d)){let t=Array.isArray(d)?d:[d];for(let n=0;n<t.length;n++){let r=nf(e,t[n]);if(r){let{transitionEnd:e,transition:t,...n}=r;for(let e in n){let t=n[e];if(Array.isArray(t)){let e=u?t.length-1:0;t=t[e]}t!==null&&(i[e]=t)}for(let t in e)i[t]=e[t]}}}return i}var __=e=>(t,n)=>{let r=(0,b.useContext)(t_),i=(0,b.useContext)(qs),a=()=>h_(e,t,r,i);return n?a():Gs(a)},v_=__({scrapeMotionValuesFromProps:Om,createRenderState:a_}),y_=__({scrapeMotionValuesFromProps:zm,createRenderState:u_}),b_=Symbol.for(`motionComponentSymbol`);function x_(e,t,n){let r=(0,b.useRef)(n);(0,b.useInsertionEffect)(()=>{r.current=n});let i=(0,b.useRef)(null);return(0,b.useCallback)(n=>{n&&e.onMount?.(n),t&&(n?t.mount(n):t.unmount());let a=r.current;if(typeof a==`function`)if(n){let e=a(n);typeof e==`function`&&(i.current=e)}else i.current?(i.current(),i.current=null):a(n);else a&&(a.current=n)},[t])}var S_=(0,b.createContext)({});function C_(e){return e&&typeof e==`object`&&Object.prototype.hasOwnProperty.call(e,`current`)}function w_(e,t,n,r,i,a){let{visualElement:o}=(0,b.useContext)(t_),s=(0,b.useContext)(Vg),c=(0,b.useContext)(qs),l=(0,b.useContext)(kg),u=l.reducedMotion,d=l.skipAnimations,f=(0,b.useRef)(null),p=(0,b.useRef)(!1);r||=s.renderer,!f.current&&r&&(f.current=r(e,{visualState:t,parent:o,props:n,presenceContext:c,blockInitialAnimation:c?c.initial===!1:!1,reducedMotionConfig:u,skipAnimations:d,isSVG:a}),p.current&&f.current&&(f.current.manuallyAnimateOnMount=!0));let m=f.current,h=(0,b.useContext)(S_);m&&!m.projection&&i&&(m.type===`html`||m.type===`svg`)&&T_(f.current,n,i,h);let g=(0,b.useRef)(!1);(0,b.useInsertionEffect)(()=>{m&&g.current&&m.update(n,c)});let _=n[mf],v=(0,b.useRef)(!!_&&typeof window<`u`&&!window.MotionHandoffIsComplete?.(_)&&window.MotionHasOptimisedAnimation?.(_));return Ks(()=>{p.current=!0,m&&(g.current=!0,window.MotionIsMounted=!0,m.updateFeatures(),m.scheduleRenderMicrotask(),v.current&&m.animationState&&m.animationState.animateChanges())}),(0,b.useEffect)(()=>{m&&(!v.current&&m.animationState&&m.animationState.animateChanges(),v.current&&=(queueMicrotask(()=>{window.MotionHandoffMarkAsComplete?.(_)}),!1),m.enteringChildren=void 0)}),m}function T_(e,t,n,r){let{layoutId:i,layout:a,drag:o,dragConstraints:s,layoutScroll:c,layoutRoot:l,layoutAnchor:u,layoutCrossfade:d}=t;e.projection=new n(e.latestValues,t[`data-framer-portal-id`]?void 0:E_(e.parent)),e.projection.setOptions({layoutId:i,layout:a,alwaysMeasureLayout:!!o||s&&C_(s),visualElement:e,animationType:typeof a==`string`?a:`both`,initialPromotionConfig:r,crossfade:d,layoutScroll:c,layoutRoot:l,layoutAnchor:u})}function E_(e){if(e)return e.options.allowProjection===!1?E_(e.parent):e.projection}function D_(e,{forwardMotionProps:t=!1,type:n}={},r,i){r&&Kg(r);let a=n?n===`svg`:p_(e),o=a?y_:v_;function s(n,s){let c,l={...(0,b.useContext)(kg),...n,layoutId:O_(n)},{isStatic:u}=l,d=r_(n),f=o(n,u);if(!u&&typeof window<`u`){k_(l,r);let t=A_(l);c=t.MeasureLayout,d.visualElement=w_(e,f,l,i,t.ProjectionNode,a)}return(0,M.jsxs)(t_.Provider,{value:d,children:[c&&d.visualElement?(0,M.jsx)(c,{visualElement:d.visualElement,...l}):null,m_(e,n,x_(f,d.visualElement,s),f,u,t,a)]})}s.displayName=`motion.${typeof e==`string`?e:`create(${e.displayName??e.name??``})`}`;let c=(0,b.forwardRef)(s);return c[b_]=e,c}function O_({layoutId:e}){let t=(0,b.useContext)(Ws).id;return t&&e!==void 0?t+`-`+e:e}function k_(e,t){(0,b.useContext)(Vg).strict}function A_(e){let{drag:t,layout:n}=Gg();if(!t&&!n)return{};let r={...t,...n};return{MeasureLayout:t?.isEnabled(e)||n?.isEnabled(e)?r.MeasureLayout:void 0,ProjectionNode:r.ProjectionNode}}function j_(e,t){if(typeof Proxy>`u`)return D_;let n=new Map,r=(n,r)=>D_(n,r,e,t);return new Proxy((e,t)=>r(e,t),{get:(i,a)=>a===`create`?r:(n.has(a)||n.set(a,D_(a,void 0,e,t)),n.get(a))})}var M_=(e,t)=>t.isSVG??p_(e)?new Bm(t):new Am(t,{allowProjection:e!==b.Fragment}),N_=class extends Xp{constructor(e){super(e),e.animationState||=qm(e)}updateAnimationControlsSubscription(){let{animate:e}=this.node.getProps();Np(e)&&(this.unmountControls=e.subscribe(this.node))}mount(){this.updateAnimationControlsSubscription()}update(){let{animate:e}=this.node.getProps(),{animate:t}=this.node.prevProps||{};e!==t&&this.updateAnimationControlsSubscription()}unmount(){this.node.animationState.reset(),this.unmountControls?.()}},P_=0,F_={animation:{Feature:N_},exit:{Feature:class extends Xp{constructor(){super(...arguments),this.id=P_++,this.isExitComplete=!1}update(){if(!this.node.presenceContext)return;let{isPresent:e,onExitComplete:t}=this.node.presenceContext,{isPresent:n}=this.node.prevPresenceContext||{};if(!this.node.animationState||e===n)return;if(e&&n===!1){if(this.isExitComplete){let{initial:e,custom:t}=this.node.getProps();if(typeof e==`string`||typeof e==`object`&&e&&!Array.isArray(e)){let n=rf(this.node,e,t);if(n){let{transition:e,transitionEnd:t,...r}=n;for(let e in r)this.node.getValue(e)?.jump(r[e])}}this.node.animationState.reset(),this.node.animationState.animateChanges()}else this.node.animationState.setActive(`exit`,!1);this.isExitComplete=!1;return}let r=this.node.animationState.setActive(`exit`,!e);t&&!e&&r.then(()=>{this.isExitComplete=!0,t(this.id)})}mount(){let{register:e,onExitComplete:t}=this.node.presenceContext||{};t&&t(this.id),e&&(this.unmount=e(this.id))}unmount(){}}}};function I_(e){return{point:{x:e.pageX,y:e.pageY}}}var L_=e=>t=>Qf(t)&&e(t,I_(t));function R_(e,t,n,r){return Bh(e,t,L_(n),r)}var z_=({current:e})=>e?e.ownerDocument.defaultView:null,B_=(e,t)=>Math.abs(e-t);function V_(e,t){let n=B_(e.x,t.x),r=B_(e.y,t.y);return Math.sqrt(n**2+r**2)}var H_=new Set([`auto`,`scroll`]),U_=class{constructor(e,t,{transformPagePoint:n,contextWindow:r=window,dragSnapToOrigin:i=!1,distanceThreshold:a=3,element:o}={}){if(this.startEvent=null,this.lastMoveEvent=null,this.lastMoveEventInfo=null,this.lastRawMoveEventInfo=null,this.handlers={},this.contextWindow=window,this.scrollPositions=new Map,this.removeScrollListeners=null,this.onElementScroll=e=>{this.handleScroll(e.target)},this.onWindowScroll=()=>{this.handleScroll(window)},this.updatePoint=()=>{if(!(this.lastMoveEvent&&this.lastMoveEventInfo))return;this.lastRawMoveEventInfo&&(this.lastMoveEventInfo=W_(this.lastRawMoveEventInfo,this.transformPagePoint));let e=K_(this.lastMoveEventInfo,this.history),t=this.startEvent!==null,n=V_(e.offset,{x:0,y:0})>=this.distanceThreshold;if(!t&&!n)return;let{point:r}=e,{timestamp:i}=Rc;this.history.push({...r,timestamp:i});let{onStart:a,onMove:o}=this.handlers;t||(a&&a(this.lastMoveEvent,e),this.startEvent=this.lastMoveEvent),o&&o(this.lastMoveEvent,e)},this.handlePointerMove=(e,t)=>{this.lastMoveEvent=e,this.lastRawMoveEventInfo=t,this.lastMoveEventInfo=W_(t,this.transformPagePoint),Ic.update(this.updatePoint,!0)},this.handlePointerUp=(e,t)=>{this.end();let{onEnd:n,onSessionEnd:r,resumeAnimation:i}=this.handlers;if((this.dragSnapToOrigin||!this.startEvent)&&i&&i(),!(this.lastMoveEvent&&this.lastMoveEventInfo))return;let a=K_(e.type===`pointercancel`?this.lastMoveEventInfo:W_(t,this.transformPagePoint),this.history);this.startEvent&&n&&n(e,a),r&&r(e,a)},!Qf(e))return;this.dragSnapToOrigin=i,this.handlers=t,this.transformPagePoint=n,this.distanceThreshold=a,this.contextWindow=r||window;let s=W_(I_(e),this.transformPagePoint),{point:c}=s,{timestamp:l}=Rc;this.history=[{...c,timestamp:l}];let{onSessionStart:u}=t;u&&u(e,K_(s,this.history)),this.removeListeners=rc(R_(this.contextWindow,`pointermove`,this.handlePointerMove),R_(this.contextWindow,`pointerup`,this.handlePointerUp),R_(this.contextWindow,`pointercancel`,this.handlePointerUp)),o&&this.startScrollTracking(o)}startScrollTracking(e){let t=e.parentElement;for(;t;){let e=getComputedStyle(t);(H_.has(e.overflowX)||H_.has(e.overflowY))&&this.scrollPositions.set(t,{x:t.scrollLeft,y:t.scrollTop}),t=t.parentElement}this.scrollPositions.set(window,{x:window.scrollX,y:window.scrollY}),window.addEventListener(`scroll`,this.onElementScroll,{capture:!0}),window.addEventListener(`scroll`,this.onWindowScroll),this.removeScrollListeners=()=>{window.removeEventListener(`scroll`,this.onElementScroll,{capture:!0}),window.removeEventListener(`scroll`,this.onWindowScroll)}}handleScroll(e){let t=this.scrollPositions.get(e);if(!t)return;let n=e===window,r=n?{x:window.scrollX,y:window.scrollY}:{x:e.scrollLeft,y:e.scrollTop},i={x:r.x-t.x,y:r.y-t.y};i.x===0&&i.y===0||(n?this.lastMoveEventInfo&&(this.lastMoveEventInfo.point.x+=i.x,this.lastMoveEventInfo.point.y+=i.y):this.history.length>0&&(this.history[0].x-=i.x,this.history[0].y-=i.y),this.scrollPositions.set(e,r),Ic.update(this.updatePoint,!0))}updateHandlers(e){this.handlers=e}end(){this.removeListeners&&this.removeListeners(),this.removeScrollListeners&&this.removeScrollListeners(),this.scrollPositions.clear(),Lc(this.updatePoint)}};function W_(e,t){return t?{point:t(e.point)}:e}function G_(e,t){return{x:e.x-t.x,y:e.y-t.y}}function K_({point:e},t){return{point:e,delta:G_(e,J_(t)),offset:G_(e,q_(t)),velocity:Y_(t,.1)}}function q_(e){return e[0]}function J_(e){return e[e.length-1]}function Y_(e,t){if(e.length<2)return{x:0,y:0};let n=e.length-1,r=null,i=J_(e);for(;n>=0&&(r=e[n],!(i.timestamp-r.timestamp>oc(t)));)n--;if(!r)return{x:0,y:0};r===e[0]&&e.length>2&&i.timestamp-r.timestamp>oc(t)*2&&(r=e[1]);let a=sc(i.timestamp-r.timestamp);if(a===0)return{x:0,y:0};let o={x:(i.x-r.x)/a,y:(i.y-r.y)/a};return o.x===1/0&&(o.x=0),o.y===1/0&&(o.y=0),o}function X_(e,{min:t,max:n},r){return t!==void 0&&e<t?e=r?Rl(t,e,r.min):Math.max(e,t):n!==void 0&&e>n&&(e=r?Rl(n,e,r.max):Math.min(e,n)),e}function Z_(e,t,n){return{min:t===void 0?void 0:e.min+t,max:n===void 0?void 0:e.max+n-(e.max-e.min)}}function Q_(e,{top:t,left:n,bottom:r,right:i}){return{x:Z_(e.x,n,i),y:Z_(e.y,t,r)}}function $_(e,t){let n=t.min-e.min,r=t.max-e.max;return t.max-t.min<e.max-e.min&&([n,r]=[r,n]),{min:n,max:r}}function ev(e,t){return{x:$_(e.x,t.x),y:$_(e.y,t.y)}}function tv(e,t){let n=.5,r=oh(e),i=oh(t);return i>r?n=ic(t.min,t.max-r,e.min):r>i&&(n=ic(e.min,e.max-i,t.min)),Xs(0,1,n)}function nv(e,t){let n={};return t.min!==void 0&&(n.min=t.min-e.min),t.max!==void 0&&(n.max=t.max-e.min),n}var rv=.35;function iv(e=rv){return e===!1?e=0:e===!0&&(e=rv),{x:av(e,`left`,`right`),y:av(e,`top`,`bottom`)}}function av(e,t,n){return{min:ov(e,t),max:ov(e,n)}}function ov(e,t){return typeof e==`number`?e:e[t]||0}var sv=new WeakMap,cv=class{constructor(e){this.openDragLock=null,this.isDragging=!1,this.currentDirection=null,this.originPoint={x:0,y:0},this.constraints=!1,this.hasMutatedConstraints=!1,this.elastic=jp(),this.latestPointerEvent=null,this.latestPanInfo=null,this.visualElement=e}start(e,{snapToCursor:t=!1,distanceThreshold:n}={}){let{presenceContext:r}=this.visualElement;if(r&&r.isPresent===!1)return;let i=e=>{t&&this.snapToCursor(I_(e).point),this.stopAnimation()},a=(e,t)=>{let{drag:n,dragPropagation:r,onDragStart:i}=this.getProps();if(n&&!r&&(this.openDragLock&&this.openDragLock(),this.openDragLock=qf(n),!this.openDragLock))return;this.latestPointerEvent=e,this.latestPanInfo=t,this.isDragging=!0,this.currentDirection=null,this.resolveConstraints(),this.visualElement.projection&&(this.visualElement.projection.isAnimationBlocked=!0,this.visualElement.projection.target=void 0),Oh(e=>{let t=this.getAxisMotionValue(e).get()||0;if(fl.test(t)){let{projection:n}=this.visualElement;if(n&&n.layout){let r=n.layout.layoutBox[e];r&&(t=oh(r)*(parseFloat(t)/100))}}this.originPoint[e]=t}),i&&Ic.update(()=>i(e,t),!1,!0),ff(this.visualElement,`transform`);let{animationState:a}=this.visualElement;a&&a.setActive(`whileDrag`,!0)},o=(e,t)=>{this.latestPointerEvent=e,this.latestPanInfo=t;let{dragPropagation:n,dragDirectionLock:r,onDirectionLock:i,onDrag:a}=this.getProps();if(!n&&!this.openDragLock)return;let{offset:o}=t;if(r&&this.currentDirection===null){this.currentDirection=fv(o),this.currentDirection!==null&&i&&i(this.currentDirection);return}this.updateAxis(`x`,t.point,o),this.updateAxis(`y`,t.point,o),this.visualElement.render(),a&&Ic.update(()=>a(e,t),!1,!0)},s=(e,t)=>{this.latestPointerEvent=e,this.latestPanInfo=t,this.stop(e,t),this.latestPointerEvent=null,this.latestPanInfo=null},c=()=>{let{dragSnapToOrigin:e}=this.getProps();(e||this.constraints)&&this.startAnimation({x:0,y:0})},{dragSnapToOrigin:l}=this.getProps();this.panSession=new U_(e,{onSessionStart:i,onStart:a,onMove:o,onSessionEnd:s,resumeAnimation:c},{transformPagePoint:this.visualElement.getTransformPagePoint(),dragSnapToOrigin:l,distanceThreshold:n,contextWindow:z_(this.visualElement),element:this.visualElement.current})}stop(e,t){let n=e||this.latestPointerEvent,r=t||this.latestPanInfo,i=this.isDragging;if(this.cancel(),!i||!r||!n)return;let{velocity:a}=r;this.startAnimation(a);let{onDragEnd:o}=this.getProps();o&&Ic.postRender(()=>o(n,r))}cancel(){this.isDragging=!1;let{projection:e,animationState:t}=this.visualElement;e&&(e.isAnimationBlocked=!1),this.endPanSession();let{dragPropagation:n}=this.getProps();!n&&this.openDragLock&&(this.openDragLock(),this.openDragLock=null),t&&t.setActive(`whileDrag`,!1)}endPanSession(){this.panSession&&this.panSession.end(),this.panSession=void 0}updateAxis(e,t,n){let{drag:r}=this.getProps();if(!n||!dv(e,r,this.currentDirection))return;let i=this.getAxisMotionValue(e),a=this.originPoint[e]+n[e];this.constraints&&this.constraints[e]&&(a=X_(a,this.constraints[e],this.elastic[e])),i.set(a)}resolveConstraints(){let{dragConstraints:e,dragElastic:t}=this.getProps(),n=this.visualElement.projection&&!this.visualElement.projection.layout?this.visualElement.projection.measure(!1):this.visualElement.projection?.layout,r=this.constraints;e&&C_(e)?this.constraints||=this.resolveRefConstraints():e&&n?this.constraints=Q_(n.layoutBox,e):this.constraints=!1,this.elastic=iv(t),r!==this.constraints&&!C_(e)&&n&&this.constraints&&!this.hasMutatedConstraints&&Oh(e=>{this.constraints!==!1&&this.getAxisMotionValue(e)&&(this.constraints[e]=nv(n.layoutBox[e],this.constraints[e]))})}resolveRefConstraints(){let{dragConstraints:e,onMeasureDragConstraints:t}=this.getProps();if(!e||!C_(e))return!1;let n=e.current,{projection:r}=this.visualElement;if(!r||!r.layout)return!1;r.root&&(r.root.scroll=void 0,r.root.updateScroll());let i=_m(n,r.root,this.visualElement.getTransformPagePoint()),a=ev(r.layout.layoutBox,i);if(t){let e=t(Qp(a));this.hasMutatedConstraints=!!e,e&&(a=Zp(e))}return a}startAnimation(e){let{drag:t,dragMomentum:n,dragElastic:r,dragTransition:i,dragSnapToOrigin:a,onDragTransitionEnd:o}=this.getProps(),s=this.constraints||{},c=Oh(o=>{if(!dv(o,t,this.currentDirection))return;let c=s&&s[o]||{};(a===!0||a===o)&&(c={min:0,max:0});let l=r?200:1e6,u=r?40:1e7,d={type:`inertia`,velocity:n?e[o]:0,bounceStiffness:l,bounceDamping:u,timeConstant:750,restDelta:1,restSpeed:10,...i,...c};return this.startAxisValueAnimation(o,d)});return Promise.all(c).then(o)}startAxisValueAnimation(e,t){let n=this.getAxisMotionValue(e);return ff(this.visualElement,e),n.start(Zd(e,n,0,t,this.visualElement,!1))}stopAnimation(){Oh(e=>this.getAxisMotionValue(e).stop())}getAxisMotionValue(e){let t=`_drag${e.toUpperCase()}`;return this.visualElement.getProps()[t]||this.visualElement.getValue(e,this.visualElement.latestValues[e]??0)}snapToCursor(e){Oh(t=>{let{drag:n}=this.getProps();if(!dv(t,n,this.currentDirection))return;let{projection:r}=this.visualElement,i=this.getAxisMotionValue(t);if(r&&r.layout){let{min:n,max:a}=r.layout.layoutBox[t],o=i.get()||0;i.set(e[t]-Rl(n,a,.5)+o)}})}scalePositionWithinConstraints(){if(!this.visualElement.current)return;let{drag:e,dragConstraints:t}=this.getProps(),{projection:n}=this.visualElement;if(!C_(t)||!n||!this.constraints)return;this.stopAnimation();let r={x:0,y:0};Oh(e=>{let t=this.getAxisMotionValue(e);if(t&&this.constraints!==!1){let n=t.get();r[e]=tv({min:n,max:n},this.constraints[e])}});let{transformTemplate:i}=this.visualElement.getProps();this.visualElement.current.style.transform=i?i({},``):`none`,n.root&&n.root.updateScroll(),n.updateLayout(),this.constraints=!1,this.resolveConstraints(),Oh(t=>{if(!dv(t,e,null))return;let n=this.getAxisMotionValue(t),{min:i,max:a}=this.constraints[t];n.set(Rl(i,a,r[t]))}),this.visualElement.render()}addListeners(){if(!this.visualElement.current)return;sv.set(this.visualElement,this);let e=this.visualElement.current,t=R_(e,`pointerdown`,t=>{let{drag:n,dragListener:r=!0}=this.getProps(),i=t.target,a=i!==e&&np(i);n&&r&&!a&&this.start(t)}),n,r=()=>{let{dragConstraints:t}=this.getProps();C_(t)&&t.current&&(this.constraints=this.resolveRefConstraints(),n||=uv(e,t.current,()=>this.scalePositionWithinConstraints()))},{projection:i}=this.visualElement,a=i.addEventListener(`measure`,r);i&&!i.layout&&(i.root&&i.root.updateScroll(),i.updateLayout()),Ic.read(r);let o=Bh(window,`resize`,()=>this.scalePositionWithinConstraints()),s=i.addEventListener(`didUpdate`,(({delta:e,hasLayoutChanged:t})=>{this.isDragging&&t&&(Oh(t=>{let n=this.getAxisMotionValue(t);n&&(this.originPoint[t]+=e[t].translate,n.set(n.get()+e[t].translate))}),this.visualElement.render())}));return()=>{o(),t(),a(),s&&s(),n&&n()}}getProps(){let e=this.visualElement.getProps(),{drag:t=!1,dragDirectionLock:n=!1,dragPropagation:r=!1,dragConstraints:i=!1,dragElastic:a=rv,dragMomentum:o=!0}=e;return{...e,drag:t,dragDirectionLock:n,dragPropagation:r,dragConstraints:i,dragElastic:a,dragMomentum:o}}};function lv(e){let t=!0;return()=>{if(t){t=!1;return}e()}}function uv(e,t,n){let r=wp(e,lv(n)),i=wp(t,lv(n));return()=>{r(),i()}}function dv(e,t,n){return(t===!0||t===e)&&(n===null||n===e)}function fv(e,t=10){let n=null;return Math.abs(e.y)>t?n=`y`:Math.abs(e.x)>t&&(n=`x`),n}var pv=class extends Xp{constructor(e){super(e),this.removeGroupControls=nc,this.removeListeners=nc,this.controls=new cv(e)}mount(){let{dragControls:e}=this.node.getProps();e&&(this.removeGroupControls=e.subscribe(this.controls)),this.removeListeners=this.controls.addListeners()||nc}update(){let{dragControls:e}=this.node.getProps(),{dragControls:t}=this.node.prevProps||{};e!==t&&(this.removeGroupControls(),e&&(this.removeGroupControls=e.subscribe(this.controls)))}unmount(){this.removeGroupControls(),this.removeListeners(),this.controls.isDragging||this.controls.endPanSession()}},mv=e=>(t,n)=>{e&&Ic.update(()=>e(t,n),!1,!0)},hv=class extends Xp{constructor(){super(...arguments),this.removePointerDownListener=nc}onPointerDown(e){this.session=new U_(e,this.createPanHandlers(),{transformPagePoint:this.node.getTransformPagePoint(),contextWindow:z_(this.node)})}createPanHandlers(){let{onPanSessionStart:e,onPanStart:t,onPan:n,onPanEnd:r}=this.node.getProps();return{onSessionStart:mv(e),onStart:mv(t),onMove:mv(n),onEnd:(e,t)=>{delete this.session,r&&Ic.postRender(()=>r(e,t))}}}mount(){this.removePointerDownListener=R_(this.node.current,`pointerdown`,e=>this.onPointerDown(e))}update(){this.session&&this.session.updateHandlers(this.createPanHandlers())}unmount(){this.removePointerDownListener(),this.session&&this.session.end()}},gv=!1,_v=class extends b.Component{componentDidMount(){let{visualElement:e,layoutGroup:t,switchLayoutGroup:n,layoutId:r}=this.props,{projection:i}=e;i&&(t.group&&t.group.add(i),n&&n.register&&r&&n.register(i),gv&&i.root.didUpdate(),i.addEventListener(`animationComplete`,()=>{this.safeToRemove()}),i.setOptions({...i.options,layoutDependency:this.props.layoutDependency,onExitComplete:()=>this.safeToRemove()})),Kh.hasEverUpdated=!0}getSnapshotBeforeUpdate(e){let{layoutDependency:t,visualElement:n,drag:r,isPresent:i}=this.props,{projection:a}=n;return a?(a.isPresent=i,e.layoutDependency!==t&&a.setOptions({...a.options,layoutDependency:t}),gv=!0,r||e.layoutDependency!==t||t===void 0||e.isPresent!==i?a.willUpdate():this.safeToRemove(),e.isPresent!==i&&(i?a.promote():a.relegate()||Ic.postRender(()=>{let e=a.getStack();(!e||!e.members.length)&&this.safeToRemove()})),null):null}componentDidUpdate(){let{visualElement:e,layoutAnchor:t}=this.props,{projection:n}=e;n&&(n.options.layoutAnchor=t,n.root.didUpdate(),Uf.postRender(()=>{!n.currentAnimation&&n.isLead()&&this.safeToRemove()}))}componentWillUnmount(){let{visualElement:e,layoutGroup:t,switchLayoutGroup:n}=this.props,{projection:r}=e;gv=!0,r&&(r.scheduleCheckAfterUnmount(),t&&t.group&&t.group.remove(r),n&&n.deregister&&n.deregister(r))}safeToRemove(){let{safeToRemove:e}=this.props;e&&e()}render(){return null}};function vv(e){let[t,n]=Lg(),r=(0,b.useContext)(Ws);return(0,M.jsx)(_v,{...e,layoutGroup:r,switchLayoutGroup:(0,b.useContext)(S_),isPresent:t,safeToRemove:n})}var yv={pan:{Feature:hv},drag:{Feature:pv,ProjectionNode:Og,MeasureLayout:vv}};function bv(e,t,n){let{props:r}=e;e.animationState&&r.whileHover&&e.animationState.setActive(`whileHover`,n===`Start`);let i=r[`onHover`+n];i&&Ic.postRender(()=>i(t,I_(t)))}var xv=class extends Xp{mount(){let{current:e}=this.node;e&&(this.unmount=Xf(e,(e,t)=>(bv(this.node,t,`Start`),e=>bv(this.node,e,`End`))))}unmount(){}},Sv=class extends Xp{constructor(){super(...arguments),this.isActive=!1}onFocus(){let e=!1;try{e=this.node.current.matches(`:focus-visible`)}catch{e=!0}!e||!this.node.animationState||(this.node.animationState.setActive(`whileFocus`,!0),this.isActive=!0)}onBlur(){!this.isActive||!this.node.animationState||(this.node.animationState.setActive(`whileFocus`,!1),this.isActive=!1)}mount(){this.unmount=rc(Bh(this.node.current,`focus`,()=>this.onFocus()),Bh(this.node.current,`blur`,()=>this.onBlur()))}unmount(){}};function Cv(e,t,n){let{props:r}=e;if(e.current instanceof HTMLButtonElement&&e.current.disabled)return;e.animationState&&r.whileTap&&e.animationState.setActive(`whileTap`,n===`Start`);let i=r[`onTap`+(n===`End`?``:n)];i&&Ic.postRender(()=>i(t,I_(t)))}var wv=class extends Xp{mount(){let{current:e}=this.node;if(!e)return;let{globalTapTarget:t,propagate:n}=this.node.props;this.unmount=lp(e,(e,t)=>(Cv(this.node,t,`Start`),(e,{success:t})=>Cv(this.node,e,t?`End`:`Cancel`)),{useGlobalTarget:t,stopPropagation:n?.tap===!1})}unmount(){}},Tv=new WeakMap,Ev=new WeakMap,Dv=e=>{let t=Tv.get(e.target);t&&t(e)},Ov=e=>{e.forEach(Dv)};function kv({root:e,...t}){let n=e||document;Ev.has(n)||Ev.set(n,{});let r=Ev.get(n),i=JSON.stringify(t);return r[i]||(r[i]=new IntersectionObserver(Ov,{root:e,...t})),r[i]}function Av(e,t,n){let r=kv(t);return Tv.set(e,n),r.observe(e),()=>{Tv.delete(e),r.unobserve(e)}}var jv={some:0,all:1},Mv=class extends Xp{constructor(){super(...arguments),this.hasEnteredView=!1,this.isInView=!1}startObserver(){this.stopObserver?.();let{viewport:e={}}=this.node.getProps(),{root:t,margin:n,amount:r=`some`,once:i}=e,a={root:t?t.current:void 0,rootMargin:n,threshold:typeof r==`number`?r:jv[r]},o=e=>{let{isIntersecting:t}=e;if(this.isInView===t||(this.isInView=t,i&&!t&&this.hasEnteredView))return;t&&(this.hasEnteredView=!0),this.node.animationState&&this.node.animationState.setActive(`whileInView`,t);let{onViewportEnter:n,onViewportLeave:r}=this.node.getProps(),a=t?n:r;a&&a(e)};this.stopObserver=Av(this.node.current,a,o)}mount(){this.startObserver()}update(){if(typeof IntersectionObserver>`u`)return;let{props:e,prevProps:t}=this.node;[`amount`,`margin`,`root`].some(Nv(e,t))&&this.startObserver()}unmount(){this.stopObserver?.(),this.hasEnteredView=!1,this.isInView=!1}};function Nv({viewport:e={}},{viewport:t={}}={}){return n=>e[n]!==t[n]}var Pv={inView:{Feature:Mv},tap:{Feature:wv},focus:{Feature:Sv},hover:{Feature:xv}},Fv={layout:{ProjectionNode:Og,MeasureLayout:vv}},R=j_({...F_,...Pv,...yv,...Fv},M_);function Iv(e){let t=Gs(()=>Vd(e)),{isStatic:n}=(0,b.useContext)(kg);if(n){let[,n]=(0,b.useState)(e);(0,b.useEffect)(()=>t.on(`change`,n),[])}return t}function Lv(e){e.values.forEach(e=>e.stop())}function Rv(e,t){[...t].reverse().forEach(n=>{let r=e.getVariant(n);r&&lf(e,r),e.variantChildren&&e.variantChildren.forEach(e=>{Rv(e,t)})})}function zv(e,t){if(Array.isArray(t))return Rv(e,t);if(typeof t==`string`)return Rv(e,[t]);lf(e,t)}function Bv(){let e=new Set,t={subscribe(t){return e.add(t),()=>void e.delete(t)},start(t,n){let r=[];return e.forEach(e=>{r.push(bf(e,t,{transitionOverride:n}))}),Promise.all(r)},set(t){return e.forEach(e=>{zv(e,t)})},stop(){e.forEach(e=>{Lv(e)})},mount(){return()=>{t.stop()}}};return t}function Vv(){let e=Gs(Bv);return Ks(e.mount,[]),e}var Hv=Vv,Uv=`/Kids-Games/assets/pom-CfYEQPaj.jpeg`,Wv=`/Kids-Games/assets/lione-BxC2mUvs.png`,Gv=`/Kids-Games/assets/lionimag-BCbk32yY.png`,Kv=[{id:0,base:`ع`,harakah:` ُ`},{id:1,base:`ب`,harakah:`ُ`},{id:2,base:`ت`,harakah:`َ`},{id:3,base:`ث`,harakah:`ُ`},{id:4,base:`ج`,harakah:`َ`},{id:5,base:`ح`,harakah:`ُ`},{id:6,base:`خ`,harakah:`َ`},{id:7,base:`د`,harakah:`ُ`},{id:8,base:`ذ`,harakah:`ُ`},{id:9,base:`ر`,harakah:`َ`},{id:10,base:`ز`,harakah:`ُ`},{id:11,base:`س`,harakah:`َ`},{id:12,base:`ش`,harakah:`َ`},{id:13,base:`ص`,harakah:`ُ`},{id:14,base:`ض`,harakah:`َ`},{id:15,base:`ط`,harakah:`ُ`}];function qv(){let e=A(),[t,n]=(0,b.useState)(Kv),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(!1),d=(0,b.useRef)(new Audio(vo)),f=(0,b.useRef)(new Audio(yo)),p=(0,b.useMemo)(()=>Kv.filter(e=>e.harakah===`َ`).length,[]);(0,b.useEffect)(()=>(document.body.style.overflow=`hidden`,()=>{document.body.style.overflow=`auto`}),[]),(0,b.useEffect)(()=>{let e=setInterval(()=>{l||i(e=>e+1)},1e3);return()=>clearInterval(e)},[l]);let m=(e,t,r,i,c)=>{let l=document.getElementById(`lion-character`)?.getBoundingClientRect(),m=l?l.left+l.width/2:window.innerWidth*.5,h=l?l.top+l.height/2:window.innerHeight*.5,g=Math.sqrt((t.point.x-m)**2+(t.point.y-h)**2);if(g<130&&r.harakah===`َ`){s&&(d.current.currentTime=0,d.current.play().catch(()=>{})),n(e=>e.filter(e=>e.id!==r.id));let e=a+1;o(e),e>=p&&u(!0)}else g<130&&r.harakah!==`َ`&&s&&(f.current.currentTime=0,f.current.play().catch(()=>{})),i.set(0),c.set(0)};return(0,M.jsxs)(`div`,{style:Yv.container,children:[(0,M.jsx)(`img`,{src:Uv,alt:`Background`,style:Yv.bg}),(0,M.jsxs)(`div`,{style:Yv.topBar,children:[(0,M.jsxs)(`div`,{style:Yv.box,children:[`⏱️ `,Math.floor(r/60),`:`,String(r%60).padStart(2,`0`)]}),(0,M.jsx)(`div`,{style:Yv.mainTitle,children:`الأسد الجائع`}),(0,M.jsxs)(`div`,{style:Yv.box,children:[`🥩 `,a]})]}),(0,M.jsx)(`div`,{style:Yv.instructionBanner,children:`اسحب اللحم الذي عليه حركة الفتح وضعه في فم الأسد`}),(0,M.jsxs)(`div`,{className:`game-wrapper`,style:Yv.gameLayout,children:[(0,M.jsx)(`div`,{className:`meat-grid-mobile`,style:Yv.meatGrid,children:(0,M.jsx)(Bg,{children:t.map(e=>(0,M.jsx)(Jv,{item:e,onDragEnd:m},e.id))})}),(0,M.jsx)(R.div,{id:`lion-character`,animate:{scale:[1,1.04,1]},transition:{repeat:1/0,duration:2},style:Yv.lionContainer,children:(0,M.jsx)(`img`,{src:Wv,alt:`Lion`,className:`lion-img`,style:Yv.lion})})]}),!l&&(0,M.jsx)(()=>(0,M.jsxs)(`div`,{className:`action-buttons-mobile`,style:Yv.bottomButtons,children:[(0,M.jsx)(`button`,{onClick:()=>c(!s),style:Yv.circleBtn,children:s?(0,M.jsx)(I,{size:22}):(0,M.jsx)(L,{size:22})}),(0,M.jsx)(`button`,{onClick:()=>window.location.reload(),style:Yv.circleBtn,children:(0,M.jsx)(F,{size:22})}),(0,M.jsx)(`button`,{onClick:()=>e(`/Alhorof123`),style:Yv.circleBtn,children:(0,M.jsx)(N,{size:22})}),(0,M.jsx)(`button`,{onClick:()=>e(`/home`),style:Yv.circleBtn,children:(0,M.jsx)(P,{size:22})})]}),{}),l&&(0,M.jsxs)(`div`,{style:Yv.winStyle,children:[(0,M.jsx)(`h1`,{style:{fontSize:`clamp(26px, 6vw, 42px)`,marginBottom:`10px`,color:`white`},children:`🎉 أحسنت يا بطل! 🎉`}),(0,M.jsxs)(`p`,{style:{fontSize:`clamp(18px, 4.5vw, 26px)`,marginBottom:`25px`,color:`#FFE66D`},children:[`لقد أطعمت الأسد `,a,` قطعة!`]}),(0,M.jsxs)(`div`,{className:`win-buttons-mobile`,style:Yv.winButtons,children:[(0,M.jsx)(`button`,{onClick:()=>c(!s),style:Yv.circleBtn,children:s?(0,M.jsx)(I,{size:22}):(0,M.jsx)(L,{size:22})}),(0,M.jsx)(`button`,{onClick:()=>window.location.reload(),style:Yv.circleBtn,children:(0,M.jsx)(F,{size:22})}),(0,M.jsx)(`button`,{onClick:()=>e(`/Alhorof123`),style:Yv.circleBtn,children:(0,M.jsx)(N,{size:22})}),(0,M.jsx)(`button`,{onClick:()=>e(`/home`),style:Yv.circleBtn,children:(0,M.jsx)(P,{size:22})})]})]}),(0,M.jsx)(`style`,{children:`
-
-        /*
-        =====================================================
-        موبايل فقط
-        =====================================================
-        */
-
         @media (max-width: 768px) {
-
           html,
           body,
           #root {
@@ -3879,23 +3871,18 @@ html, body {
             min-width: 100% !important;
             height: 100% !important;
             min-height: 100% !important;
-
             margin: 0 !important;
             padding: 0 !important;
-
             overflow: hidden !important;
-
             opacity: 1 !important;
             visibility: visible !important;
+            animation: none !important;
           }
 
           body {
             -webkit-overflow-scrolling: touch;
           }
 
-          /*
-          منع ظهور اللعبة جزء جزء بعد الريفريش
-          */
           .game-wrapper,
           .game-wrapper *,
           .meat-grid-mobile,
@@ -3906,196 +3893,131 @@ html, body {
             visibility: visible !important;
           }
 
-          /*
-          ===================================================
-          ترتيب منطقة اللعبة
-          ===================================================
-          */
-
           .game-wrapper {
             flex-direction: column !important;
-
             justify-content: flex-start !important;
             align-items: center !important;
-
             width: 100% !important;
             height: 100% !important;
-
-            padding-top: 118px !important;
-            padding-bottom: 20px !important;
-
+            padding-top: 80px !important;
+            padding-bottom: 50px !important;
             box-sizing: border-box !important;
-
-            overflow: visible !important;
           }
 
           /*
-          ===================================================
-          3 أعمدة لحم بدل 4
-          ===================================================
+            الموبايل فقط:
+            3 أعمدة بدل 4
           */
-
           .meat-grid-mobile {
             grid-template-columns: repeat(3, 1fr) !important;
+            width: clamp(260px, 85vw, 480px) !important;
 
-            width: 290px !important;
+            /*
+              ننزل مجموعة اللحمة شوية
+            */
+            margin-top: 20px !important;
 
-            gap: 5px 8px !important;
-
-            margin-top: 12px !important;
-
-            flex-shrink: 0 !important;
+            gap: clamp(6px, 1.5vh, 12px) !important;
           }
 
           /*
-          ===================================================
-          تكبير اللحم 2px
-          ===================================================
+            اللحم يرجع لحجمه الأصلي
           */
-
           .meat-grid-mobile img {
-            width: calc(
-              clamp(60px, 12.5vw, 82px) + 2px
-            ) !important;
+            width: clamp(60px, 12.5vw, 82px) !important;
           }
 
           /*
-          ===================================================
-          تقليل المسافة بين الحركة والحرف
-          ===================================================
+            تقليل المسافة بين الحركة والحرف
           */
-
           .meat-grid-mobile .harakah-mobile {
-            margin-bottom: -68px !important;
+            margin-bottom: -64px !important;
           }
 
           /*
-          ===================================================
-          الأسد كما هو
-          ===================================================
+            الأسد بنفس الحجم والمكان الأصلي للموبايل
           */
-
           .lion-img {
             width: 165px !important;
           }
 
           #lion-character {
-            margin-top: 10px !important;
-            margin-bottom: 0 !important;
-
-            flex-shrink: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: -50px !important;
           }
 
           /*
-          ===================================================
-          أزرار التحكم:
-          فوق بعض على الجنب الشمال
-          ===================================================
+            الأزرار الأربعة:
+            جنب الأسد في نهاية الصفحة ناحية الشمال
+            وفوق بعض
           */
-
           .action-buttons-mobile {
             position: fixed !important;
-
             left: 8px !important;
             right: auto !important;
+            bottom: 25px !important;
+            top: auto !important;
 
-            top: 50% !important;
-            bottom: auto !important;
-
-            transform: translateY(-50%) !important;
+            transform: none !important;
 
             flex-direction: column !important;
-
             gap: 8px !important;
 
             z-index: 10000 !important;
           }
 
           /*
-          ===================================================
-          أزرار الفوز:
-          فوق بعض على الجنب الشمال
-          ===================================================
+            أزرار الفوز بنفس الترتيب
           */
-
           .win-buttons-mobile {
             position: fixed !important;
-
             left: 8px !important;
             right: auto !important;
+            bottom: 25px !important;
+            top: auto !important;
 
-            top: 50% !important;
-            bottom: auto !important;
-
-            transform: translateY(-50%) !important;
+            transform: none !important;
 
             flex-direction: column !important;
-
             gap: 8px !important;
 
             margin-top: 0 !important;
 
             z-index: 10001 !important;
           }
-
-          /*
-          ===================================================
-          منع الصفحة من إنها تتاكل من الأطراف
-          ===================================================
-          */
-
-          .game-wrapper {
-            max-width: 100vw !important;
-            overflow: visible !important;
-          }
         }
 
-        /*
-        =====================================================
-        موبايلات صغيرة جدًا
-        =====================================================
-        */
-
         @media (max-width: 420px) {
-
           .game-wrapper {
-            padding-top: 112px !important;
+            padding-top: 80px !important;
+            padding-bottom: 50px !important;
           }
 
           .meat-grid-mobile {
-            width: 280px !important;
-            gap: 4px 6px !important;
-            margin-top: 10px !important;
+            margin-top: 18px !important;
+            width: 85vw !important;
           }
 
           .lion-img {
-            width: 160px !important;
+            width: 165px !important;
           }
 
           #lion-character {
-            margin-top: 7px !important;
+            margin-bottom: -50px !important;
           }
 
           .action-buttons-mobile,
           .win-buttons-mobile {
             left: 6px !important;
+            bottom: 20px !important;
             gap: 7px !important;
           }
         }
 
-        /*
-        =====================================================
-        تابلت
-        بدون تغيير نظام الموبايل
-        =====================================================
-        */
-
         @media (min-width: 769px) and (max-width: 1024px) {
-
           .game-wrapper {
             flex-direction: column !important;
             justify-content: space-between !important;
-
             padding-top: 85px !important;
             padding-bottom: 70px !important;
           }
@@ -4105,14 +4027,7 @@ html, body {
           }
         }
 
-        /*
-        =====================================================
-        لابتوب وديسكتوب
-        =====================================================
-        */
-
         @media (min-width: 1025px) {
-
           .game-wrapper {
             flex-direction: row !important;
             justify-content: space-around !important;
@@ -4122,7 +4037,7 @@ html, body {
             width: 240px !important;
           }
         }
-      `})]})}function Jv({item:e,onDragEnd:t}){let n=Iv(0),r=Iv(0);return(0,M.jsxs)(R.div,{style:{x:n,y:r,...Yv.meatCard},initial:{opacity:1,scale:1},animate:{scale:1,y:[0,-5,0]},transition:{y:{repeat:1/0,duration:2,ease:`easeInOut`},scale:{duration:.4}},exit:{scale:0,opacity:0,rotate:360},drag:!0,dragMomentum:!1,onDragEnd:(i,a)=>t(i,a,e,n,r),children:[(0,M.jsx)(`img`,{src:Gv,alt:`Meat`,style:Yv.meatImg}),(0,M.jsxs)(`div`,{style:Yv.charText,children:[(0,M.jsx)(`span`,{className:`harakah-mobile`,style:Yv.harakahStyle,children:e.harakah}),(0,M.jsx)(`span`,{style:Yv.baseStyle,children:e.base})]})]})}var Yv={container:{width:`100vw`,height:`100vh`,overflow:`hidden`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`},bg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`,objectPosition:`bottom`,pointerEvents:`none`,zIndex:1},topBar:{position:`absolute`,top:`1vh`,width:`95%`,maxWidth:`850px`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,zIndex:100,gap:`10px`},box:{background:`rgba(255, 255, 255, 0.95)`,padding:`0.6vh 1.6vw`,borderRadius:12,fontWeight:`bold`,fontSize:`clamp(13px, 2.8vw, 18px)`,boxShadow:`0 2px 4px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},mainTitle:{background:`#6243ff`,color:`white`,padding:`0.8vh 2.8vw`,borderRadius:25,fontSize:`clamp(17px, 3.8vw, 25px)`,fontWeight:`bold`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,whiteSpace:`nowrap`,textAlign:`center`},instructionBanner:{position:`absolute`,top:`7.8vh`,background:`rgba(255, 255, 255, 0.95)`,padding:`0.5vh 2.5vw`,borderRadius:`20px`,fontSize:`clamp(12px, 2.8vw, 16px)`,fontWeight:`bold`,color:`#6243ff`,boxShadow:`0 2px 5px rgba(0,0,0,0.15)`,zIndex:90,textAlign:`center`,border:`2px solid #6243ff`},gameLayout:{display:`flex`,alignItems:`center`,width:`100%`,height:`100%`,paddingTop:`11vh`,paddingBottom:`8vh`,zIndex:50,boxSizing:`border-box`},lionContainer:{display:`flex`,justifyContent:`center`,alignItems:`flex-end`,marginBottom:`0vh`},lion:{height:`auto`,filter:`drop-shadow(0 5px 10px rgba(0,0,0,0.3))`},meatGrid:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(6px, 1.5vh, 12px)`,width:`clamp(260px, 85vw, 480px)`,zIndex:50,position:`relative`,justifyItems:`center`},meatCard:{cursor:`grab`,display:`flex`,justifyContent:`center`,alignItems:`center`,position:`relative`,touchAction:`none`},meatImg:{width:`clamp(60px, 12.5vw, 82px)`,height:`auto`,filter:`drop-shadow(0 3px 5px rgba(0,0,0,0.25))`},charText:{position:`absolute`,fontWeight:`900`,pointerEvents:`none`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`},harakahStyle:{color:`#470611`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`3.6em`,marginBottom:`-68px`,textShadow:`1px 1px 2px rgba(255,255,255,0.9)`},baseStyle:{color:`#1a1a1a`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(25px, 5.2vw, 33px)`,textShadow:`1px 1px 3px rgba(255,255,255,0.9)`},bottomButtons:{position:`absolute`,bottom:`1vh`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`2.5vw`,zIndex:1e3},circleBtn:{width:`clamp(36px, 7.5vw, 46px)`,height:`clamp(36px, 7.5vw, 46px)`,borderRadius:`50%`,border:`none`,background:`#6243ff`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.3)`},winStyle:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999,padding:`20px`,textAlign:`center`},winButtons:{display:`flex`,gap:`3vw`,marginTop:`10px`}},Xv=`/Kids-Games/assets/write-jzJ4CUsW.png`,Zv=`/Kids-Games/assets/stairs-BzgxGrFR.png`,Qv=`/Kids-Games/assets/paint-palette-Cxp698__.png`,$v=`/Kids-Games/assets/auditory-DIQ0cOdR.png`,ey=`/Kids-Games/assets/sitting-DMKbkEcS.png`,ty=`/Kids-Games/assets/excited-5MJhbUPG.png`,ny=`/Kids-Games/assets/team-DDruGUQZ.png`,ry=`/Kids-Games/assets/harvest-CyUu4ssx.png`,iy=`/Kids-Games/assets/rope-skipping-BBo0pLza.png`,ay=`/Kids-Games/assets/laugh-q65j0WgX.png`,oy=`/Kids-Games/assets/binge-eating-tflh-2VU.png`;function sy(){let e=A(),t=(0,b.useRef)(new Audio(vo)),n=(0,b.useRef)(new Audio(yo)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),a=[{image:Xv,word:`كَتَبَ`,missing:`كَـ`,display:`-تَـبَ`,choices:[`قِـ`,`سُـ`,`كَـ`]},{image:Zv,word:`صَعَدَ`,missing:`عَـ`,display:`صَـ _ دَ`,choices:[`ضَـ`,`عَـ`,`دَ`]},{image:Qv,word:`رَسَمَ`,missing:`سَـ`,display:`رَـ مَ`,choices:[`تَـ`,`طَـ`,`سَـ`]},{image:$v,word:`سَمَعَ`,missing:`عَ`,display:`سَمَـ -`,choices:[`عَ`,`ظَ`,`ذَ`]},{image:ey,word:`جَلَسَ`,missing:`جَـ`,display:`- لَـسَ`,choices:[`كَـ`,`جَـ`,`فَـ`]},{image:ty,word:`فَرَحَ`,missing:`فَـ`,display:`_رَحَ`,choices:[`فَـ`,`سَـ`,`طَ`]},{image:ny,word:`رَبَحَ`,missing:`حَ`,display:`رَبَـ -`,choices:[`سَـ`,`خَـ`,`حَ`]},{image:ry,word:`زَرَعَ`,missing:`عَ`,display:`زَرَ-`,choices:[`عَ`,`رَ`,`طَ`]},{image:iy,word:`قَفَزَ`,missing:`فَـ`,display:`قَـ -زَ`,choices:[`شَـ`,`خَـ`,`فَـ`]},{image:ay,word:`ضَحَكَ`,missing:`ضَـ`,display:`ـ حَـكَ`,choices:[`عَـ`,`ضَـ`,`صَـ`]},{image:oy,word:`أَكَـلَ`,missing:`كَـ`,display:`أَ ـ لَ`,choices:[`كَـ`,`ذَ`,`ظَ`]}],[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(``),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(0),[x,S]=(0,b.useState)(!0),C=a[o],w=e=>e.replace(/[\u0640-\u065F\s]/g,``);(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>y(e=>e+1),1e3);return()=>clearInterval(e)},[m]);let T=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,E=e=>{m||(l(e),w(e)===w(C.missing)?(x&&(t.current.currentTime=0,t.current.play()),d(!0),p(e=>e+10),setTimeout(()=>{o<a.length-1?(s(o+1),l(``),d(!1)):(x&&(i.current.currentTime=0,i.current.play()),h(!0),_(!0))},700)):x&&(n.current.currentTime=0,n.current.play()))},D=()=>{x&&(r.current.currentTime=0,r.current.play()),s(0),l(``),h(!1),p(0),y(0),d(!1),_(!1)};return(0,M.jsxs)(M.Fragment,{children:[(0,M.jsx)(`style`,{children:`
+      `})]})}function Jv({item:e,onDragEnd:t}){let n=Iv(0),r=Iv(0);return(0,M.jsxs)(R.div,{style:{x:n,y:r,...Yv.meatCard},initial:{opacity:1,scale:1},animate:{scale:1,y:[0,-5,0]},transition:{y:{repeat:1/0,duration:2,ease:`easeInOut`},scale:{duration:.4}},exit:{scale:0,opacity:0,rotate:360},drag:!0,dragMomentum:!1,onDragEnd:(i,a)=>t(i,a,e,n,r),children:[(0,M.jsx)(`img`,{src:Gv,alt:`Meat`,style:Yv.meatImg}),(0,M.jsxs)(`div`,{style:Yv.charText,children:[(0,M.jsx)(`span`,{className:`harakah-mobile`,style:Yv.harakahStyle,children:e.harakah}),(0,M.jsx)(`span`,{style:Yv.baseStyle,children:e.base})]})]})}var Yv={container:{width:`100vw`,height:`100vh`,overflow:`hidden`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`},bg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`,objectPosition:`bottom`,pointerEvents:`none`,zIndex:1},topBar:{position:`absolute`,top:`1vh`,width:`95%`,maxWidth:`850px`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,zIndex:100,gap:`10px`},box:{background:`rgba(255, 255, 255, 0.95)`,padding:`0.6vh 1.6vw`,borderRadius:12,fontWeight:`bold`,fontSize:`clamp(13px, 2.8vw, 18px)`,boxShadow:`0 2px 4px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},mainTitle:{background:`#6243ff`,color:`white`,padding:`0.8vh 2.8vw`,borderRadius:25,fontSize:`clamp(17px, 3.8vw, 25px)`,fontWeight:`bold`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,whiteSpace:`nowrap`,textAlign:`center`},instructionBanner:{position:`absolute`,top:`7.8vh`,background:`rgba(255, 255, 255, 0.95)`,padding:`0.5vh 2.5vw`,borderRadius:`20px`,fontSize:`clamp(12px, 2.8vw, 16px)`,fontWeight:`bold`,color:`#6243ff`,boxShadow:`0 2px 5px rgba(0,0,0,0.15)`,zIndex:90,textAlign:`center`,border:`2px solid #6243ff`},gameLayout:{display:`flex`,alignItems:`center`,width:`100%`,height:`100%`,paddingTop:`11vh`,paddingBottom:`8vh`,zIndex:50,boxSizing:`border-box`},lionContainer:{display:`flex`,justifyContent:`center`,alignItems:`flex-end`,marginBottom:`0vh`},lion:{height:`auto`,filter:`drop-shadow(0 5px 10px rgba(0,0,0,0.3))`},meatGrid:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(6px, 1.5vh, 12px)`,width:`clamp(260px, 85vw, 480px)`,zIndex:50,position:`relative`,justifyItems:`center`},meatCard:{cursor:`grab`,display:`flex`,justifyContent:`center`,alignItems:`center`,position:`relative`,touchAction:`none`},meatImg:{width:`clamp(60px, 12.5vw, 82px)`,height:`auto`,filter:`drop-shadow(0 3px 5px rgba(0,0,0,0.25))`},charText:{position:`absolute`,fontWeight:`900`,pointerEvents:`none`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`},harakahStyle:{color:`#470611`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`3.6em`,marginBottom:`-60px`,textShadow:`1px 1px 2px rgba(255,255,255,0.9)`},baseStyle:{color:`#1a1a1a`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(25px, 5.2vw, 33px)`,textShadow:`1px 1px 3px rgba(255,255,255,0.9)`},bottomButtons:{position:`absolute`,bottom:`1vh`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`2.5vw`,zIndex:1e3},circleBtn:{width:`clamp(36px, 7.5vw, 46px)`,height:`clamp(36px, 7.5vw, 46px)`,borderRadius:`50%`,border:`none`,background:`#6243ff`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.3)`},winStyle:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999,padding:`20px`,textAlign:`center`},winButtons:{display:`flex`,gap:`3vw`,marginTop:`10px`}},Xv=`/Kids-Games/assets/write-jzJ4CUsW.png`,Zv=`/Kids-Games/assets/stairs-BzgxGrFR.png`,Qv=`/Kids-Games/assets/paint-palette-Cxp698__.png`,$v=`/Kids-Games/assets/auditory-DIQ0cOdR.png`,ey=`/Kids-Games/assets/sitting-DMKbkEcS.png`,ty=`/Kids-Games/assets/excited-5MJhbUPG.png`,ny=`/Kids-Games/assets/team-DDruGUQZ.png`,ry=`/Kids-Games/assets/harvest-CyUu4ssx.png`,iy=`/Kids-Games/assets/rope-skipping-BBo0pLza.png`,ay=`/Kids-Games/assets/laugh-q65j0WgX.png`,oy=`/Kids-Games/assets/binge-eating-tflh-2VU.png`;function sy(){let e=A(),t=(0,b.useRef)(new Audio(vo)),n=(0,b.useRef)(new Audio(yo)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),a=[{image:Xv,word:`كَتَبَ`,missing:`كَـ`,display:`-تَـبَ`,choices:[`قِـ`,`سُـ`,`كَـ`]},{image:Zv,word:`صَعَدَ`,missing:`عَـ`,display:`صَـ _ دَ`,choices:[`ضَـ`,`عَـ`,`دَ`]},{image:Qv,word:`رَسَمَ`,missing:`سَـ`,display:`رَـ مَ`,choices:[`تَـ`,`طَـ`,`سَـ`]},{image:$v,word:`سَمَعَ`,missing:`عَ`,display:`سَمَـ -`,choices:[`عَ`,`ظَ`,`ذَ`]},{image:ey,word:`جَلَسَ`,missing:`جَـ`,display:`- لَـسَ`,choices:[`كَـ`,`جَـ`,`فَـ`]},{image:ty,word:`فَرَحَ`,missing:`فَـ`,display:`_رَحَ`,choices:[`فَـ`,`سَـ`,`طَ`]},{image:ny,word:`رَبَحَ`,missing:`حَ`,display:`رَبَـ -`,choices:[`سَـ`,`خَـ`,`حَ`]},{image:ry,word:`زَرَعَ`,missing:`عَ`,display:`زَرَ-`,choices:[`عَ`,`رَ`,`طَ`]},{image:iy,word:`قَفَزَ`,missing:`فَـ`,display:`قَـ -زَ`,choices:[`شَـ`,`خَـ`,`فَـ`]},{image:ay,word:`ضَحَكَ`,missing:`ضَـ`,display:`ـ حَـكَ`,choices:[`عَـ`,`ضَـ`,`صَـ`]},{image:oy,word:`أَكَـلَ`,missing:`كَـ`,display:`أَ ـ لَ`,choices:[`كَـ`,`ذَ`,`ظَ`]}],[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(``),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(0),[x,S]=(0,b.useState)(!0),C=a[o],w=e=>e.replace(/[\u0640-\u065F\s]/g,``);(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>y(e=>e+1),1e3);return()=>clearInterval(e)},[m]);let T=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,E=e=>{m||(l(e),w(e)===w(C.missing)?(x&&(t.current.currentTime=0,t.current.play()),d(!0),p(e=>e+10),setTimeout(()=>{o<a.length-1?(s(o+1),l(``),d(!1)):(x&&(i.current.currentTime=0,i.current.play()),h(!0),_(!0))},700)):x&&(n.current.currentTime=0,n.current.play()))},D=()=>{x&&(r.current.currentTime=0,r.current.play()),s(0),l(``),h(!1),p(0),y(0),d(!1),_(!1)};return(0,M.jsxs)(M.Fragment,{children:[(0,M.jsx)(`style`,{children:`
         @media (max-width: 768px) {
           .tafkheem-page {
             padding: 0px 10px !important;
