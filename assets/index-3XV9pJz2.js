@@ -3926,7 +3926,7 @@ html, body {
             والمسافة بينهم 2px
           */
           .meat-grid-mobile .charText {
-            transform: translateY(-12px) !important;
+            transform: translateY(-5px) !important;
           }
 
           .meat-grid-mobile .harakah-mobile {
@@ -3952,7 +3952,7 @@ html, body {
             position: fixed !important;
             left: 8px !important;
             right: auto !important;
-            bottom: 25px !important;
+            bottom: 45px !important;
             top: auto !important;
             transform: none !important;
             flex-direction: column !important;
