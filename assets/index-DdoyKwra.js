@@ -103,10 +103,6 @@ html, body {
           -ms-overflow-style: none !important;
         }
 
-        /* =========================
-           الصفحة
-        ========================= */
-
         .tashkeel-page {
           width: 100%;
           min-height: 100vh;
@@ -128,82 +124,49 @@ html, body {
           overflow-x: hidden;
         }
 
-        /* =========================
-           منطقة العنوان والأزرار
-        ========================= */
-
         .title-area {
           margin-top: 17px;
-
           width: 100%;
-
           text-align: center;
-
           display: flex;
           flex-direction: column;
           align-items: center;
-
           position: relative;
           z-index: 20;
-
           opacity: 1;
           visibility: visible;
         }
 
-        /* =========================
-           الأزرار
-           داخل منطقة العنوان
-           عشان تختفي معاه في الـ scroll
-        ========================= */
-
         .top-buttons {
           position: absolute;
-
           top: 0;
-
           left: 0;
-
           width: 100%;
-
           height: 57px;
-
           pointer-events: none;
         }
 
         .home-btn,
         .sound-btn {
           position: absolute;
-
           top: 0;
-
           z-index: 1000;
-
-          /* أكبر 2px */
           width: 57px;
           height: 57px;
-
           border-radius: 50%;
           border: none;
-
           background-color: rgba(255, 255, 255, 0.9);
-
           font-size: 35px;
           color: #4a2c2a;
-
           cursor: pointer;
-
           display: flex;
           align-items: center;
           justify-content: center;
-
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
           padding: 0;
-
           pointer-events: auto;
         }
 
-        /* دخلناهم لجوه */
         .home-btn {
           left: 28px;
         }
@@ -212,145 +175,87 @@ html, body {
           right: 28px;
         }
 
-        /* =========================
-           العنوان
-        ========================= */
-
         .title-main {
           background-color: rgba(255, 255, 255, 0.7);
-
           padding: 5px 20px;
-
           border-radius: 30px;
-
           margin-bottom: 10px;
-
           white-space: nowrap;
         }
 
         .title-main h1 {
           margin: 0;
-
           font-size: 27px;
-
           color: #111111;
         }
 
         .title-sub {
           background-color: rgba(255, 240, 240, 0.55);
-
           padding: 5px 15px;
-
           border-radius: 40px;
-
           white-space: nowrap;
         }
 
         .title-sub h3 {
           margin: 0;
-
           font-size: 19px;
-
           color: #333;
-
           font-weight: bold;
         }
 
-        /* =========================
-           الكاردات
-        ========================= */
-
         .main-wrapper {
           display: flex;
-
           flex-direction: row;
-
           justify-content: center;
           align-items: center;
-
           gap: 15px;
-
           width: 100%;
-
           margin-top: 30px;
-
           padding: 0 10px;
-
           flex-wrap: nowrap;
         }
 
         .board-item {
           width: 260px;
           height: 290px;
-
           position: relative;
-
           display: flex;
           flex-direction: column;
           align-items: center;
-
           background-size: 100% 100%;
           background-repeat: no-repeat;
-
           flex-shrink: 0;
-
           overflow: hidden;
         }
 
         .board-title {
           color: #384491;
-
           margin-top: 20px;
-
           font-size: 27px;
-
           text-shadow: 1px 1px 2px #000;
-
           text-align: center;
-
           position: relative;
-
           z-index: 20;
         }
 
-        /* =========================
-           الصور
-        ========================= */
-
         .game-image {
           position: absolute;
-
           cursor: pointer;
-
           object-fit: contain;
-
           transition: none;
-
           pointer-events: auto;
         }
 
-        /* =========================
-           التابلت
-        ========================= */
-
         @media (min-width: 769px) and (max-width: 1100px) {
-
           .main-wrapper {
             display: grid !important;
-
             grid-template-columns: repeat(2, 240px) !important;
-
             justify-content: center !important;
             justify-items: center !important;
-
             gap: 15px !important;
-
             width: 100% !important;
-
             max-width: 530px !important;
-
             margin-top: 25px !important;
-
             padding: 0 10px !important;
           }
 
@@ -392,12 +297,7 @@ html, body {
           }
         }
 
-        /* =========================
-           الموبايل
-        ========================= */
-
         @media (max-width: 768px) {
-
           .tashkeel-page {
             min-height: 100dvh;
             padding-bottom: 30px;
@@ -405,9 +305,7 @@ html, body {
 
           .title-area {
             margin-top: 10px !important;
-
             padding: 0 10px !important;
-
             width: 100%;
           }
 
@@ -418,18 +316,13 @@ html, body {
           .home-btn,
           .sound-btn {
             top: 0 !important;
-
-            /* أكبر 2px */
             width: 44px !important;
             height: 44px !important;
-
             min-width: 44px !important;
             min-height: 44px !important;
-
             font-size: 25px !important;
           }
 
-          /* دخلناهم لجوه */
           .home-btn {
             left: 16px !important;
           }
@@ -440,9 +333,7 @@ html, body {
 
           .title-main {
             padding: 6px 15px !important;
-
             margin-bottom: 8px !important;
-
             border-radius: 20px !important;
           }
 
@@ -452,7 +343,6 @@ html, body {
 
           .title-sub {
             padding: 5px 12px !important;
-
             border-radius: 30px !important;
           }
 
@@ -462,49 +352,31 @@ html, body {
 
           .main-wrapper {
             display: flex !important;
-
             flex-direction: column !important;
-
             flex-wrap: nowrap !important;
-
             justify-content: flex-start !important;
-
             align-items: center !important;
-
             gap: 12px !important;
-
             width: 100% !important;
-
             max-width: 100% !important;
-
             padding: 0 8px 20px !important;
-
             margin-top: 18px !important;
           }
 
           .board-item {
             width: 270px !important;
-
             height: 300px !important;
-
             margin: 0 !important;
-
             flex-shrink: 0 !important;
           }
 
           .board-title {
             margin-top: 20px !important;
-
             font-size: 22px !important;
           }
         }
 
-        /* =========================
-           موبايلات صغيرة
-        ========================= */
-
         @media (max-width: 400px) {
-
           .top-buttons {
             height: 40px !important;
           }
@@ -512,14 +384,10 @@ html, body {
           .home-btn,
           .sound-btn {
             top: 0 !important;
-
-            /* أكبر 2px */
             width: 40px !important;
             height: 40px !important;
-
             min-width: 40px !important;
             min-height: 40px !important;
-
             font-size: 22px !important;
           }
 
@@ -556,7 +424,7 @@ html, body {
             height: 300px !important;
           }
         }
-      `}),(0,N.jsxs)(`div`,{className:`title-area`,children:[(0,N.jsxs)(`div`,{className:`top-buttons`,children:[(0,N.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),children:(0,N.jsx)(_r,{})}),(0,N.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),children:r?(0,N.jsx)(hr,{}):(0,N.jsx)(gr,{})})]}),(0,N.jsx)(`div`,{className:`title-main`,children:(0,N.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,N.jsx)(`div`,{className:`title-sub`,children:(0,N.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,N.jsx)(`main`,{className:`main-wrapper`,children:s.map((r,i)=>(0,N.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,N.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let s=t===r.id;return(0,N.jsx)(`img`,{src:r.img,loading:`eager`,decoding:`async`,className:`game-image`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{...o[r.id],transform:s?`scale(1.15)`:`scale(1)`,filter:s?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:s?999:1},alt:`لعبة`},i)})]},i))})]})},Br=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Vr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Hr=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Ur=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Wr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Gr=`/Kids-Games/assets/lion-BCc-x0Je.png`,Kr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,qr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Jr=`/Kids-Games/assets/icce-DngGPNER.png`,Yr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Xr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Zr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Qr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,$r=`/Kids-Games/assets/btar-ISpqIK3P.png`,ei=()=>{let e=j(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:Vr,games:[{id:`imgBubbles`,img:Wr,path:`/Fathaice`},{id:`imgLion`,img:Gr,path:`/Fathalion`},{id:`imgComplete`,img:Kr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:qr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Hr,games:[{id:`imgIce`,img:Jr,path:`/Damasnow`},{id:`imgSpace`,img:Yr,path:`/Damaspace`},{id:`imgBasket`,img:Xr,path:`/Damamaze`},{id:`imgEgg`,img:Zr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Ur,games:[{id:`imgBee`,img:Qr,path:`/Kasrabee`},{id:`imgIce2`,img:Jr,path:`/Kasrasnow`},{id:`imgButterflies`,img:$r,path:`/Kasratreas`},{id:`imgComplete2`,img:Kr,path:`/Kasracomplete`}]}];return(0,N.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Br})`},children:[(0,N.jsx)(`style`,{children:`
+      `}),(0,N.jsxs)(`div`,{className:`title-area`,children:[(0,N.jsxs)(`div`,{className:`top-buttons`,children:[(0,N.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),children:(0,N.jsx)(_r,{})}),(0,N.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),children:r?(0,N.jsx)(hr,{}):(0,N.jsx)(gr,{})})]}),(0,N.jsx)(`div`,{className:`title-main`,children:(0,N.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,N.jsx)(`div`,{className:`title-sub`,children:(0,N.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,N.jsx)(`main`,{className:`main-wrapper`,children:s.map((r,i)=>(0,N.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,N.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let s=t===r.id;return(0,N.jsx)(`img`,{src:r.img,loading:`eager`,decoding:`async`,className:`game-image`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{...o[r.id],transform:s?`scale(1.15)`:`scale(1)`,filter:s?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:s?999:1},alt:`لعبة`},i)})]},i))})]})},Br=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Vr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Hr=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Ur=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Wr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Gr=`/Kids-Games/assets/lion-BCc-x0Je.png`,Kr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,qr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Jr=`/Kids-Games/assets/icce-DngGPNER.png`,Yr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Xr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Zr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Qr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,$r=`/Kids-Games/assets/btar-ISpqIK3P.png`,ei=()=>{let e=j(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1);(0,b.useEffect)(()=>{let e=new Image;e.src=Br},[]);let a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:Vr,games:[{id:`imgBubbles`,img:Wr,path:`/Fathaice`},{id:`imgLion`,img:Gr,path:`/Fathalion`},{id:`imgComplete`,img:Kr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:qr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Hr,games:[{id:`imgIce`,img:Jr,path:`/Damasnow`},{id:`imgSpace`,img:Yr,path:`/Damaspace`},{id:`imgBasket`,img:Xr,path:`/Damamaze`},{id:`imgEgg`,img:Zr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Ur,games:[{id:`imgBee`,img:Qr,path:`/Kasrabee`},{id:`imgIce2`,img:Jr,path:`/Kasrasnow`},{id:`imgButterflies`,img:$r,path:`/Kasratreas`},{id:`imgComplete2`,img:Kr,path:`/Kasracomplete`}]}];return(0,N.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Br})`},children:[(0,N.jsx)(`style`,{children:`
         html,
         body,
         #root {
@@ -569,7 +437,8 @@ html, body {
           overflow-y: auto !important;
           overflow-x: hidden !important;
 
-          background-color: #1a2c38;
+          /* تم إزالة أي لون خلفية تماماً لعدم ظهور ألوان غريبة عند التحديث */
+          background: transparent !important; 
         }
 
         *,
@@ -598,6 +467,7 @@ html, body {
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+          background-color: transparent;
 
           display: flex;
           flex-direction: column;
