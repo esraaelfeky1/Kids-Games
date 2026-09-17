@@ -7136,8 +7136,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* 💻 شاشات الكمبيوتر (مرفوعين للفوق جوه المستطيلات البيضاء) */
-  .house-1 { left: 30.5% !important; top: 68.5% !important; }
-  .house-2 { left: 50.0% !important; top: 68.5% !important; }
+  .house-1 { left: 30.5% !important; top: 78.5% !important; }
+  .house-2 { left: 50.0% !important; top: 78.5% !important; }
   .house-3 { left: 75.5% !important; top: 68.5% !important; }
 
   /* 📱 شاشات الموبايل */
