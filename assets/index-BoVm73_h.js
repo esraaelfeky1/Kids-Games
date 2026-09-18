@@ -7576,7 +7576,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     /* 👦 الولد - نزلناه لتحت شوية */
     .boy-wrapper-fluid {
-      bottom: 13% !important;
+      bottom: 16% !important;
       left: 5% !important;
       width: clamp(125px, 23vw, 180px) !important;
     }
@@ -7585,7 +7585,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .flowers-area-fluid {
       bottom: 36% !important;
       right: 3% !important;
-      width: 89% !important;
+      width: 95% !important;
       gap: 0 !important;
       justify-content: space-between !important;
       align-items: flex-end !important;
