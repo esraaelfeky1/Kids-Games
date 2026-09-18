@@ -7573,14 +7573,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           /* الكارد أكبر ومرفوع لفوق */
           .game-card {
-            width: 97vw;
-            max-width: 97vw;
+            width: 91vw;
+            max-width: 91vw;
 
             padding: 19px 18px;
 
             border-radius: 23px;
 
-            margin-top: -32px;
+            margin-top: -62px;
             margin-bottom: 5px;
           }
 
@@ -7614,7 +7614,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .bottom-buttons {
             gap: 9px;
 
-            margin-bottom: 84px;
+            margin-bottom: 124px;
           }
 
           .round-button {
