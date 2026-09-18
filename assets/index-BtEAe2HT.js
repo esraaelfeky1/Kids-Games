@@ -7540,7 +7540,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         @media (max-width: 600px) {
 
           .arabic-game-page {
-            padding: 6px 9px 5px;
+            padding: 5px 9px 5px;
           }
 
           .top-section {
@@ -7548,50 +7548,51 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             gap: 5px;
           }
 
-          /* الوقت والنقاط أكبر */
+          /* الوقت والنقاط أكبر شوية */
           .info-box {
-            padding: 6px 10px;
+            padding: 7px 11px;
 
-            border-radius: 11px;
+            border-radius: 12px;
 
-            font-size: 15px;
+            font-size: 17px;
           }
 
-          /* العنوان أكبر */
+          /* العنوان أكبر شوية */
           .game-header {
-            max-width: 65vw;
+            max-width: 68vw;
 
-            padding: 8px 9px;
+            padding: 9px 10px;
 
-            border-radius: 13px;
+            border-radius: 14px;
 
-            font-size: 16px;
+            font-size: 18px;
 
             overflow: hidden;
             text-overflow: ellipsis;
           }
 
-          /* الكارد أكبر ومرفوع */
+          /* الكارد أكبر ومرفوع لفوق */
           .game-card {
-            max-width: 95vw;
+            width: 97vw;
+            max-width: 97vw;
 
-            padding: 16px 16px;
+            padding: 19px 18px;
 
-            border-radius: 21px;
+            border-radius: 23px;
 
-            margin-top: -18px;
+            margin-top: -32px;
             margin-bottom: 5px;
           }
 
           .game-text {
-            font-size: 18px;
+            font-size: 19px;
           }
 
           .sound-button {
-            width: 62px;
-            height: 62px;
+            width: 64px;
+            height: 64px;
 
-            font-size: 29px;
+            font-size: 30px;
 
             margin: 9px auto 13px;
           }
@@ -7601,19 +7602,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .choice-button {
-            width: 68px;
-            height: 68px;
+            width: 70px;
+            height: 70px;
 
-            border-radius: 16px;
+            border-radius: 17px;
 
-            font-size: 24px;
+            font-size: 25px;
           }
 
-          /* الأزرار مرفوعة 40px تقريباً */
+          /* الأزرار مرفوعة حوالي 40px */
           .bottom-buttons {
             gap: 9px;
 
-            margin-bottom: 44px;
+            margin-bottom: 84px;
           }
 
           .round-button {
@@ -7632,38 +7633,41 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         @media (max-width: 380px) {
 
           .arabic-game-page {
-            padding: 5px 7px 4px;
+            padding: 4px 7px 4px;
           }
 
           .info-box {
-            padding: 5px 8px;
-
-            font-size: 14px;
-          }
-
-          .game-header {
-            max-width: 62vw;
-
-            padding: 7px 7px;
+            padding: 6px 9px;
 
             font-size: 15px;
           }
 
-          .game-card {
-            padding: 14px 12px;
+          .game-header {
+            max-width: 65vw;
 
-            margin-top: -14px;
-          }
+            padding: 8px 8px;
 
-          .game-text {
             font-size: 17px;
           }
 
-          .sound-button {
-            width: 58px;
-            height: 58px;
+          .game-card {
+            width: 97vw;
+            max-width: 97vw;
 
-            font-size: 27px;
+            padding: 17px 13px;
+
+            margin-top: -28px;
+          }
+
+          .game-text {
+            font-size: 18px;
+          }
+
+          .sound-button {
+            width: 60px;
+            height: 60px;
+
+            font-size: 28px;
 
             margin: 7px auto 10px;
           }
@@ -7673,10 +7677,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .choice-button {
-            width: 64px;
-            height: 64px;
+            width: 65px;
+            height: 65px;
 
-            font-size: 22px;
+            font-size: 23px;
 
             border-radius: 15px;
           }
@@ -7684,7 +7688,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .bottom-buttons {
             gap: 7px;
 
-            margin-bottom: 40px;
+            margin-bottom: 80px;
           }
 
           .round-button {
