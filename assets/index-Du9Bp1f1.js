@@ -7455,7 +7455,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .fish-area-responsive {
       bottom: 23% !important;
       right: 7% !important;
-      width: 86% !important;
+      width: 84% !important;
 
       display: flex !important;
       flex-direction: row !important;
