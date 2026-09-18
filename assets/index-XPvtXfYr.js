@@ -7286,7 +7286,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     /* 🐧 البطريق - نزلناه شوية لتحت */
     .penguin-wrapper {
       left: -2% !important;
-      bottom: 50% !important;
+      bottom: 49% !important;
       width: 100px !important;
     }
 
@@ -7310,7 +7310,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     /* 🧊 مكعبات الكلمات */
     .words-tray {
       bottom: 21% !important;
-      max-width: 100vw !important;
+      max-width: 98vw !important;
       gap: 8px 10px !important;
     }
 
