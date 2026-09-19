@@ -5841,32 +5841,62 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-      `}),(0,N.jsx)(`button`,{className:`home-control`,onClick:()=>e(`/home`),style:{...Yx,position:`absolute`,top:`10px`,left:`27px`,zIndex:10},"aria-label":`Home`,children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{className:`sound-control`,onClick:()=>i(!r),style:{...Yx,position:`absolute`,top:`8px`,right:`25px`,zIndex:10},"aria-label":`Sound`,children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsxs)(`div`,{className:`sukoon-wrapper`,children:[(0,N.jsx)(`img`,{className:`title-img`,src:Vx,alt:`عالم السكون`,loading:`eager`,decoding:`async`}),(0,N.jsxs)(`div`,{style:{position:`relative`,width:`100%`,display:`flex`,justifyContent:`center`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`85%`,height:`100%`,zIndex:1,pointerEvents:`none`,top:0,left:`7.5%`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`5%`,x2:`50%`,y2:`95%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`}),(0,N.jsx)(`line`,{x1:`5%`,y1:`50%`,x2:`95%`,y2:`50%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>{let i=t===r.id;return(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{transform:i?`scale(1.08)`:`scale(1)`,filter:i?`drop-shadow(0 0 8px rgba(255,255,255,0.8))`:`none`}},r.id)})})]})]}),(0,N.jsxs)(`div`,{className:`side-animals`,style:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-end`,position:`relative`,pointerEvents:`none`,padding:`0 5px`},children:[(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}})]})]})},Yx={width:`40px`,height:`40px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.95)`,fontSize:`20px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 5px rgba(0,0,0,0.3)`,color:`#4a2c2a`},Xx=`/Kids-Games/assets/sukbg-BU79ekWX.jpeg`,Zx=`/Kids-Games/assets/starbox-BmPXKMOS.png`,Qx=`/Kids-Games/assets/astronautidle-BMPZXSbB.png`,$x=`/Kids-Games/assets/astronautreach-COle1x_Q.png`,eS=()=>{let e=j(),t=(0,b.useRef)(null),n=(0,b.useRef)(null),[r,i]=(0,b.useState)(!0),[a,o]=(0,b.useState)([]),[s,c]=(0,b.useState)(0),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(`idle`),p={left:`10%`,top:`86%`},[m,h]=(0,b.useState)(p),[g,_]=(0,b.useState)(null),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(!1),C={top:-42,left:72},w={top:`84%`,left:`33%`},T=(0,b.useMemo)(()=>[{id:1,letter:`بْ`,x:`24%`,y:`24%`},{id:2,letter:`فُ`,x:`48%`,y:`21%`},{id:3,letter:`رْ`,x:`74%`,y:`25%`},{id:4,letter:`كُ`,x:`33%`,y:`37%`},{id:5,letter:`نْ`,x:`63%`,y:`35%`},{id:6,letter:`جْ`,x:`80%`,y:`44%`},{id:7,letter:`صَ`,x:`20%`,y:`46%`},{id:8,letter:`دْ`,x:`49%`,y:`51%`},{id:9,letter:`مْ`,x:`71%`,y:`56%`},{id:10,letter:`لْ`,x:`36%`,y:`60%`}],[]),E=T.filter(e=>e.letter.includes(`ْ`)).length,D=e=>new Promise(t=>setTimeout(t,e));(0,b.useEffect)(()=>(t.current=new Audio(`/sounds/hay1.mp3`),n.current=new Audio(`/sounds/pop.mp3`),t.current.preload=`auto`,n.current.preload=`auto`,()=>{t.current?.pause(),n.current?.pause()}),[]);let O=async e=>{if(!(l||x||g||a.includes(e.id))){if(S(!0),f(`reach`),h({left:e.x,top:e.y}),await D(900),_(e),await D(300),h({left:p.left,top:p.top}),await D(950),e.letter.includes(`ْ`)){y(!0),await D(850),r&&(t.current.currentTime=0,t.current.play().catch(()=>{})),o(t=>[...t,e.id]),c(e=>{let t=e+1;return t>=E&&u(!0),t}),y(!1),_(null),f(`idle`),S(!1);return}r&&(n.current.currentTime=0,n.current.play().catch(()=>{})),h({left:e.x,top:e.y}),await D(900),_(null),h({left:p.left,top:p.top}),await D(900),f(`idle`),S(!1)}},k=()=>{o([]),c(0),u(!1),_(null),y(!1),S(!1),f(`idle`),h({left:p.left,top:p.top})},A=()=>{i(e=>!e)},ee={width:`100vw`,height:`100dvh`,position:`relative`,overflow:`hidden`,backgroundImage:`url(${Xx})`,backgroundSize:`cover`,backgroundPosition:`center`,userSelect:`none`,touchAction:`none`,overscrollBehavior:`none`},te={position:`absolute`,top:15,width:`100%`,display:`flex`,justifyContent:`space-around`,alignItems:`flex-start`,zIndex:10,boxSizing:`border-box`,padding:`0 10px`},ne={background:`white`,padding:`6px 14px`,borderRadius:10,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 2px 5px rgba(0,0,0,0.2)`},re={background:`#e7ad5c`,color:`white`,padding:`5px 22px`,borderRadius:20,fontSize:`18px`,fontWeight:`bold`,boxShadow:`0 2px 5px rgba(0,0,0,0.2)`,textAlign:`center`},ie={background:`#ffffff`,color:`#333333`,fontSize:`15px`,fontWeight:`bold`,marginTop:`7px`,padding:`6px 16px`,borderRadius:`14px`,textAlign:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.25)`,whiteSpace:`nowrap`},ae={position:`absolute`,top:`50%`,left:`50%`,transform:`translate(-50%, -50%)`,fontWeight:`900`,pointerEvents:`none`,width:`100%`,whiteSpace:`nowrap`},oe={position:`absolute`,inset:0,background:`rgba(0,0,0,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:3e3},se={background:`white`,padding:`25px 3px`,borderRadius:`18px`,textAlign:`center`,color:`#6c5ce7`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`,width:`80%`,maxWidth:`260px`},ce={width:45,height:45,borderRadius:`50%`,border:`none`,background:`#e7ad5c`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`};return(0,N.jsxs)(`div`,{style:ee,children:[(0,N.jsxs)(`div`,{style:te,children:[(0,N.jsx)(`div`,{children:(0,N.jsxs)(`div`,{className:`top-box-res`,style:ne,children:[`⭐ نجوم السكون: `,s,` / `,E]})}),(0,N.jsxs)(`div`,{children:[(0,N.jsx)(`div`,{className:`main-title-res`,style:re,children:`🌟 اجمع نجوم السكون 🌟`}),(0,N.jsx)(`div`,{className:`subtitle-res`,style:ie,children:`اضغط على النجمة التي تحمل حرفًا عليه سكون`})]}),(0,N.jsx)(`div`,{style:{width:120}})]}),T.map(e=>!a.includes(e.id)&&g?.id!==e.id&&(0,N.jsx)(V.div,{onClick:()=>O(e),animate:{y:[0,-6,0],rotate:[0,360]},transition:{repeat:1/0,duration:4,ease:`easeInOut`},whileHover:{scale:1.15},style:{position:`absolute`,left:e.x,top:e.y,cursor:x?`default`:`pointer`,zIndex:10,textAlign:`center`,transform:`translate(-50%, -50%)`,pointerEvents:x?`none`:`auto`},children:(0,N.jsxs)(`div`,{style:{position:`relative`,display:`inline-block`},children:[(0,N.jsx)(`img`,{src:`/Kids-Games/assets/star-BT2FBxC5.png`,className:`star-container`,alt:`star`,style:{display:`block`}}),(0,N.jsxs)(`div`,{style:ae,className:`star-letter`,children:[(0,N.jsx)(`span`,{className:`letter-main`,children:e.letter.charAt(0)}),(0,N.jsx)(`span`,{className:`sukoon-mark`,children:e.letter.slice(1)})]})]})},e.id)),(0,N.jsx)(`img`,{src:Zx,className:`box-img`,alt:`star box`}),(0,N.jsxs)(`div`,{className:`astronaut-wrapper`,style:{left:m.left,top:m.top},children:[(0,N.jsx)(`img`,{src:d===`idle`?Qx:$x,className:`astro-img`,style:{width:`165px`},alt:`astronaut`}),g&&!v&&(0,N.jsxs)(`div`,{style:{position:`absolute`,top:C.top,left:C.left,width:`55px`,textAlign:`center`,zIndex:200},children:[(0,N.jsx)(`img`,{src:`/Kids-Games/assets/star-BT2FBxC5.png`,style:{width:`100%`,display:`block`},alt:`holding star`}),(0,N.jsxs)(`div`,{style:{...ae,fontSize:`22px`},className:`star-letter`,children:[(0,N.jsx)(`span`,{className:`letter-main`,children:g.letter.charAt(0)}),(0,N.jsx)(`span`,{className:`sukoon-mark`,children:g.letter.slice(1)})]})]})]}),v&&(0,N.jsxs)(V.div,{initial:{scale:1,opacity:1,top:m.top,left:m.left},animate:{scale:.3,opacity:0,top:w.top,left:w.left},transition:{duration:.8,ease:`easeInOut`},style:{position:`absolute`,width:`55px`,zIndex:100,textAlign:`center`},children:[(0,N.jsx)(`img`,{src:`/Kids-Games/assets/star-BT2FBxC5.png`,style:{width:`100%`,display:`block`},alt:`dropping star`}),(0,N.jsxs)(`div`,{style:{...ae,fontSize:`22px`},className:`star-letter`,children:[(0,N.jsx)(`span`,{className:`letter-main`,children:g?.letter.charAt(0)}),(0,N.jsx)(`span`,{className:`sukoon-mark`,children:g?.letter.slice(1)})]})]}),(0,N.jsxs)(`div`,{className:`side-buttons`,children:[(0,N.jsx)(`button`,{style:ce,onClick:A,"aria-label":`sound`,children:r?(0,N.jsx)(L,{size:22}):(0,N.jsx)(R,{size:22})}),(0,N.jsx)(`button`,{style:ce,onClick:k,"aria-label":`restart`,children:(0,N.jsx)(I,{size:22})}),(0,N.jsx)(`button`,{style:ce,onClick:()=>e(`/Sukoon`),"aria-label":`back`,children:(0,N.jsx)(P,{size:22})}),(0,N.jsx)(`button`,{style:ce,onClick:()=>e(`/home`),"aria-label":`home`,children:(0,N.jsx)(F,{size:22})})]}),(0,N.jsx)(Fg,{children:l&&(0,N.jsx)(V.div,{style:oe,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:(0,N.jsxs)(V.div,{style:se,initial:{scale:.7,opacity:0},animate:{scale:1,opacity:1},transition:{type:`spring`,stiffness:200,damping:15},children:[(0,N.jsx)(`div`,{style:{fontSize:`38px`,marginBottom:`8px`},children:`🎉`}),(0,N.jsx)(`h2`,{style:{margin:`0 0 10px`,fontSize:`24px`},children:`أحسنت 🎉`}),(0,N.jsxs)(`p`,{style:{fontSize:`16px`,fontWeight:`bold`,margin:`0 0 18px`},children:[`لقد جمعت `,s,` من نجوم السكون`]}),(0,N.jsxs)(`div`,{style:{display:`flex`,justifyContent:`center`,gap:`10px`},children:[(0,N.jsx)(`button`,{style:ce,onClick:k,children:(0,N.jsx)(I,{size:22})}),(0,N.jsx)(`button`,{style:ce,onClick:()=>e(`/Sukoon`),children:(0,N.jsx)(P,{size:22})}),(0,N.jsx)(`button`,{style:ce,onClick:()=>e(`/home`),children:(0,N.jsx)(F,{size:22})})]})]})})}),(0,N.jsx)(`style`,{children:`
+      `}),(0,N.jsx)(`button`,{className:`home-control`,onClick:()=>e(`/home`),style:{...Yx,position:`absolute`,top:`10px`,left:`27px`,zIndex:10},"aria-label":`Home`,children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{className:`sound-control`,onClick:()=>i(!r),style:{...Yx,position:`absolute`,top:`8px`,right:`25px`,zIndex:10},"aria-label":`Sound`,children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsxs)(`div`,{className:`sukoon-wrapper`,children:[(0,N.jsx)(`img`,{className:`title-img`,src:Vx,alt:`عالم السكون`,loading:`eager`,decoding:`async`}),(0,N.jsxs)(`div`,{style:{position:`relative`,width:`100%`,display:`flex`,justifyContent:`center`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`85%`,height:`100%`,zIndex:1,pointerEvents:`none`,top:0,left:`7.5%`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`5%`,x2:`50%`,y2:`95%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`}),(0,N.jsx)(`line`,{x1:`5%`,y1:`50%`,x2:`95%`,y2:`50%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>{let i=t===r.id;return(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{transform:i?`scale(1.08)`:`scale(1)`,filter:i?`drop-shadow(0 0 8px rgba(255,255,255,0.8))`:`none`}},r.id)})})]})]}),(0,N.jsxs)(`div`,{className:`side-animals`,style:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-end`,position:`relative`,pointerEvents:`none`,padding:`0 5px`},children:[(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}})]})]})},Yx={width:`40px`,height:`40px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.95)`,fontSize:`20px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 5px rgba(0,0,0,0.3)`,color:`#4a2c2a`},Xx=`/Kids-Games/assets/sukbg-BU79ekWX.jpeg`,Zx=`/Kids-Games/assets/starbox-BmPXKMOS.png`,Qx=`/Kids-Games/assets/astronautidle-BMPZXSbB.png`,$x=`/Kids-Games/assets/astronautreach-COle1x_Q.png`,eS=()=>{let e=j(),t=(0,b.useRef)(null),n=(0,b.useRef)(null),[r,i]=(0,b.useState)(!0),[a,o]=(0,b.useState)([]),[s,c]=(0,b.useState)(0),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(`idle`),[p,m]=(0,b.useState)(null),[h,g]=(0,b.useState)(!1),[_,v]=(0,b.useState)(!1),y={left:`6%`,top:`86%`},[x,S]=(0,b.useState)(y),C={top:-42,left:72},w=(0,b.useMemo)(()=>[{id:1,letter:`بْ`,x:`24%`,y:`24%`},{id:2,letter:`فُ`,x:`48%`,y:`21%`},{id:3,letter:`رْ`,x:`74%`,y:`25%`},{id:4,letter:`كُ`,x:`33%`,y:`37%`},{id:5,letter:`نْ`,x:`63%`,y:`35%`},{id:6,letter:`جْ`,x:`80%`,y:`44%`},{id:7,letter:`صَ`,x:`20%`,y:`46%`},{id:8,letter:`دْ`,x:`49%`,y:`51%`},{id:9,letter:`مْ`,x:`71%`,y:`56%`},{id:10,letter:`لْ`,x:`36%`,y:`60%`}],[]),T=w.filter(e=>e.letter.includes(`ْ`)).length,E=e=>new Promise(t=>setTimeout(t,e));(0,b.useEffect)(()=>(t.current=new Audio(`/sounds/hay1.mp3`),n.current=new Audio(`/sounds/pop.mp3`),t.current.preload=`auto`,n.current.preload=`auto`,()=>{t.current?.pause(),n.current?.pause()}),[]);let D=async e=>{if(!(l||_||p||a.includes(e.id))){if(v(!0),f(`reach`),S({left:e.x,top:e.y}),await E(900),m(e),await E(300),S({left:y.left,top:y.top}),await E(950),e.letter.includes(`ْ`)){g(!0),await E(850),r&&(t.current.currentTime=0,t.current.play().catch(()=>{})),o(t=>[...t,e.id]),c(e=>{let t=e+1;return t>=T&&u(!0),t}),g(!1),m(null),f(`idle`),v(!1);return}r&&(n.current.currentTime=0,n.current.play().catch(()=>{})),S({left:e.x,top:e.y}),await E(900),m(null),S({left:y.left,top:y.top}),await E(900),f(`idle`),v(!1)}},O=()=>{o([]),c(0),u(!1),m(null),g(!1),v(!1),f(`idle`),S({left:y.left,top:y.top})},k=()=>{i(e=>!e)},A={width:`100vw`,height:`100dvh`,position:`relative`,overflow:`hidden`,backgroundImage:`url(${Xx})`,backgroundSize:`cover`,backgroundPosition:`center`,userSelect:`none`,touchAction:`none`,overscrollBehavior:`none`},ee={position:`absolute`,top:15,width:`100%`,display:`flex`,justifyContent:`space-around`,alignItems:`flex-start`,zIndex:10,boxSizing:`border-box`,padding:`0 10px`},te={background:`white`,padding:`6px 14px`,borderRadius:10,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 2px 5px rgba(0,0,0,0.2)`},ne={background:`#e7ad5c`,color:`white`,padding:`5px 22px`,borderRadius:20,fontSize:`18px`,fontWeight:`bold`,boxShadow:`0 2px 5px rgba(0,0,0,0.2)`,textAlign:`center`},re={background:`#ffffff`,color:`#333333`,fontSize:`15px`,fontWeight:`bold`,marginTop:`7px`,padding:`6px 16px`,borderRadius:`14px`,textAlign:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.25)`,whiteSpace:`nowrap`},ie={position:`absolute`,top:`50%`,left:`50%`,transform:`translate(-50%, -50%)`,fontWeight:`900`,pointerEvents:`none`,width:`100%`,whiteSpace:`nowrap`},ae={position:`absolute`,inset:0,background:`rgba(0,0,0,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:3e3},oe={background:`white`,padding:`25px 3px`,borderRadius:`18px`,textAlign:`center`,color:`#6c5ce7`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`,width:`80%`,maxWidth:`260px`},se={width:45,height:45,borderRadius:`50%`,border:`none`,background:`#e7ad5c`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`};return(0,N.jsxs)(`div`,{style:A,children:[(0,N.jsxs)(`div`,{style:ee,children:[(0,N.jsx)(`div`,{children:(0,N.jsxs)(`div`,{className:`top-box-res`,style:te,children:[`⭐ نجوم السكون: `,s,` /`,` `,T]})}),(0,N.jsxs)(`div`,{children:[(0,N.jsx)(`div`,{className:`main-title-res`,style:ne,children:`🌟 اجمع نجوم السكون 🌟`}),(0,N.jsx)(`div`,{className:`subtitle-res`,style:re,children:`اضغط على النجمة التي تحمل حرفًا عليه سكون`})]}),(0,N.jsx)(`div`,{style:{width:120}})]}),w.map(e=>!a.includes(e.id)&&p?.id!==e.id&&(0,N.jsx)(V.div,{onClick:()=>D(e),animate:{y:[0,-6,0],rotate:[0,360]},transition:{repeat:1/0,duration:4,ease:`easeInOut`},whileHover:{scale:1.15},style:{position:`absolute`,left:e.x,top:e.y,cursor:_?`default`:`pointer`,zIndex:10,textAlign:`center`,transform:`translate(-50%, -50%)`,pointerEvents:_?`none`:`auto`},children:(0,N.jsxs)(`div`,{style:{position:`relative`,display:`inline-block`},children:[(0,N.jsx)(`img`,{src:`/Kids-Games/assets/star-BT2FBxC5.png`,className:`star-container`,alt:`star`,style:{display:`block`}}),(0,N.jsxs)(`div`,{style:ie,className:`star-letter`,children:[(0,N.jsx)(`span`,{className:`letter-main`,children:e.letter.charAt(0)}),(0,N.jsx)(`span`,{className:`sukoon-mark`,children:e.letter.slice(1)})]})]})},e.id)),(0,N.jsx)(`img`,{src:Zx,className:`box-img`,alt:`star box`}),(0,N.jsxs)(`div`,{className:`astronaut-wrapper`,style:{left:x.left,top:x.top},children:[(0,N.jsx)(`img`,{src:d===`idle`?Qx:$x,className:`astro-img`,style:{width:`165px`},alt:`astronaut`}),p&&!h&&(0,N.jsxs)(`div`,{style:{position:`absolute`,top:C.top,left:C.left,width:`55px`,textAlign:`center`,zIndex:200},children:[(0,N.jsx)(`img`,{src:`/Kids-Games/assets/star-BT2FBxC5.png`,style:{width:`100%`,display:`block`},alt:`holding star`}),(0,N.jsxs)(`div`,{style:{...ie,fontSize:`22px`},className:`star-letter`,children:[(0,N.jsx)(`span`,{className:`letter-main`,children:p.letter.charAt(0)}),(0,N.jsx)(`span`,{className:`sukoon-mark`,children:p.letter.slice(1)})]})]})]}),h&&(0,N.jsxs)(V.div,{initial:{scale:1,opacity:1,top:x.top,left:x.left},animate:{scale:.12,opacity:0,top:`88%`,left:`30%`},transition:{duration:.9,ease:`easeInOut`},style:{position:`absolute`,width:`55px`,zIndex:100,textAlign:`center`,transform:`translate(-50%, -50%)`},children:[(0,N.jsx)(`img`,{src:`/Kids-Games/assets/star-BT2FBxC5.png`,style:{width:`100%`,display:`block`},alt:`dropping star`}),(0,N.jsxs)(`div`,{style:{...ie,fontSize:`22px`},className:`star-letter`,children:[(0,N.jsx)(`span`,{className:`letter-main`,children:p?.letter.charAt(0)}),(0,N.jsx)(`span`,{className:`sukoon-mark`,children:p?.letter.slice(1)})]})]}),(0,N.jsxs)(`div`,{className:`side-buttons`,children:[(0,N.jsx)(`button`,{style:se,onClick:k,"aria-label":`sound`,children:r?(0,N.jsx)(L,{size:22}):(0,N.jsx)(R,{size:22})}),(0,N.jsx)(`button`,{style:se,onClick:O,"aria-label":`restart`,children:(0,N.jsx)(I,{size:22})}),(0,N.jsx)(`button`,{style:se,onClick:()=>e(`/Sukoon`),"aria-label":`back`,children:(0,N.jsx)(P,{size:22})}),(0,N.jsx)(`button`,{style:se,onClick:()=>e(`/home`),"aria-label":`home`,children:(0,N.jsx)(F,{size:22})})]}),(0,N.jsx)(Fg,{children:l&&(0,N.jsx)(V.div,{style:ae,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:(0,N.jsxs)(V.div,{style:oe,initial:{scale:.7,opacity:0},animate:{scale:1,opacity:1},transition:{type:`spring`,stiffness:200,damping:15},children:[(0,N.jsx)(`div`,{style:{fontSize:`38px`,marginBottom:`8px`},children:`🎉`}),(0,N.jsx)(`h2`,{style:{margin:`0 0 10px`,fontSize:`24px`},children:`أحسنت 🎉`}),(0,N.jsxs)(`p`,{style:{fontSize:`16px`,fontWeight:`bold`,margin:`0 0 18px`},children:[`لقد جمعت `,s,` من نجوم السكون`]}),(0,N.jsxs)(`div`,{style:{display:`flex`,justifyContent:`center`,gap:`10px`},children:[(0,N.jsx)(`button`,{style:se,onClick:O,children:(0,N.jsx)(I,{size:22})}),(0,N.jsx)(`button`,{style:se,onClick:()=>e(`/Sukoon`),children:(0,N.jsx)(P,{size:22})}),(0,N.jsx)(`button`,{style:se,onClick:()=>e(`/home`),children:(0,N.jsx)(F,{size:22})})]})]})})}),(0,N.jsx)(`style`,{children:`
+        /* =========================
+           الولد
+        ========================== */
+
         .astronaut-wrapper {
           position: absolute;
-          left: 10%;
+
+          /* مكان الصندوق القديم ولكن شوية للشمال */
+          left: 6%;
           top: 86%;
+
           transform: translateY(-50%);
+
           transition:
             left 0.9s ease-in-out,
             top 0.9s ease-in-out;
+
           z-index: 50;
         }
+
+        /* =========================
+           الصندوق
+        ========================== */
 
         .box-img {
           position: absolute;
           z-index: 20;
+
           bottom: 3%;
-          left: 26%;
+
+          /* مكان الولد القديم ولكن شوية لليمين */
+          left: 30%;
+
           width: 175px;
         }
 
+        /* =========================
+           النجوم
+        ========================== */
+
         .star-container {
-          width: clamp(70px, 8.5vw, 95px) !important;
+          width: clamp(
+            70px,
+            8.5vw,
+            95px
+          ) !important;
         }
 
         .star-letter {
-          font-size: clamp(28px, 3.5vw, 38px) !important;
+          font-size: clamp(
+            28px,
+            3.5vw,
+            38px
+          ) !important;
+
           display: flex;
           align-items: center;
           justify-content: center;
@@ -5882,23 +5912,40 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           color: #ffffff !important;
           font-weight: 1000;
           font-size: 1.6em;
-          text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+
+          text-shadow:
+            0 0 4px rgba(0, 0, 0, 0.8);
+
           opacity: 1 !important;
+
           position: relative;
           top: -7px;
+
           margin-right: -2px;
         }
+
+        /* =========================
+           الأزرار
+        ========================== */
 
         .side-buttons {
           position: absolute;
           right: 18px;
           top: 50%;
+
           transform: translateY(-50%);
+
           display: flex;
           flex-direction: column;
+
           gap: 10px;
+
           z-index: 100;
         }
+
+        /* =========================
+           الموبايل
+        ========================== */
 
         @media (max-width: 600px) {
           .star-container {
@@ -5918,10 +5965,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 140px !important;
           }
 
+          /*
+            الصندوق:
+            مكانه الجديد + شوية لليمين
+          */
           .box-img {
             width: 140px !important;
             bottom: 4% !important;
-            left: 22% !important;
+            left: 26% !important;
           }
 
           .top-box-res {
@@ -5944,8 +5995,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .side-buttons {
             right: 12px;
             top: 77%;
+
             flex-direction: column;
+
             gap: 9px;
+
             transform: translateY(-50%);
           }
 
@@ -5954,9 +6008,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             height: 42px !important;
           }
 
-          /* مهم جدًا:
-             لا نضع left أو top هنا
-             حتى تظل حركة الولد تعمل على الموبايل */
+          /*
+            مهم جدًا:
+            لا نضع left أو top هنا
+            حتى حركة الولد تفضل شغالة
+          */
           .astronaut-wrapper {
             transition:
               left 0.9s ease-in-out,
