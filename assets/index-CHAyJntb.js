@@ -8007,9 +8007,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .boy-wrapper-fluid {
-      bottom: 16% !important;
+      bottom: 15% !important;
       left: 5% !important;
-      width: clamp(115px, 23vw, 180px) !important;
+      width: clamp(100px, 23vw, 180px) !important;
     }
 
     .flowers-area-fluid {
