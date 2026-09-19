@@ -8233,7 +8233,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .main-board-responsive { 
       width: 78vw !important; 
       max-width: 330px !important;
-      bottom: -194% !important; 
+      bottom: -194px !important; 
     }
     
     /* رفع شخصية الولد والبقرة للأعلى بحوالي 20 بكسل إضافية */
