@@ -8675,7 +8675,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             /*
               نزلنا الكارد شوية
             */
-            margin-top: 45px !important;
+            margin-top: 30px !important;
 
             margin-left: auto !important;
 
@@ -8750,7 +8750,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             */
             margin-top: 0 !important;
 
-            margin-bottom: 58px !important;
+            margin-bottom: 108px !important;
 
             gap: 12px !important;
 
