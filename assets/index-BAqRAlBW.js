@@ -8246,8 +8246,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
     
     /* رفع شخصية الولد والبقرة للأعلى لتتناسب مع المربع الجديد */
-    .boy-responsive { width: 30vw !important; left: 3% !important; bottom: calc(20% + 20px) !important; max-width: 160px !important; }
-    .cow-responsive { width: 30vw !important; right: 3% !important; bottom: calc(20% + 20px) !important; max-width: 160px !important; }
+    .boy-responsive { width: 30vw !important; left: 3% !important; bottom: calc(28% + 28px) !important; max-width: 160px !important; }
+    .cow-responsive { width: 30vw !important; right: 3% !important; bottom: calc(28% + 28px) !important; max-width: 160px !important; }
     
     /* تكبير خط الكلمة الرئيسية داخل المربع */
     .word-text-responsive { font-size: 2.7rem !important; }
