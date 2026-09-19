@@ -8233,7 +8233,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .main-board-responsive { 
       width: 78vw !important; 
       max-width: 330px !important;
-      bottom: 124% !important; 
+      bottom: 24% !important; 
     }
     
     /* رفع شخصية الولد والبقرة للأعلى بحوالي 20 بكسل إضافية */
@@ -8247,7 +8247,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .option-btn-responsive { font-size: 2.3rem !important; }
     
     /* رفع أزرار التحكم السفلية بمقدار 15 بكسل إضافية */
-    .controls-responsive { bottom: 68px !important; gap: 12px !important; }
+    .controls-responsive { bottom: 98px !important; gap: 12px !important; }
     .control-icon-responsive { padding: 9px !important; border-width: 2.5px !important; }
     
     /* صناديق النقاط والسؤال بالموبايل */
