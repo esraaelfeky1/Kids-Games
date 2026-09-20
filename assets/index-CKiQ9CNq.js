@@ -6371,7 +6371,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     font-weight: 900 !important;
   }
 
-  /* الفقرة بخط مستقيم (No wrap) لتظهر في سطر واحد متصل */
   .sub-title-text {
     font-size: clamp(11px, 2vw, 14px) !important;
     color: #9a3412 !important;
@@ -6380,7 +6379,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     white-space: nowrap !important;
   }
 
-  /* تكبير الخط والتنوين والحركات وجعلها عريضة جداً (Bold) */
   .pizza-text-size {
     font-size: clamp(23px, 4.5vw, 29px) !important;
     font-weight: 900 !important;
@@ -6389,7 +6387,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     text-shadow: 0px 1px 3px rgba(255,255,255,0.95);
   }
 
-  /* تخصيص الموبايل والأماكن المطلوبة بدقة */
+  /* تخصيص الموبايل والأماكن المطلوبة بدقة مع إبطاد وإنزال الشيف والطبق وصندوق الكلمات */
   @media (max-width: 900px) {
     .pizza-top-bar {
       margin-top: 2px !important;
@@ -6398,7 +6396,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .pizza-main-layout {
       gap: 12px !important;
-      margin-top: 122px !important;
+      margin-top: 135px !important; /* إنزال الشيف والطبق أكثر نحو الأسفل */
       align-items: flex-end !important;
     }
     
@@ -6417,7 +6415,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       grid-template-rows: repeat(2, auto) !important;
       gap: 5px 7px !important;
       padding: 6px 10px !important;
-      margin-top: 12px !important;
+      margin-top: 18px !important; /* إنزال صندوق قطع البيتزا أكثر */
       margin-bottom: 110px !important; 
       max-width: 95vw !important;
       background: rgba(255, 255, 255, 0.95) !important;
@@ -6430,11 +6428,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .pizza-bottom-buttons {
-      bottom: 75px !important; /* رفع الأزرار للأعلى إضافياً بمسافة 30 بكسل أخرى */
+      bottom: 75px !important;
     }
   }
 
   @media (min-width: 901px) {
+    .pizza-main-layout {
+      margin-top: 90px !important;
+    }
     .pizza-pieces-container {
       display: flex !important;
       flex-direction: row !important;
@@ -6442,7 +6443,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       align-items: center !important;
       gap: 15px !important;
       padding: 12px 25px !important;
-      margin-top: 18px !important;
+      margin-top: 24px !important; /* إنزال صندوق قطع البيتزا أكثر للشاشات الكبيرة */
       max-width: 95vw !important;
     }
     .pizza-piece-box {
@@ -6453,7 +6454,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       bottom: 75px !important;
     }
   }
-`,JS={container:{width:`100vw`,height:`100vh`,background:`url(${BS}) center/cover`,display:`flex`,flexDirection:`column`,alignItems:`center`,padding:`6px`,boxSizing:`border-box`,overflow:`hidden`,position:`relative`},topBar:{width:`100%`,maxWidth:`880px`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,padding:`2px 8px`,zIndex:10},headerContainer:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`3px`},titleBg:{background:`rgba(255,255,255,0.98)`,padding:`3px 14px`,borderRadius:`8px`,border:`2px solid #c2410c`,boxShadow:`0 2px 6px rgba(0,0,0,0.1)`},subTitleBg:{background:`rgba(255, 237, 213, 0.98)`,padding:`2px 10px`,borderRadius:`6px`,border:`1.5px solid #ea580c`,boxShadow:`0 1px 4px rgba(0,0,0,0.08)`},title:{color:`#c2410c`,margin:0},statBox:{background:`white`,padding:`3px 8px`,borderRadius:`6px`,fontWeight:`bold`,border:`2px solid #c2410c`,fontSize:`clamp(11px, 1.6vw, 14px)`,boxShadow:`0 2px 5px rgba(0,0,0,0.15)`,whiteSpace:`nowrap`},mainLayout:{display:`flex`,flexWrap:`wrap`,justifyContent:`center`,alignItems:`center`,gap:`3vw`,marginTop:`75px`},chef:{width:`clamp(130px, 17vw, 190px)`,objectFit:`contain`},tray:{width:`clamp(160px, 20vw, 205px)`,height:`clamp(140px, 17vw, 175px)`,position:`relative`,flexShrink:0},placedPiece:{position:`absolute`,width:`42%`,display:`flex`,justifyContent:`center`,alignItems:`center`,pointerEvents:`none`},piecesContainer:{background:`rgba(255,255,255,0.85)`,borderRadius:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`},pieceBox:{cursor:`grab`,position:`relative`,textAlign:`center`,userSelect:`none`},pizzaImg:{width:`100%`,objectFit:`contain`,pointerEvents:`none`},pieceText:{position:`absolute`,top:`36%`,left:`0`,right:`0`,textAlign:`center`,fontWeight:`900`,color:`#111`,userSelect:`none`,pointerEvents:`none`},placedText:{position:`absolute`,textAlign:`center`,fontWeight:`900`,color:`#111`,userSelect:`none`,pointerEvents:`none`},bottomButtons:{position:`absolute`,display:`flex`,gap:`10px`,padding:`2px`,zIndex:10},circleBtn:{width:`clamp(44px, 4.8vw, 52px)`,height:`clamp(44px, 4.8vw, 52px)`,borderRadius:`50%`,border:`none`,background:`#c2410c`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 8px rgba(0,0,0,0.3)`},winOverlay:{position:`absolute`,top:0,left:0,width:`100vw`,height:`100vh`,background:`rgba(0,0,0,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winBox:{background:`white`,padding:`24px 35px`,borderRadius:`18px`,textAlign:`center`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`},winBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,border:`none`,background:`#c2410c`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 8px rgba(0,0,0,0.3)`}},YS=`/Kids-Games/assets/gg-DnY7Gcm3.jpeg`,XS=`/Kids-Games/assets/mann-Dlu76Nr6.png`,ZS=`/Kids-Games/assets/cone-22zbG08h.png`,QS=[{id:1,text:`كتابًا`,isTanween:!0,img:`/Kids-Games/assets/ee1-z0WxtzF4.png`,pos:{top:`-275px`,left:`80px`}},{id:2,text:`قلمٌ`,isTanween:!1,img:`/Kids-Games/assets/scoop2-DqQfEK27.png`,pos:{top:`-275px`,left:`70px`}},{id:3,text:`شارعًا`,isTanween:!0,img:`/Kids-Games/assets/scoop3-CtICxogA.png`,pos:{top:`-275px`,left:`50px`}},{id:4,text:`بابًا`,isTanween:!0,img:`/Kids-Games/assets/scoop4-D6VnrnXj.png`,pos:{top:`-275px`,left:`40px`}},{id:5,text:`تفاحًا`,isTanween:!0,img:`/Kids-Games/assets/scoop5-ReJcM3T0.png`,pos:{top:`-275px`,left:`30px`}}];function $S(){let e=j(),[t,n]=(0,b.useState)(QS),[r,i]=(0,b.useState)({}),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(null),[h,g]=(0,b.useState)({x:0,y:0}),_=(0,b.useRef)([]);(0,b.useEffect)(()=>{let e=setInterval(()=>o(e=>e+1),1e3);return()=>clearInterval(e)},[]);let v=e=>{s||new Audio(e?z:ho).play()},y=(e,t)=>{e.type===`mousedown`&&e.preventDefault();let n=e.touches?e.touches[0].clientX:e.clientX,r=e.touches?e.touches[0].clientY:e.clientY;m(t),g({x:n-45,y:r-45})};return(0,b.useEffect)(()=>{let e=e=>{if(!p)return;let t=e.touches?e.touches[0].clientX:e.clientX,n=e.touches?e.touches[0].clientY:e.clientY;g({x:t-45,y:n-45})},t=e=>{if(!p)return;let t=e.changedTouches?e.changedTouches[0].clientX:e.clientX,a=e.changedTouches?e.changedTouches[0].clientY:e.clientY,o=-1;if(_.current.forEach((e,n)=>{if(!e)return;let r=e.getBoundingClientRect();t>=r.left&&t<=r.right&&a>=r.top&&a<=r.bottom&&(o=n)}),o!==-1&&!r[o])if(p.isTanween){v(!0);let e={...r,[o]:p};i(e),f(d+10),n(e=>e.map(e=>e.id===p.id?{...e,isUsed:!0}:e)),Object.keys(e).length===4&&(u(!0),setTimeout(()=>{u(!1)},4e3))}else v(!1);m(null)};return p&&(window.addEventListener(`mousemove`,e),window.addEventListener(`mouseup`,t),window.addEventListener(`touchmove`,e),window.addEventListener(`touchend`,t)),()=>{window.removeEventListener(`mousemove`,e),window.removeEventListener(`mouseup`,t),window.removeEventListener(`touchmove`,e),window.removeEventListener(`touchend`,t)}},[p,t,r,d]),(0,N.jsxs)(`div`,{style:eC.container,className:`ice-cream-container`,children:[(0,N.jsx)(`style`,{children:`
+`,JS={container:{width:`100vw`,height:`100vh`,background:`url(${BS}) center/cover`,display:`flex`,flexDirection:`column`,alignItems:`center`,padding:`6px`,boxSizing:`border-box`,overflow:`hidden`,position:`relative`},topBar:{width:`100%`,maxWidth:`880px`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,padding:`2px 8px`,zIndex:10},headerContainer:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`3px`},titleBg:{background:`rgba(255,255,255,0.98)`,padding:`3px 14px`,borderRadius:`8px`,border:`2px solid #c2410c`,boxShadow:`0 2px 6px rgba(0,0,0,0.1)`},subTitleBg:{background:`rgba(255, 237, 213, 0.98)`,padding:`2px 10px`,borderRadius:`6px`,border:`1.5px solid #ea580c`,boxShadow:`0 1px 4px rgba(0,0,0,0.08)`},title:{color:`#c2410c`,margin:0},statBox:{background:`white`,padding:`3px 8px`,borderRadius:`6px`,fontWeight:`bold`,border:`2px solid #c2410c`,fontSize:`clamp(11px, 1.6vw, 14px)`,boxShadow:`0 2px 5px rgba(0,0,0,0.15)`,whiteSpace:`nowrap`},mainLayout:{display:`flex`,flexWrap:`wrap`,justifyContent:`center`,alignItems:`center`,gap:`3vw`},chef:{width:`clamp(130px, 17vw, 190px)`,objectFit:`contain`},tray:{width:`clamp(160px, 20vw, 205px)`,height:`clamp(140px, 17vw, 175px)`,position:`relative`,flexShrink:0},placedPiece:{position:`absolute`,width:`42%`,display:`flex`,justifyContent:`center`,alignItems:`center`,pointerEvents:`none`},piecesContainer:{background:`rgba(255,255,255,0.85)`,borderRadius:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`},pieceBox:{cursor:`grab`,position:`relative`,textAlign:`center`,userSelect:`none`},pizzaImg:{width:`100%`,objectFit:`contain`,pointerEvents:`none`},pieceText:{position:`absolute`,top:`36%`,left:`0`,right:`0`,textAlign:`center`,fontWeight:`900`,color:`#111`,userSelect:`none`,pointerEvents:`none`},placedText:{position:`absolute`,textAlign:`center`,fontWeight:`900`,color:`#111`,userSelect:`none`,pointerEvents:`none`},bottomButtons:{position:`absolute`,display:`flex`,gap:`10px`,padding:`2px`,zIndex:10},circleBtn:{width:`clamp(44px, 4.8vw, 52px)`,height:`clamp(44px, 4.8vw, 52px)`,borderRadius:`50%`,border:`none`,background:`#c2410c`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 8px rgba(0,0,0,0.3)`},winOverlay:{position:`absolute`,top:0,left:0,width:`100vw`,height:`100vh`,background:`rgba(0,0,0,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winBox:{background:`white`,padding:`24px 35px`,borderRadius:`18px`,textAlign:`center`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`},winBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,border:`none`,background:`#c2410c`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 8px rgba(0,0,0,0.3)`}},YS=`/Kids-Games/assets/gg-DnY7Gcm3.jpeg`,XS=`/Kids-Games/assets/mann-Dlu76Nr6.png`,ZS=`/Kids-Games/assets/cone-22zbG08h.png`,QS=[{id:1,text:`كتابًا`,isTanween:!0,img:`/Kids-Games/assets/ee1-z0WxtzF4.png`,pos:{top:`-275px`,left:`80px`}},{id:2,text:`قلمٌ`,isTanween:!1,img:`/Kids-Games/assets/scoop2-DqQfEK27.png`,pos:{top:`-275px`,left:`70px`}},{id:3,text:`شارعًا`,isTanween:!0,img:`/Kids-Games/assets/scoop3-CtICxogA.png`,pos:{top:`-275px`,left:`50px`}},{id:4,text:`بابًا`,isTanween:!0,img:`/Kids-Games/assets/scoop4-D6VnrnXj.png`,pos:{top:`-275px`,left:`40px`}},{id:5,text:`تفاحًا`,isTanween:!0,img:`/Kids-Games/assets/scoop5-ReJcM3T0.png`,pos:{top:`-275px`,left:`30px`}}];function $S(){let e=j(),[t,n]=(0,b.useState)(QS),[r,i]=(0,b.useState)({}),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(null),[h,g]=(0,b.useState)({x:0,y:0}),_=(0,b.useRef)([]);(0,b.useEffect)(()=>{let e=setInterval(()=>o(e=>e+1),1e3);return()=>clearInterval(e)},[]);let v=e=>{s||new Audio(e?z:ho).play()},y=(e,t)=>{e.type===`mousedown`&&e.preventDefault();let n=e.touches?e.touches[0].clientX:e.clientX,r=e.touches?e.touches[0].clientY:e.clientY;m(t),g({x:n-45,y:r-45})};return(0,b.useEffect)(()=>{let e=e=>{if(!p)return;let t=e.touches?e.touches[0].clientX:e.clientX,n=e.touches?e.touches[0].clientY:e.clientY;g({x:t-45,y:n-45})},t=e=>{if(!p)return;let t=e.changedTouches?e.changedTouches[0].clientX:e.clientX,a=e.changedTouches?e.changedTouches[0].clientY:e.clientY,o=-1;if(_.current.forEach((e,n)=>{if(!e)return;let r=e.getBoundingClientRect();t>=r.left&&t<=r.right&&a>=r.top&&a<=r.bottom&&(o=n)}),o!==-1&&!r[o])if(p.isTanween){v(!0);let e={...r,[o]:p};i(e),f(d+10),n(e=>e.map(e=>e.id===p.id?{...e,isUsed:!0}:e)),Object.keys(e).length===4&&(u(!0),setTimeout(()=>{u(!1)},4e3))}else v(!1);m(null)};return p&&(window.addEventListener(`mousemove`,e),window.addEventListener(`mouseup`,t),window.addEventListener(`touchmove`,e),window.addEventListener(`touchend`,t)),()=>{window.removeEventListener(`mousemove`,e),window.removeEventListener(`mouseup`,t),window.removeEventListener(`touchmove`,e),window.removeEventListener(`touchend`,t)}},[p,t,r,d]),(0,N.jsxs)(`div`,{style:eC.container,className:`ice-cream-container`,children:[(0,N.jsx)(`style`,{children:`
         /* --- تخصيص التابلت (شاشات بين 601px و 1024px) --- */
         @media (min-width: 601px) and (max-width: 1024px) {
           .ice-cream-container .top-bar { padding: 8px 30px !important; }
