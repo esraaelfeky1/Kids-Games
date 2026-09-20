@@ -6655,7 +6655,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       gap: 4px !important;
     }
 
-    /* تكبير الفقرة قليلاً بـ 3 بكسل إضافية */
+    /* تكبير الفقرة بـ 3 بكسل إضافية */
     .sub-title-text {
       font-size: 14px !important;
       padding: 3px 10px !important;
