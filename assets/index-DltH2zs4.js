@@ -11193,7 +11193,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     /* إنزال الأزرار السفلية بمقدار 2 بكسل إضافية (أصبحت 92px) */
     .controls-responsive {
-      bottom: 95px !important;
+      bottom: 88px !important;
       gap: 10px !important;
     }
   }
