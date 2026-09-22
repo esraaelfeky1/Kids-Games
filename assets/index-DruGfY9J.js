@@ -15565,7 +15565,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .main-play-area {
             position: absolute !important;
 
-            top: 135px !important;
+            top: 155px !important;
 
             left: 50% !important;
 
