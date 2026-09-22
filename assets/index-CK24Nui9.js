@@ -14670,7 +14670,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .bottom-controls {
           position: absolute;
-          bottom: 18px;
+          bottom: 38px;
           display: flex;
           gap: 14px;
           z-index: 30;
