@@ -15548,7 +15548,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           /* رفع مربع الكاندي 40 بكسل إضافية للأعلى */
           .main-play-area {
-            top: 55.5% !important;
+            top: 75.5% !important;
             left: 50%;
             width: 100%;
             transform:
@@ -15597,7 +15597,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 140px !important;
             height: 110px !important;
             transform:
-              translateY(150px) !important;
+              translateY(100px) !important;
           }
 
           /* رفع الأزرار السفلية بمقدار 15 بكسل للأعلى */
