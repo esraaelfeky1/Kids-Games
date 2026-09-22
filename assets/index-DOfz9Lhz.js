@@ -13485,7 +13485,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     /* 🔘 رفع الأزرار السفلية للأعلى قليلاً */
     .controls-bottom-responsive {
-      bottom: 5.5% !important;
+      bottom: 7.5% !important;
       gap: 10px !important;
     }
 
