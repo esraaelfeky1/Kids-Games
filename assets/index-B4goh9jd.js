@@ -17482,7 +17482,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         @media (max-width: 599px) {
 
-          /* منع الـ Scroll نهائيًا */
           .game-container {
             width: 100vw;
             height: 100dvh;
@@ -17493,22 +17492,25 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             inset: 0;
           }
 
-          /*
-            العنوان + الفقرة +
-            الوقت + النقاط
-            طلعوا حوالي 23px
+          /* 
+             🔼 العنوان والوقت والنقاط
+             طلعناهم 30px
           */
           .main-header {
             position: absolute;
-            top: 45px;
+
+            /* كان 35px وأصبح 5px */
+            top: 5px;
+
             left: 50%;
             transform: translateX(-50%);
+
             width: 96%;
             max-width: none;
+
             align-items: flex-start;
           }
 
-          /* الوقت والنقاط */
           .stat-box {
             font-size: 0.82rem;
             padding: 5px 9px;
@@ -17520,7 +17522,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             gap: 3px;
           }
 
-          /* العنوان */
           .title-box {
             padding: 4px 13px;
             border-radius: 10px;
@@ -17531,7 +17532,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             white-space: nowrap;
           }
 
-          /* الفقرة */
           .subtitle-box {
             padding: 3px 10px;
             border-radius: 9px;
@@ -17541,9 +17541,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             font-size: 0.7rem;
           }
 
-          /*
-            منطقة اللعب ثابتة
-          */
           .main-play-area {
             position: fixed;
             inset: 0;
@@ -17556,14 +17553,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           /*
-            🍬 الكارد الكبير
-            طلع 30px إضافية
-            من 250px إلى 220px
+             🔼 المربع الكبير
+             كان 220px
+             أصبح 150px
+             يعني طلعناه 70px
           */
           .board-wrapper {
             position: absolute;
 
-            top: 280px;
+            top: 150px;
 
             left: 50%;
             transform: translateX(-50%);
@@ -17610,7 +17608,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           /*
-            👦 الولد ثابت ومستقل
+             👦 الولد ثابت مكانه
           */
           .character-wrapper {
             position: absolute;
@@ -17638,7 +17636,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           /*
-            🔘 الأزرار ثابتة أسفل الشاشة
+             🔘 الأزرار ثابتة أسفل الشاشة
           */
           .bottom-controls {
             position: fixed;
@@ -18035,19 +18033,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         @media (max-width: 599px) {
           .game-container {
             --board-width: 96%;           
-            --board-margin-top: 30px;      
+            --board-margin-top: 25px;      
             --sentence-size: 1.35rem;      
             --sentence-margin-top: -24px;  
             --badge-top: 12%; 
 
-            --bubble-size: 72px;           /* حجم الفقاعات */
+            --bubble-size: 72px;           
             --bubbles-gap: 12px;           
-            --bubbles-y: -72px;            /* تم رفع الفقاعات للأعلى لتستقر بدقة على السبورة */
+            --bubbles-y: -52px;            /* رفع الصناديق أكثر للأعلى لتستقر على السبورة تماماً */
             --symbol-size: 2.1rem;         
 
-            --astro-width: 140px;          
-            --astro-y: 140px;              /* تم رفع رائد الفضاء للأعلى ليبتعد عن منطقة الأزرار والسفلية */
-            --rocket-width: 68px;          
+            --astro-width: 125px;          /* تكبير حجم رائد الفضاء */
+            --astro-y: 85px;               /* رفع رائد الفضاء للأعلى ليكون بعيداً عن الأزرق والأسفل */
+            --rocket-width: 80px;          /* تكبير حجم الصاروخ */
 
             --title-size: 0.9rem;         
             --btn-size: 40px;             
@@ -18066,7 +18064,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .quiz-section {
             position: absolute;
             left: 50%;
-            top: 45%;
+            top: 43%;
             transform: translate(-50%, -50%); 
             width: 100%;
             display: flex;
@@ -18100,7 +18098,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .astronaut-wrapper { 
             position: absolute;
             left: 5px;
-            bottom: 45px;
+            bottom: 50px;
             width: var(--astro-width) !important; 
             transform: translateY(var(--astro-y)) !important; 
             z-index: 7;
@@ -18109,7 +18107,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .rocket-wrapper { 
             position: absolute;
             right: 5px;
-            bottom: 45px;
+            bottom: 50px;
             width: var(--rocket-width) !important; 
             z-index: 7;
             display: flex;
@@ -18123,23 +18121,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .subtitle-box p { font-size: 0.7rem; }
           .stat-box { padding: 3px 6px; font-size: 0.7rem; border-radius: 6px; }
           
-          .bottom-controls { bottom: 12px !important; gap: 12px; }
+          .bottom-controls { bottom: 10px !important; gap: 12px; }
           .ctrl-btn { width: var(--btn-size) !important; height: var(--btn-size) !important; }
           :global(.icon-size) { width: var(--icon-size) !important; height: var(--icon-size) !important; }
         }
 
         @media (min-width: 1024px) {
           .game-container {
-            --astro-width: 250px;
-            --astro-y: 190px;   
+            --astro-width: 270px;
+            --astro-y: 170px;   
             --bubble-size: 95px;
             --bubbles-gap: 25px;
-            --bubbles-y: -125px;  
+            --bubbles-y: -135px;  
           }
           .main-play-area { position: relative; z-index: 5; display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1100px; height: 100%; padding: 0 8px; }
           .quiz-section { display: flex; flex-direction: column; align-items: center; justify-content: center; flex-grow: 1; gap: 8px; position: static; transform: none; }
           .astronaut-wrapper { width: var(--astro-width); transform: translateY(var(--astro-y)); position: static; }
-          .rocket-wrapper { width: 130px; height: 100%; display: flex; align-items: flex-end; justify-content: center; position: static; }
+          .rocket-wrapper { width: 145px; height: 100%; display: flex; align-items: flex-end; justify-content: center; position: static; }
         }
 
         .bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
@@ -18181,7 +18179,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .rocket-img { width: 100%; height: auto; object-fit: contain; }
         
-        .bottom-controls { position: relative; bottom: 15px; display: flex; gap: 12px; z-index: 10; }
+        .bottom-controls { position: relative; bottom: 10px; display: flex; gap: 12px; z-index: 10; }
         .ctrl-btn { width: 42px; height: 42px; border-radius: 50%; border: none; background: white; color: #1d4ed8; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); }
         :global(.icon-size) { width: 20px; height: 20px; }
 
