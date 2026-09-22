@@ -18040,7 +18040,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
             --bubble-size: 72px;           
             --bubbles-gap: 12px;           
-            --bubbles-y: -87px;            /* رفع الصناديق أكثر للأعلى لتستقر على السبورة تماماً */
+            --bubbles-y: -97px;            /* رفع الصناديق أكثر للأعلى لتستقر على السبورة تماماً */
             --symbol-size: 2.1rem;         
 
             --astro-width: 135px;          /* تكبير حجم رائد الفضاء */
