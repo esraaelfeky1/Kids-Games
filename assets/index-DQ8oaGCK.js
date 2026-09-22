@@ -11978,11 +11978,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       z-index: 10 !important;
     }
 
-    /* الثلاث مربعات الجانبية - تم تنزيلها أكثر للأسفل */
+    /* الثلاث مربعات الجانبية - تم نزولها أكثر للأسفل */
     .side-bar-responsive {
       position: absolute !important;
-      bottom:  -25px !important;
-  
+      bottom: -70px !important;
       left: 10px !important;
       transform: none !important;
       display: flex !important;
@@ -13312,7 +13311,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     /* 🔘 رفع الأزرار السفلية وصغرها قليلاً */
     .controls-bottom-responsive {
-      bottom: 20% !important;    /* مرفوعة للأعلى */
+      bottom: 12% !important;    /* مرفوعة للأعلى */
       gap: 10px !important;
     }
 
