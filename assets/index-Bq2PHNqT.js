@@ -11980,7 +11980,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
        تم تنزيلها 30px */
     .side-bar-responsive {
       position: absolute !important;
-      top: calc(26% + 10px) !important;
+      top: calc(26% + 55px) !important;
       bottom: auto !important;
       left: 10px !important;
       transform: none !important;
