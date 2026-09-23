@@ -7959,7 +7959,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       left: auto !important;
       right: 12px !important;
 
-      top: calc(50% + 70px) !important;
+      top: calc(50% + 100px) !important;
 
       transform: translateY(-50%) !important;
     }
@@ -7993,7 +7993,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .sub-title-text {
-      font-size: 10px !important;
+      font-size: 15px !important;
       padding: 3px 7px !important;
     }
   }
