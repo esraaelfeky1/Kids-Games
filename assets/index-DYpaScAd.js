@@ -7922,7 +7922,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .card-board-target {
       min-width: 52px !important;
       padding: 1px 4px !important;
-      margin-top: -10px !important;
+      margin-top: -6px !important;
     }
 
     .bird-text-size {
