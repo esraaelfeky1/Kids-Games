@@ -17692,10 +17692,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
       `}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:{...oj,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{onClick:()=>i(!r),style:{...oj,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsx)(`img`,{className:`title-img`,src:ej,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,N.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#f7f8f9`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,N.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#fdfdfd`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},oj={width:`43px`,height:`43px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},sj=`/Kids-Games/assets/tuol6-Bwl5qNVk.jpeg`,cj=`/Kids-Games/assets/tu1-iNF8RCy8.jpeg`,lj=`/Kids-Games/assets/snail-BZcZ7ykG.png`,uj=`/Kids-Games/assets/trophy3-Da_Yaec3.png`,dj=[{id:1,text:`الفاصلة`,correctAnswer:`،`,options:[`،`,`.`,`؛`]},{id:2,text:`علامة التعجب`,correctAnswer:`!`,options:[`؟`,`!`,`:`]},{id:3,text:`علامة الاستفهام`,correctAnswer:`؟`,options:[`!`,`؛`,`؟`]},{id:4,text:`النقطتان`,correctAnswer:`:`,options:[`.`,`:`,`،`]},{id:5,text:`النقطة`,correctAnswer:`.`,options:[`؛`,`.`,`!`]},{id:6,text:`الفاصلة المنقوطة`,correctAnswer:`؛`,options:[`،`,`؛`,`؟`]},{id:7,text:`علامة التعجب`,correctAnswer:`!`,options:[`:`,`؟`,`!`]},{id:8,text:`الفاصلة`,correctAnswer:`،`,options:[`؛`,`،`,`.`]},{id:9,text:`علامة الاستفهام`,correctAnswer:`؟`,options:[`.`,`!`,`؟`]}],fj=[{top:`35%`,left:`33%`},{top:`35%`,left:`51%`},{top:`35%`,left:`69%`},{top:`53%`,left:`69%`},{top:`53%`,left:`51%`},{top:`53%`,left:`33%`},{top:`71%`,left:`33%`},{top:`71%`,left:`51%`},{top:`71%`,left:`69%`}],pj=[{top:`44%`,left:`16.5%`},{top:`44%`,left:`50%`},{top:`44%`,left:`83.5%`},{top:`56%`,left:`16.5%`},{top:`56%`,left:`50%`},{top:`56%`,left:`83.5%`},{top:`68%`,left:`16.5%`},{top:`68%`,left:`50%`},{top:`68%`,left:`83.5%`}],mj=[{top:`38%`,left:`9%`,facingLeft:!1},{top:`32%`,left:`33%`,facingLeft:!1},{top:`32%`,left:`51%`,facingLeft:!1},{top:`32%`,left:`69%`,facingLeft:!1},{top:`50%`,left:`69%`,facingLeft:!0},{top:`50%`,left:`51%`,facingLeft:!0},{top:`50%`,left:`33%`,facingLeft:!0},{top:`68%`,left:`33%`,facingLeft:!1},{top:`68%`,left:`51%`,facingLeft:!1},{top:`68%`,left:`69%`,facingLeft:!1},{top:`67%`,left:`84%`,facingLeft:!1}];function hj(){let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(0),[l,u]=(0,b.useState)(!0),[d,f]=(0,b.useState)(!1),p=(0,b.useRef)(new Audio(z)),m=(0,b.useRef)(new Audio(ho));(0,b.useEffect)(()=>{if(d)return;let e=setInterval(()=>{c(e=>e+1)},1e3);return()=>clearInterval(e)},[d]);let h=e=>{l&&e.current&&(e.current.currentTime=0,e.current.play().catch(()=>{}))},g=(e,r)=>{if(r===t)if(e===dj[r].correctAnswer){h(p),o(e=>e+10);let e=r+1;n(e),e===dj.length?(i(mj.length-1),setTimeout(()=>{f(!0)},1200)):i(e)}else h(m)},_=mj[r]||mj[0],v=`${Math.floor(s/60)}:${String(s%60).padStart(2,`0`)}`;return(0,N.jsxs)(`div`,{style:_j.container,children:[(0,N.jsx)(`style`,{children:gj}),(0,N.jsx)(`img`,{src:sj,alt:`الخلفية`,style:_j.bg,className:`desktop-bg`}),(0,N.jsx)(`img`,{src:cj,alt:`خلفية الموبايل`,style:_j.bg,className:`mobile-bg`}),(0,N.jsxs)(`div`,{style:_j.topBar,className:`top-bar`,children:[(0,N.jsxs)(`div`,{style:_j.infoGroup,className:`info-group`,children:[(0,N.jsxs)(`div`,{style:_j.infoBox,className:`info-box time-box`,children:[(0,N.jsx)(`span`,{children:`⏱️`}),(0,N.jsx)(`span`,{children:v})]}),(0,N.jsxs)(`div`,{style:_j.infoBox,className:`info-box score-box`,children:[(0,N.jsx)(`span`,{children:`⭐`}),(0,N.jsx)(`span`,{children:a})]})]}),(0,N.jsxs)(`div`,{style:_j.headerWrapper,className:`header-wrapper`,children:[(0,N.jsx)(`div`,{style:_j.mainTitleBox,className:`main-title-text`,children:`سِبَاقُ الحَلَزُونِ 🐌`}),(0,N.jsx)(`div`,{style:_j.subTitleBox,className:`sub-title-text`,children:`اختر علامة الترقيم المناسبة`})]})]}),(0,N.jsx)(`div`,{style:_j.trophyAtFinish,className:`finish-trophy`,children:(0,N.jsx)(`img`,{src:uj,alt:`الكأس`,style:_j.trophyImgFinish,className:`trophy-img`})}),(0,N.jsx)(V.div,{className:`snail-box snail-step-${r}`,style:{..._j.snailWrapper,top:_.top,left:_.left},animate:{top:_.top,left:_.left,scaleX:_.facingLeft?-1:1},transition:{type:`spring`,stiffness:45,damping:13},children:(0,N.jsx)(`img`,{src:lj,alt:`الحلزون`,style:_j.snailImg,className:`snail-img`})}),dj.map((e,n)=>{let r=n===t,i=n<t,a=fj[n];return pj[n],(0,N.jsxs)(`div`,{className:`tile-item tile-item-${n}`,style:{..._j.tileContent,top:a.top,left:a.left,transform:`translate(-50%, -50%)`+(r?` scale(1.05)`:` scale(1)`),zIndex:r?30:15},children:[(0,N.jsxs)(`div`,{style:_j.questionLine,className:`q-line`,children:[(0,N.jsx)(`span`,{style:_j.qText,className:`q-text`,children:e.text}),(0,N.jsx)(`div`,{className:`dashed-box`,style:{..._j.dashedBox,borderColor:r?`#1B5E20`:`#455A64`,backgroundColor:i?`#C8E6C9`:`#FFFFFF`},children:i?e.correctAnswer:``})]}),(0,N.jsx)(`div`,{style:_j.optionsLine,className:`opts-line`,children:e.options.map((t,a)=>(0,N.jsx)(V.button,{className:`symbol-btn`,whileHover:r?{scale:1.15}:{},whileTap:r?{scale:.9}:{},onClick:()=>g(t,n),disabled:!r,style:{..._j.symBtn,cursor:r?`pointer`:`default`,backgroundColor:i&&t===e.correctAnswer?`#81C784`:`#FFFFFF`,borderColor:r?`#2E7D32`:`#455A64`},children:t},`${t}-${a}`))})]},e.id)}),(0,N.jsx)(`div`,{style:_j.bottomSection,className:`bottom-section`,children:(0,N.jsxs)(`div`,{style:_j.buttonsContainer,className:`buttons-container`,children:[(0,N.jsx)(`button`,{onClick:()=>u(!l),style:_j.circleBtn,className:`circleBtn`,children:l?(0,N.jsx)(L,{size:24}):(0,N.jsx)(R,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>window.location.reload(),style:_j.circleBtn,className:`circleBtn`,children:(0,N.jsx)(I,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>e(-1),style:_j.circleBtn,className:`circleBtn`,children:(0,N.jsx)(P,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:_j.circleBtn,className:`circleBtn`,children:(0,N.jsx)(F,{size:24})})]})}),(0,N.jsx)(Fg,{children:d&&(0,N.jsx)(V.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:_j.overlay,children:(0,N.jsxs)(`div`,{style:_j.winBox,children:[(0,N.jsx)(`h2`,{style:{margin:`4px 0`,color:`#2E7D32`,fontSize:`20px`,fontWeight:`bold`},children:`رَائِعٌ جِدًّا يَا بَطَلُ 🏆`}),(0,N.jsxs)(`p`,{style:{fontSize:`18px`,fontWeight:`bold`,color:`#1565C0`,margin:`6px 0`},children:[`النتيجة: `,a]}),(0,N.jsxs)(`div`,{style:_j.resultButtons,children:[(0,N.jsx)(`button`,{onClick:()=>window.location.reload(),style:_j.circleBtnSmall,children:(0,N.jsx)(I,{size:16})}),(0,N.jsx)(`button`,{onClick:()=>e(-1),style:_j.circleBtnSmall,children:(0,N.jsx)(P,{size:16})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:_j.circleBtnSmall,children:(0,N.jsx)(F,{size:16})})]})]})})})]})}var gj=`
 
-/* ============================================================
-   الوضع الأساسي
-============================================================ */
-
 .mobile-bg {
   display: none !important;
 }
@@ -17870,36 +17866,35 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 }
 
 /* ============================================================
-   📱📱📱 الموبايل
+   📱 الموبايل
 ============================================================ */
 
 @media (max-width: 600px) {
-
-  /* ==========================================================
-     🎛️ تحكم الموبايل من مكان واحد
-     
-     غيري القيم دي فقط لو عايزة تحركي العناصر
-  ========================================================== */
 
   :root {
 
     /* العنوان والفقرة */
     --mobile-header-top: 5%;
-    --mobile-title-size: 19px;
-    --mobile-subtitle-size: 12px;
+    --mobile-title-size: 21px;
+    --mobile-subtitle-size: 13.5px;
 
-    /* الوقت والنقاط */
+    /* الوقت والنقاط
+       رجعوا لمكانهم الأصلي */
     --mobile-info-top: 6px;
     --mobile-info-size: 14px;
 
-    /* الأسئلة */
-    --mobile-question-width: 31%;
-    --mobile-question-size: 11.5px;
+    /* الأسئلة
+       أكبر شوية */
+    --mobile-question-width: 32%;
+    --mobile-question-size: 14px;
 
-    /* حجم اختيارات السؤال
-       من 20 إلى 25 بيكسل */
-    --mobile-option-size: 23px;
-    --mobile-option-font: 12px;
+    /* الاختيارات
+       أكبر شوية */
+    --mobile-option-size: 28px;
+    --mobile-option-font: 14px;
+
+    /* مربع الإجابة */
+    --mobile-dashed-size: 28px;
 
     /* الحلزون */
     --mobile-snail-size: 52px;
@@ -17908,8 +17903,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     --mobile-trophy-size: 54px;
 
     /* أزرار التحكم
-       40px فوق مكانها القديم */
-    --mobile-buttons-bottom: 50px;
+       مرفوعة 30px */
+    --mobile-buttons-bottom: 80px;
 
     /* حجم أزرار التحكم */
     --mobile-control-size: 39px;
@@ -17969,9 +17964,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   /* ==========================================================
      📊 الوقت والنقاط
-     
-     الوقت يسار
-     النقاط يمين
+     رجعوا للأعلى وكبرناهم قليلًا
   ========================================================== */
 
   .top-bar {
@@ -18028,7 +18021,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   .info-box {
 
-    min-width: 55px !important;
+    min-width: 58px !important;
 
     height: 38px !important;
 
@@ -18048,20 +18041,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       0 3px 8px rgba(0,0,0,0.18) !important;
   }
 
-  /* الوقت على الشمال */
   .time-box {
     order: 1 !important;
   }
 
-  /* النقاط على اليمين */
   .score-box {
     order: 2 !important;
   }
 
   /* ==========================================================
      🏷️ العنوان والفقرة
-     
-     الاثنين في منتصف الشاشة
   ========================================================== */
 
   .header-wrapper {
@@ -18074,7 +18063,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     transform: translateX(-50%) !important;
 
-    width: 72% !important;
+    width: 75% !important;
 
     margin: 0 !important;
 
@@ -18095,7 +18084,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     font-size: var(--mobile-title-size) !important;
 
-    padding: 6px 14px !important;
+    padding: 7px 15px !important;
 
     border-radius: 13px !important;
 
@@ -18116,7 +18105,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     line-height: 1.4 !important;
 
-    padding: 4px 8px !important;
+    padding: 5px 8px !important;
 
     border-radius: 10px !important;
 
@@ -18127,9 +18116,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   /* ==========================================================
      🧩 الأسئلة
-     
-     3 × 3
-     كل سؤال له 3 اختيارات
+     الأسئلة 1-3 نازلة 60px
+     الأسئلة 4-9 نازلة 40px
   ========================================================== */
 
   .tile-item {
@@ -18146,65 +18134,54 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     z-index: 30 !important;
   }
 
-  /* ==========================================================
-     الصف الأول
-  ========================================================== */
-
   .tile-item-0 {
-    top: 44% !important;
+    top: calc(44% + 60px) !important;
     left: 16.5% !important;
   }
 
   .tile-item-1 {
-    top: 44% !important;
+    top: calc(44% + 60px) !important;
     left: 50% !important;
   }
 
   .tile-item-2 {
-    top: 44% !important;
+    top: calc(44% + 60px) !important;
     left: 83.5% !important;
   }
 
-  /* ==========================================================
-     الصف الثاني
-  ========================================================== */
-
   .tile-item-3 {
-    top: 56% !important;
+    top: calc(56% + 40px) !important;
     left: 16.5% !important;
   }
 
   .tile-item-4 {
-    top: 56% !important;
+    top: calc(56% + 40px) !important;
     left: 50% !important;
   }
 
   .tile-item-5 {
-    top: 56% !important;
+    top: calc(56% + 40px) !important;
     left: 83.5% !important;
   }
 
-  /* ==========================================================
-     الصف الثالث
-  ========================================================== */
-
   .tile-item-6 {
-    top: 68% !important;
+    top: calc(68% + 40px) !important;
     left: 16.5% !important;
   }
 
   .tile-item-7 {
-    top: 68% !important;
+    top: calc(68% + 40px) !important;
     left: 50% !important;
   }
 
   .tile-item-8 {
-    top: 68% !important;
+    top: calc(68% + 40px) !important;
     left: 83.5% !important;
   }
 
   /* ==========================================================
      📝 اسم السؤال
+     أكبر شوية
   ========================================================== */
 
   .q-line {
@@ -18219,9 +18196,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     justify-content: center !important;
 
-    gap: 2px !important;
+    gap: 3px !important;
 
-    margin-bottom: 4px !important;
+    margin-bottom: 5px !important;
 
     direction: rtl !important;
   }
@@ -18244,14 +18221,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       0 0 8px #fff !important;
   }
 
-  /* إخفاء مربع الإجابة على الموبايل */
+  /* ==========================================================
+     ⬜ مربع الإجابة
+     أكبر شوية
+  ========================================================== */
 
   .dashed-box {
+
     display: none !important;
+
+    width:
+      var(--mobile-dashed-size) !important;
+
+    height:
+      var(--mobile-dashed-size) !important;
+
+    border-width: 2px !important;
   }
 
   /* ==========================================================
-     🔘 3 اختيارات فقط لكل سؤال
+     🔘 الاختيارات
+     أكبر شوية
   ========================================================== */
 
   .opts-line {
@@ -18264,7 +18254,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     flex-wrap: nowrap !important;
 
-    gap: 3px !important;
+    gap: 4px !important;
 
     justify-content: center !important;
 
@@ -18310,12 +18300,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     align-items: center !important;
 
     justify-content: center !important;
+
+    box-shadow:
+      0 3px 6px rgba(0,0,0,0.22) !important;
   }
 
   /* ==========================================================
      🐌 الحلزون
-     
-     كل خطوة قابلة للتحكم
   ========================================================== */
 
   .snail-box {
@@ -18390,8 +18381,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   /* ==========================================================
      🏆 الكأس
-     
-     تقدري تتحكمي فيه من هنا
   ========================================================== */
 
   .finish-trophy {
@@ -18413,8 +18402,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   /* ==========================================================
      🔘 أزرار التحكم
-     
-     مرفوعة 40px لأعلى
+     مرفوعة 30px
   ========================================================== */
 
   .bottom-section {
@@ -18482,17 +18470,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   :root {
 
-    --mobile-title-size: 17px;
+    --mobile-title-size: 19px;
 
-    --mobile-subtitle-size: 11px;
+    --mobile-subtitle-size: 12px;
 
     --mobile-info-size: 13px;
 
-    --mobile-question-size: 10.5px;
+    --mobile-question-size: 12.5px;
 
-    --mobile-option-size: 21px;
+    --mobile-option-size: 25px;
 
-    --mobile-option-font: 10px;
+    --mobile-option-font: 12px;
 
     --mobile-snail-size: 48px;
 
@@ -18500,48 +18488,48 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     --mobile-control-size: 36px;
 
-    --mobile-buttons-bottom: 48px;
+    --mobile-buttons-bottom: 78px;
   }
 
   .info-box {
 
-    min-width: 48px !important;
+    min-width: 52px !important;
 
-    height: 34px !important;
+    height: 35px !important;
 
-    padding: 4px 6px !important;
+    padding: 4px 7px !important;
   }
 
   .header-wrapper {
 
-    width: 72% !important;
+    width: 74% !important;
   }
 
   .main-title-text {
 
-    padding: 5px 10px !important;
+    padding: 6px 11px !important;
   }
 
   .sub-title-text {
 
-    padding: 3px 5px !important;
+    padding: 4px 5px !important;
   }
 
   .tile-item {
 
-    width: 31.5% !important;
+    width: 32% !important;
   }
 
   .q-line {
 
-    gap: 1px !important;
+    gap: 2px !important;
 
-    margin-bottom: 3px !important;
+    margin-bottom: 4px !important;
   }
 
   .opts-line {
 
-    gap: 2px !important;
+    gap: 3px !important;
   }
 
   .symbol-btn {
