@@ -17690,11 +17690,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             bottom: 55px !important;
           }
         }
-      `}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:{...oj,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{onClick:()=>i(!r),style:{...oj,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsx)(`img`,{className:`title-img`,src:ej,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,N.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#f7f8f9`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,N.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#fdfdfd`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},oj={width:`43px`,height:`43px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},sj=`/Kids-Games/assets/tuol6-Bwl5qNVk.jpeg`,cj=`/Kids-Games/assets/tttt2-D8ahyY0o.jpeg`,lj=`/Kids-Games/assets/snail-BZcZ7ykG.png`,uj=`/Kids-Games/assets/trophy3-Da_Yaec3.png`,dj=`/sounds/hay1.mp3`,fj=`/sounds/pop.mp3`,pj=[{question:`الفاصلة`,answer:`،`,options:[`،`,`.`,`؟`]},{question:`علامة التعجب`,answer:`!`,options:[`؟`,`!`,`:`]},{question:`علامة الاستفهام`,answer:`؟`,options:[`!`,`،`,`؟`]},{question:`النقطتان`,answer:`:`,options:[`.`,`:`,`،`]}],mj=[{top:`28%`,color:`yellow`},{top:`42%`,color:`purple`},{top:`56%`,color:`pink`},{top:`70%`,color:`yellow`}],hj=[{left:`12%`,top:`31%`},{left:`86%`,top:`31%`},{left:`12%`,top:`45%`},{left:`86%`,top:`45%`},{left:`12%`,top:`59%`},{left:`86%`,top:`59%`},{left:`12%`,top:`73%`},{left:`86%`,top:`73%`},{left:`88%`,top:`77%`}],gj=()=>{let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(0),_=(0,b.useRef)([]);(0,b.useEffect)(()=>{if(s)return;let e=setInterval(()=>{g(e=>e+1)},1e3);return()=>clearInterval(e)},[s]);let v=()=>{_.current.forEach(e=>{clearTimeout(e)}),_.current=[]};(0,b.useEffect)(()=>()=>{v()},[]);let y=e=>{if(!l)try{let t=new Audio(e);t.currentTime=0,t.play().catch(()=>{})}catch{}},x=()=>{v(),n(0),i(null),o(!1),c(!1),f(0),m(0),g(0)},S=()=>{e(`/`)},C=e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${String(n).padStart(2,`0`)}`},w=e=>{if(a||s)return;let r=pj[t];if(i(e),e!==r.answer){y(fj);let e=setTimeout(()=>{i(null)},700);_.current.push(e);return}y(dj),o(!0),m(1.8);let l=t*2+1;f(l);let u=setTimeout(()=>{if(t===pj.length-1){m(1.1),f(8);let e=setTimeout(()=>{o(!1),c(!0)},1200);_.current.push(e);return}let e=l+1;m(.6),f(e);let r=setTimeout(()=>{n(e=>e+1),i(null),o(!1)},650);_.current.push(r)},1850);_.current.push(u)},T=(e,n)=>n===t&&r===e?e===pj[n].answer?`correct`:`wrong`:``;return(0,N.jsxs)(`div`,{className:`snail-game`,children:[(0,N.jsxs)(`picture`,{className:`game-background`,children:[(0,N.jsx)(`source`,{media:`(max-width: 768px)`,srcSet:cj}),(0,N.jsx)(`img`,{src:sj,alt:``})]}),(0,N.jsx)(`div`,{className:`background-soft-layer`}),(0,N.jsx)(`div`,{className:`game-title`,children:(0,N.jsx)(`span`,{children:`🐌 سباق الحلزون`})}),(0,N.jsxs)(`div`,{className:`timer-box`,children:[(0,N.jsx)(`span`,{className:`timer-icon`,children:`⏱️`}),(0,N.jsx)(`span`,{children:C(h)})]}),(0,N.jsxs)(`div`,{className:`score-box`,children:[(0,N.jsx)(`span`,{children:`⭐`}),(0,N.jsx)(`span`,{children:s?`4`:t})]}),(0,N.jsx)(`div`,{className:`instruction-box`,children:`اختر علامة الترقيم المناسبة`}),(0,N.jsxs)(`div`,{className:`race-board`,children:[pj.map((e,n)=>{let r=mj[n];return(0,N.jsx)(`div`,{className:`race-row ${r.color} ${n===t?`current-row`:``}`,style:{top:r.top},children:(0,N.jsxs)(`div`,{className:`race-track`,children:[(0,N.jsx)(`div`,{className:`question-card`,children:e.question}),(0,N.jsx)(`div`,{className:`options-container`,children:e.options.map((e,r)=>(0,N.jsx)(`button`,{type:`button`,className:`option-circle ${T(e,n)}`,onClick:()=>w(e),disabled:a||s||n!==t,children:e},r))})]})},n)}),(0,N.jsx)(V.img,{src:lj,alt:`الحلزون`,className:`snail-character`,animate:{left:hj[d].left,top:hj[d].top},transition:{duration:p,ease:`easeInOut`}}),(0,N.jsx)(V.img,{src:uj,alt:`الكأس`,className:`trophy-character`,animate:{scale:s?[1,1.1,1]:1},transition:{duration:.7,repeat:s?1/0:0,repeatType:`reverse`}}),(0,N.jsx)(Fg,{children:s&&(0,N.jsxs)(V.div,{className:`win-message`,initial:{opacity:0,scale:.6},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.6},transition:{duration:.45},children:[(0,N.jsx)(ra,{size:25}),(0,N.jsx)(`span`,{children:`أحسنت! 🎉`})]})})]}),(0,N.jsxs)(`div`,{className:`control-buttons`,children:[(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:()=>u(e=>!e),children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:x,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:()=>{!a&&!s&&t<pj.length-1&&(n(e=>e+1),i(null))},children:(0,N.jsx)(P,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:S,children:(0,N.jsx)(F,{})})]}),(0,N.jsx)(`style`,{children:`
-
-        /* ======================================================
-           RESET
-        ====================================================== */
+      `}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:{...oj,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{onClick:()=>i(!r),style:{...oj,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsx)(`img`,{className:`title-img`,src:ej,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,N.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#f7f8f9`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,N.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#fdfdfd`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},oj={width:`43px`,height:`43px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},sj=`/Kids-Games/assets/tuol6-Bwl5qNVk.jpeg`,cj=`/Kids-Games/assets/tttt2-D8ahyY0o.jpeg`,lj=`/Kids-Games/assets/snail-BZcZ7ykG.png`,uj=`/Kids-Games/assets/trophy3-Da_Yaec3.png`,dj=`/sounds/hay1.mp3`,fj=`/sounds/pop.mp3`,pj=[{question:`الفاصلة`,answer:`،`,options:[`،`,`.`,`؟`]},{question:`علامة التعجب`,answer:`!`,options:[`؟`,`!`,`:`]},{question:`علامة الاستفهام`,answer:`؟`,options:[`!`,`،`,`؟`]},{question:`النقطتان`,answer:`:`,options:[`.`,`:`,`،`]}],mj=[{top:`27%`,color:`yellow`},{top:`40%`,color:`purple`},{top:`53%`,color:`pink`},{top:`66%`,color:`yellow`}],hj=[{left:`14%`,top:`30%`},{left:`86%`,top:`30%`},{left:`86%`,top:`43%`},{left:`14%`,top:`43%`},{left:`14%`,top:`56%`},{left:`86%`,top:`56%`},{left:`86%`,top:`69%`},{left:`14%`,top:`69%`},{left:`6%`,top:`73%`}],gj=()=>{let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(0),_=(0,b.useRef)([]);(0,b.useEffect)(()=>{if(s)return;let e=setInterval(()=>{g(e=>e+1)},1e3);return()=>clearInterval(e)},[s]);let v=()=>{_.current.forEach(e=>{clearTimeout(e)}),_.current=[]};(0,b.useEffect)(()=>()=>{v()},[]);let y=e=>{if(!l)try{let t=new Audio(e);t.currentTime=0,t.play().catch(()=>{})}catch{}},x=()=>{v(),n(0),i(null),o(!1),c(!1),f(0),m(0),g(0)},S=()=>{e(`/`)},C=e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${String(n).padStart(2,`0`)}`},w=e=>{if(a||s)return;let r=pj[t];if(i(e),e!==r.answer){y(fj);let e=setTimeout(()=>{i(null)},700);_.current.push(e);return}y(dj),o(!0),m(1.8);let l=t*2+1;f(l);let u=setTimeout(()=>{if(t===pj.length-1){m(.9),f(8);let e=setTimeout(()=>{o(!1),c(!0)},1e3);_.current.push(e);return}let e=l+1;m(.6),f(e);let r=setTimeout(()=>{n(e=>e+1),i(null),o(!1)},650);_.current.push(r)},1850);_.current.push(u)},T=(e,n)=>n===t&&r===e?e===pj[n].answer?`correct`:`wrong`:``;return(0,N.jsxs)(`div`,{className:`snail-game`,children:[(0,N.jsxs)(`picture`,{className:`game-background`,children:[(0,N.jsx)(`source`,{media:`(max-width: 768px)`,srcSet:cj}),(0,N.jsx)(`img`,{src:sj,alt:``})]}),(0,N.jsx)(`div`,{className:`background-soft-layer`}),(0,N.jsx)(`div`,{className:`game-title`,children:(0,N.jsx)(`span`,{children:`🐌 سباق الحلزون`})}),(0,N.jsxs)(`div`,{className:`timer-box`,children:[(0,N.jsx)(`span`,{className:`timer-icon`,children:`⏱️`}),(0,N.jsx)(`span`,{children:C(h)})]}),(0,N.jsxs)(`div`,{className:`score-box`,children:[(0,N.jsx)(`span`,{children:`⭐`}),(0,N.jsx)(`span`,{children:s?`4`:t})]}),(0,N.jsx)(`div`,{className:`instruction-box`,children:`اختر علامة الترقيم المناسبة`}),(0,N.jsxs)(`div`,{className:`race-board`,children:[pj.map((e,n)=>{let r=mj[n];return(0,N.jsx)(`div`,{className:`race-row ${r.color} ${n===t?`current-row`:``}`,style:{top:r.top},children:(0,N.jsxs)(`div`,{className:`race-track`,children:[(0,N.jsx)(`div`,{className:`question-card`,children:e.question}),(0,N.jsx)(`div`,{className:`options-container`,children:e.options.map((e,r)=>(0,N.jsx)(`button`,{type:`button`,className:`option-circle ${T(e,n)}`,onClick:()=>w(e),disabled:a||s||n!==t,children:e},r))})]})},n)}),(0,N.jsx)(V.img,{src:lj,alt:`الحلزون`,className:`snail-character`,animate:{left:hj[d].left,top:hj[d].top},transition:{duration:p,ease:`easeInOut`}}),(0,N.jsx)(V.img,{src:uj,alt:`الكأس`,className:`trophy-character`,animate:{scale:s?[1,1.1,1]:1},transition:{duration:.7,repeat:s?1/0:0,repeatType:`reverse`}}),(0,N.jsx)(Fg,{children:s&&(0,N.jsxs)(V.div,{className:`win-message`,initial:{opacity:0,scale:.6},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.6},transition:{duration:.45},children:[(0,N.jsx)(ra,{size:25}),(0,N.jsx)(`span`,{children:`أحسنت! 🎉`})]})})]}),(0,N.jsxs)(`div`,{className:`control-buttons`,children:[(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:()=>u(e=>!e),children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:x,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:()=>{!a&&!s&&t<pj.length-1&&(n(e=>e+1),i(null))},children:(0,N.jsx)(P,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:S,children:(0,N.jsx)(F,{})})]}),(0,N.jsx)(`style`,{children:`
 
         * {
           box-sizing: border-box;
@@ -17835,7 +17831,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           z-index: 35;
 
           top: 2%;
-
           left: 3%;
 
           min-width: 88px;
@@ -17885,7 +17880,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           z-index: 35;
 
           top: 2%;
-
           right: 3%;
 
           min-width: 76px;
@@ -17921,11 +17915,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .score-box span:first-child {
           color: #f4c523;
+
           font-size: 23px;
         }
 
         /* ======================================================
            التعليمات
+           الخلفية على قد المحتوى
         ====================================================== */
 
         .instruction-box {
@@ -17938,8 +17934,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           transform: translateX(-50%);
 
-          width: 88%;
-          max-width: 330px;
+          width: max-content;
+
+          max-width: 90vw;
 
           min-height: 39px;
 
@@ -17948,7 +17945,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           align-items: center;
           justify-content: center;
 
-          padding: 5px 10px;
+          padding: 6px 14px;
 
           background: #f7fff4;
 
@@ -17959,9 +17956,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           color: #254b2a;
 
           font-size: 17px;
+
           font-weight: 900;
 
           text-align: center;
+
+          white-space: nowrap;
 
           box-shadow:
             0 3px 5px
@@ -17984,7 +17984,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ======================================================
-           الصف
+           الصفوف
         ====================================================== */
 
         .race-row {
@@ -17996,13 +17996,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           width: 96%;
 
-          height: 82px;
+          height: 91px;
 
           pointer-events: none;
         }
 
         /* ======================================================
-           المسار الطويل
+           المستطيل
+           التصميم الأساسي للكمبيوتر
         ====================================================== */
 
         .race-track {
@@ -18016,15 +18017,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           width: 96%;
 
-          height: 57px;
+          height: 67px;
 
-          border-radius: 30px;
+          border-radius: 34px;
 
           border: 3px solid;
 
           box-shadow:
             inset 0 3px 3px
-              rgba(255,255,255,0.4),
+              rgba(255,255,255,0.42),
             0 3px 4px
               rgba(0,0,0,0.18);
         }
@@ -18064,7 +18065,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ======================================================
-           كارت السؤال
+           مربع السؤال - الأساسي
         ====================================================== */
 
         .question-card {
@@ -18074,22 +18075,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           left: 50%;
 
-          top: -29px;
+          top: -39px;
 
           transform: translateX(-50%);
 
-          width: 58%;
+          width: max-content;
 
-          max-width: 235px;
+          min-width: 118px;
 
-          height: 51px;
+          max-width: 82%;
+
+          height: 59px;
 
           display: flex;
 
           align-items: center;
           justify-content: center;
 
-          padding: 4px 10px;
+          padding: 5px 17px;
 
           background: linear-gradient(
             to bottom,
@@ -18099,11 +18102,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           border: 3px solid #e3ae24;
 
-          border-radius: 29px;
+          border-radius: 30px;
 
           color: #30251e;
 
-          font-size: 17px;
+          font-size: 20px;
 
           font-weight: 900;
 
@@ -18139,7 +18142,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ======================================================
-           الاختيارات
+           الاختيارات - الأساسي
         ====================================================== */
 
         .options-container {
@@ -18149,7 +18152,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           left: 50%;
 
-          bottom: -2px;
+          bottom: 2px;
 
           transform: translateX(-50%);
 
@@ -18158,22 +18161,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           align-items: center;
           justify-content: center;
 
-          gap: 7px;
+          gap: 8px;
 
           direction: ltr;
 
           pointer-events: auto;
         }
 
-        /* ======================================================
-           دوائر الاختيارات
-        ====================================================== */
-
         .option-circle {
-          width: 36px;
-          height: 36px;
+          width: 38px;
+          height: 38px;
 
-          flex: 0 0 36px;
+          flex: 0 0 38px;
 
           display: flex;
 
@@ -18195,7 +18194,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             Tahoma,
             sans-serif;
 
-          font-size: 20px;
+          font-size: 21px;
 
           font-weight: 900;
 
@@ -18215,7 +18214,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .option-circle:not(:disabled):active {
-          transform: translateY(2px)
+          transform:
+            translateY(2px)
             scale(0.96);
         }
 
@@ -18300,8 +18300,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           z-index: 18;
 
-          left: 88%;
-          top: 77%;
+          left: 6%;
+          top: 73%;
 
           width: 58px;
           height: 58px;
@@ -18321,7 +18321,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ======================================================
-           رسالة الفوز
+           الفوز
         ====================================================== */
 
         .win-message {
@@ -18368,6 +18368,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         /* ======================================================
            أزرار التحكم
+           مرفوعة 20px
         ====================================================== */
 
         .control-buttons {
@@ -18377,7 +18378,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           left: 50%;
 
-          bottom: 8px;
+          bottom: 28px;
 
           transform: translateX(-50%);
 
@@ -18417,24 +18418,165 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               rgba(0,0,0,0.15);
 
           cursor: pointer;
-
-          transition:
-            transform 0.15s ease;
         }
 
         .control-button:active {
-          transform: translateY(2px)
+          transform:
+            translateY(2px)
             scale(0.96);
         }
 
         .control-button svg {
           width: 27px;
           height: 27px;
+
           stroke-width: 2.7;
         }
 
         /* ======================================================
-           موبايل صغير جدًا
+           📱 الموبايل
+           التعديلات المطلوبة هنا فقط
+        ====================================================== */
+
+        @media (max-width: 768px) {
+
+          /* ----------------------------------------------------
+             الصفوف
+             ---------------------------------------------------- */
+
+          .race-row {
+            width: 96%;
+
+            /*
+              زودنا مساحة الصف قليلًا
+              لأن السؤال والاختيارات أصبحوا أكبر.
+            */
+
+            height: 88px;
+          }
+
+          /* ----------------------------------------------------
+             المستطيل:
+             أصغر في العرض شوية
+             وأخف في الارتفاع من السابق
+             ---------------------------------------------------- */
+
+          .race-track {
+            width: 89%;
+
+            height: 59px;
+
+            border-radius: 31px;
+
+            border-width: 3px;
+          }
+
+          /* ----------------------------------------------------
+             مربع السؤال:
+             أكبر في العرض والارتفاع
+             والكلام أكبر
+             ---------------------------------------------------- */
+
+          .question-card {
+            min-width: 135px;
+
+            max-width: 86%;
+
+            height: 64px;
+
+            top: -41px;
+
+            padding: 5px 19px;
+
+            font-size: 22px;
+
+            border-width: 3px;
+
+            border-radius: 32px;
+          }
+
+          /* ----------------------------------------------------
+             الاختيارات:
+             أكبر شوية
+             ---------------------------------------------------- */
+
+          .options-container {
+            bottom: 1px;
+
+            gap: 8px;
+          }
+
+          .option-circle {
+            width: 41px;
+            height: 41px;
+
+            flex: 0 0 41px;
+
+            font-size: 23px;
+
+            border-width: 3px;
+          }
+
+          /* ----------------------------------------------------
+             الحلزون
+             ---------------------------------------------------- */
+
+          .snail-character {
+            width: 47px;
+            height: 47px;
+          }
+
+          /* ----------------------------------------------------
+             الكأس على الشمال
+             ---------------------------------------------------- */
+
+          .trophy-character {
+            left: 6%;
+
+            top: 73%;
+
+            width: 58px;
+            height: 58px;
+          }
+
+          /* ----------------------------------------------------
+             التعليمات على قد المحتوى
+             ---------------------------------------------------- */
+
+          .instruction-box {
+            width: max-content;
+
+            max-width: 90vw;
+
+            padding: 6px 14px;
+
+            font-size: 17px;
+          }
+
+          /* ----------------------------------------------------
+             أزرار التحكم:
+             مرفوعة 20px
+             ---------------------------------------------------- */
+
+          .control-buttons {
+            bottom: 28px;
+
+            gap: 8px;
+          }
+
+          .control-button {
+            width: 50px;
+            height: 50px;
+          }
+
+          .control-button svg {
+            width: 27px;
+            height: 27px;
+          }
+        }
+
+        /* ======================================================
+           📱 موبايل صغير جدًا
         ====================================================== */
 
         @media (max-width: 380px) {
@@ -18467,64 +18609,104 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .instruction-box {
             top: 9.5%;
 
-            min-height: 36px;
+            min-height: 35px;
+
+            padding: 5px 11px;
 
             font-size: 15px;
 
             border-width: 2px;
           }
+
+          /* ----------------------------------------------------
+             الصف
+             ---------------------------------------------------- */
 
           .race-row {
             width: 98%;
-            height: 75px;
+
+            height: 82px;
           }
+
+          /* ----------------------------------------------------
+             المستطيل أصغر عرضًا
+             ---------------------------------------------------- */
 
           .race-track {
-            width: 96%;
-            height: 52px;
+            width: 87%;
+
+            height: 55px;
 
             border-width: 2px;
+
+            border-radius: 29px;
           }
+
+          /* ----------------------------------------------------
+             مربع السؤال أكبر
+             ---------------------------------------------------- */
 
           .question-card {
-            top: -27px;
+            min-width: 120px;
 
-            width: 57%;
+            max-width: 88%;
 
-            height: 45px;
+            height: 58px;
 
-            font-size: 15px;
+            top: -38px;
+
+            padding: 4px 14px;
+
+            font-size: 19px;
 
             border-width: 2px;
           }
 
+          /* ----------------------------------------------------
+             الاختيارات أكبر
+             ---------------------------------------------------- */
+
           .options-container {
-            gap: 5px;
+            gap: 6px;
           }
 
           .option-circle {
-            width: 32px;
-            height: 32px;
+            width: 37px;
+            height: 37px;
 
-            flex-basis: 32px;
+            flex-basis: 37px;
 
-            font-size: 18px;
+            font-size: 20px;
 
             border-width: 2px;
           }
+
+          /* ----------------------------------------------------
+             الحلزون
+             ---------------------------------------------------- */
 
           .snail-character {
             width: 43px;
             height: 43px;
           }
 
+          /* ----------------------------------------------------
+             الكأس
+             ---------------------------------------------------- */
+
           .trophy-character {
             width: 51px;
             height: 51px;
+
+            left: 6%;
           }
 
+          /* ----------------------------------------------------
+             الأزرار مرفوعة 20px
+             ---------------------------------------------------- */
+
           .control-buttons {
-            bottom: 5px;
+            bottom: 28px;
 
             gap: 6px;
           }
@@ -18540,7 +18722,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .win-message {
-            top: 77%;
+            top: 76%;
 
             min-width: 130px;
 
@@ -18551,32 +18733,33 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ======================================================
-           شاشات الموبايل الطويلة
+           📱 الموبايل الطويل
         ====================================================== */
 
-        @media (min-height: 760px) and
-               (max-width: 768px) {
+        @media (min-height: 760px)
+          and (max-width: 768px) {
 
           .race-row:nth-child(1) {
-            top: 27% !important;
+            top: 26.5% !important;
           }
 
           .race-row:nth-child(2) {
-            top: 40% !important;
+            top: 39.5% !important;
           }
 
           .race-row:nth-child(3) {
-            top: 53% !important;
+            top: 52.5% !important;
           }
 
           .race-row:nth-child(4) {
-            top: 66% !important;
+            top: 65.5% !important;
           }
 
         }
 
         /* ======================================================
-           سطح المكتب
+           💻 الكمبيوتر
+           يظل كما هو بدون تعديلات الموبايل
         ====================================================== */
 
         @media (min-width: 769px) {
@@ -18616,38 +18799,34 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .instruction-box {
             top: 12%;
 
-            max-width: 400px;
-
-            min-height: 47px;
-
             font-size: 21px;
+
+            padding: 7px 17px;
           }
 
           .race-row {
             width: 70%;
             max-width: 650px;
 
-            height: 100px;
+            height: 108px;
           }
 
           .race-track {
             width: 100%;
 
-            height: 70px;
+            height: 76px;
 
             border-radius: 40px;
           }
 
           .question-card {
-            width: 50%;
+            min-width: 160px;
 
-            max-width: 300px;
+            height: 67px;
 
-            height: 61px;
+            top: -41px;
 
-            top: -37px;
-
-            font-size: 21px;
+            font-size: 23px;
           }
 
           .option-circle {
@@ -18671,6 +18850,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .trophy-character {
             width: 80px;
             height: 80px;
+
+            left: 6%;
+          }
+
+          .control-buttons {
+            bottom: 38px;
           }
 
           .control-button {
@@ -18682,7 +18867,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 30px;
             height: 30px;
           }
-
         }
 
       `})]})},_j=[{id:`candy`,icon:`🍬`,color:`#ec4899`,symbol:`!`},{id:`lollipop`,icon:`🍭`,color:`#06b6d4`,symbol:`?`},{id:`gem`,icon:`💎`,color:`#8b5cf6`,symbol:`.`},{id:`donut`,icon:`🍩`,color:`#f59e0b`,symbol:`:`}],vj=6,yj=20;function bj(){let e=j(),[t,n]=(0,b.useState)([]),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(0),[l,u]=(0,b.useState)(0),[d,f]=(0,b.useState)(`playing`),[p,m]=(0,b.useState)(!1),h=()=>{if(!p)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e,n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(400,t.currentTime),n.frequency.exponentialRampToValueAtTime(800,t.currentTime+.08),r.gain.setValueAtTime(.3,t.currentTime),r.gain.exponentialRampToValueAtTime(.01,t.currentTime+.08),n.connect(r),r.connect(t.destination),n.start(),n.stop(t.currentTime+.08)}catch(e){console.log(`Audio Web API error:`,e)}},g=()=>({..._j[Math.floor(Math.random()*_j.length)],uniqueId:Math.random().toString(36).substr(2,9)}),_=()=>{let e=Array(vj*vj).fill(null);for(let t=0;t<vj;t++)for(let n=0;n<vj;n++){let r=t*vj+n,i,a=0;do{i=g(),a++;let r=n>0?e[t*vj+(n-1)]:null,o=n>1?e[t*vj+(n-2)]:null,s=r&&o&&r.id===i.id,c=t>0?e[(t-1)*vj+n]:null,l=t>1?e[(t-2)*vj+n]:null,u=c&&l&&c.id===i.id;if(!s&&!u)break}while(a<50);e[r]=i}for(let t=0;t<4;t++){let t=Math.floor(Math.random()*(vj-1)),n=Math.floor(Math.random()*(vj-2)),r=g();e[t*vj+n]={...r,uniqueId:Math.random().toString()},e[t*vj+(n+1)]={...r,uniqueId:Math.random().toString()};let i=(t+1)*vj+(n+2);i<vj*vj&&(e[i]={...r,uniqueId:Math.random().toString()})}return e},v=()=>{n(_()),o(0),c(0),u(0),f(`playing`),i(null)};(0,b.useEffect)(()=>{v()},[]),(0,b.useEffect)(()=>{let e;return d===`playing`&&(e=setInterval(()=>{u(e=>e+1)},1e3)),()=>clearInterval(e)},[d]);let y=e=>{let t=new Set;for(let n=0;n<vj;n++)for(let r=0;r<vj-2;r++){let i=n*vj+r,a=n*vj+(r+1),o=n*vj+(r+2);e[i]&&e[a]&&e[o]&&e[i].id===e[a].id&&e[a].id===e[o].id&&(t.add(i),t.add(a),t.add(o))}for(let n=0;n<vj;n++)for(let r=0;r<vj-2;r++){let i=r*vj+n,a=(r+1)*vj+n,o=(r+2)*vj+n;e[i]&&e[a]&&e[o]&&e[i].id===e[a].id&&e[a].id===e[o].id&&(t.add(i),t.add(a),t.add(o))}return Array.from(t)},x=e=>{let t=y(e);if(t.length===0)return;h(),o(e=>e+1),c(e=>{let t=e+1;return t>=yj&&f(`won`),t});let r=[...e];t.forEach(e=>{r[e]=null});for(let e=0;e<vj;e++){let t=0;for(let n=vj-1;n>=0;n--){let i=n*vj+e;r[i]===null?t++:t>0&&(r[(n+t)*vj+e]=r[i],r[i]=null)}for(let n=0;n<t;n++)r[n*vj+e]=g()}n(r),setTimeout(()=>{x(r)},300)},S=e=>{if(d===`playing`)if(r===null)i(e);else{if(Math.abs(r-e)===1&&Math.floor(r/vj)===Math.floor(e/vj)||Math.abs(r-e)===vj){let i=[...t];[i[r],i[e]]=[i[e],i[r]],y(i).length>0?(n(i),setTimeout(()=>{x(i)},150)):(n(i),setTimeout(()=>{[i[r],i[e]]=[i[e],i[r]],n([...i])},250))}i(null)}};return(0,N.jsxs)(`div`,{className:`game-container`,children:[(0,N.jsx)(`img`,{src:yA,className:`bg-img`,alt:`bg`}),(0,N.jsxs)(`div`,{className:`main-header`,children:[(0,N.jsxs)(`div`,{className:`stat-box`,children:[`الوقت: `,l]}),(0,N.jsxs)(`div`,{className:`center-info`,children:[(0,N.jsx)(`div`,{className:`title-box`,children:(0,N.jsx)(`h1`,{children:`كاندي علامات الترقيم 🎯`})}),(0,N.jsx)(`div`,{className:`subtitle-box`,children:(0,N.jsxs)(`p`,{children:[`المرحلة: `,s,` /`,` `,yj]})})]}),(0,N.jsxs)(`div`,{className:`stat-box`,children:[`النقاط: `,a]})]}),(0,N.jsxs)(`div`,{className:`main-play-area`,children:[(0,N.jsx)(`div`,{className:`character-wrapper`,children:(0,N.jsx)(`img`,{src:bA,className:`boy-img`,alt:`boy`})}),(0,N.jsx)(`div`,{className:`board-wrapper`,children:(0,N.jsx)(`div`,{className:`candy-board`,children:(0,N.jsx)(`div`,{className:`grid-container`,children:t.map((e,t)=>(0,N.jsx)(V.div,{layout:!0,initial:{scale:.8,opacity:0},animate:{scale:1,opacity:1},exit:{scale:0,opacity:0},transition:{type:`spring`,stiffness:300,damping:25},className:`grid-tile ${r===t?`selected`:``}`,style:{backgroundColor:e?e.color:`transparent`},onClick:()=>S(t),children:e&&(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`span`,{className:`tile-icon`,children:e.icon}),(0,N.jsx)(`span`,{className:`tile-symbol`,children:e.symbol})]})},e?e.uniqueId:t))})})}),(0,N.jsx)(`div`,{className:`spacer-right`})]}),(0,N.jsxs)(`div`,{className:`bottom-controls`,children:[(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,N.jsx)(F,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:v,title:`إعادة`,children:(0,N.jsx)(Yi,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>m(!p),title:`الصوت`,children:p?(0,N.jsx)(R,{className:`icon-size`,style:{color:`#ef4444`}}):(0,N.jsx)(L,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,N.jsx)(Ei,{className:`icon-size`})})]}),(0,N.jsx)(Fg,{children:d===`won`&&(0,N.jsx)(V.div,{className:`overlay`,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:(0,N.jsxs)(`div`,{className:`win-modal`,children:[(0,N.jsx)(ra,{size:42,color:`#fbbf24`}),(0,N.jsx)(`h2`,{children:`مذهل! أحسنت يا بطل 🏆`}),(0,N.jsxs)(`p`,{className:`win-score`,children:[`مجموع النقاط: `,a]}),(0,N.jsxs)(`p`,{className:`win-time`,children:[`الوقت المستغرق:`,` `,l,` ثانية`]}),(0,N.jsxs)(`div`,{className:`win-actions`,children:[(0,N.jsx)(`button`,{className:`win-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,N.jsx)(F,{size:20})}),(0,N.jsx)(`button`,{className:`win-btn highlight`,onClick:v,title:`إعادة اللعب`,children:(0,N.jsx)(Yi,{size:22})}),(0,N.jsx)(`button`,{className:`win-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,N.jsx)(Ei,{size:20})})]})]})})}),(0,N.jsx)(`style`,{jsx:!0,children:`
