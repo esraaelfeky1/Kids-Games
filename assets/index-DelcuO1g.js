@@ -17690,8 +17690,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             bottom: 55px !important;
           }
         }
-      `}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:{...oj,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{onClick:()=>i(!r),style:{...oj,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsx)(`img`,{className:`title-img`,src:ej,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,N.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#f7f8f9`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,N.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#fdfdfd`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},oj={width:`43px`,height:`43px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},sj=`/Kids-Games/assets/mt-D52G5CFU.jpeg`,cj=`/Kids-Games/assets/tttt2-D8ahyY0o.jpeg`,lj=`/Kids-Games/assets/snail-BZcZ7ykG.png`,uj=`/Kids-Games/assets/trophy3-Da_Yaec3.png`,dj=`/sounds/hay1.mp3`,fj=`/sounds/pop.mp3`,pj=[{question:`الفاصلة`,answer:`،`,options:[`،`,`.`,`؟`]},{question:`علامة التعجب`,answer:`!`,options:[`؟`,`!`,`:`]},{question:`علامة الاستفهام`,answer:`؟`,options:[`!`,`،`,`؟`]},{question:`النقطتان`,answer:`:`,options:[`.`,`:`,`،`]}],mj=[{top:`27%`,color:`yellow`},{top:`41%`,color:`purple`},{top:`55%`,color:`pink`},{top:`69%`,color:`yellow`}],hj=[{left:`14%`,top:`30%`},{left:`86%`,top:`30%`},{left:`86%`,top:`44%`},{left:`14%`,top:`44%`},{left:`14%`,top:`58%`},{left:`86%`,top:`58%`},{left:`86%`,top:`72%`},{left:`14%`,top:`72%`},{left:`10%`,top:`77%`}],gj=Array.from({length:55},(e,t)=>({id:t,left:`${Math.random()*100}%`,delay:`${Math.random()*.7}s`,duration:`${1.7+Math.random()*1.8}s`,size:`${5+Math.random()*7}px`,rotate:`${Math.random()*360}deg`})),_j=()=>(0,N.jsx)(`div`,{className:`confetti-container`,children:gj.map(e=>(0,N.jsx)(`span`,{className:`confetti-piece`,style:{left:e.left,animationDelay:e.delay,animationDuration:e.duration,width:e.size,height:e.size,transform:`rotate(${e.rotate})`}},e.id))}),vj=()=>{let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(1),[_,v]=(0,b.useState)(0),y=(0,b.useRef)([]),x=(0,b.useRef)(null),S=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=new Audio(dj),t=new Audio(fj);return e.preload=`auto`,t.preload=`auto`,x.current=e,S.current=t,()=>{e.pause(),t.pause(),e.currentTime=0,t.currentTime=0,x.current=null,S.current=null}},[]),(0,b.useEffect)(()=>{if(s)return;let e=setInterval(()=>{v(e=>e+1)},1e3);return()=>clearInterval(e)},[s]);let C=()=>{y.current.forEach(e=>{clearTimeout(e)}),y.current=[]};(0,b.useEffect)(()=>()=>{C()},[]);let w=e=>{if(!l)try{let t=e===`success`?x.current:S.current;if(!t)return;t.pause(),t.currentTime=0;let n=t.play();n!==void 0&&n.catch(()=>{})}catch{}},T=()=>{u(e=>{let t=!e;return t&&(x.current&&(x.current.pause(),x.current.currentTime=0),S.current&&(S.current.pause(),S.current.currentTime=0)),t})},E=()=>{C(),x.current&&(x.current.pause(),x.current.currentTime=0),S.current&&(S.current.pause(),S.current.currentTime=0),n(0),i(null),o(!1),c(!1),f(0),m(0),g(1),v(0)},D=()=>{C(),x.current&&(x.current.pause(),x.current.currentTime=0),S.current&&(S.current.pause(),S.current.currentTime=0),e(`/`)},O=()=>{C(),x.current&&(x.current.pause(),x.current.currentTime=0),S.current&&(S.current.pause(),S.current.currentTime=0),e(`/Marks`)},k=e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${String(n).padStart(2,`0`)}`},A=e=>{if(a||s)return;let r=pj[t];if(i(e),e!==r.answer){w(`error`);let e=setTimeout(()=>{i(null)},700);y.current.push(e);return}w(`success`),o(!0),g(t%2==0?1:-1),m(1.8);let l=t*2+1;f(l);let u=setTimeout(()=>{if(t===pj.length-1){g(-1),m(.9),f(8);let e=setTimeout(()=>{o(!1),c(!0)},1e3);y.current.push(e);return}let e=l+1;g((t+1)%2==0?1:-1),m(.6),f(e);let r=setTimeout(()=>{n(e=>e+1),i(null),o(!1)},650);y.current.push(r)},1850);y.current.push(u)},ee=(e,n)=>n===t&&r===e?e===pj[n].answer?`correct`:`wrong`:``;return(0,N.jsxs)(`div`,{className:`snail-game`,children:[(0,N.jsxs)(`picture`,{className:`game-background`,children:[(0,N.jsx)(`source`,{media:`(max-width: 768px)`,srcSet:cj}),(0,N.jsx)(`img`,{src:sj,alt:``})]}),(0,N.jsx)(`div`,{className:`background-soft-layer`}),(0,N.jsx)(`div`,{className:`game-title`,children:(0,N.jsx)(`span`,{children:`🐌 سباق الحلزون`})}),(0,N.jsxs)(`div`,{className:`timer-box`,children:[(0,N.jsx)(`span`,{className:`timer-icon`,children:`⏱️`}),(0,N.jsx)(`span`,{children:k(_)})]}),(0,N.jsxs)(`div`,{className:`score-box`,children:[(0,N.jsx)(`span`,{children:`⭐`}),(0,N.jsx)(`span`,{children:s?`4`:t})]}),(0,N.jsx)(`div`,{className:`instruction-box`,children:`اختر علامة الترقيم المناسبة`}),(0,N.jsxs)(`div`,{className:`race-board`,children:[pj.map((e,n)=>{let r=mj[n];return(0,N.jsx)(`div`,{className:`race-row ${r.color} ${n===t?`current-row`:``}`,style:{top:r.top},children:(0,N.jsxs)(`div`,{className:`race-track`,children:[(0,N.jsx)(`div`,{className:`question-card`,children:e.question}),(0,N.jsx)(`div`,{className:`options-container`,children:e.options.map((e,r)=>(0,N.jsx)(`button`,{type:`button`,className:`option-circle ${ee(e,n)}`,onClick:()=>A(e),disabled:a||s||n!==t,children:e},r))})]})},n)}),(0,N.jsx)(V.img,{src:lj,alt:`الحلزون`,className:`snail-character`,animate:{left:hj[d].left,top:hj[d].top,scaleX:h},transition:{left:{duration:p,ease:`easeInOut`},top:{duration:p,ease:`easeInOut`},scaleX:{duration:.25,ease:`easeOut`}}}),(0,N.jsx)(V.img,{src:uj,alt:`الكأس`,className:`trophy-character`,animate:{scale:s?[1,1.12,1]:1,rotate:s?[0,-4,4,0]:0},transition:{duration:.7,repeat:s?1/0:0,repeatType:`reverse`}}),(0,N.jsx)(Fg,{children:s&&(0,N.jsx)(_j,{})}),(0,N.jsx)(Fg,{children:s&&(0,N.jsxs)(V.div,{className:`win-message`,initial:{opacity:0,scale:.4,x:-20},animate:{opacity:1,scale:1,x:0},exit:{opacity:0,scale:.4},transition:{duration:.5,type:`spring`,stiffness:180},children:[(0,N.jsx)(ra,{size:25}),(0,N.jsx)(`span`,{children:`أحسنت! 🎉`})]})})]}),(0,N.jsxs)(`div`,{className:`control-buttons`,children:[(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:T,"aria-label":l?`تشغيل الصوت`:`كتم الصوت`,children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:E,"aria-label":`إعادة اللعبة`,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:O,"aria-label":`الرجوع`,children:(0,N.jsx)(P,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:D,"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{})})]}),(0,N.jsx)(`style`,{children:`
-
+      `}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:{...oj,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{onClick:()=>i(!r),style:{...oj,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsx)(`img`,{className:`title-img`,src:ej,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,N.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#f7f8f9`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,N.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#fdfdfd`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},oj={width:`43px`,height:`43px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},sj=`../assets/tuol6.jpeg`,cj=`../assets/tttt2.jpeg`,lj=`../assets/snail.png`,uj=`../assets/trophy3.png`,dj=`/Kids-Games/sounds/hay1.mp3`,fj=`/Kids-Games/sounds/pop.mp3`,pj=[{question:`أين توضع الفاصلة؟`,answer:`،`,options:[`،`,`.`,`؟`]},{question:`أين توضع علامة التعجب؟`,answer:`!`,options:[`؟`,`!`,`:`]},{question:`أين توضع علامة الاستفهام؟`,answer:`؟`,options:[`!`,`،`,`؟`]},{question:`أين توضع النقطتان؟`,answer:`:`,options:[`.`,`:`,`،`]}],mj=[{top:`27%`,color:`yellow`},{top:`41%`,color:`purple`},{top:`55%`,color:`pink`},{top:`69%`,color:`yellow`}],hj=[{left:`14%`,top:`30%`},{left:`86%`,top:`30%`},{left:`86%`,top:`44%`},{left:`14%`,top:`44%`},{left:`14%`,top:`58%`},{left:`86%`,top:`58%`},{left:`86%`,top:`72%`},{left:`14%`,top:`72%`},{left:`10%`,top:`77%`}],gj=[{left:`7%`,top:`29%`},{left:`47%`,top:`29%`},{left:`93%`,top:`29%`},{left:`53%`,top:`29%`},{left:`53%`,top:`61%`},{left:`93%`,top:`61%`},{left:`47%`,top:`61%`},{left:`7%`,top:`61%`},{left:`7%`,top:`61%`}];function _j(){return(0,N.jsx)(`div`,{className:`confetti-container`,children:Array.from({length:55}).map((e,t)=>(0,N.jsx)(`span`,{className:`confetti-piece`,style:{left:`${t*37%100}%`,animationDelay:`${t*.07%2}s`,animationDuration:`${2+t*.13%2}s`,transform:`rotate(${t*47%360}deg)`}},t))})}function vj(){let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(.8),[h,g]=(0,b.useState)(1),[_,v]=(0,b.useState)(0),[y,x]=(0,b.useState)(0),[S,C]=(0,b.useState)(``),[w,T]=(0,b.useState)(typeof window<`u`?window.innerWidth>=769:!1),E=(0,b.useRef)([]),D=(0,b.useRef)(null),O=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=()=>{T(window.innerWidth>=769)};return e(),window.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e)}},[]);let k=w?gj:hj;(0,b.useEffect)(()=>{let e=new Audio(dj),t=new Audio(fj);return e.preload=`auto`,t.preload=`auto`,D.current=e,O.current=t,()=>{e.pause(),t.pause(),D.current=null,O.current=null}},[]);let A=e=>{if(l)return;let t=e===`success`?D.current:O.current;try{if(!t)return;t.pause(),t.currentTime=0,t.volume=1;let e=t.play();e!==void 0&&e.catch(()=>{})}catch{}},ee=()=>{u(e=>!e)};(0,b.useEffect)(()=>{if(s)return;let e=setInterval(()=>{v(e=>e+1)},1e3);return()=>clearInterval(e)},[s]),(0,b.useEffect)(()=>()=>{E.current.forEach(e=>clearTimeout(e)),E.current=[]},[]);let te=e=>{if(a||s)return;i(e);let r=e===pj[t].answer;if(r?(A(`success`),x(e=>e+1),C(`أحسنت! 👏`)):(A(`error`),C(`حاول مرة أخرى! 💪`)),!r){let e=setTimeout(()=>{i(null),C(``)},850);E.current.push(e);return}o(!0),m(.9);let l=t*2,u=l+1,d=parseFloat(k[l].left);g(parseFloat(k[u].left)>d?1:-1),f(u);let p=setTimeout(()=>{if(o(!1),i(null),C(``),t===pj.length-1){c(!0),f(k.length-1);return}n(e=>e+1)},1050);E.current.push(p)};return(0,N.jsxs)(`div`,{className:`snail-game`,style:{"--bg-desktop":`url(${sj})`,"--bg-mobile":`url(${cj})`},children:[(0,N.jsx)(V.div,{className:`game-title`,initial:{opacity:0,y:-15},animate:{opacity:1,y:0},transition:{duration:.4},children:`سباق علامات الترقيم 🐌`}),(0,N.jsxs)(`div`,{className:`top-info`,children:[(0,N.jsxs)(`div`,{className:`time-box`,children:[`⏱️ `,(e=>{let t=Math.floor(e/60),n=e%60;return`${String(t).padStart(2,`0`)}:${String(n).padStart(2,`0`)}`})(_)]}),(0,N.jsxs)(`div`,{className:`score-box`,children:[`⭐ `,y,`/`,pj.length]})]}),(0,N.jsx)(`div`,{className:`instruction`,children:`اختر علامة الترقيم الصحيحة وساعد الحلزون على الوصول إلى النهاية!`}),(0,N.jsxs)(`div`,{className:`race-board`,children:[pj.map((e,n)=>(0,N.jsx)(`div`,{className:`race-row ${mj[n].color}`,style:{"--row-top":mj[n].top},children:(0,N.jsxs)(`div`,{className:`race-track`,children:[(0,N.jsx)(`div`,{className:`question-card`,children:e.question}),(0,N.jsx)(`div`,{className:`options-container`,children:e.options.map((i,o)=>{let c=r===i,l=c&&i===e.answer;return(0,N.jsx)(`button`,{type:`button`,className:`option-circle ${c?`selected`:``} ${l?`correct`:``} ${c&&!l?`wrong`:``}`,onClick:()=>te(i),disabled:a||s||n!==t,children:i},o)})})]})},n)),(0,N.jsx)(V.img,{src:lj,alt:`الحلزون`,className:`snail-character`,animate:{left:k[d].left,top:k[d].top,scaleX:h},transition:{left:{duration:p,ease:`easeInOut`},top:{duration:p,ease:`easeInOut`},scaleX:{duration:.25,ease:`easeOut`}}}),(0,N.jsx)(V.img,{src:uj,alt:`الكأس`,className:`trophy-character`,animate:{scale:s?[1,1.12,1]:1,rotate:s?[0,-4,4,0]:0},transition:{duration:1,repeat:s?1/0:0}}),(0,N.jsx)(Fg,{children:s&&(0,N.jsxs)(V.div,{className:`win-message`,initial:{opacity:0,scale:.6},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.6},transition:{duration:.45},children:[(0,N.jsx)(`div`,{className:`win-title`,children:`أحسنت! 🎉`}),(0,N.jsxs)(`div`,{className:`win-score`,children:[`حصلت على `,y,` من `,pj.length]})]})})]}),(0,N.jsx)(Fg,{children:S&&!s&&(0,N.jsx)(V.div,{className:`feedback-message ${S.includes(`أحسنت`)?`success`:`error`}`,initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.8},children:S})}),(0,N.jsxs)(`div`,{className:`control-buttons`,children:[(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:ee,"aria-label":l?`تشغيل الصوت`:`كتم الصوت`,children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:()=>{E.current.forEach(e=>clearTimeout(e)),E.current=[],n(0),i(null),o(!1),c(!1),f(0),m(.8),g(1),v(0),x(0),C(``)},"aria-label":`إعادة اللعبة`,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:()=>{e(`/Marks`)},"aria-label":`العودة إلى علامات الترقيم`,children:(0,N.jsx)(P,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:()=>{e(`/`)},"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{})})]}),s&&(0,N.jsx)(_j,{}),(0,N.jsx)(`style`,{children:`
         * {
           box-sizing: border-box;
         }
@@ -17699,85 +17698,25 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         html,
         body,
         #root {
-          width: 100%;
-          height: 100%;
           margin: 0;
           padding: 0;
+          width: 100%;
+          height: 100%;
           overflow: hidden;
         }
-
-        body {
-          font-family:
-            Arial,
-            Tahoma,
-            sans-serif;
-        }
-
-        /* ======================================================
-           الصفحة
-        ====================================================== */
 
         .snail-game {
-          position: relative;
-
-          width: 100vw;
-          height: 100vh;
-          height: 100dvh;
-
+          position: fixed;
+          inset: 0;
+          width: 100%;
+          height: 100%;
           overflow: hidden;
-
           direction: rtl;
-
-          user-select: none;
-
-          background: #80d5e9;
-        }
-
-        /* ======================================================
-           الخلفية
-        ====================================================== */
-
-        .game-background {
-          position: absolute;
-
-          inset: 0;
-
-          width: 100%;
-          height: 100%;
-
-          z-index: 0;
-
-          display: block;
-        }
-
-        .game-background img {
-          width: 100%;
-          height: 100%;
-
-          display: block;
-
-          object-fit: cover;
-
-          object-position:
-            center center;
-        }
-
-        .background-soft-layer {
-          position: absolute;
-
-          inset: 0;
-
-          z-index: 1;
-
-          pointer-events: none;
-
-          background:
-            rgba(
-              255,
-              255,
-              255,
-              0.015
-            );
+          background-image: var(--bg-desktop);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          font-family: Arial, Tahoma, sans-serif;
         }
 
         /* ======================================================
@@ -17786,572 +17725,189 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .game-title {
           position: absolute;
-
-          z-index: 30;
-
-          top: 1.5%;
-
-          left: 50%;
-
-          transform:
-            translateX(-50%);
-
-          min-width: 175px;
-
-          height: 51px;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          padding: 0 17px;
-
-          background: #fff7df;
-
-          border:
-            3px solid
-            #7b5137;
-
-          border-radius: 17px;
-
-          box-shadow:
-            0 3px 0
-              rgba(
-                92,
-                55,
-                34,
-                0.2
-              ),
-            0 5px 12px
-              rgba(
-                0,
-                0,
-                0,
-                0.12
-              );
-
-          color: #30231c;
-
-          font-size: 23px;
-
-          font-weight: 900;
-
-          white-space: nowrap;
-        }
-
-        /* ======================================================
-           الوقت
-        ====================================================== */
-
-        .timer-box {
-          position: absolute;
-
-          z-index: 35;
-
           top: 2%;
-
-          left: 3%;
-
-          min-width: 88px;
-
-          height: 45px;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          gap: 5px;
-
-          padding: 0 9px;
-
-          background:
-            rgba(
-              255,
-              255,
-              255,
-              0.96
-            );
-
-          border-radius: 14px;
-
-          box-shadow:
-            0 3px 7px
-              rgba(
-                0,
-                0,
-                0,
-                0.14
-              );
-
-          color: #2d2926;
-
-          font-size: 18px;
-
-          font-weight: 900;
-
-          direction: ltr;
-        }
-
-        .timer-icon {
-          font-size: 19px;
-        }
-
-        /* ======================================================
-           النجمة
-        ====================================================== */
-
-        .score-box {
-          position: absolute;
-
-          z-index: 35;
-
-          top: 2%;
-
-          right: 3%;
-
-          min-width: 76px;
-
-          height: 45px;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          gap: 5px;
-
-          padding: 0 9px;
-
-          background:
-            rgba(
-              255,
-              255,
-              255,
-              0.96
-            );
-
-          border-radius: 14px;
-
-          box-shadow:
-            0 3px 7px
-              rgba(
-                0,
-                0,
-                0,
-                0.14
-              );
-
-          color: #4c4038;
-
-          font-size: 18px;
-
-          font-weight: 900;
-        }
-
-        .score-box span:first-child {
-          color: #f4c523;
-
-          font-size: 23px;
-        }
-
-        /* ======================================================
-           التعليمات
-        ====================================================== */
-
-        .instruction-box {
-          position: absolute;
-
-          z-index: 30;
-
-          top: 10.5%;
-
           left: 50%;
-
-          transform:
-            translateX(-50%);
-
-          width: max-content;
-
-          max-width: 90vw;
-
-          min-height: 39px;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          padding:
-            6px 14px;
-
-          background: #f7fff4;
-
-          border:
-            3px solid
-            #39923f;
-
-          border-radius: 13px;
-
-          color: #254b2a;
-
-          font-size: 17px;
-
-          font-weight: 900;
-
+          transform: translateX(-50%);
+          z-index: 100;
+          min-width: 220px;
+          padding: 10px 25px;
+          border-radius: 30px;
+          background: white;
+          box-shadow: 0 5px 14px rgba(0,0,0,0.14);
           text-align: center;
-
+          color: #5a3d8e;
+          font-size: 24px;
+          font-weight: 800;
           white-space: nowrap;
-
-          box-shadow:
-            0 3px 5px
-              rgba(
-                0,
-                0,
-                0,
-                0.12
-              );
         }
 
         /* ======================================================
-           لوحة السباق
+           الوقت والنتيجة
+        ====================================================== */
+
+        .top-info {
+          position: absolute;
+          top: 2%;
+          left: 3%;
+          right: 3%;
+          z-index: 110;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          pointer-events: none;
+        }
+
+        .time-box,
+        .score-box {
+          background: rgba(255,255,255,0.94);
+          border-radius: 18px;
+          padding: 7px 13px;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+          font-size: 17px;
+          font-weight: 800;
+        }
+
+        /* ======================================================
+           الفقرة
+        ====================================================== */
+
+        .instruction {
+          position: absolute;
+          top: 11%;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 90;
+          width: 90%;
+          text-align: center;
+          color: #4b3a65;
+          font-size: 17px;
+          line-height: 1.45;
+          font-weight: 700;
+        }
+
+        /* ======================================================
+           السباق
         ====================================================== */
 
         .race-board {
           position: absolute;
-
           inset: 0;
-
-          z-index: 5;
-
           width: 100%;
-
           height: 100%;
+          z-index: 20;
         }
-
-        /* ======================================================
-           الصفوف
-        ====================================================== */
 
         .race-row {
           position: absolute;
-
+          top: var(--row-top);
           left: 50%;
-
-          transform:
-            translateX(-50%);
-
+          transform: translateX(-50%);
           width: 96%;
-
           height: 88px;
-
-          pointer-events: none;
         }
-
-        /* ======================================================
-           المستطيل
-        ====================================================== */
 
         .race-track {
           position: absolute;
-
           left: 50%;
-
           bottom: 0;
-
-          transform:
-            translateX(-50%);
-
+          transform: translateX(-50%);
           width: 96%;
-
           height: 67px;
-
+          border: 3px solid rgba(255,255,255,0.95);
           border-radius: 34px;
-
-          border: 3px solid;
-
           box-shadow:
-            inset 0 3px 3px
-              rgba(
-                255,
-                255,
-                255,
-                0.42
-              ),
-            0 3px 4px
-              rgba(
-                0,
-                0,
-                0,
-                0.18
-              );
+            0 5px 12px rgba(0,0,0,0.14),
+            inset 0 2px 4px rgba(255,255,255,0.55);
         }
 
-        .race-row.yellow
-          .race-track {
-          background:
-            linear-gradient(
-              to bottom,
-              #ffe66c,
-              #f7bf31
-            );
-
-          border-color:
-            #e4a91f;
+        .race-row.yellow .race-track {
+          background: #f7d95e;
         }
 
-        .race-row.purple
-          .race-track {
-          background:
-            linear-gradient(
-              to bottom,
-              #c99aff,
-              #9360e4
-            );
-
-          border-color:
-            #7245bf;
+        .race-row.purple .race-track {
+          background: #caa9e9;
         }
 
-        .race-row.pink
-          .race-track {
-          background:
-            linear-gradient(
-              to bottom,
-              #ff9ca4,
-              #ef697b
-            );
-
-          border-color:
-            #d64d60;
+        .race-row.pink .race-track {
+          background: #f5a9bd;
         }
-
-        /* ======================================================
-           مربع السؤال
-        ====================================================== */
 
         .question-card {
           position: absolute;
-
-          z-index: 4;
-
           left: 50%;
-
-          top: -39px;
-
-          transform:
-            translateX(-50%);
-
+          top: -7px;
+          transform: translate(-50%, -100%);
           width: max-content;
-
-          min-width: 0;
-
-          max-width: 88%;
-
-          height: auto;
-
+          max-width: 90%;
           min-height: 48px;
-
+          padding: 9px 18px;
           display: flex;
-
           align-items: center;
-
           justify-content: center;
-
-          padding:
-            9px 18px;
-
-          background:
-            linear-gradient(
-              to bottom,
-              #fff0a0,
-              #ffd84d
-            );
-
-          border:
-            3px solid
-            #e3ae24;
-
-          border-radius: 25px;
-
-          color: #30251e;
-
+          border-radius: 18px;
+          background: white;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+          color: #4c3b65;
           font-size: 22px;
-
-          font-weight: 900;
-
-          line-height: 1.15;
-
+          font-weight: 800;
+          text-align: center;
           white-space: nowrap;
-
-          box-shadow:
-            inset 0 2px 2px
-              rgba(
-                255,
-                255,
-                255,
-                0.55
-              ),
-            0 3px 4px
-              rgba(
-                0,
-                0,
-                0,
-                0.13
-              );
-
-          pointer-events: none;
         }
-
-        .purple
-          .question-card {
-          background:
-            linear-gradient(
-              to bottom,
-              #d2a8ff,
-              #aa76ed
-            );
-
-          border-color:
-            #7d4fd0;
-        }
-
-        .pink
-          .question-card {
-          background:
-            linear-gradient(
-              to bottom,
-              #ffaeb4,
-              #f57e8d
-            );
-
-          border-color:
-            #d95a6d;
-        }
-
-        /* ======================================================
-           الاختيارات
-        ====================================================== */
 
         .options-container {
           position: absolute;
-
-          z-index: 8;
-
           left: 50%;
-
           bottom: 2px;
-
-          transform:
-            translateX(-50%);
-
+          transform: translateX(-50%);
           display: flex;
-
           align-items: center;
-
           justify-content: center;
-
           gap: 8px;
-
-          direction: ltr;
-
-          pointer-events: auto;
+          z-index: 10;
         }
 
         .option-circle {
           width: 41px;
-
           height: 41px;
-
-          flex:
-            0 0 41px;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
           padding: 0;
-
+          border: 3px solid white;
           border-radius: 50%;
-
-          border:
-            3px solid
-            #687078;
-
-          background: #ffffff;
-
-          color: #171717;
-
-          font-family:
-            Arial,
-            Tahoma,
-            sans-serif;
-
+          background: white;
+          color: #513d69;
           font-size: 23px;
-
-          font-weight: 900;
-
-          line-height: 1;
-
-          box-shadow:
-            0 2px 0
-              rgba(
-                0,
-                0,
-                0,
-                0.17
-              ),
-            0 3px 5px
-              rgba(
-                0,
-                0,
-                0,
-                0.12
-              );
-
+          font-weight: 800;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           cursor: pointer;
-
+          box-shadow: 0 3px 7px rgba(0,0,0,0.16);
           transition:
-            transform
-              0.15s ease,
-            background
-              0.15s ease;
+            transform 0.15s ease,
+            background 0.15s ease,
+            box-shadow 0.15s ease;
         }
 
-        .option-circle:not(
-            :disabled
-          ):active {
-          transform:
-            translateY(2px)
-            scale(0.96);
+        .option-circle:hover:not(:disabled) {
+          transform: scale(1.07);
+        }
+
+        .option-circle:active:not(:disabled) {
+          transform: scale(0.94);
+        }
+
+        .option-circle.selected {
+          transform: scale(1.08);
         }
 
         .option-circle.correct {
-          background: #b9f3ae;
-
-          border-color:
-            #318b2b;
-
-          color: #155b12;
+          background: #b9efb9;
+          border-color: #55b955;
         }
 
         .option-circle.wrong {
-          background: #ffc4c4;
-
-          border-color:
-            #bd3838;
-
-          color: #8b1414;
-
-          animation:
-            shake 0.3s ease;
+          background: #ffb8b8;
+          border-color: #ed6868;
+          animation: shake 0.25s ease-in-out;
         }
 
         .option-circle:disabled {
@@ -18359,249 +17915,117 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         @keyframes shake {
-
           0% {
-            transform:
-              translateX(0);
+            transform: translateX(0);
           }
 
           25% {
-            transform:
-              translateX(-3px);
+            transform: translateX(-4px);
           }
 
           50% {
-            transform:
-              translateX(3px);
+            transform: translateX(4px);
           }
 
           75% {
-            transform:
-              translateX(-2px);
+            transform: translateX(-4px);
           }
 
           100% {
-            transform:
-              translateX(0);
+            transform: translateX(0);
           }
-
         }
 
         /* ======================================================
-           🐌 الحلزون
+           الحلزون
         ====================================================== */
 
         .snail-character {
           position: absolute;
-
-          z-index: 25;
-
+          z-index: 50;
           width: 56px;
-
           height: 56px;
-
           object-fit: contain;
-
-          transform:
-            translate(-50%, -50%);
-
-          transform-origin:
-            center center;
-
           pointer-events: none;
-
-          filter:
-            drop-shadow(
-              0 3px 3px
-              rgba(
-                0,
-                0,
-                0,
-                0.22
-              )
-            );
+          transform: translate(-50%, -50%);
+          filter: drop-shadow(
+            0 4px 4px rgba(0,0,0,0.18)
+          );
         }
 
         /* ======================================================
-           🏆 الكأس
+           الكأس
         ====================================================== */
 
         .trophy-character {
           position: absolute;
-
-          z-index: 18;
-
           left: 6%;
-
           top: 77%;
-
+          z-index: 45;
           width: 63px;
-
           height: 63px;
-
           object-fit: contain;
-
-          transform:
-            translate(-50%, -50%);
-
           pointer-events: none;
-
-          filter:
-            drop-shadow(
-              0 4px 4px
-              rgba(
-                0,
-                0,
-                0,
-                0.23
-              )
-            );
+          filter: drop-shadow(
+            0 4px 5px rgba(0,0,0,0.18)
+          );
         }
 
         /* ======================================================
-           🏆 رسالة الفوز
+           الفوز
         ====================================================== */
 
         .win-message {
           position: absolute;
-
-          z-index: 55;
-
-          left: 23%;
-
+          left: 24%;
           top: 74%;
+          z-index: 80;
+          min-width: 170px;
+          padding: 10px 16px;
+          border-radius: 18px;
+          background: rgba(255,255,255,0.96);
+          box-shadow: 0 5px 14px rgba(0,0,0,0.16);
+          text-align: center;
+        }
 
-          transform:
-            translate(-50%, -50%);
-
-          min-width: 135px;
-
-          height: 49px;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          gap: 7px;
-
-          padding:
-            6px 13px;
-
-          background: #fff4bc;
-
-          border:
-            3px solid
-            #79522e;
-
-          border-radius: 15px;
-
-          color: #4b3424;
-
-          font-size: 19px;
-
+        .win-title {
+          color: #5c3e89;
+          font-size: 21px;
           font-weight: 900;
+        }
 
-          white-space: nowrap;
-
-          box-shadow:
-            0 3px 0
-              rgba(
-                0,
-                0,
-                0,
-                0.17
-              ),
-            0 5px 10px
-              rgba(
-                0,
-                0,
-                0,
-                0.14
-              );
+        .win-score {
+          margin-top: 3px;
+          color: #555;
+          font-size: 14px;
+          font-weight: 700;
         }
 
         /* ======================================================
-           🎊 الكونفيتي
+           Feedback
         ====================================================== */
 
-        .confetti-container {
+        .feedback-message {
           position: absolute;
-
-          inset: 0;
-
-          z-index: 70;
-
-          pointer-events: none;
-
-          overflow: hidden;
+          left: 50%;
+          bottom: 15%;
+          transform: translateX(-50%);
+          z-index: 200;
+          padding: 9px 20px;
+          border-radius: 20px;
+          background: white;
+          box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+          font-size: 19px;
+          font-weight: 900;
+          white-space: nowrap;
         }
 
-        .confetti-piece {
-          position: absolute;
-
-          top: -20px;
-
-          display: block;
-
-          border-radius: 2px;
-
-          animation-name:
-            confettiFall;
-
-          animation-timing-function:
-            cubic-bezier(
-              0.15,
-              0.8,
-              0.25,
-              1
-            );
-
-          animation-iteration-count: 1;
-
-          animation-fill-mode:
-            forwards;
+        .feedback-message.success {
+          color: #3d9a48;
         }
 
-        .confetti-piece:nth-child(4n) {
-          background: #ff4f6d;
-        }
-
-        .confetti-piece:nth-child(4n + 1) {
-          background: #ffd43b;
-        }
-
-        .confetti-piece:nth-child(4n + 2) {
-          background: #40c9ff;
-        }
-
-        .confetti-piece:nth-child(4n + 3) {
-          background: #8c5cff;
-        }
-
-        @keyframes confettiFall {
-
-          0% {
-            opacity: 1;
-
-            transform:
-              translateY(-30px)
-              rotate(0deg);
-          }
-
-          25% {
-            opacity: 1;
-          }
-
-          100% {
-            opacity: 0;
-
-            transform:
-              translateY(110vh)
-              rotate(720deg);
-          }
-
+        .feedback-message.error {
+          color: #d95b5b;
         }
 
         /* ======================================================
@@ -18610,86 +18034,129 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .control-buttons {
           position: absolute;
-
-          z-index: 60;
-
-          left: 50%;
-
           bottom: 28px;
-
-          transform:
-            translateX(-50%);
-
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 300;
           display: flex;
-
           align-items: center;
-
           justify-content: center;
-
           gap: 9px;
-
           direction: ltr;
         }
 
         .control-button {
           width: 51px;
-
           height: 51px;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
           padding: 0;
-
-          border: none;
-
+          border: 0;
           border-radius: 50%;
-
-          background: #0b9bd7;
-
-          color: #ffffff;
-
-          box-shadow:
-            0 3px 0
-              rgba(
-                0,
-                0,
-                0,
-                0.16
-              ),
-            0 4px 8px
-              rgba(
-                0,
-                0,
-                0,
-                0.15
-              );
-
+          background: white;
+          color: #60467e;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           cursor: pointer;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+          transition:
+            transform 0.15s ease,
+            box-shadow 0.15s ease;
+        }
+
+        .control-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 13px rgba(0,0,0,0.2);
         }
 
         .control-button:active {
-          transform:
-            translateY(2px)
-            scale(0.96);
+          transform: scale(0.94);
         }
 
         .control-button svg {
-          width: 27px;
+          width: 26px;
+          height: 26px;
+          stroke-width: 2.5;
+        }
 
-          height: 27px;
+        /* ======================================================
+           Confetti
+        ====================================================== */
 
-          stroke-width: 2.7;
+        .confetti-container {
+          position: fixed;
+          inset: 0;
+          z-index: 500;
+          pointer-events: none;
+          overflow: hidden;
+        }
+
+        .confetti-piece {
+          position: absolute;
+          top: -20px;
+          width: 8px;
+          height: 14px;
+          border-radius: 2px;
+          animation: confettiFall linear forwards;
+        }
+
+        .confetti-piece:nth-child(3n) {
+          background: #ff6b81;
+        }
+
+        .confetti-piece:nth-child(3n + 1) {
+          background: #ffd447;
+        }
+
+        .confetti-piece:nth-child(3n + 2) {
+          background: #7bc8ff;
+        }
+
+        @keyframes confettiFall {
+          0% {
+            top: -20px;
+            opacity: 1;
+          }
+
+          100% {
+            top: 110%;
+            opacity: 0;
+          }
         }
 
         /* ======================================================
            📱 الموبايل
+           نفس التخطيط
         ====================================================== */
 
         @media (max-width: 768px) {
+          .snail-game {
+            background-image: var(--bg-mobile);
+            background-position: center;
+            background-size: cover;
+          }
+
+          .game-title {
+            top: 2%;
+            min-width: 205px;
+            padding: 8px 18px;
+            font-size: 21px;
+          }
+
+          .top-info {
+            top: 2%;
+          }
+
+          .time-box,
+          .score-box {
+            padding: 6px 10px;
+            font-size: 15px;
+          }
+
+          .instruction {
+            top: 11%;
+            width: 92%;
+            font-size: 16px;
+          }
 
           .race-row {
             width: 96%;
@@ -18697,564 +18164,405 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .race-track {
-            width: 89%;
-            height: 59px;
-            border-radius: 31px;
-            border-width: 3px;
+            width: 96%;
+            height: 67px;
           }
 
           .question-card {
-            width: max-content;
-            min-width: 0;
-            max-width: 82%;
-            min-height: 46px;
-            height: auto;
+            min-height: 48px;
             padding: 9px 18px;
-            top: -37px;
-            border-radius: 24px;
             font-size: 22px;
-            line-height: 1.15;
           }
 
           .options-container {
-            bottom: 1px;
             gap: 8px;
           }
 
           .option-circle {
             width: 41px;
             height: 41px;
-            flex-basis: 41px;
             font-size: 23px;
-            border-width: 3px;
           }
 
           .snail-character {
-            width: 57px;
-            height: 57px;
-            transform:
-              translate(
-                -50%,
-                -50%
-              );
+            width: 56px;
+            height: 56px;
           }
 
           .trophy-character {
-            left: 7%;
+            left: 6%;
             top: 77%;
-            width: 62px;
-            height: 62px;
+            width: 63px;
+            height: 63px;
           }
 
           .win-message {
             left: 24%;
             top: 74%;
-            min-width: 132px;
-            height: 47px;
-            padding:
-              5px 11px;
-            font-size: 18px;
           }
 
           .control-buttons {
             bottom: 28px;
-            gap: 8px;
+            gap: 9px;
           }
 
           .control-button {
-            width: 50px;
-            height: 50px;
-          }
-
-          .control-button svg {
-            width: 27px;
-            height: 27px;
+            width: 51px;
+            height: 51px;
           }
         }
 
         /* ======================================================
-           📱 شاشة صغيرة
+           📱 موبايل صغير
         ====================================================== */
 
         @media (max-width: 380px) {
-
           .game-title {
-            top: 1.2%;
-            min-width: 158px;
-            height: 46px;
-            font-size: 20px;
-            border-radius: 15px;
+            font-size: 19px;
+            min-width: 190px;
           }
 
-          .timer-box,
-          .score-box {
-            top: 1.6%;
-            height: 40px;
-            min-width: 72px;
-            font-size: 16px;
-            border-radius: 12px;
-          }
-
-          .instruction-box {
-            top: 9.5%;
-            min-height: 35px;
-            padding:
-              5px 11px;
-            font-size: 15px;
-            border-width: 2px;
-          }
-
-          .race-row {
-            width: 98%;
-            height: 82px;
-          }
-
-          .race-track {
-            width: 87%;
-            height: 55px;
-            border-width: 2px;
-            border-radius: 29px;
+          .instruction {
+            font-size: 14px;
           }
 
           .question-card {
-            width: max-content;
-            min-width: 0;
-            max-width: 84%;
-            min-height: 43px;
-            height: auto;
-            padding:
-              8px 14px;
-            top: -34px;
             font-size: 19px;
+          }
+
+          .option-circle {
+            width: 37px;
+            height: 37px;
+            font-size: 20px;
+          }
+
+          .snail-character {
+            width: 52px;
+            height: 52px;
+          }
+
+          .control-button {
+            width: 47px;
+            height: 47px;
+          }
+
+          .control-button svg {
+            width: 23px;
+            height: 23px;
+          }
+        }
+
+        /* ======================================================
+           📲 التابلت
+           صفين × طريقين
+        ====================================================== */
+
+        @media (min-width: 769px) and (max-width: 1100px) {
+          .game-title {
+            top: 1.5%;
+            min-width: 210px;
+            padding: 7px 20px;
+            font-size: 20px;
+          }
+
+          .top-info {
+            top: 1.5%;
+          }
+
+          .time-box,
+          .score-box {
+            padding: 5px 10px;
+            font-size: 15px;
+          }
+
+          .instruction {
+            top: 11.5%;
+            width: 88%;
+            font-size: 15px;
+            line-height: 1.35;
+          }
+
+          /* ====================================================
+             صفين فقط
+             كل صف فيه طريقين
+          ==================================================== */
+
+          .race-board {
+            display: grid;
+            grid-template-columns:
+              minmax(0, 1fr)
+              minmax(0, 1fr);
+
+            grid-template-rows:
+              95px
+              95px;
+
+            column-gap: 18px;
+            row-gap: 50px;
+
+            padding: 20vh 4% 0;
+            align-content: start;
+          }
+
+          .race-row {
+            position: relative;
+            top: auto !important;
+            left: auto;
+            transform: none;
+            width: 100%;
+            height: 95px;
+          }
+
+          .race-row:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+          }
+
+          .race-row:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+          }
+
+          .race-row:nth-child(3) {
+            grid-column: 2;
+            grid-row: 2;
+          }
+
+          .race-row:nth-child(4) {
+            grid-column: 1;
+            grid-row: 2;
+          }
+
+          .race-track {
+            width: 100%;
+            height: 63px;
             border-width: 2px;
-            border-radius: 22px;
+            border-radius: 32px;
+          }
+
+          .question-card {
+            top: -5px;
+            min-height: 43px;
+            padding: 7px 13px;
+            font-size: 18px;
+            border-radius: 15px;
           }
 
           .options-container {
+            bottom: 1px;
             gap: 6px;
           }
 
           .option-circle {
             width: 37px;
             height: 37px;
-            flex-basis: 37px;
             font-size: 20px;
             border-width: 2px;
           }
 
           .snail-character {
-            width: 50px;
-            height: 50px;
+            width: 70px;
+            height: 70px;
           }
 
           .trophy-character {
-            width: 54px;
-            height: 54px;
             left: 7%;
-            top: 77%;
-          }
-
-          .win-message {
-            left: 25%;
-            top: 74%;
-            min-width: 119px;
-            height: 42px;
-            font-size: 16px;
-            border-width: 2px;
-          }
-
-          .control-buttons {
-            bottom: 28px;
-            gap: 6px;
-          }
-
-          .control-button {
-            width: 44px;
-            height: 44px;
-          }
-
-          .control-button svg {
-            width: 24px;
-            height: 24px;
-          }
-        }
-
-        /* ======================================================
-           📱 الموبايل الطويل
-        ====================================================== */
-
-        @media
-          (min-height: 760px)
-          and (max-width: 768px) {
-
-          .race-row:nth-child(1) {
-            top: 27% !important;
-          }
-
-          .race-row:nth-child(2) {
-            top: 41% !important;
-          }
-
-          .race-row:nth-child(3) {
-            top: 55% !important;
-          }
-
-          .race-row:nth-child(4) {
-            top: 69% !important;
-          }
-
-        }
-
-        /* ======================================================
-           📲 التابلت
-           فواصل أكبر بين الطرق
-           وتصغير العناصر
-        ====================================================== */
-
-        @media
-          (min-width: 769px)
-          and (max-width: 1100px) {
-
-          .game-title {
-            top: 1.5%;
-
-            min-width: 195px;
-
-            height: 51px;
-
-            padding: 0 14px;
-
-            font-size: 23px;
-          }
-
-          .timer-box,
-          .score-box {
-            top: 2%;
-
-            height: 45px;
-
-            font-size: 18px;
-          }
-
-          .timer-box {
-            left: 2.5%;
-
-            min-width: 88px;
-          }
-
-          .score-box {
-            right: 2.5%;
-
-            min-width: 76px;
-          }
-
-          .instruction-box {
-            top: 9.5%;
-
-            min-height: 37px;
-
-            padding:
-              5px 13px;
-
-            font-size: 17px;
-          }
-
-          /* ==============================================
-             فاصل واضح بين الأربع طرق
-             ============================================== */
-
-          .race-row:nth-child(1) {
-            top: 24% !important;
-          }
-
-          .race-row:nth-child(2) {
-            top: 39% !important;
-          }
-
-          .race-row:nth-child(3) {
-            top: 54% !important;
-          }
-
-          .race-row:nth-child(4) {
-            top: 69% !important;
-          }
-
-          .race-row {
-            width: 88%;
-
-            max-width: 760px;
-
-            height: 92px;
-          }
-
-          .race-track {
-            width: 94%;
-
-            height: 63px;
-
-            border-radius: 32px;
-
-            border-width: 3px;
-          }
-
-          .question-card {
-            min-height: 45px;
-
-            padding:
-              8px 15px;
-
-            top: -35px;
-
-            font-size: 19px;
-
-            border-radius: 23px;
-          }
-
-          /* تصغير نقاط الاختيار */
-          .options-container {
-            gap: 7px;
-
-            bottom: 2px;
-          }
-
-          .option-circle {
-            width: 38px;
-
-            height: 38px;
-
-            flex-basis: 38px;
-
-            font-size: 21px;
-
-            border-width: 2px;
-          }
-
-          /* تكبير الحلزون */
-          .snail-character {
-            width: 72px;
-
-            height: 72px;
-          }
-
-          /* الكأس عند نهاية آخر طريق */
-          .trophy-character {
-            left: 10%;
-
-            top: 76%;
-
+            top: 61%;
             width: 68px;
-
             height: 68px;
           }
 
           .win-message {
-            left: 20%;
+            left: 12%;
+            top: 65%;
+            min-width: 145px;
+            padding: 8px 12px;
+          }
 
-            top: 73%;
+          .win-title {
+            font-size: 18px;
+          }
 
-            min-width: 125px;
+          .win-score {
+            font-size: 13px;
+          }
 
-            height: 45px;
-
+          .feedback-message {
+            bottom: 13%;
             font-size: 17px;
           }
 
-          /* الأزرار أصغر وأنزل */
           .control-buttons {
             bottom: 17px;
-
             gap: 7px;
           }
 
           .control-button {
             width: 45px;
-
             height: 45px;
           }
 
           .control-button svg {
             width: 24px;
-
             height: 24px;
           }
         }
 
         /* ======================================================
-           💻 اللاب / الكمبيوتر
-           فواصل أكبر بين الطرق
+           💻 اللابتوب والكمبيوتر
+           صفين × طريقين
         ====================================================== */
 
         @media (min-width: 1101px) {
-
           .game-title {
             top: 1.5%;
-
-            min-width: 215px;
-
-            height: 54px;
-
-            padding: 0 15px;
-
-            font-size: 24px;
+            min-width: 220px;
+            padding: 8px 22px;
+            font-size: 22px;
           }
 
-          .timer-box {
-            top: 2.2%;
-
-            left: 3%;
-
-            min-width: 96px;
-
-            height: 46px;
-
-            font-size: 18px;
+          .top-info {
+            top: 1.5%;
           }
 
+          .time-box,
           .score-box {
-            top: 2.2%;
-
-            right: 3%;
-
-            min-width: 80px;
-
-            height: 46px;
-
-            font-size: 18px;
+            padding: 6px 11px;
+            font-size: 16px;
           }
 
-          .instruction-box {
-            top: 9.5%;
-
-            min-height: 37px;
-
-            padding:
-              5px 14px;
-
-            font-size: 18px;
+          .instruction {
+            top: 11.5%;
+            width: 82%;
+            font-size: 17px;
+            line-height: 1.4;
           }
 
-          /* ==============================================
-             فاصل واضح وكبير بين الطرق الأربعة
-             ============================================== */
+          /* ====================================================
+             صفين × طريقين
+          ==================================================== */
 
-          .race-row:nth-child(1) {
-            top: 23% !important;
-          }
+          .race-board {
+            display: grid;
+            grid-template-columns:
+              minmax(0, 1fr)
+              minmax(0, 1fr);
 
-          .race-row:nth-child(2) {
-            top: 38% !important;
-          }
+            grid-template-rows:
+              105px
+              105px;
 
-          .race-row:nth-child(3) {
-            top: 53% !important;
-          }
+            column-gap: 24px;
+            row-gap: 55px;
 
-          .race-row:nth-child(4) {
-            top: 68% !important;
+            padding: 20vh 4.5% 0;
+            align-content: start;
           }
 
           .race-row {
-            width: 72%;
+            position: relative;
+            top: auto !important;
+            left: auto;
+            transform: none;
+            width: 100%;
+            height: 105px;
+          }
 
-            max-width: 700px;
+          .race-row:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+          }
 
-            height: 100px;
+          .race-row:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+          }
+
+          .race-row:nth-child(3) {
+            grid-column: 2;
+            grid-row: 2;
+          }
+
+          .race-row:nth-child(4) {
+            grid-column: 1;
+            grid-row: 2;
           }
 
           .race-track {
             width: 100%;
-
             height: 69px;
-
-            border-radius: 36px;
-
-            border-width: 3px;
+            border-width: 2px;
+            border-radius: 35px;
           }
 
-          /* تصغير عناوين الأسئلة */
           .question-card {
-            min-height: 48px;
-
-            padding:
-              8px 17px;
-
-            top: -37px;
-
-            font-size: 20px;
-
-            border-radius: 24px;
+            top: -5px;
+            min-height: 46px;
+            padding: 7px 15px;
+            font-size: 19px;
+            border-radius: 16px;
           }
 
-          /* تصغير دوائر علامات الترقيم */
           .options-container {
-            gap: 8px;
-
-            bottom: 2px;
+            bottom: 1px;
+            gap: 7px;
           }
 
           .option-circle {
             width: 39px;
-
             height: 39px;
-
-            flex-basis: 39px;
-
             font-size: 21px;
-
             border-width: 2px;
           }
 
-          /* تكبير الحلزون */
           .snail-character {
             width: 75px;
-
             height: 75px;
           }
 
-          /* الكأس عند نهاية آخر طريق */
           .trophy-character {
-            left: 10%;
-
-            top: 75.5%;
-
+            left: 7%;
+            top: 61%;
             width: 76px;
-
             height: 76px;
           }
 
           .win-message {
-            left: 20%;
+            left: 12%;
+            top: 65%;
+            min-width: 160px;
+            padding: 9px 14px;
+          }
 
-            top: 72.5%;
+          .win-title {
+            font-size: 20px;
+          }
 
-            min-width: 130px;
+          .win-score {
+            font-size: 13px;
+          }
 
-            height: 46px;
-
+          .feedback-message {
+            bottom: 12%;
             font-size: 18px;
           }
 
-          /* الأزرار أصغر وأنزل */
           .control-buttons {
             bottom: 19px;
-
-            gap: 7px;
+            gap: 8px;
           }
 
           .control-button {
             width: 47px;
-
             height: 47px;
           }
 
           .control-button svg {
-            width: 25px;
-
-            height: 25px;
+            width: 26px;
+            height: 26px;
           }
         }
-
-      `})]})},yj=[{id:`candy`,icon:`🍬`,color:`#ec4899`,symbol:`!`},{id:`lollipop`,icon:`🍭`,color:`#06b6d4`,symbol:`?`},{id:`gem`,icon:`💎`,color:`#8b5cf6`,symbol:`.`},{id:`donut`,icon:`🍩`,color:`#f59e0b`,symbol:`:`}],bj=6,xj=20;function Sj(){let e=j(),[t,n]=(0,b.useState)([]),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(0),[l,u]=(0,b.useState)(0),[d,f]=(0,b.useState)(`playing`),[p,m]=(0,b.useState)(!1),h=()=>{if(!p)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e,n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(400,t.currentTime),n.frequency.exponentialRampToValueAtTime(800,t.currentTime+.08),r.gain.setValueAtTime(.3,t.currentTime),r.gain.exponentialRampToValueAtTime(.01,t.currentTime+.08),n.connect(r),r.connect(t.destination),n.start(),n.stop(t.currentTime+.08)}catch(e){console.log(`Audio Web API error:`,e)}},g=()=>({...yj[Math.floor(Math.random()*yj.length)],uniqueId:Math.random().toString(36).substr(2,9)}),_=()=>{let e=Array(bj*bj).fill(null);for(let t=0;t<bj;t++)for(let n=0;n<bj;n++){let r=t*bj+n,i,a=0;do{i=g(),a++;let r=n>0?e[t*bj+(n-1)]:null,o=n>1?e[t*bj+(n-2)]:null,s=r&&o&&r.id===i.id,c=t>0?e[(t-1)*bj+n]:null,l=t>1?e[(t-2)*bj+n]:null,u=c&&l&&c.id===i.id;if(!s&&!u)break}while(a<50);e[r]=i}for(let t=0;t<4;t++){let t=Math.floor(Math.random()*(bj-1)),n=Math.floor(Math.random()*(bj-2)),r=g();e[t*bj+n]={...r,uniqueId:Math.random().toString()},e[t*bj+(n+1)]={...r,uniqueId:Math.random().toString()};let i=(t+1)*bj+(n+2);i<bj*bj&&(e[i]={...r,uniqueId:Math.random().toString()})}return e},v=()=>{n(_()),o(0),c(0),u(0),f(`playing`),i(null)};(0,b.useEffect)(()=>{v()},[]),(0,b.useEffect)(()=>{let e;return d===`playing`&&(e=setInterval(()=>{u(e=>e+1)},1e3)),()=>clearInterval(e)},[d]);let y=e=>{let t=new Set;for(let n=0;n<bj;n++)for(let r=0;r<bj-2;r++){let i=n*bj+r,a=n*bj+(r+1),o=n*bj+(r+2);e[i]&&e[a]&&e[o]&&e[i].id===e[a].id&&e[a].id===e[o].id&&(t.add(i),t.add(a),t.add(o))}for(let n=0;n<bj;n++)for(let r=0;r<bj-2;r++){let i=r*bj+n,a=(r+1)*bj+n,o=(r+2)*bj+n;e[i]&&e[a]&&e[o]&&e[i].id===e[a].id&&e[a].id===e[o].id&&(t.add(i),t.add(a),t.add(o))}return Array.from(t)},x=e=>{let t=y(e);if(t.length===0)return;h(),o(e=>e+1),c(e=>{let t=e+1;return t>=xj&&f(`won`),t});let r=[...e];t.forEach(e=>{r[e]=null});for(let e=0;e<bj;e++){let t=0;for(let n=bj-1;n>=0;n--){let i=n*bj+e;r[i]===null?t++:t>0&&(r[(n+t)*bj+e]=r[i],r[i]=null)}for(let n=0;n<t;n++)r[n*bj+e]=g()}n(r),setTimeout(()=>{x(r)},300)},S=e=>{if(d===`playing`)if(r===null)i(e);else{if(Math.abs(r-e)===1&&Math.floor(r/bj)===Math.floor(e/bj)||Math.abs(r-e)===bj){let i=[...t];[i[r],i[e]]=[i[e],i[r]],y(i).length>0?(n(i),setTimeout(()=>{x(i)},150)):(n(i),setTimeout(()=>{[i[r],i[e]]=[i[e],i[r]],n([...i])},250))}i(null)}};return(0,N.jsxs)(`div`,{className:`game-container`,children:[(0,N.jsx)(`img`,{src:yA,className:`bg-img`,alt:`bg`}),(0,N.jsxs)(`div`,{className:`main-header`,children:[(0,N.jsxs)(`div`,{className:`stat-box`,children:[`الوقت: `,l]}),(0,N.jsxs)(`div`,{className:`center-info`,children:[(0,N.jsx)(`div`,{className:`title-box`,children:(0,N.jsx)(`h1`,{children:`كاندي علامات الترقيم 🎯`})}),(0,N.jsx)(`div`,{className:`subtitle-box`,children:(0,N.jsxs)(`p`,{children:[`المرحلة: `,s,` /`,` `,xj]})})]}),(0,N.jsxs)(`div`,{className:`stat-box`,children:[`النقاط: `,a]})]}),(0,N.jsxs)(`div`,{className:`main-play-area`,children:[(0,N.jsx)(`div`,{className:`character-wrapper`,children:(0,N.jsx)(`img`,{src:bA,className:`boy-img`,alt:`boy`})}),(0,N.jsx)(`div`,{className:`board-wrapper`,children:(0,N.jsx)(`div`,{className:`candy-board`,children:(0,N.jsx)(`div`,{className:`grid-container`,children:t.map((e,t)=>(0,N.jsx)(V.div,{layout:!0,initial:{scale:.8,opacity:0},animate:{scale:1,opacity:1},exit:{scale:0,opacity:0},transition:{type:`spring`,stiffness:300,damping:25},className:`grid-tile ${r===t?`selected`:``}`,style:{backgroundColor:e?e.color:`transparent`},onClick:()=>S(t),children:e&&(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`span`,{className:`tile-icon`,children:e.icon}),(0,N.jsx)(`span`,{className:`tile-symbol`,children:e.symbol})]})},e?e.uniqueId:t))})})}),(0,N.jsx)(`div`,{className:`spacer-right`})]}),(0,N.jsxs)(`div`,{className:`bottom-controls`,children:[(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,N.jsx)(F,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:v,title:`إعادة`,children:(0,N.jsx)(Yi,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>m(!p),title:`الصوت`,children:p?(0,N.jsx)(R,{className:`icon-size`,style:{color:`#ef4444`}}):(0,N.jsx)(L,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,N.jsx)(Ei,{className:`icon-size`})})]}),(0,N.jsx)(Fg,{children:d===`won`&&(0,N.jsx)(V.div,{className:`overlay`,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:(0,N.jsxs)(`div`,{className:`win-modal`,children:[(0,N.jsx)(ra,{size:42,color:`#fbbf24`}),(0,N.jsx)(`h2`,{children:`مذهل! أحسنت يا بطل 🏆`}),(0,N.jsxs)(`p`,{className:`win-score`,children:[`مجموع النقاط: `,a]}),(0,N.jsxs)(`p`,{className:`win-time`,children:[`الوقت المستغرق:`,` `,l,` ثانية`]}),(0,N.jsxs)(`div`,{className:`win-actions`,children:[(0,N.jsx)(`button`,{className:`win-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,N.jsx)(F,{size:20})}),(0,N.jsx)(`button`,{className:`win-btn highlight`,onClick:v,title:`إعادة اللعب`,children:(0,N.jsx)(Yi,{size:22})}),(0,N.jsx)(`button`,{className:`win-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,N.jsx)(Ei,{size:20})})]})]})})}),(0,N.jsx)(`style`,{jsx:!0,children:`
+      `})]})}var yj=[{id:`candy`,icon:`🍬`,color:`#ec4899`,symbol:`!`},{id:`lollipop`,icon:`🍭`,color:`#06b6d4`,symbol:`?`},{id:`gem`,icon:`💎`,color:`#8b5cf6`,symbol:`.`},{id:`donut`,icon:`🍩`,color:`#f59e0b`,symbol:`:`}],bj=6,xj=20;function Sj(){let e=j(),[t,n]=(0,b.useState)([]),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(0),[l,u]=(0,b.useState)(0),[d,f]=(0,b.useState)(`playing`),[p,m]=(0,b.useState)(!1),h=()=>{if(!p)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e,n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(400,t.currentTime),n.frequency.exponentialRampToValueAtTime(800,t.currentTime+.08),r.gain.setValueAtTime(.3,t.currentTime),r.gain.exponentialRampToValueAtTime(.01,t.currentTime+.08),n.connect(r),r.connect(t.destination),n.start(),n.stop(t.currentTime+.08)}catch(e){console.log(`Audio Web API error:`,e)}},g=()=>({...yj[Math.floor(Math.random()*yj.length)],uniqueId:Math.random().toString(36).substr(2,9)}),_=()=>{let e=Array(bj*bj).fill(null);for(let t=0;t<bj;t++)for(let n=0;n<bj;n++){let r=t*bj+n,i,a=0;do{i=g(),a++;let r=n>0?e[t*bj+(n-1)]:null,o=n>1?e[t*bj+(n-2)]:null,s=r&&o&&r.id===i.id,c=t>0?e[(t-1)*bj+n]:null,l=t>1?e[(t-2)*bj+n]:null,u=c&&l&&c.id===i.id;if(!s&&!u)break}while(a<50);e[r]=i}for(let t=0;t<4;t++){let t=Math.floor(Math.random()*(bj-1)),n=Math.floor(Math.random()*(bj-2)),r=g();e[t*bj+n]={...r,uniqueId:Math.random().toString()},e[t*bj+(n+1)]={...r,uniqueId:Math.random().toString()};let i=(t+1)*bj+(n+2);i<bj*bj&&(e[i]={...r,uniqueId:Math.random().toString()})}return e},v=()=>{n(_()),o(0),c(0),u(0),f(`playing`),i(null)};(0,b.useEffect)(()=>{v()},[]),(0,b.useEffect)(()=>{let e;return d===`playing`&&(e=setInterval(()=>{u(e=>e+1)},1e3)),()=>clearInterval(e)},[d]);let y=e=>{let t=new Set;for(let n=0;n<bj;n++)for(let r=0;r<bj-2;r++){let i=n*bj+r,a=n*bj+(r+1),o=n*bj+(r+2);e[i]&&e[a]&&e[o]&&e[i].id===e[a].id&&e[a].id===e[o].id&&(t.add(i),t.add(a),t.add(o))}for(let n=0;n<bj;n++)for(let r=0;r<bj-2;r++){let i=r*bj+n,a=(r+1)*bj+n,o=(r+2)*bj+n;e[i]&&e[a]&&e[o]&&e[i].id===e[a].id&&e[a].id===e[o].id&&(t.add(i),t.add(a),t.add(o))}return Array.from(t)},x=e=>{let t=y(e);if(t.length===0)return;h(),o(e=>e+1),c(e=>{let t=e+1;return t>=xj&&f(`won`),t});let r=[...e];t.forEach(e=>{r[e]=null});for(let e=0;e<bj;e++){let t=0;for(let n=bj-1;n>=0;n--){let i=n*bj+e;r[i]===null?t++:t>0&&(r[(n+t)*bj+e]=r[i],r[i]=null)}for(let n=0;n<t;n++)r[n*bj+e]=g()}n(r),setTimeout(()=>{x(r)},300)},S=e=>{if(d===`playing`)if(r===null)i(e);else{if(Math.abs(r-e)===1&&Math.floor(r/bj)===Math.floor(e/bj)||Math.abs(r-e)===bj){let i=[...t];[i[r],i[e]]=[i[e],i[r]],y(i).length>0?(n(i),setTimeout(()=>{x(i)},150)):(n(i),setTimeout(()=>{[i[r],i[e]]=[i[e],i[r]],n([...i])},250))}i(null)}};return(0,N.jsxs)(`div`,{className:`game-container`,children:[(0,N.jsx)(`img`,{src:yA,className:`bg-img`,alt:`bg`}),(0,N.jsxs)(`div`,{className:`main-header`,children:[(0,N.jsxs)(`div`,{className:`stat-box`,children:[`الوقت: `,l]}),(0,N.jsxs)(`div`,{className:`center-info`,children:[(0,N.jsx)(`div`,{className:`title-box`,children:(0,N.jsx)(`h1`,{children:`كاندي علامات الترقيم 🎯`})}),(0,N.jsx)(`div`,{className:`subtitle-box`,children:(0,N.jsxs)(`p`,{children:[`المرحلة: `,s,` /`,` `,xj]})})]}),(0,N.jsxs)(`div`,{className:`stat-box`,children:[`النقاط: `,a]})]}),(0,N.jsxs)(`div`,{className:`main-play-area`,children:[(0,N.jsx)(`div`,{className:`character-wrapper`,children:(0,N.jsx)(`img`,{src:bA,className:`boy-img`,alt:`boy`})}),(0,N.jsx)(`div`,{className:`board-wrapper`,children:(0,N.jsx)(`div`,{className:`candy-board`,children:(0,N.jsx)(`div`,{className:`grid-container`,children:t.map((e,t)=>(0,N.jsx)(V.div,{layout:!0,initial:{scale:.8,opacity:0},animate:{scale:1,opacity:1},exit:{scale:0,opacity:0},transition:{type:`spring`,stiffness:300,damping:25},className:`grid-tile ${r===t?`selected`:``}`,style:{backgroundColor:e?e.color:`transparent`},onClick:()=>S(t),children:e&&(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`span`,{className:`tile-icon`,children:e.icon}),(0,N.jsx)(`span`,{className:`tile-symbol`,children:e.symbol})]})},e?e.uniqueId:t))})})}),(0,N.jsx)(`div`,{className:`spacer-right`})]}),(0,N.jsxs)(`div`,{className:`bottom-controls`,children:[(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,N.jsx)(F,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:v,title:`إعادة`,children:(0,N.jsx)(Yi,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>m(!p),title:`الصوت`,children:p?(0,N.jsx)(R,{className:`icon-size`,style:{color:`#ef4444`}}):(0,N.jsx)(L,{className:`icon-size`})}),(0,N.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,N.jsx)(Ei,{className:`icon-size`})})]}),(0,N.jsx)(Fg,{children:d===`won`&&(0,N.jsx)(V.div,{className:`overlay`,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:(0,N.jsxs)(`div`,{className:`win-modal`,children:[(0,N.jsx)(ra,{size:42,color:`#fbbf24`}),(0,N.jsx)(`h2`,{children:`مذهل! أحسنت يا بطل 🏆`}),(0,N.jsxs)(`p`,{className:`win-score`,children:[`مجموع النقاط: `,a]}),(0,N.jsxs)(`p`,{className:`win-time`,children:[`الوقت المستغرق:`,` `,l,` ثانية`]}),(0,N.jsxs)(`div`,{className:`win-actions`,children:[(0,N.jsx)(`button`,{className:`win-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,N.jsx)(F,{size:20})}),(0,N.jsx)(`button`,{className:`win-btn highlight`,onClick:v,title:`إعادة اللعب`,children:(0,N.jsx)(Yi,{size:22})}),(0,N.jsx)(`button`,{className:`win-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,N.jsx)(Ei,{size:20})})]})]})})}),(0,N.jsx)(`style`,{jsx:!0,children:`
 
         /* =========================
            🌐 GENERAL
