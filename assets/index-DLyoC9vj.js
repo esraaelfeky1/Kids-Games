@@ -17690,7 +17690,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             bottom: 55px !important;
           }
         }
-      `}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:{...oj,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{onClick:()=>i(!r),style:{...oj,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsx)(`img`,{className:`title-img`,src:ej,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,N.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#f7f8f9`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,N.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#fdfdfd`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},oj={width:`43px`,height:`43px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},sj=`/Kids-Games/assets/tuol6-Bwl5qNVk.jpeg`,cj=`/Kids-Games/assets/tttt2-D8ahyY0o.jpeg`,lj=`/Kids-Games/assets/snail-BZcZ7ykG.png`,uj=`/Kids-Games/assets/trophy3-Da_Yaec3.png`,dj=`/Kids-Games/`,fj=e=>`${dj}${e.replace(/^\/+/,``)}`,pj=fj(`sounds/hay1.mp3`),mj=fj(`sounds/pop.mp3`),hj=[{question:`الفاصلة`,answer:`،`,options:[`،`,`.`,`؟`]},{question:`علامة التعجب`,answer:`!`,options:[`؟`,`!`,`:`]},{question:`النقطتان`,answer:`:`,options:[`.`,`:`,`،`]},{question:`علامة الاستفهام`,answer:`؟`,options:[`!`,`،`,`؟`]}],gj=[{top:`27%`,color:`yellow`},{top:`41%`,color:`purple`},{top:`55%`,color:`yellow`},{top:`69%`,color:`pink`}],_j=[{left:`14%`,top:`30%`},{left:`86%`,top:`30%`},{left:`86%`,top:`44%`},{left:`14%`,top:`44%`},{left:`14%`,top:`58%`},{left:`86%`,top:`58%`},{left:`86%`,top:`72%`},{left:`14%`,top:`72%`},{left:`10%`,top:`77%`}],vj=[{left:`5%`,top:`36%`},{left:`49%`,top:`36%`},{left:`51%`,top:`36%`},{left:`95%`,top:`36%`},{left:`95%`,top:`61%`},{left:`51%`,top:`61%`},{left:`51%`,top:`74%`},{left:`49%`,top:`74%`},{left:`10%`,top:`74%`},{left:`10%`,top:`76%`}],yj=Array.from({length:55},(e,t)=>({id:t,left:`${Math.random()*100}%`,delay:`${Math.random()*.7}s`,duration:`${1.7+Math.random()*1.8}s`,size:`${5+Math.random()*7}px`,rotate:`${Math.random()*360}deg`})),bj=()=>(0,N.jsx)(`div`,{className:`confetti-container`,children:yj.map(e=>(0,N.jsx)(`span`,{className:`confetti-piece`,style:{left:e.left,width:e.size,height:e.size,animationDelay:e.delay,animationDuration:e.duration,transform:`rotate(${e.rotate})`}},e.id))}),xj=()=>{let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(1),[_,v]=(0,b.useState)(0),[y,x]=(0,b.useState)(!1),S=(0,b.useRef)([]),C=(0,b.useRef)(null),w=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=()=>{x(window.innerWidth>=769)};return e(),window.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e)}},[]),(0,b.useEffect)(()=>{let e=document.createElement(`audio`),t=document.createElement(`audio`);return e.src=pj,t.src=mj,e.preload=`auto`,t.preload=`auto`,e.volume=1,t.volume=1,e.setAttribute(`playsinline`,``),t.setAttribute(`playsinline`,``),e.setAttribute(`webkit-playsinline`,``),t.setAttribute(`webkit-playsinline`,``),C.current=e,w.current=t,e.load(),t.load(),()=>{e.pause(),t.pause(),e.src=``,t.src=``,C.current=null,w.current=null}},[]),(0,b.useEffect)(()=>{let e=()=>{l||[C.current,w.current].forEach(e=>{if(e)try{e.muted=!0;let t=e.play();t&&t.then&&t.then(()=>{e.pause(),e.currentTime=0,e.muted=!1}).catch(()=>{e.muted=!1})}catch{e.muted=!1}})};return window.addEventListener(`pointerdown`,e,{once:!0}),window.addEventListener(`touchstart`,e,{once:!0,passive:!0}),()=>{window.removeEventListener(`pointerdown`,e),window.removeEventListener(`touchstart`,e)}},[l]);let T=e=>{if(l)return;let t=e===`success`?C.current:w.current;if(t)try{t.pause(),t.currentTime=0,t.muted=!1,t.volume=1;let e=t.play();e&&e.catch&&e.catch(()=>{})}catch{}},E=()=>{u(e=>{let t=!e;return C.current&&(C.current.muted=t,t&&(C.current.pause(),C.current.currentTime=0)),w.current&&(w.current.muted=t,t&&(w.current.pause(),w.current.currentTime=0)),t})};(0,b.useEffect)(()=>{if(s)return;let e=setInterval(()=>{v(e=>e+1)},1e3);return()=>clearInterval(e)},[s]);let D=()=>{S.current.forEach(e=>{clearTimeout(e)}),S.current=[]};(0,b.useEffect)(()=>()=>{D()},[]);let O=()=>{D(),C.current&&(C.current.pause(),C.current.currentTime=0),w.current&&(w.current.pause(),w.current.currentTime=0),n(0),i(null),o(!1),c(!1),f(0),m(0),g(1),v(0)},k=()=>{D(),e(`/`)},A=()=>{D(),e(`/Marks`)},ee=e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${String(n).padStart(2,`0`)}`},te=y?vj:_j,ne=e=>{if(a||s)return;let r=hj[t];if(i(e),e!==r.answer){T(`error`);let e=setTimeout(()=>{i(null)},650);S.current.push(e);return}if(T(`success`),o(!0),y){if(t===0){g(1),m(2.2),f(1);let e=setTimeout(()=>{m(0),g(1),f(2),n(1),i(null),o(!1)},2250);S.current.push(e);return}if(t===1){g(1),m(2.2),f(3);let e=setTimeout(()=>{g(-1),m(.85),f(4);let e=setTimeout(()=>{n(2),i(null),o(!1)},900);S.current.push(e)},2250);S.current.push(e);return}if(t===2){g(-1),m(2.2),f(5);let e=setTimeout(()=>{o(!1),n(3),i(null)},2250);S.current.push(e);return}if(t===3){g(-1),m(.9),f(6);let e=setTimeout(()=>{g(-1),m(.15),f(7);let e=setTimeout(()=>{g(-1),m(2.2),f(8);let e=setTimeout(()=>{g(-1),m(1.1),f(9);let e=setTimeout(()=>{o(!1),c(!0)},1200);S.current.push(e)},2250);S.current.push(e)},180);S.current.push(e)},900);S.current.push(e);return}}g(t%2==0?1:-1),m(1.8);let l=t*2+1;f(l);let u=setTimeout(()=>{if(t===hj.length-1){g(-1),m(.9),f(8);let e=setTimeout(()=>{o(!1),c(!0)},1e3);S.current.push(e);return}let e=l+1;g((t+1)%2==0?1:-1),m(.6),f(e);let r=setTimeout(()=>{n(e=>e+1),i(null),o(!1)},650);S.current.push(r)},1850);S.current.push(u)},re=(e,n)=>n===t&&r===e?e===hj[n].answer?`correct`:`wrong`:``;return(0,N.jsxs)(`div`,{className:`snail-game`,children:[(0,N.jsxs)(`picture`,{className:`game-background`,children:[(0,N.jsx)(`source`,{media:`(max-width: 768px)`,srcSet:cj}),(0,N.jsx)(`img`,{src:sj,alt:``})]}),(0,N.jsx)(`div`,{className:`background-soft-layer`}),(0,N.jsx)(`div`,{className:`game-title`,children:(0,N.jsx)(`span`,{children:`🐌 سباق الحلزون`})}),(0,N.jsxs)(`div`,{className:`timer-box`,children:[(0,N.jsx)(`span`,{className:`timer-icon`,children:`⏱️`}),(0,N.jsx)(`span`,{children:ee(_)})]}),(0,N.jsxs)(`div`,{className:`score-box`,children:[(0,N.jsx)(`span`,{children:`⭐`}),(0,N.jsx)(`span`,{children:s?`4`:t})]}),(0,N.jsx)(`div`,{className:`instruction-box`,children:`اختر علامة الترقيم المناسبة`}),(0,N.jsxs)(`div`,{className:`race-board`,children:[hj.map((e,n)=>{let r=gj[n];return(0,N.jsx)(`div`,{className:`race-row ${r.color} ${n===t?`current-row`:``}`,style:{top:r.top},children:(0,N.jsxs)(`div`,{className:`race-track`,children:[(0,N.jsx)(`div`,{className:`question-card`,children:e.question}),(0,N.jsx)(`div`,{className:`options-container`,children:e.options.map((e,r)=>(0,N.jsx)(`button`,{type:`button`,className:`option-circle ${re(e,n)}`,onClick:()=>ne(e),disabled:a||s||n!==t,children:e},r))})]})},n)}),(0,N.jsx)(V.img,{src:lj,alt:`الحلزون`,className:`snail-character`,animate:{left:te[d].left,top:te[d].top,scaleX:h},transition:{left:{duration:p,ease:`linear`},top:{duration:p,ease:`linear`},scaleX:{duration:.2}}}),(0,N.jsx)(V.img,{src:uj,alt:`الكأس`,className:`trophy-character`,animate:{scale:s?[1,1.12,1]:1,rotate:s?[0,-4,4,0]:0},transition:{duration:.7,repeat:s?1/0:0,repeatType:`reverse`}}),(0,N.jsx)(Fg,{children:s&&(0,N.jsx)(bj,{})}),(0,N.jsx)(Fg,{children:s&&(0,N.jsxs)(V.div,{className:`win-message`,initial:{opacity:0,scale:.4,x:-20},animate:{opacity:1,scale:1,x:0},exit:{opacity:0,scale:.4},transition:{duration:.5,type:`spring`,stiffness:180},children:[(0,N.jsx)(ra,{size:25}),(0,N.jsx)(`span`,{children:`أحسنت! 🎉`})]})})]}),(0,N.jsxs)(`div`,{className:`control-buttons`,children:[(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:E,"aria-label":l?`تشغيل الصوت`:`كتم الصوت`,children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:O,"aria-label":`إعادة اللعبة`,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:A,"aria-label":`الرجوع`,children:(0,N.jsx)(P,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:k,"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{})})]}),(0,N.jsx)(`style`,{children:`
+      `}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:{...oj,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{onClick:()=>i(!r),style:{...oj,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})}),(0,N.jsx)(`img`,{className:`title-img`,src:ej,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,N.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,N.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,N.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#f7f8f9`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,N.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#fdfdfd`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,N.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,N.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Hx,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,N.jsx)(`img`,{className:`side-animal animate-float`,src:Ux,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`115px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},oj={width:`43px`,height:`43px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},sj=`/Kids-Games/assets/tuol6-Bwl5qNVk.jpeg`,cj=`/Kids-Games/assets/tttt2-D8ahyY0o.jpeg`,lj=`/Kids-Games/assets/snail-BZcZ7ykG.png`,uj=`/Kids-Games/assets/trophy3-Da_Yaec3.png`,dj=`/Kids-Games/`,fj=e=>`${dj}${e.replace(/^\/+/,``)}`,pj=fj(`sounds/hay1.mp3`),mj=fj(`sounds/pop.mp3`),hj=[{question:`الفاصلة`,answer:`،`,options:[`،`,`.`,`؟`]},{question:`علامة التعجب`,answer:`!`,options:[`؟`,`!`,`:`]},{question:`النقطتان`,answer:`:`,options:[`.`,`:`,`،`]},{question:`علامة الاستفهام`,answer:`؟`,options:[`!`,`،`,`؟`]}],gj=[{top:`27%`,color:`yellow`},{top:`41%`,color:`purple`},{top:`55%`,color:`yellow`},{top:`69%`,color:`pink`}],_j=[{left:`14%`,top:`30%`},{left:`86%`,top:`30%`},{left:`86%`,top:`44%`},{left:`14%`,top:`44%`},{left:`14%`,top:`58%`},{left:`86%`,top:`58%`},{left:`86%`,top:`72%`},{left:`14%`,top:`72%`},{left:`10%`,top:`77%`}],vj=[{left:`5%`,top:`36%`},{left:`49%`,top:`36%`},{left:`51%`,top:`36%`},{left:`95%`,top:`36%`},{left:`95%`,top:`61%`},{left:`51%`,top:`61%`},{left:`51%`,top:`74%`},{left:`49%`,top:`74%`},{left:`10%`,top:`74%`},{left:`10%`,top:`76%`}],yj=Array.from({length:55},(e,t)=>({id:t,left:`${Math.random()*100}%`,delay:`${Math.random()*.7}s`,duration:`${1.7+Math.random()*1.8}s`,size:`${5+Math.random()*7}px`,rotate:`${Math.random()*360}deg`})),bj=()=>(0,N.jsx)(`div`,{className:`confetti-container`,children:yj.map(e=>(0,N.jsx)(`span`,{className:`confetti-piece`,style:{left:e.left,width:e.size,height:e.size,animationDelay:e.delay,animationDuration:e.duration,transform:`rotate(${e.rotate})`}},e.id))}),xj=()=>{let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(null),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(1),[_,v]=(0,b.useState)(0),[y,x]=(0,b.useState)(!1),S=(0,b.useRef)([]),C=(0,b.useRef)(null),w=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=()=>{x(window.innerWidth>=769)};return e(),window.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e)}},[]),(0,b.useEffect)(()=>{let e=new Audio(pj),t=new Audio(mj);return e.preload=`auto`,t.preload=`auto`,e.volume=1,t.volume=1,e.setAttribute(`playsinline`,``),t.setAttribute(`playsinline`,``),e.setAttribute(`webkit-playsinline`,``),t.setAttribute(`webkit-playsinline`,``),C.current=e,w.current=t,e.load(),t.load(),()=>{e.pause(),t.pause(),e.removeAttribute(`src`),t.removeAttribute(`src`),e.load(),t.load(),C.current=null,w.current=null}},[]);let T=e=>{if(l)return;let t=e===`success`?C.current:w.current;if(t)try{t.pause(),t.currentTime=0,t.muted=!1,t.volume=1;let e=t.play();e!==void 0&&e.catch(()=>{try{t.currentTime=0;let e=t.play();e&&e.catch&&e.catch(()=>{})}catch{}})}catch{}},E=()=>{u(e=>{let t=!e;return[C.current,w.current].forEach(e=>{e&&(e.muted=t,t&&(e.pause(),e.currentTime=0))}),t})};(0,b.useEffect)(()=>{if(s)return;let e=setInterval(()=>{v(e=>e+1)},1e3);return()=>clearInterval(e)},[s]);let D=()=>{S.current.forEach(e=>{clearTimeout(e)}),S.current=[]};(0,b.useEffect)(()=>()=>{D()},[]);let O=()=>{D(),C.current&&(C.current.pause(),C.current.currentTime=0),w.current&&(w.current.pause(),w.current.currentTime=0),n(0),i(null),o(!1),c(!1),f(0),m(0),g(1),v(0)},k=()=>{D(),e(`/`)},A=()=>{D(),e(`/Marks`)},ee=e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${String(n).padStart(2,`0`)}`},te=y?vj:_j,ne=e=>{if(a||s)return;let r=hj[t];if(i(e),e!==r.answer){T(`error`);let e=setTimeout(()=>{i(null)},650);S.current.push(e);return}if(T(`success`),o(!0),y){if(t===0){g(1),m(2.2),f(1);let e=setTimeout(()=>{m(0),g(1),f(2),n(1),i(null),o(!1)},2250);S.current.push(e);return}if(t===1){g(1),m(2.2),f(3);let e=setTimeout(()=>{g(-1),m(.85),f(4);let e=setTimeout(()=>{n(2),i(null),o(!1)},900);S.current.push(e)},2250);S.current.push(e);return}if(t===2){g(-1),m(2.2),f(5);let e=setTimeout(()=>{o(!1),n(3),i(null)},2250);S.current.push(e);return}if(t===3){g(-1),m(.9),f(6);let e=setTimeout(()=>{g(-1),m(.15),f(7);let e=setTimeout(()=>{g(-1),m(2.2),f(8);let e=setTimeout(()=>{g(-1),m(1.1),f(9);let e=setTimeout(()=>{o(!1),c(!0)},1200);S.current.push(e)},2250);S.current.push(e)},180);S.current.push(e)},900);S.current.push(e);return}}g(t%2==0?1:-1),m(1.8);let l=t*2+1;f(l);let u=setTimeout(()=>{if(t===hj.length-1){g(-1),m(.9),f(8);let e=setTimeout(()=>{o(!1),c(!0)},1e3);S.current.push(e);return}let e=l+1;g((t+1)%2==0?1:-1),m(.6),f(e);let r=setTimeout(()=>{n(e=>e+1),i(null),o(!1)},650);S.current.push(r)},1850);S.current.push(u)},re=(e,n)=>n===t&&r===e?e===hj[n].answer?`correct`:`wrong`:``;return(0,N.jsxs)(`div`,{className:`snail-game`,children:[(0,N.jsxs)(`picture`,{className:`game-background`,children:[(0,N.jsx)(`source`,{media:`(max-width: 768px)`,srcSet:cj}),(0,N.jsx)(`img`,{src:sj,alt:``})]}),(0,N.jsx)(`div`,{className:`background-soft-layer`}),(0,N.jsx)(`div`,{className:`game-title`,children:(0,N.jsx)(`span`,{children:`🐌 سباق الحلزون`})}),(0,N.jsxs)(`div`,{className:`timer-box`,children:[(0,N.jsx)(`span`,{className:`timer-icon`,children:`⏱️`}),(0,N.jsx)(`span`,{children:ee(_)})]}),(0,N.jsxs)(`div`,{className:`score-box`,children:[(0,N.jsx)(`span`,{children:`⭐`}),(0,N.jsx)(`span`,{children:s?`4`:t})]}),(0,N.jsx)(`div`,{className:`instruction-box`,children:`اختر علامة الترقيم المناسبة`}),(0,N.jsxs)(`div`,{className:`race-board`,children:[hj.map((e,n)=>{let r=gj[n];return(0,N.jsx)(`div`,{className:`race-row ${r.color} ${n===t?`current-row`:``}`,style:{top:r.top},children:(0,N.jsxs)(`div`,{className:`race-track`,children:[(0,N.jsx)(`div`,{className:`question-card`,children:e.question}),(0,N.jsx)(`div`,{className:`options-container`,children:e.options.map((e,r)=>(0,N.jsx)(`button`,{type:`button`,className:`option-circle ${re(e,n)}`,onClick:()=>ne(e),disabled:a||s||n!==t,children:e},r))})]})},n)}),(0,N.jsx)(V.img,{src:lj,alt:`الحلزون`,className:`snail-character`,animate:{left:te[d].left,top:te[d].top,scaleX:h},transition:{left:{duration:p,ease:`linear`},top:{duration:p,ease:`linear`},scaleX:{duration:.2}}}),(0,N.jsx)(V.img,{src:uj,alt:`الكأس`,className:`trophy-character`,animate:{scale:s?[1,1.12,1]:1,rotate:s?[0,-4,4,0]:0},transition:{duration:.7,repeat:s?1/0:0,repeatType:`reverse`}}),(0,N.jsx)(Fg,{children:s&&(0,N.jsx)(bj,{})}),(0,N.jsx)(Fg,{children:s&&(0,N.jsxs)(V.div,{className:`win-message`,initial:{opacity:0,scale:.4,x:-20},animate:{opacity:1,scale:1,x:0},exit:{opacity:0,scale:.4},transition:{duration:.5,type:`spring`,stiffness:180},children:[(0,N.jsx)(ra,{size:25}),(0,N.jsx)(`span`,{children:`أحسنت! 🎉`})]})})]}),(0,N.jsxs)(`div`,{className:`control-buttons`,children:[(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:E,"aria-label":l?`تشغيل الصوت`:`كتم الصوت`,children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:O,"aria-label":`إعادة اللعبة`,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:A,"aria-label":`الرجوع`,children:(0,N.jsx)(P,{})}),(0,N.jsx)(`button`,{type:`button`,className:`control-button`,onClick:k,"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{})})]}),(0,N.jsx)(`style`,{children:`
 
         * {
           box-sizing: border-box;
@@ -17713,10 +17713,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             sans-serif;
         }
 
-        /* ====================================================
-           اللعبة
-        ==================================================== */
-
         .snail-game {
           position: relative;
 
@@ -17732,10 +17728,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           background: #80d5e9;
         }
-
-        /* ====================================================
-           الخلفية
-        ==================================================== */
 
         .game-background {
           position: absolute;
@@ -17779,10 +17771,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               0.015
             );
         }
-
-        /* ====================================================
-           العنوان
-        ==================================================== */
 
         .game-title {
           position: absolute;
@@ -17838,10 +17826,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           white-space: nowrap;
         }
 
-        /* ====================================================
-           الوقت
-        ==================================================== */
-
         .timer-box {
           position: absolute;
 
@@ -17894,10 +17878,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           font-size: 19px;
         }
 
-        /* ====================================================
-           النقاط
-        ==================================================== */
-
         .score-box {
           position: absolute;
 
@@ -17948,10 +17928,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           color: #f4c523;
           font-size: 23px;
         }
-
-        /* ====================================================
-           التعليمات
-        ==================================================== */
 
         .instruction-box {
           position: absolute;
@@ -18006,10 +17982,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               );
         }
 
-        /* ====================================================
-           لوحة السباق
-        ==================================================== */
-
         .race-board {
           position: absolute;
 
@@ -18020,10 +17992,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           width: 100%;
           height: 100%;
         }
-
-        /* ====================================================
-           الطرق
-        ==================================================== */
 
         .race-row {
           position: absolute;
@@ -18073,10 +18041,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               );
         }
 
-        /* ====================================================
-           الطريق الأصفر
-        ==================================================== */
-
         .race-row.yellow
         .race-track {
           background:
@@ -18088,10 +18052,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           border-color: #e4a91f;
         }
-
-        /* ====================================================
-           الطريق البنفسجي
-        ==================================================== */
 
         .race-row.purple
         .race-track {
@@ -18105,10 +18065,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           border-color: #7245bf;
         }
 
-        /* ====================================================
-           الطريق الوردي
-        ==================================================== */
-
         .race-row.pink
         .race-track {
           background:
@@ -18120,10 +18076,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           border-color: #d64d60;
         }
-
-        /* ====================================================
-           كارت السؤال
-        ==================================================== */
 
         .question-card {
           position: absolute;
@@ -18216,10 +18168,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           border-color: #d95a6d;
         }
-
-        /* ====================================================
-           الاختيارات
-        ==================================================== */
 
         .options-container {
           position: absolute;
@@ -18363,10 +18311,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-        /* ====================================================
-           الحلزون
-        ==================================================== */
-
         .snail-character {
           position: absolute;
 
@@ -18400,10 +18344,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             );
         }
 
-        /* ====================================================
-           الكأس
-        ==================================================== */
-
         .trophy-character {
           position: absolute;
 
@@ -18436,10 +18376,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               )
             );
         }
-
-        /* ====================================================
-           رسالة الفوز
-        ==================================================== */
 
         .win-message {
           position: absolute;
@@ -18499,10 +18435,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 0.14
               );
         }
-
-        /* ====================================================
-           Confetti
-        ==================================================== */
 
         .confetti-container {
           position: absolute;
@@ -18582,10 +18514,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               rotate(720deg);
           }
         }
-
-        /* ====================================================
-           أزرار التحكم
-        ==================================================== */
 
         .control-buttons {
           position: absolute;
@@ -18925,14 +18853,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         /* ====================================================
            💻 LAPTOP + TABLET
-           
-           التصميم:
-           
-           Q1 = يسار
-           Q2 = يمين
-           
-           Q3 = يمين
-           Q4 = يسار
         ==================================================== */
 
         @media (min-width: 769px) {
@@ -18982,10 +18902,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             padding: 6px 14px;
           }
 
-          /* ==================================================
-             الصف الأول
-          ================================================== */
-
           .race-row:nth-child(1) {
             top: 32% !important;
 
@@ -19002,10 +18918,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 45%;
           }
 
-          /* ==================================================
-             Q3 — على اليمين
-          ================================================== */
-
           .race-row:nth-child(3) {
             top: 57% !important;
 
@@ -19013,10 +18925,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
             width: 45%;
           }
-
-          /* ==================================================
-             Q4 — على اليسار
-          ================================================== */
 
           .race-row:nth-child(4) {
             top: 69% !important;
