@@ -14846,14 +14846,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   /* 🍎 الكلمة: هدى */
   /* عدلي top و left هنا لتغيير مكان تفاحة هدى */
   .apple-pos-a4_1 {
-    top: 35% !important;
+    top: 95% !important;
     left: 74% !important;
   }
 
   /* 🍏 الكلمة: شجر */
   /* عدلي top و left هنا لتغيير مكان تفاحة شجر */
   .apple-pos-a4_2 {
-    top: 36% !important;
+    top: 96% !important;
     left: 84% !important;
   }
 
@@ -14864,7 +14864,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   /* 🍎 الكلمة: أعطى */
   /* عدلي top و left هنا لتغيير مكان تفاحة أعطى */
   .apple-pos-a5_1 {
-    top: 58% !important;
+    top: 48% !important;
     left: 78% !important;
   }
 
