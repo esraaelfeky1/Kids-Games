@@ -14792,14 +14792,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   /* 🍎 الكلمة: دنيا */
   /* عدلي top و left هنا لتغيير مكان تفاحة دنيا */
   .apple-pos-a1_1 {
-    top: 14% !important;
+    top: 54% !important;
     left: 5% !important;
   }
 
   /* 🍏 الكلمة: قلم */
   /* عدلي top و left هنا لتغيير مكان تفاحة قلم */
   .apple-pos-a1_2 {
-    top: 13% !important;
+    top: 53% !important;
     left: 13% !important;
   }
 
