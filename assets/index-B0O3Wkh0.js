@@ -99,8 +99,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               margin-top: 30px;
             }
           }
-        `}),(0,N.jsxs)(`div`,{className:`lessons-page`,children:[(0,N.jsx)(`h2`,{className:`lessons-title`,children:`دروس الكتاب`}),(0,N.jsx)(`div`,{className:`lessons-grid`,children:t.map((e,t)=>(0,N.jsx)(`div`,{className:`lesson-card`,style:{backgroundColor:Zn[t%Zn.length]},onMouseEnter:n,onTouchStart:n,onClick:()=>r(e),children:e},t))})]})]})}var Zn=[`#cfe3e3`,`#e6dcc5`,`#dcd6dc`,`#e6cfcf`,`#cfdde6`,`#e6e3cf`,`#e6d5c3`,`#dcd6e6`,`#e6e6c3`],Qn=()=>(0,N.jsx)(N.Fragment,{children:(0,N.jsx)(Xn,{})}),$n={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},er=b.createContext&&b.createContext($n),tr=[`attr`,`size`,`title`];function nr(e,t){if(e==null)return{};var n,r,i=rr(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function rr(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function ir(){return ir=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ir.apply(null,arguments)}function ar(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function or(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?ar(Object(n),!0).forEach(function(t){sr(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):ar(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function sr(e,t,n){return(t=cr(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function cr(e){var t=lr(e,`string`);return typeof t==`symbol`?t:t+``}function lr(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function ur(e){return e&&e.map((e,t)=>b.createElement(e.tag,or({key:t},e.attr),ur(e.child)))}function dr(e){return t=>b.createElement(fr,ir({attr:or({},e.attr)},t),ur(e.child))}function fr(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=nr(e,tr),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),b.createElement(`svg`,ir({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:or(or({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&b.createElement(`title`,null,i),e.children)};return er===void 0?t($n):b.createElement(er.Consumer,null,e=>t(e))}function pr(e){return dr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeMiterlimit:`10`,strokeWidth:`32`,d:`M416 432 64 80`},child:[]},{tag:`path`,attr:{d:`M243.33 98.86a23.89 23.89 0 0 0-25.55 1.82l-.66.51-28.52 23.35a8 8 0 0 0-.59 11.85l54.33 54.33a8 8 0 0 0 13.66-5.66v-64.49a24.51 24.51 0 0 0-12.67-21.71zm8 236.43L96.69 180.69A16 16 0 0 0 85.38 176H56a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h69.76l92 75.31a23.9 23.9 0 0 0 25.87 1.69A24.51 24.51 0 0 0 256 391.45v-44.86a16 16 0 0 0-4.67-11.3zM352 256c0-24.56-5.81-47.87-17.75-71.27a16 16 0 1 0-28.5 14.55C315.34 218.06 320 236.62 320 256q0 4-.31 8.13a8 8 0 0 0 2.32 6.25l14.36 14.36a8 8 0 0 0 13.55-4.31A146 146 0 0 0 352 256zm64 0c0-51.18-13.08-83.89-34.18-120.06a16 16 0 0 0-27.64 16.12C373.07 184.44 384 211.83 384 256c0 23.83-3.29 42.88-9.37 60.65a8 8 0 0 0 1.9 8.26L389 337.4a8 8 0 0 0 13.13-2.79C411 311.76 416 287.26 416 256z`},child:[]},{tag:`path`,attr:{d:`M480 256c0-74.25-20.19-121.11-50.51-168.61a16 16 0 1 0-27 17.22C429.82 147.38 448 189.5 448 256c0 46.19-8.43 80.27-22.43 110.53a8 8 0 0 0 1.59 9l11.92 11.92a8 8 0 0 0 12.92-2.16C471.6 344.9 480 305 480 256z`},child:[]}]})(e)}function mr(e){return dr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M232 416a23.88 23.88 0 0 1-14.2-4.68 8.27 8.27 0 0 1-.66-.51L125.76 336H56a24 24 0 0 1-24-24V200a24 24 0 0 1 24-24h69.75l91.37-74.81a8.27 8.27 0 0 1 .66-.51A24 24 0 0 1 256 120v272a24 24 0 0 1-24 24zm-106.18-80zm-.27-159.86zM320 336a16 16 0 0 1-14.29-23.19c9.49-18.87 14.3-38 14.3-56.81 0-19.38-4.66-37.94-14.25-56.73a16 16 0 0 1 28.5-14.54C346.19 208.12 352 231.44 352 256c0 23.86-6 47.81-17.7 71.19A16 16 0 0 1 320 336z`},child:[]},{tag:`path`,attr:{d:`M368 384a16 16 0 0 1-13.86-24C373.05 327.09 384 299.51 384 256c0-44.17-10.93-71.56-29.82-103.94a16 16 0 0 1 27.64-16.12C402.92 172.11 416 204.81 416 256c0 50.43-13.06 83.29-34.13 120a16 16 0 0 1-13.87 8z`},child:[]},{tag:`path`,attr:{d:`M416 432a16 16 0 0 1-13.39-24.74C429.85 365.47 448 323.76 448 256c0-66.5-18.18-108.62-45.49-151.39a16 16 0 1 1 27-17.22C459.81 134.89 480 181.74 480 256c0 64.75-14.66 113.63-50.6 168.74A16 16 0 0 1 416 432z`},child:[]}]})(e)}function hr(e){return dr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M261.56 101.28a8 8 0 0 0-11.06 0L66.4 277.15a8 8 0 0 0-2.47 5.79L63.9 448a32 32 0 0 0 32 32H192a16 16 0 0 0 16-16V328a8 8 0 0 1 8-8h80a8 8 0 0 1 8 8v136a16 16 0 0 0 16 16h96.06a32 32 0 0 0 32-32V282.94a8 8 0 0 0-2.47-5.79z`},child:[]},{tag:`path`,attr:{d:`m490.91 244.15-74.8-71.56V64a16 16 0 0 0-16-16h-48a16 16 0 0 0-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0 0 43 267.56L250.5 69.28a8 8 0 0 1 11.06 0l207.52 198.28a16 16 0 0 0 22.59-.44c6.14-6.36 5.63-16.86-.76-22.97z`},child:[]}]})(e)}var gr=`/Kids-Games/assets/hh12-C8e7BMQE.jpeg`,_r=`/Kids-Games/assets/cat1-4TrCDg4u.png`,vr=`/Kids-Games/assets/cat2-D5xChXUI.png`,yr=`/Kids-Games/assets/cat33-7NSsFc-y.png`,br=`/Kids-Games/assets/cat44-DXtuvVPW.png`,xr=`/Kids-Games/assets/match-BKXkYpf0.png`,Sr=`/Kids-Games/assets/drop-DFrZrEet.png`,Cr=`/Kids-Games/assets/12333-D9LKWy95.png`,wr=`/Kids-Games/assets/ffff-93Zr9YwM.png`,Tr=`/Kids-Games/assets/1111111111112-SojhzGdI.png`,Er=`/Kids-Games/assets/dddd-DkexMVyI.png`,Dr=`/Kids-Games/assets/12lf-BcwSxrJS.png`,Or=`/Kids-Games/assets/dddqq-CkSM9NcV.png`,kr=`/Kids-Games/assets/sbac-BXwxyfXS.png`,Ar=`/Kids-Games/assets/complet-C15l2EVh.png`,jr=`/Kids-Games/assets/wee-Dk5dgl3F.png`,Mr=`/Kids-Games/assets/licn-DGFfYDok.png`,Nr=`/Kids-Games/assets/1111111111-D8u2rqos.png`,Pr=`/Kids-Games/assets/jjjj-hDdlifM7.png`,Fr=`/Kids-Games/assets/fash-CxTetjhK.png`,Ir=`/Kids-Games/assets/fffp-DRviz1F9.png`,Lr=()=>{let e=j(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!1),s=[gr,_r,vr,yr,br,xr,Sr,Cr,wr,Tr,Er,Dr,Or,kr,Ar,jr,Mr,Nr,Pr,Fr,Ir];(0,b.useEffect)(()=>{let e=!0;return(async()=>{try{let t=s.map(e=>new Promise(t=>{let n=new Image;n.onload=()=>{t()},n.onerror=()=>{t()},n.src=e,n.complete&&t()}));await Promise.all(t),await new Promise(e=>{requestAnimationFrame(()=>{requestAnimationFrame(e)})}),e&&o(!0)}catch{e&&o(!0)}})(),()=>{e=!1}},[]);let c=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},l={imgBubbles:{top:`15%`,left:`15%`,width:`33%`,height:`55%`},imgLion:{top:`25%`,left:`50%`,width:`33%`,height:`35%`},imgComplete:{top:`55%`,left:`15%`,width:`33%`,height:`36%`},imgBeeHive:{top:`55%`,left:`50%`,width:`32%`,height:`38%`},imgIce:{top:`28%`,left:`10%`,width:`45%`,height:`30%`},imgSpace:{top:`27%`,left:`48%`,width:`38%`,height:`30%`},imgBasket:{top:`55%`,left:`15%`,width:`33%`,height:`40%`},imgEgg:{top:`60%`,left:`44%`,width:`44%`,height:`30%`},imgBee:{top:`26%`,left:`11%`,width:`40%`,height:`30%`},imgIce2:{top:`25%`,left:`50%`,width:`34%`,height:`33%`},imgButterflies:{top:`59%`,left:`15%`,width:`33%`,height:`32%`},imgComplete2:{top:`58%`,left:`24%`,width:`84%`,height:`32%`},imgBee2:{top:`28%`,left:`10%`,width:`47%`,height:`29%`},imgIce3:{top:`27%`,left:`52%`,width:`31%`,height:`32%`},imgButterflies2:{top:`42%`,left:`17%`,width:`31%`,height:`63%`},imgComplete3:{top:`60%`,left:`43%`,width:`48%`,height:`28%`}},u=[{title:`حروف اللثوية`,board:_r,games:[{id:`imgBubbles`,img:xr,path:`/Interdentalparrot`},{id:`imgLion`,img:Sr,path:`/Interdentaldrop`},{id:`imgComplete`,img:Cr,path:`/Interdentaltreasure`},{id:`imgBeeHive`,img:wr,path:`/Interdentalspace`}]},{title:`حروف القطع`,board:vr,games:[{id:`imgIce`,img:Tr,path:`/Cutsbee`},{id:`imgSpace`,img:Er,path:`/Cutsfish`},{id:`imgBasket`,img:Dr,path:`/Cutsspace`},{id:`imgEgg`,img:Or,path:`/Cutsfrog`}]},{title:`حروف المفخمة`,board:yr,games:[{id:`imgBee`,img:kr,path:`/EmphaticRace`},{id:`imgIce2`,img:Ar,path:`/CompleteWord`},{id:`imgButterflies`,img:jr,path:`/Emphaticolorl`},{id:`imgComplete2`,img:Mr,path:`/ListenChoose`}]},{title:`حروف المرققة`,board:br,games:[{id:`imgBee2`,img:Nr,path:`/Marqqaeats`},{id:`imgIce3`,img:Pr,path:`/Marqqaapple`},{id:`imgButterflies2`,img:Fr,path:`/Marqqafish`},{id:`imgComplete3`,img:Ir,path:`/Marqqabee`}]}];return(0,N.jsxs)(`div`,{className:`tashkeel-page ${a?`page-loaded`:`page-loading`}`,style:{backgroundImage:`url(${gr})`},children:[(0,N.jsx)(`style`,{children:`
-
+        `}),(0,N.jsxs)(`div`,{className:`lessons-page`,children:[(0,N.jsx)(`h2`,{className:`lessons-title`,children:`دروس الكتاب`}),(0,N.jsx)(`div`,{className:`lessons-grid`,children:t.map((e,t)=>(0,N.jsx)(`div`,{className:`lesson-card`,style:{backgroundColor:Zn[t%Zn.length]},onMouseEnter:n,onTouchStart:n,onClick:()=>r(e),children:e},t))})]})]})}var Zn=[`#cfe3e3`,`#e6dcc5`,`#dcd6dc`,`#e6cfcf`,`#cfdde6`,`#e6e3cf`,`#e6d5c3`,`#dcd6e6`,`#e6e6c3`],Qn=()=>(0,N.jsx)(N.Fragment,{children:(0,N.jsx)(Xn,{})}),$n={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},er=b.createContext&&b.createContext($n),tr=[`attr`,`size`,`title`];function nr(e,t){if(e==null)return{};var n,r,i=rr(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function rr(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function ir(){return ir=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ir.apply(null,arguments)}function ar(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function or(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?ar(Object(n),!0).forEach(function(t){sr(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):ar(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function sr(e,t,n){return(t=cr(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function cr(e){var t=lr(e,`string`);return typeof t==`symbol`?t:t+``}function lr(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function ur(e){return e&&e.map((e,t)=>b.createElement(e.tag,or({key:t},e.attr),ur(e.child)))}function dr(e){return t=>b.createElement(fr,ir({attr:or({},e.attr)},t),ur(e.child))}function fr(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=nr(e,tr),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),b.createElement(`svg`,ir({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:or(or({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&b.createElement(`title`,null,i),e.children)};return er===void 0?t($n):b.createElement(er.Consumer,null,e=>t(e))}function pr(e){return dr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeMiterlimit:`10`,strokeWidth:`32`,d:`M416 432 64 80`},child:[]},{tag:`path`,attr:{d:`M243.33 98.86a23.89 23.89 0 0 0-25.55 1.82l-.66.51-28.52 23.35a8 8 0 0 0-.59 11.85l54.33 54.33a8 8 0 0 0 13.66-5.66v-64.49a24.51 24.51 0 0 0-12.67-21.71zm8 236.43L96.69 180.69A16 16 0 0 0 85.38 176H56a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h69.76l92 75.31a23.9 23.9 0 0 0 25.87 1.69A24.51 24.51 0 0 0 256 391.45v-44.86a16 16 0 0 0-4.67-11.3zM352 256c0-24.56-5.81-47.87-17.75-71.27a16 16 0 1 0-28.5 14.55C315.34 218.06 320 236.62 320 256q0 4-.31 8.13a8 8 0 0 0 2.32 6.25l14.36 14.36a8 8 0 0 0 13.55-4.31A146 146 0 0 0 352 256zm64 0c0-51.18-13.08-83.89-34.18-120.06a16 16 0 0 0-27.64 16.12C373.07 184.44 384 211.83 384 256c0 23.83-3.29 42.88-9.37 60.65a8 8 0 0 0 1.9 8.26L389 337.4a8 8 0 0 0 13.13-2.79C411 311.76 416 287.26 416 256z`},child:[]},{tag:`path`,attr:{d:`M480 256c0-74.25-20.19-121.11-50.51-168.61a16 16 0 1 0-27 17.22C429.82 147.38 448 189.5 448 256c0 46.19-8.43 80.27-22.43 110.53a8 8 0 0 0 1.59 9l11.92 11.92a8 8 0 0 0 12.92-2.16C471.6 344.9 480 305 480 256z`},child:[]}]})(e)}function mr(e){return dr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M232 416a23.88 23.88 0 0 1-14.2-4.68 8.27 8.27 0 0 1-.66-.51L125.76 336H56a24 24 0 0 1-24-24V200a24 24 0 0 1 24-24h69.75l91.37-74.81a8.27 8.27 0 0 1 .66-.51A24 24 0 0 1 256 120v272a24 24 0 0 1-24 24zm-106.18-80zm-.27-159.86zM320 336a16 16 0 0 1-14.29-23.19c9.49-18.87 14.3-38 14.3-56.81 0-19.38-4.66-37.94-14.25-56.73a16 16 0 0 1 28.5-14.54C346.19 208.12 352 231.44 352 256c0 23.86-6 47.81-17.7 71.19A16 16 0 0 1 320 336z`},child:[]},{tag:`path`,attr:{d:`M368 384a16 16 0 0 1-13.86-24C373.05 327.09 384 299.51 384 256c0-44.17-10.93-71.56-29.82-103.94a16 16 0 0 1 27.64-16.12C402.92 172.11 416 204.81 416 256c0 50.43-13.06 83.29-34.13 120a16 16 0 0 1-13.87 8z`},child:[]},{tag:`path`,attr:{d:`M416 432a16 16 0 0 1-13.39-24.74C429.85 365.47 448 323.76 448 256c0-66.5-18.18-108.62-45.49-151.39a16 16 0 1 1 27-17.22C459.81 134.89 480 181.74 480 256c0 64.75-14.66 113.63-50.6 168.74A16 16 0 0 1 416 432z`},child:[]}]})(e)}function hr(e){return dr({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M261.56 101.28a8 8 0 0 0-11.06 0L66.4 277.15a8 8 0 0 0-2.47 5.79L63.9 448a32 32 0 0 0 32 32H192a16 16 0 0 0 16-16V328a8 8 0 0 1 8-8h80a8 8 0 0 1 8 8v136a16 16 0 0 0 16 16h96.06a32 32 0 0 0 32-32V282.94a8 8 0 0 0-2.47-5.79z`},child:[]},{tag:`path`,attr:{d:`m490.91 244.15-74.8-71.56V64a16 16 0 0 0-16-16h-48a16 16 0 0 0-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0 0 43 267.56L250.5 69.28a8 8 0 0 1 11.06 0l207.52 198.28a16 16 0 0 0 22.59-.44c6.14-6.36 5.63-16.86-.76-22.97z`},child:[]}]})(e)}var gr=`/Kids-Games/assets/hh12-C8e7BMQE.jpeg`,_r=`/Kids-Games/assets/cat1-4TrCDg4u.png`,vr=`/Kids-Games/assets/cat2-D5xChXUI.png`,yr=`/Kids-Games/assets/cat33-7NSsFc-y.png`,br=`/Kids-Games/assets/cat44-DXtuvVPW.png`,xr=`/Kids-Games/assets/match-BKXkYpf0.png`,Sr=`/Kids-Games/assets/drop-DFrZrEet.png`,Cr=`/Kids-Games/assets/12333-D9LKWy95.png`,wr=`/Kids-Games/assets/ffff-93Zr9YwM.png`,Tr=`/Kids-Games/assets/1111111111112-SojhzGdI.png`,Er=`/Kids-Games/assets/dddd-DkexMVyI.png`,Dr=`/Kids-Games/assets/12lf-BcwSxrJS.png`,Or=`/Kids-Games/assets/dddqq-CkSM9NcV.png`,kr=`/Kids-Games/assets/sbac-BXwxyfXS.png`,Ar=`/Kids-Games/assets/complet-C15l2EVh.png`,jr=`/Kids-Games/assets/wee-Dk5dgl3F.png`,Mr=`/Kids-Games/assets/licn-DGFfYDok.png`,Nr=`/Kids-Games/assets/1111111111-D8u2rqos.png`,Pr=`/Kids-Games/assets/jjjj-hDdlifM7.png`,Fr=`/Kids-Games/assets/fash-CxTetjhK.png`,Ir=`/Kids-Games/assets/fffp-DRviz1F9.png`;[gr,_r,vr,yr,br,xr,Sr,Cr,wr,Tr,Er,Dr,Or,kr,Ar,jr,Mr,Nr,Pr,Fr,Ir].forEach(e=>{let t=new Image;t.src=e});var Lr=()=>{let e=j(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!1);(0,b.useEffect)(()=>{o(!0)},[]);let s=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},c={imgBubbles:{top:`15%`,left:`15%`,width:`33%`,height:`55%`},imgLion:{top:`25%`,left:`50%`,width:`33%`,height:`35%`},imgComplete:{top:`55%`,left:`15%`,width:`33%`,height:`36%`},imgBeeHive:{top:`55%`,left:`50%`,width:`32%`,height:`38%`},imgIce:{top:`28%`,left:`10%`,width:`45%`,height:`30%`},imgSpace:{top:`27%`,left:`48%`,width:`38%`,height:`30%`},imgBasket:{top:`55%`,left:`15%`,width:`33%`,height:`40%`},imgEgg:{top:`60%`,left:`44%`,width:`44%`,height:`30%`},imgBee:{top:`26%`,left:`11%`,width:`40%`,height:`30%`},imgIce2:{top:`25%`,left:`50%`,width:`34%`,height:`33%`},imgButterflies:{top:`59%`,left:`15%`,width:`33%`,height:`32%`},imgComplete2:{top:`58%`,left:`24%`,width:`84%`,height:`32%`},imgBee2:{top:`28%`,left:`10%`,width:`47%`,height:`29%`},imgIce3:{top:`27%`,left:`52%`,width:`31%`,height:`32%`},imgButterflies2:{top:`42%`,left:`17%`,width:`31%`,height:`63%`},imgComplete3:{top:`60%`,left:`43%`,width:`48%`,height:`28%`}},l=[{title:`حروف اللثوية`,board:_r,games:[{id:`imgBubbles`,img:xr,path:`/Interdentalparrot`},{id:`imgLion`,img:Sr,path:`/Interdentaldrop`},{id:`imgComplete`,img:Cr,path:`/Interdentaltreasure`},{id:`imgBeeHive`,img:wr,path:`/Interdentalspace`}]},{title:`حروف القطع`,board:vr,games:[{id:`imgIce`,img:Tr,path:`/Cutsbee`},{id:`imgSpace`,img:Er,path:`/Cutsfish`},{id:`imgBasket`,img:Dr,path:`/Cutsspace`},{id:`imgEgg`,img:Or,path:`/Cutsfrog`}]},{title:`حروف المفخمة`,board:yr,games:[{id:`imgBee`,img:kr,path:`/EmphaticRace`},{id:`imgIce2`,img:Ar,path:`/CompleteWord`},{id:`imgButterflies`,img:jr,path:`/Emphaticolorl`},{id:`imgComplete2`,img:Mr,path:`/ListenChoose`}]},{title:`حروف المرققة`,board:br,games:[{id:`imgBee2`,img:Nr,path:`/Marqqaeats`},{id:`imgIce3`,img:Pr,path:`/Marqqaapple`},{id:`imgButterflies2`,img:Fr,path:`/Marqqafish`},{id:`imgComplete3`,img:Ir,path:`/Marqqabee`}]}];return(0,N.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${gr})`,opacity:+!!a,transition:`opacity 0.2s ease-in`},children:[(0,N.jsx)(`style`,{children:`
         html,
         body,
         #root {
@@ -131,60 +130,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           -ms-overflow-style: none !important;
         }
 
-        /* ==========================================
-           الصفحة مخفية بالكامل أثناء تحميل الصور
-        ========================================== */
-
         .tashkeel-page {
           width: 100%;
           min-height: 100vh;
           min-height: 100dvh;
-
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-
           display: flex;
           flex-direction: column;
           align-items: center;
-
           position: relative;
-
           padding-top: 1px;
           padding-bottom: 40px;
-
           overflow-x: hidden;
-
           contain: layout style;
-
-          opacity: 0;
-          visibility: hidden;
-        }
-
-        /* بعد اكتمال تحميل جميع الصور */
-        .tashkeel-page.page-loaded {
-          opacity: 1;
-          visibility: visible;
-        }
-
-        /* بدون Animation للصور نفسها
-           حتى تظهر كلها في نفس اللحظة */
-        .game-image,
-        .board-item,
-        .title-area {
-          animation: none !important;
-          transition: none !important;
         }
 
         .title-area {
           margin-top: 17px;
           width: 100%;
           text-align: center;
-
           display: flex;
           flex-direction: column;
           align-items: center;
-
           position: relative;
           z-index: 20;
         }
@@ -193,10 +162,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           position: absolute;
           top: 0;
           left: 0;
-
           width: 100%;
           height: 57px;
-
           pointer-events: none;
         }
 
@@ -204,30 +171,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         .sound-btn {
           position: absolute;
           top: 0;
-
           z-index: 1000;
-
           width: 57px;
           height: 57px;
-
           border-radius: 50%;
           border: none;
-
           background-color: rgba(255, 255, 255, 0.9);
-
           font-size: 35px;
           color: #4a2c2a;
-
           cursor: pointer;
-
           display: flex;
           align-items: center;
           justify-content: center;
-
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
           padding: 0;
-
           pointer-events: auto;
         }
 
@@ -241,137 +198,85 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .title-main {
           background-color: rgba(255, 255, 255, 0.7);
-
           padding: 5px 20px;
-
           border-radius: 30px;
-
           margin-bottom: 10px;
-
           white-space: nowrap;
         }
 
         .title-main h1 {
           margin: 0;
-
           font-size: 27px;
-
           color: #111111;
         }
 
         .title-sub {
           background-color: rgba(255, 240, 240, 0.55);
-
           padding: 5px 15px;
-
           border-radius: 40px;
-
           white-space: nowrap;
         }
 
         .title-sub h3 {
           margin: 0;
-
           font-size: 19px;
-
           color: #333;
-
           font-weight: bold;
         }
 
         .main-wrapper {
           display: flex;
-
           flex-direction: row;
-
           justify-content: center;
-
           align-items: center;
-
           gap: 15px;
-
           width: 100%;
-
           margin-top: 30px;
-
           padding: 0 10px;
-
           flex-wrap: nowrap;
         }
 
         .board-item {
           width: 260px;
           height: 290px;
-
           position: relative;
-
           display: flex;
-
           flex-direction: column;
-
           align-items: center;
-
           background-size: 100% 100%;
-
           background-repeat: no-repeat;
-
           flex-shrink: 0;
-
           overflow: hidden;
         }
 
         .board-title {
           color: #384491;
-
           margin-top: 20px;
-
           font-size: 27px;
-
           text-shadow: 1px 1px 2px #000;
-
           text-align: center;
-
           position: relative;
-
           z-index: 20;
         }
 
         .game-image {
           position: absolute;
-
           cursor: pointer;
-
           object-fit: contain;
-
+          transition: none;
           pointer-events: auto;
-
-          /* لا يوجد transition حتى لا تظهر الصور تدريجيًا */
-          transition: none !important;
         }
 
-        /* ==========================================
-           Tablet
-        ========================================== */
-
         @media (min-width: 769px) and (max-width: 1100px) {
-
           .main-wrapper {
             display: grid !important;
-
             grid-template-columns: repeat(2, 240px) !important;
-
             justify-content: center !important;
-
             justify-items: center !important;
-
             gap: 15px !important;
-
             width: 100% !important;
-
             max-width: 530px !important;
-
             margin-top: 25px !important;
-
             padding: 0 10px !important;
           }
 
@@ -413,23 +318,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-        /* ==========================================
-           Mobile
-        ========================================== */
-
         @media (max-width: 768px) {
-
           .tashkeel-page {
             min-height: 100dvh;
-
             padding-bottom: 30px;
           }
 
           .title-area {
             margin-top: 10px !important;
-
             padding: 0 10px !important;
-
             width: 100%;
           }
 
@@ -440,13 +337,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .home-btn,
           .sound-btn {
             top: 0 !important;
-
             width: 44px !important;
             height: 44px !important;
-
             min-width: 44px !important;
             min-height: 44px !important;
-
             font-size: 25px !important;
           }
 
@@ -460,9 +354,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .title-main {
             padding: 6px 15px !important;
-
             margin-bottom: 8px !important;
-
             border-radius: 20px !important;
           }
 
@@ -472,7 +364,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .title-sub {
             padding: 5px 12px !important;
-
             border-radius: 30px !important;
           }
 
@@ -482,49 +373,31 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .main-wrapper {
             display: flex !important;
-
             flex-direction: column !important;
-
             flex-wrap: nowrap !important;
-
             justify-content: flex-start !important;
-
             align-items: center !important;
-
             gap: 12px !important;
-
             width: 100% !important;
-
             max-width: 100% !important;
-
             padding: 0 8px 20px !important;
-
             margin-top: 18px !important;
           }
 
           .board-item {
             width: 270px !important;
-
             height: 300px !important;
-
             margin: 0 !important;
-
             flex-shrink: 0 !important;
           }
 
           .board-title {
             margin-top: 20px !important;
-
             font-size: 22px !important;
           }
         }
 
-        /* ==========================================
-           Small Mobile
-        ========================================== */
-
         @media (max-width: 400px) {
-
           .top-buttons {
             height: 40px !important;
           }
@@ -532,13 +405,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .home-btn,
           .sound-btn {
             top: 0 !important;
-
             width: 40px !important;
             height: 40px !important;
-
             min-width: 40px !important;
             min-height: 40px !important;
-
             font-size: 22px !important;
           }
 
@@ -572,12 +442,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .board-item {
             width: 270px !important;
-
             height: 300px !important;
           }
         }
-
-      `}),(0,N.jsxs)(`div`,{className:`title-area`,children:[(0,N.jsxs)(`div`,{className:`top-buttons`,children:[(0,N.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})})]}),(0,N.jsx)(`div`,{className:`title-main`,children:(0,N.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,N.jsx)(`div`,{className:`title-sub`,children:(0,N.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,N.jsx)(`main`,{className:`main-wrapper`,children:u.map((r,i)=>(0,N.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,N.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let a=t===r.id;return(0,N.jsx)(`img`,{src:r.img,loading:`eager`,decoding:`sync`,className:`game-image`,onClick:()=>{c(),e(r.path)},onMouseEnter:()=>{n(r.id),c()},onMouseLeave:()=>{n(null)},style:{...l[r.id],transform:a?`scale(1.15)`:`scale(1)`,filter:a?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:a?999:1},alt:`لعبة`},i)})]},i))})]})},Rr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,zr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Br=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Vr=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Hr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Ur=`/Kids-Games/assets/lion-BCc-x0Je.png`,Wr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Gr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Kr=`/Kids-Games/assets/icce-DngGPNER.png`,qr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Jr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Yr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Xr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,Zr=`/Kids-Games/assets/btar-ISpqIK3P.png`,Qr=()=>{let e=j(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1);(0,b.useEffect)(()=>{let e=new Image;e.src=Rr},[]);let a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:zr,games:[{id:`imgBubbles`,img:Hr,path:`/Fathaice`},{id:`imgLion`,img:Ur,path:`/Fathalion`},{id:`imgComplete`,img:Wr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Gr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Br,games:[{id:`imgIce`,img:Kr,path:`/Damasnow`},{id:`imgSpace`,img:qr,path:`/Damaspace`},{id:`imgBasket`,img:Jr,path:`/Damamaze`},{id:`imgEgg`,img:Yr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Vr,games:[{id:`imgBee`,img:Xr,path:`/Kasrabee`},{id:`imgIce2`,img:Kr,path:`/Kasrasnow`},{id:`imgButterflies`,img:Zr,path:`/Kasratreas`},{id:`imgComplete2`,img:Wr,path:`/Kasracomplete`}]}];return(0,N.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Rr})`},children:[(0,N.jsx)(`style`,{children:`
+      `}),(0,N.jsxs)(`div`,{className:`title-area`,children:[(0,N.jsxs)(`div`,{className:`top-buttons`,children:[(0,N.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),children:(0,N.jsx)(hr,{})}),(0,N.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),children:r?(0,N.jsx)(pr,{}):(0,N.jsx)(mr,{})})]}),(0,N.jsx)(`div`,{className:`title-main`,children:(0,N.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,N.jsx)(`div`,{className:`title-sub`,children:(0,N.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,N.jsx)(`main`,{className:`main-wrapper`,children:l.map((r,i)=>(0,N.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,N.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map((r,i)=>{let a=t===r.id;return(0,N.jsx)(`img`,{src:r.img,loading:`eager`,className:`game-image`,onClick:()=>{s(),e(r.path)},onMouseEnter:()=>{n(r.id),s()},onMouseLeave:()=>{n(null)},style:{...c[r.id],transform:a?`scale(1.15)`:`scale(1)`,filter:a?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:a?999:1},alt:`لعبة`},i)})]},i))})]})},Rr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,zr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Br=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Vr=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Hr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Ur=`/Kids-Games/assets/lion-BCc-x0Je.png`,Wr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Gr=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Kr=`/Kids-Games/assets/icce-DngGPNER.png`,qr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Jr=`/Kids-Games/assets/eeee-DEyXLofj.png`,Yr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Xr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,Zr=`/Kids-Games/assets/btar-ISpqIK3P.png`,Qr=()=>{let e=j(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1);(0,b.useEffect)(()=>{let e=new Image;e.src=Rr},[]);let a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:zr,games:[{id:`imgBubbles`,img:Hr,path:`/Fathaice`},{id:`imgLion`,img:Ur,path:`/Fathalion`},{id:`imgComplete`,img:Wr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Gr,path:`/Fathabee`}]},{title:`حركة الضم`,board:Br,games:[{id:`imgIce`,img:Kr,path:`/Damasnow`},{id:`imgSpace`,img:qr,path:`/Damaspace`},{id:`imgBasket`,img:Jr,path:`/Damamaze`},{id:`imgEgg`,img:Yr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Vr,games:[{id:`imgBee`,img:Xr,path:`/Kasrabee`},{id:`imgIce2`,img:Kr,path:`/Kasrasnow`},{id:`imgButterflies`,img:Zr,path:`/Kasratreas`},{id:`imgComplete2`,img:Wr,path:`/Kasracomplete`}]}];return(0,N.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Rr})`},children:[(0,N.jsx)(`style`,{children:`
         html,
         body,
         #root {
