@@ -4224,27 +4224,53 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         @media (min-width: 769px) {
 
-          /* نزول السلات وتقريبها من بعض */
+          /* ==========================================
+             السلة الخضراء والسلة الحمراء
+             جنب بعض وبينهما مسافة صغيرة جدًا
+             ========================================== */
+
           .game-green-basket {
             bottom: 31vh !important;
-            left: 14vw !important;
+
+            left: 50% !important;
+
+            transform:
+              translateX(
+                calc(-100% - 6px)
+              ) !important;
           }
 
           .game-red-basket {
             bottom: 31vh !important;
-            right: 14vw !important;
+
+            right: auto !important;
+            left: 50% !important;
+
+            transform:
+              translateX(6px) !important;
           }
 
-          /* تقريب الكور من بعض */
+          /* ==========================================
+             الكور
+             تقليل المسافة بينهم جدًا
+             ========================================== */
+
           .game-balls-container {
-            width: 75% !important;
-            left: 12.5% !important;
-            gap: clamp(3px, 1vw, 9px) !important;
+            width: 78% !important;
+            left: 11% !important;
+
+            column-gap: 2px !important;
+            row-gap: 4px !important;
           }
 
-          /* تنزيل الفقرة تحت العنوان شوية */
+          /* ==========================================
+             الفقرة تحت العنوان
+             تنزل شوية
+             ========================================== */
+
           .game-subtitle {
-            transform: translateY(1.8vh) !important;
+            transform:
+              translateY(1.8vh) !important;
           }
         }
 
