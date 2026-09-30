@@ -4252,15 +4252,33 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           /* ==========================================
              الكور
-             تقليل المسافة بينهم جدًا
+             4 كور في الصف الأول
+             4 كور في الصف الثاني
+             قريبة جدًا من بعض
              ========================================== */
 
           .game-balls-container {
-            width: 78% !important;
-            left: 11% !important;
+            width: 100% !important;
+            left: 0 !important;
 
-            column-gap: 2px !important;
+            /*
+              max-content تجعل كل صف يأخذ
+              مساحة الكورات نفسها فقط
+              بدل المسافات الكبيرة
+            */
+            grid-template-columns:
+              repeat(4, max-content) !important;
+
+            justify-content: center !important;
+
+            /* مسافة صغيرة جدًا بين الكورات */
+            column-gap: 5px !important;
+
+            /* مسافة صغيرة جدًا بين الصفين */
             row-gap: 4px !important;
+
+            /* تنزيل الكورات لتحت شوية */
+            bottom: 12vh !important;
           }
 
           /* ==========================================
