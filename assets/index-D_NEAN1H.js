@@ -3349,23 +3349,73 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             height: 20px !important;
           }
         }
-      `})]})}var Os={game:{width:`100%`,height:`100vh`,background:`url(${Ts}) center/cover no-repeat`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`flex-start`,paddingTop:`12px`,direction:`rtl`,overflow:`hidden`,position:`fixed`,top:0,left:0},topBar:{width:`100%`,display:`flex`,justifyContent:`space-around`,padding:`0 20px`,alignItems:`center`,marginBottom:`2px`},box:{background:`white`,padding:`6px 12px`,borderRadius:10,fontWeight:`bold`,fontSize:`16px`,width:`fit-content`},mainTitle:{background:`#29b6f6`,color:`white`,padding:`4px 18px`,borderRadius:20,fontSize:`26px`,fontWeight:`bold`},subTitle:{background:`rgba(255,255,255,0.85)`,padding:`4px 14px`,borderRadius:10,color:`#0277bd`,fontWeight:`bold`,fontSize:`14px`,marginTop:`6px`,marginBottom:`10px`},grid:{display:`grid`,gridTemplateColumns:`repeat(5, 68px)`,gap:`8px`,marginTop:`20px`},tile:{width:62,height:62,borderRadius:15,background:`#dff4ff`,position:`relative`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,border:`3px solid white`},letter:{fontSize:`30px`,fontWeight:`bold`,color:`#5c3b1e`,zIndex:3},iceLayer:{position:`absolute`,inset:0,background:`rgba(180, 230, 255, 0.7)`,borderRadius:15,zIndex:2,width:`100%`,height:`100%`},snowman:{position:`absolute`,width:`120px`,zIndex:10,left:`25px`,bottom:`30px`,transition:`all 0.8s ease`},bottomButtons:{position:`absolute`,bottom:`20px`,display:`flex`,gap:`15px`,zIndex:10},circleBtn:{width:45,height:45,borderRadius:`50%`,border:`none`,background:`#29b6f6`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},winStyle:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999}};function ks(){let e=j(),t=(0,b.useRef)(null),n=(0,b.useRef)(new Audio(z)),r=(0,b.useRef)(new Audio(ho)),[i,a]=(0,b.useState)(0),[o,s]=(0,b.useState)(!0),[c,l]=(0,b.useState)([]),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)({x:50,y:window.innerHeight-150}),v=[{id:1,letter:`أَ`,x:`23%`,y:`12%`},{id:2,letter:`تُ`,x:`38%`,y:`11%`},{id:3,letter:`بَ`,x:`58%`,y:`13%`},{id:4,letter:`رُ`,x:`40%`,y:`30%`},{id:5,letter:`مِ`,x:`22%`,y:`29%`},{id:6,letter:`دَ`,x:`72%`,y:`40%`},{id:7,letter:`نِ`,x:`21%`,y:`49%`},{id:8,letter:`جَ`,x:`39%`,y:`52%`},{id:9,letter:`يَ`,x:`56%`,y:`30%`},{id:10,letter:`سَ`,x:`70%`,y:`19%`},{id:11,letter:`حِ`,x:`57%`,y:`49%`},{id:12,letter:`زَ`,x:`72%`,y:`59%`},{id:13,letter:`قَ`,x:`28%`,y:`70%`},{id:14,letter:`وِ`,x:`47%`,y:`70%`},{id:15,letter:`كِ`,x:`64%`,y:`78%`}],y=(0,b.useMemo)(()=>v.filter(e=>e.letter.includes(`َ`)).length,[]);(0,b.useEffect)(()=>{document.body.style.overflow=`hidden`;let e=setInterval(()=>!m&&a(e=>e+1),1e3);return()=>{clearInterval(e),document.body.style.overflow=`auto`}},[m]);let x=async e=>{if(m||!t.current||c.includes(e.id)||u)return;let i=t.current.getBoundingClientRect(),a=i.left+i.width*parseFloat(e.x)/100,s=i.top+i.height*parseFloat(e.y)/100;if(_({x:a-20,y:s-20}),await new Promise(e=>setTimeout(e,800)),d(e.id),_({x:window.innerWidth-120,y:100}),await new Promise(e=>setTimeout(e,800)),e.letter.includes(`َ`)){o&&n.current.play(),l(t=>[...t,e.id]);let t=f+1;p(t),t>=y&&h(!0)}else o&&r.current.play(),await new Promise(e=>setTimeout(e,500)),_({x:a-20,y:s-20}),await new Promise(e=>setTimeout(e,800));d(null),_({x:50,y:window.innerHeight-120})};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
-        .game-container {
-          width: 100vw;
-          height: 100vh;
-          position: relative;
-          overflow: hidden;
-          font-family: Arial, sans-serif;
-          direction: rtl;
-          box-sizing: border-box;
-        }
+      `})]})}var Os={game:{width:`100%`,height:`100vh`,background:`url(${Ts}) center/cover no-repeat`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`flex-start`,paddingTop:`12px`,direction:`rtl`,overflow:`hidden`,position:`fixed`,top:0,left:0},topBar:{width:`100%`,display:`flex`,justifyContent:`space-around`,padding:`0 20px`,alignItems:`center`,marginBottom:`2px`},box:{background:`white`,padding:`6px 12px`,borderRadius:10,fontWeight:`bold`,fontSize:`16px`,width:`fit-content`},mainTitle:{background:`#29b6f6`,color:`white`,padding:`4px 18px`,borderRadius:20,fontSize:`26px`,fontWeight:`bold`},subTitle:{background:`rgba(255,255,255,0.85)`,padding:`4px 14px`,borderRadius:10,color:`#0277bd`,fontWeight:`bold`,fontSize:`14px`,marginTop:`6px`,marginBottom:`10px`},grid:{display:`grid`,gridTemplateColumns:`repeat(5, 68px)`,gap:`8px`,marginTop:`20px`},tile:{width:62,height:62,borderRadius:15,background:`#dff4ff`,position:`relative`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,border:`3px solid white`},letter:{fontSize:`30px`,fontWeight:`bold`,color:`#5c3b1e`,zIndex:3},iceLayer:{position:`absolute`,inset:0,background:`rgba(180, 230, 255, 0.7)`,borderRadius:15,zIndex:2,width:`100%`,height:`100%`},snowman:{position:`absolute`,width:`120px`,zIndex:10,left:`25px`,bottom:`30px`,transition:`all 0.8s ease`},bottomButtons:{position:`absolute`,bottom:`20px`,display:`flex`,gap:`15px`,zIndex:10},circleBtn:{width:45,height:45,borderRadius:`50%`,border:`none`,background:`#29b6f6`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},winStyle:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999}};function ks(){let e=j(),t=(0,b.useRef)(null),n=(0,b.useRef)(new Audio(z)),r=(0,b.useRef)(new Audio(ho)),[i,a]=(0,b.useState)(0),[o,s]=(0,b.useState)(!0),[c,l]=(0,b.useState)([]),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)({x:50,y:window.innerHeight-150}),v=[{id:1,letter:`أَ`,x:`23%`,y:`12%`},{id:2,letter:`تُ`,x:`38%`,y:`11%`},{id:3,letter:`بَ`,x:`58%`,y:`13%`},{id:4,letter:`رُ`,x:`40%`,y:`30%`},{id:5,letter:`مِ`,x:`22%`,y:`29%`},{id:6,letter:`دَ`,x:`72%`,y:`40%`},{id:7,letter:`نِ`,x:`21%`,y:`49%`},{id:8,letter:`جَ`,x:`39%`,y:`52%`},{id:9,letter:`يَ`,x:`56%`,y:`30%`},{id:10,letter:`سَ`,x:`70%`,y:`19%`},{id:11,letter:`حِ`,x:`57%`,y:`49%`},{id:12,letter:`زَ`,x:`72%`,y:`59%`},{id:13,letter:`قَ`,x:`28%`,y:`70%`},{id:14,letter:`وِ`,x:`47%`,y:`70%`},{id:15,letter:`كِ`,x:`64%`,y:`78%`}],y=(0,b.useMemo)(()=>v.filter(e=>e.letter.includes(`َ`)).length,[]);(0,b.useEffect)(()=>{let e=document.body.style.overflow,t=document.documentElement.style.overflow;document.body.style.overflow=`hidden`,document.documentElement.style.overflow=`hidden`;let n=setInterval(()=>{m||a(e=>e+1)},1e3);return()=>{clearInterval(n),document.body.style.overflow=e,document.documentElement.style.overflow=t}},[m]);let x=async e=>{if(m||!t.current||c.includes(e.id)||u)return;let i=t.current.getBoundingClientRect(),a=i.left+i.width*parseFloat(e.x)/100,s=i.top+i.height*parseFloat(e.y)/100;if(_({x:a-20,y:s-20}),await new Promise(e=>setTimeout(e,800)),d(e.id),_({x:window.innerWidth-120,y:100}),await new Promise(e=>setTimeout(e,800)),e.letter.includes(`َ`)){o&&(n.current.currentTime=0,n.current.play()),l(t=>[...t,e.id]);let t=f+1;p(t),t>=y&&h(!0)}else o&&(r.current.currentTime=0,r.current.play()),await new Promise(e=>setTimeout(e,500)),_({x:a-20,y:s-20}),await new Promise(e=>setTimeout(e,800));d(null),_({x:50,y:window.innerHeight-120})};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
+        /* =========================================
+           منع السكرول على الموبايل فقط
+           ========================================= */
 
-        /* تعديلات التصميم والمقاسات والأزرار المأخوذة من الكود الفرعي بدقة */
         @media (max-width: 768px) {
+          html,
+          body,
+          #root {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 100% !important;
+            min-height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+          }
+
+          html,
+          body {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important;
+            overscroll-behavior: none !important;
+            touch-action: none !important;
+          }
+
+          body {
+            position: fixed !important;
+            inset: 0 !important;
+          }
+
+          #root {
+            position: fixed !important;
+            inset: 0 !important;
+          }
+
+          .game-container {
+            width: 100vw !important;
+            height: 100dvh !important;
+            min-height: 100dvh !important;
+            max-height: 100dvh !important;
+
+            overflow: hidden !important;
+            position: fixed !important;
+            inset: 0 !important;
+
+            touch-action: none !important;
+            overscroll-behavior: none !important;
+          }
+
+          .game-container > img:first-child {
+            width: 100% !important;
+            height: 100% !important;
+            min-width: 100% !important;
+            min-height: 100% !important;
+            max-width: 100% !important;
+            max-height: 100% !important;
+            object-fit: cover !important;
+            object-position: center center !important;
+            pointer-events: none !important;
+          }
+
           .top-bar-custom {
             top: 8px !important;
             padding: 0 10px !important;
           }
+
           .box-custom {
             padding: 4px 10px !important;
             font-size: 12px !important;
@@ -3375,6 +3425,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             justify-content: center !important;
             line-height: 1 !important;
           }
+
           .main-title-custom {
             padding: 4px 12px !important;
             font-size: clamp(18px, 4vw, 18px) !important;
@@ -3384,6 +3435,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             justify-content: center !important;
             line-height: 1 !important;
           }
+
           .subtitle-custom {
             top: 44px !important;
             padding: 4px 10px !important;
@@ -3391,31 +3443,49 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             max-width: 90% !important;
             text-align: center !important;
           }
+
           .grid-container-custom {
             width: clamp(350px, 95vw, 460px) !important;
             height: clamp(280px, 78vw, 360px) !important;
             top: 39% !important;
           }
+
           .hive-img-custom {
             right: 2% !important;
             top: 10% !important;
             width: clamp(120px, 26vw, 150px) !important;
           }
+
           .letter-font-custom {
             font-size: clamp(33px, 9vw, 45px) !important;
             transform: translateY(-4px) !important;
             text-shadow: 1px 1px 3px #000 !important;
           }
+
           .bee-container-custom img {
             width: clamp(65px, 16vw, 90px) !important;
           }
+
           .bottom-buttons-custom {
             bottom: 68px !important;
             gap: 14px !important;
           }
+
           .circle-btn-custom {
             width: 44px !important;
             height: 44px !important;
+            flex-shrink: 0 !important;
+          }
+        }
+
+        /* دعم الشاشات التي لا تدعم dvh */
+        @supports not (height: 100dvh) {
+          @media (max-width: 768px) {
+            .game-container {
+              height: 100vh !important;
+              min-height: 100vh !important;
+              max-height: 100vh !important;
+            }
           }
         }
       `}),(0,N.jsxs)(`div`,{className:`game-container`,children:[(0,N.jsx)(`img`,{src:ps,alt:``,style:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`}}),(0,N.jsxs)(`div`,{style:As,className:`top-bar-custom`,children:[(0,N.jsxs)(`div`,{style:js,className:`box-custom`,children:[`⏱️ `,Math.floor(i/60),`:`,String(i%60).padStart(2,`0`)]}),(0,N.jsx)(`div`,{style:Ms,className:`main-title-custom`,children:`خلية النحل`}),(0,N.jsxs)(`div`,{style:js,className:`box-custom`,children:[`🍯 `,f]})]}),(0,N.jsx)(`div`,{style:Ns,className:`subtitle-custom`,children:`اضغط على الحروف التي عليها "فتحة" فقط`}),(0,N.jsxs)(`div`,{ref:t,style:Ps,className:`grid-container-custom`,children:[(0,N.jsx)(`img`,{src:ms,alt:``,style:{width:`100%`,height:`100%`,objectFit:`fill`}}),v.map(e=>u!==e.id&&!c.includes(e.id)&&(0,N.jsx)(`div`,{onClick:()=>x(e),className:`letter-font-custom`,style:{position:`absolute`,left:e.x,top:e.y,fontSize:`clamp(30px, 4vw, 40px)`,fontWeight:`bold`,color:`#fff`,cursor:`pointer`,textShadow:`2px 2px 4px #000`,userSelect:`none`},children:e.letter},e.id))]}),(0,N.jsx)(`img`,{src:hs,alt:`hive`,style:{position:`absolute`,right:`5%`,top:`15%`,width:`clamp(120px, 15vw, 200px)`},className:`hive-img-custom`}),(0,N.jsxs)(`div`,{className:`bee-container-custom`,style:{position:`absolute`,left:g.x,top:g.y,transition:`all 0.8s ease-in-out`,zIndex:100,pointerEvents:`none`},children:[(0,N.jsx)(`img`,{src:co,alt:`bee`,style:{width:`clamp(80px, 8vw, 120px)`}}),u&&(0,N.jsx)(`div`,{style:{position:`absolute`,top:-25,left:25,fontSize:`clamp(20px, 3vw, 30px)`,fontWeight:`bold`,color:`white`,textShadow:`1px 1px 2px #000`},children:v.find(e=>e.id===u)?.letter})]}),(0,N.jsxs)(`div`,{style:Fs,className:`bottom-buttons-custom`,children:[(0,N.jsx)(`button`,{onClick:()=>s(!o),style:Is,className:`circle-btn-custom`,children:o?(0,N.jsx)(L,{size:22}):(0,N.jsx)(R,{size:22})}),(0,N.jsx)(`button`,{onClick:()=>window.location.reload(),style:Is,className:`circle-btn-custom`,children:(0,N.jsx)(I,{size:22})}),(0,N.jsx)(`button`,{onClick:()=>e(`/AlHorof123`),style:Is,className:`circle-btn-custom`,children:(0,N.jsx)(P,{size:22})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:Is,className:`circle-btn-custom`,children:(0,N.jsx)(F,{size:22})})]}),m&&(0,N.jsxs)(`div`,{style:Ls,children:[(0,N.jsx)(`h1`,{style:{fontSize:`clamp(24px, 6vw, 40px)`,marginBottom:`20px`},children:`🎉 أحسنت يا بطل! 🎉`}),(0,N.jsxs)(`p`,{style:{fontSize:`clamp(18px, 4vw, 24px)`,marginBottom:`20px`},children:[`لقد جمعت `,f,` من العسل!`]}),(0,N.jsx)(`button`,{style:{padding:`12px 25px`,fontSize:`18px`,borderRadius:`15px`,border:`none`,background:`#ff9f43`,color:`white`,fontWeight:`bold`,cursor:`pointer`,boxShadow:`0 5px 15px rgba(0,0,0,0.3)`},onClick:()=>window.location.reload(),children:`إعادة اللعب`})]})]})]})}var As={position:`absolute`,top:20,width:`100%`,display:`flex`,justifyContent:`space-around`,zIndex:10,boxSizing:`border-box`},js={background:`white`,padding:`6px 16px`,borderRadius:10,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 8px rgba(0,0,0,0.1)`},Ms={background:`#ff9f43`,color:`white`,padding:`6px 25px`,borderRadius:20,fontSize:`clamp(18px, 2vw, 26px)`,fontWeight:`bold`,boxShadow:`0 4px 8px rgba(0,0,0,0.1)`},Ns={position:`absolute`,top:70,left:`50%`,transform:`translateX(-50%)`,background:`white`,padding:`8px 18px`,borderRadius:10,fontWeight:`bold`,color:`#7b4b00`,fontSize:`15px`,border:`2px solid #ff9f43`,zIndex:10,whiteSpace:`nowrap`,boxShadow:`0 4px 8px rgba(0,0,0,0.1)`},Ps={position:`absolute`,left:`50%`,top:`55%`,transform:`translate(-50%, -50%)`,width:`clamp(380px, 48vw, 480px)`,height:`clamp(300px, 45vw, 380px)`},Fs={position:`absolute`,bottom:`25px`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`15px`,zIndex:1e3},Is={width:45,height:45,borderRadius:`50%`,border:`none`,background:`#ff9f43`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`},Ls={position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999,padding:`20px`,textAlign:`center`},Rs=`/Kids-Games/assets/pom-CfYEQPaj.jpeg`;function zs(){let e=j(),[t,n]=(0,b.useState)([]),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(40),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(!1),p=(0,b.useRef)(null),m=(0,b.useRef)(null);(0,b.useEffect)(()=>(p.current=new Audio(`/Kids-Games/sounds/hay1.mp3`),m.current=new Audio(`/Kids-Games/sounds/pop.mp3`),p.current.preload=`auto`,m.current.preload=`auto`,()=>{p.current=null,m.current=null}),[]);let h=(0,b.useCallback)(()=>{d||f(!0)},[d]),g=(0,b.useCallback)(e=>{if(!s||!d)return;let t=e===`correct`?p.current:m.current;t&&(t.currentTime=0,t.play().catch(()=>{}))},[s,d]),_=[{char:`أَ`,fatha:!0},{char:`بَ`,fatha:!0},{char:`تَ`,fatha:!0},{char:`ثَ`,fatha:!0},{char:`جَ`,fatha:!0},{char:`دَ`,fatha:!0},{char:`بِ`,fatha:!1},{char:`تُ`,fatha:!1},{char:`جِ`,fatha:!1}],v=[`#FF6B6B`,`#4ECDC4`,`#FFE66D`,`#1A535C`,`#FF9F1C`,`#9575CD`];(0,b.useEffect)(()=>(document.body.style.overflow=`hidden`,window.addEventListener(`click`,h),window.addEventListener(`touchstart`,h),()=>{window.removeEventListener(`click`,h),window.removeEventListener(`touchstart`,h),document.body.style.overflow=`auto`}),[h]),(0,b.useEffect)(()=>{if(a>0&&!l){let e=setTimeout(()=>{o(e=>e-1)},1e3);return()=>clearTimeout(e)}a<=0&&u(!0)},[a,l]),(0,b.useEffect)(()=>{if(l)return;let e=setInterval(()=>{let e=_[Math.floor(Math.random()*_.length)];n(t=>[...t,{id:Date.now()+Math.random(),...e,color:v[Math.floor(Math.random()*v.length)],x:Math.random()*75+10,y:-15,popping:!1}])},1200);return()=>clearInterval(e)},[l]),(0,b.useEffect)(()=>{if(l)return;let e=setInterval(()=>{n(e=>e.map(e=>({...e,y:e.y+.6})).filter(e=>e.y<100))},50);return()=>clearInterval(e)},[l]);let y=e=>{e.popping||l||(e.fatha?(g(`correct`),n(t=>t.map(t=>t.id===e.id?{...t,popping:!0}:t)),setTimeout(()=>{i(e=>e+10),n(t=>t.filter(t=>t.id!==e.id))},200)):g(`wrong`))},x=()=>{n([]),i(0),o(40),u(!1)};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
@@ -3971,40 +4041,65 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             z-index: 10000 !important;
           }
         }
-      `})]})}function Uv({soundEnabled:e,setSoundEnabled:t,navigate:n}){return(0,N.jsxs)(`div`,{className:`action-buttons-mobile`,style:Gv.bottomButtons,children:[(0,N.jsx)(`button`,{onClick:()=>t(!e),style:Gv.circleBtn,children:e?(0,N.jsx)(L,{size:24}):(0,N.jsx)(R,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>window.location.reload(),style:Gv.circleBtn,children:(0,N.jsx)(I,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>n(`/Alhorof123`),style:Gv.circleBtn,children:(0,N.jsx)(P,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>n(`/home`),style:Gv.circleBtn,children:(0,N.jsx)(F,{size:24})})]})}function Wv({item:e,onDragEnd:t}){let n=jv(0),r=jv(0);return e.eaten?(0,N.jsx)(`div`,{style:{...Gv.meatCard,visibility:`hidden`,pointerEvents:`none`}}):(0,N.jsxs)(V.div,{style:{x:n,y:r,...Gv.meatCard},initial:{opacity:1,scale:1},animate:{scale:1,y:[0,-5,0]},transition:{y:{repeat:1/0,duration:2,ease:`easeInOut`},scale:{duration:.4}},drag:!0,dragMomentum:!1,onDragEnd:(i,a)=>t(i,a,e,n,r),children:[(0,N.jsx)(`img`,{src:Bv,alt:`Meat`,style:Gv.meatImg}),(0,N.jsx)(`div`,{style:Gv.charText,children:(0,N.jsxs)(`div`,{style:Gv.letterWrapper,children:[(0,N.jsx)(`span`,{className:`harakahStyle`,style:Gv.harakahStyle,children:e.harakah}),(0,N.jsx)(`span`,{style:Gv.baseStyle,children:e.base})]})})]})}var Gv={container:{width:`100vw`,height:`100vh`,overflow:`hidden`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`},bg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`,objectPosition:`bottom`,pointerEvents:`none`,zIndex:1},topBar:{position:`absolute`,top:`0.8vh`,width:`95%`,maxWidth:`850px`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,zIndex:100,gap:`10px`},box:{background:`rgba(255, 255, 255, 0.95)`,padding:`0.7vh 1.8vw`,borderRadius:12,fontWeight:`bold`,fontSize:`clamp(15px, 3.2vw, 19px)`,boxShadow:`0 2px 4px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},mainTitle:{background:`#6243ff`,color:`white`,padding:`0.7vh 2.5vw`,borderRadius:25,fontSize:`clamp(17px, 3.5vw, 24px)`,fontWeight:`bold`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,whiteSpace:`nowrap`,textAlign:`center`},instructionBanner:{position:`absolute`,top:`6.8vh`,background:`rgba(255, 255, 255, 0.98)`,padding:`0.6vh 2.5vw`,borderRadius:`20px`,fontSize:`clamp(13px, 3vw, 17px)`,fontWeight:`900`,color:`#6243ff`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,zIndex:90,textAlign:`center`,border:`2.5px solid #6243ff`,maxWidth:`90%`,boxSizing:`border-box`},gameLayout:{display:`flex`,alignItems:`center`,width:`100%`,height:`100%`,paddingTop:`10vh`,paddingBottom:`8vh`,zIndex:50,boxSizing:`border-box`},lionContainer:{display:`flex`,justifyContent:`center`,alignItems:`flex-end`,marginBottom:`2vh`},lion:{height:`auto`,filter:`drop-shadow(0 5px 10px rgba(0,0,0,0.3))`},meatGrid:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(8px, 1.5vh, 14px)`,width:`clamp(260px, 85vw, 480px)`,zIndex:50,position:`relative`,justifyItems:`center`,marginTop:`25px`},meatCard:{cursor:`grab`,display:`flex`,justifyContent:`center`,alignItems:`center`,position:`relative`,touchAction:`none`,userSelect:`none`,WebkitUserSelect:`none`},meatImg:{width:`clamp(60px, 12.5vw, 82px)`,height:`auto`,filter:`drop-shadow(0 3px 5px rgba(0,0,0,0.25))`,pointerEvents:`none`},charText:{position:`absolute`,pointerEvents:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`100%`,height:`100%`},letterWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`,lineHeight:`0.75`},harakahStyle:{color:`#470611`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(36px, 7.5vw, 46px)`,marginBottom:`-18px`,textShadow:`1px 1px 3px rgba(255,255,255,0.95)`},baseStyle:{color:`#1a1a1a`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(26px, 5.5vw, 35px)`,textShadow:`1px 1px 3px rgba(255,255,255,0.95)`},bottomButtons:{position:`absolute`,bottom:`1.5vh`,left:`15px`,display:`flex`,flexDirection:`column`,gap:`10px`,zIndex:1e3},circleBtn:{width:`clamp(40px, 8vw, 50px)`,height:`clamp(40px, 8vw, 50px)`,borderRadius:`50%`,border:`none`,background:`#6243ff`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.3)`},winStyle:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999,padding:`20px`,textAlign:`center`},winButtons:{display:`flex`,flexDirection:`row`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginTop:`15px`}},Kv=`/Kids-Games/assets/write-jzJ4CUsW.png`,qv=`/Kids-Games/assets/stairs-BzgxGrFR.png`,Jv=`/Kids-Games/assets/paint-palette-Cxp698__.png`,Yv=`/Kids-Games/assets/auditory-DIQ0cOdR.png`,Xv=`/Kids-Games/assets/sitting-DMKbkEcS.png`,Zv=`/Kids-Games/assets/excited-5MJhbUPG.png`,Qv=`/Kids-Games/assets/team-DDruGUQZ.png`,$v=`/Kids-Games/assets/harvest-CyUu4ssx.png`,ey=`/Kids-Games/assets/rope-skipping-BBo0pLza.png`,ty=`/Kids-Games/assets/laugh-q65j0WgX.png`,ny=`/Kids-Games/assets/binge-eating-tflh-2VU.png`;function ry(){let e=j(),t=(0,b.useRef)(new Audio(z)),n=(0,b.useRef)(new Audio(ho)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),a=[{image:Kv,word:`كَتَبَ`,missing:`كَـ`,display:`-تَـبَ`,choices:[`قِـ`,`سُـ`,`كَـ`]},{image:qv,word:`صَعَدَ`,missing:`عَـ`,display:`صَـ _ دَ`,choices:[`ضَـ`,`عَـ`,`دَ`]},{image:Jv,word:`رَسَمَ`,missing:`سَـ`,display:`رَـ مَ`,choices:[`تَـ`,`طَـ`,`سَـ`]},{image:Yv,word:`سَمَعَ`,missing:`عَ`,display:`سَمَـ -`,choices:[`عَ`,`ظَ`,`ذَ`]},{image:Xv,word:`جَلَسَ`,missing:`جَـ`,display:`- لَـسَ`,choices:[`كَـ`,`جَـ`,`فَـ`]},{image:Zv,word:`فَرَحَ`,missing:`فَـ`,display:`_رَحَ`,choices:[`فَـ`,`سَـ`,`طَ`]},{image:Qv,word:`رَبَحَ`,missing:`حَ`,display:`رَبَـ -`,choices:[`سَـ`,`خَـ`,`حَ`]},{image:$v,word:`زَرَعَ`,missing:`عَ`,display:`زَرَ-`,choices:[`عَ`,`رَ`,`طَ`]},{image:ey,word:`قَفَزَ`,missing:`فَـ`,display:`قَـ -زَ`,choices:[`شَـ`,`خَـ`,`فَـ`]},{image:ty,word:`ضَحَكَ`,missing:`ضَـ`,display:`ـ حَـكَ`,choices:[`عَـ`,`ضَـ`,`صَـ`]},{image:ny,word:`أَكَـلَ`,missing:`كَـ`,display:`أَ ـ لَ`,choices:[`كَـ`,`ذَ`,`ظَ`]}],[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(``),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(0),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(0),[C,w]=(0,b.useState)(!0),T=a[o],E=e=>e.replace(/[\u0640-\u065F\s]/g,``);(0,b.useEffect)(()=>{if(g)return;let e=setInterval(()=>{S(e=>e+1)},1e3);return()=>clearInterval(e)},[g]);let D=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,O=()=>{C&&(r.current.currentTime=0,r.current.play()),s(0),l(``),h(0),_(!1),p(0),S(0),d(!1),y(!1)},k=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/AlHorof123`)},A=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/home`)},ee=e=>{g||(l(e),E(e)===E(T.missing)?(C&&(t.current.currentTime=0,t.current.play()),d(!0),h(e=>e+1),p(e=>e+10),setTimeout(()=>{o<a.length-1?(s(o+1),l(``),d(!1)):(C&&(i.current.currentTime=0,i.current.play()),_(!0),y(!0),setTimeout(()=>{y(!1)},3e3))},700)):C&&(n.current.currentTime=0,n.current.play()))},te=()=>{w(e=>!e)};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
+      `})]})}function Uv({soundEnabled:e,setSoundEnabled:t,navigate:n}){return(0,N.jsxs)(`div`,{className:`action-buttons-mobile`,style:Gv.bottomButtons,children:[(0,N.jsx)(`button`,{onClick:()=>t(!e),style:Gv.circleBtn,children:e?(0,N.jsx)(L,{size:24}):(0,N.jsx)(R,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>window.location.reload(),style:Gv.circleBtn,children:(0,N.jsx)(I,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>n(`/Alhorof123`),style:Gv.circleBtn,children:(0,N.jsx)(P,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>n(`/home`),style:Gv.circleBtn,children:(0,N.jsx)(F,{size:24})})]})}function Wv({item:e,onDragEnd:t}){let n=jv(0),r=jv(0);return e.eaten?(0,N.jsx)(`div`,{style:{...Gv.meatCard,visibility:`hidden`,pointerEvents:`none`}}):(0,N.jsxs)(V.div,{style:{x:n,y:r,...Gv.meatCard},initial:{opacity:1,scale:1},animate:{scale:1,y:[0,-5,0]},transition:{y:{repeat:1/0,duration:2,ease:`easeInOut`},scale:{duration:.4}},drag:!0,dragMomentum:!1,onDragEnd:(i,a)=>t(i,a,e,n,r),children:[(0,N.jsx)(`img`,{src:Bv,alt:`Meat`,style:Gv.meatImg}),(0,N.jsx)(`div`,{style:Gv.charText,children:(0,N.jsxs)(`div`,{style:Gv.letterWrapper,children:[(0,N.jsx)(`span`,{className:`harakahStyle`,style:Gv.harakahStyle,children:e.harakah}),(0,N.jsx)(`span`,{style:Gv.baseStyle,children:e.base})]})})]})}var Gv={container:{width:`100vw`,height:`100vh`,overflow:`hidden`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`},bg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`,objectPosition:`bottom`,pointerEvents:`none`,zIndex:1},topBar:{position:`absolute`,top:`0.8vh`,width:`95%`,maxWidth:`850px`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,zIndex:100,gap:`10px`},box:{background:`rgba(255, 255, 255, 0.95)`,padding:`0.7vh 1.8vw`,borderRadius:12,fontWeight:`bold`,fontSize:`clamp(15px, 3.2vw, 19px)`,boxShadow:`0 2px 4px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},mainTitle:{background:`#6243ff`,color:`white`,padding:`0.7vh 2.5vw`,borderRadius:25,fontSize:`clamp(17px, 3.5vw, 24px)`,fontWeight:`bold`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,whiteSpace:`nowrap`,textAlign:`center`},instructionBanner:{position:`absolute`,top:`6.8vh`,background:`rgba(255, 255, 255, 0.98)`,padding:`0.6vh 2.5vw`,borderRadius:`20px`,fontSize:`clamp(13px, 3vw, 17px)`,fontWeight:`900`,color:`#6243ff`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,zIndex:90,textAlign:`center`,border:`2.5px solid #6243ff`,maxWidth:`90%`,boxSizing:`border-box`},gameLayout:{display:`flex`,alignItems:`center`,width:`100%`,height:`100%`,paddingTop:`10vh`,paddingBottom:`8vh`,zIndex:50,boxSizing:`border-box`},lionContainer:{display:`flex`,justifyContent:`center`,alignItems:`flex-end`,marginBottom:`2vh`},lion:{height:`auto`,filter:`drop-shadow(0 5px 10px rgba(0,0,0,0.3))`},meatGrid:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(8px, 1.5vh, 14px)`,width:`clamp(260px, 85vw, 480px)`,zIndex:50,position:`relative`,justifyItems:`center`,marginTop:`25px`},meatCard:{cursor:`grab`,display:`flex`,justifyContent:`center`,alignItems:`center`,position:`relative`,touchAction:`none`,userSelect:`none`,WebkitUserSelect:`none`},meatImg:{width:`clamp(60px, 12.5vw, 82px)`,height:`auto`,filter:`drop-shadow(0 3px 5px rgba(0,0,0,0.25))`,pointerEvents:`none`},charText:{position:`absolute`,pointerEvents:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`100%`,height:`100%`},letterWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`,lineHeight:`0.75`},harakahStyle:{color:`#470611`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(36px, 7.5vw, 46px)`,marginBottom:`-18px`,textShadow:`1px 1px 3px rgba(255,255,255,0.95)`},baseStyle:{color:`#1a1a1a`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(26px, 5.5vw, 35px)`,textShadow:`1px 1px 3px rgba(255,255,255,0.95)`},bottomButtons:{position:`absolute`,bottom:`1.5vh`,left:`15px`,display:`flex`,flexDirection:`column`,gap:`10px`,zIndex:1e3},circleBtn:{width:`clamp(40px, 8vw, 50px)`,height:`clamp(40px, 8vw, 50px)`,borderRadius:`50%`,border:`none`,background:`#6243ff`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.3)`},winStyle:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999,padding:`20px`,textAlign:`center`},winButtons:{display:`flex`,flexDirection:`row`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginTop:`15px`}},Kv=`/Kids-Games/assets/write-jzJ4CUsW.png`,qv=`/Kids-Games/assets/stairs-BzgxGrFR.png`,Jv=`/Kids-Games/assets/paint-palette-Cxp698__.png`,Yv=`/Kids-Games/assets/auditory-DIQ0cOdR.png`,Xv=`/Kids-Games/assets/sitting-DMKbkEcS.png`,Zv=`/Kids-Games/assets/excited-5MJhbUPG.png`,Qv=`/Kids-Games/assets/team-DDruGUQZ.png`,$v=`/Kids-Games/assets/harvest-CyUu4ssx.png`,ey=`/Kids-Games/assets/rope-skipping-BBo0pLza.png`,ty=`/Kids-Games/assets/laugh-q65j0WgX.png`,ny=`/Kids-Games/assets/binge-eating-tflh-2VU.png`;function ry(){let e=j(),t=(0,b.useRef)(new Audio(z)),n=(0,b.useRef)(new Audio(ho)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),a=[{image:Kv,word:`كَتَبَ`,missing:`كَـ`,display:`-تَـبَ`,choices:[`قِـ`,`سُـ`,`كَـ`]},{image:qv,word:`صَعَدَ`,missing:`عَـ`,display:`صَـ _ دَ`,choices:[`ضَـ`,`عَـ`,`دَ`]},{image:Jv,word:`رَسَمَ`,missing:`سَـ`,display:`رَـ مَ`,choices:[`تَـ`,`طَـ`,`سَـ`]},{image:Yv,word:`سَمَعَ`,missing:`عَ`,display:`سَمَـ -`,choices:[`عَ`,`ظَ`,`ذَ`]},{image:Xv,word:`جَلَسَ`,missing:`جَـ`,display:`- لَـسَ`,choices:[`كَـ`,`جَـ`,`فَـ`]},{image:Zv,word:`فَرَحَ`,missing:`فَـ`,display:`_رَحَ`,choices:[`فَـ`,`سَـ`,`طَ`]},{image:Qv,word:`رَبَحَ`,missing:`حَ`,display:`رَبَـ -`,choices:[`سَـ`,`خَـ`,`حَ`]},{image:$v,word:`زَرَعَ`,missing:`عَ`,display:`زَرَ-`,choices:[`عَ`,`رَ`,`طَ`]},{image:ey,word:`قَفَزَ`,missing:`فَـ`,display:`قَـ -زَ`,choices:[`شَـ`,`خَـ`,`فَـ`]},{image:ty,word:`ضَحَكَ`,missing:`ضَـ`,display:`ـ حَـكَ`,choices:[`عَـ`,`ضَـ`,`صَـ`]},{image:ny,word:`أَكَـلَ`,missing:`كَـ`,display:`أَ ـ لَ`,choices:[`كَـ`,`ذَ`,`ظَ`]}],[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(``),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(0),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(0),[C,w]=(0,b.useState)(!0),T=a[o],E=e=>e.replace(/[\u0640-\u065F\s]/g,``);(0,b.useEffect)(()=>{if(g)return;let e=setInterval(()=>{S(e=>e+1)},1e3);return()=>clearInterval(e)},[g]),(0,b.useEffect)(()=>{let e=()=>{let e=window.visualViewport?.height||window.innerHeight;document.documentElement.style.setProperty(`--app-height`,`${e}px`)};return e(),window.addEventListener(`resize`,e),window.visualViewport?.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e),window.visualViewport?.removeEventListener(`resize`,e)}},[]);let D=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,O=()=>{C&&(r.current.currentTime=0,r.current.play()),s(0),l(``),h(0),_(!1),p(0),S(0),d(!1),y(!1)},k=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/AlHorof123`)},A=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/home`)},ee=e=>{g||(l(e),E(e)===E(T.missing)?(C&&(t.current.currentTime=0,t.current.play()),d(!0),h(e=>e+1),p(e=>e+10),setTimeout(()=>{o<a.length-1?(s(o+1),l(``),d(!1)):(C&&(i.current.currentTime=0,i.current.play()),_(!0),y(!0),setTimeout(()=>{y(!1)},3e3))},700)):C&&(n.current.currentTime=0,n.current.play()))},te=()=>{w(e=>!e)};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
         /* =========================================
-           منع السكرول على الموبايل فقط
+           إصلاح خلفية وصفحة الموبايل
            ========================================= */
+
+        html,
+        body,
+        #root {
+          margin: 0 !important;
+          padding: 0 !important;
+          width: 100% !important;
+          min-width: 100% !important;
+        }
 
         @media (max-width: 768px) {
           html,
           body,
           #root {
-            width: 100%;
-            height: 100%;
-            margin: 0 !important;
-            padding: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 100% !important;
             overflow: hidden !important;
           }
 
           body {
+            position: fixed !important;
+            inset: 0 !important;
             overflow: hidden !important;
             overscroll-behavior: none !important;
           }
 
           .tafkheem-page {
+            width: 100% !important;
+
+            /*
+             * استخدام visualViewport بدل 100dvh
+             * يمنع ظهور الخلفية قصيرة عند فتح/غلق الصفحة
+             */
+            height: var(--app-height, 100vh) !important;
+            min-height: var(--app-height, 100vh) !important;
+            max-height: var(--app-height, 100vh) !important;
+
             padding: 4px 10px !important;
-            align-items: flex-start !important;
             padding-top: 6px !important;
 
-            height: 100dvh !important;
-            min-height: 100dvh !important;
-            max-height: 100dvh !important;
+            align-items: flex-start !important;
+            justify-content: center !important;
 
             overflow: hidden !important;
             overscroll-behavior: none !important;
 
             box-sizing: border-box !important;
+
+            /*
+             * تثبيت الخلفية لتملأ الشاشة دائماً
+             */
+            background-size: cover !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
           }
 
           .tafkheem-card {
@@ -4081,7 +4176,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           /* ===============================
-             الأزرار كما كانت في الكود الأصلي
+             الأزرار كما هي
              =============================== */
           .tafkheem-bottom-buttons {
             position: absolute !important;
@@ -4213,7 +4308,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 transform: translateY(-15px) scale(1.04);
               }
             }
-          `})]}):(0,N.jsxs)(N.Fragment,{children:[O.map(e=>(0,N.jsxs)(`div`,{onClick:()=>te(e),onTouchEnd:()=>te(e),style:{position:`absolute`,left:e.x,top:e.y,width:f,height:f,transform:`translate(-50%, -50%)`,cursor:`pointer`,zIndex:10,display:`flex`,alignItems:`center`,justifyContent:`center`},children:[(0,N.jsx)(`img`,{src:e.image,alt:`Planet`,style:{width:`100%`,height:`100%`,position:`absolute`,zIndex:11}}),(0,N.jsx)(`div`,{style:{fontSize:d?32:46,fontWeight:`900`,color:`white`,zIndex:12,lineHeight:`1.6`,paddingBottom:`8px`,textShadow:`0px 3px 8px rgba(0, 0, 0, 0.95)`},children:e.text})]},e.id)),(0,N.jsx)(`img`,{src:wo,alt:`Astronaut`,style:{position:`absolute`,left:m.x,top:m.y,width:d?110:140,height:d?110:140,zIndex:50,pointerEvents:`none`,transform:g&&g.x<m.x?`translate(-50%, -50%) scaleX(-1)`:`translate(-50%, -50%) scaleX(1)`,transition:`transform 0.1s ease`}})]}),(0,N.jsxs)(`div`,{style:{...my.bottomButtons,...d?{bottom:`75px`}:{}},children:[(0,N.jsx)(`button`,{type:`button`,onClick:e=>{e.stopPropagation(),c(e=>!e)},style:my.circleBtn,children:s?(0,N.jsx)(L,{size:22,color:`white`}):(0,N.jsx)(R,{size:22,color:`white`})}),(0,N.jsx)(`button`,{type:`button`,onClick:e=>{e.stopPropagation(),A()},style:my.circleBtn,children:(0,N.jsx)(I,{size:22,color:`white`})}),(0,N.jsx)(`button`,{type:`button`,onClick:t=>{t.stopPropagation(),e(`/Alhorof123`)},style:my.circleBtn,children:(0,N.jsx)(P,{size:22,color:`white`})}),(0,N.jsx)(`button`,{type:`button`,onClick:t=>{t.stopPropagation(),e(`/home`)},style:my.circleBtn,children:(0,N.jsx)(F,{size:22,color:`white`})})]})]})}var uy={background:`rgba(255, 255, 255, 0.15)`,backdropFilter:`blur(5px)`,border:`1px solid rgba(255, 255, 255, 0.3)`,color:`white`,padding:`6px 12px`,borderRadius:12,fontWeight:`bold`,fontSize:`13px`,textAlign:`center`,boxShadow:`0 4px 12px rgba(0,0,0,0.3)`,flexShrink:0,whiteSpace:`nowrap`},dy={position:`absolute`,top:`10px`,left:`10px`,right:`10px`,width:`calc(100% - 20px)`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,zIndex:9999,boxSizing:`border-box`},fy={background:`linear-gradient(135deg, #4f46e5, #06b6d4)`,color:`white`,padding:`6px 10px`,borderRadius:14,fontWeight:`bold`,fontSize:`11px`,boxShadow:`0 4px 15px rgba(6, 182, 212, 0.4)`,textAlign:`center`,flexGrow:1,margin:`0 8px`,overflow:`hidden`,textOverflow:`ellipsis`,whiteSpace:`nowrap`},py={position:`absolute`,top:`0`,left:`0`,width:`100%`,height:`100%`,zIndex:1e4,pointerEvents:`none`,display:`flex`,justifyContent:`center`,alignItems:`center`},my={bottomButtons:{position:`absolute`,bottom:`25px`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`16px`,zIndex:10001},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,border:`1px solid rgba(255,255,255,0.2)`,background:`linear-gradient(135deg, #1e1b4b, #312e81)`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.4)`,touchAction:`manipulation`}};function hy(){let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(window.innerWidth<768),d=l?66:102,[f,p]=(0,b.useState)({x:l?45:90,y:window.innerHeight-(l?155:195)}),[m,h]=(0,b.useState)(null),[g,_]=(0,b.useState)(null),v=(0,b.useRef)(null),y=(0,b.useRef)(null),x=(0,b.useRef)(null),S=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=()=>{let e=window.innerWidth<768;u(e),!m&&!g&&p({x:e?45:90,y:window.innerHeight-(e?155:195)})};return window.addEventListener(`resize`,e),()=>window.removeEventListener(`resize`,e)},[m,g]),(0,b.useEffect)(()=>(v.current=new Audio(z),y.current=new Audio(ho),x.current=new Audio(go),x.current.loop=!0,()=>{v.current?.pause(),y.current?.pause(),x.current?.pause(),S.current&&cancelAnimationFrame(S.current)}),[]),(0,b.useEffect)(()=>{m&&s?x.current?.play().catch(()=>{}):(x.current?.pause(),x.current&&(x.current.currentTime=0))},[m,s]),(0,b.useEffect)(()=>{let e=document.documentElement,t=document.body,n=e.style.overflow,r=e.style.height,i=e.style.width,a=t.style.overflow,o=t.style.height,s=t.style.width,c=t.style.margin,l=t.style.padding,u=t.style.touchAction;return e.style.width=`100%`,e.style.height=`100%`,e.style.overflow=`hidden`,t.style.width=`100%`,t.style.height=`100%`,t.style.overflow=`hidden`,t.style.margin=`0`,t.style.padding=`0`,t.style.touchAction=`none`,()=>{e.style.overflow=n,e.style.height=r,e.style.width=i,t.style.overflow=a,t.style.height=o,t.style.width=s,t.style.margin=c,t.style.padding=l,t.style.touchAction=u}},[]);let C=`بِ.تِ.ثِ.جِ.حِ.خِ.دِ.ذِ.رِ.زِ.سِ.شِ.صِ.ضِ.طِ.ظِ.عِ.غِ.فِ.قِ.كِ.لِ.مِ.نِ.هـِ.وِ.يِ`.split(`.`),w=`بُ.تُ.ثُ.جُ.حُ.خُ.دُ.ذُ.رُ.زُ.سُ.شُ.صُ.ضُ.طُ.ظُ.عُ.غُ.فُ.قُ.كُ.لُ.مُ.نُ.هـُ.وُ.يُ`.split(`.`),T=[lo,uo,fo,po,mo],E=()=>{let e=window.innerWidth,t=window.innerHeight,n=e<768?[{x:e*.15,y:t*.22},{x:e*.38,y:t*.2},{x:e*.62,y:t*.2},{x:e*.85,y:t*.22},{x:e*.23,y:t*.36},{x:e*.5,y:t*.34},{x:e*.77,y:t*.36},{x:e*.15,y:t*.51},{x:e*.38,y:t*.49},{x:e*.62,y:t*.49},{x:e*.85,y:t*.51},{x:e*.23,y:t*.66},{x:e*.5,y:t*.65},{x:e*.77,y:t*.66},{x:e*.5,y:t*.78}]:[{x:e*.12,y:t*.24},{x:e*.31,y:t*.22},{x:e*.5,y:t*.22},{x:e*.69,y:t*.22},{x:e*.88,y:t*.24},{x:e*.2,y:t*.4},{x:e*.4,y:t*.38},{x:e*.6,y:t*.36},{x:e*.8,y:t*.4},{x:e*.12,y:t*.58},{x:e*.31,y:t*.56},{x:e*.5,y:t*.56},{x:e*.69,y:t*.56},{x:e*.88,y:t*.58},{x:e*.5,y:t*.74}],r=[!0,!1,!0,!0,!1,!0,!1,!0,!0,!1,!0,!1,!0,!1,!0],i=[...C].sort(()=>Math.random()-.5),a=[...w].sort(()=>Math.random()-.5),o=0,s=0;return r.map((e,t)=>{let r=e?i[o++%i.length]:a[s++%a.length],c=T[Math.floor(Math.random()*T.length)];return{id:t+1,text:r,isTarget:e,image:c,x:n[t].x,y:n[t].y}})},[D,O]=(0,b.useState)(()=>E());(0,b.useEffect)(()=>{let e=()=>{p(m?e=>{let t=m.x-e.x,n=m.y-e.y,r=Math.sqrt(t*t+n*n),i=l?2.9:4.6;return r<i?(k(),m):{x:e.x+t/r*i,y:e.y+n/r*i}}:e=>({x:e.x,y:e.y+Math.sin(Date.now()/180)*.3})),S.current=requestAnimationFrame(e)};return S.current=requestAnimationFrame(e),()=>{S.current&&cancelAnimationFrame(S.current)}},[m,l]);let k=()=>{if(g){if(g.id===`returning`){h(null),_(null);return}x.current?.pause(),g.isTarget?(s&&v.current?.play().catch(()=>{}),n(e=>e+10),O(e=>e.filter(e=>e.id!==g.id))):s&&y.current?.play().catch(()=>{}),_({id:`returning`}),h({x:l?45:90,y:window.innerHeight-(l?155:195)})}},A=e=>{a||m||(_(e),h({x:e.x,y:e.y}))};(0,b.useEffect)(()=>{if(a)return;let e=setInterval(()=>{i(e=>e+1)},1e3);return()=>clearInterval(e)},[a]),(0,b.useEffect)(()=>{D.filter(e=>e.isTarget).length===0&&D.length>0&&!a&&(o(!0),h(null),_(null))},[D,a]);let ee=()=>{n(0),i(0),o(!1),h(null),_(null),p({x:l?45:90,y:window.innerHeight-(l?155:195)}),O(E())};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
+          `})]}):(0,N.jsxs)(N.Fragment,{children:[O.map(e=>(0,N.jsxs)(`div`,{onClick:()=>te(e),onTouchEnd:()=>te(e),style:{position:`absolute`,left:e.x,top:e.y,width:f,height:f,transform:`translate(-50%, -50%)`,cursor:`pointer`,zIndex:10,display:`flex`,alignItems:`center`,justifyContent:`center`},children:[(0,N.jsx)(`img`,{src:e.image,alt:`Planet`,style:{width:`100%`,height:`100%`,position:`absolute`,zIndex:11}}),(0,N.jsx)(`div`,{style:{fontSize:d?32:46,fontWeight:`900`,color:`white`,zIndex:12,lineHeight:`1.6`,paddingBottom:`8px`,textShadow:`0px 3px 8px rgba(0, 0, 0, 0.95)`},children:e.text})]},e.id)),(0,N.jsx)(`img`,{src:wo,alt:`Astronaut`,style:{position:`absolute`,left:m.x,top:m.y,width:d?110:140,height:d?110:140,zIndex:50,pointerEvents:`none`,transform:g&&g.x<m.x?`translate(-50%, -50%) scaleX(-1)`:`translate(-50%, -50%) scaleX(1)`,transition:`transform 0.1s ease`}})]}),(0,N.jsxs)(`div`,{style:{...my.bottomButtons,...d?{bottom:`65px`}:{}},children:[(0,N.jsx)(`button`,{type:`button`,onClick:e=>{e.stopPropagation(),c(e=>!e)},style:my.circleBtn,children:s?(0,N.jsx)(L,{size:22,color:`white`}):(0,N.jsx)(R,{size:22,color:`white`})}),(0,N.jsx)(`button`,{type:`button`,onClick:e=>{e.stopPropagation(),A()},style:my.circleBtn,children:(0,N.jsx)(I,{size:22,color:`white`})}),(0,N.jsx)(`button`,{type:`button`,onClick:t=>{t.stopPropagation(),e(`/Alhorof123`)},style:my.circleBtn,children:(0,N.jsx)(P,{size:22,color:`white`})}),(0,N.jsx)(`button`,{type:`button`,onClick:t=>{t.stopPropagation(),e(`/home`)},style:my.circleBtn,children:(0,N.jsx)(F,{size:22,color:`white`})})]})]})}var uy={background:`rgba(255, 255, 255, 0.15)`,backdropFilter:`blur(5px)`,border:`1px solid rgba(255, 255, 255, 0.3)`,color:`white`,padding:`6px 12px`,borderRadius:12,fontWeight:`bold`,fontSize:`13px`,textAlign:`center`,boxShadow:`0 4px 12px rgba(0,0,0,0.3)`,flexShrink:0,whiteSpace:`nowrap`},dy={position:`absolute`,top:`10px`,left:`10px`,right:`10px`,width:`calc(100% - 20px)`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,zIndex:9999,boxSizing:`border-box`},fy={background:`linear-gradient(135deg, #4f46e5, #06b6d4)`,color:`white`,padding:`6px 10px`,borderRadius:14,fontWeight:`bold`,fontSize:`11px`,boxShadow:`0 4px 15px rgba(6, 182, 212, 0.4)`,textAlign:`center`,flexGrow:1,margin:`0 8px`,overflow:`hidden`,textOverflow:`ellipsis`,whiteSpace:`nowrap`},py={position:`absolute`,top:`0`,left:`0`,width:`100%`,height:`100%`,zIndex:1e4,pointerEvents:`none`,display:`flex`,justifyContent:`center`,alignItems:`center`},my={bottomButtons:{position:`absolute`,bottom:`25px`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`16px`,zIndex:10001},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,border:`1px solid rgba(255,255,255,0.2)`,background:`linear-gradient(135deg, #1e1b4b, #312e81)`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.4)`,touchAction:`manipulation`}};function hy(){let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(window.innerWidth<768),d=l?66:102,[f,p]=(0,b.useState)({x:l?45:90,y:window.innerHeight-(l?155:195)}),[m,h]=(0,b.useState)(null),[g,_]=(0,b.useState)(null),v=(0,b.useRef)(null),y=(0,b.useRef)(null),x=(0,b.useRef)(null),S=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=()=>{let e=window.innerWidth<768;u(e),!m&&!g&&p({x:e?45:90,y:window.innerHeight-(e?155:195)})};return window.addEventListener(`resize`,e),()=>window.removeEventListener(`resize`,e)},[m,g]),(0,b.useEffect)(()=>(v.current=new Audio(z),y.current=new Audio(ho),x.current=new Audio(go),x.current.loop=!0,()=>{v.current?.pause(),y.current?.pause(),x.current?.pause(),S.current&&cancelAnimationFrame(S.current)}),[]),(0,b.useEffect)(()=>{m&&s?x.current?.play().catch(()=>{}):(x.current?.pause(),x.current&&(x.current.currentTime=0))},[m,s]),(0,b.useEffect)(()=>{let e=document.documentElement,t=document.body,n=e.style.overflow,r=e.style.height,i=e.style.width,a=t.style.overflow,o=t.style.height,s=t.style.width,c=t.style.margin,l=t.style.padding,u=t.style.touchAction;return e.style.width=`100%`,e.style.height=`100%`,e.style.overflow=`hidden`,t.style.width=`100%`,t.style.height=`100%`,t.style.overflow=`hidden`,t.style.margin=`0`,t.style.padding=`0`,t.style.touchAction=`none`,()=>{e.style.overflow=n,e.style.height=r,e.style.width=i,t.style.overflow=a,t.style.height=o,t.style.width=s,t.style.margin=c,t.style.padding=l,t.style.touchAction=u}},[]);let C=`بِ.تِ.ثِ.جِ.حِ.خِ.دِ.ذِ.رِ.زِ.سِ.شِ.صِ.ضِ.طِ.ظِ.عِ.غِ.فِ.قِ.كِ.لِ.مِ.نِ.هـِ.وِ.يِ`.split(`.`),w=`بُ.تُ.ثُ.جُ.حُ.خُ.دُ.ذُ.رُ.زُ.سُ.شُ.صُ.ضُ.طُ.ظُ.عُ.غُ.فُ.قُ.كُ.لُ.مُ.نُ.هـُ.وُ.يُ`.split(`.`),T=[lo,uo,fo,po,mo],E=()=>{let e=window.innerWidth,t=window.innerHeight,n=e<768?[{x:e*.15,y:t*.22},{x:e*.38,y:t*.2},{x:e*.62,y:t*.2},{x:e*.85,y:t*.22},{x:e*.23,y:t*.36},{x:e*.5,y:t*.34},{x:e*.77,y:t*.36},{x:e*.15,y:t*.51},{x:e*.38,y:t*.49},{x:e*.62,y:t*.49},{x:e*.85,y:t*.51},{x:e*.23,y:t*.66},{x:e*.5,y:t*.65},{x:e*.77,y:t*.66},{x:e*.5,y:t*.78}]:[{x:e*.12,y:t*.24},{x:e*.31,y:t*.22},{x:e*.5,y:t*.22},{x:e*.69,y:t*.22},{x:e*.88,y:t*.24},{x:e*.2,y:t*.4},{x:e*.4,y:t*.38},{x:e*.6,y:t*.36},{x:e*.8,y:t*.4},{x:e*.12,y:t*.58},{x:e*.31,y:t*.56},{x:e*.5,y:t*.56},{x:e*.69,y:t*.56},{x:e*.88,y:t*.58},{x:e*.5,y:t*.74}],r=[!0,!1,!0,!0,!1,!0,!1,!0,!0,!1,!0,!1,!0,!1,!0],i=[...C].sort(()=>Math.random()-.5),a=[...w].sort(()=>Math.random()-.5),o=0,s=0;return r.map((e,t)=>{let r=e?i[o++%i.length]:a[s++%a.length],c=T[Math.floor(Math.random()*T.length)];return{id:t+1,text:r,isTarget:e,image:c,x:n[t].x,y:n[t].y}})},[D,O]=(0,b.useState)(()=>E());(0,b.useEffect)(()=>{let e=()=>{p(m?e=>{let t=m.x-e.x,n=m.y-e.y,r=Math.sqrt(t*t+n*n),i=l?2.9:4.6;return r<i?(k(),m):{x:e.x+t/r*i,y:e.y+n/r*i}}:e=>({x:e.x,y:e.y+Math.sin(Date.now()/180)*.3})),S.current=requestAnimationFrame(e)};return S.current=requestAnimationFrame(e),()=>{S.current&&cancelAnimationFrame(S.current)}},[m,l]);let k=()=>{if(g){if(g.id===`returning`){h(null),_(null);return}x.current?.pause(),g.isTarget?(s&&v.current?.play().catch(()=>{}),n(e=>e+10),O(e=>e.filter(e=>e.id!==g.id))):s&&y.current?.play().catch(()=>{}),_({id:`returning`}),h({x:l?45:90,y:window.innerHeight-(l?155:195)})}},A=e=>{a||m||(_(e),h({x:e.x,y:e.y}))};(0,b.useEffect)(()=>{if(a)return;let e=setInterval(()=>{i(e=>e+1)},1e3);return()=>clearInterval(e)},[a]),(0,b.useEffect)(()=>{D.filter(e=>e.isTarget).length===0&&D.length>0&&!a&&(o(!0),h(null),_(null))},[D,a]);let ee=()=>{n(0),i(0),o(!1),h(null),_(null),p({x:l?45:90,y:window.innerHeight-(l?155:195)}),O(E())};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
         html, body, #root {
           width: 100%;
           height: 100%;
@@ -4403,6 +4498,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         /* =========================
            التابلت
+           السلة والأزرار على اليسار
            ========================= */
         @media (min-width: 769px) and (max-width: 1024px) {
           .butterfly-grid {
@@ -4418,17 +4514,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 170px !important;
           }
 
-          /* الأزرار في منتصف الشاشة بالأسفل */
           .butterfly-bottom-area {
             position: relative !important;
-            justify-content: center !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+            width: 88% !important;
           }
 
           .butterfly-buttons {
-            position: absolute !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-            bottom: 0 !important;
+            position: static !important;
+            left: auto !important;
+            transform: none !important;
+            bottom: auto !important;
             margin: 0 !important;
             gap: 10px !important;
           }
@@ -4436,19 +4533,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         /* =========================
            اللاب
+           السلة والأزرار على اليسار
            ========================= */
         @media (min-width: 1025px) {
-          /* الأزرار تدخل للداخل وتكون في منتصف الشاشة */
           .butterfly-bottom-area {
             position: relative !important;
-            justify-content: center !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+            width: 88% !important;
           }
 
           .butterfly-buttons {
-            position: absolute !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-            bottom: 0 !important;
+            position: static !important;
+            left: auto !important;
+            transform: none !important;
+            bottom: auto !important;
             margin: 0 !important;
             gap: 10px !important;
           }
