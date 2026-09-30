@@ -4272,7 +4272,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             justify-content: center !important;
 
             /* مسافة صغيرة جدًا بين الكورات */
-            column-gap: 5px !important;
+            column-gap: 15px !important;
 
             /* مسافة صغيرة جدًا بين الصفين */
             row-gap: 4px !important;
