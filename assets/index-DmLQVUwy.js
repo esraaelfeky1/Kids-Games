@@ -3973,7 +3973,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
       `})]})}function Uv({soundEnabled:e,setSoundEnabled:t,navigate:n}){return(0,N.jsxs)(`div`,{className:`action-buttons-mobile`,style:Gv.bottomButtons,children:[(0,N.jsx)(`button`,{onClick:()=>t(!e),style:Gv.circleBtn,children:e?(0,N.jsx)(L,{size:24}):(0,N.jsx)(R,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>window.location.reload(),style:Gv.circleBtn,children:(0,N.jsx)(I,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>n(`/Alhorof123`),style:Gv.circleBtn,children:(0,N.jsx)(P,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>n(`/home`),style:Gv.circleBtn,children:(0,N.jsx)(F,{size:24})})]})}function Wv({item:e,onDragEnd:t}){let n=jv(0),r=jv(0);return e.eaten?(0,N.jsx)(`div`,{style:{...Gv.meatCard,visibility:`hidden`,pointerEvents:`none`}}):(0,N.jsxs)(V.div,{style:{x:n,y:r,...Gv.meatCard},initial:{opacity:1,scale:1},animate:{scale:1,y:[0,-5,0]},transition:{y:{repeat:1/0,duration:2,ease:`easeInOut`},scale:{duration:.4}},drag:!0,dragMomentum:!1,onDragEnd:(i,a)=>t(i,a,e,n,r),children:[(0,N.jsx)(`img`,{src:Bv,alt:`Meat`,style:Gv.meatImg}),(0,N.jsx)(`div`,{style:Gv.charText,children:(0,N.jsxs)(`div`,{style:Gv.letterWrapper,children:[(0,N.jsx)(`span`,{className:`harakahStyle`,style:Gv.harakahStyle,children:e.harakah}),(0,N.jsx)(`span`,{style:Gv.baseStyle,children:e.base})]})})]})}var Gv={container:{width:`100vw`,height:`100vh`,overflow:`hidden`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`},bg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`,objectPosition:`bottom`,pointerEvents:`none`,zIndex:1},topBar:{position:`absolute`,top:`0.8vh`,width:`95%`,maxWidth:`850px`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,zIndex:100,gap:`10px`},box:{background:`rgba(255, 255, 255, 0.95)`,padding:`0.7vh 1.8vw`,borderRadius:12,fontWeight:`bold`,fontSize:`clamp(15px, 3.2vw, 19px)`,boxShadow:`0 2px 4px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},mainTitle:{background:`#6243ff`,color:`white`,padding:`0.7vh 2.5vw`,borderRadius:25,fontSize:`clamp(17px, 3.5vw, 24px)`,fontWeight:`bold`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,whiteSpace:`nowrap`,textAlign:`center`},instructionBanner:{position:`absolute`,top:`6.8vh`,background:`rgba(255, 255, 255, 0.98)`,padding:`0.6vh 2.5vw`,borderRadius:`20px`,fontSize:`clamp(13px, 3vw, 17px)`,fontWeight:`900`,color:`#6243ff`,boxShadow:`0 3px 6px rgba(0,0,0,0.25)`,zIndex:90,textAlign:`center`,border:`2.5px solid #6243ff`,maxWidth:`90%`,boxSizing:`border-box`},gameLayout:{display:`flex`,alignItems:`center`,width:`100%`,height:`100%`,paddingTop:`10vh`,paddingBottom:`8vh`,zIndex:50,boxSizing:`border-box`},lionContainer:{display:`flex`,justifyContent:`center`,alignItems:`flex-end`,marginBottom:`2vh`},lion:{height:`auto`,filter:`drop-shadow(0 5px 10px rgba(0,0,0,0.3))`},meatGrid:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(8px, 1.5vh, 14px)`,width:`clamp(260px, 85vw, 480px)`,zIndex:50,position:`relative`,justifyItems:`center`,marginTop:`25px`},meatCard:{cursor:`grab`,display:`flex`,justifyContent:`center`,alignItems:`center`,position:`relative`,touchAction:`none`,userSelect:`none`,WebkitUserSelect:`none`},meatImg:{width:`clamp(60px, 12.5vw, 82px)`,height:`auto`,filter:`drop-shadow(0 3px 5px rgba(0,0,0,0.25))`,pointerEvents:`none`},charText:{position:`absolute`,pointerEvents:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`100%`,height:`100%`},letterWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`,lineHeight:`0.75`},harakahStyle:{color:`#470611`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(36px, 7.5vw, 46px)`,marginBottom:`-18px`,textShadow:`1px 1px 3px rgba(255,255,255,0.95)`},baseStyle:{color:`#1a1a1a`,fontWeight:`900`,display:`block`,textAlign:`center`,fontSize:`clamp(26px, 5.5vw, 35px)`,textShadow:`1px 1px 3px rgba(255,255,255,0.95)`},bottomButtons:{position:`absolute`,bottom:`1.5vh`,left:`15px`,display:`flex`,flexDirection:`column`,gap:`10px`,zIndex:1e3},circleBtn:{width:`clamp(40px, 8vw, 50px)`,height:`clamp(40px, 8vw, 50px)`,borderRadius:`50%`,border:`none`,background:`#6243ff`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.3)`},winStyle:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.85)`,color:`white`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`center`,zIndex:9999,padding:`20px`,textAlign:`center`},winButtons:{display:`flex`,flexDirection:`row`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginTop:`15px`}},Kv=`/Kids-Games/assets/write-jzJ4CUsW.png`,qv=`/Kids-Games/assets/stairs-BzgxGrFR.png`,Jv=`/Kids-Games/assets/paint-palette-Cxp698__.png`,Yv=`/Kids-Games/assets/auditory-DIQ0cOdR.png`,Xv=`/Kids-Games/assets/sitting-DMKbkEcS.png`,Zv=`/Kids-Games/assets/excited-5MJhbUPG.png`,Qv=`/Kids-Games/assets/team-DDruGUQZ.png`,$v=`/Kids-Games/assets/harvest-CyUu4ssx.png`,ey=`/Kids-Games/assets/rope-skipping-BBo0pLza.png`,ty=`/Kids-Games/assets/laugh-q65j0WgX.png`,ny=`/Kids-Games/assets/binge-eating-tflh-2VU.png`;function ry(){let e=j(),t=(0,b.useRef)(new Audio(z)),n=(0,b.useRef)(new Audio(ho)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),a=[{image:Kv,word:`كَتَبَ`,missing:`كَـ`,display:`-تَـبَ`,choices:[`قِـ`,`سُـ`,`كَـ`]},{image:qv,word:`صَعَدَ`,missing:`عَـ`,display:`صَـ _ دَ`,choices:[`ضَـ`,`عَـ`,`دَ`]},{image:Jv,word:`رَسَمَ`,missing:`سَـ`,display:`رَـ مَ`,choices:[`تَـ`,`طَـ`,`سَـ`]},{image:Yv,word:`سَمَعَ`,missing:`عَ`,display:`سَمَـ -`,choices:[`عَ`,`ظَ`,`ذَ`]},{image:Xv,word:`جَلَسَ`,missing:`جَـ`,display:`- لَـسَ`,choices:[`كَـ`,`جَـ`,`فَـ`]},{image:Zv,word:`فَرَحَ`,missing:`فَـ`,display:`_رَحَ`,choices:[`فَـ`,`سَـ`,`طَ`]},{image:Qv,word:`رَبَحَ`,missing:`حَ`,display:`رَبَـ -`,choices:[`سَـ`,`خَـ`,`حَ`]},{image:$v,word:`زَرَعَ`,missing:`عَ`,display:`زَرَ-`,choices:[`عَ`,`رَ`,`طَ`]},{image:ey,word:`قَفَزَ`,missing:`فَـ`,display:`قَـ -زَ`,choices:[`شَـ`,`خَـ`,`فَـ`]},{image:ty,word:`ضَحَكَ`,missing:`ضَـ`,display:`ـ حَـكَ`,choices:[`عَـ`,`ضَـ`,`صَـ`]},{image:ny,word:`أَكَـلَ`,missing:`كَـ`,display:`أَ ـ لَ`,choices:[`كَـ`,`ذَ`,`ظَ`]}],[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(``),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(0),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(0),[C,w]=(0,b.useState)(!0),T=a[o],E=e=>e.replace(/[\u0640-\u065F\s]/g,``);(0,b.useEffect)(()=>{if(g)return;let e=setInterval(()=>{S(e=>e+1)},1e3);return()=>clearInterval(e)},[g]);let D=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,O=()=>{C&&(r.current.currentTime=0,r.current.play()),s(0),l(``),h(0),_(!1),p(0),S(0),d(!1),y(!1)},k=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/AlHorof123`)},A=()=>{C&&(r.current.currentTime=0,r.current.play()),e(`/home`)},ee=e=>{g||(l(e),E(e)===E(T.missing)?(C&&(t.current.currentTime=0,t.current.play()),d(!0),h(e=>e+1),p(e=>e+10),setTimeout(()=>{o<a.length-1?(s(o+1),l(``),d(!1)):(C&&(i.current.currentTime=0,i.current.play()),_(!0),y(!0),setTimeout(()=>{y(!1)},3e3))},700)):C&&(n.current.currentTime=0,n.current.play()))},te=()=>{w(e=>!e)};return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
         /* =========================================
-           منع الـ Scroll على الموبايل فقط
+           منع السكرول على الموبايل فقط
            ========================================= */
 
         @media (max-width: 768px) {
@@ -3990,63 +3990,38 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           body {
             overflow: hidden !important;
             overscroll-behavior: none !important;
-            position: fixed !important;
-            width: 100% !important;
-            height: 100% !important;
           }
 
           .tafkheem-page {
-            width: 100% !important;
+            padding: 4px 10px !important;
+            align-items: flex-start !important;
+            padding-top: 6px !important;
+
             height: 100dvh !important;
             min-height: 100dvh !important;
             max-height: 100dvh !important;
-
-            padding: 4px 10px !important;
-            padding-top: 6px !important;
-
-            align-items: flex-start !important;
-            justify-content: center !important;
 
             overflow: hidden !important;
             overscroll-behavior: none !important;
 
             box-sizing: border-box !important;
-            position: fixed !important;
-            inset: 0 !important;
           }
 
           .tafkheem-card {
             width: 94% !important;
             max-width: 360px !important;
-
-            max-height: calc(100dvh - 10px) !important;
-
             padding: 20px 14px 16px 14px !important;
-
             border-radius: 28px !important;
-
             margin: 2px auto 0 auto !important;
-
-            box-sizing: border-box !important;
-
-            overflow: hidden !important;
           }
-
-          /* =========================================
-             العنوان
-             ========================================= */
 
           .tafkheem-title-box {
             top: -32px !important;
             margin-bottom: -16px !important;
-
             width: fit-content !important;
-
             margin-left: auto !important;
             margin-right: auto !important;
-
             padding: 5px 18px !important;
-
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
@@ -4058,116 +4033,71 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 100% !important;
           }
 
-          /* =========================================
-             السؤال
-             ========================================= */
-
           .tafkheem-subtitle {
             font-size: 19px !important;
             font-weight: 800 !important;
-
             margin-top: 4px !important;
             margin-bottom: 14px !important;
           }
 
           .tafkheem-question-box {
             width: 94% !important;
-
             padding: 14px 12px !important;
-
             gap: 12px !important;
-
             border-radius: 20px !important;
-
-            box-sizing: border-box !important;
           }
 
           .tafkheem-image {
             width: 85px !important;
             height: 85px !important;
-
-            flex-shrink: 0 !important;
           }
 
           .tafkheem-word-box {
             width: 100px !important;
             height: 58px !important;
-
             border-radius: 16px !important;
-
-            flex-shrink: 0 !important;
           }
 
           .tafkheem-word {
             font-size: 32px !important;
           }
 
-          /* =========================================
-             الاختيارات
-             ========================================= */
-
           .tafkheem-choices {
             margin-top: 14px !important;
             gap: 12px !important;
-
-            flex-wrap: nowrap !important;
           }
 
           .tafkheem-choice-btn {
             width: 62px !important;
             height: 62px !important;
-
             font-size: 30px !important;
-
             border-radius: 18px !important;
-
-            flex-shrink: 0 !important;
           }
-
-          /* =========================================
-             نقاط التقدم
-             ========================================= */
 
           .tafkheem-dots {
             margin-top: 16px !important;
-
             padding: 8px 12px !important;
-
             width: 150px !important;
-
-            box-sizing: border-box !important;
           }
 
-          /* =========================================
-             أزرار أسفل اللعبة
-             تم تغيير bottom من -140px
-             حتى لا تخرج خارج الشاشة
-             ========================================= */
-
+          /* ===============================
+             الأزرار كما كانت في الكود الأصلي
+             =============================== */
           .tafkheem-bottom-buttons {
             position: absolute !important;
-
             left: 50% !important;
             transform: translateX(-50%) !important;
-
-            bottom: 8px !important;
+            bottom: -140px !important;
 
             flex-direction: row !important;
             flex-wrap: nowrap !important;
-
             gap: 10px !important;
-
             z-index: 20 !important;
-
-            margin-top: 0 !important;
-
-            width: max-content !important;
           }
 
           .tafkheem-circle-btn {
             width: 44px !important;
             height: 44px !important;
-
             flex-shrink: 0 !important;
           }
         }
