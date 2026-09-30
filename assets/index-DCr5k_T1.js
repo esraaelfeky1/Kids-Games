@@ -3947,7 +3947,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           /* تنزيل الحركة فقط على اللاب */
           .meat-grid-mobile .harakahStyle {
-            transform: translateY(6px) !important;
+            transform: translateY(4px) !important;
           }
 
           .lion-img {
