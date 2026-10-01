@@ -5427,7 +5427,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .desktop-bottom-buttons {
             position: fixed !important;
-            left: 20px !important;
+            left: 10px !important;
             bottom: 20px !important;
 
             display: flex !important;
