@@ -5935,8 +5935,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .main-layout-responsive {
             flex-wrap: nowrap !important;
 
-            /* تنزيل دائرة العجلة لأسفل أكثر */
-            margin-top: 220px !important;
+            /* تنزيل العجلة الدوارة نفسها لأسفل */
+            margin-top: 270px !important;
           }
 
           /* الأزرار الأربعة على اليسار */
