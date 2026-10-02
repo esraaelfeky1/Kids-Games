@@ -5940,7 +5940,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .wheel-only-responsive {
             position: relative !important;
-            top: 50px !important;
+            top: 30px !important;
           }
 
           /* الأزرار الأربعة على اليسار */
