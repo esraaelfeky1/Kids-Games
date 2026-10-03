@@ -7299,184 +7299,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================================
-           LAPTOP + TABLET
-           ===================================================== */
-
-        @media (min-width: 601px) {
-
-          .ice-cream-container .top-bar {
-            padding: 8px 30px !important;
-          }
-
-          .ice-cream-container h1 {
-            font-size: 20px !important;
-          }
-
-          .ice-cream-container .instruction {
-            font-size: 14px !important;
-          }
-
-          /* ===================================================
-             الخمس آيس كريم
-             
-             تم وضعهم فوق الخشب مباشرة
-             وكل آيس كريم مقابل مربع من مربعات الخشب
-             =================================================== */
-
-          .ice-cream-container .menu {
-
-            position: absolute !important;
-
-            top: 30vh !important;
-
-            left: 50% !important;
-
-            transform:
-              translateX(-50%)
-              scale(0.90) !important;
-
-            transform-origin:
-              center top !important;
-
-            width: 620px !important;
-
-            display: flex !important;
-
-            flex-wrap: nowrap !important;
-
-            justify-content: center !important;
-
-            align-items: center !important;
-
-            gap: 25px !important;
-
-            margin: 0 !important;
-
-            z-index: 20 !important;
-          }
-
-          .ice-cream-container .menu-item-custom {
-
-            width: 100px !important;
-
-            min-width: 100px !important;
-
-            height: 105px !important;
-
-            display: flex !important;
-
-            align-items: center !important;
-
-            justify-content: center !important;
-
-            flex-direction: column !important;
-
-          }
-
-          .ice-cream-container
-            .menu-item-custom
-            .scoop-img {
-
-            width: 90px !important;
-
-            height: auto !important;
-
-          }
-
-          .ice-cream-container
-            .menu-item-custom
-            .text-on-scoop {
-
-            font-size: 20px !important;
-
-            margin-top: -40px !important;
-
-            padding: 3px 9px !important;
-
-          }
-
-          /* ===================================================
-             الكونو
-             
-             نازل شوية تحت الخشب
-             =================================================== */
-
-          .ice-cream-container
-            .cones-container {
-
-            position: absolute !important;
-
-            top: 52vh !important;
-
-            left: 50% !important;
-
-            transform:
-              translateX(-50%)
-              scale(0.90) !important;
-
-            transform-origin:
-              center top !important;
-
-            display: flex !important;
-
-            justify-content: center !important;
-
-            align-items: flex-end !important;
-
-            gap: 5px !important;
-
-            margin: 0 !important;
-
-            z-index: 10 !important;
-
-          }
-
-          .ice-cream-container
-            .cones-container
-            .slot {
-
-            width: 100px !important;
-
-            height: 240px !important;
-
-          }
-
-          .ice-cream-container
-            .cones-container
-            .cone-img {
-
-            width: 105px !important;
-
-          }
-
-          /* ===================================================
-             الآيس كريم بعد وضعه داخل الكونو
-             =================================================== */
-
-          .ice-cream-container
-            .cones-container
-            .scoop-base {
-
-            bottom: 60px !important;
-
-          }
-
-          /* ===================================================
-             الشيف
-             =================================================== */
-
-          .ice-cream-container .chef {
-
-            width: 250px !important;
-
-            left: 35px !important;
-
-            bottom: 20px !important;
-
-          }
-        }
-
-        /* =====================================================
            TABLET
            ===================================================== */
 
@@ -7494,50 +7316,37 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             font-size: 14px !important;
           }
 
-          /* ===================================================
-             الآيس كريم فوق الخشب
-             =================================================== */
+          /*
+             الكونو مرفوع 20px إضافية
+             كان 100px وأصبح 80px
+          */
 
-          .ice-cream-container .menu {
-
-            top: 30vh !important;
-
-            transform:
-              translateX(-50%)
-              scale(0.78) !important;
-
+          .ice-cream-container .cones-container {
+            margin-top: 80px !important;
+            transform: scale(0.85) !important;
+            transform-origin: top center !important;
           }
 
-          /* ===================================================
-             الكونو أسفل الخشب
-             =================================================== */
+          /*
+             الآيس كريم الخمسة
+             تظهر كلها على التابلت
+          */
 
-          .ice-cream-container
-            .cones-container {
-
-            top: 52vh !important;
-
-            transform:
-              translateX(-50%)
-              scale(0.78) !important;
-
+          .ice-cream-container .menu {
+            margin-top: 25px !important;
+            transform: scale(0.85) !important;
+            transform-origin: top center !important;
           }
 
           .ice-cream-container .chef {
-
             width: 200px !important;
-
             left: 20px !important;
-
             bottom: 20px !important;
-
           }
         }
 
         /* =====================================================
            MOBILE
-           
-           بدون تغيير في التصميم الأصلي
            ===================================================== */
 
         @media (max-width: 600px) {
@@ -7692,6 +7501,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             cursor: grab !important;
           }
 
+          /* ===================================================
+             الآيس كريم الأول
+             =================================================== */
+
           .ice-cream-container
             .menu-item-mobile:nth-child(1) {
 
@@ -7706,6 +7519,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               )
               !important;
           }
+
+          /* ===================================================
+             الآيس كريم الثاني
+             =================================================== */
 
           .ice-cream-container
             .menu-item-mobile:nth-child(2) {
@@ -7722,6 +7539,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               !important;
           }
 
+          /* ===================================================
+             الآيس كريم الثالث
+             =================================================== */
+
           .ice-cream-container
             .menu-item-mobile:nth-child(3) {
 
@@ -7737,6 +7558,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               !important;
           }
 
+          /* ===================================================
+             الآيس كريم الرابع
+             =================================================== */
+
           .ice-cream-container
             .menu-item-mobile:nth-child(4) {
 
@@ -7751,6 +7576,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               )
               !important;
           }
+
+          /* ===================================================
+             حجم الآيس كريم
+             =================================================== */
 
           .ice-cream-container
             .menu-item-mobile
@@ -7812,6 +7641,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             justify-content: center !important;
           }
 
+          /* ===================================================
+             الكونو الأول
+             =================================================== */
+
           .ice-cream-container
             .mobile-cone-slot:nth-child(1) {
 
@@ -7826,6 +7659,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               )
               !important;
           }
+
+          /* ===================================================
+             الكونو الثاني
+             =================================================== */
 
           .ice-cream-container
             .mobile-cone-slot:nth-child(2) {
@@ -7842,6 +7679,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               !important;
           }
 
+          /* ===================================================
+             الكونو الثالث
+             =================================================== */
+
           .ice-cream-container
             .mobile-cone-slot:nth-child(3) {
 
@@ -7856,6 +7697,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               )
               !important;
           }
+
+          /* ===================================================
+             الكونو الرابع
+             =================================================== */
 
           .ice-cream-container
             .mobile-cone-slot:nth-child(4) {
@@ -7872,6 +7717,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               !important;
           }
 
+          /* ===================================================
+             حجم الكونو
+             =================================================== */
+
           .ice-cream-container
             .mobile-cone-slot
             .cone-img {
@@ -7880,6 +7729,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
             height: auto !important;
           }
+
+          /* ===================================================
+             الآيس كريم بعد وضعه داخل الكونو
+             =================================================== */
 
           .ice-cream-container
             .mobile-cone-slot
@@ -8000,7 +7853,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             z-index: 200 !important;
           }
         }
-      `}),(0,N.jsxs)(`div`,{className:`top-bar`,style:sC.topBar,children:[(0,N.jsxs)(`div`,{className:`stat-box`,style:sC.statBox,children:[`⭐ `,Object.keys(a).length,`/`,x]}),(0,N.jsx)(`h1`,{style:sC.title,children:`لعبة محل الآيس كريم`}),(0,N.jsxs)(`div`,{className:`stat-box`,style:sC.statBox,children:[`⏱️ `,Math.floor(s/60),`:`,String(s%60).padStart(2,`0`)]})]}),(0,N.jsx)(`div`,{className:`instruction`,style:sC.instruction,children:`🍦 اسحب الآيس كريم وضعه على الكونو`}),t&&(0,N.jsx)(`div`,{className:`mobile-scoop-area`,children:r.map(e=>{let t=e.isUsed;return(0,N.jsxs)(`div`,{className:`menu-item-mobile`,onMouseDown:n=>!t&&C(n,e),onTouchStart:n=>!t&&C(n,e),style:{visibility:t?`hidden`:`visible`},children:[(0,N.jsx)(`img`,{src:e.img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:e.text})]},e.id)})}),!t&&(0,N.jsx)(`div`,{className:`menu`,style:sC.menu,children:r.map(e=>{let t=e.isUsed;return(0,N.jsxs)(`div`,{className:`menu-item-custom`,onMouseDown:n=>!t&&C(n,e),onTouchStart:n=>!t&&C(n,e),style:{...sC.menuItem,visibility:t?`hidden`:`visible`},children:[(0,N.jsx)(`img`,{src:e.img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:e.text})]},e.id)})}),t&&(0,N.jsx)(`div`,{className:`mobile-cones-area`,children:Array.from({length:4}).map((e,t)=>(0,N.jsxs)(`div`,{ref:e=>{y.current[t]=e},className:`mobile-cone-slot`,children:[a[t]&&(0,N.jsxs)(`div`,{className:`scoop-base`,style:sC.scoopBase,children:[(0,N.jsx)(`img`,{src:a[t].img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:a[t].text})]}),(0,N.jsx)(`img`,{src:`/Kids-Games/assets/cone-22zbG08h.png`,alt:`Cone`,className:`cone-img`,style:sC.coneImg,draggable:`false`})]},t))}),!t&&(0,N.jsx)(`div`,{className:`cones-container`,style:sC.conesContainer,children:Array.from({length:5}).map((e,t)=>(0,N.jsxs)(`div`,{ref:e=>{y.current[t]=e},className:`slot`,style:sC.slot,children:[a[t]&&(0,N.jsxs)(`div`,{className:`scoop-base`,style:sC.scoopBase,children:[(0,N.jsx)(`img`,{src:a[t].img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:a[t].text})]}),(0,N.jsx)(`img`,{src:`/Kids-Games/assets/cone-22zbG08h.png`,alt:`Cone`,className:`cone-img`,style:sC.coneImg,draggable:`false`})]},t))}),h&&(0,N.jsxs)(`div`,{style:{...sC.dragFollower,left:`${_.x}px`,top:`${_.y}px`},children:[(0,N.jsx)(`img`,{src:h.img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:h.text})]}),(0,N.jsx)(`img`,{src:ZS,alt:``,className:`chef`,style:sC.chef,draggable:`false`}),d&&(0,N.jsxs)(`div`,{className:`win-box`,style:sC.winBox,children:[`🎉 أحسنت يا بطل`,(0,N.jsx)(`br`,{}),`مجموع نقاطك: `,p]}),(0,N.jsxs)(`div`,{className:`bottom-buttons`,style:sC.bottomButtons,children:[(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:()=>e(-1),children:(0,N.jsx)(Ei,{})}),(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:w,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:()=>u(e=>!e),children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:()=>e(`/home`),children:(0,N.jsx)(F,{})})]})]})}var sC={container:{width:`100%`,minHeight:`100vh`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`,overflow:`hidden`},topBar:{width:`100%`,maxWidth:`900px`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,padding:`12px 35px`,zIndex:30},title:{color:`#ec4899`,fontSize:`25px`,fontWeight:`bold`,background:`#fff`,padding:`10px 20px`,borderRadius:`15px`,border:`3px solid #ec4899`,margin:0,whiteSpace:`nowrap`},statBox:{background:`#fff`,padding:`10px 18px`,borderRadius:`15px`,border:`3px solid #ec4899`,fontWeight:`bold`,whiteSpace:`nowrap`},instruction:{position:`absolute`,top:`95px`,left:`50%`,transform:`translateX(-50%)`,background:`rgba(255,255,255,0.95)`,color:`#444`,fontSize:`16px`,fontWeight:`bold`,padding:`6px 14px`,borderRadius:`10px`,zIndex:20,whiteSpace:`nowrap`,textAlign:`center`},conesContainer:{position:`absolute`,left:`50%`,transform:`translateX(-50%)`,top:`52vh`,display:`flex`,justifyContent:`center`,gap:`5px`,margin:0,zIndex:10},slot:{width:`100px`,height:`240px`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`flex-end`},coneImg:{width:`105px`,zIndex:1,pointerEvents:`none`},scoopBase:{position:`absolute`,bottom:`60px`,display:`flex`,flexDirection:`column`,alignItems:`center`,zIndex:5,pointerEvents:`none`},scoopImg:{width:`90px`,height:`auto`,pointerEvents:`none`},textOnScoop:{fontWeight:`900`,fontSize:`22px`,background:`#fff`,padding:`3px 10px`,borderRadius:`10px`,marginTop:`-42px`,zIndex:6,letterSpacing:`1px`,boxShadow:`0 2px 6px rgba(0,0,0,0.15)`,whiteSpace:`nowrap`},menu:{position:`absolute`,top:`30vh`,left:`50%`,transform:`translateX(-50%)`,width:`620px`,display:`flex`,flexWrap:`nowrap`,justifyContent:`center`,alignItems:`center`,gap:`25px`,margin:0,zIndex:20},menuItem:{position:`relative`,cursor:`grab`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`,userSelect:`none`,touchAction:`none`,width:`100px`,minWidth:`100px`,height:`105px`},dragFollower:{position:`fixed`,pointerEvents:`none`,zIndex:999,display:`flex`,flexDirection:`column`,alignItems:`center`},chef:{width:`280px`,position:`absolute`,bottom:`30px`,left:`70px`,zIndex:2,pointerEvents:`none`},winBox:{position:`absolute`,top:`150px`,background:`#fff`,color:`#ec4899`,padding:`18px 30px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,border:`4px solid #ec4899`,boxShadow:`0 10px 25px rgba(0,0,0,0.2)`,zIndex:200,textAlign:`center`,lineHeight:`1.6`},bottomButtons:{position:`absolute`,bottom:`15px`,display:`flex`,gap:`15px`,zIndex:50},circleBtn:{width:`50px`,height:`50px`,borderRadius:`50%`,border:`none`,background:`#ec4899`,color:`#fff`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,padding:0}};function cC(){let e=j(),t=[{correct:`هَرَمًا`,options:[`بَدِيع`,`كَاتِب`,`هَرَمًا`]},{correct:`أَسَدًا`,options:[`أَسَدًا`,`شَفِيعُ`,`قَالَ`]},{correct:`أَحَدًا`,options:[`عَادَ`,`أَحَدًا`,`عَبَدَ`]},{correct:`قَرِيبًا`,options:[`قَرِيبًا`,`عَرَفَ`,`سَامِعُ`]},{correct:`صَوْتًا`,options:[`شَمْسُ`,`رَفَعَ`,`صَوْتًا`]},{correct:`طَرِيقًا`,options:[`سَامِعُ`,`طَرِيقًا`,`رَحَمَ`]},{correct:`رَقَمًا`,options:[`رَقَمًا`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),x=(0,b.useRef)(null),S={هَرَمًا:`/Kids-Games/sounds/%D9%87%D8%B1%D9%85%D8%A7.mp3`,أَسَدًا:`/Kids-Games/sounds/%D8%A3%D8%B3%D8%AF.mp3`,أَحَدًا:`/Kids-Games/sounds/%D8%A3%D8%AD%D8%AF.mp3`,قَرِيبًا:`/Kids-Games/sounds/%D9%82%D8%B1%D9%8A%D8%A8%D8%A7.mp3`,صَوْتًا:`/Kids-Games/sounds/%D8%B5%D9%88%D8%AA.mp3`,طَرِيقًا:`/Kids-Games/sounds/%D8%B7%D8%B1%D9%8A%D9%82.mp3`,رَقَمًا:`/Kids-Games/sounds/%D8%B1%D9%82%D9%85.mp3`},C=()=>{if(x.current){try{x.current.pause(),x.current.currentTime=0}catch(e){console.log(e)}x.current=null}},w=e=>{let t=S[e];if(!t){console.log(`لم يتم العثور على ملف الصوت للكلمة:`,e);return}C();let n=new Audio;n.preload=`auto`,n.src=t,n.playbackRate=.85,n.volume=1,x.current=n;let r=n.play();r!==void 0&&r.then(()=>{console.log(`تم تشغيل الصوت:`,e)}).catch(e=>{console.log(`تعذر تشغيل الصوت تلقائياً (في انتظار تفاعل المستخدم):`,e)})},T=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الصحيحة:`,e)})},E=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الخاطئة:`,e)})};(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[m]);let D=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{w(n.correct)},300)};(0,b.useEffect)(()=>{D(0)},[]);let O=e=>{u||m||(d(e),e===i?(s(e=>e+1),_(!0),C(),T(),setTimeout(()=>{_(!1)},1200)):(C(),E()),setTimeout(()=>{let e=f+1;e>=7?(C(),h(!0),y(!0),setTimeout(()=>{y(!1)},2e3)):(p(e),D(e))},900))},k=()=>{C(),s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),D(0)},A=()=>{C(),e(`/Nunation`)},ee=()=>{C(),e(`/home`)};return(0,b.useEffect)(()=>()=>{C()},[]),(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
+      `}),(0,N.jsxs)(`div`,{className:`top-bar`,style:sC.topBar,children:[(0,N.jsxs)(`div`,{className:`stat-box`,style:sC.statBox,children:[`⭐ `,Object.keys(a).length,`/`,x]}),(0,N.jsx)(`h1`,{style:sC.title,children:`لعبة محل الآيس كريم`}),(0,N.jsxs)(`div`,{className:`stat-box`,style:sC.statBox,children:[`⏱️ `,Math.floor(s/60),`:`,String(s%60).padStart(2,`0`)]})]}),(0,N.jsx)(`div`,{className:`instruction`,style:sC.instruction,children:`🍦 اسحب الآيس كريم وضعه على الكونو`}),t&&(0,N.jsx)(`div`,{className:`mobile-scoop-area`,children:r.map(e=>{let t=e.isUsed;return(0,N.jsxs)(`div`,{className:`menu-item-mobile`,onMouseDown:n=>!t&&C(n,e),onTouchStart:n=>!t&&C(n,e),style:{visibility:t?`hidden`:`visible`},children:[(0,N.jsx)(`img`,{src:e.img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:e.text})]},e.id)})}),!t&&(0,N.jsx)(`div`,{className:`menu`,style:sC.menu,children:r.map(e=>{let t=e.isUsed;return(0,N.jsxs)(`div`,{className:`menu-item-custom`,onMouseDown:n=>!t&&C(n,e),onTouchStart:n=>!t&&C(n,e),style:{...sC.menuItem,visibility:t?`hidden`:`visible`},children:[(0,N.jsx)(`img`,{src:e.img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:e.text})]},e.id)})}),t&&(0,N.jsx)(`div`,{className:`mobile-cones-area`,children:Array.from({length:4}).map((e,t)=>(0,N.jsxs)(`div`,{ref:e=>{y.current[t]=e},className:`mobile-cone-slot`,children:[a[t]&&(0,N.jsxs)(`div`,{className:`scoop-base`,style:sC.scoopBase,children:[(0,N.jsx)(`img`,{src:a[t].img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:a[t].text})]}),(0,N.jsx)(`img`,{src:`/Kids-Games/assets/cone-22zbG08h.png`,alt:`Cone`,className:`cone-img`,style:sC.coneImg,draggable:`false`})]},t))}),!t&&(0,N.jsx)(`div`,{className:`cones-container`,style:sC.conesContainer,children:Array.from({length:5}).map((e,t)=>(0,N.jsxs)(`div`,{ref:e=>{y.current[t]=e},className:`slot`,style:sC.slot,children:[a[t]&&(0,N.jsxs)(`div`,{className:`scoop-base`,style:sC.scoopBase,children:[(0,N.jsx)(`img`,{src:a[t].img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:a[t].text})]}),(0,N.jsx)(`img`,{src:`/Kids-Games/assets/cone-22zbG08h.png`,alt:`Cone`,className:`cone-img`,style:sC.coneImg,draggable:`false`})]},t))}),h&&(0,N.jsxs)(`div`,{style:{...sC.dragFollower,left:`${_.x}px`,top:`${_.y}px`},children:[(0,N.jsx)(`img`,{src:h.img,alt:``,className:`scoop-img`,style:sC.scoopImg,draggable:`false`}),(0,N.jsx)(`span`,{className:`text-on-scoop`,style:sC.textOnScoop,children:h.text})]}),(0,N.jsx)(`img`,{src:ZS,alt:``,className:`chef`,style:sC.chef,draggable:`false`}),d&&(0,N.jsxs)(`div`,{className:`win-box`,style:sC.winBox,children:[`🎉 أحسنت يا بطل`,(0,N.jsx)(`br`,{}),`مجموع نقاطك: `,p]}),(0,N.jsxs)(`div`,{className:`bottom-buttons`,style:sC.bottomButtons,children:[(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:()=>e(-1),children:(0,N.jsx)(Ei,{})}),(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:w,children:(0,N.jsx)(I,{})}),(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:()=>u(e=>!e),children:l?(0,N.jsx)(R,{}):(0,N.jsx)(L,{})}),(0,N.jsx)(`button`,{className:`circle-btn`,style:sC.circleBtn,onClick:()=>e(`/home`),children:(0,N.jsx)(F,{})})]})]})}var sC={container:{width:`100%`,minHeight:`100vh`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`,overflow:`hidden`},topBar:{width:`100%`,maxWidth:`900px`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,padding:`12px 35px`,zIndex:30},title:{color:`#ec4899`,fontSize:`25px`,fontWeight:`bold`,background:`#fff`,padding:`10px 20px`,borderRadius:`15px`,border:`3px solid #ec4899`,margin:0,whiteSpace:`nowrap`},statBox:{background:`#fff`,padding:`10px 18px`,borderRadius:`15px`,border:`3px solid #ec4899`,fontWeight:`bold`,whiteSpace:`nowrap`},instruction:{position:`absolute`,top:`95px`,left:`50%`,transform:`translateX(-50%)`,background:`rgba(255,255,255,0.95)`,color:`#444`,fontSize:`16px`,fontWeight:`bold`,padding:`6px 14px`,borderRadius:`10px`,zIndex:20,whiteSpace:`nowrap`,textAlign:`center`},conesContainer:{display:`flex`,justifyContent:`center`,gap:`2px`,marginTop:`25px`,zIndex:2},slot:{width:`95px`,height:`260px`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`flex-end`},coneImg:{width:`105px`,zIndex:1,pointerEvents:`none`},scoopBase:{position:`absolute`,bottom:`60px`,display:`flex`,flexDirection:`column`,alignItems:`center`,zIndex:5,pointerEvents:`none`},scoopImg:{width:`90px`,height:`auto`,pointerEvents:`none`},textOnScoop:{fontWeight:`900`,fontSize:`22px`,background:`#fff`,padding:`3px 10px`,borderRadius:`10px`,marginTop:`-42px`,zIndex:6,letterSpacing:`1px`,boxShadow:`0 2px 6px rgba(0,0,0,0.15)`,whiteSpace:`nowrap`},menu:{display:`flex`,flexWrap:`nowrap`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginTop:`25px`,zIndex:5},menuItem:{position:`relative`,cursor:`grab`,display:`flex`,flexDirection:`column`,alignItems:`center`,userSelect:`none`,touchAction:`none`,width:`95px`},dragFollower:{position:`fixed`,pointerEvents:`none`,zIndex:999,display:`flex`,flexDirection:`column`,alignItems:`center`},chef:{width:`280px`,position:`absolute`,bottom:`30px`,left:`70px`,zIndex:2,pointerEvents:`none`},winBox:{position:`absolute`,top:`150px`,background:`#fff`,color:`#ec4899`,padding:`18px 30px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,border:`4px solid #ec4899`,boxShadow:`0 10px 25px rgba(0,0,0,0.2)`,zIndex:200,textAlign:`center`,lineHeight:`1.6`},bottomButtons:{position:`absolute`,bottom:`15px`,display:`flex`,gap:`15px`,zIndex:50},circleBtn:{width:`50px`,height:`50px`,borderRadius:`50%`,border:`none`,background:`#ec4899`,color:`#fff`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,padding:0}};function cC(){let e=j(),t=[{correct:`هَرَمًا`,options:[`بَدِيع`,`كَاتِب`,`هَرَمًا`]},{correct:`أَسَدًا`,options:[`أَسَدًا`,`شَفِيعُ`,`قَالَ`]},{correct:`أَحَدًا`,options:[`عَادَ`,`أَحَدًا`,`عَبَدَ`]},{correct:`قَرِيبًا`,options:[`قَرِيبًا`,`عَرَفَ`,`سَامِعُ`]},{correct:`صَوْتًا`,options:[`شَمْسُ`,`رَفَعَ`,`صَوْتًا`]},{correct:`طَرِيقًا`,options:[`سَامِعُ`,`طَرِيقًا`,`رَحَمَ`]},{correct:`رَقَمًا`,options:[`رَقَمًا`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),x=(0,b.useRef)(null),S={هَرَمًا:`/Kids-Games/sounds/%D9%87%D8%B1%D9%85%D8%A7.mp3`,أَسَدًا:`/Kids-Games/sounds/%D8%A3%D8%B3%D8%AF.mp3`,أَحَدًا:`/Kids-Games/sounds/%D8%A3%D8%AD%D8%AF.mp3`,قَرِيبًا:`/Kids-Games/sounds/%D9%82%D8%B1%D9%8A%D8%A8%D8%A7.mp3`,صَوْتًا:`/Kids-Games/sounds/%D8%B5%D9%88%D8%AA.mp3`,طَرِيقًا:`/Kids-Games/sounds/%D8%B7%D8%B1%D9%8A%D9%82.mp3`,رَقَمًا:`/Kids-Games/sounds/%D8%B1%D9%82%D9%85.mp3`},C=()=>{if(x.current){try{x.current.pause(),x.current.currentTime=0}catch(e){console.log(e)}x.current=null}},w=e=>{let t=S[e];if(!t){console.log(`لم يتم العثور على ملف الصوت للكلمة:`,e);return}C();let n=new Audio;n.preload=`auto`,n.src=t,n.playbackRate=.85,n.volume=1,x.current=n;let r=n.play();r!==void 0&&r.then(()=>{console.log(`تم تشغيل الصوت:`,e)}).catch(e=>{console.log(`تعذر تشغيل الصوت تلقائياً (في انتظار تفاعل المستخدم):`,e)})},T=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الصحيحة:`,e)})},E=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الخاطئة:`,e)})};(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[m]);let D=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{w(n.correct)},300)};(0,b.useEffect)(()=>{D(0)},[]);let O=e=>{u||m||(d(e),e===i?(s(e=>e+1),_(!0),C(),T(),setTimeout(()=>{_(!1)},1200)):(C(),E()),setTimeout(()=>{let e=f+1;e>=7?(C(),h(!0),y(!0),setTimeout(()=>{y(!1)},2e3)):(p(e),D(e))},900))},k=()=>{C(),s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),D(0)},A=()=>{C(),e(`/Nunation`)},ee=()=>{C(),e(`/home`)};return(0,b.useEffect)(()=>()=>{C()},[]),(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
         html, body {
           margin: 0 !important;
           padding: 0 !important;
@@ -8144,24 +7997,29 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       align-items: flex-end !important;
       justify-content: center !important;
 
-      /* تنزيل المجموعة كلها لأسفل */
+      /* مكان المجموعة بالكامل */
       bottom: 20px !important;
 
-      /* مسافة بسيطة بين السلطعون والأزرار */
       gap: 18px !important;
-
       width: auto !important;
     }
 
-    /* السلطعون يكون على الشمال */
+    /* السلطعون على الشمال */
     .dino-area {
       order: 1 !important;
+
+      /*
+        تنزيل السلطعون فقط لتحت
+        بدون تحريك الأزرار
+      */
+      transform: translateY(18px) !important;
+
       align-self: flex-end !important;
       margin-left: 0 !important;
       margin-right: 0 !important;
     }
 
-    /* الأزرار تكون على يمين السلطعون */
+    /* الأزرار على يمين السلطعون */
     .bottom-buttons {
       order: 2 !important;
       width: auto !important;
@@ -8171,15 +8029,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* =========================================
-     الموبايل - بدون تغيير في الترتيب
+     الموبايل - بدون تغيير
      ========================================= */
   @media (max-width: 767px) {
+
     .dino-buttons-wrapper {
       flex-direction: column !important;
     }
 
     .dino-area {
       order: initial !important;
+      transform: none !important;
     }
 
     .bottom-buttons {
