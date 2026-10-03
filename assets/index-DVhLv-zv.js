@@ -8277,7 +8277,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         السهم يكبر ويتحرك مع حجم الولد
       */
       width: 115px !important;
-      left: 90px !important;
+      left: 85px !important;
       bottom: 12px !important;
     }
   }
