@@ -9978,17 +9978,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   .house-1 {
     left: 30.5% !important;
-    top: 86.5% !important;
+    top: 96.5% !important;
   }
 
   .house-2 {
     left: 50% !important;
-    top: 86.5% !important;
+    top: 96.5% !important;
   }
 
   .house-3 {
     left: 75.5% !important;
-    top: 86.5% !important;
+    top: 96.5% !important;
   }
 
   /* ========================================================
@@ -10070,7 +10070,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     ====================================================== */
 
     .water-stream {
-      transform: translate(-100px, -50px) !important;
+      transform: translate(-150px, -70px) !important;
     }
 
     /* ======================================================
