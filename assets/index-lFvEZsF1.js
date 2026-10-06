@@ -10040,8 +10040,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .house-interactive-area {
       transform: translate(
-        -40%,
-        calc(-40% - 40px)
+        -50%,
+        calc(-50% - 60px)
       ) !important;
     }
 
