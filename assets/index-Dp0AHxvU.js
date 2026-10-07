@@ -10088,7 +10088,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .water-stream {
-      transform: translate(-99px, -96px) !important;
+      transform: translate(-98px, -95px) !important;
     }
 
     .game-background {
