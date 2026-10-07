@@ -9978,13 +9978,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (min-width: 769px) {
     /* ========================================================
        تعديلات اللاب توب والتابلت فقط:
-       - البيت الأول على اليسار تم تحريكه لليسار 50 بكسل وللأعلى 30 بكسل إضافية
-       - تدفق المياه: تم رفعه للأعلى 60 بكسل وتحريكه يساراً 80 بكسل وتوجيهه للهدف بدقة
+       - البيت الأول على اليسار تم تحريكه لليمين 35 بكسل وللأعلى 50 بكسل
+       - تدفق المياه: تم رفعه للأعلى 50 بكسل وتحريكه للخلف/ليسار 80 بكسل وتوجيهه للهدف بدقة
     ======================================================== */
 
     .house-1 {
-      left: calc(25.5% - 50px) !important;
-      top: calc(52.5% - 30px) !important;
+      left: calc(25.5% + 35px) !important;
+      top: calc(52.5% - 50px) !important;
     }
 
     .house-2 {
@@ -9998,7 +9998,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .water-stream {
-      transform: translate(-80px, -60px) !important;
+      transform: translate(-80px, -50px) !important;
     }
 
     .game-background {
