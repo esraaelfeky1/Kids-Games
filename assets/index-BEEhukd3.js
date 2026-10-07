@@ -9978,17 +9978,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (min-width: 769px) {
     /* ========================================================
        تعديلات اللاب توب والتابلت فقط:
-       - البيت الأول على الشمال: تحريك يساراً 30 بكسل وتصعيد للأعلى 30 بكسل إضافية (-90px إجمالاً مع الإزاحة الأصلية)
-       - تدفق المياه: رفع للأعلى 50 بكسل إضافية (-105px إجمالاً) وتحريك يساراً 70 بكسل إضافية (-150px إجمالاً)
+       - البيت الأول على الشمال: تم نقله يساراً (15px-) وإلى الأعلى (30px-) إضافية
+       - تدفق المياه: تم رفعه للأعلى وتحريكه يساراً
     ======================================================== */
 
     .house-1 {
-      left: 25.5% !important;
-      top: 52.5% !important;
+      left: calc(25.5% - 15px) !important;
+      top: calc(52.5% - 30px) !important;
+    }
+
+    .house-2 {
+      left: 50% !important;
+      top: 46.5% !important;
+    }
+
+    .house-3 {
+      left: 75.5% !important;
+      top: 46.5% !important;
     }
 
     .water-stream {
-      transform: translate(-150px, -105px) !important;
+      transform: translate(-160px, -115px) !important;
     }
 
     .game-background {
@@ -10016,21 +10026,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .house-interactive-area {
       transform: translate(-50%, calc(-50% - 60px)) !important;
-    }
-
-    /* تطبيق الإزاحة الإضافية (-30px يساراً و -30px للأعلى) خصيصاً للبيت الأول على الشاشات الكبيرة */
-    .house-1.house-interactive-area {
-      transform: translate(calc(-50% - 30px), calc(-50% - 90px)) !important;
-    }
-
-    .house-2 {
-      left: 50% !important;
-      top: 46.5% !important;
-    }
-
-    .house-3 {
-      left: 75.5% !important;
-      top: 46.5% !important;
     }
 
     .top-info-box {
