@@ -10089,7 +10089,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     /* القيمة الأصلية للتابلت كما طلبتيها تماماً */
     .water-stream {
-      transform: translate(80px, -70px) !important;
+      transform: translate(-100px, -70px) !important;
     }
 
     .game-background {
