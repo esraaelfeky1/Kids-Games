@@ -13798,6 +13798,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     cursor: pointer;
     max-width: 110px;
     margin: 0 auto;
+    transform: none !important;
+    transition: none !important;
+  }
+  .rock-item-responsive:hover,
+  .rock-item-responsive:active {
+    transform: none !important;
   }
 
   .stat-badge-responsive {
@@ -13842,6 +13848,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .rock-item-responsive {
       max-width: 130px !important;
+      transform: none !important;
     }
 
     .word-text-responsive {
