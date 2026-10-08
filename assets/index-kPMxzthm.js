@@ -14581,16 +14581,26 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
    ===================================================== */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* تكبير الكلمات على التابلت فقط */
+  /* تكبير الكلمات قليلاً فقط على التابلت */
   .word-node-responsive {
-    width: 85px !important;
-    height: 85px !important;
-    font-size: 2.1rem !important;
+    width: 82px !important;
+    height: 82px !important;
+    font-size: 2.0rem !important;
   }
 
-  /* تصغير بيت العنكبوت على التابلت فقط */
+  /* بيت العنكبوت كما هو بحجمه الطبيعي */
   .spider-house-responsive {
-    font-size: 4.8rem !important;
+    font-size: 6.5rem !important;
+  }
+
+  /* تكبير الأزرار الأربعة السفلية قليلاً على التابلت */
+  .control-btn-responsive {
+    padding: 15px !important;
+  }
+
+  .ctrl-icon-responsive {
+    width: 32px !important;
+    height: 32px !important;
   }
 }
 `,kO={container:{width:`100vw`,height:`100vh`,position:`relative`,overflow:`hidden`,fontFamily:`'Cairo', sans-serif`,direction:`rtl`,backgroundColor:`#1e3a1e`,userSelect:`none`,touchAction:`none`},bgImg:{width:`100%`,height:`100%`,objectFit:`cover`,position:`absolute`,top:0,left:0,zIndex:0},webImg:{position:`absolute`,top:`50%`,left:`50%`,transform:`translate(-50%, -50%)`,width:`75%`,height:`75%`,objectFit:`contain`,zIndex:5,pointerEvents:`none`},svgOverlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,zIndex:15,pointerEvents:`none`},fullImg:{width:`100%`,height:`100%`,objectFit:`contain`,pointerEvents:`none`},spiderWrapper:{position:`absolute`,width:`70px`,height:`70px`,zIndex:30,filter:`drop-shadow(0 8px 12px rgba(0,0,0,0.5))`},spiderHouse:{cursor:`default`},headerContainer:{},gameTitle:{},gameSubtitle:{},wordNode:{},scoreBadge:{background:`rgba(255, 255, 255, 0.95)`,borderRadius:`20px`,display:`flex`,alignItems:`center`,gap:`6px`,fontWeight:`bold`,color:`#f57c00`,border:`3px solid #f57c00`,boxShadow:`0 4px 12px rgba(0,0,0,0.3)`},timerBadge:{background:`rgba(255, 255, 255, 0.95)`,borderRadius:`20px`,display:`flex`,alignItems:`center`,gap:`6px`,fontWeight:`bold`,color:`#0284c7`,border:`3px solid #0284c7`,boxShadow:`0 4px 12px rgba(0,0,0,0.3)`},feedbackMessage:{position:`absolute`,top:`22%`,left:`50%`,transform:`translateX(-50%)`,zIndex:60,borderRadius:`20px`,fontWeight:`bold`,color:`#fff`,padding:`8px 22px`,fontSize:`1.2rem`,textAlign:`center`,boxShadow:`0 8px 25px rgba(0,0,0,0.3)`},success:{backgroundColor:`#2e7d32`},error:{backgroundColor:`#c62828`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0, 0, 0, 0.75)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winCard:{background:`#ffffff`,border:`3px solid #854D0E`,borderRadius:`16px`,textAlign:`center`,boxShadow:`0 8px 25px rgba(0,0,0,0.5)`,display:`flex`,flexDirection:`column`,alignItems:`center`},trophyWrapper:{marginBottom:`2px`,filter:`drop-shadow(0 2px 4px rgba(0,0,0,0.15))`},winTitle:{color:`#78350F`,fontWeight:`800`},winStatsBox:{background:`#FEF3C7`,borderRadius:`10px`,border:`1.5px solid #FDE68A`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`100%`,boxSizing:`border-box`},winStatLabel:{display:`flex`,alignItems:`center`,gap:`5px`,fontWeight:`bold`,color:`#92400E`},winActionButtons:{display:`flex`,justifyContent:`center`,gap:`10px`},winIconBtn:{background:`#ffffff`,border:`2px solid #854D0E`,borderRadius:`50%`,cursor:`pointer`,color:`#854D0E`,boxShadow:`0 3px 8px rgba(0,0,0,0.15)`,display:`flex`,alignItems:`center`,justifyContent:`center`},controlsBarBottom:{},iconBtn:{background:`rgba(255, 255, 255, 0.98)`,borderRadius:`50%`,border:`3px solid #854D0E`,cursor:`pointer`,color:`#854D0E`,boxShadow:`0 6px 14px rgba(0,0,0,0.35)`,display:`flex`,alignItems:`center`,justifyContent:`center`}};function AO(){let e=j(),t=[{correct:`فَصْلِي`,options:[`بَدِيع`,`فَصْلُ`,`فَصْلِي`]},{correct:`قَلَمِي`,options:[`قَلَمِي`,`شَفِيعُ`,`قَلَمُ`]},{correct:`شَارِعِي`,options:[`شَارِعُ`,`شَارِعِي`,`عَبَدَ`]},{correct:`بَيْتِي`,options:[`بَيْتِي`,`عَرَفَ`,`بَيْتُ`]},{correct:`أُسْرَتِي`,options:[`أُسْرَة`,`رَفَعَ`,`أُسْرَتِي`]},{correct:`عَيْنِي`,options:[`سَامِعُ`,`عَيْنِي`,`رَحَمَ`]},{correct:`كِتَابِي`,options:[`كِتَابِي`,`كِتَابُ`,`كَتَبَ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),x=(0,b.useRef)(null),S={فَصْلِي:`/Kids-Games/sounds/%D9%81%D8%B5%D9%84%D9%8A.mp3`,قَلَمِي:`/Kids-Games/sounds/%D9%82%D9%84%D9%85%D9%8A.mp3`,شَارِعِي:`/Kids-Games/sounds/%D8%B4%D8%A7%D8%B1%D8%B9%D9%8A.mp3`,بَيْتِي:`/Kids-Games/sounds/%D8%A8%D9%8A%D8%AA%D9%8A.mp3`,أُسْرَتِي:`/Kids-Games/sounds/%D8%A7%D8%B3%D8%B1%D8%AA%D9%8A.mp3`,عَيْنِي:`/Kids-Games/sounds/%D8%B9%D9%8A%D9%86%D9%8A.mp3`,كِتَابِي:`/Kids-Games/sounds/%D9%83%D8%AA%D8%A7%D8%A8%D9%8A.mp3`},C=()=>{if(x.current){try{x.current.pause(),x.current.currentTime=0}catch(e){console.log(e)}x.current=null}},w=e=>{let t=S[e];if(!t){console.log(`لم يتم العثور على ملف الصوت للكلمة:`,e);return}C();let n=new Audio;n.preload=`auto`,n.src=t,n.playbackRate=.85,n.volume=1,x.current=n;let r=n.play();r!==void 0&&r.then(()=>{console.log(`تم تشغيل الصوت:`,e)}).catch(e=>{console.log(`تعذر تشغيل الصوت تلقائياً:`,e)})},T=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الصحيحة:`,e)})},E=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الخاطئة:`,e)})};(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[m]);let D=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{w(n.correct)},300)};(0,b.useEffect)(()=>{D(0)},[]);let O=e=>{u||m||(d(e),e===i?(s(e=>e+1),_(!0),C(),T(),setTimeout(()=>{_(!1)},1200)):(C(),E()),setTimeout(()=>{let e=f+1;e>=7?(C(),h(!0),y(!0),setTimeout(()=>{y(!1)},2e3)):(p(e),D(e))},900))},k=()=>{C(),s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),D(0)},A=()=>{C(),e(`/Ownership`)},ee=()=>{C(),e(`/home`)};return(0,b.useEffect)(()=>()=>{C()},[]),(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(`style`,{children:`
