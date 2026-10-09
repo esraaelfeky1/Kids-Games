@@ -17271,41 +17271,29 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         @media (max-width: 767px) {
 
-          /* الأخطبوط:
-             كان -50px وأصبح -70px
-             أي طلع 20px إضافية */
           .octopus-wrapper {
             width: 290px;
             height: 290px;
             top: calc(45% - 70px);
           }
 
-          /* الوقت والنقاط */
           .stat-box {
             font-size: 0.82rem;
             padding: 5px 11px;
           }
 
-          /* العنوان */
           .title-box h1 {
             font-size: calc(1.25rem - 5px);
           }
 
-          /* الفقرة */
           .subtitle-box p {
             font-size: calc(0.85rem - 3px);
           }
 
-          /* الفقاعات:
-             كانت 105px وأصبحت 125px
-             أي طلعت 20px إضافية */
           .bubbles-wrapper {
             bottom: 125px;
           }
 
-          /* الأزرار:
-             كانت 68px وأصبحت 98px
-             أي طلعت 30px إضافية */
           .bottom-controls {
             bottom: 98px;
           }
@@ -17313,7 +17301,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         /* ===================================
            التابلت واللابتوب والشاشات الكبيرة
-           القيم الأصلية بدون التعديلات الجديدة
            =================================== */
 
         @media (min-width: 768px) {
@@ -17342,10 +17329,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             top: 45%;
           }
 
+          /* تعديل حاوية الفقاعات لتصبح صفين على التابلت واللابتوب */
           .bubbles-wrapper {
-            max-width: 850px;
-            height: 90px;
-            bottom: 95px;
+            max-width: 480px;
+            height: 170px;
+            bottom: 125px; /* تم رفعها قليلاً لتتناسب مع صفين وأزرار نازلة */
           }
 
           .bubble-item {
@@ -17357,58 +17345,26 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             font-size: 1.35rem;
           }
 
-          .pos-0 {
-            top: 0;
-            left: 0%;
-          }
+          /* توزيع الفقاعات على صفين (5 فقاعات في كل صف) */
+          .pos-0 { top: 0; left: 0%; }
+          .pos-1 { top: 0; left: 20%; }
+          .pos-2 { top: 0; left: 40%; }
+          .pos-3 { top: 0; left: 60%; }
+          .pos-4 { top: 0; left: 80%; }
 
-          .pos-1 {
-            top: 0;
-            left: 10%;
-          }
+          .pos-5 { top: 85px; left: 0%; }
+          .pos-6 { top: 85px; left: 20%; }
+          .pos-7 { top: 85px; left: 40%; }
+          .pos-8 { top: 85px; left: 60%; }
+          .pos-9 { top: 85px; left: 80%; }
 
-          .pos-2 {
-            top: 0;
-            left: 20%;
-          }
-
-          .pos-3 {
-            top: 0;
-            left: 30%;
-          }
-
-          .pos-4 {
-            top: 0;
-            left: 40%;
-          }
-
-          .pos-5 {
-            top: 0;
-            left: 50%;
-          }
-
-          .pos-6 {
-            top: 0;
-            left: 60%;
-          }
-
-          .pos-7 {
-            top: 0;
-            left: 70%;
-          }
-
-          .pos-8 {
-            top: 0;
-            left: 80%;
-          }
-
-          .pos-9 {
-            top: 0;
-            left: 90%;
+          /* إنزال الأزرار السفلية 30 بكسل إضافية (أصبحت 42px بدلاً من 12px مثلاً) */
+          .bottom-controls {
+            bottom: 42px;
           }
         }
 
-        /* الأزرار السفليّة */
+        /* الأزرار السفليّة (للموبايل كقيمة افتراضية) */
 
         .bottom-controls {
           position: absolute;
