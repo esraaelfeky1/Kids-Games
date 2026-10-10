@@ -10969,7 +10969,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       `}),(0,N.jsx)(`img`,{src:LT,alt:`خلفية اللعبة`,style:GT.bgImg,draggable:`false`}),(0,N.jsxs)(`div`,{style:GT.topBar,className:`top-bar-responsive`,children:[(0,N.jsxs)(`div`,{style:GT.box,className:`box-responsive`,children:[`⏱️ `,D]}),(0,N.jsxs)(`div`,{style:GT.box,className:`box-responsive`,children:[`⭐ `,a]})]}),(0,N.jsxs)(`div`,{style:GT.headerContainer,className:`header-container-responsive`,children:[(0,N.jsx)(`div`,{style:GT.titleBadge,className:`title-badge-responsive`,children:(0,N.jsx)(`h2`,{style:GT.instructionTitle,className:`instruction-title-responsive`,children:`🐬 لعبة إطعام الدولفين`})}),(0,N.jsx)(`div`,{style:GT.textBadge,className:`text-badge-responsive`,children:(0,N.jsxs)(`p`,{style:GT.instructionText,className:`instruction-text-responsive`,children:[`أطعم الدولفين السمكة التي بها`,` `,(0,N.jsx)(`strong`,{children:`(شَدَّة وَكَسْرَة ِّ)`}),`!`]})})]}),(0,N.jsx)(`div`,{ref:_,style:GT.dolphinWrapper,children:(0,N.jsx)(`img`,{src:RT,alt:`الدولفين`,style:GT.dolphinImg,draggable:`false`})}),(0,N.jsx)(`div`,{style:GT.fishArea,className:`fish-area-responsive`,children:r.map((e,n)=>(0,N.jsxs)(`div`,{className:`fish-bubble-responsive`,style:{...GT.fishWrapper,visibility:e.visible?`visible`:`hidden`,transform:`translate(
                 ${h[n]?.x||0}px,
                 ${h[n]?.y||0}px
-              )`,transition:p===n?`none`:`transform 0.2s ease-out`,touchAction:`none`},onPointerDown:e=>S(e,n),onPointerMove:e=>C(e,n),onPointerUp:t=>T(t,n,e.isCorrect),onPointerCancel:()=>{m(null),w(n)},children:[(0,N.jsx)(`img`,{src:e.imgSrc,alt:`فقاعة سمكة`,style:GT.bubbleFishImg,draggable:`false`}),(0,N.jsx)(`div`,{style:GT.wordContainer,children:(0,N.jsx)(`span`,{className:`game-word-text`,children:e.word})})]},`${t}-${n}`))}),(0,N.jsxs)(`div`,{style:GT.controlsBar,className:`controls-bar-responsive`,children:[(0,N.jsx)(`button`,{onClick:()=>u(e=>!e),style:GT.iconBtn,className:`icon-btn-responsive`,title:`الصوت`,"aria-label":`تشغيل أو إيقاف الصوت`,children:l?(0,N.jsx)(L,{size:22}):(0,N.jsx)(R,{size:22})}),(0,N.jsx)(`button`,{onClick:E,style:GT.iconBtn,className:`icon-btn-responsive`,title:`إعادة اللعب`,"aria-label":`إعادة اللعب`,children:(0,N.jsx)(I,{size:22})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:GT.iconBtn,className:`icon-btn-responsive`,title:`الرئيسية`,"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{size:22})}),(0,N.jsx)(`button`,{onClick:()=>e(`/Shadda`),style:GT.iconBtn,className:`icon-btn-responsive`,title:`اللعبة التالية`,"aria-label":`اللعبة التالية`,children:(0,N.jsx)(P,{size:22})})]}),d&&(0,N.jsx)(`div`,{style:GT.overlay,className:`win-overlay`,children:(0,N.jsxs)(`div`,{style:GT.winBox,className:`win-box`,children:[(0,N.jsxs)(`div`,{className:`win-heading`,children:[(0,N.jsx)(ra,{size:30,color:`#eab308`}),(0,N.jsx)(`h1`,{className:`win-title`,children:`أحسنت يا بطل!`})]}),(0,N.jsxs)(`div`,{className:`win-score`,children:[`⭐ النتيجة: `,(0,N.jsx)(`strong`,{children:a}),(0,N.jsxs)(`span`,{className:`win-time`,children:[`⏱️ `,D]})]}),(0,N.jsxs)(`div`,{className:`win-actions`,children:[(0,N.jsx)(`button`,{onClick:E,style:GT.iconBtn,className:`icon-btn-responsive win-action-icon-btn`,title:`إعادة اللعب`,"aria-label":`المحاولة مرة أخرى`,children:(0,N.jsx)(I,{size:22})}),(0,N.jsx)(`button`,{onClick:()=>e(-1),style:GT.iconBtn,className:`icon-btn-responsive win-action-icon-btn`,title:`الرجوع`,"aria-label":`الرجوع`,children:(0,N.jsx)(P,{size:22})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:GT.iconBtn,className:`icon-btn-responsive win-action-icon-btn`,title:`الرئيسية`,"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{size:22})})]})]})})]})}var WT=`
+              )`,transition:p===n?`none`:`transform 0.2s ease-out`,touchAction:`none`},onPointerDown:e=>S(e,n),onPointerMove:e=>C(e,n),onPointerUp:t=>T(t,n,e.isCorrect),onPointerCancel:()=>{m(null),w(n)},children:[(0,N.jsx)(`img`,{src:e.imgSrc,alt:`فقاعة سمكة`,style:GT.bubbleFishImg,draggable:`false`}),(0,N.jsx)(`div`,{style:GT.wordContainer,children:(0,N.jsx)(`span`,{className:`game-word-text`,children:e.word})})]},`${t}-${n}`))}),(0,N.jsxs)(`div`,{style:GT.controlsBar,className:`controls-bar-responsive`,children:[(0,N.jsx)(`button`,{onClick:()=>u(e=>!e),style:GT.iconBtn,className:`icon-btn-responsive`,title:`الصوت`,"aria-label":`تشغيل أو إيقاف الصوت`,children:l?(0,N.jsx)(L,{size:24}):(0,N.jsx)(R,{size:24})}),(0,N.jsx)(`button`,{onClick:E,style:GT.iconBtn,className:`icon-btn-responsive`,title:`إعادة اللعب`,"aria-label":`إعادة اللعب`,children:(0,N.jsx)(I,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:GT.iconBtn,className:`icon-btn-responsive`,title:`الرئيسية`,"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>e(`/Shadda`),style:GT.iconBtn,className:`icon-btn-responsive`,title:`اللعبة التالية`,"aria-label":`اللعبة التالية`,children:(0,N.jsx)(P,{size:24})})]}),d&&(0,N.jsx)(`div`,{style:GT.overlay,className:`win-overlay`,children:(0,N.jsxs)(`div`,{style:GT.winBox,className:`win-box`,children:[(0,N.jsxs)(`div`,{className:`win-heading`,children:[(0,N.jsx)(ra,{size:30,color:`#eab308`}),(0,N.jsx)(`h1`,{className:`win-title`,children:`أحسنت يا بطل!`})]}),(0,N.jsxs)(`div`,{className:`win-score`,children:[`⭐ النتيجة: `,(0,N.jsx)(`strong`,{children:a}),(0,N.jsxs)(`span`,{className:`win-time`,children:[`⏱️ `,D]})]}),(0,N.jsxs)(`div`,{className:`win-actions`,children:[(0,N.jsx)(`button`,{onClick:E,style:GT.iconBtn,className:`icon-btn-responsive win-action-icon-btn`,title:`إعادة اللعب`,"aria-label":`المحاولة مرة أخرى`,children:(0,N.jsx)(I,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>e(-1),style:GT.iconBtn,className:`icon-btn-responsive win-action-icon-btn`,title:`الرجوع`,"aria-label":`الرجوع`,children:(0,N.jsx)(P,{size:24})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:GT.iconBtn,className:`icon-btn-responsive win-action-icon-btn`,title:`الرئيسية`,"aria-label":`الرئيسية`,children:(0,N.jsx)(F,{size:24})})]})]})})]})}var WT=`
   .game-word-text {
     font-size: clamp(1.6rem, 3.2vw, 3.3rem);
     font-weight: 800;
@@ -11103,7 +11103,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
   }
 
-  /* الموبايل - تكبير الشدة والتشكيل (الحركات) وتوضيحها جداً */
+  /* الموبايل - تصغير الفقاعات قليلاً وتكبير الأزرار بـ 7 بكسل إضافية */
   @media (max-width: 640px) {
     html, body, #root {
       width: 100% !important;
@@ -11152,44 +11152,45 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .fish-area-responsive {
       bottom: 25% !important;
-      right: 4% !important;
-      width: 92% !important;
+      right: 6% !important;
+      width: 88% !important;
       display: flex !important;
       flex-direction: row !important;
       justify-content: space-between !important;
       align-items: center !important;
-      gap: 6px !important;
-    }
-
-    .fish-bubble-responsive {
-      width: 28% !important;
-      max-width: 105px !important;
-      min-width: 0 !important;
-      flex: 0 0 28% !important;
-    }
-
-    /* تكبير وتوضيح الحركات والتشكيل بشكل خاص على الموبايل */
-    .game-word-text {
-      font-size: clamp(1.8rem, 6vw, 2.3rem) !important;
-      font-weight: 900 !important;
-      line-height: 1.7 !important;
-      letter-spacing: 1px !important;
-      font-size-adjust: 0.65 !important;
-    }
-
-    .controls-bar-responsive {
-      bottom: 75px !important;
-      left: 12px !important;
       gap: 8px !important;
     }
 
+    /* تصغير الفقاعات قليلاً لتبدو متناسقة مع الدولفين */
+    .fish-bubble-responsive {
+      width: 25% !important;
+      max-width: 95px !important;
+      min-width: 0 !important;
+      flex: 0 0 25% !important;
+    }
+
+    /* حجم الكلمات وتوضيح الحركات */
+    .game-word-text {
+      font-size: clamp(1.6rem, 5.2vw, 2.1rem) !important;
+      font-weight: 900 !important;
+      line-height: 1.6 !important;
+      letter-spacing: 0.5px !important;
+    }
+
+    /* تكبير أزرار التحكم بمقدار 7 بكسل إضافية على الموبايل */
+    .controls-bar-responsive {
+      bottom: 75px !important;
+      left: 12px !important;
+      gap: 10px !important;
+    }
+
     .icon-btn-responsive {
-      padding: 9px !important;
+      padding: 13px !important;
     }
 
     .icon-btn-responsive svg {
-      width: 19px;
-      height: 19px;
+      width: 24px;
+      height: 24px;
     }
 
     .win-overlay {
@@ -11225,26 +11226,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .win-actions {
-      gap: 10px;
+      gap: 12px;
     }
   }
 
   /* الموبايلات الصغيرة جدًا */
   @media (max-width: 360px) {
     .fish-area-responsive {
-      width: 94% !important;
-      right: 3% !important;
-      gap: 4px !important;
+      width: 90% !important;
+      right: 5% !important;
+      gap: 6px !important;
     }
 
     .fish-bubble-responsive {
-      width: 29% !important;
-      flex-basis: 29% !important;
+      width: 26% !important;
+      flex-basis: 26% !important;
+      max-width: 88px !important;
     }
 
     .game-word-text {
-      font-size: clamp(1.5rem, 5.5vw, 1.9rem) !important;
-      line-height: 1.6 !important;
+      font-size: clamp(1.4rem, 4.8vw, 1.8rem) !important;
+      line-height: 1.5 !important;
     }
 
     .win-box {
