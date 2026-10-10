@@ -10980,7 +10980,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     white-space: nowrap;
   }
 
-  /* تكبير الحركات (التشكيل) لتكون واضحة وبارزة */
   .game-word-text ruby,
   .game-word-text {
     text-rendering: optimizeLegibility;
@@ -11108,7 +11107,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
   }
 
-  /* الموبايل - تكبير الخط والحركات بشكل واضح جداً */
+  /* الموبايل - تم تكبير حجم الكلمات والحركات بشكل كبير وواضح جداً */
   @media (max-width: 640px) {
     html, body, #root {
       width: 100% !important;
@@ -11156,28 +11155,28 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .fish-area-responsive {
-      bottom: 26% !important;
-      right: 4% !important;
-      width: 92% !important;
+      bottom: 25% !important;
+      right: 3% !important;
+      width: 94% !important;
       display: flex !important;
       flex-direction: row !important;
       justify-content: space-between !important;
       align-items: center !important;
-      gap: 6px !important;
+      gap: 5px !important;
     }
 
     .fish-bubble-responsive {
-      width: calc((100% - 12px) / 3) !important;
+      width: calc((100% - 10px) / 3) !important;
       max-width: none !important;
       min-width: 0 !important;
-      flex: 0 0 calc((100% - 12px) / 3) !important;
+      flex: 0 0 calc((100% - 10px) / 3) !important;
     }
 
-    /* تكبير حجم الخط ووضوح الحركات (حوالي 1.5rem إلى 2.4rem لتظهر ممتازة) */
+    /* تكبير الخط والحركات بوضوح تام على الموبايل (وصلت إلى 2.7rem لتملأ المساحة بشكل مثالي) */
     .game-word-text {
-      font-size: clamp(1.5rem, 6.5vw, 2.4rem) !important;
+      font-size: clamp(2.1rem, 8vw, 2.7rem) !important;
       font-weight: 900 !important;
-      line-height: 1.5 !important;
+      line-height: 1.6 !important;
     }
 
     .controls-bar-responsive {
@@ -11235,8 +11234,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   /* الموبايلات الصغيرة جدًا */
   @media (max-width: 360px) {
     .fish-area-responsive {
-      width: 94% !important;
-      right: 3% !important;
+      width: 96% !important;
+      right: 2% !important;
       gap: 4px !important;
     }
 
@@ -11246,8 +11245,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .game-word-text {
-      font-size: clamp(1.35rem, 6vw, 1.9rem) !important;
-      line-height: 1.5 !important;
+      font-size: clamp(1.8rem, 7.5vw, 2.3rem) !important;
+      line-height: 1.6 !important;
     }
 
     .win-box {
