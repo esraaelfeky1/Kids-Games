@@ -11173,13 +11173,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .game-word-text {
       font-size: clamp(1.8rem, 6vw, 2.4rem) !important;
       font-weight: 900 !important;
-      line-height: 1.6 !important;
+      line-height: 1.10!important;
       letter-spacing: 0.5px !important;
     }
 
     /* تصغير الأزرار قليلاً بمقدار 10 بكسل على الموبايل */
     .controls-bar-responsive {
-      bottom: 75px !important;
+      bottom: 80px !important;
       left: 12px !important;
       gap: 8px !important;
     }
