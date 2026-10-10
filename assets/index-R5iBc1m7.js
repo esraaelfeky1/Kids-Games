@@ -10762,7 +10762,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     letter-spacing: -1px;
   }
 
-  /* الخلفيات الافتراضية */
   .bg-desktop {
     display: block;
   }
@@ -10772,7 +10771,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* =========================================
-     التابلت: من 641 إلى 1024 بيكسل
+     التابلت: 641px - 1024px
      ========================================= */
   @media (min-width: 641px) and (max-width: 1024px) {
     .bg-desktop {
@@ -10783,15 +10782,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       display: none !important;
     }
 
-    /* البطريق: 50px ناحية اليمين وأمام الجسر */
+    /* تحريك البطريق 40px إضافية ناحية اليمين */
     .penguin-wrapper {
-      left: calc(2% + 50px) !important;
+      left: calc(2% + 90px) !important;
       bottom: 49% !important;
       width: 100px !important;
       z-index: 20 !important;
     }
 
-    /* تصغير الجسر وإنزاله 15px */
+    /* تكبير المربعات الشفافة */
     .bridge-area {
       width: 60% !important;
       left: 56% !important;
@@ -10801,11 +10800,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .bridge-slot {
-      width: 68px !important;
-      height: 50px !important;
+      width: 76px !important;
+      height: 56px !important;
     }
 
-    /* تصغير مكعبات الحروف السفلية */
+    /* تكبير مكعبات الثلج السفلية */
     .words-tray {
       bottom: 20% !important;
       max-width: 540px !important;
@@ -10813,18 +10812,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .slot-container {
-      width: 90px !important;
-      height: 55px !important;
+      width: 98px !important;
+      height: 60px !important;
     }
 
-    /* الأزرار أسفل بمقدار 40px */
+    /* تصغير الحروف قليلًا */
+    .tray-letter-text {
+      font-size: 25px !important;
+    }
+
+    .placed-letter-text {
+      font-size: 24px !important;
+    }
+
+    /* الأزرار أسفل 40px إضافية */
     .bottom-section {
       bottom: 35px !important;
     }
   }
 
   /* =========================================
-     اللابتوب: من 1025 بيكسل فأكثر
+     اللابتوب: 1025px فأكثر
      ========================================= */
   @media (min-width: 1025px) {
     .bg-desktop {
@@ -10835,15 +10843,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       display: none !important;
     }
 
-    /* البطريق: 50px ناحية اليمين وأمام الجسر */
+    /* تحريك البطريق 40px إضافية ناحية اليمين */
     .penguin-wrapper {
-      left: calc(4% + 50px) !important;
+      left: calc(4% + 90px) !important;
       bottom: 47.5% !important;
       width: 105px !important;
       z-index: 20 !important;
     }
 
-    /* تصغير الجسر وإنزاله 15px */
+    /* تكبير المربعات الشفافة */
     .bridge-area {
       top: calc(52% + 15px) !important;
       gap: 5px !important;
@@ -10851,29 +10859,38 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .bridge-slot {
-      width: 75px !important;
-      height: 52px !important;
+      width: 84px !important;
+      height: 60px !important;
     }
 
-    /* تصغير مكعبات الحروف السفلية */
+    /* تكبير مكعبات الثلج السفلية */
     .words-tray {
       bottom: 17% !important;
       gap: 6px 10px !important;
     }
 
     .slot-container {
-      width: 95px !important;
-      height: 58px !important;
+      width: 105px !important;
+      height: 62px !important;
     }
 
-    /* الأزرار أسفل بمقدار 40px */
+    /* تصغير الحروف قليلًا */
+    .tray-letter-text {
+      font-size: 27px !important;
+    }
+
+    .placed-letter-text {
+      font-size: 26px !important;
+    }
+
+    /* الأزرار أسفل 40px إضافية */
     .bottom-section {
       bottom: 35px !important;
     }
   }
 
   /* =========================================
-     الموبايل: الحفاظ على الإعدادات الأصلية
+     الموبايل: الإعدادات الأصلية بدون تغيير
      ========================================= */
   @media (max-width: 640px) {
     .bg-desktop {
