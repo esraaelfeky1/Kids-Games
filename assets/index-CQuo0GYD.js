@@ -21550,28 +21550,29 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ====================================================
-           تعديلات اللابتوب والتابلت بناءً على التوجيهات الجديدة
+           تعديلات اللابتوب والتابلت (رفع الصاروخ 30 بكسل للأعلى)
            ================================================    */
         @media (min-width: 600px) {
           .game-container {
             --board-width: 460px;          
             --board-margin-top: -15px;     
             --sentence-size: 1.55rem;      
-            --sentence-margin-top: -90px;  /* رفع الجمل للأعلى بمقدار 30 بكسل إضافية (-30px - 30px) */
-            --sentence-margin-right: 45px; /* إزاحة الجمل يميناً بمقدار 10px + 25px = 35px */
-            --badge-top: calc(4% + 80px);  /* إنزال كلمة "الجملة" نحو الأسفل بمقدار 30 بكسل إضافية */
-            --badge-margin-right: -60px;   /* إزاحة كلمة "الجملة" يميناً بمقدار 20px + 20px = 40px */
-            --badge-text-size: 1.05rem;    /* تكبير حجم كلمة "الجملة" قليلاً */
+            --sentence-margin-top: -110px; 
+            --sentence-translateX: 20px;   
+            
+            --badge-top: calc(4% + 40px);  
+            --badge-translateX: 20px;      
+            --badge-text-size: 1.05rem;    
 
             --bubble-size: 78px;           
             --bubbles-gap: 20px;           
-            --bubbles-y: -125px;           /* رفع الاختيارات الثلاثة للأعلى بمقدار 30 بكسل إضافية (-95px - 30px) */
+            --bubbles-y: -155px;           
             --symbol-size: 1.9rem;         
 
             --astro-width: 200px;          
             --astro-y: 115px;              
             --rocket-width: 110px;          
-            --rocket-y: 115px;             
+            --rocket-y: 85px;              /* رفع الصاروخ للأعلى بمقدار 30 بكسل (115px - 30px) */
 
             --title-size: 1.45rem;         
             --sub-size: 1.05rem;           
@@ -21625,7 +21626,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .board-badge-text { 
             font-size: var(--badge-text-size) !important; 
             padding: 3px 16px !important; 
-            margin-right: var(--badge-margin-right) !important; 
+            transform: translateX(var(--badge-translateX)) !important; 
           }
         }
 
@@ -21639,8 +21640,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             --sentence-size: 1.35rem;      
             --sentence-margin-top: -24px;  
             --badge-top: 12%; 
-            --sentence-margin-right: 0px;
-            --badge-margin-right: 0px;
+            --sentence-translateX: 0px;
+            --badge-translateX: 0px;
             --badge-text-size: 0.75rem;
 
             --bubble-size: 72px;           
@@ -21704,6 +21705,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           border-radius: 8px; 
           font-weight: bold; 
           z-index: 3; 
+          transform: translateX(var(--badge-translateX, 0));
         }
         .sentence-text { 
           color: white; 
@@ -21712,7 +21714,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           text-align: center; 
           margin: 0; 
           margin-top: var(--sentence-margin-top) !important; 
-          margin-right: var(--sentence-margin-right) !important;
+          transform: translateX(var(--sentence-translateX, 0));
           text-shadow: 0 2px 6px rgba(0,0,0,0.8); 
         }
 
@@ -21765,7 +21767,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         .win-modal h2 { margin: 10px 0 4px; font-size: 1.25rem; color: #0f172a; }
         .win-score { margin: 4px 0; font-size: 1rem; color: #475569; font-weight: bold; }
         .win-actions { display: flex; justify-content: center; gap: 12px; margin-top: 10px; }
-        .win-btn { width: 40px; height: 42px; border-radius: 50%; border: 2px solid #bfdbfe; background: #eff6ff; color: #1d4ed8; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+        .win-btn { width: 40px; height: 42px; border-radius: 50%; border: 2px solid #bfdbfe; background: #eff6ff; color: #1d4ed8; cursor: pointer; display: flex; align-items: center; justifyContent: center; }
         .win-btn.highlight { background: #1d4ed8; color: white; border: none; }
       `})]})}var Pj=`/Kids-Games/assets/sun-DwZ77ogM.png`,Fj=`/Kids-Games/assets/cloud1-DwOllVqJ.png`,Ij=`/Kids-Games/assets/birds-CAN-2KM3.png`;function Lj(){let[e,t]=(0,b.useState)(null);return(0,N.jsxs)(`div`,{style:Rj.wrapper,children:[(0,N.jsx)(`style`,{children:`
           @keyframes float {
