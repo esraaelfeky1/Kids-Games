@@ -8158,7 +8158,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (min-width: 1025px) {
     .targets-row {
       top: 28% !important;
-      flex-direction: row !important;
     }
 
     .target-card {
@@ -8179,9 +8178,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       width: 250px !important;
     }
 
+    /* إزاحة السهم لليسار قليلاً للاب توب */
     .arrow-element {
       width: 110px !important;
-      left: 80px !important;
+      left: 80px !important; /* تم نقله يساراً من 110px إلى 80px */
       bottom: 75px !important; 
     }
 
@@ -8225,9 +8225,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       width: 210px !important;
     }
 
+    /* إزاحة السهم لليسار قليلاً للتابلت */
     .arrow-element {
       width: 95px !important;
-      left: 65px !important;
+      left: 65px !important; /* تم نقله يساراً من 90px إلى 65px */
       bottom: 60px !important; 
     }
 
@@ -8252,46 +8253,43 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       position: fixed !important;
     }
 
-    /* المربعات جنب بعضها فوق بالأعلى (مثل اللاب) */
     .targets-row {
-      top: 30% !important;
-      left: 50% !important;
-      right: auto !important;
-      transform: translate(-50%, -50%) !important;
-      flex-direction: row !important;
+      top: 50% !important;
+      left: auto !important;
+      right: 15px !important;
+      transform: translateY(-50%) !important;
+      flex-direction: column !important;
       gap: 12px !important;
     }
 
     .target-card {
-      width: 90px !important;
-      height: 98px !important;
+      width: 95px !important;
+      height: 95px !important;
       flex-shrink: 0 !important;
     }
 
     .target-text {
-      font-size: 24px !important;
+      font-size: 26px !important;
     }
 
-    /* تكبير الولد والسهم على الموبايل */
     .shooter-section {
-      left: 5px !important;
-      bottom: 15px !important;
+      left: 10px !important;
+      bottom: 70px !important;
     }
 
     .boy-img {
-      width: 210px !important; /* تم تكبيره */
+      width: 180px !important;
     }
 
     .arrow-element {
-      width: 95px !important; /* تم تكبيره */
-      left: 70px !important;
-      bottom: 65px !important;
+      width: 85px !important;
+      left: 80px !important;
+      bottom: 80px !important;
       transform-origin: left center !important;
     }
 
-    /* رفع الأزرار لأعلى قليلاً على الموبايل */
     .bottom-section-center {
-      bottom: 30px !important; /* تم رفعها لأعلى */
+      bottom: 15px !important;
       left: 50% !important;
       right: auto !important;
       transform: translateX(-50%) !important;
