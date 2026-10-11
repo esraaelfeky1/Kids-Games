@@ -11340,14 +11340,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
     .instruction-responsive { 
       font-size: 1.05rem !important; 
-      margin-top: -2px !important; 
+      margin-top: -5px !important; 
       padding: 2px 14px !important; 
     }
     
     .main-board-responsive { 
-      width: 28vw !important; 
-      max-width: 330px !important; 
-      bottom: calc(18% + 15px) !important; 
+      width: 31vw !important; 
+      max-width: 360px !important; 
+      bottom: calc(21% + 15px) !important; 
     }
     
     .word-text-responsive { font-size: 3.2rem !important; }
@@ -11364,14 +11364,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
     .instruction-responsive { 
       font-size: 1.1rem !important; 
-      margin-top: -4px !important; 
+      margin-top: -7px !important; 
       padding: 2px 12px !important; 
     }
     
     .main-board-responsive { 
-      width: 38vw !important; 
-      max-width: 320px !important; 
-      bottom: calc(20% + 15px) !important; 
+      width: 41vw !important; 
+      max-width: 350px !important; 
+      bottom: calc(23% + 15px) !important; 
     }
     .boy-responsive { width: 18vw !important; max-width: 180px !important; }
     .cow-responsive { width: 18vw !important; max-width: 180px !important; }
