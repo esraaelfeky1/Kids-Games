@@ -8115,7 +8115,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       font-size: 16px !important;
     }
   }
-`,zC={container:{width:`100vw`,height:`100dvh`,minHeight:`100dvh`,position:`fixed`,top:0,left:0,overflow:`hidden`,fontFamily:`'Cairo', sans-serif`,touchAction:`none`},bg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`,zIndex:-1},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:999999},winBox:{background:`white`,padding:`14px 18px`,borderRadius:`16px`,textAlign:`center`,width:`85%`,maxWidth:`260px`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`},winContent:{marginBottom:`10px`},resultButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtnSmall:{width:`36px`,height:`36px`,borderRadius:`50%`,border:`none`,background:`#1E88E5`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.2)`},topBar:{position:`absolute`,top:`8px`,width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,padding:`0 12px`,boxSizing:`border-box`,zIndex:10},box:{background:`white`,padding:`5px 12px`,borderRadius:10,fontWeight:`bold`,fontSize:`clamp(14px, 2vw, 16px)`,boxShadow:`0 3px 6px rgba(0,0,0,0.15)`,color:`#333`,display:`flex`,alignItems:`center`,justifyContent:`center`,gap:`4px`,whiteSpace:`nowrap`},headerWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`4px`,flex:1,padding:`0 6px`},mainTitleBox:{background:`#ffffffee`,padding:`3px 18px`,borderRadius:`12px`,border:`2px solid #1E88E5`,color:`#1565C0`,fontWeight:`900`,boxShadow:`0 2px 5px rgba(0,0,0,0.12)`,whiteSpace:`nowrap`},subTitleBox:{background:`#ffffffee`,padding:`2px 12px`,borderRadius:`8px`,border:`2px solid #4CAF50`,color:`#2E7D32`,fontWeight:`bold`,boxShadow:`0 2px 4px rgba(0,0,0,0.1)`,textAlign:`center`,whiteSpace:`nowrap`,width:`max-content`},gameArea:{position:`absolute`,top:`56%`,left:`50%`,transform:`translate(-50%, -45%)`,display:`flex`,flexDirection:`column`,alignItems:`center`,width:`90%`,maxWidth:`750px`,justifyContent:`center`},goalContainer:{position:`relative`,width:`100%`,height:`300px`,display:`flex`,justifyContent:`center`,alignItems:`flex-end`},netImg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`contain`,top:0,left:0},cardsRow:{position:`absolute`,bottom:`60px`,display:`flex`,gap:`25px`,zIndex:2,justifyContent:`center`,alignItems:`center`},cardWrapper:{width:`110px`,height:`110px`,position:`relative`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`},cardBg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`contain`},cardText:{position:`absolute`,fontSize:`28px`,fontWeight:`900`,color:`#1A237E`,fontFamily:`'Traditional Arabic', 'Cairo', sans-serif`},ballContainer:{marginTop:`20px`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:5},ballImg:{width:`105px`,height:`105px`,objectFit:`contain`,cursor:`pointer`},bottomSection:{position:`absolute`,bottom:`42px`,left:`50%`,transform:`translateX(-50%)`,zIndex:10},buttonsContainer:{display:`flex`,gap:`12px`},circleBtn:{width:`clamp(40px, 4vw, 46px)`,height:`clamp(40px, 4vw, 46px)`,borderRadius:`50%`,border:`none`,background:`#1E88E5`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.3)`}},BC=`/Kids-Games/assets/archerybg-DzGpTkD1.jpeg`,VC=`/Kids-Games/assets/boystand-CCMAnVkh.png`,HC=`/Kids-Games/assets/boybow-DrAOSGwe.png`,UC=`/Kids-Games/assets/2-68g8Jrvq.png`,WC=[{id:1,targetWord:`كِتَابٌ`,options:[{id:`o1`,text:`كِتَابًا`,type:`fatha`},{id:`o2`,text:`كِتَابٌ`,type:`damma`},{id:`o3`,text:`كِتَابٍ`,type:`kasra`}]},{id:2,targetWord:`قَلَمٌ`,options:[{id:`o1`,text:`قَلَمٌ`,type:`damma`},{id:`o2`,text:`قَلَمًا`,type:`fatha`},{id:`o3`,text:`قَلَمٍ`,type:`kasra`}]},{id:3,targetWord:`بَيْتٌ`,options:[{id:`o1`,text:`بَيْتٍ`,type:`kasra`},{id:`o2`,text:`بَيْتًا`,type:`fatha`},{id:`o3`,text:`بَيْتٌ`,type:`damma`}]},{id:4,targetWord:`وَلَدٌ`,options:[{id:`o1`,text:`وَلَدٌ`,type:`damma`},{id:`o2`,text:`وَلَدًا`,type:`fatha`},{id:`o3`,text:`وَلَدٍ`,type:`kasra`}]},{id:5,targetWord:`شَجَرَةٌ`,options:[{id:`o1`,text:`شَجَرَةً`,type:`fatha`},{id:`o2`,text:`شَجَرَةٌ`,type:`damma`},{id:`o3`,text:`شَجَرَةٍ`,type:`kasra`}]},{id:6,targetWord:`سَيَّارَةٌ`,options:[{id:`o1`,text:`سَيَّارَةٍ`,type:`kasra`},{id:`o2`,text:`سَيَّارَةً`,type:`fatha`},{id:`o3`,text:`سَيَّارَةٌ`,type:`damma`}]},{id:7,targetWord:`زَهْرَةٌ`,options:[{id:`o1`,text:`زَهْرَةٌ`,type:`damma`},{id:`o2`,text:`زَهْرَةً`,type:`fatha`},{id:`o3`,text:`زَهْرَةٍ`,type:`kasra`}]}];function GC(){let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(!1),[p,m]=(0,b.useState)({x:0,y:0,angle:0,isShooting:!1}),h=(0,b.useRef)(null),g=WC[t];(0,b.useEffect)(()=>{if(l)return;let e=setInterval(()=>{o(e=>e+1)},1e3);return()=>clearInterval(e)},[l]);let _=()=>{n(0),i(0),o(0),u(!1),f(!1),m({x:0,y:0,angle:0,isShooting:!1})},v=e=>{if(s)try{new Audio(e).play().catch(()=>{})}catch{}},y=(e,r,a)=>{if(p.isShooting)return;f(!0);let o=a.currentTarget.getBoundingClientRect(),s=o.left+o.width/2,c=o.top+o.height/2,l=(window.innerWidth<=768?[{x:-40,y:0},{x:-40,y:0},{x:-40,y:0}]:[{x:-19,y:-14},{x:-18,y:-14},{x:-20,y:-17}])[r]||{x:0,y:0},d=s+l.x,g=c+l.y,_=window.innerWidth*.18,y=window.innerHeight*.75;if(h.current){let e=h.current.getBoundingClientRect();_=e.left,y=e.top+e.height/2}let b=d-_,x=g-y;m({x:b,y:x,angle:180/Math.PI*Math.atan2(x,b),isShooting:!0}),setTimeout(()=>{e.type===`damma`?(v(z),i(e=>e+10),setTimeout(()=>{t+1<WC.length?(n(e=>e+1),m({x:0,y:0,angle:0,isShooting:!1}),f(!1)):u(!0)},600)):(v(ho),setTimeout(()=>{m({x:0,y:0,angle:0,isShooting:!1}),f(!1)},500))},350)};return(0,N.jsxs)(`div`,{style:qC.container,children:[(0,N.jsx)(`style`,{children:KC}),(0,N.jsx)(`img`,{src:BC,alt:`الخلفية`,style:qC.bg}),(0,N.jsx)(Fg,{children:l&&(0,N.jsx)(V.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:qC.overlay,children:(0,N.jsxs)(`div`,{style:qC.winBox,children:[(0,N.jsxs)(`div`,{style:qC.winContent,children:[(0,N.jsx)(ra,{size:38,color:`#FFD700`}),(0,N.jsx)(`h1`,{style:{margin:`6px 0`,fontSize:`18px`,color:`#333`},children:`أحسنت يا بطل الرماية 🎯`}),(0,N.jsxs)(`p`,{style:{fontSize:`16px`,fontWeight:`bold`,color:`#4CAF50`,margin:`4px 0`},children:[`النتيجة: `,r]})]}),(0,N.jsxs)(`div`,{style:qC.resultButtons,children:[(0,N.jsx)(`button`,{onClick:_,style:qC.circleBtnSmall,children:(0,N.jsx)(I,{size:19})}),(0,N.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:qC.circleBtnSmall,children:(0,N.jsx)(P,{size:19})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:qC.circleBtnSmall,children:(0,N.jsx)(F,{size:19})})]})]})})}),(0,N.jsxs)(`div`,{style:qC.topBar,children:[(0,N.jsxs)(`div`,{style:qC.box,children:[`⏱️ `,Math.floor(a/60),`:`,String(a%60).padStart(2,`0`)]}),(0,N.jsxs)(`div`,{style:qC.headerWrapper,className:`header-wrapper`,children:[(0,N.jsx)(`div`,{style:qC.mainTitleBox,className:`main-title-text`,children:`لعبة رمي السهم`}),(0,N.jsx)(`div`,{style:qC.subTitleBox,className:`sub-title-text`,children:`اضغط على الكلمة التي تحتوي على تنوين الضم`})]}),(0,N.jsxs)(`div`,{style:qC.box,children:[`⭐ `,r]})]}),(0,N.jsx)(`div`,{style:qC.targetSection,className:`targets-row`,children:g.options.map((e,t)=>(0,N.jsxs)(V.div,{whileHover:{scale:1.05},whileTap:{scale:.95},onClick:n=>y(e,t,n),style:qC.targetWrapper,className:`target-card`,children:[(0,N.jsx)(`img`,{src:UC,alt:`لوحة الهدف`,style:qC.targetImg}),(0,N.jsx)(`span`,{style:qC.targetText,className:`target-text`,children:e.text})]},e.id))}),(0,N.jsxs)(`div`,{style:qC.shooterSection,className:`shooter-section`,children:[(0,N.jsx)(`img`,{src:d?HC:VC,alt:`الولد`,style:qC.boyImg,className:`boy-img`}),d&&(0,N.jsx)(V.img,{ref:h,src:`/Kids-Games/assets/arrow-D_Q2YZh1.png`,alt:`السهم`,style:qC.arrowImg,className:`arrow-element`,animate:p.isShooting?{x:p.x,y:p.y,rotate:p.angle,scale:.8}:{x:0,y:0,rotate:0,scale:1},transition:{duration:.35,ease:`easeOut`}})]}),(0,N.jsx)(`div`,{style:qC.bottomSection,className:`bottom-section-center`,children:(0,N.jsxs)(`div`,{style:qC.buttonsContainer,children:[(0,N.jsx)(`button`,{onClick:()=>c(!s),style:qC.circleBtn,children:s?(0,N.jsx)(L,{size:18}):(0,N.jsx)(R,{size:18})}),(0,N.jsx)(`button`,{onClick:_,style:qC.circleBtn,children:(0,N.jsx)(I,{size:18})}),(0,N.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:qC.circleBtn,children:(0,N.jsx)(P,{size:18})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:qC.circleBtn,children:(0,N.jsx)(F,{size:18})})]})})]})}var KC=`
+`,zC={container:{width:`100vw`,height:`100dvh`,minHeight:`100dvh`,position:`fixed`,top:0,left:0,overflow:`hidden`,fontFamily:`'Cairo', sans-serif`,touchAction:`none`},bg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`cover`,zIndex:-1},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:999999},winBox:{background:`white`,padding:`14px 18px`,borderRadius:`16px`,textAlign:`center`,width:`85%`,maxWidth:`260px`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`},winContent:{marginBottom:`10px`},resultButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtnSmall:{width:`36px`,height:`36px`,borderRadius:`50%`,border:`none`,background:`#1E88E5`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.2)`},topBar:{position:`absolute`,top:`8px`,width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,padding:`0 12px`,boxSizing:`border-box`,zIndex:10},box:{background:`white`,padding:`5px 12px`,borderRadius:10,fontWeight:`bold`,fontSize:`clamp(14px, 2vw, 16px)`,boxShadow:`0 3px 6px rgba(0,0,0,0.15)`,color:`#333`,display:`flex`,alignItems:`center`,justifyContent:`center`,gap:`4px`,whiteSpace:`nowrap`},headerWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`4px`,flex:1,padding:`0 6px`},mainTitleBox:{background:`#ffffffee`,padding:`3px 18px`,borderRadius:`12px`,border:`2px solid #1E88E5`,color:`#1565C0`,fontWeight:`900`,boxShadow:`0 2px 5px rgba(0,0,0,0.12)`,whiteSpace:`nowrap`},subTitleBox:{background:`#ffffffee`,padding:`2px 12px`,borderRadius:`8px`,border:`2px solid #4CAF50`,color:`#2E7D32`,fontWeight:`bold`,boxShadow:`0 2px 4px rgba(0,0,0,0.1)`,textAlign:`center`,whiteSpace:`nowrap`,width:`max-content`},gameArea:{position:`absolute`,top:`56%`,left:`50%`,transform:`translate(-50%, -45%)`,display:`flex`,flexDirection:`column`,alignItems:`center`,width:`90%`,maxWidth:`750px`,justifyContent:`center`},goalContainer:{position:`relative`,width:`100%`,height:`300px`,display:`flex`,justifyContent:`center`,alignItems:`flex-end`},netImg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`contain`,top:0,left:0},cardsRow:{position:`absolute`,bottom:`60px`,display:`flex`,gap:`25px`,zIndex:2,justifyContent:`center`,alignItems:`center`},cardWrapper:{width:`110px`,height:`110px`,position:`relative`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`},cardBg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`contain`},cardText:{position:`absolute`,fontSize:`28px`,fontWeight:`900`,color:`#1A237E`,fontFamily:`'Traditional Arabic', 'Cairo', sans-serif`},ballContainer:{marginTop:`20px`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:5},ballImg:{width:`105px`,height:`105px`,objectFit:`contain`,cursor:`pointer`},bottomSection:{position:`absolute`,bottom:`42px`,left:`50%`,transform:`translateX(-50%)`,zIndex:10},buttonsContainer:{display:`flex`,gap:`12px`},circleBtn:{width:`clamp(40px, 4vw, 46px)`,height:`clamp(40px, 4vw, 46px)`,borderRadius:`50%`,border:`none`,background:`#1E88E5`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.3)`}},BC=`/Kids-Games/assets/archerybg-DzGpTkD1.jpeg`,VC=`/Kids-Games/assets/boystand-CCMAnVkh.png`,HC=`/Kids-Games/assets/boybow-DrAOSGwe.png`,UC=`/Kids-Games/assets/2-68g8Jrvq.png`,WC=[{id:1,targetWord:`كِتَابٌ`,options:[{id:`o1`,text:`كِتَابًا`,type:`fatha`},{id:`o2`,text:`كِتَابٌ`,type:`damma`},{id:`o3`,text:`كِتَابٍ`,type:`kasra`}]},{id:2,targetWord:`قَلَمٌ`,options:[{id:`o1`,text:`قَلَمٌ`,type:`damma`},{id:`o2`,text:`قَلَمًا`,type:`fatha`},{id:`o3`,text:`قَلَمٍ`,type:`kasra`}]},{id:3,targetWord:`بَيْتٌ`,options:[{id:`o1`,text:`بَيْتٍ`,type:`kasra`},{id:`o2`,text:`بَيْتًا`,type:`fatha`},{id:`o3`,text:`بَيْتٌ`,type:`damma`}]},{id:4,targetWord:`وَلَدٌ`,options:[{id:`o1`,text:`وَلَدٌ`,type:`damma`},{id:`o2`,text:`وَلَدًا`,type:`fatha`},{id:`o3`,text:`وَلَدٍ`,type:`kasra`}]},{id:5,targetWord:`شَجَرَةٌ`,options:[{id:`o1`,text:`شَجَرَةً`,type:`fatha`},{id:`o2`,text:`شَجَرَةٌ`,type:`damma`},{id:`o3`,text:`شَجَرَةٍ`,type:`kasra`}]},{id:6,targetWord:`سَيَّارَةٌ`,options:[{id:`o1`,text:`سَيَّارَةٍ`,type:`kasra`},{id:`o2`,text:`سَيَّارَةً`,type:`fatha`},{id:`o3`,text:`سَيَّارَةٌ`,type:`damma`}]},{id:7,targetWord:`زَهْرَةٌ`,options:[{id:`o1`,text:`زَهْرَةٌ`,type:`damma`},{id:`o2`,text:`زَهْرَةً`,type:`fatha`},{id:`o3`,text:`زَهْرَةٍ`,type:`kasra`}]}];function GC(){let e=j(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(!1),[p,m]=(0,b.useState)({x:0,y:0,angle:0,isShooting:!1}),h=(0,b.useRef)(null),g=WC[t];(0,b.useEffect)(()=>{if(l)return;let e=setInterval(()=>{o(e=>e+1)},1e3);return()=>clearInterval(e)},[l]);let _=()=>{n(0),i(0),o(0),u(!1),f(!1),m({x:0,y:0,angle:0,isShooting:!1})},v=e=>{if(s)try{new Audio(e).play().catch(()=>{})}catch{}},y=(e,r,a)=>{if(p.isShooting)return;f(!0);let o=a.currentTarget.getBoundingClientRect(),s=o.left+o.width/2,c=o.top+o.height/2,l=(window.innerWidth<=600&&window.innerHeight>window.innerWidth?[{x:-40,y:0},{x:-40,y:0},{x:-40,y:0}]:[{x:-19,y:-14},{x:-18,y:-14},{x:-20,y:-17}])[r]||{x:0,y:0},d=s+l.x,g=c+l.y,_=window.innerWidth*.18,y=window.innerHeight*.75;if(h.current){let e=h.current.getBoundingClientRect();_=e.left,y=e.top+e.height/2}let b=d-_,x=g-y;m({x:b,y:x,angle:180/Math.PI*Math.atan2(x,b),isShooting:!0}),setTimeout(()=>{e.type===`damma`?(v(z),i(e=>e+10),setTimeout(()=>{t+1<WC.length?(n(e=>e+1),m({x:0,y:0,angle:0,isShooting:!1}),f(!1)):u(!0)},600)):(v(ho),setTimeout(()=>{m({x:0,y:0,angle:0,isShooting:!1}),f(!1)},500))},350)};return(0,N.jsxs)(`div`,{style:qC.container,children:[(0,N.jsx)(`style`,{children:KC}),(0,N.jsx)(`img`,{src:BC,alt:`الخلفية`,style:qC.bg}),(0,N.jsx)(Fg,{children:l&&(0,N.jsx)(V.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:qC.overlay,children:(0,N.jsxs)(`div`,{style:qC.winBox,children:[(0,N.jsxs)(`div`,{style:qC.winContent,children:[(0,N.jsx)(ra,{size:38,color:`#FFD700`}),(0,N.jsx)(`h1`,{style:{margin:`6px 0`,fontSize:`18px`,color:`#333`},children:`أحسنت يا بطل الرماية 🎯`}),(0,N.jsxs)(`p`,{style:{fontSize:`16px`,fontWeight:`bold`,color:`#4CAF50`,margin:`4px 0`},children:[`النتيجة: `,r]})]}),(0,N.jsxs)(`div`,{style:qC.resultButtons,children:[(0,N.jsx)(`button`,{onClick:_,style:qC.circleBtnSmall,children:(0,N.jsx)(I,{size:19})}),(0,N.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:qC.circleBtnSmall,children:(0,N.jsx)(P,{size:19})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:qC.circleBtnSmall,children:(0,N.jsx)(F,{size:19})})]})]})})}),(0,N.jsxs)(`div`,{style:qC.topBar,children:[(0,N.jsxs)(`div`,{style:qC.box,children:[`⏱️ `,Math.floor(a/60),`:`,String(a%60).padStart(2,`0`)]}),(0,N.jsxs)(`div`,{style:qC.headerWrapper,id:`game-header`,children:[(0,N.jsx)(`div`,{style:qC.mainTitleBox,className:`main-title-text`,children:`لعبة رمي السهم`}),(0,N.jsx)(`div`,{style:qC.subTitleBox,className:`sub-title-text`,children:`اضغط على الكلمة التي تحتوي على تنوين الضم`})]}),(0,N.jsxs)(`div`,{style:qC.box,children:[`⭐ `,r]})]}),(0,N.jsx)(`div`,{style:qC.targetSection,className:`targets-row`,children:g.options.map((e,t)=>(0,N.jsxs)(V.div,{whileHover:{scale:1.05},whileTap:{scale:.95},onClick:n=>y(e,t,n),style:qC.targetWrapper,className:`target-card`,children:[(0,N.jsx)(`img`,{src:UC,alt:`لوحة الهدف`,style:qC.targetImg}),(0,N.jsx)(`span`,{style:qC.targetText,className:`target-text`,children:e.text})]},e.id))}),(0,N.jsxs)(`div`,{style:qC.shooterSection,className:`shooter-section`,children:[(0,N.jsx)(`img`,{src:d?HC:VC,alt:`الولد`,style:qC.boyImg,className:`boy-img`}),d&&(0,N.jsx)(V.img,{ref:h,src:`/Kids-Games/assets/arrow-D_Q2YZh1.png`,alt:`السهم`,style:qC.arrowImg,className:`arrow-element`,animate:p.isShooting?{x:p.x,y:p.y,rotate:p.angle,scale:.8}:{x:0,y:0,rotate:0,scale:1},transition:{duration:.35,ease:`easeOut`}})]}),(0,N.jsx)(`div`,{style:qC.bottomSection,className:`bottom-section-center`,children:(0,N.jsxs)(`div`,{style:qC.buttonsContainer,children:[(0,N.jsx)(`button`,{onClick:()=>c(!s),style:qC.circleBtn,children:s?(0,N.jsx)(L,{size:18}):(0,N.jsx)(R,{size:18})}),(0,N.jsx)(`button`,{onClick:_,style:qC.circleBtn,children:(0,N.jsx)(I,{size:18})}),(0,N.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:qC.circleBtn,children:(0,N.jsx)(P,{size:18})}),(0,N.jsx)(`button`,{onClick:()=>e(`/home`),style:qC.circleBtn,children:(0,N.jsx)(F,{size:18})})]})})]})}var KC=`
   html,
   body,
   #root {
@@ -8144,7 +8144,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   .main-title-text {
-    font-size: clamp(18px, 2.2vw, 24px) !important;
+    font-size: clamp(16px, 2.2vw, 24px) !important;
   }
 
   .sub-title-text {
@@ -8153,128 +8153,104 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* =================================================
-     1. التابلت واللاب توب (من 769px فما فوق)
+     1. التنسيق الأساسي لجميع أجهزة التابلت واللاب توب (أفقي)
      ================================================= */
-  @media (min-width: 769px) {
-    /* المربعات الثلاثة أفقياً في منتصف الشاشة وتحت الفقرة بـ 10px إلى 15px */
-    .targets-row {
-      position: absolute !important;
-      top: 110px !important;
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-      display: flex !important;
-      flex-direction: row !important;
-      gap: 25px !important;
-      right: auto !important;
-    }
+  .targets-row {
+    position: absolute !important;
+    top: 110px !important; /* مسافة 10px إلى 15px أسفل الفقرة والعنوان */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    right: auto !important;
+    z-index: 5 !important;
+  }
 
-    .target-card {
-      width: 125px !important;
-      height: 135px !important;
-    }
+  .target-card {
+    width: clamp(95px, 12vw, 130px) !important;
+    height: clamp(105px, 13vw, 140px) !important;
+  }
 
-    .target-text {
-      font-size: 32px !important;
-    }
+  .target-text {
+    font-size: clamp(26px, 3vw, 34px) !important;
+  }
 
-    .shooter-section {
-      bottom: 25px !important;
-      left: 80px !important;
-    }
+  .shooter-section {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: clamp(20px, 8vw, 120px) !important;
+    z-index: 6 !important;
+  }
 
-    .boy-img {
-      width: 230px !important;
-    }
+  .boy-img {
+    width: clamp(170px, 22vw, 250px) !important;
+  }
 
-    .arrow-element {
-      width: 100px !important;
-      left: 75px !important;
-      bottom: 70px !important; 
-    }
+  .arrow-element {
+    width: clamp(80px, 10vw, 110px) !important;
+    left: clamp(55px, 7vw, 80px) !important;
+    bottom: clamp(55px, 7vw, 75px) !important; 
+  }
 
-    /* الأزرار في منتصف الشاشة تماماً في الأسفل */
-    .bottom-section-center {
-      position: absolute !important;
-      bottom: 25px !important;
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-      right: auto !important;
-    }
+  /* الأزرار في منتصف أسفل الشاشة تماماً لكل التابلت واللاب */
+  .bottom-section-center {
+    position: absolute !important;
+    bottom: 25px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    zIndex: 10 !important;
+  }
 
-    .bottom-section-center > div {
-      display: flex !important;
-      flex-direction: row !important;
-      gap: 12px !important;
-    }
+  .bottom-section-center > div {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px !important;
   }
 
   /* =================================================
-     2. الموبايل (حتى 768px)
+     2. الموبايل فقط (الشاشات الصغيرة جداً العمودية أقل من 600px)
      ================================================= */
-  @media (max-width: 768px) {
-    html,
-    body,
-    #root {
-      width: 100vw !important;
-      height: 100vh !important;
-      overflow: hidden !important;
-      position: fixed !important;
-    }
-
-    /* الأهداف عمودية على اليمين للموبايل */
+  @media (max-width: 600px) and (orientation: portrait) {
     .targets-row {
-      position: absolute !important;
       top: 40% !important;
       left: auto !important;
       right: 15px !important;
       transform: translateY(-50%) !important;
-      display: flex !important;
       flex-direction: column !important;
       gap: 8px !important;
     }
 
     .target-card {
-      width: 105px !important;
-      height: 105px !important;
-      flex-shrink: 0 !important;
+      width: 100px !important;
+      height: 100px !important;
     }
 
     .target-text {
-      font-size: 28px !important;
+      font-size: 26px !important;
     }
 
-    /* تعديل إحداثيات الولد لضمان ظهوره تماماً وعدم اختفائه */
     .shooter-section {
-      position: absolute !important;
       left: 10px !important;
       bottom: 90px !important; 
     }
 
     .boy-img {
-      width: 220px !important; 
-      display: block !important;
+      width: 210px !important; 
     }
 
     .arrow-element {
-      width: 95px !important;
-      left: 70px !important;
-      bottom: 65px !important;
-      transform-origin: left center !important;
+      width: 90px !important;
+      left: 65px !important;
+      bottom: 60px !important;
     }
 
-    /* الأزرار على الموبايل أكبر بـ 5px ونزلت لأسفل */
     .bottom-section-center {
-      position: absolute !important;
       bottom: 85px !important; 
       left: auto !important;
       right: 15px !important;
       transform: none !important;
-    }
-
-    .bottom-section-center > div {
-      gap: 8px !important;
-      display: flex !important;
-      flex-direction: row !important;
     }
 
     .bottom-section-center button {
@@ -8282,18 +8258,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       height: 42px !important;
       min-width: 42px !important;
       min-height: 42px !important;
-      padding: 0 !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-    }
-
-    .bottom-section-center button svg {
-      width: 20px !important;
-      height: 20px !important;
     }
   }
-`,qC={container:{width:`100vw`,height:`100vh`,minWidth:`100vw`,minHeight:`100vh`,maxWidth:`100vw`,maxHeight:`100vh`,position:`fixed`,top:0,left:0,right:0,bottom:0,overflow:`hidden`,fontFamily:`'Cairo', sans-serif`},bg:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,objectFit:`cover`,zIndex:-1,pointerEvents:`none`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:999999,overflow:`hidden`},winBox:{background:`white`,padding:`14px 18px`,borderRadius:`16px`,textAlign:`center`,width:`85%`,maxWidth:`260px`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`},winContent:{marginBottom:`10px`},resultButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtnSmall:{width:`36px`,height:`36px`,borderRadius:`50%`,border:`none`,background:`#8E24AA`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.2)`},topBar:{position:`absolute`,top:`6px`,left:0,width:`100%`,display:`flex`,justifyContent:`space-between`,padding:`0 15px`,boxSizing:`border-box`,zIndex:10,alignItems:`flex-start`},box:{background:`white`,padding:`5px 12px`,borderRadius:10,fontWeight:`bold`,fontSize:`clamp(14px, 1.8vw, 16px)`,boxShadow:`0 4px 8px rgba(0,0,0,0.15)`,color:`#333`},headerWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`3px`},mainTitleBox:{background:`#6A1B9A`,padding:`3px 12px`,borderRadius:`12px`,border:`2px solid #FFD700`,color:`#FFF`,fontWeight:`300`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`},subTitleBox:{background:`#ffffffee`,padding:`2px 14px`,borderRadius:`10px`,border:`2px solid #6A1B9A`,color:`#4A148C`,fontWeight:`bold`,boxShadow:`0 2px 5px rgba(0,0,0,0.1)`},targetSection:{position:`absolute`,top:`28%`,left:`50%`,transform:`translate(-50%, -50%)`,display:`flex`,gap:`25px`,zIndex:5,justifyContent:`center`},targetWrapper:{width:`110px`,height:`120px`,position:`relative`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`},targetImg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`contain`},targetText:{position:`absolute`,fontWeight:`900`,color:`#0D47A1`,fontFamily:`'Traditional Arabic', 'Cairo', sans-serif`},shooterSection:{position:`absolute`,bottom:`25px`,left:`120px`,zIndex:6,display:`flex`,alignItems:`flex-end`},boyImg:{width:`250px`,objectFit:`contain`},arrowImg:{position:`absolute`,left:`80px`,bottom:`75px`,width:`110px`,objectFit:`contain`,transformOrigin:`left center`},bottomSection:{position:`absolute`,bottom:`35px`,left:`50%`,transform:`translateX(-50%)`,zIndex:10},buttonsContainer:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtn:{width:`clamp(33px, 3.3vw, 39px)`,height:`clamp(33px, 3.3vw, 39px)`,borderRadius:`50%`,border:`none`,background:`#8E24AA`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.25)`}};function JC(){let e=j(),t=[{correct:`يَفِرُّ`,options:[`بَدِيع`,`كَاتِب`,`يَفِرُّ`]},{correct:`تَسُرُّ`,options:[`تَسُرُّ`,`شَفِيعُ`,`قَالَ`]},{correct:`يُحِقُّ`,options:[`عَادَ`,`يُحِقُّ`,`عَبَدَ`]},{correct:`يَظُنُّ`,options:[`يَظُنُّ`,`عَرَفَ`,`سَامِعُ`]},{correct:`يُرَدُّ`,options:[`شَمْسُ`,`رَفَعَ`,`يُرَدُّ`]},{correct:`مِقَصٌّ`,options:[`سَامِعُ`,`مِقَصٌّ`,`رَحَمَ`]},{correct:`قَوِيُّ`,options:[`قَوِيُّ`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(!0),[C,w]=(0,b.useState)(!1),T=(0,b.useRef)(null);(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[m]);let E={يَفِرُّ:`/Kids-Games/sounds/%D9%8A%D9%81%D8%B1.mp3`,تَسُرُّ:`/Kids-Games/sounds/%D9%8A%D8%B3%D8%B1.mp3`,يُحِقُّ:`/Kids-Games/sounds/%D9%8A%D8%AD%D9%82.mp3`,يَظُنُّ:`/Kids-Games/sounds/%D9%8A%D8%B8%D9%86.mp3`,يُرَدُّ:`/Kids-Games/sounds/%D9%8A%D8%B1%D8%AF.mp3`,مِقَصٌّ:`/Kids-Games/sounds/%D9%85%D9%82%D8%B5.mp3`,قَوِيُّ:`/Kids-Games/sounds/%D9%82%D9%88%D9%8A.mp3`},D=()=>{if(T.current){try{T.current.pause(),T.current.currentTime=0}catch(e){console.log(e)}T.current=null}},O=e=>{if(!x)return;let t=E[e];if(!t){console.log(`لم يتم العثور على ملف الصوت للكلمة:`,e);return}D();let n=new Audio;n.preload=`auto`,n.src=t,n.playbackRate=.85,n.volume=1,T.current=n,n.play().catch(e=>{console.log(`تعذر تشغيل الصوت تلقائياً:`,e)})},k=()=>{if(!x)return;let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(()=>{})},A=()=>{if(!x)return;let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(()=>{})},ee=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{O(n.correct)},300)};(0,b.useEffect)(()=>{ee(0)},[]);let te=()=>{C||(w(!0),O(i))},ne=e=>{te(),!(u||m)&&(d(e),e===i?(s(e=>e+1),_(!0),D(),k(),setTimeout(()=>{_(!1)},1200)):(D(),A()),setTimeout(()=>{let e=f+1;e>=7?(D(),h(!0),y(!0),setTimeout(()=>{y(!1)},2e3)):(p(e),ee(e))},900))},re=()=>{D(),s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),ee(0)},ie=()=>{D(),e(`/Nunation`)},ae=()=>{D(),e(`/home`)};return(0,b.useEffect)(()=>()=>{D()},[]),(0,N.jsxs)(`div`,{onClick:te,style:{width:`100%`,height:`100%`},children:[(0,N.jsx)(`style`,{children:`
+`,qC={container:{width:`100vw`,height:`100vh`,minWidth:`100vw`,minHeight:`100vh`,maxWidth:`100vw`,maxHeight:`100vh`,position:`fixed`,top:0,left:0,right:0,bottom:0,overflow:`hidden`,fontFamily:`'Cairo', sans-serif`},bg:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,objectFit:`cover`,zIndex:-1,pointerEvents:`none`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:999999,overflow:`hidden`},winBox:{background:`white`,padding:`14px 18px`,borderRadius:`16px`,textAlign:`center`,width:`85%`,maxWidth:`260px`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`},winContent:{marginBottom:`10px`},resultButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtnSmall:{width:`36px`,height:`36px`,borderRadius:`50%`,border:`none`,background:`#8E24AA`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.2)`},topBar:{position:`absolute`,top:`6px`,left:0,width:`100%`,display:`flex`,justifyContent:`space-between`,padding:`0 15px`,boxSizing:`border-box`,zIndex:10,alignItems:`flex-start`},box:{background:`white`,padding:`5px 12px`,borderRadius:10,fontWeight:`bold`,fontSize:`clamp(14px, 1.8vw, 16px)`,boxShadow:`0 4px 8px rgba(0,0,0,0.15)`,color:`#333`},headerWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`3px`},mainTitleBox:{background:`#6A1B9A`,padding:`3px 12px`,borderRadius:`12px`,border:`2px solid #FFD700`,color:`#FFF`,fontWeight:`300`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`},subTitleBox:{background:`#ffffffee`,padding:`2px 14px`,borderRadius:`10px`,border:`2px solid #6A1B9A`,color:`#4A148C`,fontWeight:`bold`,boxShadow:`0 2px 5px rgba(0,0,0,0.1)`},targetSection:{position:`absolute`,top:`110px`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`20px`,zIndex:5,justifyContent:`center`},targetWrapper:{width:`110px`,height:`120px`,position:`relative`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`},targetImg:{position:`absolute`,width:`100%`,height:`100%`,objectFit:`contain`},targetText:{position:`absolute`,fontWeight:`900`,color:`#0D47A1`,fontFamily:`'Traditional Arabic', 'Cairo', sans-serif`},shooterSection:{position:`absolute`,bottom:`25px`,left:`120px`,zIndex:6,display:`flex`,alignItems:`flex-end`},boyImg:{width:`250px`,objectFit:`contain`},arrowImg:{position:`absolute`,left:`80px`,bottom:`75px`,width:`110px`,objectFit:`contain`,transformOrigin:`left center`},bottomSection:{position:`absolute`,bottom:`35px`,left:`50%`,transform:`translateX(-50%)`,zIndex:10},buttonsContainer:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtn:{width:`clamp(33px, 3.3vw, 39px)`,height:`clamp(33px, 3.3vw, 39px)`,borderRadius:`50%`,border:`none`,background:`#8E24AA`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.25)`}};function JC(){let e=j(),t=[{correct:`يَفِرُّ`,options:[`بَدِيع`,`كَاتِب`,`يَفِرُّ`]},{correct:`تَسُرُّ`,options:[`تَسُرُّ`,`شَفِيعُ`,`قَالَ`]},{correct:`يُحِقُّ`,options:[`عَادَ`,`يُحِقُّ`,`عَبَدَ`]},{correct:`يَظُنُّ`,options:[`يَظُنُّ`,`عَرَفَ`,`سَامِعُ`]},{correct:`يُرَدُّ`,options:[`شَمْسُ`,`رَفَعَ`,`يُرَدُّ`]},{correct:`مِقَصٌّ`,options:[`سَامِعُ`,`مِقَصٌّ`,`رَحَمَ`]},{correct:`قَوِيُّ`,options:[`قَوِيُّ`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(!0),[C,w]=(0,b.useState)(!1),T=(0,b.useRef)(null);(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[m]);let E={يَفِرُّ:`/Kids-Games/sounds/%D9%8A%D9%81%D8%B1.mp3`,تَسُرُّ:`/Kids-Games/sounds/%D9%8A%D8%B3%D8%B1.mp3`,يُحِقُّ:`/Kids-Games/sounds/%D9%8A%D8%AD%D9%82.mp3`,يَظُنُّ:`/Kids-Games/sounds/%D9%8A%D8%B8%D9%86.mp3`,يُرَدُّ:`/Kids-Games/sounds/%D9%8A%D8%B1%D8%AF.mp3`,مِقَصٌّ:`/Kids-Games/sounds/%D9%85%D9%82%D8%B5.mp3`,قَوِيُّ:`/Kids-Games/sounds/%D9%82%D9%88%D9%8A.mp3`},D=()=>{if(T.current){try{T.current.pause(),T.current.currentTime=0}catch(e){console.log(e)}T.current=null}},O=e=>{if(!x)return;let t=E[e];if(!t){console.log(`لم يتم العثور على ملف الصوت للكلمة:`,e);return}D();let n=new Audio;n.preload=`auto`,n.src=t,n.playbackRate=.85,n.volume=1,T.current=n,n.play().catch(e=>{console.log(`تعذر تشغيل الصوت تلقائياً:`,e)})},k=()=>{if(!x)return;let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(()=>{})},A=()=>{if(!x)return;let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(()=>{})},ee=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{O(n.correct)},300)};(0,b.useEffect)(()=>{ee(0)},[]);let te=()=>{C||(w(!0),O(i))},ne=e=>{te(),!(u||m)&&(d(e),e===i?(s(e=>e+1),_(!0),D(),k(),setTimeout(()=>{_(!1)},1200)):(D(),A()),setTimeout(()=>{let e=f+1;e>=7?(D(),h(!0),y(!0),setTimeout(()=>{y(!1)},2e3)):(p(e),ee(e))},900))},re=()=>{D(),s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),ee(0)},ie=()=>{D(),e(`/Nunation`)},ae=()=>{D(),e(`/home`)};return(0,b.useEffect)(()=>()=>{D()},[]),(0,N.jsxs)(`div`,{onClick:te,style:{width:`100%`,height:`100%`},children:[(0,N.jsx)(`style`,{children:`
         html, body {
           margin: 0 !important;
           padding: 0 !important;
