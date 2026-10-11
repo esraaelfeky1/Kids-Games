@@ -9730,7 +9730,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     /* إزاحة الأرنب عند البداية: يسار 50px وفوق 30px */
     .rabbit-character.rabbit-at-start {
       width: clamp(85px, 11vw, 115px) !important;
-      margin-left: -100px !important;
+      margin-left: -90px !important;
       margin-top: -110px !important;
     }
 
