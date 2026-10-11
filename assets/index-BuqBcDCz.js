@@ -11344,10 +11344,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       padding: 2px 14px !important; 
     }
     
+    /* رفع المربع الكبير للكلمات للأعلى قليلاً على اللابتوب */
     .main-board-responsive { 
       width: 31vw !important; 
       max-width: 360px !important; 
-      bottom: calc(21% + 15px) !important; 
+      bottom: calc(26% + 15px) !important; 
     }
     
     .word-text-responsive { font-size: 3.2rem !important; }
@@ -11368,10 +11369,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       padding: 2px 12px !important; 
     }
     
+    /* رفع المربع الكبير للكلمات للأعلى قليلاً على التابلت */
     .main-board-responsive { 
       width: 41vw !important; 
       max-width: 350px !important; 
-      bottom: calc(23% + 15px) !important; 
+      bottom: calc(28% + 15px) !important; 
     }
     .boy-responsive { width: 18vw !important; max-width: 180px !important; }
     .cow-responsive { width: 18vw !important; max-width: 180px !important; }
