@@ -11330,13 +11330,49 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     position: fixed;
   }
 
-  /* الشاشات الكبيرة والتابلت (Tablets & iPads) */
-  @media (max-width: 1024px) {
-    .header-wood-responsive { width: 260px !important; }
-    .header-wood-text-responsive { font-size: 1.35rem !important; }
-    .instruction-responsive { font-size: 1.1rem !important; padding: 3px 12px !important; }
+  /* 💻 الشاشات الكبيرة واللابتوب (Desktop / Laptop - فوق 1025px) */
+  @media (min-width: 1025px) {
+    .header-wood-responsive { 
+      width: 240px !important; 
+    }
+    .header-wood-text-responsive { 
+      font-size: 1.35rem !important; 
+    }
+    .instruction-responsive { 
+      font-size: 1.05rem !important; 
+      margin-top: -2px !important; 
+      padding: 2px 14px !important; 
+    }
     
-    .main-board-responsive { width: 45vw !important; max-width: 380px !important; bottom: calc(30% + 30px) !important; }
+    .main-board-responsive { 
+      width: 28vw !important; 
+      max-width: 330px !important; 
+      bottom: calc(18% + 15px) !important; 
+    }
+    
+    .word-text-responsive { font-size: 3.2rem !important; }
+    .option-btn-responsive { font-size: 3rem !important; }
+  }
+
+  /* 📱 التابلت والآيباد (Tablets & iPads - من 641px إلى 1024px) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .header-wood-responsive { 
+      width: 220px !important; 
+    }
+    .header-wood-text-responsive { 
+      font-size: 1.4rem !important; 
+    }
+    .instruction-responsive { 
+      font-size: 1.1rem !important; 
+      margin-top: -4px !important; 
+      padding: 2px 12px !important; 
+    }
+    
+    .main-board-responsive { 
+      width: 38vw !important; 
+      max-width: 320px !important; 
+      bottom: calc(20% + 15px) !important; 
+    }
     .boy-responsive { width: 18vw !important; max-width: 180px !important; }
     .cow-responsive { width: 18vw !important; max-width: 180px !important; }
     
@@ -11344,7 +11380,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .option-btn-responsive { font-size: 2.7rem !important; }
   }
 
-  /* هواتف المحمول الذكية (Smartphones - iPhone & Android) */
+  /* 📲 هواتف المحمول الذكية (Smartphones - iPhone & Android - 640px وأقل) */
   @media (max-width: 640px) {
     .header-wood-responsive { width: 210px !important; }
     .header-wood-text-responsive { font-size: 1.15rem !important; }
