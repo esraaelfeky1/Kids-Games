@@ -14261,12 +14261,22 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     color: #5B21B6;
   }
 
+  /* إظهار فقرة العنوان على اللاب توب والكمبيوتر */
   .subtitle-container-responsive {
-    display: none;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 35;
+    background: rgba(255,255,255,0.92);
+    padding: 4px 18px;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   }
 
   .game-subtitle-responsive {
-    margin: 2px 0 0 0;
+    margin: 0;
     font-size: 1.05rem;
     font-weight: 700;
     color: #4C1D95;
@@ -14365,15 +14375,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       display: none !important;
     }
 
+    /* تكبير حجم الدولاب قليلاً على الموبايل */
     .closet-wrapper-responsive {
-      width: 72% !important;
-      height: 58% !important;
-      right: -32% !important;
-      bottom: calc(-24% - 50px) !important;
+      width: 78% !important;
+      height: 64% !important;
+      right: -30% !important;
+      bottom: calc(-22% - 40px) !important;
       transform: translateX(-50%) !important;
       z-index: 10 !important;
     }
 
+    /* تحريك الثلاث مربعات العمودية يساراً بمقدار 30 بكسل إضافية (لتصبح -80px بدلاً من -50px) */
     .side-bar-responsive {
       position: absolute !important;
       top: calc(36% + 35px) !important; 
@@ -14410,29 +14422,29 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .item-card-4,
     .item-card-5 {
       position: relative !important;
-      right: -50px !important;
+      right: -80px !important;
     }
 
-    /* نقل القميص والبنطلون لتكون تحت الدولاب مع مسافة بينهما */
+    /* مربعي القميص والبنطلون بجانب بعضهما فوق الأزرار الأربعة مباشرة على الموبايل */
     .item-card-1 {
       position: absolute !important;
-      top: 155px !important;
-      left: 144px !important;
+      top: 135px !important;
+      left: 72px !important;
       z-index: 35 !important;
     }
 
     .item-card-2 {
       position: absolute !important;
-      top: 80px !important;
-      left: 144px !important;
+      top: 135px !important;
+      left: 140px !important;
       z-index: 35 !important;
     }
 
-    /* رفع أزرار التحكم للأعلى قليلاً على الموبايل */
+    /* رفع أزرار التحكم للأعلى قليلاً على الموبايل فوق المربعين */
     .controls-bottom-responsive {
       position: absolute !important;
       top: auto !important;
-      bottom: 8% !important;
+      bottom: 6% !important;
       left: 50% !important;
       right: auto !important;
       transform: translateX(-50%) !important;
