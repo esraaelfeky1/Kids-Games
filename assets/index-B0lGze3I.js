@@ -14261,6 +14261,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     color: #5B21B6;
   }
 
+  /* إظهار فقرة العنوان على اللاب توب والكمبيوتر */
   .subtitle-container-responsive {
     position: absolute;
     top: 75px;
@@ -14320,10 +14321,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* =====================================================
-     📱 MOBILE ONLY
+     📱 MOBILE & TABLET ONLY
   ===================================================== */
 
-  @media (max-width: 600px) {
+  @media (max-width: 1024px) {
 
     .header-container-responsive {
       top: 12px !important;
@@ -14374,6 +14375,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       display: none !important;
     }
 
+    /* تكبير حجم الدولاب قليلاً على الموبايل */
     .closet-wrapper-responsive {
       width: 78% !important;
       height: 64% !important;
@@ -14383,22 +14385,22 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       z-index: 10 !important;
     }
 
+    /* تحريك الثلاث مربعات العمودية يساراً بمقدار 30 بكسل إضافية (لتصبح -80px بدلاً من -50px) */
     .side-bar-responsive {
       position: absolute !important;
-      top: auto !important;
-      bottom: 20px !important; 
-      left: 20px !important;
+      top: calc(36% + 35px) !important; 
+      left: 28px !important;
       transform: none !important;
       display: flex !important;
       flex-direction: column !important;
-      gap: 12px !important;
+      gap: 6px !important;
       width: auto !important;
       z-index: 30 !important;
     }
 
     .item-card-responsive {
-      width: 58px !important;
-      height: 62px !important;
+      width: 60px !important;
+      height: 64px !important;
       border-width: 2px !important;
       border-radius: 10px !important;
       padding: 3px !important;
@@ -14406,58 +14408,43 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .item-card-responsive img {
-      width: 68% !important;
-      height: 68% !important;
+      width: 70% !important;
+      height: 70% !important;
     }
 
     .item-text-responsive {
-      font-size: 0.95rem !important;
+      font-size: 1.05rem !important;
       font-weight: 900 !important;
       line-height: 1 !important;
     }
 
-    /* 📱 الصف الأول (3 مربعات فوق): الحذاء، الطاقية، والشنطة بجانب بعضها */
-    .item-card-3 {
-      position: absolute !important;
-      bottom: 125px !important;
-      left: 10px !important;
-      z-index: 35 !important;
-    }
-
-    .item-card-4 {
-      position: absolute !important;
-      bottom: 125px !important;
-      left: 76px !important;
-      z-index: 35 !important;
-    }
-
+    .item-card-3,
+    .item-card-4,
     .item-card-5 {
-      position: absolute !important;
-      bottom: 125px !important;
-      left: 142px !important;
-      z-index: 35 !important;
+      position: relative !important;
+      right: -80px !important;
     }
 
-    /* 📱 الصف الثاني (مربعين تحت): القميص والبنطلون أسفل الصف الأول مع مسافة بينهما */
+    /* مربعي القميص والبنطلون بجانب بعضهما فوق الأزرار الأربعة مباشرة على الموبايل */
     .item-card-1 {
       position: absolute !important;
-      bottom: 50px !important;
-      left: 42px !important;
+      top: 135px !important;
+      left: 72px !important;
       z-index: 35 !important;
     }
 
     .item-card-2 {
       position: absolute !important;
-      bottom: 50px !important;
-      left: 110px !important;
+      top: 135px !important;
+      left: 140px !important;
       z-index: 35 !important;
     }
 
-    /* 📱 أزرار التحكم مرفوعة للأعلى قليلاً */
+    /* رفع أزرار التحكم للأعلى قليلاً على الموبايل فوق المربعين */
     .controls-bottom-responsive {
       position: absolute !important;
       top: auto !important;
-      bottom: 9% !important;
+      bottom: 6% !important;
       left: 50% !important;
       right: auto !important;
       transform: translateX(-50%) !important;
