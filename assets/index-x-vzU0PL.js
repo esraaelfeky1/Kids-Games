@@ -14311,10 +14311,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* =====================================================
-     📱 MOBILE & TABLET ONLY
+     📱 TABLET STYLES (601px إلي 1024px)
   ===================================================== */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    /* الصف الأول (3 مربعات) يروح يسار شوية */
+    .item-card-1, .item-card-2, .item-card-3 {
+      transform: translateX(-25px);
+    }
+    /* الصف الثاني (مربعين) يروح يمين شوية */
+    .item-card-4, .item-card-5 {
+      transform: translateX(25px);
+    }
+  }
 
-  @media (max-width: 1024px) {
+  /* =====================================================
+     📱 MOBILE ONLY (حتى 600 بكسل)
+  ===================================================== */
+  @media (max-width: 600px) {
 
     .header-container-responsive {
       top: 12px !important;
@@ -14366,73 +14379,66 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .closet-wrapper-responsive {
-      width: 72% !important;
-      height: 58% !important;
-      right: -32% !important;
-      bottom: calc(-24% - 50px) !important;
+      width: 78% !important;
+      height: 52% !important;
+      right: -28% !important;
+      bottom: calc(-18% - 40px) !important;
       transform: translateX(-50%) !important;
       z-index: 10 !important;
     }
 
+    /* إلغاء الـ Grid القديم وجعل الـ 5 عناصر متموضعة بدقة في صفين تحت بعضهما فوق الأزرار */
     .side-bar-responsive {
       position: absolute !important;
-      top: calc(36% + 35px) !important; 
-      left: 28px !important;
-      transform: none !important;
+      top: auto !important;
+      bottom: 120px !important; /* رفعت المربعات للأعلى فوق الأزرار بمسافة آمنة */
+      left: 50% !important;
+      transform: translateX(-50%) !important;
       display: flex !important;
-      flex-direction: column !important;
-      gap: 6px !important;
-      width: auto !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 8px !important;
+      width: 240px !important;
       z-index: 30 !important;
     }
 
     .item-card-responsive {
-      width: 60px !important;
-      height: 64px !important;
+      width: 58px !important;
+      height: 62px !important;
       border-width: 2px !important;
       border-radius: 10px !important;
-      padding: 3px !important;
+      padding: 2px !important;
       box-shadow: 0 3px 7px rgba(0,0,0,0.15) !important;
     }
 
     .item-card-responsive img {
-      width: 70% !important;
-      height: 70% !important;
+      width: 65% !important;
+      height: 65% !important;
     }
 
     .item-text-responsive {
-      font-size: 1.05rem !important;
+      font-size: 0.95rem !important;
       font-weight: 900 !important;
       line-height: 1 !important;
     }
 
-    .item-card-3,
-    .item-card-4,
-    .item-card-5 {
-      position: relative !important;
-      right: -50px !important;
+    /* تقسيم الـ 5 مربعات على صفين تحت بعضهما بانتظام */
+    .item-card-1, .item-card-2, .item-card-3 {
+      position: static !important;
+      flex: 0 0 30% !important;
     }
 
-    /* تعديل مربعات القميص والبنطلون لتكون تحت الدولاب وبينهما مسافة على الموبايل */
-    .item-card-1 {
-      position: absolute !important;
-      top: 110px !important;  /* تم إنزال القميص أسفل الدولاب */
-      left: 120px !important;
-      z-index: 35 !important;
+    .item-card-4, .item-card-5 {
+      position: static !important;
+      flex: 0 0 42% !important;
     }
 
-    .item-card-2 {
-      position: absolute !important;
-      top: 15px !important;   /* تم رفع البنطلون قليلاً لزيادة المسافة بينه وبين القميص */
-      left: 120px !important;
-      z-index: 35 !important;
-    }
-
-    /* رفع أزرار التحكم الأربعة قليلاً للأعلى على الموبايل */
+    /* رفع أزرار التحكم الأربعة للأعلى قليلاً على الموبايل */
     .controls-bottom-responsive {
       position: absolute !important;
       top: auto !important;
-      bottom: 7% !important;  /* تم رفعه من 2% إلى 7% ليصعد للأعلى */
+      bottom: 15px !important; /* مثبتة قرب الأسفل بشكل مرتب وفوق الحافة */
       left: 50% !important;
       right: auto !important;
       transform: translateX(-50%) !important;
@@ -14444,16 +14450,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .control-btn-responsive {
-      width: 42px !important;
-      height: 42px !important;
-      padding: 8px !important;
+      width: 40px !important;
+      height: 40px !important;
+      padding: 7px !important;
       border-width: 2px !important;
       flex-shrink: 0 !important;
     }
 
     .ctrl-icon-responsive {
-      width: 20px !important;
-      height: 20px !important;
+      width: 18px !important;
+      height: 18px !important;
     }
 
     .dragging-item-responsive {
