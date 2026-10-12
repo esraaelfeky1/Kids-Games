@@ -14417,14 +14417,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .item-card-1 {
       position: absolute !important;
-      top: -39px !important;
+      top: -59px !important;
       left: 144px !important;
       z-index: 35 !important;
     }
 
     .item-card-2 {
       position: absolute !important;
-      top: 30px !important;
+      top: 80px !important;
       left: 144px !important;
       z-index: 35 !important;
     }
