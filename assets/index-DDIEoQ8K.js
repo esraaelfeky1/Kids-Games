@@ -14261,22 +14261,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     color: #5B21B6;
   }
 
-  /* إظهار فقرة العنوان على اللاب توب والكمبيوتر */
   .subtitle-container-responsive {
-    position: absolute;
-    top: 75px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 35;
-    background: rgba(255,255,255,0.92);
-    padding: 4px 18px;
-    border-radius: 14px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    display: none;
   }
 
   .game-subtitle-responsive {
-    margin: 0;
+    margin: 2px 0 0 0;
     font-size: 1.05rem;
     font-weight: 700;
     color: #4C1D95;
@@ -14375,17 +14365,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       display: none !important;
     }
 
-    /* تكبير حجم الدولاب قليلاً على الموبايل */
     .closet-wrapper-responsive {
-      width: 78% !important;
-      height: 64% !important;
-      right: -30% !important;
-      bottom: calc(-22% - 40px) !important;
+      width: 72% !important;
+      height: 58% !important;
+      right: -32% !important;
+      bottom: calc(-24% - 50px) !important;
       transform: translateX(-50%) !important;
       z-index: 10 !important;
     }
 
-    /* تحريك الثلاث مربعات العمودية يساراً بمقدار 30 بكسل إضافية (لتصبح -80px بدلاً من -50px) */
     .side-bar-responsive {
       position: absolute !important;
       top: calc(36% + 35px) !important; 
@@ -14422,29 +14410,29 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .item-card-4,
     .item-card-5 {
       position: relative !important;
-      right: -80px !important;
+      right: -50px !important;
     }
 
-    /* مربعي القميص والبنطلون بجانب بعضهما فوق الأزرار الأربعة مباشرة على الموبايل */
+    /* تعديل مربعات القميص والبنطلون لتكون تحت الدولاب وبينهما مسافة على الموبايل */
     .item-card-1 {
       position: absolute !important;
-      top: 135px !important;
-      left: 72px !important;
+      top: 110px !important;  /* تم إنزال القميص أسفل الدولاب */
+      left: 120px !important;
       z-index: 35 !important;
     }
 
     .item-card-2 {
       position: absolute !important;
-      top: 135px !important;
-      left: 140px !important;
+      top: 15px !important;   /* تم رفع البنطلون قليلاً لزيادة المسافة بينه وبين القميص */
+      left: 120px !important;
       z-index: 35 !important;
     }
 
-    /* رفع أزرار التحكم للأعلى قليلاً على الموبايل فوق المربعين */
+    /* رفع أزرار التحكم الأربعة قليلاً للأعلى على الموبايل */
     .controls-bottom-responsive {
       position: absolute !important;
       top: auto !important;
-      bottom: 6% !important;
+      bottom: 7% !important;  /* تم رفعه من 2% إلى 7% ليصعد للأعلى */
       left: 50% !important;
       right: auto !important;
       transform: translateX(-50%) !important;
