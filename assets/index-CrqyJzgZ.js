@@ -2106,6 +2106,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
       `}),(0,F.jsx)(`div`,{style:{...Ka.page,backgroundImage:`url(${Na})`},className:`tafkheem-page`,children:(0,F.jsxs)(`div`,{style:Ka.card,className:`tafkheem-card`,children:[(0,F.jsxs)(`div`,{style:Ka.topBar,children:[(0,F.jsxs)(`div`,{style:Ka.infoBox,children:[`⭐ `,f]}),(0,F.jsxs)(`div`,{style:Ka.infoBox,children:[`⏰ `,E(x)]})]}),(0,F.jsx)(`div`,{style:Ka.titleBox,className:`tafkheem-title-box`,children:(0,F.jsx)(`h1`,{style:Ka.title,className:`tafkheem-title`,children:`كمل الكلمة`})}),(0,F.jsx)(`p`,{style:Ka.subtitle,className:`tafkheem-subtitle`,children:`اختر الحرف المفخم المناسب`}),(0,F.jsxs)(`div`,{style:Ka.questionWrapper,children:[v&&(0,F.jsxs)(`div`,{style:Ka.finalPopup,children:[(0,F.jsx)(`div`,{style:Ka.finalTitle,children:`🎉 أحسنت`}),(0,F.jsxs)(`div`,{style:Ka.finalScore,children:[`لقد حصلت على `,f,` نقطة`]})]}),u&&(0,F.jsx)(`div`,{style:Ka.successPopup,children:`ممتاز 👏`}),(0,F.jsxs)(`div`,{style:Ka.questionBox,className:`tafkheem-question-box`,children:[(0,F.jsx)(`div`,{style:Ka.imageContainer,className:`tafkheem-image-container`,children:(0,F.jsx)(`img`,{src:T.image,alt:T.word,style:Ka.image,className:`tafkheem-image`,draggable:`false`})}),(0,F.jsx)(`div`,{style:Ka.wordBox,className:`tafkheem-word-box`,children:(0,F.jsx)(`div`,{style:Ka.word,className:`tafkheem-word`,children:u?T.word:T.display})})]})]}),(0,F.jsx)(`div`,{style:Ka.choices,className:`tafkheem-choices`,children:T.choices.map((e,t)=>(0,F.jsx)(`button`,{onClick:()=>A(e),className:`tafkheem-choice-btn`,style:{...Ka.choiceBtn,backgroundColor:c===e?e===T.missing?`#7CFC6A`:`#ff8c8c`:`#fff`},children:e},t))}),(0,F.jsx)(`div`,{style:Ka.dots,className:`tafkheem-dots`,children:a.map((e,t)=>(0,F.jsx)(`span`,{style:{...Ka.dot,backgroundColor:t<=o?`#67d84f`:`#d3d3d3`}},t))}),(0,F.jsxs)(`div`,{style:Ka.bottomButtons,className:`tafkheem-bottom-buttons`,children:[(0,F.jsx)(`button`,{onClick:j,style:Ka.circleBtn,className:`tafkheem-circle-btn`,children:C?(0,F.jsx)(z,{color:`white`,size:20}):(0,F.jsx)(B,{color:`white`,size:20})}),(0,F.jsx)(`button`,{onClick:D,style:Ka.circleBtn,className:`tafkheem-circle-btn`,children:(0,F.jsx)(R,{color:`white`,size:16})}),(0,F.jsx)(`button`,{onClick:O,style:Ka.circleBtn,className:`tafkheem-circle-btn`,children:(0,F.jsx)(I,{color:`white`,size:16})}),(0,F.jsx)(`button`,{onClick:k,style:Ka.circleBtn,className:`tafkheem-circle-btn`,children:(0,F.jsx)(L,{color:`white`,size:16})})]})]})})]})}var Ka={page:{minHeight:`100vh`,padding:`20px`,fontFamily:`Arial`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,display:`flex`,justifyContent:`center`,alignItems:`center`,boxSizing:`border-box`,position:`relative`},topBar:{display:`flex`,justifyContent:`space-between`,marginBottom:`5px`,gap:`10px`},infoBox:{background:`#fff`,padding:`6px 14px`,borderRadius:`20px`,fontWeight:`bold`,fontSize:`14px`,display:`flex`,alignItems:`center`,justifyContent:`center`},card:{width:`100%`,maxWidth:`420px`,padding:`22px 20px 30px 20px`,background:`#cfeaf9b2`,borderRadius:`32px`,border:`3px solid #8cccece3`,textAlign:`center`,boxSizing:`border-box`,position:`relative`},titleBox:{margin:`0 auto`,background:`#1684ff`,borderRadius:`25px`,position:`relative`,top:`-38px`,marginBottom:`-20px`,padding:`4px 20px`,width:`fit-content`,display:`flex`,justifyContent:`center`,alignItems:`center`},title:{color:`#fff`,margin:0,fontSize:`24px`,fontWeight:`bold`,textAlign:`center`},subtitle:{fontSize:`18px`,fontWeight:`bold`,marginTop:`5px`,marginBottom:`22px`},questionWrapper:{position:`relative`,display:`flex`,justifyContent:`center`},successPopup:{position:`absolute`,top:`-25px`,background:`#41c441`,color:`#fff`,padding:`6px 18px`,borderRadius:`18px`,fontSize:`20px`,fontWeight:`bold`,zIndex:5,boxShadow:`0 4px 12px rgba(0,0,0,0.2)`},finalPopup:{position:`absolute`,top:`-10px`,background:`#ffffffed`,width:`220px`,padding:`15px`,borderRadius:`20px`,border:`3px solid #b8daf7`,boxShadow:`0 6px 15px rgba(0,0,0,0.15)`,zIndex:10},finalTitle:{fontSize:`22px`,fontWeight:`bold`,color:`#2eb82e`,marginBottom:`10px`},finalScore:{fontSize:`18px`,fontWeight:`bold`,color:`#2e2e2e`},questionBox:{background:`#ffffffe2`,width:`90%`,margin:`auto`,borderRadius:`24px`,border:`3px solid #beddf0`,padding:`20px 14px`,display:`flex`,alignItems:`center`,justifyContent:`space-around`,flexWrap:`wrap`,gap:`15px`},imageContainer:{width:`85px`,height:`85px`,display:`flex`,alignItems:`center`,justifyContent:`center`,flexShrink:0},image:{width:`85px`,height:`85px`,objectFit:`contain`,display:`block`},wordBox:{background:`#f8fbff`,border:`3px solid #a7d3f7f1`,borderRadius:`20px`,width:`110px`,height:`62px`,display:`flex`,alignItems:`center`,justifyContent:`center`,flexShrink:0},word:{fontSize:`32px`,fontWeight:`bold`},choices:{display:`flex`,justifyContent:`center`,gap:`15px`,marginTop:`28px`,flexWrap:`wrap`},choiceBtn:{width:`60px`,height:`60px`,borderRadius:`20px`,border:`3px solid #bbdcf9`,fontSize:`30px`,fontWeight:`bold`,cursor:`pointer`},dots:{display:`flex`,justifyContent:`center`,gap:`6px`,marginTop:`28px`,background:`#fff`,width:`150px`,maxWidth:`90%`,marginInline:`auto`,padding:`8px`,borderRadius:`25px`},dot:{width:`8px`,height:`8px`,borderRadius:`50%`},bottomButtons:{display:`flex`,justifyContent:`center`,gap:`12px`,marginTop:`28px`,flexWrap:`wrap`},circleBtn:{width:`44px`,height:`44px`,borderRadius:`50%`,border:`none`,background:`#7f57e7`,cursor:`pointer`,display:`flex`,justifyContent:`center`,alignItems:`center`}},qa=`/Kids-Games/assets/car1-D3OSQZ1Z.jpg`;function Ja(){let e=N(),t=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`)),n=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),a=[{options:[`ب`,`ط`,`م`],correct:`ط`},{options:[`ص`,`ل`,`ن`],correct:`ص`},{options:[`ف`,`ت`,`ض`],correct:`ض`},{options:[`خ`,`ج`,`س`],correct:`خ`},{options:[`د`,`غ`,`ر`],correct:`غ`},{options:[`ق`,`و`,`ي`],correct:`ق`},{options:[`ك`,`ه`,`ظ`],correct:`ظ`},{options:[`ط`,`ا`,`ب`],correct:`ط`}],[o,s]=(0,b.useState)(!0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(``),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(0),[v,y]=(0,b.useState)(0),[x,S]=(0,b.useState)(!0),[C,w]=(0,b.useState)(!1),T=a[c];(0,b.useEffect)(()=>{let e=setTimeout(()=>{s(!1)},4e3);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{[t,n,r,i].forEach(e=>{e.current.preload=`auto`})},[]);let E=e=>{x&&(e.current.currentTime=0,e.current.play().catch(()=>{}))};(0,b.useEffect)(()=>{if(m||o)return;let e=setInterval(()=>{y(e=>e+1)},1e3);return()=>clearInterval(e)},[m,o]);let D=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,O=()=>{E(r),l(0),d(``),p(0),h(!1),_(0),y(0),w(!1)},k=()=>{E(r),window.history.state?.idx>0?e(-1):e(`/AlHorof1`,{replace:!0})},A=()=>{E(r),e(`/home`)},j=e=>{m||C||o||(d(e),w(!0),e===T.correct?(E(t),p(e=>e+1),_(e=>e+10),setTimeout(()=>{c<a.length-1?(l(e=>e+1),d(``),w(!1)):(E(i),h(!0),w(!1))},700)):(E(n),setTimeout(()=>{d(``),w(!1)},600)))},ee=()=>{S(e=>!e)};return(0,F.jsxs)(F.Fragment,{children:[(0,F.jsx)(`style`,{children:`
+        /* =========================
+           حركات شاشة التحميل
+        ========================= */
+
         @keyframes raceCarBounce {
           0%, 100% {
             transform: translateY(0) rotate(-2deg);
@@ -2135,41 +2139,41 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           50% { transform: rotate(5deg); }
         }
 
-        /* حركة الأيقونات داخل مربع التحميل */
+        /* أيقونات تطير في خلفية الشاشة */
 
-        @keyframes floatIconOne {
+        @keyframes raceFloatA {
           0%, 100% {
             transform: translate(0, 0) rotate(-10deg);
           }
           50% {
-            transform: translate(7px, -13px) rotate(12deg);
+            transform: translate(28px, -35px) rotate(12deg);
           }
         }
 
-        @keyframes floatIconTwo {
+        @keyframes raceFloatB {
           0%, 100% {
             transform: translate(0, 0) rotate(8deg);
           }
           50% {
-            transform: translate(-8px, 12px) rotate(-12deg);
+            transform: translate(-30px, 28px) rotate(-14deg);
           }
         }
 
-        @keyframes floatIconThree {
+        @keyframes raceFloatC {
           0%, 100% {
             transform: translateY(0) rotate(0deg);
           }
           50% {
-            transform: translateY(-10px) rotate(14deg);
+            transform: translateY(-38px) rotate(18deg);
           }
         }
 
-        @keyframes floatIconFour {
+        @keyframes raceFloatD {
           0%, 100% {
-            transform: translate(0, 0) rotate(10deg);
+            transform: translate(0, 0) rotate(12deg);
           }
           50% {
-            transform: translate(9px, 8px) rotate(-10deg);
+            transform: translate(22px, 30px) rotate(-12deg);
           }
         }
 
@@ -2197,12 +2201,79 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             linear-gradient(145deg, #172b4d, #244c74 55%, #13253e);
         }
 
+        /* الطبقة مستقلة عن كارت التحميل */
+
+        .race-background-icons {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .race-screen-icon {
+          position: absolute;
+          opacity: 0.8;
+          filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+        }
+
+        .race-screen-car {
+          top: 12%;
+          left: 10%;
+          color: #ffbd43;
+          animation: raceFloatA 5s ease-in-out infinite;
+        }
+
+        .race-screen-flag {
+          top: 18%;
+          right: 12%;
+          color: #ffffff;
+          animation: raceFloatB 4.5s ease-in-out infinite;
+        }
+
+        .race-screen-trophy {
+          top: 43%;
+          left: 7%;
+          color: #ffd166;
+          animation: raceFloatC 4s ease-in-out infinite;
+        }
+
+        .race-screen-gauge {
+          top: 47%;
+          right: 8%;
+          color: #ff775e;
+          animation: raceFloatD 5.2s ease-in-out infinite;
+        }
+
+        .race-screen-sign {
+          bottom: 13%;
+          left: 19%;
+          color: #9de7ff;
+          animation: raceFloatB 4.8s ease-in-out infinite;
+        }
+
+        .race-screen-wheel {
+          bottom: 12%;
+          right: 18%;
+          color: #ffffff;
+          animation: raceFloatA 5.5s ease-in-out infinite;
+        }
+
+        .race-screen-car-two {
+          top: 75%;
+          left: 48%;
+          color: #ff775e;
+          animation: raceFloatC 4.7s ease-in-out infinite;
+        }
+
+        /* كارت التحميل في المقدمة */
+
         .race-loading-card {
           position: relative;
-          isolation: isolate;
-          width: 320px;
+          z-index: 2;
+          width: 285px;
           max-width: 88vw;
-          padding: 22px 25px 24px;
+          padding: 19px 22px 21px;
           box-sizing: border-box;
           text-align: center;
           border: 2px solid rgba(255, 255, 255, 0.85);
@@ -2212,60 +2283,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           overflow: hidden;
         }
 
-        /* الأيقونات خلف محتوى الرسالة */
-
-        .race-floating-icon {
-          position: absolute;
-          z-index: -1;
-          pointer-events: none;
-          opacity: 0.16;
-        }
-
-        .race-floating-car {
-          top: 13%;
-          left: 8%;
-          color: #ef5b35;
-          animation: floatIconOne 3.4s ease-in-out infinite;
-        }
-
-        .race-floating-flag {
-          top: 17%;
-          right: 9%;
-          color: #244c74;
-          animation: floatIconTwo 3.8s ease-in-out infinite;
-        }
-
-        .race-floating-trophy {
-          bottom: 23%;
-          left: 12%;
-          color: #e6a323;
-          animation: floatIconThree 3.1s ease-in-out infinite;
-        }
-
-        .race-floating-gauge {
-          bottom: 20%;
-          right: 10%;
-          color: #ef5b35;
-          animation: floatIconFour 4s ease-in-out infinite;
-        }
-
-        .race-floating-wheel {
-          top: 47%;
-          right: 3%;
-          color: #244c74;
-          animation: floatIconOne 4.2s ease-in-out infinite;
-        }
-
-        .race-floating-sign {
-          top: 48%;
-          left: 4%;
-          color: #e6a323;
-          animation: floatIconTwo 3.6s ease-in-out infinite;
-        }
-
         .race-loading-car {
-          position: relative;
-          z-index: 1;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -2284,8 +2302,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .race-loading-road {
-          position: relative;
-          z-index: 1;
           width: 100%;
           height: 9px;
           margin: 0 auto 16px;
@@ -2302,18 +2318,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .race-loading-title {
-          position: relative;
-          z-index: 1;
           margin: 0 0 17px;
           color: #233c5b;
-          font-size: 23px;
+          font-size: 21px;
           line-height: 1.5;
           font-weight: 800;
         }
 
         .race-loading-progress-track {
-          position: relative;
-          z-index: 1;
           width: 100%;
           height: 9px;
           overflow: hidden;
@@ -2331,7 +2343,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .race-loading-light {
           position: absolute;
-          z-index: 1;
           width: 9px;
           height: 9px;
           border-radius: 50%;
@@ -2350,6 +2361,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           bottom: 22px;
           animation-delay: 0.6s;
         }
+
+        /* =========================
+           تصميم اللعبة على الموبايل
+        ========================= */
 
         @media (max-width: 768px) {
           .mobile-page {
@@ -2445,7 +2460,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             height: 42px !important;
           }
 
-          /* مربع تحميل أصغر على الموبايل */
+          /* كارت تحميل أصغر على الموبايل */
 
           .race-loading-card {
             width: 255px;
@@ -2483,48 +2498,28 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             height: 7px;
           }
 
-          .race-floating-icon {
-            opacity: 0.13;
+          .race-screen-icon {
+            opacity: 0.65;
           }
 
-          .race-floating-car,
-          .race-floating-flag,
-          .race-floating-trophy,
-          .race-floating-gauge {
-            width: 28px;
-            height: 28px;
+          .race-screen-car,
+          .race-screen-flag {
+            width: 38px;
+            height: 38px;
           }
 
-          .race-floating-wheel,
-          .race-floating-sign {
-            width: 23px;
-            height: 23px;
-          }
-        }
-
-        @media (min-width: 769px) {
-          .race-loading-card {
-            width: 285px;
-            padding: 19px 22px 21px;
-          }
-
-          .race-loading-title {
-            font-size: 21px;
-          }
-
-          .race-loading-car-icon {
-            width: 52px;
-            height: 52px;
-          }
-
-          .race-loading-flag {
+          .race-screen-trophy,
+          .race-screen-gauge,
+          .race-screen-sign,
+          .race-screen-wheel,
+          .race-screen-car-two {
             width: 32px;
             height: 32px;
           }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .race-floating-icon,
+          .race-screen-icon,
           .race-loading-car-icon,
           .race-loading-flag,
           .race-loading-road,
@@ -2533,7 +2528,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             animation-duration: 4s;
           }
         }
-      `}),o&&(0,F.jsx)(`div`,{className:`race-loading-overlay`,children:(0,F.jsxs)(`div`,{className:`race-loading-card`,children:[(0,F.jsx)(Ai,{className:`race-floating-icon race-floating-car`,size:39,strokeWidth:2.5}),(0,F.jsx)(Gi,{className:`race-floating-icon race-floating-flag`,size:34,strokeWidth:2.5}),(0,F.jsx)(pa,{className:`race-floating-icon race-floating-trophy`,size:37,strokeWidth:2.5}),(0,F.jsx)(Ji,{className:`race-floating-icon race-floating-gauge`,size:36,strokeWidth:2.5}),(0,F.jsx)(Fi,{className:`race-floating-icon race-floating-wheel`,size:30,strokeWidth:2.5}),(0,F.jsx)(sa,{className:`race-floating-icon race-floating-sign`,size:31,strokeWidth:2.5}),(0,F.jsx)(`span`,{className:`race-loading-light race-loading-light-one`}),(0,F.jsx)(`span`,{className:`race-loading-light race-loading-light-two`}),(0,F.jsxs)(`div`,{className:`race-loading-car`,children:[(0,F.jsx)(Ai,{className:`race-loading-car-icon`,size:58,strokeWidth:2.5}),(0,F.jsx)(Gi,{className:`race-loading-flag`,size:35,strokeWidth:2.5})]}),(0,F.jsx)(`div`,{className:`race-loading-road`}),(0,F.jsx)(`div`,{className:`race-loading-title`,children:`جاري تحميل اللعبة`}),(0,F.jsx)(`div`,{className:`race-loading-progress-track`,children:(0,F.jsx)(`div`,{className:`race-loading-progress`})})]})}),(0,F.jsxs)(`div`,{style:{...Ya.page,backgroundImage:`url(${qa})`},className:`mobile-page`,children:[m&&(0,F.jsx)(`div`,{style:Ya.winOverlay,children:(0,F.jsxs)(`div`,{style:Ya.winCard,children:[(0,F.jsx)(`div`,{style:Ya.winEmoji,children:`🏆`}),(0,F.jsx)(`div`,{style:Ya.winText,children:`أحسنت! لقد أنهيت السباق بنجاح`}),(0,F.jsxs)(`div`,{style:Ya.winScore,children:[`النقاط النهائية: `,g]}),(0,F.jsx)(`button`,{onClick:O,style:Ya.winBtn,children:`العب مرة أخرى`})]})}),(0,F.jsxs)(`div`,{style:Ya.overlay,className:`mobile-overlay`,children:[(0,F.jsxs)(`div`,{style:Ya.topBar,className:`mobile-top-bar`,children:[(0,F.jsxs)(`div`,{style:Ya.infoBox,className:`mobile-info-box`,children:[(0,F.jsx)(`span`,{style:{fontSize:`17px`},children:`⭐`}),(0,F.jsx)(`span`,{style:Ya.infoValue,children:g})]}),(0,F.jsx)(`div`,{style:Ya.titleBox,className:`mobile-title-box`,children:(0,F.jsx)(`span`,{style:Ya.title,className:`mobile-title`,children:`لعبة سباق الحروف`})}),(0,F.jsxs)(`div`,{style:Ya.infoBox,className:`mobile-info-box`,children:[(0,F.jsx)(`span`,{style:{fontSize:`17px`},children:`⏰`}),(0,F.jsx)(`span`,{style:Ya.infoValue,children:D(v)})]})]}),(0,F.jsxs)(`div`,{className:`mobile-center-content`,children:[(0,F.jsx)(`div`,{style:Ya.questionText,className:`mobile-question`,children:`اختر حرفًا مفخمًا لتتقدم في السباق`}),(0,F.jsx)(`div`,{style:Ya.options,className:`mobile-options`,children:T.options.map((e,t)=>(0,F.jsx)(`button`,{onClick:()=>j(e),disabled:C||m,className:`mobile-option-btn`,style:{...Ya.optionBtn,cursor:C?`default`:`pointer`,backgroundColor:u===e?e===T.correct?`#b7f48d`:`#ffb0b0`:`#fff`},children:e},`${c}-${t}`))})]}),(0,F.jsx)(`div`,{style:Ya.raceWrapper,className:`mobile-race-wrapper`,children:(0,F.jsxs)(`div`,{style:Ya.road,className:`mobile-road`,children:[(0,F.jsx)(`div`,{style:{...Ya.progress,width:`${f/a.length*100}%`}}),(0,F.jsx)(`div`,{style:{...Ya.car,left:`${f/a.length*82}%`},className:`mobile-car`,children:`🚗`}),(0,F.jsx)(`div`,{style:Ya.flag,className:`mobile-flag`,children:`🏁`})]})}),(0,F.jsxs)(`div`,{style:Ya.bottomButtons,className:`mobile-bottom-buttons`,children:[(0,F.jsx)(`button`,{onClick:ee,style:{...Ya.circleBtn,background:x?`#e85d3f`:`#667085`},className:`mobile-circle-btn`,"aria-label":x?`إيقاف الصوت`:`تشغيل الصوت`,children:x?(0,F.jsx)(z,{color:`white`,size:22}):(0,F.jsx)(B,{color:`white`,size:22})}),(0,F.jsx)(`button`,{onClick:O,style:Ya.circleBtn,className:`mobile-circle-btn`,"aria-label":`إعادة اللعبة`,children:(0,F.jsx)(R,{color:`white`,size:20})}),(0,F.jsx)(`button`,{onClick:k,style:Ya.circleBtn,className:`mobile-circle-btn`,"aria-label":`رجوع`,children:(0,F.jsx)(I,{color:`white`,size:20})}),(0,F.jsx)(`button`,{onClick:A,style:Ya.circleBtn,className:`mobile-circle-btn`,"aria-label":`الرئيسية`,children:(0,F.jsx)(L,{color:`white`,size:20})})]})]})]})]})}var Ya={page:{height:`100vh`,padding:`15px`,fontFamily:`Arial`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,overflow:`hidden`,boxSizing:`border-box`,position:`relative`},winOverlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0, 0, 0, 0.65)`,backdropFilter:`blur(5px)`,zIndex:1e3,display:`flex`,justifyContent:`center`,alignItems:`center`},winCard:{background:`#fff`,padding:`30px 40px`,borderRadius:`25px`,textAlign:`center`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`,display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`12px`,maxWidth:`90%`},winEmoji:{fontSize:`50px`},winText:{fontSize:`clamp(18px, 4vw, 24px)`,fontWeight:`bold`,color:`#333`},winScore:{fontSize:`clamp(15px, 3vw, 18px)`,color:`#e85d3f`,fontWeight:`bold`},winBtn:{marginTop:`10px`,padding:`10px 22px`,background:`linear-gradient(135deg, #ffb938, #ef5b35)`,color:`#fff`,border:`none`,borderRadius:`15px`,fontSize:`16px`,fontWeight:`bold`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(239,91,53,0.35)`},overlay:{width:`100%`,height:`100%`,boxSizing:`border-box`,textAlign:`center`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`},topBar:{display:`flex`,justifyContent:`space-between`,alignItems:`center`,flexWrap:`nowrap`,gap:`10px`,marginTop:`0px`,marginBottom:`10px`,padding:`0 10px`},infoBox:{background:`#fff`,padding:`6px 14px`,borderRadius:`16px`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`6px`,fontSize:`clamp(13px, 2vw, 16px)`,fontWeight:`bold`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`,whiteSpace:`nowrap`},infoValue:{fontSize:`clamp(13px, 2vw, 16px)`,color:`#e85d3f`,margin:0},titleBox:{background:`linear-gradient(135deg, #ffb938, #ef5b35)`,padding:`10px 20px`,borderRadius:`20px`,boxShadow:`0 5px 12px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},title:{color:`#fff`,fontSize:`clamp(16px, 3.5vw, 22px)`,fontWeight:`bold`},questionText:{background:`#fff`,width:`fit-content`,margin:`0 auto`,padding:`10px 20px`,borderRadius:`22px`,fontSize:`clamp(15px, 3vw, 20px)`,fontWeight:`bold`,boxShadow:`0 5px 12px rgba(0,0,0,0.15)`},options:{display:`flex`,justifyContent:`center`,gap:`15px`,flexWrap:`wrap`,margin:`12px 0`},optionBtn:{width:`clamp(72px, 15vw, 90px)`,height:`clamp(58px, 12vw, 72px)`,borderRadius:`20px`,border:`none`,fontSize:`clamp(28px, 6vw, 38px)`,fontWeight:`bold`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 5px 12px rgba(0,0,0,0.2)`},raceWrapper:{width:`65%`,maxWidth:`500px`,margin:`8px auto`,display:`flex`,justifyContent:`center`},road:{width:`100%`,height:`46px`,background:`#f1f1f1`,borderRadius:`50px`,position:`relative`,overflow:`hidden`,border:`3px solid #fff`,boxShadow:`0 5px 12px rgba(0,0,0,0.2)`},progress:{height:`100%`,background:`linear-gradient(90deg, #71ff55, #33c91f)`,borderRadius:`50px`,transition:`0.5s`},car:{position:`absolute`,top:`45%`,transform:`translateY(-50%)`,fontSize:`30px`,transition:`0.5s`},flag:{position:`absolute`,right:`12px`,top:`50%`,transform:`translateY(-50%)`,fontSize:`30px`},bottomButtons:{display:`flex`,justifyContent:`center`,gap:`15px`,flexWrap:`wrap`,marginBottom:`10px`},circleBtn:{width:`46px`,height:`46px`,borderRadius:`50%`,border:`none`,background:`#e85d3f`,cursor:`pointer`,display:`flex`,justifyContent:`center`,alignItems:`center`,boxShadow:`0 8px 15px rgba(0,0,0,0.15)`}},Xa=`/Kids-Games/assets/yyyy-DDv1Yufy.jpeg`;function Za(){let e=N(),t=[`خ`,`ص`,`ض`,`غ`,`ط`,`ق`,`ظ`],n=[{word:`صديق`,emphatic:[0]},{word:`طعام`,emphatic:[0]},{word:`ضفدع`,emphatic:[0]},{word:`قفل`,emphatic:[0]},{word:`غروب`,emphatic:[0]},{word:`ظرف`,emphatic:[0]},{word:`طاووس`,emphatic:[0]},{word:`قصة`,emphatic:[0]},{word:`قلم`,emphatic:[0]},{word:`غزال`,emphatic:[0]},{word:`ضرس`,emphatic:[0]},{word:`طين`,emphatic:[0]},{word:`خروف`,emphatic:[0]}],[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(`#ff4f93`),[s,c]=(0,b.useState)({}),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(60),[h,g]=(0,b.useState)(``),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(!1),[S,C]=(0,b.useState)(!0),w=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3`)),T=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3`));(0,b.useEffect)(()=>{w.current.preload=`auto`,T.current.preload=`auto`,w.current.volume=1,T.current.volume=1},[]),(0,b.useEffect)(()=>{if(_)return;if(p<=0){v(!0),x(!0);return}let e=setInterval(()=>{m(e=>e-1)},1e3);return()=>clearInterval(e)},[p,_]);let E=e=>{if(!(!S||!e.current))try{e.current.pause(),e.current.currentTime=0;let t=e.current.play();t!==void 0&&t.catch(()=>{})}catch(e){console.log(e)}},D=[`#ff4f93`,`#ff8800`,`#ffd000`,`#78c800`,`#1da1ff`,`#8e5cff`],O=e=>{if(_)return;let i=n[r].word[e];if(!t.includes(i))return;E(w);let o=`${r}-${e}`;if(l){let e={...s};delete e[o],c(e);return}let u={...s,[o]:a};c(u),k(u)},k=e=>{n[r].emphatic.every(t=>e[`${r}-${t}`])&&(E(T),f(e=>e+10),g(`👏 أحسنت`),setTimeout(()=>{r<n.length-1?(i(e=>e+1),g(``)):(v(!0),x(!0))},1500))},A=()=>{E(w),i(0),c({}),f(0),m(60),v(!1),x(!1),g(``),o(`#ff4f93`),u(!1)},j=()=>{E(w),e(`/AlHorof1`)},ee=()=>{E(w),e(`/home`)},te=()=>{C(e=>!e)};return(0,F.jsxs)(F.Fragment,{children:[(0,F.jsx)(`style`,{children:`
+      `}),o&&(0,F.jsxs)(`div`,{className:`race-loading-overlay`,children:[(0,F.jsxs)(`div`,{className:`race-background-icons`,children:[(0,F.jsx)(Ai,{className:`race-screen-icon race-screen-car`,size:58,strokeWidth:2.2}),(0,F.jsx)(Gi,{className:`race-screen-icon race-screen-flag`,size:48,strokeWidth:2.2}),(0,F.jsx)(pa,{className:`race-screen-icon race-screen-trophy`,size:48,strokeWidth:2.2}),(0,F.jsx)(Ji,{className:`race-screen-icon race-screen-gauge`,size:50,strokeWidth:2.2}),(0,F.jsx)(sa,{className:`race-screen-icon race-screen-sign`,size:43,strokeWidth:2.2}),(0,F.jsx)(Fi,{className:`race-screen-icon race-screen-wheel`,size:44,strokeWidth:2.2}),(0,F.jsx)(Ai,{className:`race-screen-icon race-screen-car-two`,size:42,strokeWidth:2.2})]}),(0,F.jsxs)(`div`,{className:`race-loading-card`,children:[(0,F.jsx)(`span`,{className:`race-loading-light race-loading-light-one`}),(0,F.jsx)(`span`,{className:`race-loading-light race-loading-light-two`}),(0,F.jsxs)(`div`,{className:`race-loading-car`,children:[(0,F.jsx)(Ai,{className:`race-loading-car-icon`,size:58,strokeWidth:2.5}),(0,F.jsx)(Gi,{className:`race-loading-flag`,size:35,strokeWidth:2.5})]}),(0,F.jsx)(`div`,{className:`race-loading-road`}),(0,F.jsx)(`div`,{className:`race-loading-title`,children:`جاري تحميل اللعبة`}),(0,F.jsx)(`div`,{className:`race-loading-progress-track`,children:(0,F.jsx)(`div`,{className:`race-loading-progress`})})]})]}),(0,F.jsxs)(`div`,{style:{...Ya.page,backgroundImage:`url(${qa})`},className:`mobile-page`,children:[m&&(0,F.jsx)(`div`,{style:Ya.winOverlay,children:(0,F.jsxs)(`div`,{style:Ya.winCard,children:[(0,F.jsx)(`div`,{style:Ya.winEmoji,children:`🏆`}),(0,F.jsx)(`div`,{style:Ya.winText,children:`أحسنت! لقد أنهيت السباق بنجاح`}),(0,F.jsxs)(`div`,{style:Ya.winScore,children:[`النقاط النهائية: `,g]}),(0,F.jsx)(`button`,{onClick:O,style:Ya.winBtn,children:`العب مرة أخرى`})]})}),(0,F.jsxs)(`div`,{style:Ya.overlay,className:`mobile-overlay`,children:[(0,F.jsxs)(`div`,{style:Ya.topBar,className:`mobile-top-bar`,children:[(0,F.jsxs)(`div`,{style:Ya.infoBox,className:`mobile-info-box`,children:[(0,F.jsx)(`span`,{style:{fontSize:`17px`},children:`⭐`}),(0,F.jsx)(`span`,{style:Ya.infoValue,children:g})]}),(0,F.jsx)(`div`,{style:Ya.titleBox,className:`mobile-title-box`,children:(0,F.jsx)(`span`,{style:Ya.title,className:`mobile-title`,children:`لعبة سباق الحروف`})}),(0,F.jsxs)(`div`,{style:Ya.infoBox,className:`mobile-info-box`,children:[(0,F.jsx)(`span`,{style:{fontSize:`17px`},children:`⏰`}),(0,F.jsx)(`span`,{style:Ya.infoValue,children:D(v)})]})]}),(0,F.jsxs)(`div`,{className:`mobile-center-content`,children:[(0,F.jsx)(`div`,{style:Ya.questionText,className:`mobile-question`,children:`اختر حرفًا مفخمًا لتتقدم في السباق`}),(0,F.jsx)(`div`,{style:Ya.options,className:`mobile-options`,children:T.options.map((e,t)=>(0,F.jsx)(`button`,{onClick:()=>j(e),disabled:C||m,className:`mobile-option-btn`,style:{...Ya.optionBtn,cursor:C?`default`:`pointer`,backgroundColor:u===e?e===T.correct?`#b7f48d`:`#ffb0b0`:`#fff`},children:e},`${c}-${t}`))})]}),(0,F.jsx)(`div`,{style:Ya.raceWrapper,className:`mobile-race-wrapper`,children:(0,F.jsxs)(`div`,{style:Ya.road,className:`mobile-road`,children:[(0,F.jsx)(`div`,{style:{...Ya.progress,width:`${f/a.length*100}%`}}),(0,F.jsx)(`div`,{style:{...Ya.car,left:`${f/a.length*82}%`},className:`mobile-car`,children:`🚗`}),(0,F.jsx)(`div`,{style:Ya.flag,className:`mobile-flag`,children:`🏁`})]})}),(0,F.jsxs)(`div`,{style:Ya.bottomButtons,className:`mobile-bottom-buttons`,children:[(0,F.jsx)(`button`,{onClick:ee,style:{...Ya.circleBtn,background:x?`#e85d3f`:`#667085`},className:`mobile-circle-btn`,"aria-label":x?`إيقاف الصوت`:`تشغيل الصوت`,children:x?(0,F.jsx)(z,{color:`white`,size:22}):(0,F.jsx)(B,{color:`white`,size:22})}),(0,F.jsx)(`button`,{onClick:O,style:Ya.circleBtn,className:`mobile-circle-btn`,"aria-label":`إعادة اللعبة`,children:(0,F.jsx)(R,{color:`white`,size:20})}),(0,F.jsx)(`button`,{onClick:k,style:Ya.circleBtn,className:`mobile-circle-btn`,"aria-label":`رجوع`,children:(0,F.jsx)(I,{color:`white`,size:20})}),(0,F.jsx)(`button`,{onClick:A,style:Ya.circleBtn,className:`mobile-circle-btn`,"aria-label":`الرئيسية`,children:(0,F.jsx)(L,{color:`white`,size:20})})]})]})]})]})}var Ya={page:{height:`100vh`,padding:`15px`,fontFamily:`Arial`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,overflow:`hidden`,boxSizing:`border-box`,position:`relative`},winOverlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0, 0, 0, 0.65)`,backdropFilter:`blur(5px)`,zIndex:1e3,display:`flex`,justifyContent:`center`,alignItems:`center`},winCard:{background:`#fff`,padding:`30px 40px`,borderRadius:`25px`,textAlign:`center`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`,display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`12px`,maxWidth:`90%`},winEmoji:{fontSize:`50px`},winText:{fontSize:`clamp(18px, 4vw, 24px)`,fontWeight:`bold`,color:`#333`},winScore:{fontSize:`clamp(15px, 3vw, 18px)`,color:`#e85d3f`,fontWeight:`bold`},winBtn:{marginTop:`10px`,padding:`10px 22px`,background:`linear-gradient(135deg, #ffb938, #ef5b35)`,color:`#fff`,border:`none`,borderRadius:`15px`,fontSize:`16px`,fontWeight:`bold`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(239,91,53,0.35)`},overlay:{width:`100%`,height:`100%`,boxSizing:`border-box`,textAlign:`center`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`},topBar:{display:`flex`,justifyContent:`space-between`,alignItems:`center`,flexWrap:`nowrap`,gap:`10px`,marginTop:`0px`,marginBottom:`10px`,padding:`0 10px`},infoBox:{background:`#fff`,padding:`6px 14px`,borderRadius:`16px`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`6px`,fontSize:`clamp(13px, 2vw, 16px)`,fontWeight:`bold`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`,whiteSpace:`nowrap`},infoValue:{fontSize:`clamp(13px, 2vw, 16px)`,color:`#e85d3f`,margin:0},titleBox:{background:`linear-gradient(135deg, #ffb938, #ef5b35)`,padding:`10px 20px`,borderRadius:`20px`,boxShadow:`0 5px 12px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},title:{color:`#fff`,fontSize:`clamp(16px, 3.5vw, 22px)`,fontWeight:`bold`},questionText:{background:`#fff`,width:`fit-content`,margin:`0 auto`,padding:`10px 20px`,borderRadius:`22px`,fontSize:`clamp(15px, 3vw, 20px)`,fontWeight:`bold`,boxShadow:`0 5px 12px rgba(0,0,0,0.15)`},options:{display:`flex`,justifyContent:`center`,gap:`15px`,flexWrap:`wrap`,margin:`12px 0`},optionBtn:{width:`clamp(72px, 15vw, 90px)`,height:`clamp(58px, 12vw, 72px)`,borderRadius:`20px`,border:`none`,fontSize:`clamp(28px, 6vw, 38px)`,fontWeight:`bold`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 5px 12px rgba(0,0,0,0.2)`},raceWrapper:{width:`65%`,maxWidth:`500px`,margin:`8px auto`,display:`flex`,justifyContent:`center`},road:{width:`100%`,height:`46px`,background:`#f1f1f1`,borderRadius:`50px`,position:`relative`,overflow:`hidden`,border:`3px solid #fff`,boxShadow:`0 5px 12px rgba(0,0,0,0.2)`},progress:{height:`100%`,background:`linear-gradient(90deg, #71ff55, #33c91f)`,borderRadius:`50px`,transition:`0.5s`},car:{position:`absolute`,top:`45%`,transform:`translateY(-50%)`,fontSize:`30px`,transition:`0.5s`},flag:{position:`absolute`,right:`12px`,top:`50%`,transform:`translateY(-50%)`,fontSize:`30px`},bottomButtons:{display:`flex`,justifyContent:`center`,gap:`15px`,flexWrap:`wrap`,marginBottom:`10px`},circleBtn:{width:`46px`,height:`46px`,borderRadius:`50%`,border:`none`,background:`#e85d3f`,cursor:`pointer`,display:`flex`,justifyContent:`center`,alignItems:`center`,boxShadow:`0 8px 15px rgba(0,0,0,0.15)`}},Xa=`/Kids-Games/assets/yyyy-DDv1Yufy.jpeg`;function Za(){let e=N(),t=[`خ`,`ص`,`ض`,`غ`,`ط`,`ق`,`ظ`],n=[{word:`صديق`,emphatic:[0]},{word:`طعام`,emphatic:[0]},{word:`ضفدع`,emphatic:[0]},{word:`قفل`,emphatic:[0]},{word:`غروب`,emphatic:[0]},{word:`ظرف`,emphatic:[0]},{word:`طاووس`,emphatic:[0]},{word:`قصة`,emphatic:[0]},{word:`قلم`,emphatic:[0]},{word:`غزال`,emphatic:[0]},{word:`ضرس`,emphatic:[0]},{word:`طين`,emphatic:[0]},{word:`خروف`,emphatic:[0]}],[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(`#ff4f93`),[s,c]=(0,b.useState)({}),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(60),[h,g]=(0,b.useState)(``),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(!1),[S,C]=(0,b.useState)(!0),w=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3`)),T=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3`));(0,b.useEffect)(()=>{w.current.preload=`auto`,T.current.preload=`auto`,w.current.volume=1,T.current.volume=1},[]),(0,b.useEffect)(()=>{if(_)return;if(p<=0){v(!0),x(!0);return}let e=setInterval(()=>{m(e=>e-1)},1e3);return()=>clearInterval(e)},[p,_]);let E=e=>{if(!(!S||!e.current))try{e.current.pause(),e.current.currentTime=0;let t=e.current.play();t!==void 0&&t.catch(()=>{})}catch(e){console.log(e)}},D=[`#ff4f93`,`#ff8800`,`#ffd000`,`#78c800`,`#1da1ff`,`#8e5cff`],O=e=>{if(_)return;let i=n[r].word[e];if(!t.includes(i))return;E(w);let o=`${r}-${e}`;if(l){let e={...s};delete e[o],c(e);return}let u={...s,[o]:a};c(u),k(u)},k=e=>{n[r].emphatic.every(t=>e[`${r}-${t}`])&&(E(T),f(e=>e+10),g(`👏 أحسنت`),setTimeout(()=>{r<n.length-1?(i(e=>e+1),g(``)):(v(!0),x(!0))},1500))},A=()=>{E(w),i(0),c({}),f(0),m(60),v(!1),x(!1),g(``),o(`#ff4f93`),u(!1)},j=()=>{E(w),e(`/AlHorof1`)},ee=()=>{E(w),e(`/home`)},te=()=>{C(e=>!e)};return(0,F.jsxs)(F.Fragment,{children:[(0,F.jsx)(`style`,{children:`
         @media (max-width: 768px) {
           .game-page-container {
             padding: 2vw !important;
