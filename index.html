@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
 
@@ -10,14 +10,367 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFF7FB" />
 
-    <title>kids-games</title>
-    <script type="module" crossorigin src="/Kids-Games/assets/index-D9MvXvYa.js"></script>
+    <title>ألعاب الأطفال التعليمية</title>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        min-width: 0;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #fff7fb;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      #root {
+        min-height: 100vh;
+        min-height: 100dvh;
+      }
+
+      #initial-loader {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 20px;
+        overflow: hidden;
+        background:
+          radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 214, 231, 0.8),
+            transparent 32%
+          ),
+          radial-gradient(
+            circle at 85% 80%,
+            rgba(189, 235, 255, 0.8),
+            transparent 35%
+          ),
+          linear-gradient(135deg, #fff7fb, #f8f3ff 50%, #f0fbff);
+        font-family: Arial, Tahoma, sans-serif;
+        transition:
+          opacity 0.35s ease,
+          visibility 0.35s ease;
+      }
+
+      #initial-loader.loader-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .initial-loader-decoration {
+        position: absolute;
+        user-select: none;
+        pointer-events: none;
+        animation: initialFloat 3s ease-in-out infinite;
+      }
+
+      .initial-star-one {
+        top: 14%;
+        right: 12%;
+        color: #ffbd45;
+        font-size: 38px;
+      }
+
+      .initial-star-two {
+        bottom: 17%;
+        left: 12%;
+        color: #a78bfa;
+        font-size: 34px;
+        animation-delay: 0.7s;
+      }
+
+      .initial-heart-one {
+        top: 20%;
+        left: 15%;
+        color: #ff83b7;
+        font-size: 34px;
+        animation-delay: 1s;
+      }
+
+      .initial-heart-two {
+        right: 14%;
+        bottom: 20%;
+        color: #ff9bca;
+        font-size: 28px;
+        animation-delay: 0.4s;
+      }
+
+      .initial-loader-card {
+        position: relative;
+        z-index: 1;
+        width: min(100%, 350px);
+        box-sizing: border-box;
+        padding: 30px 24px 25px;
+        border: 2px solid rgba(255, 255, 255, 0.95);
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.84);
+        box-shadow:
+          0 16px 45px rgba(167, 139, 250, 0.15),
+          0 5px 15px rgba(255, 131, 183, 0.1);
+        text-align: center;
+        animation: initialCardPop 0.6s ease both;
+      }
+
+      .initial-loader-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 88px;
+        margin: 0 auto 18px;
+        border: 4px solid #fff;
+        border-radius: 28px;
+        background: linear-gradient(135deg, #e9ddff, #ffddec);
+        box-shadow: 0 8px 22px rgba(167, 139, 250, 0.22);
+        font-size: 43px;
+        animation: initialLogoBounce 2s ease-in-out infinite;
+      }
+
+      .initial-loader-title {
+        margin: 0 0 10px;
+        color: #8b5cf6;
+        font-size: clamp(22px, 5vw, 27px);
+        font-weight: 800;
+        line-height: 1.5;
+      }
+
+      .initial-loader-subtitle {
+        margin: 0 0 24px;
+        color: #82768f;
+        font-size: 14px;
+        line-height: 1.9;
+      }
+
+      .initial-progress-track {
+        width: 100%;
+        height: 11px;
+        overflow: hidden;
+        border-radius: 20px;
+        background: #f0e8fa;
+      }
+
+      .initial-progress-fill {
+        width: 35%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(
+          90deg,
+          #ffabd0,
+          #bba5ff,
+          #9de4fa
+        );
+        animation: initialProgress 1.5s ease-in-out infinite;
+      }
+
+      .initial-loader-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        margin: 21px 0 15px;
+      }
+
+      .initial-loader-dots span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        animation: initialDotHop 0.8s ease-in-out infinite alternate;
+      }
+
+      .initial-loader-dots span:nth-child(1) {
+        background: #ffabd0;
+      }
+
+      .initial-loader-dots span:nth-child(2) {
+        background: #bba5ff;
+        animation-delay: 0.2s;
+      }
+
+      .initial-loader-dots span:nth-child(3) {
+        background: #9de4fa;
+        animation-delay: 0.4s;
+      }
+
+      .initial-loader-footer {
+        margin: 0;
+        color: #a394b3;
+        font-size: 12px;
+      }
+
+      @keyframes initialFloat {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-5deg);
+        }
+
+        50% {
+          transform: translateY(-12px) rotate(8deg);
+        }
+      }
+
+      @keyframes initialCardPop {
+        from {
+          opacity: 0;
+          transform: translateY(16px) scale(0.96);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes initialLogoBounce {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0);
+        }
+
+        50% {
+          transform: translateY(-5px) rotate(3deg);
+        }
+      }
+
+      @keyframes initialProgress {
+        0% {
+          width: 20%;
+          transform: translateX(0);
+        }
+
+        50% {
+          width: 75%;
+        }
+
+        100% {
+          width: 35%;
+          transform: translateX(-10px);
+        }
+      }
+
+      @keyframes initialDotHop {
+        from {
+          transform: translateY(0);
+          opacity: 0.55;
+        }
+
+        to {
+          transform: translateY(-7px);
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .initial-loader-card {
+          padding: 26px 20px 23px;
+          border-radius: 26px;
+        }
+
+        .initial-loader-logo {
+          width: 76px;
+          height: 76px;
+          border-radius: 24px;
+          font-size: 37px;
+        }
+
+        .initial-star-one {
+          font-size: 30px;
+        }
+
+        .initial-heart-one {
+          font-size: 27px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #initial-loader *,
+        #initial-loader *::before,
+        #initial-loader *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/Kids-Games/assets/index-Ct-Xb3-y.js"></script>
     <link rel="stylesheet" crossorigin href="/Kids-Games/assets/index-BTZRFy4h.css">
   </head>
 
   <body>
+    <div id="initial-loader" role="status" aria-live="polite">
+      <span
+        class="initial-loader-decoration initial-star-one"
+        aria-hidden="true"
+      >✦</span>
+
+      <span
+        class="initial-loader-decoration initial-star-two"
+        aria-hidden="true"
+      >✧</span>
+
+      <span
+        class="initial-loader-decoration initial-heart-one"
+        aria-hidden="true"
+      >♥</span>
+
+      <span
+        class="initial-loader-decoration initial-heart-two"
+        aria-hidden="true"
+      >♡</span>
+
+      <div class="initial-loader-card">
+        <div class="initial-loader-logo" aria-hidden="true">🎨</div>
+
+        <h1 class="initial-loader-title">
+          عالم الحركات الجميل ✨
+        </h1>
+
+        <p class="initial-loader-subtitle">
+          بنجهّز لك الألعاب، لحظات ونبدأ المرح!
+        </p>
+
+        <div class="initial-progress-track" aria-hidden="true">
+          <div class="initial-progress-fill"></div>
+        </div>
+
+        <div class="initial-loader-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <p class="initial-loader-footer">
+          التعلّم مع اللعب أحلى 💖
+        </p>
+      </div>
+    </div>
+
     <div id="root"></div>
+
+    <script>
+      window.hideInitialLoader = function () {
+        const loader = document.getElementById("initial-loader");
+
+        if (!loader || loader.classList.contains("loader-hidden")) {
+          return;
+        }
+
+        loader.classList.add("loader-hidden");
+
+        window.setTimeout(function () {
+          loader.remove();
+        }, 400);
+      };
+    </script>
 
   </body>
 </html>
