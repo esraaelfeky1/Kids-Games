@@ -11162,9 +11162,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             }
           }
         `})]})}function Jx({item:e,basketRef:t,onMatch:n,playSound:r}){let[i,a]=(0,b.useState)(!1);return(0,I.jsxs)(U.div,{drag:!i,dragSnapToOrigin:!e.hasKasra,animate:i?{opacity:0,scale:0}:{y:[0,-8,0],rotate:[0,3,-3,0]},transition:{duration:i?.3:1.5,repeat:i?0:1/0,ease:`easeInOut`},whileDrag:{scale:1.25,zIndex:999,cursor:`grabbing`},onDragEnd:(i,o)=>{if(!t.current)return;let s=t.current.getBoundingClientRect();o.point.x>=s.left&&o.point.x<=s.right&&o.point.y>=s.top&&o.point.y<=s.bottom&&(e.hasKasra?(r(!0),a(!0),setTimeout(n,300)):r(!1))},style:Yx.card,className:`butterfly-card`,children:[(0,I.jsx)(`img`,{src:e.img,alt:`Butterfly`,style:{width:`clamp(90px, 13vw, 125px)`,pointerEvents:`none`}}),(0,I.jsxs)(`div`,{style:Yx.charWrapper,children:[(0,I.jsx)(`span`,{style:Yx.baseText,children:e.base}),(0,I.jsx)(`span`,{style:Yx.harakaText,children:e.haraka})]})]})}var Yx={container:{width:`100vw`,height:`100vh`,display:`flex`,flexDirection:`column`,alignItems:`center`,overflow:`hidden`,position:`fixed`,top:0,left:0,boxSizing:`border-box`},bg:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,objectFit:`cover`,zIndex:-1},winOverlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(255,255,255,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:1e3},winBox:{textAlign:`center`,background:`white`,padding:`clamp(25px, 4vw, 50px)`,borderRadius:30,boxShadow:`0 0 20px rgba(0,0,0,0.2)`},headerArea:{width:`100%`,textAlign:`center`,paddingTop:`6px`},topBar:{display:`flex`,justifyContent:`space-between`,alignItems:`center`,width:`88%`,padding:`0 15px`,margin:`0 auto`},box:{background:`white`,padding:`clamp(4px, 0.8vw, 8px) clamp(8px, 1.5vw, 16px)`,borderRadius:12,fontWeight:`900`,fontSize:`clamp(15px, 1.8vw, 20px)`,boxShadow:`0 2px 4px rgba(0,0,0,0.15)`},mainTitle:{background:`#ff69b4`,color:`white`,padding:`3px 30px`,borderRadius:25,fontSize:`clamp(22px, 3.5vw, 34px)`,fontWeight:`900`,margin:`4px 0`},instructionBg:{background:`rgba(255, 255, 255, 0.95)`,padding:`3px 16px`,borderRadius:18,border:`2px solid #ff69b4`,marginTop:`2px`,display:`inline-block`},instruction:{fontSize:`clamp(14px, 1.8vw, 20px)`,fontWeight:`900`,margin:0},butterflyGrid:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`6px`,width:`82%`,flexGrow:1,alignItems:`center`,justifyItems:`center`},card:{cursor:`grab`,display:`flex`,justifyContent:`center`,alignItems:`center`,position:`relative`},charWrapper:{position:`absolute`,display:`flex`,alignItems:`center`,justifyContent:`center`,pointerEvents:`none`},baseText:{fontSize:`clamp(28px, 3.5vw, 38px)`,fontWeight:`900`,color:`black`,textShadow:`1px 1px 3px white`},harakaText:{fontSize:`clamp(55px, 4.5vw, 60px)`,fontWeight:`900`,color:`#fd0000`,marginLeft:`-12px`,textShadow:`1px 1px 3px white`},bottomArea:{display:`flex`,alignItems:`center`,justifyContent:`space-between`,paddingBottom:`14px`,width:`88%`,margin:`0 auto`},basket:{width:`clamp(140px, 16vw, 200px)`,position:`relative`,zIndex:10},bottomButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtn:{width:`clamp(42px, 4.2vw, 52px)`,height:`clamp(42px, 4.2vw, 52px)`,borderRadius:`50%`,border:`none`,background:`#ff69b4`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 8px rgba(0,0,0,0.2)`}},Xx=`/Kids-Games/assets/eggsbg-B8F5rC8x.jpeg`,Zx=`/Kids-Games/assets/egg1-o5L5bb5m.png`,Qx=`/Kids-Games/assets/egg2-D3lIievp.png`,$x=`/Kids-Games/assets/egg3-8UUYM9-6.png`,eS=`/Kids-Games/assets/egg4-CCoBO72p.png`,tS=`/Kids-Games/assets/egg5-oCSdgXlq.png`,nS=`/Kids-Games/assets/nest-CFPWKR48.png`,rS=`/Kids-Games/assets/chekin-BjdFDTeP.png`,iS=[Zx,Qx,$x,eS,tS];function aS(){let e=P(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(0),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(!1),[p,m]=(0,b.useState)(window.innerWidth<768);(0,b.useEffect)(()=>{let e=!0,t=[Xx,Zx,Qx,$x,eS,tS,nS,rS],n=e=>new Promise(t=>{let n=new Image;n.onload=()=>t(),n.onerror=()=>t(),n.src=e});return(async()=>{await Promise.all(t.map(e=>n(e))),e&&u(!0)})(),()=>{e=!1}},[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{f(!0)},5e3);return()=>{clearTimeout(e)}},[]);let h=l&&d;(0,b.useEffect)(()=>{let e=()=>{m(window.innerWidth<768)};window.addEventListener(`resize`,e);let t=e=>e.preventDefault();return document.body.addEventListener(`touchmove`,t,{passive:!1}),document.body.style.overflow=`hidden`,document.body.style.position=`fixed`,document.body.style.width=`100%`,document.body.style.height=`100%`,document.documentElement.style.overflow=`hidden`,()=>{window.removeEventListener(`resize`,e),document.body.removeEventListener(`touchmove`,t),document.body.style.overflow=`auto`,document.body.style.position=`static`,document.body.style.width=``,document.body.style.height=``,document.documentElement.style.overflow=`auto`}},[]);let g=(0,b.useMemo)(()=>{let e=[{char:`ب`,tashkeel:`ُ`},{char:`ت`,tashkeel:`َ`},{char:`ث`,tashkeel:`ُ`},{char:`ش`,tashkeel:`َ`},{char:`ج`,tashkeel:`ُ`},{char:`ح`,tashkeel:`َ`},{char:`خ`,tashkeel:`ُ`},{char:`د`,tashkeel:`َ`},{char:`ذ`,tashkeel:`ُ`},{char:`ر`,tashkeel:`َ`},{char:`ز`,tashkeel:`ُ`},{char:`س`,tashkeel:`َ`}];return(p?e.slice(0,9):e).map((e,t)=>({...e,id:t,hasDamma:e.tashkeel===`ُ`,img:iS[t%5]}))},[p]),[_,v]=(0,b.useState)([]),y=()=>{v(g.map(e=>({...e,hatched:!1}))),o(0),c(0),i(!1)};(0,b.useEffect)(()=>{y()},[g]);let x=(0,b.useMemo)(()=>g.filter(e=>e.hasDamma).length,[g]),S=(0,b.useMemo)(()=>{try{return new Audio(cs)}catch{return null}},[]),C=(0,b.useMemo)(()=>{try{return new Audio(ls)}catch{return null}},[]);(0,b.useEffect)(()=>{a===x&&x>0&&i(!0)},[a,x]),(0,b.useEffect)(()=>{if(h&&!r){let e=setInterval(()=>c(e=>e+1),1e3);return()=>clearInterval(e)}},[r,h]);let w=(0,b.useCallback)(e=>{v(n=>{let r=n.find(t=>t.id===e);return!r||r.hatched?n:r.hasDamma?(t&&S&&(S.currentTime=0,S.play().catch(()=>{})),o(e=>e+1),n.map(t=>t.id===e?{...t,hatched:!0}:t)):(t&&C&&(C.currentTime=0,C.play().catch(()=>{})),n)})},[t,S,C]),T=()=>(0,I.jsxs)(`div`,{style:oS.buttonsRow,children:[(0,I.jsx)(`button`,{onClick:()=>n(!t),style:oS.circleBtn,children:t?(0,I.jsx)(V,{size:20}):(0,I.jsx)(H,{size:20})}),(0,I.jsx)(`button`,{onClick:y,style:oS.circleBtn,children:(0,I.jsx)(B,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/Alhorof123`),style:oS.circleBtn,children:(0,I.jsx)(R,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:oS.circleBtn,children:(0,I.jsx)(z,{size:20})})]}),E=()=>(0,I.jsxs)(`div`,{style:oS.buttonsRow,children:[(0,I.jsx)(`button`,{onClick:y,style:oS.circleBtn,children:(0,I.jsx)(B,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/Alhorof123`),style:oS.circleBtn,children:(0,I.jsx)(R,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:oS.circleBtn,children:(0,I.jsx)(z,{size:20})})]});return h?(0,I.jsxs)(`div`,{style:oS.container,children:[(0,I.jsx)(`img`,{src:Xx,alt:`BG`,style:oS.bg}),(0,I.jsxs)(`div`,{style:oS.header,children:[(0,I.jsxs)(`div`,{style:oS.box,children:[(0,I.jsx)(`span`,{children:`⏱️️`}),(0,I.jsxs)(`span`,{children:[Math.floor(s/60),`:`,String(s%60).padStart(2,`0`)]})]}),(0,I.jsxs)(`div`,{style:oS.titleContainer,children:[(0,I.jsx)(`h1`,{style:oS.title,children:`لعبة الكتكوت`}),(0,I.jsx)(`p`,{style:oS.subTitle,children:`اضغط على البيض الذي يحتوي على ضمة`})]}),(0,I.jsxs)(`div`,{style:oS.box,children:[(0,I.jsx)(`span`,{children:`🐣`}),(0,I.jsx)(`span`,{children:a})]})]}),(0,I.jsx)(`div`,{style:{...oS.grid,gridTemplateColumns:p?`repeat(3, 1fr)`:`repeat(4, 1fr)`,transform:p?`translateY(0)`:`translateY(-18px)`,maxHeight:p?`none`:`calc(100vh - 145px)`},children:_.map(e=>(0,I.jsxs)(`div`,{style:{...oS.eggWrapper,width:p?`clamp(103px, 26vw, 138px)`:`clamp(98px, 17vw, 138px)`,height:p?`clamp(108px, 28vw, 148px)`:`clamp(103px, 18vw, 148px)`},onClick:()=>w(e.id),children:[(0,I.jsx)(`img`,{src:nS,style:{...oS.nest,width:p?`clamp(93px, 24vw, 133px)`:`clamp(90px, 17vw, 132px)`},alt:`nest`}),e.hatched?(0,I.jsx)(U.img,{initial:{scale:0},animate:{scale:1},src:rS,style:{...oS.chick,bottom:p?`14px`:`16px`,width:p?`clamp(100px, 26vw, 146px)`:`clamp(104px, 17.5vw, 150px)`},alt:`chick`}):(0,I.jsxs)(U.div,{style:{...oS.eggContainer,bottom:p?`18px`:`28px`},children:[(0,I.jsx)(`img`,{src:e.img,style:{...oS.egg,width:p?`clamp(92px, 24vw, 130px)`:`clamp(91px, 16.5vw, 129px)`},alt:`egg`}),(0,I.jsxs)(`div`,{style:{...oS.charWrapper,top:p?`clamp(12px, 3vw, 19px)`:`clamp(12px, 2vw, 19px)`},children:[(0,I.jsx)(`span`,{style:{...oS.char,fontSize:p?`clamp(26px, 6.5vw, 36px)`:`clamp(27px, 4.2vw, 36px)`},children:e.char}),(0,I.jsx)(`span`,{style:{...oS.tashkeel,fontSize:p?`clamp(32px, 8vw, 44px)`:`clamp(33px, 5.2vw, 45px)`,top:p?`clamp(-16px, -4vw, -23px)`:`clamp(-17px, -3.5vw, -23px)`},children:e.tashkeel})]})]})]},e.id))}),(0,I.jsx)(`div`,{style:oS.footerButtonsArea,children:(0,I.jsx)(T,{})}),(0,I.jsx)(Pv,{children:r&&(0,I.jsx)(U.div,{initial:{opacity:0},animate:{opacity:1},style:oS.overlay,children:(0,I.jsxs)(`div`,{style:oS.winBox,children:[(0,I.jsx)(`h2`,{style:oS.winTitle,children:`🎉 أحسنت`}),(0,I.jsxs)(`p`,{style:oS.winText,children:[`لقد جمعت `,a,` بيضات بنجاح`]}),(0,I.jsx)(E,{})]})})})]}):(0,I.jsxs)(`div`,{style:oS.loadingScreen,children:[(0,I.jsx)(U.div,{style:{...oS.loadingIcon,top:`12%`,left:`13%`,transform:`rotate(-15deg)`},animate:{y:[0,-12,0],rotate:[-15,-5,-15]},transition:{duration:2.2,repeat:1/0},children:(0,I.jsx)(Qi,{size:p?34:50})}),(0,I.jsx)(U.div,{style:{...oS.loadingEmoji,top:`15%`,right:`12%`},animate:{y:[0,-10,0],rotate:[0,5,0]},transition:{duration:2,repeat:1/0},children:`🐣`}),(0,I.jsx)(U.div,{style:{...oS.loadingIcon,bottom:`17%`,left:`12%`},animate:{y:[0,-8,0],rotate:[-10,10,-10]},transition:{duration:2.5,repeat:1/0},children:(0,I.jsx)(ea,{size:p?32:48})}),(0,I.jsx)(U.div,{style:{...oS.loadingEmoji,bottom:`15%`,right:`13%`},animate:{y:[0,-10,0],scale:[1,1.08,1]},transition:{duration:2.3,repeat:1/0},children:`🥚`}),(0,I.jsx)(Aa,{size:p?24:34,style:{...oS.smallDecoration,top:`30%`,left:`22%`}}),(0,I.jsx)(ca,{size:p?22:32,style:{...oS.smallDecoration,bottom:`31%`,right:`23%`}}),(0,I.jsxs)(U.div,{style:{...oS.loadingBox,width:p?`210px`:`320px`,minHeight:p?`105px`:`145px`,padding:p?`14px 16px`:`20px 24px`},initial:{opacity:0,scale:.85},animate:{opacity:1,scale:1},transition:{duration:.5},children:[(0,I.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,justifyContent:`center`,gap:`8px`,direction:`rtl`},children:[(0,I.jsx)(`span`,{style:{fontSize:p?`24px`:`31px`},children:`🐥`}),(0,I.jsx)(`h2`,{style:{...oS.loadingTitle,fontSize:p?`17px`:`23px`},children:`جاري تحميل اللعبة`}),(0,I.jsx)(`span`,{style:{fontSize:p?`23px`:`30px`},children:`🥚`})]}),(0,I.jsx)(`div`,{style:{...oS.loadingTrack,height:p?`9px`:`12px`},children:(0,I.jsx)(U.div,{style:oS.loadingProgress,initial:{width:`0%`},animate:{width:`100%`},transition:{duration:5,ease:`linear`}})}),(0,I.jsx)(`div`,{style:{display:`flex`,justifyContent:`center`,gap:`5px`,marginTop:p?`6px`:`9px`},children:[0,1,2].map(e=>(0,I.jsx)(U.span,{style:{width:p?`5px`:`7px`,height:p?`5px`:`7px`,borderRadius:`50%`,background:`#f5a623`,display:`block`},animate:{y:[0,-5,0],opacity:[.4,1,.4]},transition:{duration:.8,repeat:1/0,delay:e*.15}},e))})]})]})}var oS={loadingScreen:{width:`100vw`,height:`100vh`,position:`fixed`,top:0,left:0,overflow:`hidden`,display:`flex`,justifyContent:`center`,alignItems:`center`,background:`linear-gradient(135deg, #fff7d6 0%, #ffe8ef 45%, #dff5ff 100%)`,zIndex:999999,fontFamily:`Arial, Tahoma, sans-serif`},loadingBox:{position:`relative`,display:`flex`,flexDirection:`column`,justifyContent:`center`,alignItems:`stretch`,background:`linear-gradient(145deg, #ffffff 0%, #fffdf2 100%)`,border:`4px solid #f6c344`,borderRadius:`25px`,boxShadow:`0 12px 35px rgba(120, 82, 20, 0.25)`,zIndex:10,boxSizing:`border-box`},loadingTitle:{margin:0,fontWeight:`900`,color:`#7b4bb7`,textAlign:`center`,textShadow:`1px 1px 0 rgba(255,255,255,0.9)`},loadingTrack:{width:`100%`,background:`#f2e8cf`,borderRadius:`20px`,overflow:`hidden`,marginTop:`12px`,boxShadow:`inset 0 2px 4px rgba(0,0,0,0.12)`},loadingProgress:{height:`100%`,borderRadius:`20px`,background:`linear-gradient(90deg, #f6c344, #ff9f68, #e985c8, #82c9f5)`,boxShadow:`0 2px 7px rgba(190, 120, 80, 0.35)`},loadingIcon:{position:`absolute`,color:`#d99b25`,background:`rgba(255,255,255,0.75)`,width:`clamp(50px, 9vw, 70px)`,height:`clamp(50px, 9vw, 70px)`,borderRadius:`50%`,display:`flex`,justifyContent:`center`,alignItems:`center`,boxShadow:`0 6px 15px rgba(100,70,30,0.12)`},loadingEmoji:{position:`absolute`,fontSize:`clamp(38px, 7vw, 60px)`,filter:`drop-shadow(0 5px 5px rgba(0,0,0,0.12))`,zIndex:2},smallDecoration:{position:`absolute`,color:`#e9a5c7`,filter:`drop-shadow(0 3px 4px rgba(0,0,0,0.1))`},container:{width:`100vw`,height:`100%`,minHeight:`-webkit-fill-available`,position:`fixed`,top:0,left:0,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,overflow:`hidden`,boxSizing:`border-box`,padding:`6px 0 10px 0`},bg:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,objectFit:`cover`,zIndex:-1},header:{display:`flex`,justifyContent:`space-between`,alignItems:`center`,width:`92%`,zIndex:10,flexShrink:0},titleContainer:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`2px`},title:{background:`#0b77f3`,color:`white`,padding:`4px 20px`,borderRadius:20,fontSize:`clamp(17px, 3.5vw, 24px)`,margin:0,boxShadow:`0 3px 8px rgba(0,0,0,0.25)`,lineHeight:`1.2`},subTitle:{background:`white`,padding:`4px 13px`,borderRadius:26,color:`#080808`,fontSize:`clamp(12px, 2.2vw, 16px)`,marginTop:`2px`,fontWeight:`bold`,boxShadow:`0 2px 6px rgba(0,0,0,0.15)`,textAlign:`center`,lineHeight:`1.25`},box:{background:`white`,padding:`4px 10px`,borderRadius:12,fontSize:`clamp(12px, 2vw, 16px)`,fontWeight:`900`,boxShadow:`0 3px 8px rgba(0,0,0,0.25)`,display:`flex`,alignItems:`center`,gap:`5px`},grid:{display:`grid`,gap:`clamp(2px, 0.6vw, 6px)`,width:`98%`,maxWidth:`850px`,alignItems:`center`,justifyItems:`center`,margin:`auto 0`,overflow:`visible`,flexShrink:1},eggWrapper:{position:`relative`,display:`flex`,justifyContent:`center`,alignItems:`center`,cursor:`pointer`,touchAction:`manipulation`,flexShrink:0},nest:{position:`absolute`,bottom:`0px`},eggContainer:{position:`absolute`,display:`flex`,justifyContent:`center`,alignItems:`center`},egg:{},charWrapper:{position:`absolute`,display:`flex`,flexDirection:`column`,alignItems:`center`},char:{fontWeight:`900`,color:`black`,lineHeight:`0.9`},tashkeel:{fontWeight:`900`,color:`black`,position:`absolute`},chick:{position:`absolute`},buttonsRow:{display:`flex`,gap:`12px`,justifyContent:`center`,alignItems:`center`},footerButtonsArea:{flexShrink:0,zIndex:30,background:`rgba(0,0,0,0.3)`,padding:`4px 14px`,borderRadius:`26px`,backdropFilter:`blur(4px)`,marginBottom:`4px`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winBox:{background:`white`,padding:`20px 28px`,borderRadius:18,textAlign:`center`,display:`inline-flex`,flexDirection:`column`,alignItems:`center`,gap:`12px`,boxShadow:`0 8px 25px rgba(0,0,0,0.3)`,maxWidth:`85%`},winTitle:{fontSize:`26px`,color:`#0b77f3`,margin:0,fontWeight:`900`},winText:{fontSize:`18px`,fontWeight:`900`,margin:0,color:`#333`},circleBtn:{width:`40px`,height:`40px`,borderRadius:`50%`,border:`none`,background:`#075c92`,color:`white`,cursor:`pointer`,display:`flex`,justifyContent:`center`,alignItems:`center`,boxShadow:`0 3px 8px rgba(0,0,0,0.4)`,touchAction:`manipulation`}},sS=`/Kids-Games/assets/drink-water-fVKXlcJf.png`,cS=`/Kids-Games/assets/worker-P8UHKWU2.png`,lS=`/Kids-Games/assets/party-D53WJvF7.png`,uS=`/Kids-Games/assets/ear-DsV9Mlax.png`,dS=`/Kids-Games/assets/sick(1)-aMcT2g6B.png`,fS=`/Kids-Games/assets/swing-Bt4jGj-i.png`,pS=`/Kids-Games/assets/winner-CIVBherv.png`,mS=`/Kids-Games/assets/friends-DaXR-8Vy.png`,hS=`/Kids-Games/assets/laughing-COF4IF7t.png`,gS=`/Kids-Games/assets/magic-DEj5KOdU.png`;function _S(){let e=P(),t=(0,b.useRef)(new Audio(cs)),n=(0,b.useRef)(new Audio(ls)),r=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`)),i=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3`)),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!1);(0,b.useEffect)(()=>{let e=[uo,sS,cS,lS,uS,dS,fS,pS,mS,hS,gS],t=0,n=()=>{t+=1,t>=e.length&&o(!0)};e.forEach(e=>{let t=new Image;t.onload=n,t.onerror=n,t.src=e});let r=setTimeout(()=>{c(!0)},5e3);return()=>clearTimeout(r)},[]);let l=a&&s,u=[{image:sS,word:`شَرِبَ`,missing:`رِ`,display:`شَـ - بَ`,choices:[`قِـ`,`سُـ`,`رِ`]},{image:cS,word:`غَضِبَ`,missing:`ضِـ`,display:`غَـ - بَ`,choices:[`سُـ`,`ضِـ`,`دَ`]},{image:lS,word:`فَرِحَ`,missing:`رِ`,display:`فَـ - حَ`,choices:[`تَـ`,`طَـ`,`رِ`]},{image:uS,word:`سَمِعَ`,missing:`مِـ`,display:`سَـ - عَ`,choices:[`مِـ`,`ظَ`,`ذَ`]},{image:dS,word:`مَرِضَ`,missing:`رِ`,display:`مَـ - ضَ`,choices:[`كُـ`,`رِ`,`فَـ`]},{image:fS,word:`لَعِبَ`,missing:`عِـ`,display:`لَـ - بَ`,choices:[`عِـ`,`سَـ`,`طَ`]},{image:pS,word:`رَبِحَ`,missing:`بِـ`,display:`رَ - حَ`,choices:[`سَـ`,`خَـ`,`بِـ`]},{image:mS,word:`طَعِمَ`,missing:`عِـ`,display:`طَـ - مَ`,choices:[`عِـ`,`رَ`,`طَ`]},{image:hS,word:`ضَحِكَ`,missing:`حِـ`,display:`ضَـ - كَ`,choices:[`عَـ`,`حِـ`,`صَـ`]},{image:gS,word:`نَشِطَ`,missing:`شِـ`,display:`نَـ - طَ`,choices:[`قِـ`,`سُـ`,`شِـ`]}],[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(``),[h,g]=(0,b.useState)(!1),[_,v]=(0,b.useState)(0),[y,x]=(0,b.useState)(!1),[S,C]=(0,b.useState)(!1),[w,T]=(0,b.useState)(0),[E,D]=(0,b.useState)(!0),O=u[d],k=e=>e.replace(/[\u0640-\u065F\s]/g,``);(0,b.useEffect)(()=>{if(y||!l)return;let e=setInterval(()=>T(e=>e+1),1e3);return()=>clearInterval(e)},[y,l]);let A=e=>`${String(Math.floor(e/60)).padStart(2,`0`)}:${String(e%60).padStart(2,`0`)}`,j=e=>{y||(m(e),k(e)===k(O.missing)?(E&&(t.current.currentTime=0,t.current.play()),g(!0),v(e=>e+10),setTimeout(()=>{d<u.length-1?(f(d+1),m(``),g(!1)):(E&&(i.current.currentTime=0,i.current.play()),x(!0),C(!0))},700)):E&&(n.current.currentTime=0,n.current.play()))},ee=()=>{E&&(r.current.currentTime=0,r.current.play()),f(0),m(``),x(!1),v(0),T(0),g(!1),C(!1)};return(0,I.jsxs)(I.Fragment,{children:[(0,I.jsx)(`style`,{children:`
-        /* ==========================================
-           شاشة تحميل لعبة إكمال الكلمات
-           ========================================== */
+
+        /* =====================================================
+           شاشة تحميل اللعبة
+           ===================================================== */
 
         .tafkheem-loading-screen {
           position: fixed;
@@ -11172,9 +11173,22 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           width: 100%;
           height: 100%;
           background:
-            radial-gradient(circle at 20% 20%, rgba(255,255,255,0.95) 0 4%, transparent 5%),
-            radial-gradient(circle at 80% 25%, rgba(255,255,255,0.9) 0 3%, transparent 4%),
-            linear-gradient(135deg, #e9f7ff 0%, #dff3ff 45%, #f2edff 100%);
+            radial-gradient(
+              circle at 20% 20%,
+              rgba(255,255,255,0.95) 0 4%,
+              transparent 5%
+            ),
+            radial-gradient(
+              circle at 80% 25%,
+              rgba(255,255,255,0.9) 0 3%,
+              transparent 4%
+            ),
+            linear-gradient(
+              135deg,
+              #e9f7ff 0%,
+              #dff3ff 45%,
+              #f2edff 100%
+            );
           display: flex;
           justify-content: center;
           align-items: center;
@@ -11183,35 +11197,36 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           font-family: Arial, sans-serif;
         }
 
+        /* تم تصغير بطاقة التحميل للاب والتابلت */
         .tafkheem-loading-card {
-          width: 310px;
-          min-height: 190px;
-          background: rgba(255,255,255,0.96);
-          border: 4px solid #8cccec;
-          border-radius: 30px;
+          width: 270px;
+          min-height: 165px;
+          background: rgba(255,255,255,0.97);
+          border: 3px solid #8cccec;
+          border-radius: 26px;
           box-shadow:
-            0 12px 35px rgba(91, 150, 190, 0.25),
-            0 4px 0 rgba(126, 87, 231, 0.12);
+            0 10px 30px rgba(91,150,190,0.22),
+            0 4px 0 rgba(126,87,231,0.10);
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 25px 22px;
+          padding: 20px 18px;
           position: relative;
           z-index: 5;
         }
 
         .tafkheem-loading-message {
           color: #1684ff;
-          font-size: 25px;
+          font-size: 22px;
           font-weight: 900;
-          margin: 0 0 22px 0;
+          margin: 0 0 18px 0;
           text-align: center;
         }
 
         .tafkheem-loading-bar {
           width: 100%;
-          height: 15px;
+          height: 13px;
           background: #e8f2fb;
           border-radius: 20px;
           overflow: hidden;
@@ -11286,13 +11301,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .tafkheem-loading-inside-icon.left {
-          left: 14px;
-          top: 24px;
+          left: 12px;
+          top: 20px;
         }
 
         .tafkheem-loading-inside-icon.right {
-          right: 14px;
-          bottom: 22px;
+          right: 12px;
+          bottom: 18px;
           color: #d8c9f8;
         }
 
@@ -11300,18 +11315,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           0% {
             width: 5%;
           }
+
           20% {
             width: 24%;
           }
+
           45% {
             width: 48%;
           }
+
           70% {
             width: 72%;
           }
+
           90% {
             width: 91%;
           }
+
           100% {
             width: 100%;
           }
@@ -11321,6 +11341,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           0%, 100% {
             transform: translateY(0) rotate(0deg);
           }
+
           50% {
             transform: translateY(-10px) rotate(5deg);
           }
@@ -11330,6 +11351,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           0% {
             transform: rotate(0deg);
           }
+
           100% {
             transform: rotate(360deg);
           }
@@ -11366,6 +11388,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             overscroll-behavior: none !important;
           }
 
+          /* بطاقة أصغر على الموبايل */
           .tafkheem-loading-card {
             width: 220px !important;
             min-height: 145px !important;
