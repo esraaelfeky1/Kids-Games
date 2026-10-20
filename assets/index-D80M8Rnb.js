@@ -12329,7 +12329,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             top: 60%;
           }
         }
-      `})]})}var HS={gameArea:{width:`100vw`,height:`100dvh`,minHeight:`100dvh`,maxHeight:`100dvh`,position:`fixed`,top:0,left:0,overflow:`hidden`,display:`flex`,flexDirection:`column`,alignItems:`center`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`},headerContainer:{position:`absolute`,top:`8px`,zIndex:10,textAlign:`center`,width:`100%`,display:`flex`,justifyContent:`center`},gameTitle:{color:`#fff`,fontSize:`1.1rem`,fontWeight:`bold`,background:`rgba(0,0,0,0.6)`,padding:`3px 15px`,borderRadius:`10px`,margin:`0`},descriptionContainer:{position:`relative`},gameDescription:{color:`#0f0e0e`,fontSize:`0.9rem`,fontWeight:`bold`,background:`rgba(250,247,247,0.6)`,padding:`3px 15px`,borderRadius:`10px`,marginTop:`40px`},scoreBox:{position:`absolute`,top:`12px`,left:`20px`,background:`rgba(0,0,0,0.6)`,color:`#fff`,padding:`4px 10px`,borderRadius:`10px`,fontWeight:`bold`,fontSize:`0.85rem`,zIndex:10},timerBox:{position:`absolute`,top:`12px`,right:`20px`,background:`rgba(0,0,0,0.6)`,color:`#fff`,padding:`4px 10px`,borderRadius:`10px`,fontWeight:`bold`,fontSize:`0.85rem`,zIndex:10},plotsContainer:{position:`absolute`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:5,width:`100%`},plotZone:{position:`relative`,width:`90px`,height:`55px`,zIndex:5,display:`flex`,justifyContent:`center`,alignItems:`center`},seedsContainerMobile:{position:`absolute`,bottom:`15px`,width:`100%`,display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`6px`,zIndex:10},seedsContainerDesktop:{position:`absolute`,bottom:`12px`,width:`100%`,display:`flex`,justifyContent:`center`,zIndex:10},seedRow:{display:`flex`,justifyContent:`center`,gap:`12px`,flexWrap:`wrap`},bagBoxMobile:{width:`68px`,height:`78px`,cursor:`grab`,position:`relative`,touchAction:`none`},bagBoxTablet:{width:`85px`,height:`95px`,cursor:`grab`,position:`relative`,touchAction:`none`},bagBoxDesktop:{width:`90px`,height:`100px`,cursor:`grab`,position:`relative`,touchAction:`none`},txtStyleMobile:{textAlign:`center`,fontSize:`1.1rem`,fontWeight:`900`,marginTop:`-50px`,color:`#000`,textShadow:`0px 1px 2px rgba(255,255,255,0.9)`},txtStyleTablet:{textAlign:`center`,fontSize:`1.2rem`,fontWeight:`900`,marginTop:`-60px`,color:`#000`,textShadow:`0px 1px 2px rgba(255,255,255,0.9)`},txtStyleDesktop:{textAlign:`center`,fontSize:`1.25rem`,fontWeight:`900`,marginTop:`-62px`,color:`#000`,textShadow:`0px 1px 2px rgba(255,255,255,0.9)`},imgFull:{width:`100%`,height:`100%`,objectFit:`contain`},winOverlay:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:2e3},winCard:{background:`#fff`,padding:`20px 25px`,borderRadius:`15px`,textAlign:`center`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`,maxWidth:`190px`,width:`85%`},winTitle:{fontSize:`1.3rem`,color:`#27ae60`,marginBottom:`8px`,fontWeight:`bold`},winScore:{fontSize:`1rem`,color:`#e67e22`,marginBottom:`15px`,fontWeight:`bold`},winButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},winBtn:{color:`#fff`,border:`none`,padding:`8px 12px`,borderRadius:`8px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 5px rgba(0,0,0,0.2)`},leftButtons:{position:`fixed`,bottom:15,left:20,display:`flex`,flexDirection:`column`,gap:8,zIndex:1e3},smallBtn:{width:36,height:36,borderRadius:`50%`,border:`none`,background:`#ff9f43`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`}},US=`/Kids-Games/sounds/hay1.mp3`,WS=`/Kids-Games/sounds/pop.mp3`;function GS(){let e=P(),t=(0,b.useRef)(null),[n,r]=(0,b.useState)(0),[i,a]=(0,b.useState)(0),[o,s]=(0,b.useState)(!0),[c,l]=(0,b.useState)(Array(15).fill(!1)),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)({x:90,y:400}),[m,h]=(0,b.useState)(!1),g=[`صَاحَ`,`قِط`,`نَامَ`,`دُب`,`بَاب`,`فِيل`,`تَاج`,`أَسَد`,`فَارِس`,`قَلَم`,`مَال`,`كُرَة`,`خَالِد`,`زَهْرَة`,`سَامِر`],_=[`صَاحَ`,`نَامَ`,`بَاب`,`تَاج`,`فَارِس`,`مَال`,`خَالِد`,`سَامِر`],v=e=>{if(!o)return;let t=new Audio(e);t.currentTime=0;let n=t.play();n!==void 0&&n.catch(()=>{})},y=()=>{r(0),a(0),s(!0),l(Array(15).fill(!1)),d(!1),p({x:90,y:400}),h(!1)};(0,b.useEffect)(()=>{let e=setInterval(()=>{u||r(e=>e+1)},1e3);return()=>clearInterval(e)},[u]);let x=async e=>{if(m||c[e]||!t.current||u)return;let n=t.current.children[e].getBoundingClientRect();if(h(!0),p({x:n.left+5,y:n.top-20}),await new Promise(e=>setTimeout(e,800)),_.includes(g[e])){v(US);let t=[...c];t[e]=!0,l(t),a(e=>{let t=e+1;return t>=_.length&&d(!0),t}),await new Promise(e=>setTimeout(e,800))}else v(WS),await new Promise(e=>setTimeout(e,800));p({x:90,y:400}),h(!1)},S=()=>(0,I.jsxs)(`div`,{className:`action-buttons-container`,style:KS.bottomButtons,children:[(0,I.jsx)(`button`,{onClick:()=>s(!o),style:KS.circleBtn,children:o?(0,I.jsx)(V,{size:24}):(0,I.jsx)(H,{size:24})}),(0,I.jsx)(`button`,{onClick:y,style:KS.circleBtn,children:(0,I.jsx)(B,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(-1),style:KS.circleBtn,children:(0,I.jsx)(R,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:KS.circleBtn,children:(0,I.jsx)(z,{size:24})})]});return(0,I.jsxs)(`div`,{style:KS.game,children:[(0,I.jsxs)(`div`,{style:KS.topBar,children:[(0,I.jsxs)(`div`,{className:`game-box`,style:KS.box,children:[`⏱️ `,Math.floor(n/60),`:`,String(n%60).padStart(2,`0`)]}),(0,I.jsx)(`div`,{className:`game-title`,style:KS.mainTitle,children:`ذوب الجليد`}),(0,I.jsxs)(`div`,{className:`game-box`,style:KS.box,children:[`❄️ `,i,` / `,_.length]})]}),(0,I.jsx)(`div`,{className:`game-subtitle`,style:KS.subTitle,children:`اختار كلمات المد بالألف`}),(0,I.jsx)(`div`,{ref:t,className:`game-grid`,style:KS.grid,children:g.map((e,t)=>(0,I.jsxs)(`div`,{onClick:()=>x(t),className:`game-tile`,style:{...KS.tile,animation:c[t]?`meltAway 1s forwards`:`none`},children:[(0,I.jsx)(`span`,{className:`game-letter`,style:KS.letter,children:e}),(0,I.jsx)(`div`,{className:`game-ice-layer`,style:KS.iceLayer})]},t))}),(0,I.jsx)(`img`,{src:bl,alt:`snowman`,style:{...KS.snowman,left:f.x,top:f.y}}),!u&&(0,I.jsx)(S,{}),u&&(0,I.jsxs)(`div`,{style:KS.winStyle,children:[(0,I.jsx)(`h1`,{className:`win-title`,children:`🎉 أحسنت يا بطل! 🎉`}),(0,I.jsxs)(`p`,{className:`win-score`,children:[`⭐ إجمالي النقاط: `,i,` نقاط`]}),(0,I.jsxs)(`div`,{className:`action-buttons-container`,style:{display:`flex`,gap:`15px`,justifyContent:`center`},children:[(0,I.jsx)(`button`,{onClick:y,style:KS.circleBtn,children:(0,I.jsx)(B,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(-1),style:KS.circleBtn,children:(0,I.jsx)(R,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:KS.circleBtn,children:(0,I.jsx)(z,{size:24})})]})]}),(0,I.jsx)(`style`,{children:`
+      `})]})}var HS={gameArea:{width:`100vw`,height:`100dvh`,minHeight:`100dvh`,maxHeight:`100dvh`,position:`fixed`,top:0,left:0,overflow:`hidden`,display:`flex`,flexDirection:`column`,alignItems:`center`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`},headerContainer:{position:`absolute`,top:`8px`,zIndex:10,textAlign:`center`,width:`100%`,display:`flex`,justifyContent:`center`},gameTitle:{color:`#fff`,fontSize:`1.1rem`,fontWeight:`bold`,background:`rgba(0,0,0,0.6)`,padding:`3px 15px`,borderRadius:`10px`,margin:`0`},descriptionContainer:{position:`relative`},gameDescription:{color:`#0f0e0e`,fontSize:`0.9rem`,fontWeight:`bold`,background:`rgba(250,247,247,0.6)`,padding:`3px 15px`,borderRadius:`10px`,marginTop:`40px`},scoreBox:{position:`absolute`,top:`12px`,left:`20px`,background:`rgba(0,0,0,0.6)`,color:`#fff`,padding:`4px 10px`,borderRadius:`10px`,fontWeight:`bold`,fontSize:`0.85rem`,zIndex:10},timerBox:{position:`absolute`,top:`12px`,right:`20px`,background:`rgba(0,0,0,0.6)`,color:`#fff`,padding:`4px 10px`,borderRadius:`10px`,fontWeight:`bold`,fontSize:`0.85rem`,zIndex:10},plotsContainer:{position:`absolute`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:5,width:`100%`},plotZone:{position:`relative`,width:`90px`,height:`55px`,zIndex:5,display:`flex`,justifyContent:`center`,alignItems:`center`},seedsContainerMobile:{position:`absolute`,bottom:`15px`,width:`100%`,display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`6px`,zIndex:10},seedsContainerDesktop:{position:`absolute`,bottom:`12px`,width:`100%`,display:`flex`,justifyContent:`center`,zIndex:10},seedRow:{display:`flex`,justifyContent:`center`,gap:`12px`,flexWrap:`wrap`},bagBoxMobile:{width:`68px`,height:`78px`,cursor:`grab`,position:`relative`,touchAction:`none`},bagBoxTablet:{width:`85px`,height:`95px`,cursor:`grab`,position:`relative`,touchAction:`none`},bagBoxDesktop:{width:`90px`,height:`100px`,cursor:`grab`,position:`relative`,touchAction:`none`},txtStyleMobile:{textAlign:`center`,fontSize:`1.1rem`,fontWeight:`900`,marginTop:`-50px`,color:`#000`,textShadow:`0px 1px 2px rgba(255,255,255,0.9)`},txtStyleTablet:{textAlign:`center`,fontSize:`1.2rem`,fontWeight:`900`,marginTop:`-60px`,color:`#000`,textShadow:`0px 1px 2px rgba(255,255,255,0.9)`},txtStyleDesktop:{textAlign:`center`,fontSize:`1.25rem`,fontWeight:`900`,marginTop:`-62px`,color:`#000`,textShadow:`0px 1px 2px rgba(255,255,255,0.9)`},imgFull:{width:`100%`,height:`100%`,objectFit:`contain`},winOverlay:{position:`absolute`,inset:0,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:2e3},winCard:{background:`#fff`,padding:`20px 25px`,borderRadius:`15px`,textAlign:`center`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`,maxWidth:`190px`,width:`85%`},winTitle:{fontSize:`1.3rem`,color:`#27ae60`,marginBottom:`8px`,fontWeight:`bold`},winScore:{fontSize:`1rem`,color:`#e67e22`,marginBottom:`15px`,fontWeight:`bold`},winButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},winBtn:{color:`#fff`,border:`none`,padding:`8px 12px`,borderRadius:`8px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 5px rgba(0,0,0,0.2)`},leftButtons:{position:`fixed`,bottom:15,left:20,display:`flex`,flexDirection:`column`,gap:8,zIndex:1e3},smallBtn:{width:36,height:36,borderRadius:`50%`,border:`none`,background:`#ff9f43`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`}},US=`/Kids-Games/sounds/hay1.mp3`,WS=`/Kids-Games/sounds/pop.mp3`;function GS(){let e=P(),t=(0,b.useRef)(null),[n,r]=(0,b.useState)(0),[i,a]=(0,b.useState)(0),[o,s]=(0,b.useState)(!0),[c,l]=(0,b.useState)(Array(15).fill(!1)),[u,d]=(0,b.useState)(!1),[f,p]=(0,b.useState)({x:90,y:400}),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(0),C=[`صَاحَ`,`قِط`,`نَامَ`,`دُب`,`بَاب`,`فِيل`,`تَاج`,`أَسَد`,`فَارِس`,`قَلَم`,`مَال`,`كُرَة`,`خَالِد`,`زَهْرَة`,`سَامِر`],w=[`صَاحَ`,`نَامَ`,`بَاب`,`تَاج`,`فَارِس`,`مَال`,`خَالِد`,`سَامِر`];(0,b.useEffect)(()=>{let e=0,t=[yl,bl],n=()=>{e+=1,S(Math.round(e/t.length*100)),e>=t.length&&(_(!0),S(100))};return t.forEach(e=>{let t=new Image;t.onload=n,t.onerror=n,t.src=e}),()=>{}},[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{y(!0)},5e3);return()=>clearTimeout(e)},[]);let T=g&&v,E=e=>{if(!o)return;let t=new Audio(e);t.currentTime=0;let n=t.play();n!==void 0&&n.catch(()=>{})},D=()=>{r(0),a(0),s(!0),l(Array(15).fill(!1)),d(!1),p({x:90,y:400}),h(!1)};(0,b.useEffect)(()=>{if(!T)return;let e=setInterval(()=>{u||r(e=>e+1)},1e3);return()=>clearInterval(e)},[u,T]);let O=async e=>{if(!T||m||c[e]||!t.current||u)return;let n=t.current.children[e].getBoundingClientRect();if(h(!0),p({x:n.left+5,y:n.top-20}),await new Promise(e=>setTimeout(e,800)),w.includes(C[e])){E(US);let t=[...c];t[e]=!0,l(t),a(e=>{let t=e+1;return t>=w.length&&d(!0),t}),await new Promise(e=>setTimeout(e,800))}else E(WS),await new Promise(e=>setTimeout(e,800));p({x:90,y:400}),h(!1)},k=()=>(0,I.jsxs)(`div`,{className:`action-buttons-container`,style:KS.bottomButtons,children:[(0,I.jsx)(`button`,{onClick:()=>s(!o),style:KS.circleBtn,children:o?(0,I.jsx)(V,{size:24}):(0,I.jsx)(H,{size:24})}),(0,I.jsx)(`button`,{onClick:D,style:KS.circleBtn,children:(0,I.jsx)(B,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(-1),style:KS.circleBtn,children:(0,I.jsx)(R,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:KS.circleBtn,children:(0,I.jsx)(z,{size:24})})]});return(0,I.jsxs)(`div`,{style:KS.game,children:[(0,I.jsxs)(`div`,{style:KS.topBar,children:[(0,I.jsxs)(`div`,{className:`game-box`,style:KS.box,children:[`⏱️ `,Math.floor(n/60),`:`,String(n%60).padStart(2,`0`)]}),(0,I.jsx)(`div`,{className:`game-title`,style:KS.mainTitle,children:`ذوب الجليد`}),(0,I.jsxs)(`div`,{className:`game-box`,style:KS.box,children:[`❄️ `,i,` / `,w.length]})]}),(0,I.jsx)(`div`,{className:`game-subtitle`,style:KS.subTitle,children:`اختار كلمات المد بالألف`}),(0,I.jsx)(`div`,{ref:t,className:`game-grid`,style:KS.grid,children:C.map((e,t)=>(0,I.jsxs)(`div`,{onClick:()=>O(t),className:`game-tile`,style:{...KS.tile,animation:c[t]?`meltAway 1s forwards`:`none`},children:[(0,I.jsx)(`span`,{className:`game-letter`,style:KS.letter,children:e}),(0,I.jsx)(`div`,{className:`game-ice-layer`,style:KS.iceLayer})]},t))}),(0,I.jsx)(`img`,{src:bl,alt:`snowman`,style:{...KS.snowman,left:f.x,top:f.y}}),!u&&(0,I.jsx)(k,{}),u&&(0,I.jsxs)(`div`,{style:KS.winStyle,children:[(0,I.jsx)(`h1`,{className:`win-title`,children:`🎉 أحسنت يا بطل! 🎉`}),(0,I.jsxs)(`p`,{className:`win-score`,children:[`⭐ إجمالي النقاط: `,i,` نقاط`]}),(0,I.jsxs)(`div`,{className:`action-buttons-container`,style:{display:`flex`,gap:`15px`,justifyContent:`center`},children:[(0,I.jsx)(`button`,{onClick:D,style:KS.circleBtn,children:(0,I.jsx)(B,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(-1),style:KS.circleBtn,children:(0,I.jsx)(R,{size:24})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:KS.circleBtn,children:(0,I.jsx)(z,{size:24})})]})]}),!T&&(0,I.jsxs)(`div`,{className:`ice-loading-overlay`,children:[(0,I.jsx)(Aa,{className:`ice-decoration ice-one`,size:44}),(0,I.jsx)(Aa,{className:`ice-decoration ice-two`,size:34}),(0,I.jsx)(Ki,{className:`ice-decoration ice-three`,size:48}),(0,I.jsx)(ja,{className:`ice-decoration ice-four`,size:38}),(0,I.jsx)(Na,{className:`ice-decoration ice-five`,size:34}),(0,I.jsx)(Aa,{className:`ice-decoration ice-six`,size:30}),(0,I.jsx)(`div`,{className:`ice-emoji ice-emoji-one`,children:`❄️`}),(0,I.jsx)(`div`,{className:`ice-emoji ice-emoji-two`,children:`⛄`}),(0,I.jsx)(`div`,{className:`ice-emoji ice-emoji-three`,children:`🧊`}),(0,I.jsx)(`div`,{className:`ice-emoji ice-emoji-four`,children:`✨`}),(0,I.jsxs)(`div`,{className:`ice-loading-card`,children:[(0,I.jsx)(`div`,{className:`ice-loading-title`,children:`جاري تحميل اللعبة`}),(0,I.jsx)(`div`,{className:`ice-loading-progress`,children:(0,I.jsx)(`div`,{className:`ice-loading-progress-fill`,style:{width:`${x}%`}})})]})]}),(0,I.jsx)(`style`,{children:`
         * {
           box-sizing: border-box;
         }
@@ -12352,6 +12352,246 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             opacity: 0;
             transform: scale(0);
           }
+        }
+
+        /* =========================
+           Loading Animation
+        ========================= */
+
+        @keyframes iceFloatOne {
+          0%,
+          100% {
+            transform: translateY(0) rotate(0deg);
+          }
+
+          50% {
+            transform: translateY(-15px) rotate(10deg);
+          }
+        }
+
+        @keyframes iceFloatTwo {
+          0%,
+          100% {
+            transform: translateY(0) rotate(0deg);
+          }
+
+          50% {
+            transform: translateY(13px) rotate(-10deg);
+          }
+        }
+
+        @keyframes iceTwinkle {
+          0%,
+          100% {
+            opacity: 0.45;
+            transform: scale(0.9);
+          }
+
+          50% {
+            opacity: 1;
+            transform: scale(1.15);
+          }
+        }
+
+        .ice-loading-overlay {
+          position: fixed;
+          inset: 0;
+          width: 100vw;
+          height: 100dvh;
+          z-index: 99999;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          overflow: hidden;
+
+          background:
+            radial-gradient(
+              circle at 20% 20%,
+              rgba(255, 255, 255, 0.98),
+              transparent 30%
+            ),
+            radial-gradient(
+              circle at 80% 25%,
+              rgba(190, 239, 255, 0.95),
+              transparent 32%
+            ),
+            radial-gradient(
+              circle at 50% 90%,
+              rgba(170, 225, 250, 0.9),
+              transparent 35%
+            ),
+            linear-gradient(
+              135deg,
+              #eafaff 0%,
+              #c9f0ff 45%,
+              #a9dcf5 100%
+            );
+        }
+
+        .ice-decoration {
+          position: absolute;
+          color: #55bde8;
+          filter: drop-shadow(
+            0 4px 7px rgba(30, 130, 180, 0.18)
+          );
+        }
+
+        .ice-one {
+          top: 12%;
+          left: 12%;
+          color: #42b8e8;
+          animation: iceFloatOne 3.5s ease-in-out infinite;
+        }
+
+        .ice-two {
+          top: 20%;
+          right: 15%;
+          color: #79d5f5;
+          animation: iceFloatTwo 4s ease-in-out infinite;
+        }
+
+        .ice-three {
+          bottom: 16%;
+          left: 12%;
+          color: #70c9ed;
+          animation: iceFloatOne 4.5s ease-in-out infinite;
+        }
+
+        .ice-four {
+          bottom: 19%;
+          right: 15%;
+          color: #ffffff;
+          animation: iceTwinkle 2s ease-in-out infinite;
+        }
+
+        .ice-five {
+          top: 40%;
+          right: 8%;
+          color: #4bbce9;
+          animation: iceTwinkle 2.5s ease-in-out infinite;
+        }
+
+        .ice-six {
+          bottom: 36%;
+          left: 8%;
+          color: #ffffff;
+          animation: iceTwinkle 1.8s ease-in-out infinite;
+        }
+
+        .ice-emoji {
+          position: absolute;
+          filter: drop-shadow(
+            0 4px 6px rgba(40, 120, 170, 0.18)
+          );
+          animation: iceFloatTwo 4s ease-in-out infinite;
+          user-select: none;
+        }
+
+        .ice-emoji-one {
+          left: 7%;
+          top: 35%;
+          font-size: 42px;
+        }
+
+        .ice-emoji-two {
+          right: 7%;
+          bottom: 27%;
+          font-size: 44px;
+        }
+
+        .ice-emoji-three {
+          left: 10%;
+          bottom: 25%;
+          font-size: 38px;
+        }
+
+        .ice-emoji-four {
+          right: 10%;
+          top: 57%;
+          font-size: 34px;
+          animation: iceTwinkle 2s ease-in-out infinite;
+        }
+
+        .ice-loading-card {
+          position: relative;
+          z-index: 10;
+
+          width: 250px;
+          min-height: 125px;
+
+          padding: 22px 24px;
+
+          border-radius: 20px;
+
+          background:
+            linear-gradient(
+              145deg,
+              #ffffff 0%,
+              #dff7ff 45%,
+              #a9e3f8 100%
+            );
+
+          border: 3px solid #48b9e8;
+
+          box-shadow:
+            0 12px 28px rgba(25, 120, 165, 0.25),
+            0 4px 10px rgba(0, 0, 0, 0.1);
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .ice-loading-title {
+          color: #147fae;
+          font-size: 1rem;
+          font-weight: 900;
+          text-align: center;
+          margin-bottom: 14px;
+
+          text-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.95);
+        }
+
+        .ice-loading-progress {
+          width: 100%;
+          height: 12px;
+
+          overflow: hidden;
+          border-radius: 20px;
+
+          background: #ffffff;
+
+          border: 1px solid #6bc7eb;
+
+          box-shadow:
+            inset 0 2px 4px
+            rgba(50, 130, 170, 0.18);
+        }
+
+        .ice-loading-progress-fill {
+          height: 100%;
+
+          border-radius: 20px;
+
+          background:
+            linear-gradient(
+              90deg,
+              #29aee3 0%,
+              #5fc9ed 40%,
+              #8de0f5 70%,
+              #d7f7ff 100%
+            );
+
+          box-shadow:
+            0 0 10px
+            rgba(65, 190, 235, 0.65);
+
+          transition:
+            width 0.5s ease-in-out;
         }
 
         .win-title {
@@ -12436,6 +12676,87 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .action-buttons-container button svg {
             width: 23px !important;
             height: 23px !important;
+          }
+
+          /* Loading card - mobile only */
+          .ice-loading-card {
+            width: 195px;
+            min-height: 98px;
+            padding: 15px 17px;
+            border-radius: 16px;
+            border-width: 3px;
+          }
+
+          .ice-loading-title {
+            font-size: 0.82rem;
+            margin-bottom: 9px;
+          }
+
+          .ice-loading-progress {
+            height: 8px;
+          }
+
+          .ice-decoration {
+            transform-origin: center;
+          }
+
+          .ice-one {
+            top: 15%;
+            left: 7%;
+          }
+
+          .ice-two {
+            top: 17%;
+            right: 7%;
+          }
+
+          .ice-three {
+            bottom: 18%;
+            left: 7%;
+          }
+
+          .ice-four {
+            bottom: 19%;
+            right: 8%;
+          }
+
+          .ice-five {
+            top: 38%;
+            right: 3%;
+          }
+
+          .ice-six {
+            bottom: 35%;
+            left: 4%;
+          }
+
+          .ice-decoration {
+            width: 27px;
+            height: 27px;
+          }
+
+          .ice-emoji-one {
+            left: 4%;
+            top: 34%;
+            font-size: 28px;
+          }
+
+          .ice-emoji-two {
+            right: 4%;
+            bottom: 30%;
+            font-size: 30px;
+          }
+
+          .ice-emoji-three {
+            left: 5%;
+            bottom: 27%;
+            font-size: 27px;
+          }
+
+          .ice-emoji-four {
+            right: 5%;
+            top: 58%;
+            font-size: 25px;
           }
 
           .win-title {
