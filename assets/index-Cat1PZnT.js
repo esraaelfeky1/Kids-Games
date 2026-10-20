@@ -14415,7 +14415,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================
-           شاشة تحميل لعبة البولينج
+           شاشة تحميل البولينج
         ===================================== */
 
         .bowling-loading-overlay {
@@ -14435,55 +14435,70 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           background:
             radial-gradient(
-              circle at 18% 20%,
-              rgba(99, 102, 241, 0.35),
-              transparent 28%
+              circle at 15% 18%,
+              rgba(96, 165, 250, 0.35),
+              transparent 25%
             ),
             radial-gradient(
-              circle at 82% 18%,
-              rgba(236, 72, 153, 0.28),
-              transparent 28%
+              circle at 85% 20%,
+              rgba(236, 72, 153, 0.30),
+              transparent 25%
             ),
             radial-gradient(
               circle at 50% 85%,
-              rgba(14, 165, 233, 0.25),
-              transparent 35%
+              rgba(168, 85, 247, 0.28),
+              transparent 32%
             ),
             linear-gradient(
               135deg,
-              #171047 0%,
+              #111827 0%,
               #312e81 48%,
               #4c1d95 100%
             );
         }
 
+        /*
+          المربع أبيض
+          والحافة متدرجة وملونة
+        */
+
         .bowling-loading-card {
-          width: 260px;
-          min-height: 125px;
+          position: relative;
 
-          padding: 22px 24px;
+          width: 230px;
+          min-height: 105px;
 
-          border-radius: 22px;
+          padding: 18px 20px;
 
-          background:
+          border-radius: 20px;
+
+          background: #ffffff;
+
+          border: 4px solid transparent;
+
+          background-image:
             linear-gradient(
-              145deg,
-              #312e81 0%,
-              #4f46e5 48%,
-              #7c3aed 100%
+              #ffffff,
+              #ffffff
+            ),
+            linear-gradient(
+              135deg,
+              #38bdf8,
+              #6366f1,
+              #a855f7,
+              #ec4899,
+              #facc15
             );
 
-          border: 3px solid #facc15;
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
 
           box-shadow:
-            0 0 28px
-            rgba(250, 204, 21, 0.35),
-
             0 12px 30px
             rgba(0, 0, 0, 0.42),
 
-            inset 0 1px 0
-            rgba(255,255,255,0.35);
+            0 0 25px
+            rgba(99, 102, 241, 0.28);
 
           display: flex;
           flex-direction: column;
@@ -14495,40 +14510,44 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .bowling-loading-title {
-          color: #ffffff;
+          color: #312e81;
 
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 900;
 
-          margin-bottom: 14px;
+          margin-bottom: 12px;
 
           text-align: center;
 
           text-shadow:
-            0 2px 5px
-            rgba(0,0,0,0.35);
+            0 1px 1px
+            rgba(0,0,0,0.08);
         }
+
+        /*
+          شريط تحميل ملون
+        */
 
         .bowling-loading-progress {
           width: 100%;
-          height: 12px;
+          height: 10px;
 
           overflow: hidden;
 
           border-radius: 20px;
 
           background:
-            rgba(255,255,255,0.16);
+            #e5e7eb;
 
           border:
             1px solid
-            rgba(255,255,255,0.75);
+            #d1d5db;
 
           direction: ltr;
 
           box-shadow:
             inset 0 2px 4px
-            rgba(0,0,0,0.35);
+            rgba(0,0,0,0.12);
         }
 
         .bowling-loading-progress-fill {
@@ -14539,34 +14558,40 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           background:
             linear-gradient(
               90deg,
-              #facc15 0%,
-              #fde047 25%,
-              #fb7185 55%,
-              #c084fc 78%,
-              #60a5fa 100%
+              #38bdf8 0%,
+              #6366f1 25%,
+              #a855f7 50%,
+              #ec4899 75%,
+              #facc15 100%
             );
 
           box-shadow:
-            0 0 12px
-            rgba(250, 204, 21, 0.85);
+            0 0 10px
+            rgba(99, 102, 241, 0.55);
 
           transition:
             width 0.45s ease-in-out;
         }
 
+        /*
+          أيقونات خاصة بالبولينج فقط
+        */
+
         .bowling-loading-decor {
           position: absolute;
 
-          opacity: 0.95;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           animation:
-            bowlingFloat
+            bowlingIconFloat
             2.8s ease-in-out infinite;
 
           filter:
             drop-shadow(
-              0 0 10px
-              rgba(250,204,21,0.55)
+              0 0 9px
+              rgba(255,255,255,0.35)
             );
         }
 
@@ -14574,34 +14599,110 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           display: block;
         }
 
-        .bowling-decor-1 {
-          top: 14%;
-          left: 13%;
-          color: #facc15;
+        /*
+          كرة بولينج
+        */
+
+        .bowling-decor-ball-1 {
+          top: 13%;
+          left: 12%;
+
+          color: #60a5fa;
         }
 
-        .bowling-decor-2 {
-          top: 18%;
-          right: 14%;
+        /*
+          دبابيس / هدف
+        */
+
+        .bowling-decor-pin {
+          top: 17%;
+          right: 12%;
+
           color: #f9a8d4;
-          animation-delay: 0.25s;
+
+          animation-delay:
+            0.3s;
         }
 
-        .bowling-decor-3 {
+        /*
+          كأس الفوز
+        */
+
+        .bowling-decor-trophy {
+          bottom: 16%;
+          right: 15%;
+
+          color: #facc15;
+
+          animation-delay:
+            0.6s;
+        }
+
+        /*
+          كرة بولينج ثانية
+        */
+
+        .bowling-decor-ball-2 {
           bottom: 17%;
-          right: 16%;
-          color: #93c5fd;
-          animation-delay: 0.55s;
+          left: 14%;
+
+          color: #c084fc;
+
+          animation-delay:
+            0.9s;
         }
 
-        .bowling-decor-4 {
-          bottom: 18%;
-          left: 16%;
-          color: #c4b5fd;
-          animation-delay: 0.85s;
+        /*
+          رموز بولينج إضافية
+        */
+
+        .bowling-emoji {
+          position: absolute;
+
+          font-size: 32px;
+
+          line-height: 1;
+
+          user-select: none;
+
+          animation:
+            bowlingEmojiFloat
+            3s ease-in-out infinite;
+
+          filter:
+            drop-shadow(
+              0 4px 7px
+              rgba(0,0,0,0.25)
+            );
         }
 
-        @keyframes bowlingFloat {
+        .bowling-emoji-1 {
+          top: 28%;
+          left: 23%;
+        }
+
+        .bowling-emoji-2 {
+          top: 31%;
+          right: 22%;
+
+          animation-delay: 0.7s;
+        }
+
+        .bowling-emoji-3 {
+          bottom: 28%;
+          left: 24%;
+
+          animation-delay: 1s;
+        }
+
+        .bowling-emoji-4 {
+          bottom: 27%;
+          right: 23%;
+
+          animation-delay: 1.4s;
+        }
+
+        @keyframes bowlingIconFloat {
 
           0%,
           100% {
@@ -14612,8 +14713,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           50% {
             transform:
-              translateY(-10px)
-              rotate(6deg);
+              translateY(-9px)
+              rotate(5deg);
+          }
+        }
+
+        @keyframes bowlingEmojiFloat {
+
+          0%,
+          100% {
+            transform:
+              translateY(0)
+              rotate(0deg);
+          }
+
+          50% {
+            transform:
+              translateY(-8px)
+              rotate(-5deg);
           }
         }
 
@@ -14622,6 +14739,40 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         ===================================== */
 
         @media (min-width: 601px) and (max-width: 1023px) {
+
+          /*
+            تصغير مربع التحميل للتابلت
+          */
+
+          .bowling-loading-card {
+            width: 215px;
+            min-height: 98px;
+
+            padding: 15px 18px;
+
+            border-radius: 18px;
+
+            border-width: 3px;
+          }
+
+          .bowling-loading-title {
+            font-size: 15px;
+
+            margin-bottom: 10px;
+          }
+
+          .bowling-loading-progress {
+            height: 9px;
+          }
+
+          .bowling-loading-decor svg {
+            width: 31px;
+            height: 31px;
+          }
+
+          .bowling-emoji {
+            font-size: 28px;
+          }
 
           .pin-img {
             width: 70px !important;
@@ -14639,11 +14790,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .desktop-bottom-buttons {
             position: fixed !important;
+
             left: 20px !important;
             bottom: 18px !important;
 
             display: flex !important;
+
             flex-direction: row !important;
+
             align-items: center !important;
             justify-content: center !important;
 
@@ -14655,6 +14809,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .desktop-bottom-buttons button {
             width: 42px !important;
             height: 42px !important;
+
             flex-shrink: 0 !important;
           }
         }
@@ -14664,6 +14819,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         ===================================== */
 
         @media (min-width: 1024px) {
+
+          /*
+            تصغير مربع التحميل للابتوب
+          */
+
+          .bowling-loading-card {
+            width: 230px;
+            min-height: 105px;
+
+            padding: 17px 20px;
+
+            border-radius: 20px;
+          }
 
           .pin-img {
             width: 78px !important;
@@ -14686,7 +14854,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             bottom: 20px !important;
 
             display: flex !important;
+
             flex-direction: row !important;
+
             align-items: center !important;
             justify-content: center !important;
 
@@ -14698,59 +14868,93 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .desktop-bottom-buttons button {
             width: 44px !important;
             height: 44px !important;
+
             flex-shrink: 0 !important;
           }
         }
 
         /* =====================================
-           الموبايل
+           الموبايل فقط
         ===================================== */
 
         @media (max-width: 600px) {
 
+          /*
+            تصغير مربع التحميل أكثر على الموبايل
+          */
+
           .bowling-loading-card {
-            width: 190px;
-            min-height: 92px;
+            width: 175px;
+            min-height: 82px;
 
-            padding: 13px 15px;
+            padding: 11px 13px;
 
-            border-radius: 16px;
+            border-radius: 15px;
 
-            border-width: 2px;
+            border-width: 3px;
           }
 
           .bowling-loading-title {
-            font-size: 14px;
-            margin-bottom: 9px;
+            font-size: 13px;
+
+            margin-bottom: 8px;
           }
 
           .bowling-loading-progress {
-            height: 8px;
+            height: 7px;
           }
+
+          /*
+            تصغير أيقونات البولينج حول المربع
+          */
 
           .bowling-loading-decor svg {
-            width: 27px;
-            height: 27px;
+            width: 24px;
+            height: 24px;
           }
 
-          .bowling-decor-1 {
+          .bowling-emoji {
+            font-size: 23px;
+          }
+
+          .bowling-decor-ball-1 {
             top: 17%;
-            left: 8%;
+            left: 7%;
           }
 
-          .bowling-decor-2 {
+          .bowling-decor-pin {
             top: 18%;
-            right: 8%;
+            right: 7%;
           }
 
-          .bowling-decor-3 {
-            bottom: 19%;
-            right: 10%;
+          .bowling-decor-trophy {
+            bottom: 18%;
+            right: 9%;
           }
 
-          .bowling-decor-4 {
-            bottom: 19%;
-            left: 10%;
+          .bowling-decor-ball-2 {
+            bottom: 18%;
+            left: 9%;
+          }
+
+          .bowling-emoji-1 {
+            top: 28%;
+            left: 18%;
+          }
+
+          .bowling-emoji-2 {
+            top: 30%;
+            right: 17%;
+          }
+
+          .bowling-emoji-3 {
+            bottom: 29%;
+            left: 18%;
+          }
+
+          .bowling-emoji-4 {
+            bottom: 28%;
+            right: 18%;
           }
 
           .mobile-top-bar {
@@ -14766,6 +14970,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             font-size: 12px !important;
             padding: 3px 9px !important;
             margin-top: 4px !important;
+
             white-space: nowrap;
           }
 
@@ -14776,14 +14981,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .mobile-bottom-buttons {
             position: fixed !important;
+
             bottom: 12px !important;
+
             left: 50% !important;
+
             transform:
               translateX(-50%) !important;
 
             z-index: 500 !important;
 
             display: flex !important;
+
             align-items: center !important;
             justify-content: center !important;
 
@@ -14795,6 +15004,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .mobile-bottom-buttons button {
             width: 38px !important;
             height: 38px !important;
+
             min-width: 38px !important;
             min-height: 38px !important;
 
@@ -14809,23 +15019,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .mobile-sound {
             width: 38px !important;
             height: 38px !important;
+
             min-width: 38px !important;
             min-height: 38px !important;
           }
         }
       `}),!p&&(0,I.jsxs)(`div`,{className:`bowling-loading-overlay`,children:[(0,I.jsx)(`div`,{className:`\r
               bowling-loading-decor\r
-              bowling-decor-1\r
-            `,children:(0,I.jsx)(zi,{size:42})}),(0,I.jsx)(`div`,{className:`\r
+              bowling-decor-ball-1\r
+            `,children:(0,I.jsx)(zi,{size:40})}),(0,I.jsx)(`div`,{className:`\r
               bowling-loading-decor\r
-              bowling-decor-2\r
-            `,children:(0,I.jsx)(Na,{size:40})}),(0,I.jsx)(`div`,{className:`\r
+              bowling-decor-pin\r
+            `,children:(0,I.jsx)(La,{size:40})}),(0,I.jsx)(`div`,{className:`\r
               bowling-loading-decor\r
-              bowling-decor-3\r
+              bowling-decor-trophy\r
             `,children:(0,I.jsx)(za,{size:40})}),(0,I.jsx)(`div`,{className:`\r
               bowling-loading-decor\r
-              bowling-decor-4\r
-            `,children:(0,I.jsx)(zi,{size:38})}),(0,I.jsxs)(`div`,{className:`bowling-loading-card`,children:[(0,I.jsx)(`div`,{className:`bowling-loading-title`,children:`جاري تحميل اللعبة`}),(0,I.jsx)(`div`,{className:`bowling-loading-progress`,children:(0,I.jsx)(`div`,{className:`\r
+              bowling-decor-ball-2\r
+            `,children:(0,I.jsx)(zi,{size:36})}),(0,I.jsx)(`div`,{className:`bowling-emoji bowling-emoji-1`,children:`🎳`}),(0,I.jsx)(`div`,{className:`bowling-emoji bowling-emoji-2`,children:`🎳`}),(0,I.jsx)(`div`,{className:`bowling-emoji bowling-emoji-3`,children:`🎳`}),(0,I.jsx)(`div`,{className:`bowling-emoji bowling-emoji-4`,children:`🎳`}),(0,I.jsxs)(`div`,{className:`bowling-loading-card`,children:[(0,I.jsx)(`div`,{className:`bowling-loading-title`,children:`جاري تحميل اللعبة`}),(0,I.jsx)(`div`,{className:`bowling-loading-progress`,children:(0,I.jsx)(`div`,{className:`\r
                   bowling-loading-progress-fill\r
                 `,style:{width:`${d}%`}})})]})]}),x&&(0,I.jsx)(`div`,{style:kC.winOverlay,children:(0,I.jsxs)(`div`,{style:kC.winBox,children:[(0,I.jsx)(`h1`,{style:{color:`#7b1fa2`,margin:`0 0 10px 0`},children:`أحسنت! 🎉`}),(0,I.jsxs)(`p`,{style:{fontSize:`20px`,margin:`0 0 20px 0`},children:[`لقد جمعت `,r,` نقاط!`]}),(0,I.jsxs)(`div`,{style:{display:`flex`,gap:`15px`,justifyContent:`center`},children:[(0,I.jsx)(`button`,{onClick:D,style:kC.smallBtn,children:(0,I.jsx)(B,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/Mad`),style:kC.smallBtn,children:(0,I.jsx)(R,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:kC.smallBtn,children:(0,I.jsx)(z,{size:20})})]})]})}),(0,I.jsxs)(`div`,{style:kC.topBar,className:`mobile-top-bar`,children:[(0,I.jsxs)(`div`,{style:kC.box,className:`mobile-box`,children:[`⏱️ `,Math.floor(t/60),`:`,String(t%60).padStart(2,`0`)]}),(0,I.jsxs)(`div`,{style:kC.titleArea,children:[(0,I.jsx)(`h1`,{style:kC.mainTitle,className:`mobile-title`,children:`لعبة البولينج`}),(0,I.jsx)(`p`,{style:kC.instruction,className:`mobile-instruction`,children:`صوب على الكلمات التي بها مد بالياء`})]}),(0,I.jsxs)(`div`,{style:kC.box,className:`mobile-box`,children:[`⭐ `,r]})]}),(0,I.jsxs)(`div`,{style:kC.rowsWrapper,className:`rows-wrapper-desktop`,children:[(0,I.jsx)(`div`,{style:kC.row1,children:T.map((e,t)=>k(e,t))}),(0,I.jsx)(`div`,{style:kC.row2,children:E.map((e,t)=>k(e,t+4))})]}),(0,I.jsx)(`img`,{src:xC,alt:`ball`,style:{...kC.ball,left:m.x,top:m.y}}),(0,I.jsxs)(`div`,{style:kC.bottomButtons,className:`\r
           mobile-bottom-buttons\r
