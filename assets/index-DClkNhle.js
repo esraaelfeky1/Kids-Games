@@ -14457,10 +14457,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             );
         }
 
-        /*
-          المربع أبيض
-          والحافة متدرجة وملونة
-        */
+        /* =====================================
+           مربع التحميل
+           بنفسجي فاتح + حافة ملونة
+        ===================================== */
 
         .bowling-loading-card {
           position: relative;
@@ -14472,14 +14472,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           border-radius: 20px;
 
-          background: #ffffff;
+          background: #f3e8ff;
 
           border: 4px solid transparent;
 
           background-image:
             linear-gradient(
-              #ffffff,
-              #ffffff
+              #f3e8ff,
+              #f3e8ff
             ),
             linear-gradient(
               135deg,
@@ -14510,7 +14510,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .bowling-loading-title {
-          color: #312e81;
+          color: #7e57c2;
 
           font-size: 16px;
           font-weight: 900;
@@ -14524,9 +14524,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             rgba(0,0,0,0.08);
         }
 
-        /*
-          شريط تحميل ملون
-        */
+        /* =====================================
+           شريط التحميل
+        ===================================== */
 
         .bowling-loading-progress {
           width: 100%;
@@ -14536,8 +14536,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           border-radius: 20px;
 
-          background:
-            #e5e7eb;
+          background: #e5e7eb;
 
           border:
             1px solid
@@ -14573,9 +14572,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width 0.45s ease-in-out;
         }
 
-        /*
-          أيقونات خاصة بالبولينج فقط
-        */
+        /* =====================================
+           أيقونات البولينج
+        ===================================== */
 
         .bowling-loading-decor {
           position: absolute;
@@ -14599,20 +14598,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           display: block;
         }
 
-        /*
-          كرة بولينج
-        */
-
         .bowling-decor-ball-1 {
           top: 13%;
           left: 12%;
 
           color: #60a5fa;
         }
-
-        /*
-          دبابيس / هدف
-        */
 
         .bowling-decor-pin {
           top: 17%;
@@ -14624,10 +14615,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             0.3s;
         }
 
-        /*
-          كأس الفوز
-        */
-
         .bowling-decor-trophy {
           bottom: 16%;
           right: 15%;
@@ -14638,10 +14625,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             0.6s;
         }
 
-        /*
-          كرة بولينج ثانية
-        */
-
         .bowling-decor-ball-2 {
           bottom: 17%;
           left: 14%;
@@ -14651,10 +14634,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           animation-delay:
             0.9s;
         }
-
-        /*
-          رموز بولينج إضافية
-        */
 
         .bowling-emoji {
           position: absolute;
@@ -14736,29 +14715,42 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         /* =====================================
            التابلت
+           تقليل البادنج من فوق وتحت
         ===================================== */
 
         @media (min-width: 601px) and (max-width: 1023px) {
 
-          /*
-            تصغير مربع التحميل للتابلت
-          */
-
           .bowling-loading-card {
             width: 215px;
-            min-height: 98px;
+            min-height: 86px;
 
-            padding: 15px 18px;
+            padding: 8px 16px;
 
             border-radius: 18px;
 
             border-width: 3px;
+
+            background: #f3e8ff;
+
+            background-image:
+              linear-gradient(
+                #f3e8ff,
+                #f3e8ff
+              ),
+              linear-gradient(
+                135deg,
+                #38bdf8,
+                #6366f1,
+                #a855f7,
+                #ec4899,
+                #facc15
+              );
           }
 
           .bowling-loading-title {
             font-size: 15px;
 
-            margin-bottom: 10px;
+            margin-bottom: 8px;
           }
 
           .bowling-loading-progress {
@@ -14816,21 +14808,38 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         /* =====================================
            اللابتوب والشاشات الكبيرة
+           تقليل البادنج من فوق وتحت
         ===================================== */
 
         @media (min-width: 1024px) {
 
-          /*
-            تصغير مربع التحميل للابتوب
-          */
-
           .bowling-loading-card {
             width: 230px;
-            min-height: 105px;
+            min-height: 88px;
 
-            padding: 17px 20px;
+            padding: 9px 18px;
 
             border-radius: 20px;
+
+            background: #f3e8ff;
+
+            background-image:
+              linear-gradient(
+                #f3e8ff,
+                #f3e8ff
+              ),
+              linear-gradient(
+                135deg,
+                #38bdf8,
+                #6366f1,
+                #a855f7,
+                #ec4899,
+                #facc15
+              );
+          }
+
+          .bowling-loading-title {
+            margin-bottom: 8px;
           }
 
           .pin-img {
@@ -14874,14 +14883,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================
-           الموبايل فقط
+           الموبايل
         ===================================== */
 
         @media (max-width: 600px) {
-
-          /*
-            تصغير مربع التحميل أكثر على الموبايل
-          */
 
           .bowling-loading-card {
             width: 175px;
@@ -14892,6 +14897,22 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             border-radius: 15px;
 
             border-width: 3px;
+
+            background: #f3e8ff;
+
+            background-image:
+              linear-gradient(
+                #f3e8ff,
+                #f3e8ff
+              ),
+              linear-gradient(
+                135deg,
+                #38bdf8,
+                #6366f1,
+                #a855f7,
+                #ec4899,
+                #facc15
+              );
           }
 
           .bowling-loading-title {
@@ -14903,10 +14924,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .bowling-loading-progress {
             height: 7px;
           }
-
-          /*
-            تصغير أيقونات البولينج حول المربع
-          */
 
           .bowling-loading-decor svg {
             width: 24px;
