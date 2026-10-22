@@ -23404,290 +23404,596 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       height: 32px;
     }
   }
-`,nD={loadingScreen:{width:`100vw`,height:`100vh`,position:`fixed`,inset:0,overflow:`hidden`,display:`flex`,alignItems:`center`,justifyContent:`center`,background:`linear-gradient(135deg, #E3F2FD 0%, #FFF8E1 48%, #E8F5E9 100%)`,fontFamily:`'Cairo', sans-serif`,direction:`rtl`},loadingCard:{width:`290px`,minHeight:`110px`,padding:`20px 24px 15px`,boxSizing:`border-box`,background:`rgba(255,255,255,0.97)`,border:`3px solid #0288D1`,borderRadius:`22px`,boxShadow:`0 12px 30px rgba(2,136,209,0.22)`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`},loadingTitle:{fontSize:`20px`,fontWeight:`bold`,color:`#01579B`,marginBottom:`10px`,whiteSpace:`nowrap`},progressTrack:{width:`100%`,height:`12px`,background:`#E3F2FD`,borderRadius:`999px`,overflow:`hidden`,border:`1px solid #BBDEFB`,direction:`ltr`},progressFill:{height:`100%`,width:`0%`,borderRadius:`999px`,background:`linear-gradient(90deg, #0288D1, #42A5F5, #66BB6A, #FBC02D)`},progressText:{marginTop:`6px`,fontSize:`11px`,fontWeight:`bold`,color:`#0288D1`},container:{width:`100vw`,height:`100vh`,minHeight:`100dvh`,position:`fixed`,inset:0,overflow:`hidden`,isolation:`isolate`,fontFamily:`'Cairo', sans-serif`,background:`#dff2ff`},bg:{position:`absolute`,inset:0,width:`100%`,height:`100%`,objectFit:`cover`,objectPosition:`center bottom`,zIndex:0,pointerEvents:`none`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:999999},winBox:{background:`white`,padding:`14px 18px`,borderRadius:`16px`,textAlign:`center`,width:`85%`,maxWidth:`260px`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`},winContent:{marginBottom:`10px`},resultButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtnSmall:{width:`36px`,height:`36px`,borderRadius:`50%`,border:`none`,background:`#0288D1`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.2)`},topBar:{position:`absolute`,top:`-2px`,width:`100%`,display:`flex`,justifyContent:`space-between`,padding:`0 15px`,boxSizing:`border-box`,zIndex:10,alignItems:`flex-start`},infoBox:{background:`white`,padding:`6px 12px`,borderRadius:12,fontWeight:`bold`,fontSize:`clamp(14px, 1.8vw, 17px)`,boxShadow:`0 4px 8px rgba(0,0,0,0.15)`,color:`#333`,display:`flex`,alignItems:`center`,gap:`6px`,direction:`ltr`},headerWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`4px`},mainTitleBox:{background:`#0288D1`,padding:`4px 15px`,borderRadius:`15px`,border:`2px solid #FFD700`,color:`#FFF`,fontWeight:`bold`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},subTitleBox:{background:`#ffffffee`,padding:`3px 12px`,borderRadius:`12px`,border:`2px solid #0288D1`,color:`#01579B`,fontWeight:`bold`,boxShadow:`0 2px 5px rgba(0,0,0,0.1)`,whiteSpace:`nowrap`},ropeRow1:{position:`absolute`,top:`calc(42% - 40px)`,left:`50%`,transform:`translateX(-50%)`,width:`85vw`,display:`flex`,justifyContent:`center`,gap:`55px`,zIndex:5},ropeRow2:{position:`absolute`,top:`calc(62% - 40px)`,left:`50%`,transform:`translateX(-50%)`,width:`85vw`,display:`flex`,justifyContent:`center`,gap:`55px`,zIndex:5},birdWrapper:{width:`68px`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`},birdImg:{width:`65px`,height:`65px`,objectFit:`contain`,flexShrink:0},cardBoard:{background:`#FFFDE7`,border:`2px dashed #795548`,borderRadius:`6px`,padding:`1px 6px`,marginTop:`-2px`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`,display:`flex`,alignItems:`center`,justifyContent:`center`,minWidth:`70px`},birdText:{fontSize:`27px`,fontWeight:`bold`,color:`#121212`,fontFamily:`'Traditional Arabic', 'Cairo', sans-serif`},shooterSection:{position:`absolute`,bottom:`18px`,left:`60px`,zIndex:6,display:`flex`,alignItems:`flex-end`},boyImg:{width:`190px`,objectFit:`contain`},ballImg:{position:`absolute`,left:`115px`,bottom:`105px`,width:`42px`,objectFit:`contain`,zIndex:10},bottomSection:{position:`absolute`,bottom:`12px`,left:`50%`,transform:`translateX(-50%)`,zIndex:10},buttonsContainer:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtn:{width:`clamp(40px, 3.8vw, 50px)`,height:`clamp(40px, 3.8vw, 50px)`,borderRadius:`50%`,border:`none`,background:`#0288D1`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.25)`}},rD=`/Kids-Games/assets/rs-BAa_wJom.jpeg`,iD=`/Kids-Games/assets/tree1-YHO3cmOt.png`,aD=`/Kids-Games/assets/basketkasra-DZ_nZ_op.png`,oD=`/Kids-Games/assets/basketdamma-MnK10kaa.png`,sD=`/Kids-Games/assets/basketfatha-B5Z1mTQB.png`,cD=[`/Kids-Games/assets/applegree-CQ8izrqv.png`,`/Kids-Games/assets/applere-DXzxk39h.png`,`/Kids-Games/assets/appleblu-CE6seh38.png`,`/Kids-Games/assets/applepurpl-BfUnNmCW.png`],lD=[{id:`a1`,text:`جَبَلًا`,type:`fatha`,imgIndex:0},{id:`a2`,text:`قَلَمٌ`,type:`damma`,imgIndex:1},{id:`a3`,text:`كِتَابًا`,type:`fatha`,imgIndex:2},{id:`a4`,text:`بَيْتٍ`,type:`kasra`,imgIndex:3},{id:`a5`,text:`نَهْرٍ`,type:`kasra`,imgIndex:3},{id:`a6`,text:`طَعَامٌ`,type:`damma`,imgIndex:1},{id:`a7`,text:`وَرْدَةً`,type:`fatha`,imgIndex:0},{id:`a8`,text:`شَمْسٍ`,type:`kasra`,imgIndex:2}];function uD(){let e=F(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(!0),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)([]),[d,f]=(0,b.useState)(!1),p=(0,b.useRef)(null),m=(0,b.useRef)(null),h=(0,b.useRef)(null),g=(0,b.useRef)(new Audio(Ts)),_=(0,b.useRef)(new Audio(Es)),[v,y]=(0,b.useState)(!0),[x,S]=(0,b.useState)(0);(0,b.useEffect)(()=>{let e=0,t=setInterval(()=>{e+=5,e>=100?(e=100,S(100),clearInterval(t),setTimeout(()=>{y(!1)},300)):S(e)},110);return()=>clearInterval(t)},[]),(0,b.useEffect)(()=>{let e=()=>{if(window.innerWidth>600){f(!1);return}let e=window.visualViewport;if(!e){f(!1);return}f(e.height<window.screen.height*.88)};e();let t=window.visualViewport;return t&&(t.addEventListener(`resize`,e),t.addEventListener(`scroll`,e)),window.addEventListener(`resize`,e),()=>{t&&(t.removeEventListener(`resize`,e),t.removeEventListener(`scroll`,e)),window.removeEventListener(`resize`,e)}},[]),(0,b.useEffect)(()=>{if(s||v)return;let e=setInterval(()=>{i(e=>e+1)},1e3);return()=>clearInterval(e)},[s,v]);let C=(e,t)=>{if(!t.current)return!1;let n=t.current.getBoundingClientRect();return e.x>=n.left&&e.x<=n.right&&e.y>=n.top&&e.y<=n.bottom},w=(e,t,r)=>{let i={x:r.point.x,y:r.point.y},o=null;C(i,p)?o=`kasra`:C(i,m)?o=`damma`:C(i,h)&&(o=`fatha`),o===e.type?(a&&(g.current.currentTime=0,g.current.play().catch(()=>{})),n(e=>e+10),u(t=>{if(t.includes(e.id))return t;let n=[...t,e.id];return n.length>=lD.length&&setTimeout(()=>{c(!0)},500),n})):o!==null&&a&&(_.current.currentTime=0,_.current.play().catch(()=>{}))};return v?(0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`style`,{children:dD}),(0,L.jsxs)(`div`,{className:`loading-screen-fixed`,children:[(0,L.jsx)(`div`,{className:`loading-decoration decoration-one`,children:(0,L.jsx)(ya,{size:28})}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-two`,children:(0,L.jsx)(Si,{size:30})}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-three`,children:(0,L.jsx)(Ua,{size:30})}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-four`,children:`⭐`}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-five`,children:`🍎`}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-six`,children:`🍃`}),(0,L.jsx)(`div`,{className:`loading-circle circle-one`}),(0,L.jsx)(`div`,{className:`loading-circle circle-two`}),(0,L.jsx)(`div`,{className:`loading-circle circle-three`}),(0,L.jsxs)(U.div,{className:`loading-card`,initial:{opacity:0,scale:.85},animate:{opacity:1,scale:1},transition:{duration:.45},children:[(0,L.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,L.jsxs)(`div`,{className:`loading-percent`,children:[x,`%`]}),(0,L.jsx)(`div`,{className:`loading-progress-bg`,children:(0,L.jsx)(U.div,{className:`loading-progress`,initial:{width:`0%`},animate:{width:`${x}%`},transition:{duration:.15}})}),(0,L.jsxs)(`div`,{className:`loading-dots`,children:[(0,L.jsx)(`span`,{children:`•`}),(0,L.jsx)(`span`,{children:`•`}),(0,L.jsx)(`span`,{children:`•`})]})]})]})]}):(0,L.jsxs)(`div`,{className:`game-container-fixed ${d?`mobile-browser-visible`:`mobile-browser-hidden`}`,children:[(0,L.jsx)(`style`,{children:fD}),(0,L.jsx)(`img`,{src:rD,alt:`الخلفية`,style:pD.bg}),(0,L.jsx)(Zv,{children:s&&(0,L.jsx)(U.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:pD.overlay,children:(0,L.jsxs)(`div`,{style:pD.winBox,children:[(0,L.jsxs)(`div`,{style:pD.winContent,children:[(0,L.jsx)(Ja,{size:38,color:`#FFD700`}),(0,L.jsx)(`h1`,{style:{margin:`6px 0`,fontSize:`18px`,color:`#333`},children:`أحسنت يا بطل 🎯`}),(0,L.jsxs)(`p`,{style:{fontSize:`16px`,fontWeight:`bold`,color:`#4CAF50`,margin:`4px 0`},children:[`النتيجة: `,t]})]}),(0,L.jsxs)(`div`,{style:pD.resultButtons,children:[(0,L.jsx)(`button`,{onClick:()=>window.location.reload(),style:pD.circleBtnSmall,children:(0,L.jsx)(V,{size:18})}),(0,L.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:pD.circleBtnSmall,children:(0,L.jsx)(z,{size:18})}),(0,L.jsx)(`button`,{onClick:()=>e(`/home`),style:pD.circleBtnSmall,children:(0,L.jsx)(B,{size:18})})]})]})})}),(0,L.jsxs)(`div`,{style:pD.topBar,className:`top-bar-position`,children:[(0,L.jsxs)(`div`,{style:pD.box,children:[(0,L.jsx)(`span`,{children:`⏱️`}),(0,L.jsxs)(`span`,{children:[Math.floor(r/60),`:`,String(r%60).padStart(2,`0`)]})]}),(0,L.jsxs)(`div`,{style:pD.headerWrapper,children:[(0,L.jsx)(`div`,{style:pD.mainTitleBox,className:`main-title-text`,children:`شجرة الكلمات`}),(0,L.jsx)(`div`,{style:pD.subTitleBox,className:`sub-title-text instruction-text`,children:`اسحب التفاحات الى السلات الصحيحة`})]}),(0,L.jsxs)(`div`,{style:pD.box,children:[(0,L.jsx)(`span`,{children:`⭐`}),(0,L.jsx)(`span`,{children:t})]})]}),(0,L.jsx)(`div`,{style:pD.treeContainer,className:`tree-container`,children:(0,L.jsx)(`img`,{src:iD,alt:`الشجرة`,style:pD.treeImg,className:`tree-img`})}),(0,L.jsx)(`div`,{style:pD.applesGrid,className:`apples-grid`,children:lD.map(e=>l.includes(e.id)?(0,L.jsx)(`div`,{style:pD.appleSlot,className:`apple-slot-size`},e.id):(0,L.jsx)(`div`,{style:pD.appleSlot,className:`apple-slot-size`,children:(0,L.jsxs)(U.div,{drag:!0,dragConstraints:!1,dragElastic:0,dragMomentum:!1,dragSnapToOrigin:!0,whileDrag:{scale:1.2,zIndex:99999,cursor:`grabbing`},onDragEnd:(t,n)=>w(e,t,n),style:pD.appleWrapper,children:[(0,L.jsx)(`img`,{src:cD[e.imgIndex],alt:`تفاحة`,style:pD.appleImg,className:`apple-img-size`,draggable:!1}),(0,L.jsx)(`span`,{style:pD.appleText,className:`apple-text-size`,children:e.text})]})},e.id))}),(0,L.jsxs)(`div`,{style:pD.basketsContainer,className:`baskets-container`,children:[(0,L.jsx)(`div`,{ref:p,style:pD.basketWrapper,className:`basket-card`,children:(0,L.jsx)(`img`,{src:aD,alt:`تنوين كسر`,style:pD.basketImg,className:`basket-img-size`,draggable:!1})}),(0,L.jsx)(`div`,{ref:m,style:pD.basketWrapper,className:`basket-card`,children:(0,L.jsx)(`img`,{src:oD,alt:`تنوين ضم`,style:pD.basketImg,className:`basket-img-size`,draggable:!1})}),(0,L.jsx)(`div`,{ref:h,style:pD.basketWrapper,className:`basket-card`,children:(0,L.jsx)(`img`,{src:sD,alt:`تنوين فتح`,style:pD.basketImg,className:`basket-img-size`,draggable:!1})})]}),(0,L.jsx)(`div`,{style:pD.bottomSection,className:`bottom-section-center`,children:(0,L.jsxs)(`div`,{style:pD.buttonsContainer,className:`buttons-container`,children:[(0,L.jsx)(`button`,{onClick:()=>o(!a),style:pD.circleBtn,children:a?(0,L.jsx)(H,{size:22}):(0,L.jsx)(Qa,{size:22})}),(0,L.jsx)(`button`,{onClick:()=>window.location.reload(),style:pD.circleBtn,children:(0,L.jsx)(V,{size:22})}),(0,L.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:pD.circleBtn,children:(0,L.jsx)(z,{size:22})}),(0,L.jsx)(`button`,{onClick:()=>e(`/home`),style:pD.circleBtn,children:(0,L.jsx)(B,{size:22})})]})})]})}var dD=`
+`,nD={loadingScreen:{width:`100vw`,height:`100vh`,position:`fixed`,inset:0,overflow:`hidden`,display:`flex`,alignItems:`center`,justifyContent:`center`,background:`linear-gradient(135deg, #E3F2FD 0%, #FFF8E1 48%, #E8F5E9 100%)`,fontFamily:`'Cairo', sans-serif`,direction:`rtl`},loadingCard:{width:`290px`,minHeight:`110px`,padding:`20px 24px 15px`,boxSizing:`border-box`,background:`rgba(255,255,255,0.97)`,border:`3px solid #0288D1`,borderRadius:`22px`,boxShadow:`0 12px 30px rgba(2,136,209,0.22)`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`},loadingTitle:{fontSize:`20px`,fontWeight:`bold`,color:`#01579B`,marginBottom:`10px`,whiteSpace:`nowrap`},progressTrack:{width:`100%`,height:`12px`,background:`#E3F2FD`,borderRadius:`999px`,overflow:`hidden`,border:`1px solid #BBDEFB`,direction:`ltr`},progressFill:{height:`100%`,width:`0%`,borderRadius:`999px`,background:`linear-gradient(90deg, #0288D1, #42A5F5, #66BB6A, #FBC02D)`},progressText:{marginTop:`6px`,fontSize:`11px`,fontWeight:`bold`,color:`#0288D1`},container:{width:`100vw`,height:`100vh`,minHeight:`100dvh`,position:`fixed`,inset:0,overflow:`hidden`,isolation:`isolate`,fontFamily:`'Cairo', sans-serif`,background:`#dff2ff`},bg:{position:`absolute`,inset:0,width:`100%`,height:`100%`,objectFit:`cover`,objectPosition:`center bottom`,zIndex:0,pointerEvents:`none`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.6)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:999999},winBox:{background:`white`,padding:`14px 18px`,borderRadius:`16px`,textAlign:`center`,width:`85%`,maxWidth:`260px`,boxShadow:`0 8px 20px rgba(0,0,0,0.4)`},winContent:{marginBottom:`10px`},resultButtons:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtnSmall:{width:`36px`,height:`36px`,borderRadius:`50%`,border:`none`,background:`#0288D1`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 2px 6px rgba(0,0,0,0.2)`},topBar:{position:`absolute`,top:`-2px`,width:`100%`,display:`flex`,justifyContent:`space-between`,padding:`0 15px`,boxSizing:`border-box`,zIndex:10,alignItems:`flex-start`},infoBox:{background:`white`,padding:`6px 12px`,borderRadius:12,fontWeight:`bold`,fontSize:`clamp(14px, 1.8vw, 17px)`,boxShadow:`0 4px 8px rgba(0,0,0,0.15)`,color:`#333`,display:`flex`,alignItems:`center`,gap:`6px`,direction:`ltr`},headerWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`4px`},mainTitleBox:{background:`#0288D1`,padding:`4px 15px`,borderRadius:`15px`,border:`2px solid #FFD700`,color:`#FFF`,fontWeight:`bold`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`,whiteSpace:`nowrap`},subTitleBox:{background:`#ffffffee`,padding:`3px 12px`,borderRadius:`12px`,border:`2px solid #0288D1`,color:`#01579B`,fontWeight:`bold`,boxShadow:`0 2px 5px rgba(0,0,0,0.1)`,whiteSpace:`nowrap`},ropeRow1:{position:`absolute`,top:`calc(42% - 40px)`,left:`50%`,transform:`translateX(-50%)`,width:`85vw`,display:`flex`,justifyContent:`center`,gap:`55px`,zIndex:5},ropeRow2:{position:`absolute`,top:`calc(62% - 40px)`,left:`50%`,transform:`translateX(-50%)`,width:`85vw`,display:`flex`,justifyContent:`center`,gap:`55px`,zIndex:5},birdWrapper:{width:`68px`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`},birdImg:{width:`65px`,height:`65px`,objectFit:`contain`,flexShrink:0},cardBoard:{background:`#FFFDE7`,border:`2px dashed #795548`,borderRadius:`6px`,padding:`1px 6px`,marginTop:`-2px`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`,display:`flex`,alignItems:`center`,justifyContent:`center`,minWidth:`70px`},birdText:{fontSize:`27px`,fontWeight:`bold`,color:`#121212`,fontFamily:`'Traditional Arabic', 'Cairo', sans-serif`},shooterSection:{position:`absolute`,bottom:`18px`,left:`60px`,zIndex:6,display:`flex`,alignItems:`flex-end`},boyImg:{width:`190px`,objectFit:`contain`},ballImg:{position:`absolute`,left:`115px`,bottom:`105px`,width:`42px`,objectFit:`contain`,zIndex:10},bottomSection:{position:`absolute`,bottom:`12px`,left:`50%`,transform:`translateX(-50%)`,zIndex:10},buttonsContainer:{display:`flex`,gap:`10px`,justifyContent:`center`},circleBtn:{width:`clamp(40px, 3.8vw, 50px)`,height:`clamp(40px, 3.8vw, 50px)`,borderRadius:`50%`,border:`none`,background:`#0288D1`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.25)`}},rD=`/Kids-Games/assets/rs-BAa_wJom.jpeg`,iD=`/Kids-Games/assets/tree1-YHO3cmOt.png`,aD=`/Kids-Games/assets/basketkasra-DZ_nZ_op.png`,oD=`/Kids-Games/assets/basketdamma-MnK10kaa.png`,sD=`/Kids-Games/assets/basketfatha-B5Z1mTQB.png`,cD=[`/Kids-Games/assets/applegree-CQ8izrqv.png`,`/Kids-Games/assets/applere-DXzxk39h.png`,`/Kids-Games/assets/appleblu-CE6seh38.png`,`/Kids-Games/assets/applepurpl-BfUnNmCW.png`],lD=[{id:`a1`,text:`جَبَلًا`,type:`fatha`,imgIndex:0},{id:`a2`,text:`قَلَمٌ`,type:`damma`,imgIndex:1},{id:`a3`,text:`كِتَابًا`,type:`fatha`,imgIndex:2},{id:`a4`,text:`بَيْتٍ`,type:`kasra`,imgIndex:3},{id:`a5`,text:`نَهْرٍ`,type:`kasra`,imgIndex:3},{id:`a6`,text:`طَعَامٌ`,type:`damma`,imgIndex:1},{id:`a7`,text:`وَرْدَةً`,type:`fatha`,imgIndex:0},{id:`a8`,text:`شَمْسٍ`,type:`kasra`,imgIndex:2}];function uD(){let e=F(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(!0),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)([]),[d,f]=(0,b.useState)(!0),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(!1),_=(0,b.useRef)(null),v=(0,b.useRef)(null),y=(0,b.useRef)(null),x=(0,b.useRef)(new Audio(Ts)),S=(0,b.useRef)(new Audio(Es));(0,b.useEffect)(()=>{let e=0,t=setInterval(()=>{e+=5,e>=100?(e=100,m(100),clearInterval(t),setTimeout(()=>{f(!1)},300)):m(e)},110);return()=>clearInterval(t)},[]),(0,b.useEffect)(()=>{let e=()=>{let e=window.visualViewport,t=e?e.height:window.innerHeight;document.documentElement.style.setProperty(`--app-height`,`${t}px`)};e();let t=window.visualViewport;return t&&(t.addEventListener(`resize`,e),t.addEventListener(`scroll`,e)),window.addEventListener(`resize`,e),window.addEventListener(`orientationchange`,e),()=>{t&&(t.removeEventListener(`resize`,e),t.removeEventListener(`scroll`,e)),window.removeEventListener(`resize`,e),window.removeEventListener(`orientationchange`,e)}},[]),(0,b.useEffect)(()=>{let e=()=>{if(window.innerWidth>600){g(!1);return}let e=window.visualViewport;if(!e){g(!1);return}g(e.height<window.screen.height*.88)};e();let t=window.visualViewport;return t&&(t.addEventListener(`resize`,e),t.addEventListener(`scroll`,e)),window.addEventListener(`resize`,e),()=>{t&&(t.removeEventListener(`resize`,e),t.removeEventListener(`scroll`,e)),window.removeEventListener(`resize`,e)}},[]),(0,b.useEffect)(()=>{if(s||d)return;let e=setInterval(()=>{i(e=>e+1)},1e3);return()=>clearInterval(e)},[s,d]);let C=(e,t)=>{if(!t.current)return!1;let n=t.current.getBoundingClientRect();return e.x>=n.left&&e.x<=n.right&&e.y>=n.top&&e.y<=n.bottom},w=(e,t,r)=>{let i={x:r.point.x,y:r.point.y},o=null;C(i,_)?o=`kasra`:C(i,v)?o=`damma`:C(i,y)&&(o=`fatha`),o===e.type?(a&&(x.current.currentTime=0,x.current.play().catch(()=>{})),n(e=>e+10),u(t=>{if(t.includes(e.id))return t;let n=[...t,e.id];return n.length>=lD.length&&setTimeout(()=>{c(!0)},500),n})):o!==null&&a&&(S.current.currentTime=0,S.current.play().catch(()=>{}))};return d?(0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`style`,{children:dD}),(0,L.jsxs)(`div`,{className:`loading-screen-fixed`,children:[(0,L.jsx)(`div`,{className:`loading-decoration decoration-one`,children:(0,L.jsx)(ya,{size:30})}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-two`,children:(0,L.jsx)(Si,{size:32})}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-three`,children:(0,L.jsx)(Ua,{size:32})}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-four`,children:`⭐`}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-five`,children:`🍎`}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-six`,children:`🍃`}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-seven`,children:`✨`}),(0,L.jsx)(`div`,{className:`loading-decoration decoration-eight`,children:`🌸`}),(0,L.jsx)(`div`,{className:`loading-circle circle-one`}),(0,L.jsx)(`div`,{className:`loading-circle circle-two`}),(0,L.jsx)(`div`,{className:`loading-circle circle-three`}),(0,L.jsx)(`div`,{className:`loading-circle circle-four`}),(0,L.jsxs)(U.div,{className:`loading-card`,initial:{opacity:0,scale:.75},animate:{opacity:1,scale:1},transition:{duration:.45,ease:`easeOut`},children:[(0,L.jsx)(`div`,{className:`card-mini-star`,children:`✨`}),(0,L.jsx)(`div`,{className:`card-mini-apple`,children:`🍎`}),(0,L.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,L.jsxs)(`div`,{className:`loading-percent`,children:[p,`%`]}),(0,L.jsx)(`div`,{className:`loading-progress-bg`,children:(0,L.jsx)(U.div,{className:`loading-progress`,initial:{width:`0%`},animate:{width:`${p}%`},transition:{duration:.15}})}),(0,L.jsxs)(`div`,{className:`loading-dots`,children:[(0,L.jsx)(`span`,{children:`•`}),(0,L.jsx)(`span`,{children:`•`}),(0,L.jsx)(`span`,{children:`•`})]})]})]})]}):(0,L.jsxs)(`div`,{className:`game-container-fixed ${h?`mobile-browser-visible`:`mobile-browser-hidden`}`,children:[(0,L.jsx)(`style`,{children:fD}),(0,L.jsx)(`img`,{src:rD,alt:`الخلفية`,style:pD.bg}),(0,L.jsx)(Zv,{children:s&&(0,L.jsx)(U.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:pD.overlay,children:(0,L.jsxs)(`div`,{style:pD.winBox,children:[(0,L.jsxs)(`div`,{style:pD.winContent,children:[(0,L.jsx)(Ja,{size:38,color:`#FFD700`}),(0,L.jsx)(`h1`,{style:{margin:`6px 0`,fontSize:`18px`,color:`#333`},children:`أحسنت يا بطل 🎯`}),(0,L.jsxs)(`p`,{style:{fontSize:`16px`,fontWeight:`bold`,color:`#4CAF50`,margin:`4px 0`},children:[`النتيجة: `,t]})]}),(0,L.jsxs)(`div`,{style:pD.resultButtons,children:[(0,L.jsx)(`button`,{onClick:()=>window.location.reload(),style:pD.circleBtnSmall,children:(0,L.jsx)(V,{size:18})}),(0,L.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:pD.circleBtnSmall,children:(0,L.jsx)(z,{size:18})}),(0,L.jsx)(`button`,{onClick:()=>e(`/home`),style:pD.circleBtnSmall,children:(0,L.jsx)(B,{size:18})})]})]})})}),(0,L.jsxs)(`div`,{style:pD.topBar,className:`top-bar-position`,children:[(0,L.jsxs)(`div`,{style:pD.box,children:[(0,L.jsx)(`span`,{children:`⏱️`}),(0,L.jsxs)(`span`,{children:[Math.floor(r/60),`:`,String(r%60).padStart(2,`0`)]})]}),(0,L.jsxs)(`div`,{style:pD.headerWrapper,children:[(0,L.jsx)(`div`,{style:pD.mainTitleBox,className:`main-title-text`,children:`شجرة الكلمات`}),(0,L.jsx)(`div`,{style:pD.subTitleBox,className:`sub-title-text instruction-text`,children:`اسحب التفاحات الى السلات الصحيحة`})]}),(0,L.jsxs)(`div`,{style:pD.box,children:[(0,L.jsx)(`span`,{children:`⭐`}),(0,L.jsx)(`span`,{children:t})]})]}),(0,L.jsx)(`div`,{style:pD.treeContainer,className:`tree-container`,children:(0,L.jsx)(`img`,{src:iD,alt:`الشجرة`,style:pD.treeImg,className:`tree-img`})}),(0,L.jsx)(`div`,{style:pD.applesGrid,className:`apples-grid`,children:lD.map(e=>l.includes(e.id)?(0,L.jsx)(`div`,{style:pD.appleSlot,className:`apple-slot-size`},e.id):(0,L.jsx)(`div`,{style:pD.appleSlot,className:`apple-slot-size`,children:(0,L.jsxs)(U.div,{drag:!0,dragConstraints:!1,dragElastic:0,dragMomentum:!1,dragSnapToOrigin:!0,whileDrag:{scale:1.2,zIndex:99999,cursor:`grabbing`},onDragEnd:(t,n)=>w(e,t,n),style:pD.appleWrapper,children:[(0,L.jsx)(`img`,{src:cD[e.imgIndex],alt:`تفاحة`,style:pD.appleImg,className:`apple-img-size`,draggable:!1}),(0,L.jsx)(`span`,{style:pD.appleText,className:`apple-text-size`,children:e.text})]})},e.id))}),(0,L.jsxs)(`div`,{style:pD.basketsContainer,className:`baskets-container`,children:[(0,L.jsx)(`div`,{ref:_,style:pD.basketWrapper,className:`basket-card`,children:(0,L.jsx)(`img`,{src:aD,alt:`تنوين كسر`,style:pD.basketImg,className:`basket-img-size`,draggable:!1})}),(0,L.jsx)(`div`,{ref:v,style:pD.basketWrapper,className:`basket-card`,children:(0,L.jsx)(`img`,{src:oD,alt:`تنوين ضم`,style:pD.basketImg,className:`basket-img-size`,draggable:!1})}),(0,L.jsx)(`div`,{ref:y,style:pD.basketWrapper,className:`basket-card`,children:(0,L.jsx)(`img`,{src:sD,alt:`تنوين فتح`,style:pD.basketImg,className:`basket-img-size`,draggable:!1})})]}),(0,L.jsx)(`div`,{style:pD.bottomSection,className:`bottom-section-center`,children:(0,L.jsxs)(`div`,{style:pD.buttonsContainer,className:`buttons-container`,children:[(0,L.jsx)(`button`,{onClick:()=>o(!a),style:pD.circleBtn,children:a?(0,L.jsx)(H,{size:22}):(0,L.jsx)(Qa,{size:22})}),(0,L.jsx)(`button`,{onClick:()=>window.location.reload(),style:pD.circleBtn,children:(0,L.jsx)(V,{size:22})}),(0,L.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:pD.circleBtn,children:(0,L.jsx)(z,{size:22})}),(0,L.jsx)(`button`,{onClick:()=>e(`/home`),style:pD.circleBtn,children:(0,L.jsx)(B,{size:22})})]})})]})}var dD=`
   html,
   body,
   #root {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
     overflow: hidden !important;
+
+    overscroll-behavior: none !important;
   }
 
   .loading-screen-fixed {
     position: fixed;
-    inset: 0;
+
+    top: 0;
+    left: 0;
+
     width: 100vw;
-    height: 100svh;
-    overflow: hidden;
+
+    height:
+      var(
+        --app-height,
+        100dvh
+      );
+
+    overflow: hidden !important;
+
+    overscroll-behavior: none !important;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
+    box-sizing: border-box;
+
     background:
       radial-gradient(
-        circle at 20% 20%,
-        #FFE8A3 0%,
+        circle at 15% 15%,
+        #FFE7A8 0%,
         transparent 25%
       ),
+
       radial-gradient(
-        circle at 80% 25%,
-        #FFD1E3 0%,
-        transparent 25%
+        circle at 85% 20%,
+        #FFD1E5 0%,
+        transparent 26%
       ),
+
       radial-gradient(
-        circle at 30% 85%,
+        circle at 20% 85%,
         #CDEBFF 0%,
         transparent 28%
       ),
+
+      radial-gradient(
+        circle at 85% 80%,
+        #DCCBFF 0%,
+        transparent 27%
+      ),
+
       linear-gradient(
         135deg,
-        #FFF8DC,
-        #E8F7FF,
-        #F7E8FF
+        #FFF9E8 0%,
+        #EAF8FF 50%,
+        #F8ECFF 100%
       );
+
     z-index: 9999999;
-    box-sizing: border-box;
   }
+
+  /* ====================================================
+     مربع جاري تحميل اللعبة
+  ==================================================== */
 
   .loading-card {
     position: relative;
-    z-index: 20;
-    width: 220px;
-    min-height: 185px;
-    padding: 22px 18px;
+
+    z-index: 50;
+
+    width: 215px;
+
+    height: 190px;
+
     box-sizing: border-box;
-    border-radius: 26px;
+
+    padding:
+      20px 15px;
+
+    border-radius: 28px;
+
     background:
       linear-gradient(
         145deg,
-        #ffffff,
-        #FFF5FC
+        #FFFFFF 0%,
+        #FFF8FD 48%,
+        #F3FAFF 100%
       );
-    border: 4px solid #FFD65A;
+
+    border:
+      4px solid #FFD45A;
+
     box-shadow:
-      0 12px 35px rgba(0,0,0,0.18),
-      inset 0 0 0 3px #E9F7FF;
+      0 10px 25px
+      rgba(0,0,0,0.16),
+
+      inset 0 0 0 3px
+      rgba(255,255,255,0.9);
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
+
+    overflow: hidden;
+  }
+
+  /*
+    لمعة داخل المربع
+  */
+  .loading-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 85px;
+    height: 85px;
+
+    top: -45px;
+    left: -35px;
+
+    border-radius: 50%;
+
+    background: #FFE9A8;
+
+    opacity: .65;
+  }
+
+  .loading-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    bottom: -32px;
+    right: -25px;
+
+    border-radius: 50%;
+
+    background: #D9C5FF;
+
+    opacity: .55;
   }
 
   .loading-title {
+    position: relative;
+
+    z-index: 5;
+
     font-family:
       'Cairo',
       sans-serif;
-    font-size: 21px;
-    font-weight: 800;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
     color: #0288D1;
+
     text-align: center;
+
     white-space: nowrap;
-    margin-bottom: 10px;
+
+    margin-bottom: 8px;
   }
 
   .loading-percent {
+    position: relative;
+
+    z-index: 5;
+
     font-family:
       'Cairo',
       sans-serif;
+
     font-size: 28px;
+
     font-weight: 900;
+
     color: #9C6ADE;
-    margin-bottom: 12px;
+
+    line-height: 1;
+
+    margin-bottom: 13px;
   }
 
   .loading-progress-bg {
+    position: relative;
+
+    z-index: 5;
+
     width: 170px;
+
     height: 13px;
+
     border-radius: 20px;
-    background: #E6E6E6;
+
+    background: #E5E5E5;
+
+    border:
+      2px solid #FFFFFF;
+
     overflow: hidden;
-    border: 2px solid #FFFFFF;
+
     box-shadow:
-      0 2px 6px rgba(0,0,0,0.12);
+      0 2px 6px
+      rgba(0,0,0,0.13);
   }
 
   .loading-progress {
     height: 100%;
+
     border-radius: 20px;
+
     background:
       linear-gradient(
         90deg,
-        #FFD54F,
-        #FF91C8,
-        #69C9F5,
-        #A8E06C
+        #FFD54F 0%,
+        #FF91C8 32%,
+        #69C9F5 67%,
+        #A8E06C 100%
       );
+
+    box-shadow:
+      inset 0 1px 2px
+      rgba(255,255,255,0.6);
   }
 
   .loading-dots {
-    margin-top: 10px;
+    position: relative;
+
+    z-index: 5;
+
     display: flex;
-    gap: 4px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 3px;
+
+    margin-top: 7px;
+
     font-size: 22px;
-    color: #FF9FCB;
+
     line-height: 1;
   }
 
+  .loading-dots span:nth-child(1) {
+    color: #FF91C8;
+  }
+
   .loading-dots span:nth-child(2) {
-    color: #7CCCF2;
+    color: #69C9F5;
   }
 
   .loading-dots span:nth-child(3) {
-    color: #A9D96C;
+    color: #A8E06C;
   }
+
+  /* ====================================================
+     أيقونات الزخرفة الخارجية
+  ==================================================== */
 
   .loading-decoration {
     position: absolute;
-    z-index: 5;
+
+    z-index: 10;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     filter:
       drop-shadow(
-        0 4px 7px rgba(0,0,0,0.12)
+        0 4px 7px
+        rgba(0,0,0,0.12)
       );
+
     animation:
-      loadingFloat 3.5s ease-in-out infinite;
+      loadingFloat
+      3.5s ease-in-out infinite;
   }
 
   .decoration-one {
     top: 12%;
     left: 10%;
-    color: #69B96B;
+
+    color: #65B96A;
   }
 
   .decoration-two {
-    top: 18%;
-    right: 11%;
-    color: #FF779F;
-    animation-delay: .5s;
+    top: 17%;
+    right: 10%;
+
+    color: #FF719D;
+
+    animation-delay:
+      .45s;
   }
 
   .decoration-three {
     bottom: 13%;
-    left: 13%;
-    color: #7BC96F;
-    animation-delay: 1s;
+    left: 12%;
+
+    color: #79C86A;
+
+    animation-delay:
+      .9s;
   }
 
   .decoration-four {
-    bottom: 18%;
-    right: 14%;
+    bottom: 17%;
+    right: 13%;
+
     font-size: 30px;
-    animation-delay: 1.5s;
+
+    animation-delay:
+      1.35s;
   }
 
   .decoration-five {
     top: 40%;
     left: 5%;
-    font-size: 27px;
-    animation-delay: .8s;
+
+    font-size: 28px;
+
+    animation-delay:
+      .7s;
   }
 
   .decoration-six {
     top: 42%;
     right: 5%;
+
     font-size: 30px;
-    animation-delay: 1.2s;
+
+    animation-delay:
+      1.1s;
   }
+
+  .decoration-seven {
+    top: 7%;
+    left: 45%;
+
+    font-size: 22px;
+
+    animation-delay:
+      1.7s;
+  }
+
+  .decoration-eight {
+    bottom: 7%;
+    right: 44%;
+
+    font-size: 24px;
+
+    animation-delay:
+      2s;
+  }
+
+  /* ====================================================
+     أيقونات صغيرة داخل مربع التحميل
+  ==================================================== */
+
+  .card-mini-star {
+    position: absolute;
+
+    top: 13px;
+    left: 18px;
+
+    font-size: 18px;
+
+    z-index: 10;
+
+    animation:
+      miniFloat
+      2.5s ease-in-out infinite;
+  }
+
+  .card-mini-apple {
+    position: absolute;
+
+    right: 17px;
+    top: 14px;
+
+    font-size: 19px;
+
+    z-index: 10;
+
+    animation:
+      miniFloat
+      2.8s ease-in-out infinite;
+
+    animation-delay:
+      .4s;
+  }
+
+  /* ====================================================
+     الدوائر الخلفية
+  ==================================================== */
 
   .loading-circle {
     position: absolute;
+
     border-radius: 50%;
-    opacity: .5;
+
+    opacity: .55;
   }
 
   .circle-one {
-    width: 80px;
-    height: 80px;
-    top: -20px;
+    width: 85px;
+    height: 85px;
+
+    top: -25px;
     left: -15px;
+
     background: #FFE29A;
   }
 
   .circle-two {
-    width: 95px;
-    height: 95px;
-    bottom: -30px;
+    width: 100px;
+    height: 100px;
+
+    bottom: -35px;
     right: -20px;
+
     background: #DCC4FF;
   }
 
   .circle-three {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
+
     top: 35%;
-    right: 12%;
+    right: 10%;
+
     background: #BFE8FF;
+  }
+
+  .circle-four {
+    width: 40px;
+    height: 40px;
+
+    bottom: 28%;
+    left: 9%;
+
+    background: #FFD1E5;
   }
 
   @keyframes loadingFloat {
     0%,
     100% {
-      transform: translateY(0)
-        rotate(-3deg);
+      transform:
+        translateY(0)
+        rotate(-4deg);
     }
 
     50% {
-      transform: translateY(-10px)
-        rotate(4deg);
+      transform:
+        translateY(-11px)
+        rotate(5deg);
+    }
+  }
+
+  @keyframes miniFloat {
+    0%,
+    100% {
+      transform:
+        translateY(0);
+    }
+
+    50% {
+      transform:
+        translateY(-4px);
     }
   }
 
   @media (max-width: 600px) {
     .loading-screen-fixed {
-      height: 100svh;
+      height:
+        var(
+          --app-height,
+          100dvh
+        );
     }
 
     .loading-card {
       width: 215px;
-      min-height: 180px;
+      height: 190px;
     }
   }
 `,fD=`
   html,
   body,
   #root {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
     overflow: hidden !important;
-    width: 100%;
-    height: 100%;
+
+    overscroll-behavior: none !important;
   }
 
   .game-container-fixed {
     position: fixed;
-    inset: 0;
+
+    top: 0;
+    left: 0;
+
     width: 100vw;
-    height: 100svh;
+
+    height:
+      var(
+        --app-height,
+        100dvh
+      );
+
+    min-height: 0;
+
     overflow: hidden !important;
-    isolation: isolate;
+
+    overscroll-behavior: none !important;
+
+    box-sizing: border-box;
   }
 
   .main-title-text {
     font-size:
-      clamp(17px, 2.1vw, 22px) !important;
+      clamp(
+        17px,
+        2.1vw,
+        22px
+      ) !important;
   }
 
   .sub-title-text {
     font-size:
-      clamp(11px, 1.3vw, 14px) !important;
+      clamp(
+        11px,
+        1.3vw,
+        14px
+      ) !important;
   }
 
   /* ====================================================
      الكمبيوتر
   ==================================================== */
+
   @media (min-width: 601px) {
 
     .main-title-text {
       font-size:
-        clamp(20px, 2.5vw, 26px) !important;
+        clamp(
+          20px,
+          2.5vw,
+          26px
+        ) !important;
     }
 
     .sub-title-text {
       font-size:
-        clamp(13px, 1.6vw, 17px) !important;
+        clamp(
+          13px,
+          1.6vw,
+          17px
+        ) !important;
     }
 
     .bottom-section-center {
@@ -23720,6 +24026,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   /* ====================================================
      التابلت
   ==================================================== */
+
   @media (min-width: 601px)
     and (max-width: 1024px) {
 
@@ -23769,8 +24076,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ====================================================
-     شاشة الكمبيوتر الكبيرة
+     الكمبيوتر الكبير
   ==================================================== */
+
   @media (min-width: 1025px) {
 
     .baskets-container {
@@ -23783,24 +24091,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ====================================================
-     الموبايل فقط
+     الموبايل
   ==================================================== */
+
   @media (max-width: 600px) {
 
     /*
-      الوضع الطبيعي:
-      العنوان في مكانه المعتاد.
+      الوضع الطبيعي
     */
     .top-bar-position {
       top: 40px !important;
+
       transition:
-        top 0.18s ease-out;
+        top .18s ease-out;
     }
 
     /*
-      عند نزول شريط الموقع:
-      العنوان + الفقرة + الوقت + النقاط
-      يطلعوا لفوق.
+      شريط الموقع ظاهر:
+      العنوان + الفقرة + الوقت + النقاط فوق
     */
     .mobile-browser-visible
       .top-bar-position {
@@ -23808,8 +24116,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     /*
-      عندما يختفي شريط الموقع:
-      يرجع الشريط العلوي لمكانه الطبيعي.
+      شريط الموقع مختفي:
+      يرجع العنوان لمكانه الطبيعي
     */
     .mobile-browser-hidden
       .top-bar-position {
@@ -23818,24 +24126,32 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .instruction-text {
       white-space: nowrap !important;
+
       width: max-content !important;
+
       max-width: none !important;
-      padding: 2px 10px !important;
+
+      padding:
+        2px 10px !important;
     }
 
     .tree-container {
       top: 36% !important;
+
       width: 85vw !important;
     }
 
     .tree-img {
       max-height: 35vh !important;
+
       object-fit: contain !important;
     }
 
     .apples-grid {
       top: 39% !important;
+
       width: 75vw !important;
+
       gap: 2px 4px !important;
     }
 
@@ -23851,14 +24167,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .apple-text-size {
       font-size: 18px !important;
+
       font-weight: 800 !important;
+
       line-height: 1.2 !important;
+
       white-space: nowrap !important;
     }
 
     .baskets-container {
       bottom: 115px !important;
+
       gap: 12px !important;
+
       width: 100vw !important;
     }
 
@@ -23867,18 +24188,22 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     /*
-      الأزرار ثابتة في مكانها.
-      لا تتأثر بظهور أو اختفاء شريط الموقع.
+      الأزرار لا تتحرك
     */
     .bottom-section-center {
       bottom: 52px !important;
+
       left: 50% !important;
-      transform: translateX(-50%) !important;
+
+      transform:
+        translateX(-50%) !important;
+
       transition: none !important;
     }
 
     .mobile-browser-visible
       .bottom-section-center,
+
     .mobile-browser-hidden
       .bottom-section-center {
       bottom: 52px !important;
@@ -23886,6 +24211,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .buttons-container {
       flex-direction: row !important;
+
       gap: 10px !important;
     }
   }
