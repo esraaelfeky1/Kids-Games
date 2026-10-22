@@ -23480,7 +23480,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ====================================================
-     مربع جاري تحميل اللعبة
+     مربع جاري تحميل اللعبة - أفقي
   ==================================================== */
 
   .loading-card {
@@ -23488,14 +23488,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     z-index: 50;
 
-    width: 215px;
+    /*
+      أصبح المربع أعرض من ارتفاعه
+    */
+    width: 360px;
 
-    height: 190px;
+    height: 155px;
 
     box-sizing: border-box;
 
     padding:
-      20px 15px;
+      18px 28px;
 
     border-radius: 28px;
 
@@ -23536,10 +23539,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     position: absolute;
 
-    width: 85px;
-    height: 85px;
+    width: 105px;
+    height: 105px;
 
-    top: -45px;
+    top: -55px;
     left: -35px;
 
     border-radius: 50%;
@@ -23554,10 +23557,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     position: absolute;
 
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
 
-    bottom: -32px;
+    bottom: -38px;
     right: -25px;
 
     border-radius: 50%;
@@ -23576,7 +23579,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       'Cairo',
       sans-serif;
 
-    font-size: 20px;
+    font-size: 21px;
 
     font-weight: 900;
 
@@ -23586,7 +23589,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     white-space: nowrap;
 
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 
   .loading-percent {
@@ -23598,7 +23601,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       'Cairo',
       sans-serif;
 
-    font-size: 28px;
+    font-size: 26px;
 
     font-weight: 900;
 
@@ -23606,7 +23609,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     line-height: 1;
 
-    margin-bottom: 13px;
+    margin-bottom: 9px;
   }
 
   .loading-progress-bg {
@@ -23614,7 +23617,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     z-index: 5;
 
-    width: 170px;
+    width: 270px;
 
     height: 13px;
 
@@ -23664,9 +23667,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     gap: 3px;
 
-    margin-top: 7px;
+    margin-top: 3px;
 
-    font-size: 22px;
+    font-size: 20px;
 
     line-height: 1;
   }
@@ -23902,7 +23905,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
   }
 
+  /* ====================================================
+     الموبايل
+  ==================================================== */
+
   @media (max-width: 600px) {
+
     .loading-screen-fixed {
       height:
         var(
@@ -23911,9 +23919,83 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         );
     }
 
+    /*
+      مربع أفقي مناسب للموبايل
+    */
     .loading-card {
-      width: 215px;
-      height: 190px;
+      width: 330px;
+
+      height: 145px;
+
+      padding:
+        16px 22px;
+
+      border-radius: 26px;
+    }
+
+    .loading-title {
+      font-size: 19px;
+
+      margin-bottom: 4px;
+    }
+
+    .loading-percent {
+      font-size: 24px;
+
+      margin-bottom: 8px;
+    }
+
+    .loading-progress-bg {
+      width: 245px;
+
+      height: 12px;
+    }
+
+    .loading-dots {
+      margin-top: 2px;
+
+      font-size: 19px;
+    }
+
+    .card-mini-star {
+      top: 11px;
+      left: 15px;
+
+      font-size: 16px;
+    }
+
+    .card-mini-apple {
+      right: 14px;
+      top: 12px;
+
+      font-size: 17px;
+    }
+  }
+
+  /*
+    شاشات الموبايل الصغيرة جدًا
+  */
+  @media (max-width: 360px) {
+
+    .loading-card {
+      width: 300px;
+
+      height: 140px;
+
+      padding:
+        15px 18px;
+    }
+
+    .loading-title {
+      font-size: 18px;
+    }
+
+    .loading-percent {
+      font-size: 23px;
+    }
+
+    .loading-progress-bg {
+      width: 225px;
     }
   }
 `,fD=`
@@ -24096,9 +24178,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   @media (max-width: 600px) {
 
-    /*
-      الوضع الطبيعي
-    */
     .top-bar-position {
       top: 40px !important;
 
@@ -24106,19 +24185,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         top .18s ease-out;
     }
 
-    /*
-      شريط الموقع ظاهر:
-      العنوان + الفقرة + الوقت + النقاط فوق
-    */
     .mobile-browser-visible
       .top-bar-position {
       top: 18px !important;
     }
 
-    /*
-      شريط الموقع مختفي:
-      يرجع العنوان لمكانه الطبيعي
-    */
     .mobile-browser-hidden
       .top-bar-position {
       top: 40px !important;
@@ -24187,9 +24258,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       width: 95px !important;
     }
 
-    /*
-      الأزرار لا تتحرك
-    */
     .bottom-section-center {
       bottom: 52px !important;
 
