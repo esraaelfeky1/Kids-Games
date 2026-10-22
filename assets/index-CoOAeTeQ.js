@@ -25566,10 +25566,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
       `}),(0,I.jsx)(`button`,{className:`nav-btn home-btn`,onClick:()=>e(`/home`),"aria-label":`Home`,children:(0,I.jsx)(fr,{})}),(0,I.jsx)(`button`,{className:`nav-btn sound-btn`,onClick:()=>i(!r),"aria-label":`Sound`,children:r?(0,I.jsx)(ur,{}):(0,I.jsx)(dr,{})}),(0,I.jsxs)(`div`,{className:`title-area`,style:{marginTop:`25px`,textAlign:`center`,zIndex:10},children:[(0,I.jsx)(`div`,{style:{backgroundColor:`rgba(123, 177, 234, 0.75)`,padding:`5px 25px`,borderRadius:`30px`,marginBottom:`6px`,boxShadow:`0 2px 6px rgba(0,0,0,0.1)`},children:(0,I.jsx)(`h1`,{style:{margin:0,fontSize:`20px`,color:`#111111`},children:`مرحبا بك في عالم الشدة`})}),(0,I.jsx)(`div`,{style:{backgroundColor:`rgba(172, 199, 237, 0.55)`,padding:`4px 18px`,borderRadius:`40px`},children:(0,I.jsx)(`p`,{style:{margin:0,fontSize:`11px`,color:`#333`,fontWeight:`bold`},children:`اختر الشدة التي تريد اللعب بها`})})]}),(0,I.jsx)(`main`,{className:`main-wrapper`,style:{display:`flex`,justifyContent:`center`,marginTop:`25px`,marginBottom:`50px`,gap:`25px`,flexWrap:`wrap`,width:`100%`,maxWidth:`1200px`,zIndex:10},children:l.map((r,i)=>(0,I.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`,backgroundSize:`100% 100%`,width:`350px`,height:`380px`,position:`relative`,display:`flex`,flexDirection:`column`,alignItems:`center`,overflow:`hidden`},children:[(0,I.jsx)(`h2`,{children:r.title}),r.games.map((r,i)=>{let a=t===r.id,o=c(r.id);return(0,I.jsx)(`img`,{className:`game-image`,src:r.img,loading:`eager`,decoding:`async`,onClick:()=>{s(),e(r.path)},onMouseEnter:()=>{n(r.id),s()},onMouseLeave:()=>n(null),style:{position:`absolute`,cursor:`pointer`,objectFit:`contain`,pointerEvents:`auto`,transform:a?`scale(1.15)`:`scale(1)`,filter:a?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:a?999:1,...o},alt:`لعبة`},i)})]},i))})]})},VD=`/Kids-Games/assets/shaddahbg-DTSXAWGn.jpeg`,HD=`/Kids-Games/assets/shaddahbgmob-DVtVuvV1.jpeg`,UD=[{id:1,word:`مُعَلِّمٌ`,hasShaddah:!0},{id:2,word:`كَتَبَ`,hasShaddah:!1},{id:3,word:`مُدَرِّسٌ`,hasShaddah:!0},{id:4,word:`قَلَمٌ`,hasShaddah:!1},{id:5,word:`شَمْسٌ`,hasShaddah:!1},{id:6,word:`طَبَّاخٌ`,hasShaddah:!0},{id:7,word:`قِطَّةٌ`,hasShaddah:!0}];function WD(){let e=P(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0);(0,b.useEffect)(()=>{let e=0,t=setInterval(()=>{e+=5,e>=100?(e=100,i(100),clearInterval(t),setTimeout(()=>{n(!1)},250)):i(e)},65);return()=>clearInterval(t)},[]);let[a,o]=(0,b.useState)(()=>{let e=localStorage.getItem(`shaddah_currentQ`);return e===null?0:parseInt(e,10)}),[s,c]=(0,b.useState)(()=>{let e=localStorage.getItem(`shaddah_score`);return e===null?0:parseInt(e,10)}),[l,u]=(0,b.useState)(()=>{let e=localStorage.getItem(`shaddah_time`);return e===null?0:parseInt(e,10)}),[d,f]=(0,b.useState)(!0),[p,m]=(0,b.useState)(()=>localStorage.getItem(`shaddah_isGameOver`)===`true`),[h,g]=(0,b.useState)(!1),_=(0,b.useRef)(new Audio(Ds)),v=(0,b.useRef)(new Audio(Os));(0,b.useEffect)(()=>{localStorage.setItem(`shaddah_currentQ`,a),localStorage.setItem(`shaddah_score`,s),localStorage.setItem(`shaddah_time`,l),localStorage.setItem(`shaddah_isGameOver`,p)},[a,s,l,p]);let y=()=>{localStorage.removeItem(`shaddah_currentQ`),localStorage.removeItem(`shaddah_score`),localStorage.removeItem(`shaddah_time`),localStorage.removeItem(`shaddah_isGameOver`),window.location.reload()};(0,b.useEffect)(()=>{if(p||t)return;let e=setInterval(()=>{u(e=>e+1)},1e3);return()=>clearInterval(e)},[p,t]);let x=e=>{!d||!e.current||(e.current.currentTime=0,e.current.play().catch(e=>console.log(`خطأ صوت:`,e)))},S=e=>{if(e===UD[a].hasShaddah){x(_),c(e=>e+10),g(!1);let e=a+1;e<UD.length?o(e):setTimeout(()=>{m(!0)},1e3)}else x(v),g(!0),setTimeout(()=>{g(!1)},600)};return(0,I.jsxs)(`div`,{style:KD.container,className:`game-container-main`,children:[(0,I.jsx)(`style`,{children:GD}),(0,I.jsx)($v,{children:t&&(0,I.jsxs)(U.div,{className:`loading-page`,initial:{opacity:1},exit:{opacity:0},transition:{duration:.35},children:[(0,I.jsx)(`div`,{className:`loading-decor decor-one`,children:`🚦`}),(0,I.jsx)(`div`,{className:`loading-decor decor-two`,children:`👮`}),(0,I.jsx)(`div`,{className:`loading-decor decor-three`,children:`🚗`}),(0,I.jsx)(`div`,{className:`loading-decor decor-four`,children:`🚕`}),(0,I.jsx)(`div`,{className:`loading-decor decor-five`,children:`🚥`}),(0,I.jsx)(`div`,{className:`loading-decor decor-six`,children:`🚓`}),(0,I.jsx)(`div`,{className:`loading-decor decor-seven`,children:`🛑`}),(0,I.jsx)(`div`,{className:`loading-decor decor-eight`,children:`🚸`}),(0,I.jsx)(`div`,{className:`loading-decor decor-nine`,children:`⭐`}),(0,I.jsx)(`div`,{className:`loading-decor decor-ten`,children:`🚦`}),(0,I.jsx)(`div`,{className:`loading-decor decor-eleven`,children:`👮`}),(0,I.jsx)(`div`,{className:`loading-decor decor-twelve`,children:`🚗`}),(0,I.jsxs)(U.div,{className:`loading-card`,initial:{scale:.85,opacity:0},animate:{scale:1,opacity:1},transition:{duration:.35},children:[(0,I.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,I.jsx)(`div`,{className:`loading-progress-track`,children:(0,I.jsx)(U.div,{className:`loading-progress-fill`,animate:{width:`${r}%`},transition:{duration:.12}})})]})]})}),(0,I.jsx)(`img`,{src:VD,alt:`الخلفية`,style:KD.bg,className:`desktop-bg`}),(0,I.jsx)(`img`,{src:HD,alt:`خلفية الموبايل`,style:KD.bg,className:`mobile-bg`}),(0,I.jsx)($v,{children:p&&(0,I.jsx)(U.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:KD.overlay,children:(0,I.jsxs)(`div`,{style:KD.winBox,children:[(0,I.jsxs)(`div`,{style:KD.winContent,children:[(0,I.jsx)(Za,{size:48,color:`#FFD700`}),(0,I.jsx)(`h1`,{style:{margin:`10px 0`,fontSize:`22px`,color:`#333`},children:`مبروك يا بطل 🚦`}),(0,I.jsxs)(`p`,{style:{fontSize:`20px`,fontWeight:`bold`,color:`#4CAF50`,margin:`8px 0`},children:[`النتيجة: `,s]})]}),(0,I.jsxs)(`div`,{style:KD.resultButtons,children:[(0,I.jsx)(`button`,{onClick:y,style:KD.circleBtnSmall,children:(0,I.jsx)(B,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/Nunation`),style:KD.circleBtnSmall,children:(0,I.jsx)(R,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:KD.circleBtnSmall,children:(0,I.jsx)(z,{size:20})})]})]})})}),(0,I.jsxs)(`div`,{style:KD.topBar,className:`top-bar-mobile`,children:[(0,I.jsxs)(`div`,{style:KD.box,className:`compact-box`,children:[`⏱️ `,Math.floor(l/60),`:`,String(l%60).padStart(2,`0`)]}),(0,I.jsxs)(`div`,{style:KD.headerWrapper,children:[(0,I.jsx)(`div`,{className:`traffic-signal-title`,children:`إشارة المرور`}),(0,I.jsx)(`div`,{style:KD.mainTitleBox,className:`main-title-text`,children:`اختر زر الشَّدَّة المناسب للكلمة`})]}),(0,I.jsxs)(`div`,{style:KD.box,className:`compact-box`,children:[`⭐ `,s]})]}),!p&&a<UD.length&&(0,I.jsxs)(`div`,{style:KD.gameCenterArea,className:`game-center-area`,children:[(0,I.jsx)(U.div,{initial:{scale:.8,opacity:0},animate:{scale:1,opacity:1},className:`word-card-box ${h?`shake-anim`:``}`,style:KD.wordBox,children:(0,I.jsx)(`span`,{style:KD.wordText,className:`word-text`,children:UD[a].word})},a),(0,I.jsxs)(`div`,{style:KD.buttonsContainer,className:`buttons-choice-container`,children:[(0,I.jsxs)(U.button,{whileHover:{scale:1.05},whileTap:{scale:.95},onClick:()=>S(!0),style:KD.greenBtn,className:`choice-btn green-btn`,children:[(0,I.jsx)(`div`,{style:KD.btnTitle,className:`choice-title-text`,children:`شَدَّة`}),(0,I.jsx)(`div`,{style:KD.circleBadgeGreen,children:(0,I.jsx)(Li,{size:28,color:`#FFF`,strokeWidth:3})})]}),(0,I.jsxs)(U.button,{whileHover:{scale:1.05},whileTap:{scale:.95},onClick:()=>S(!1),style:KD.redBtn,className:`choice-btn red-btn`,children:[(0,I.jsx)(`div`,{style:KD.btnTitle,className:`choice-title-text`,children:`بِدُون شَدَّة`}),(0,I.jsx)(`div`,{style:KD.circleBadgeRed,children:(0,I.jsx)(ao,{size:28,color:`#FFF`,strokeWidth:3})})]})]})]}),(0,I.jsx)(`div`,{style:KD.bottomSection,className:`bottom-section-center`,children:(0,I.jsxs)(`div`,{style:KD.controlButtonsGroup,children:[(0,I.jsx)(`button`,{onClick:()=>f(!d),style:KD.circleBtn,className:`bottom-nav-btn`,children:d?(0,I.jsx)(V,{size:20}):(0,I.jsx)(H,{size:20})}),(0,I.jsx)(`button`,{onClick:y,style:KD.circleBtn,className:`bottom-nav-btn`,children:(0,I.jsx)(B,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/Shadda`),style:KD.circleBtn,className:`bottom-nav-btn`,children:(0,I.jsx)(R,{size:20})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:KD.circleBtn,className:`bottom-nav-btn`,children:(0,I.jsx)(z,{size:20})})]})})]})}var GD=`
-
-  /* ==========================================
-     منع السكرول وثبات الشاشة
-     ========================================== */
   html,
   body {
     overflow: hidden !important;
@@ -25587,18 +25583,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   /* ==========================================
      شاشة التحميل
-     ألوان مستوحاة من المرور:
-     أصفر + أحمر + أزرق + أبيض
      ========================================== */
 
   .loading-page {
     position: fixed;
     inset: 0;
-
     width: 100vw;
     height: 100vh;
     height: 100dvh;
-
     z-index: 9999999;
 
     display: flex;
@@ -25625,10 +25617,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         #E3F2FD 100%
       );
   }
-
-  /* ==========================================
-     مربع جاري تحميل اللعبة
-     ========================================== */
 
   .loading-card {
     position: relative;
@@ -25704,18 +25692,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         #FBC02D,
         #F44336
       );
-
-    box-shadow:
-      0 1px 5px rgba(25,118,210,0.3);
   }
 
-  /* ==========================================
-     زخارف المرور حول المربع
-     ========================================== */
+  /* زخارف المرور */
 
   .loading-decor {
     position: absolute;
-
     z-index: 5;
 
     user-select: none;
@@ -25824,34 +25806,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
   }
 
-  /* ==========================================
-     حركة الخطأ
-     ========================================== */
-
   @keyframes shake {
-    0% {
-      transform: translateX(0);
-    }
-
-    20% {
-      transform: translateX(-10px);
-    }
-
-    40% {
-      transform: translateX(10px);
-    }
-
-    60% {
-      transform: translateX(-10px);
-    }
-
-    80% {
-      transform: translateX(10px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
   }
 
   .shake-anim {
@@ -25876,11 +25837,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ==========================================
-     شاشات الكمبيوتر واللابتوب
+     الكمبيوتر
      ========================================== */
 
   @media (min-width: 1025px) {
-
     .game-center-area {
       top: 52% !important;
     }
@@ -25906,11 +25866,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ==========================================
-     شاشات التابلت
+     التابلت
      ========================================== */
 
   @media (min-width: 601px) and (max-width: 1024px) {
-
     .game-center-area {
       top: 52% !important;
     }
@@ -25935,11 +25894,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ==========================================
-     شاشات الموبايل
+     الموبايل
      ========================================== */
 
   @media (max-width: 600px) {
-
     .desktop-bg {
       display: none !important;
     }
@@ -25959,12 +25917,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       border-radius: 9px !important;
     }
 
-    /* عنوان إشارة المرور */
     .traffic-signal-title {
       display: block !important;
 
       font-size: 16px !important;
-
       font-weight: 900 !important;
 
       color: #263238 !important;
@@ -25987,20 +25943,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     .main-title-text {
       font-size: 13px !important;
-
       padding: 2px 8px !important;
-
       border-width: 2px !important;
-
       border-radius: 8px !important;
-
       font-weight: bold !important;
     }
 
-    /* ==========================================
-       تصغير مربع جاري تحميل اللعبة
-       على الموبايل فقط
-       ========================================== */
+    /* مربع التحميل صغير على الموبايل فقط */
 
     .loading-card {
       width: 225px !important;
@@ -26058,12 +26007,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       padding: 4px !important;
     }
 
+    /* ==========================================
+       التعديل المطلوب فقط:
+       تكبير كلمة شدة وبدون شدة على الموبايل
+       ========================================== */
+
     .choice-title-text {
-      font-size: 17.5px !important;
+      font-size: 20px !important;
       margin-top: 6px !important;
       margin-bottom: 2px !important;
       line-height: 1.1 !important;
       font-weight: 900 !important;
+      white-space: nowrap !important;
     }
 
     .choice-btn svg {
@@ -26077,6 +26032,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     /* الأزرار الأربعة السفلية */
+
     .bottom-nav-btn {
       width: 38px !important;
       height: 38px !important;
@@ -26115,8 +26071,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       height: 86px !important;
     }
 
+    /* تكبير النص مع الحفاظ عليه داخل الزر */
     .choice-title-text {
-      font-size: 16px !important;
+      font-size: 18.5px !important;
+      white-space: nowrap !important;
     }
 
     .bottom-nav-btn {
