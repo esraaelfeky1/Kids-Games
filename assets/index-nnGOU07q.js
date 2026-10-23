@@ -40283,7 +40283,7 @@ and
             height: 46px !important;
           }
         }
-        `}),(0,L.jsxs)(`div`,{className:`game-page`,style:{...pM.page,backgroundImage:`url(${tw})`},children:[(0,L.jsxs)(`div`,{className:`game-top`,style:pM.top,children:[(0,L.jsxs)(`div`,{className:`game-box`,style:pM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:o})]}),(0,L.jsx)(`div`,{className:`game-header`,style:pM.header,children:`استمع واختر الكلمة التي بها لام قمرية`}),(0,L.jsxs)(`div`,{className:`game-box`,style:pM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⏱️`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:c})]})]}),g&&(0,L.jsx)(`div`,{style:pM.overlay,children:(0,L.jsx)(`div`,{style:pM.popup,children:`ممتاز 👏`})}),v&&(0,L.jsx)(`div`,{style:pM.overlay,children:(0,L.jsxs)(`div`,{style:pM.finalPopup,children:[`🎉 أحسنت`,(0,L.jsx)(`br`,{}),`⭐ حصلت على `,o,` نقطة`]})}),(0,L.jsxs)(`div`,{className:`game-card`,style:pM.card,children:[(0,L.jsx)(`p`,{className:`game-text`,style:pM.gameText,children:`استمع ثم اختر الكلمة الصحيحة`}),(0,L.jsx)(`div`,{className:`game-sound`,style:pM.sound,onClick:()=>{w(i)},role:`button`,tabIndex:0,"aria-label":`تشغيل صوت الكلمة`,children:(0,L.jsx)(H,{size:30,color:`white`})}),(0,L.jsx)(`div`,{className:`game-choices`,style:pM.choices,children:n.map((e,t)=>(0,L.jsx)(`div`,{className:`game-choice`,onClick:()=>O(e),style:{...pM.choice,border:u===e?e===i?`4px solid green`:`4px solid red`:`2px solid #ddd`,transform:u===e?`scale(1.05)`:`scale(1)`},children:e},t))})]}),(0,L.jsxs)(`div`,{className:`game-bottom-buttons`,style:pM.bottomButtons,children:[(0,L.jsx)(`button`,{type:`button`,onClick:A,className:`game-circle-btn`,style:pM.circleBtn,"aria-label":`الرجوع`,children:(0,L.jsx)(z,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:j,className:`game-circle-btn`,style:pM.circleBtn,"aria-label":`الرئيسية`,children:(0,L.jsx)(B,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:k,className:`game-circle-btn`,style:pM.circleBtn,"aria-label":`إعادة اللعب`,children:(0,L.jsx)(V,{color:`white`,size:24})})]})]})]})}var pM={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},top:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`22px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}};function mM(){let e=F(),t=[{correct:`الصَّبْرُ`,options:[`بَدِيع`,`كَاتِب`,`الصَّبْرُ`]},{correct:`النُّقُودُ`,options:[`النُّقُودُ`,`شَفِيعُ`,`قَالَ`]},{correct:`الصَّيْدُ`,options:[`عَادَ`,`الصَّيْدُ`,`عَبَدَ`]},{correct:`الشَّمْسُ`,options:[`الشَّمْسُ`,`عَرَفَ`,`سَامِعُ`]},{correct:`السَّهْمُ`,options:[`شَمْسُ`,`رَفَعَ`,`السَّهْمُ`]},{correct:`النَّحْلُ`,options:[`سَامِعُ`,`النَّحْلُ`,`رَحَمَ`]},{correct:`النَّخْلُ`,options:[`النَّخْلُ`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),x=(0,b.useRef)(null),S={الصَّبْرُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B5%D8%A8%D8%B1.mp3`,النُّقُودُ:`/Kids-Games/sounds/%D8%A7%D9%84%D9%86%D9%82%D9%88%D8%AF.mp3`,الصَّيْدُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B5%D9%8A%D8%AF.mp3`,الشَّمْسُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B4%D9%85%D8%B3.mp3`,السَّهْمُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B3%D9%87%D9%85.mp3`,النَّحْلُ:`/Kids-Games/sounds/%D8%A7%D9%84%D9%86%D8%AD%D9%84.mp3`,النَّخْلُ:`/Kids-Games/sounds/%D8%A7%D9%84%D9%86%D8%AE%D9%84.mp3`},C=()=>{if(x.current){try{x.current.pause(),x.current.currentTime=0}catch(e){console.log(e)}x.current=null}},w=e=>{let t=S[e];if(!t){console.log(`لم يتم العثور على ملف الصوت للكلمة:`,e);return}C();let n=new Audio;n.preload=`auto`,n.src=t,n.playbackRate=.85,n.volume=1,x.current=n;let r=n.play();r!==void 0&&r.then(()=>{console.log(`تم تشغيل الصوت:`,e)}).catch(e=>{console.log(`تعذر تشغيل الصوت تلقائياً:`,e)})},T=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الصحيحة:`,e)})},E=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الخاطئة:`,e)})};(0,b.useEffect)(()=>{if(m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[m]);let D=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{w(n.correct)},300)};(0,b.useEffect)(()=>{D(0)},[]);let O=e=>{u||m||(d(e),e===i?(s(e=>e+1),_(!0),C(),T(),setTimeout(()=>{_(!1)},1200)):(C(),E()),setTimeout(()=>{let e=f+1;e>=7?(C(),h(!0),y(!0),setTimeout(()=>{y(!1)},2e3)):(p(e),D(e))},900))},k=()=>{C(),s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),D(0)},A=()=>{C(),e(`/Sun`)},j=()=>{C(),e(`/home`)};return(0,b.useEffect)(()=>()=>{C()},[]),(0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`style`,{children:`
+        `}),(0,L.jsxs)(`div`,{className:`game-page`,style:{...pM.page,backgroundImage:`url(${tw})`},children:[(0,L.jsxs)(`div`,{className:`game-top`,style:pM.top,children:[(0,L.jsxs)(`div`,{className:`game-box`,style:pM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:o})]}),(0,L.jsx)(`div`,{className:`game-header`,style:pM.header,children:`استمع واختر الكلمة التي بها لام قمرية`}),(0,L.jsxs)(`div`,{className:`game-box`,style:pM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⏱️`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:c})]})]}),g&&(0,L.jsx)(`div`,{style:pM.overlay,children:(0,L.jsx)(`div`,{style:pM.popup,children:`ممتاز 👏`})}),v&&(0,L.jsx)(`div`,{style:pM.overlay,children:(0,L.jsxs)(`div`,{style:pM.finalPopup,children:[`🎉 أحسنت`,(0,L.jsx)(`br`,{}),`⭐ حصلت على `,o,` نقطة`]})}),(0,L.jsxs)(`div`,{className:`game-card`,style:pM.card,children:[(0,L.jsx)(`p`,{className:`game-text`,style:pM.gameText,children:`استمع ثم اختر الكلمة الصحيحة`}),(0,L.jsx)(`div`,{className:`game-sound`,style:pM.sound,onClick:()=>{w(i)},role:`button`,tabIndex:0,"aria-label":`تشغيل صوت الكلمة`,children:(0,L.jsx)(H,{size:30,color:`white`})}),(0,L.jsx)(`div`,{className:`game-choices`,style:pM.choices,children:n.map((e,t)=>(0,L.jsx)(`div`,{className:`game-choice`,onClick:()=>O(e),style:{...pM.choice,border:u===e?e===i?`4px solid green`:`4px solid red`:`2px solid #ddd`,transform:u===e?`scale(1.05)`:`scale(1)`},children:e},t))})]}),(0,L.jsxs)(`div`,{className:`game-bottom-buttons`,style:pM.bottomButtons,children:[(0,L.jsx)(`button`,{type:`button`,onClick:A,className:`game-circle-btn`,style:pM.circleBtn,"aria-label":`الرجوع`,children:(0,L.jsx)(z,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:j,className:`game-circle-btn`,style:pM.circleBtn,"aria-label":`الرئيسية`,children:(0,L.jsx)(B,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:k,className:`game-circle-btn`,style:pM.circleBtn,"aria-label":`إعادة اللعب`,children:(0,L.jsx)(V,{color:`white`,size:24})})]})]})]})}var pM={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},top:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`22px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}};function mM(){let e=F(),t=[{correct:`الصَّبْرُ`,options:[`بَدِيع`,`كَاتِب`,`الصَّبْرُ`]},{correct:`النُّقُودُ`,options:[`النُّقُودُ`,`شَفِيعُ`,`قَالَ`]},{correct:`الصَّيْدُ`,options:[`عَادَ`,`الصَّيْدُ`,`عَبَدَ`]},{correct:`الشَّمْسُ`,options:[`الشَّمْسُ`,`عَرَفَ`,`سَامِعُ`]},{correct:`السَّهْمُ`,options:[`شَمْسُ`,`رَفَعَ`,`السَّهْمُ`]},{correct:`النَّحْلُ`,options:[`سَامِعُ`,`النَّحْلُ`,`رَحَمَ`]},{correct:`النَّخْلُ`,options:[`النَّخْلُ`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(!1),[C,w]=(0,b.useState)(!1),[T,E]=(0,b.useState)(0),D=x&&C,O=(0,b.useRef)(null),k={الصَّبْرُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B5%D8%A8%D8%B1.mp3`,النُّقُودُ:`/Kids-Games/sounds/%D8%A7%D9%84%D9%86%D9%82%D9%88%D8%AF.mp3`,الصَّيْدُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B5%D9%8A%D8%AF.mp3`,الشَّمْسُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B4%D9%85%D8%B3.mp3`,السَّهْمُ:`/Kids-Games/sounds/%D8%A7%D9%84%D8%B3%D9%87%D9%85.mp3`,النَّحْلُ:`/Kids-Games/sounds/%D8%A7%D9%84%D9%86%D8%AD%D9%84.mp3`,النَّخْلُ:`/Kids-Games/sounds/%D8%A7%D9%84%D9%86%D8%AE%D9%84.mp3`};(0,b.useEffect)(()=>{let e=!1,t=[tw,...Object.values(k),`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`,`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`],n=0;S(!1),E(0);let r=()=>{e||(n+=1,E(Math.round(n/t.length*100)),n>=t.length&&(E(100),S(!0)))};return t.forEach(e=>{if(e.includes(`.mp3`)||e.includes(`.wav`)||e.includes(`.ogg`)){let t=new Audio;t.preload=`auto`,t.addEventListener(`canplaythrough`,r,{once:!0}),t.addEventListener(`error`,r,{once:!0}),t.src=e,t.load()}else{let t=new Image;t.onload=r,t.onerror=r,t.src=e}}),()=>{e=!0}},[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{w(!0)},5e3);return()=>clearTimeout(e)},[]);let A=()=>{if(O.current){try{O.current.pause(),O.current.currentTime=0}catch(e){console.log(e)}O.current=null}},j=e=>{let t=k[e];if(!t){console.log(`لم يتم العثور على ملف الصوت للكلمة:`,e);return}A();let n=new Audio;n.preload=`auto`,n.src=t,n.playbackRate=.85,n.volume=1,O.current=n;let r=n.play();r!==void 0&&r.then(()=>{console.log(`تم تشغيل الصوت:`,e)}).catch(e=>{console.log(`تعذر تشغيل الصوت تلقائياً:`,e)})},M=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الصحيحة:`,e)})},N=()=>{let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(e=>{console.log(`تعذر تشغيل صوت الإجابة الخاطئة:`,e)})};(0,b.useEffect)(()=>{if(!D||m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[m,D]);let P=e=>{let n=t[e];r(n.options),a(n.correct),d(null),D&&setTimeout(()=>{j(n.correct)},300)};(0,b.useEffect)(()=>{D&&P(0)},[D]);let ee=e=>{!D||u||m||(d(e),e===i?(s(e=>e+1),_(!0),A(),M(),setTimeout(()=>{_(!1)},1200)):(A(),N()),setTimeout(()=>{let e=f+1;e>=7?(A(),h(!0),y(!0),setTimeout(()=>{y(!1)},2e3)):(p(e),P(e))},900))},te=()=>{A(),s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),D&&P(0)},ne=()=>{A(),e(`/Sun`)},re=()=>{A(),e(`/home`)};return(0,b.useEffect)(()=>()=>{A()},[]),(0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`style`,{children:`
         html, body {
           margin: 0 !important;
           padding: 0 !important;
@@ -40293,6 +40293,287 @@ and
           position: fixed !important;
           inset: 0 !important;
           overscroll-behavior: none !important;
+        }
+
+        /* =====================================================
+           📚 شاشة تحميل لعبة الحروف
+           ===================================================== */
+
+        .arabic-loading-overlay {
+          position: fixed;
+          inset: 0;
+          z-index: 2000;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          overflow: hidden;
+
+          background:
+            radial-gradient(
+              circle at 18% 20%,
+              rgba(255,255,255,0.7) 0 55px,
+              transparent 56px
+            ),
+            radial-gradient(
+              circle at 83% 26%,
+              rgba(255,255,255,0.55) 0 65px,
+              transparent 66px
+            ),
+            linear-gradient(
+              135deg,
+              #ffe5b4 0%,
+              #f8c8dc 45%,
+              #c9c3ff 100%
+            );
+        }
+
+        /* 📖 كتاب */
+        .arabic-loading-book {
+          position: absolute;
+          top: 23%;
+          left: 20%;
+          z-index: 4;
+
+          color: #7b5bb6;
+
+          filter:
+            drop-shadow(
+              0 5px 8px rgba(0,0,0,0.13)
+            );
+
+          animation:
+            arabicLoadingFloat
+            2.7s
+            ease-in-out
+            infinite;
+        }
+
+        /* ✏️ قلم */
+        .arabic-loading-pencil {
+          position: absolute;
+          top: 25%;
+          right: 20%;
+          z-index: 4;
+
+          color: #e58b67;
+
+          transform: rotate(-15deg);
+
+          filter:
+            drop-shadow(
+              0 5px 8px rgba(0,0,0,0.13)
+            );
+
+          animation:
+            arabicLoadingFloat
+            2.7s
+            ease-in-out
+            infinite;
+
+          animation-delay: 0.5s;
+        }
+
+        /* ✨ نجوم */
+        .arabic-loading-sparkles {
+          position: absolute;
+          bottom: 23%;
+          left: 21%;
+          z-index: 4;
+
+          color: #e6a93b;
+
+          filter:
+            drop-shadow(
+              0 5px 8px rgba(0,0,0,0.13)
+            );
+
+          animation:
+            arabicLoadingSparkle
+            2.3s
+            ease-in-out
+            infinite;
+        }
+
+        /* 🔤 حرف */
+        .arabic-loading-letter {
+          position: absolute;
+          bottom: 23%;
+          right: 21%;
+          z-index: 4;
+
+          color: #5f72c9;
+
+          font-family:
+            'Cairo',
+            sans-serif;
+
+          font-size: 42px;
+          font-weight: 900;
+
+          filter:
+            drop-shadow(
+              0 5px 8px rgba(0,0,0,0.13)
+            );
+
+          animation:
+            arabicLoadingFloat
+            2.7s
+            ease-in-out
+            infinite;
+
+          animation-delay: 0.8s;
+        }
+
+        /* ✦ زخارف صغيرة */
+        .arabic-loading-symbol {
+          position: absolute;
+          z-index: 4;
+
+          font-weight: 900;
+
+          animation:
+            arabicSymbolFloat
+            2.4s
+            ease-in-out
+            infinite;
+        }
+
+        .arabic-loading-symbol-one {
+          top: 32%;
+          left: 33%;
+          color: #e9a23b;
+          font-size: 24px;
+        }
+
+        .arabic-loading-symbol-two {
+          bottom: 32%;
+          right: 33%;
+          color: #9b79dc;
+          font-size: 27px;
+          animation-delay: 0.5s;
+        }
+
+        /* 🟣 مربع التحميل */
+        .arabic-loading-card {
+          width: 230px;
+          min-height: 92px;
+
+          padding: 13px 16px;
+          box-sizing: border-box;
+
+          border-radius: 20px;
+
+          background:
+            linear-gradient(
+              135deg,
+              #fff0d7 0%,
+              #f5e8ff 100%
+            );
+
+          border: 3px solid #8a69c7;
+
+          box-shadow:
+            0 10px 28px
+            rgba(76, 54, 117, 0.28);
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          z-index: 10;
+        }
+
+        .arabic-loading-title {
+          color: #60428d;
+
+          font-family:
+            'Cairo',
+            sans-serif;
+
+          font-size: 19px;
+          font-weight: 800;
+
+          margin-bottom: 10px;
+
+          white-space: nowrap;
+        }
+
+        .arabic-loading-progress {
+          width: 100%;
+          height: 9px;
+
+          border-radius: 999px;
+
+          background: #e2d8ee;
+
+          overflow: hidden;
+
+          border: 1px solid #c3b2d9;
+        }
+
+        .arabic-loading-progress-fill {
+          height: 100%;
+
+          border-radius: 999px;
+
+          background:
+            linear-gradient(
+              90deg,
+              #f2a65a 0%,
+              #d77bc7 48%,
+              #7d83df 100%
+            );
+
+          transition:
+            width 0.25s ease;
+        }
+
+        @keyframes arabicLoadingFloat {
+          0%,
+          100% {
+            transform:
+              translateY(0)
+              rotate(0deg);
+          }
+
+          50% {
+            transform:
+              translateY(-8px)
+              rotate(3deg);
+          }
+        }
+
+        @keyframes arabicLoadingSparkle {
+          0%,
+          100% {
+            transform:
+              scale(1)
+              rotate(0deg);
+          }
+
+          50% {
+            transform:
+              scale(1.18)
+              rotate(12deg);
+          }
+        }
+
+        @keyframes arabicSymbolFloat {
+          0%,
+          100% {
+            transform:
+              translateY(0)
+              scale(1);
+          }
+
+          50% {
+            transform:
+              translateY(-7px)
+              scale(1.12);
+          }
         }
 
         @media (max-width: 768px) {
@@ -40306,6 +40587,66 @@ and
             justify-content: flex-start !important;
             padding: 10px !important;
             box-sizing: border-box !important;
+          }
+
+          /* 📚 تصغير مربع التحميل على الموبايل */
+          .arabic-loading-card {
+            width: 175px;
+            min-height: 70px;
+
+            padding: 8px 10px;
+
+            border-radius: 16px;
+            border-width: 3px;
+          }
+
+          .arabic-loading-title {
+            font-size: 13px;
+            margin-bottom: 7px;
+          }
+
+          .arabic-loading-progress {
+            height: 6px;
+          }
+
+          .arabic-loading-book svg,
+          .arabic-loading-pencil svg,
+          .arabic-loading-sparkles svg {
+            width: 25px;
+            height: 25px;
+          }
+
+          .arabic-loading-book {
+            top: 25%;
+            left: 14%;
+          }
+
+          .arabic-loading-pencil {
+            top: 27%;
+            right: 14%;
+          }
+
+          .arabic-loading-sparkles {
+            bottom: 23%;
+            left: 15%;
+          }
+
+          .arabic-loading-letter {
+            bottom: 23%;
+            right: 15%;
+            font-size: 28px;
+          }
+
+          .arabic-loading-symbol-one {
+            top: 34%;
+            left: 28%;
+            font-size: 18px;
+          }
+
+          .arabic-loading-symbol-two {
+            bottom: 34%;
+            right: 28%;
+            font-size: 21px;
           }
 
           .game-top {
@@ -40472,7 +40813,7 @@ and
             height: 46px !important;
           }
         }
-        `}),(0,L.jsxs)(`div`,{className:`game-page`,style:{...hM.page,backgroundImage:`url(${tw})`},children:[(0,L.jsxs)(`div`,{className:`game-top`,style:hM.top,children:[(0,L.jsxs)(`div`,{className:`game-box`,style:hM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:o})]}),(0,L.jsx)(`div`,{className:`game-header`,style:hM.header,children:`استمع واختر الكلمة التي بها شدة`}),(0,L.jsxs)(`div`,{className:`game-box`,style:hM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⏱️`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:c})]})]}),g&&(0,L.jsx)(`div`,{style:hM.overlay,children:(0,L.jsx)(`div`,{style:hM.popup,children:`ممتاز 👏`})}),v&&(0,L.jsx)(`div`,{style:hM.overlay,children:(0,L.jsxs)(`div`,{style:hM.finalPopup,children:[`🎉 أحسنت`,(0,L.jsx)(`br`,{}),`⭐ حصلت على `,o,` نقطة`]})}),(0,L.jsxs)(`div`,{className:`game-card`,style:hM.card,children:[(0,L.jsx)(`p`,{className:`game-text`,style:hM.gameText,children:`استمع ثم اختر الكلمة الصحيحة`}),(0,L.jsx)(`div`,{className:`game-sound`,style:hM.sound,onClick:()=>{w(i)},role:`button`,tabIndex:0,"aria-label":`تشغيل صوت الكلمة`,children:(0,L.jsx)(H,{size:30,color:`white`})}),(0,L.jsx)(`div`,{className:`game-choices`,style:hM.choices,children:n.map((e,t)=>(0,L.jsx)(`div`,{className:`game-choice`,onClick:()=>O(e),style:{...hM.choice,border:u===e?e===i?`4px solid green`:`4px solid red`:`2px solid #ddd`,transform:u===e?`scale(1.05)`:`scale(1)`},children:e},t))})]}),(0,L.jsxs)(`div`,{className:`game-bottom-buttons`,style:hM.bottomButtons,children:[(0,L.jsx)(`button`,{type:`button`,onClick:A,className:`game-circle-btn`,style:hM.circleBtn,"aria-label":`الرجوع`,children:(0,L.jsx)(z,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:j,className:`game-circle-btn`,style:hM.circleBtn,"aria-label":`الرئيسية`,children:(0,L.jsx)(B,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:k,className:`game-circle-btn`,style:hM.circleBtn,"aria-label":`إعادة اللعب`,children:(0,L.jsx)(V,{color:`white`,size:24})})]})]})]})}var hM={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},top:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`22px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}},gM=`/Kids-Games/assets/sukoobg5-Crwy3jVi.jpeg`,_M=`/Kids-Games/assets/suktitle6-Cnm4GM9T.png`,vM=`/Kids-Games/assets/strgame5-YjC3URl7.png`,yM=`/Kids-Games/assets/listengame5-Dx58CmaW.png`,bM=`/Kids-Games/assets/dinogame5-CdmF5P4B.png`,xM=`/Kids-Games/assets/fh5-pxxdyfR4.png`,SM=()=>{let e=F(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1);(0,b.useEffect)(()=>{let e=new Image;e.src=gM,[_M,Iw,Lw,vM,yM,bM,xM].forEach(e=>{let t=new Image;t.src=e})},[]);let a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o=[{id:`imgStar`,img:vM,path:`/Softmagn`},{id:`imgListen`,img:yM,path:`/Softfada`},{id:`imgDino`,img:bM,path:`/SoftRainbow`},{id:`imgBalloons`,img:xM,path:`/Softfwk`}];return(0,L.jsxs)(`div`,{className:`sukoon-container`,style:{backgroundImage:`url(${gM})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,height:`100vh`,width:`100vw`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`,overflow:`hidden`,boxSizing:`border-box`},children:[(0,L.jsx)(`style`,{children:`
+        `}),!D&&(0,L.jsxs)(`div`,{className:`arabic-loading-overlay`,children:[(0,L.jsx)(`div`,{className:`arabic-loading-book`,children:(0,L.jsx)(Ai,{size:40})}),(0,L.jsx)(`div`,{className:`arabic-loading-pencil`,children:(0,L.jsx)(za,{size:38})}),(0,L.jsx)(`div`,{className:`arabic-loading-sparkles`,children:(0,L.jsx)(eo,{size:38})}),(0,L.jsx)(`div`,{className:`arabic-loading-letter`,children:`أ`}),(0,L.jsx)(`div`,{className:`arabic-loading-symbol arabic-loading-symbol-one`,children:`✦`}),(0,L.jsx)(`div`,{className:`arabic-loading-symbol arabic-loading-symbol-two`,children:`✧`}),(0,L.jsxs)(`div`,{className:`arabic-loading-card`,children:[(0,L.jsx)(`div`,{className:`arabic-loading-title`,children:`جاري تحميل اللعبة`}),(0,L.jsx)(`div`,{className:`arabic-loading-progress`,children:(0,L.jsx)(`div`,{className:`arabic-loading-progress-fill`,style:{width:`${T}%`}})})]})]}),(0,L.jsxs)(`div`,{className:`game-page`,style:{...hM.page,backgroundImage:`url(${tw})`},children:[(0,L.jsxs)(`div`,{className:`game-top`,style:hM.top,children:[(0,L.jsxs)(`div`,{className:`game-box`,style:hM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:o})]}),(0,L.jsx)(`div`,{className:`game-header`,style:hM.header,children:`استمع واختر الكلمة التي بها شدة`}),(0,L.jsxs)(`div`,{className:`game-box`,style:hM.box,children:[(0,L.jsx)(`span`,{className:`game-box-icon`,children:`⏱️`}),(0,L.jsx)(`span`,{className:`game-box-number`,children:c})]})]}),g&&(0,L.jsx)(`div`,{style:hM.overlay,children:(0,L.jsx)(`div`,{style:hM.popup,children:`ممتاز 👏`})}),v&&(0,L.jsx)(`div`,{style:hM.overlay,children:(0,L.jsxs)(`div`,{style:hM.finalPopup,children:[`🎉 أحسنت`,(0,L.jsx)(`br`,{}),`⭐ حصلت على `,o,` نقطة`]})}),(0,L.jsxs)(`div`,{className:`game-card`,style:hM.card,children:[(0,L.jsx)(`p`,{className:`game-text`,style:hM.gameText,children:`استمع ثم اختر الكلمة الصحيحة`}),(0,L.jsx)(`div`,{className:`game-sound`,style:hM.sound,onClick:()=>{j(i)},role:`button`,tabIndex:0,"aria-label":`تشغيل صوت الكلمة`,children:(0,L.jsx)(H,{size:30,color:`white`})}),(0,L.jsx)(`div`,{className:`game-choices`,style:hM.choices,children:n.map((e,t)=>(0,L.jsx)(`div`,{className:`game-choice`,onClick:()=>ee(e),style:{...hM.choice,border:u===e?e===i?`4px solid green`:`4px solid red`:`2px solid #ddd`,transform:u===e?`scale(1.05)`:`scale(1)`},children:e},t))})]}),(0,L.jsxs)(`div`,{className:`game-bottom-buttons`,style:hM.bottomButtons,children:[(0,L.jsx)(`button`,{type:`button`,onClick:ne,className:`game-circle-btn`,style:hM.circleBtn,"aria-label":`الرجوع`,children:(0,L.jsx)(z,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:re,className:`game-circle-btn`,style:hM.circleBtn,"aria-label":`الرئيسية`,children:(0,L.jsx)(B,{color:`white`,size:24})}),(0,L.jsx)(`button`,{type:`button`,onClick:te,className:`game-circle-btn`,style:hM.circleBtn,"aria-label":`إعادة اللعب`,children:(0,L.jsx)(V,{color:`white`,size:24})})]})]})]})}var hM={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},top:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`22px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}},gM=`/Kids-Games/assets/sukoobg5-Crwy3jVi.jpeg`,_M=`/Kids-Games/assets/suktitle6-Cnm4GM9T.png`,vM=`/Kids-Games/assets/strgame5-YjC3URl7.png`,yM=`/Kids-Games/assets/listengame5-Dx58CmaW.png`,bM=`/Kids-Games/assets/dinogame5-CdmF5P4B.png`,xM=`/Kids-Games/assets/fh5-pxxdyfR4.png`,SM=()=>{let e=F(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1);(0,b.useEffect)(()=>{let e=new Image;e.src=gM,[_M,Iw,Lw,vM,yM,bM,xM].forEach(e=>{let t=new Image;t.src=e})},[]);let a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o=[{id:`imgStar`,img:vM,path:`/Softmagn`},{id:`imgListen`,img:yM,path:`/Softfada`},{id:`imgDino`,img:bM,path:`/SoftRainbow`},{id:`imgBalloons`,img:xM,path:`/Softfwk`}];return(0,L.jsxs)(`div`,{className:`sukoon-container`,style:{backgroundImage:`url(${gM})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,height:`100vh`,width:`100vw`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`,overflow:`hidden`,boxSizing:`border-box`},children:[(0,L.jsx)(`style`,{children:`
         html, body {
           margin: 0;
           padding: 0;
