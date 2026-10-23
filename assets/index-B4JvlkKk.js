@@ -18246,18 +18246,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
 
           /* ==========================================
-             مربع جاري تحميل اللعبة
-             تم تقليل الـ padding من فوق وتحت
+             مربع التحميل الأساسي
           ========================================== */
 
           .space-loading-card {
-            width: 275px;
+            width: 245px;
 
-            min-height: 125px;
+            min-height: 108px;
 
             padding:
-              15px
-              22px;
+              12px
+              18px;
 
             display: flex;
 
@@ -18278,7 +18277,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             border:
               3px solid #8064dc;
 
-            border-radius: 24px;
+            border-radius: 22px;
 
             box-shadow:
               0 15px 35px
@@ -18295,7 +18294,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .space-loading-title {
             margin:
-              0 0 14px;
+              0 0 12px;
 
             color: #5339a6;
 
@@ -18314,13 +18313,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           /* ==========================================
              شريط التحميل
-             تم تقليل الـ padding الرأسي
           ========================================== */
 
           .space-loading-bar-wrapper {
             width: 100%;
 
-            height: 17px;
+            height: 16px;
 
             padding:
               2px 3px;
@@ -18522,6 +18520,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           /* ==========================================
              اللابتوب والتابلت
+             العنوان والفقرة أكبر
+             مربع التحميل أصغر
           ========================================== */
 
           @media
@@ -18530,20 +18530,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           (max-width: 1200px) {
 
             .space-loading-card {
-              width: 235px;
+              width: 205px;
 
-              min-height: 115px;
+              min-height: 96px;
 
               padding:
-                13px
-                18px;
+                10px
+                15px;
+
+              border-radius: 20px;
             }
 
 
             .space-loading-title {
-              font-size: 19px;
+              font-size: 18px;
 
-              margin-bottom: 12px;
+              margin-bottom: 10px;
+            }
+
+
+            .space-loading-bar-wrapper {
+              height: 14px;
             }
 
 
@@ -18552,35 +18559,108 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               height: 43px;
             }
 
+
+            /* تكبير عنوان اللعبة */
+            .main-title-res {
+              font-size: 19px !important;
+
+              padding:
+                5px 18px !important;
+            }
+
+
+            /* تكبير الفقرة */
+            .subtitle-res {
+              font-size: 15px !important;
+
+              padding:
+                5px 13px !important;
+
+              margin-top: 6px !important;
+            }
+
           }
 
 
           /* ==========================================
-             الموبايل
+             الشاشات الأكبر من التابلت
+             اللابتوب / الديسكتوب
           ========================================== */
 
-          @media (max-width: 600px) {
+          @media (min-width: 1201px) {
 
-            .space-loading-card {
-              width: 220px;
-
-              min-height: 125px;
+            .main-title-res {
+              font-size: 19px !important;
 
               padding:
-                14px
-                17px;
+                5px 18px !important;
+            }
+
+
+            .subtitle-res {
+              font-size: 15px !important;
+
+              padding:
+                5px 13px !important;
+
+              margin-top: 6px !important;
+            }
+
+
+            .space-loading-card {
+              width: 215px;
+
+              min-height: 100px;
+
+              padding:
+                10px
+                16px;
             }
 
 
             .space-loading-title {
               font-size: 19px;
 
-              margin-bottom: 13px;
+              margin-bottom: 10px;
             }
 
 
             .space-loading-bar-wrapper {
-              height: 17px;
+              height: 15px;
+            }
+
+          }
+
+
+          /* ==========================================
+             الموبايل
+             مربع التحميل أصغر
+          ========================================== */
+
+          @media (max-width: 600px) {
+
+            .space-loading-card {
+              width: 190px;
+
+              min-height: 102px;
+
+              padding:
+                10px
+                13px;
+
+              border-radius: 19px;
+            }
+
+
+            .space-loading-title {
+              font-size: 17px;
+
+              margin-bottom: 10px;
+            }
+
+
+            .space-loading-bar-wrapper {
+              height: 15px;
 
               padding:
                 2px 3px;
@@ -18622,20 +18702,25 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           @media (max-width: 380px) {
 
             .space-loading-card {
-              width: 210px;
+              width: 180px;
 
-              min-height: 120px;
+              min-height: 96px;
 
               padding:
-                13px
-                15px;
+                9px
+                12px;
             }
 
 
             .space-loading-title {
-              font-size: 18px;
+              font-size: 16px;
 
-              margin-bottom: 12px;
+              margin-bottom: 9px;
+            }
+
+
+            .space-loading-bar-wrapper {
+              height: 14px;
             }
 
           }
@@ -18671,10 +18756,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           z-index: 50;
         }
 
-
-        /* =====================================
-           الصندوق
-        ===================================== */
 
         .box-img {
           position: absolute;
