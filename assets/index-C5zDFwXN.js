@@ -29801,7 +29801,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       #ffe7ef 100%
     );
 
-  font-family: 'Cairo', sans-serif;
+  font-family:
+    'Cairo',
+    sans-serif;
+
   direction: rtl;
 }
 
@@ -29904,7 +29907,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     rgba(92,181,112,0.45);
 }
 
-/* زخارف شاشة التحميل */
+/* زخارف */
 
 .loading-flower,
 .loading-drop,
@@ -29951,60 +29954,50 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 .flower-a {
   top: 14%;
   left: 12%;
-
   animation-delay: 0.2s;
 }
 
 .flower-b {
   bottom: 14%;
   right: 12%;
-
   animation-delay: 0.9s;
 }
 
 .drop-a {
   top: 18%;
   right: 16%;
-
   animation-delay: 0.5s;
 }
 
 .plant-a {
   bottom: 17%;
   left: 15%;
-
   animation-delay: 1.1s;
 }
 
 .butterfly-a {
   top: 35%;
   left: 7%;
-
   animation-delay: 0.8s;
 }
 
 .spark-a {
   top: 25%;
   left: 29%;
-
   color: #f1b93e;
 }
 
 .spark-b {
   top: 28%;
   right: 29%;
-
   color: #ef8fac;
-
   animation-delay: 0.5s;
 }
 
 .spark-c {
   bottom: 27%;
   left: 28%;
-
   color: #62b9ce;
-
   animation-delay: 1s;
 }
 
@@ -30037,54 +30030,61 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
 /* =========================================
    الموبايل فقط
+   تم تصغير المربع أكثر
    ========================================= */
 
 @media screen and (max-width: 600px) {
 
   .garden-loading-card {
-    width: 245px;
+    width: 205px;
 
-    min-height: 105px;
+    min-height: 88px;
 
     padding:
-      17px
-      20px;
+      13px
+      15px;
 
-    border-radius: 21px;
+    border-radius: 18px;
 
     border-width: 3px;
+
+    box-shadow:
+      0 12px 30px
+      rgba(76,120,75,0.22),
+      inset 0 2px 0
+      rgba(255,255,255,0.9);
   }
 
   .garden-loading-title {
-    font-size: 17px;
+    font-size: 15px;
 
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   .garden-loading-bar {
-    height: 10px;
+    height: 8px;
 
     border-width: 1.5px;
   }
 
   .loading-flower {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .loading-drop {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .loading-plant {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .loading-butterfly {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .loading-spark {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .flower-a {
