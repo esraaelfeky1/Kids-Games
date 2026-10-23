@@ -18994,14 +18994,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ===================================================
-     مربع التحميل
+     مربع التحميل الأساسي
      =================================================== */
 
   .dino-loading-card {
-    width: 205px;
-    min-height: 94px;
+    width: 215px;
+    min-height: 98px;
 
-    padding: 10px 15px;
+    padding: 11px 16px;
 
     box-sizing: border-box;
 
@@ -19019,7 +19019,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       );
 
     border: 3px solid #e38b36;
-    border-radius: 20px;
+    border-radius: 21px;
 
     box-shadow:
       0 12px 28px rgba(0, 0, 0, 0.32),
@@ -19034,7 +19034,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     color: #7b3f18;
 
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 900;
 
     direction: rtl;
@@ -19047,7 +19047,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   .dino-loading-bar-wrapper {
     width: 100%;
-    height: 14px;
+    height: 15px;
 
     padding: 2px 3px;
 
@@ -19105,32 +19105,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   .loading-egg-icon {
     left: 10%;
     top: 17%;
-
     color: #ffe082;
   }
 
   .loading-mountain-icon {
     right: 9%;
     top: 16%;
-
     color: #ffb35c;
   }
 
   .loading-leaf-icon {
     left: 11%;
     bottom: 17%;
-
     color: #8bcf65;
   }
 
   .loading-sparkle-icon {
     right: 11%;
     bottom: 18%;
-
     color: #fff176;
   }
 
-  /* حركة بسيطة للأيقونات */
+  /* ===================================================
+     حركة الأيقونات
+     =================================================== */
 
   .loading-floating-one {
     animation: dinoFloatOne 2.8s ease-in-out infinite;
@@ -19256,8 +19254,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       width: clamp(70px, 18vw, 85px) !important;
     }
 
-    /* إعدادات الموبايل الأصلية للحركة والحرف */
-
     .tashkeel-responsive {
       font-size: clamp(42px, 10.5vw, 56px) !important;
       margin-bottom: -18px !important;
@@ -19277,7 +19273,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       transform: translate(-50%, -48%) !important;
     }
 
-    /* مربع التحميل أصغر على الموبايل */
+    /* =================================================
+       مربع التحميل على الموبايل
+       أصغر من اللاب والتابلت
+       ================================================= */
 
     .dino-loading-card {
       width: 182px;
@@ -19318,7 +19317,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ===================================================
-     شاشات الموبايل الصغيرة جدًا
+     موبايل صغير جدًا
      =================================================== */
 
   @media (max-width: 380px) {
@@ -19345,7 +19344,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   /* ===================================================
-     اللابتوب والتابلت فقط
+     اللابتوب والتابلت
+     المربع أكبر شوية
      =================================================== */
 
   @media (min-width: 769px) and (max-width: 1200px) {
@@ -19361,24 +19361,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     }
 
     .dino-loading-card {
-      width: 195px;
-      min-height: 91px;
-      padding: 9px 14px;
-      border-radius: 19px;
+      width: 215px;
+      min-height: 98px;
+      padding: 11px 16px;
+      border-radius: 21px;
     }
 
     .dino-loading-title {
-      font-size: 17px;
-      margin-bottom: 9px;
+      font-size: 19px;
+      margin-bottom: 10px;
     }
 
     .dino-loading-bar-wrapper {
-      height: 14px;
+      height: 15px;
     }
 
     .dino-loading-icon svg {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
     }
   }
 
@@ -19389,13 +19389,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (min-width: 1201px) {
 
     .dino-loading-card {
-      width: 205px;
-      min-height: 94px;
+      width: 215px;
+      min-height: 98px;
     }
   }
 
   /* ===================================================
-     اللابتوب والتابلت للحرف والحركة
+     الحرف والحركة للابتوب والتابلت
      =================================================== */
 
   @media (min-width: 769px) {
@@ -19428,13 +19428,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               dino-loading-icon\r
               loading-sparkle-icon\r
               loading-floating-four\r
-            `,children:(0,I.jsx)(qa,{size:45,strokeWidth:2.2})}),(0,I.jsxs)(`div`,{className:`dino-loading-card`,children:[(0,I.jsx)(`h2`,{className:`dino-loading-title`,children:`جاري تحميل اللعبة`}),(0,I.jsx)(`div`,{className:`dino-loading-bar-wrapper`,children:(0,I.jsx)(`div`,{className:`dino-loading-bar`,style:{width:`${r}%`}})})]})]})]}):(0,I.jsxs)(`div`,{style:iT.container,children:[(0,I.jsx)(`style`,{children:nT}),(0,I.jsx)(`img`,{src:vS,alt:``,style:iT.bg}),(0,I.jsx)(ny,{children:p&&(0,I.jsx)(U.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:iT.overlay,children:(0,I.jsxs)(`div`,{style:iT.winBox,children:[(0,I.jsxs)(`div`,{style:iT.winContent,children:[(0,I.jsx)($a,{size:32,color:`#FFD700`}),(0,I.jsx)(`h1`,{style:{margin:`4px 0`,fontSize:`20px`},children:`أحسنت يا بطل`}),(0,I.jsxs)(`p`,{style:{fontSize:`18px`,fontWeight:`bold`,color:`#4CAF50`,margin:`2px 0`},children:[`النتيجة: `,a]})]}),(0,I.jsxs)(`div`,{style:iT.resultButtons,children:[(0,I.jsx)(`button`,{onClick:()=>window.location.reload(),style:iT.winCircleBtn,children:(0,I.jsx)(B,{size:18})}),(0,I.jsx)(`button`,{onClick:()=>e(`/Sukoon`),style:iT.winCircleBtn,children:(0,I.jsx)(R,{size:18})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:iT.winCircleBtn,children:(0,I.jsx)(z,{size:18})})]})]})})}),(0,I.jsxs)(`div`,{style:iT.topBar,children:[(0,I.jsxs)(`div`,{style:iT.box,className:`top-box-responsive`,children:[`⏱️ `,Math.floor(s/60),`:`,String(s%60).padStart(2,`0`)]}),(0,I.jsx)(`div`,{style:iT.mainTitle,className:`main-title-responsive`,children:`لعبة الديناصور`}),(0,I.jsxs)(`div`,{style:iT.box,className:`top-box-responsive`,children:[`🥚 `,a]})]}),(0,I.jsx)(`div`,{style:iT.subTitleContainer,className:`sub-title-responsive`,children:`اسحب السكون للسلة`}),(0,I.jsx)(`div`,{style:iT.dinoContainer,className:`dino-container-responsive`,children:(0,I.jsx)(`img`,{ref:h,src:Zw,alt:`Dino`,style:iT.dino,className:`dino-responsive`})}),(0,I.jsx)(`div`,{style:iT.gameBoard,className:`board-mobile`,children:Qw.map(e=>(0,I.jsxs)(U.div,{drag:!d.includes(e.id),dragSnapToOrigin:!0,onDragEnd:(t,n)=>y(t,n,e),whileDrag:{zIndex:9999,scale:1.15},style:{...iT.eggWrapper,visibility:d.includes(e.id)?`hidden`:`visible`},children:[(0,I.jsx)(`img`,{src:e.img,style:iT.egg,className:`egg-responsive`,alt:`egg`}),(0,I.jsxs)(`div`,{style:iT.charOnEgg,children:[(0,I.jsx)(`span`,{style:iT.tashkeelStyle,className:`\r
-                  tashkeel-responsive\r
-                  desktop-tashkeel\r
-                `,children:e.tashkeel}),(0,I.jsx)(`span`,{style:iT.charStyle,className:`\r
-                  char-responsive\r
-                  desktop-char\r
-                `,children:e.char})]})]},e.id))}),(0,I.jsxs)(`div`,{style:iT.buttonsContainer,className:`\r
+            `,children:(0,I.jsx)(qa,{size:45,strokeWidth:2.2})}),(0,I.jsxs)(`div`,{className:`dino-loading-card`,children:[(0,I.jsx)(`h2`,{className:`dino-loading-title`,children:`جاري تحميل اللعبة`}),(0,I.jsx)(`div`,{className:`dino-loading-bar-wrapper`,children:(0,I.jsx)(`div`,{className:`dino-loading-bar`,style:{width:`${r}%`}})})]})]})]}):(0,I.jsxs)(`div`,{style:iT.container,children:[(0,I.jsx)(`style`,{children:nT}),(0,I.jsx)(`img`,{src:vS,alt:``,style:iT.bg}),(0,I.jsx)(ny,{children:p&&(0,I.jsx)(U.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},style:iT.overlay,children:(0,I.jsxs)(`div`,{style:iT.winBox,children:[(0,I.jsxs)(`div`,{style:iT.winContent,children:[(0,I.jsx)($a,{size:32,color:`#FFD700`}),(0,I.jsx)(`h1`,{style:{margin:`4px 0`,fontSize:`20px`},children:`أحسنت يا بطل`}),(0,I.jsxs)(`p`,{style:{fontSize:`18px`,fontWeight:`bold`,color:`#4CAF50`,margin:`2px 0`},children:[`النتيجة: `,a]})]}),(0,I.jsxs)(`div`,{style:iT.resultButtons,children:[(0,I.jsx)(`button`,{onClick:()=>window.location.reload(),style:iT.winCircleBtn,children:(0,I.jsx)(B,{size:18})}),(0,I.jsx)(`button`,{onClick:()=>e(`/Sukoon`),style:iT.winCircleBtn,children:(0,I.jsx)(R,{size:18})}),(0,I.jsx)(`button`,{onClick:()=>e(`/home`),style:iT.winCircleBtn,children:(0,I.jsx)(z,{size:18})})]})]})})}),(0,I.jsxs)(`div`,{style:iT.topBar,children:[(0,I.jsxs)(`div`,{style:iT.box,className:`top-box-responsive`,children:[`⏱️`,` `,Math.floor(s/60),`:`,String(s%60).padStart(2,`0`)]}),(0,I.jsx)(`div`,{style:iT.mainTitle,className:`main-title-responsive`,children:`لعبة الديناصور`}),(0,I.jsxs)(`div`,{style:iT.box,className:`top-box-responsive`,children:[`🥚 `,a]})]}),(0,I.jsx)(`div`,{style:iT.subTitleContainer,className:`sub-title-responsive`,children:`اسحب السكون للسلة`}),(0,I.jsx)(`div`,{style:iT.dinoContainer,className:`\r
+          dino-container-responsive\r
+        `,children:(0,I.jsx)(`img`,{ref:h,src:Zw,alt:`Dino`,style:iT.dino,className:`dino-responsive`})}),(0,I.jsx)(`div`,{style:iT.gameBoard,className:`board-mobile`,children:Qw.map(e=>(0,I.jsxs)(U.div,{drag:!d.includes(e.id),dragSnapToOrigin:!0,onDragEnd:(t,n)=>y(t,n,e),whileDrag:{zIndex:9999,scale:1.15},style:{...iT.eggWrapper,visibility:d.includes(e.id)?`hidden`:`visible`},children:[(0,I.jsx)(`img`,{src:e.img,style:iT.egg,className:`egg-responsive`,alt:`egg`}),(0,I.jsxs)(`div`,{style:iT.charOnEgg,children:[(0,I.jsx)(`span`,{style:iT.tashkeelStyle,className:`\r
+                    tashkeel-responsive\r
+                    desktop-tashkeel\r
+                  `,children:e.tashkeel}),(0,I.jsx)(`span`,{style:iT.charStyle,className:`\r
+                    char-responsive\r
+                    desktop-char\r
+                  `,children:e.char})]})]},e.id))}),(0,I.jsxs)(`div`,{style:iT.buttonsContainer,className:`\r
           mobile-buttons-responsive\r
         `,children:[(0,I.jsx)(`button`,{onClick:()=>u(!l),style:iT.circleBtn,className:`\r
             circle-btn-responsive\r
