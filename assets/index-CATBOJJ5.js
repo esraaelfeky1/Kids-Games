@@ -55934,7 +55934,7 @@ and
         }
 
         /* ====================================================
-           شاشة التحميل - ألوان فاتحة
+           شاشة التحميل
            ==================================================== */
 
         .loading-overlay {
@@ -55956,36 +55956,31 @@ and
 
           background:
             radial-gradient(
-              circle at 18% 18%,
-              rgba(255, 230, 250, 0.95),
-              transparent 27%
+              circle at 20% 20%,
+              rgba(147, 197, 253, 0.28),
+              transparent 25%
             ),
             radial-gradient(
-              circle at 82% 20%,
-              rgba(220, 238, 255, 0.95),
-              transparent 28%
+              circle at 80% 25%,
+              rgba(196, 181, 253, 0.28),
+              transparent 25%
             ),
             radial-gradient(
-              circle at 20% 82%,
-              rgba(225, 248, 255, 0.95),
-              transparent 30%
-            ),
-            radial-gradient(
-              circle at 80% 82%,
-              rgba(242, 232, 255, 0.95),
+              circle at 50% 80%,
+              rgba(165, 243, 252, 0.28),
               transparent 30%
             ),
             linear-gradient(
               135deg,
-              #ffffff,
-              #f7f3ff,
-              #f0f9ff,
-              #fff5fb
+              #eef7ff,
+              #f3efff,
+              #eefaff,
+              #f9f5ff
             );
         }
 
         /* ====================================================
-           مربع التحميل
+           مربع التحميل - فاتح
            ==================================================== */
 
         .loading-card {
@@ -56007,18 +56002,18 @@ and
             linear-gradient(
               135deg,
               #ffffff 0%,
-              #faf7ff 35%,
-              #f7fbff 65%,
-              #f2fdff 100%
+              #faf8ff 35%,
+              #f8fbff 65%,
+              #f5fdff 100%
             );
 
-          border: 3px solid #c4b5fd;
+          border: 3px solid #c7d2fe;
 
           box-shadow:
             0 10px 30px
-              rgba(100, 116, 139, 0.16),
+              rgba(88, 92, 150, 0.16),
             0 0 25px
-              rgba(196, 181, 253, 0.28),
+              rgba(165, 180, 252, 0.25),
             inset 0 0 0 2px
               rgba(255, 255, 255, 0.95);
 
@@ -56034,7 +56029,7 @@ and
         .loading-title {
           margin: 0 0 7px;
 
-          color: #6366a8;
+          color: #55558f;
 
           font-size: 17px;
 
@@ -56061,7 +56056,7 @@ and
           box-sizing: border-box;
 
           background:
-            #ffffff;
+            rgba(255, 255, 255, 0.98);
 
           border-radius: 20px;
 
@@ -56069,7 +56064,7 @@ and
 
           box-shadow:
             inset 0 1px 3px
-            rgba(100, 116, 139, 0.12);
+            rgba(0, 0, 0, 0.08);
         }
 
         .loading-bar {
@@ -56082,12 +56077,11 @@ and
           background:
             linear-gradient(
               90deg,
-              #67e8f9,
-              #93c5fd,
-              #a78bfa,
-              #c4b5fd,
-              #f0abfc,
-              #67e8f9
+              #7ddff7,
+              #9aa5ff,
+              #c0a8ff,
+              #d7c8ff,
+              #8ceaf7
             );
 
           transition:
@@ -56095,7 +56089,7 @@ and
 
           box-shadow:
             0 0 8px
-            rgba(147, 197, 253, 0.45);
+            rgba(129, 140, 248, 0.4);
         }
 
         .loading-percent {
@@ -56105,7 +56099,7 @@ and
 
           font-weight: 900;
 
-          color: #7777b5;
+          color: #6262a5;
 
           line-height: 1;
         }
@@ -56128,7 +56122,7 @@ and
           filter:
             drop-shadow(
               0 4px 7px
-              rgba(100, 116, 139, 0.18)
+              rgba(80, 80, 120, 0.18)
             );
 
           animation:
@@ -56346,9 +56340,6 @@ and
 
         /* ====================================================
            الموبايل فقط
-           تكبير رائد الفضاء والصاروخ
-           وتنزيلهم 10px إضافية
-           ورفع الجملة
            ==================================================== */
 
         @media (max-width: 599px) {
@@ -56359,8 +56350,8 @@ and
 
             --sentence-size: 1.35rem;
 
-            /* رفع الجملة للأعلى */
-            --sentence-margin-top: -34px;
+            /* رفع الجملة لأعلى داخل السبورة */
+            --sentence-margin-top: -43px;
 
             --badge-top: 12%;
 
@@ -56378,17 +56369,17 @@ and
 
             --symbol-size: 2.1rem;
 
-            /* رائد الفضاء أكبر شوية */
-            --astro-width: 120px;
+            /* تكبير رائد الفضاء قليلًا */
+            --astro-width: 122px;
 
-            /* نزل 10px إضافية */
-            --astro-y: 92px;
+            /* يظل فوق الأزرار */
+            --astro-y: 78px;
 
-            /* الصاروخ أكبر شوية */
+            /* تكبير الصاروخ قليلًا */
             --rocket-width: 88px;
 
-            /* نزل 10px إضافية */
-            --rocket-y: 88px;
+            /* يظل فوق الأزرار */
+            --rocket-y: 74px;
 
             --title-size: 0.9rem;
 
@@ -56442,7 +56433,7 @@ and
           }
 
           /* ==================================================
-             رائد الفضاء على الموبايل
+             رائد الفضاء - الموبايل فقط
              ================================================== */
 
           .astronaut-wrapper {
@@ -56472,7 +56463,7 @@ and
           }
 
           /* ==================================================
-             الصاروخ على الموبايل
+             الصاروخ - الموبايل فقط
              ================================================== */
 
           .rocket-wrapper {
@@ -56530,7 +56521,7 @@ and
           }
 
           /* ==================================================
-             مربع التحميل على الموبايل
+             مربع التحميل على الموبايل - فاتح
              ================================================== */
 
           .loading-card {
@@ -56547,10 +56538,17 @@ and
               linear-gradient(
                 135deg,
                 #ffffff,
-                #faf7ff,
-                #f5fbff,
-                #fff8fc
+                #faf8ff,
+                #f7fbff
               );
+
+            border-color: #c7d2fe;
+
+            box-shadow:
+              0 10px 25px
+              rgba(80, 80, 130, 0.13),
+              inset 0 0 0 2px
+              rgba(255, 255, 255, 0.95);
           }
 
           .loading-title {
@@ -56596,6 +56594,14 @@ and
             border-radius: 18px;
 
             border-width: 2px;
+
+            background:
+              linear-gradient(
+                135deg,
+                #ffffff,
+                #faf8ff,
+                #f6fbff
+              );
           }
 
           .loading-title {
@@ -56653,15 +56659,16 @@ and
             left: 45%;
           }
 
-          /* للموبايلات الصغيرة */
+          /* الموبايلات الصغيرة جدًا */
+
           .game-container {
             --astro-width: 108px;
-            --astro-y: 98px;
+            --astro-y: 82px;
 
-            --rocket-width: 80px;
-            --rocket-y: 94px;
+            --rocket-width: 78px;
+            --rocket-y: 79px;
 
-            --sentence-margin-top: -32px;
+            --sentence-margin-top: -39px;
           }
 
           .astronaut-wrapper {
