@@ -55893,1221 +55893,915 @@ and
             height: 46px !important;
           }
         }
-        `}),(0,R.jsxs)(`div`,{className:`game-page`,style:{...hF.page,backgroundImage:`url(${aw})`},children:[(0,R.jsxs)(`div`,{className:`game-top`,style:hF.top,children:[(0,R.jsxs)(`div`,{className:`game-box`,style:hF.box,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,R.jsx)(`span`,{className:`game-box-number`,children:o})]}),(0,R.jsx)(`div`,{className:`game-header`,style:hF.header,children:`لعبة علامات الترقيم`}),(0,R.jsxs)(`div`,{className:`game-box`,style:hF.box,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:`⏱️`}),(0,R.jsx)(`span`,{className:`game-box-number`,children:c})]})]}),g&&(0,R.jsx)(`div`,{style:hF.overlay,children:(0,R.jsx)(`div`,{style:hF.popup,children:`ممتاز 👏`})}),v&&(0,R.jsx)(`div`,{style:hF.overlay,children:(0,R.jsxs)(`div`,{style:hF.finalPopup,children:[`🎉 أحسنت`,(0,R.jsx)(`br`,{}),`⭐ حصلت على `,o,` نقطة`]})}),(0,R.jsxs)(`div`,{className:`game-card`,style:hF.card,children:[(0,R.jsx)(`p`,{className:`game-text`,style:hF.gameText,children:`استمع ثم اختر العلامة الصحيحة`}),(0,R.jsx)(`div`,{className:`game-sound`,style:hF.sound,onClick:()=>{j(i)},role:`button`,tabIndex:0,"aria-label":`تشغيل صوت العلامة`,children:(0,R.jsx)(U,{size:30,color:`white`})}),(0,R.jsx)(`div`,{className:`game-choices`,style:hF.choices,children:n.map((e,t)=>(0,R.jsx)(`div`,{className:`game-choice`,onClick:()=>ee(e),style:{...hF.choice,border:u===e?e===i?`4px solid green`:`4px solid red`:`2px solid #ddd`,transform:u===e?`scale(1.05)`:`scale(1)`},children:e},t))})]}),(0,R.jsxs)(`div`,{className:`game-bottom-buttons`,style:hF.bottomButtons,children:[(0,R.jsx)(`button`,{type:`button`,onClick:te,className:`game-circle-btn`,style:hF.circleBtn,"aria-label":`الرجوع`,children:(0,R.jsx)(B,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:ne,className:`game-circle-btn`,style:hF.circleBtn,"aria-label":`الرئيسية`,children:(0,R.jsx)(V,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:F,className:`game-circle-btn`,style:hF.circleBtn,"aria-label":`إعادة اللعب`,children:(0,R.jsx)(H,{color:`white`,size:24})})]}),x&&(0,R.jsxs)(`div`,{className:`loading-overlay`,children:[(0,R.jsx)(`div`,{className:`loading-icon loading-icon-1`,children:`🔊`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-2`,children:`🎵`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-3`,children:`أ`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-4`,children:`🎧`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-5`,children:`ب`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-6`,children:`🔔`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-7`,children:`✏️`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-8`,children:`ت`}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-bar-container`,children:(0,R.jsx)(`div`,{className:`loading-bar`,style:{width:`${C}%`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[Math.round(C),`%`]})]})]})]})]})}var hF={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},top:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`28px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}},gF=`/Kids-Games/assets/space_bg-zk1j8VuS.jpeg`,_F=`/Kids-Games/assets/rocket-BxVpFpEv.png`,vF=`/Kids-Games/assets/astronaut-DSWuFWnH.png`,yF=`/Kids-Games/assets/question_board-DphvQXQY.png`,bF=`/Kids-Games/assets/bubble1-DB7XzD5r.png`,xF=[{id:1,sentence:`ما أجمل النجوم في السماء`,options:[`!`,`؟`,`.`],answer:`!`},{id:2,sentence:`هل تحب السفر إلى الفضاء`,options:[`.`,`!`,`؟`],answer:`؟`},{id:3,sentence:`الشمس كوكب مضيء وساطع`,options:[`!`,`.`,`؟`],answer:`.`},{id:4,sentence:`ما أروع انطلاق الصاروخ`,options:[`.`,`؟`,`!`],answer:`!`},{id:5,sentence:`كم عدداً للكواكب في المجموعة الشمسية`,options:[`؟`,`.`,`!`],answer:`؟`},{id:6,sentence:`يدور القمر حول الأرض`,options:[`:`,`.`,`؟`],answer:`.`},{id:7,sentence:`ما هو سبب انطلاق الصاروخ`,options:[`!`,`.`,`؟`],answer:`؟`}];function SF(){let e=I(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(`playing`),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(null),[p,m]=(0,b.useState)(!0),[h,g]=(0,b.useState)(0),_=(e=600,t=.1)=>{if(!l)try{let n=window.AudioContext||window.webkitAudioContext;if(!n)return;let r=new n,i=r.createOscillator(),a=r.createGain();i.type=`sine`,i.frequency.setValueAtTime(e,r.currentTime),i.frequency.exponentialRampToValueAtTime(e*1.5,r.currentTime+t),a.gain.setValueAtTime(.3,r.currentTime),a.gain.exponentialRampToValueAtTime(.01,r.currentTime+t),i.connect(a),a.connect(r.destination),i.start(),i.stop(r.currentTime+t)}catch(e){console.log(`Audio error:`,e)}};(0,b.useEffect)(()=>{let e=!1,t=Date.now(),n=[gF,_F,vF,yF,bF],r=0,i=()=>{if(e)return;r+=1;let t=r/n.length*94;g(e=>Math.max(e,Math.min(t,94)))};n.forEach(e=>{let t=new Image;t.onload=i,t.onerror=i,t.src=e});let a=setInterval(()=>{if(e)return;let n=Date.now()-t;if(n<5e3){let e=n/5e3*94;g(t=>Math.max(t,Math.min(e,94)))}},80),o=setInterval(()=>{e||Date.now()-t>=5e3&&r>=n.length&&(clearInterval(a),clearInterval(o),g(100),setTimeout(()=>{e||m(!1)},300))},100);return()=>{e=!0,clearInterval(a),clearInterval(o)}},[]),(0,b.useEffect)(()=>{if(s!==`playing`||p)return;let e;return e=setInterval(()=>{o(e=>e+1)},1e3),()=>clearInterval(e)},[s,p]);let v=()=>{n(0),i(0),o(0),c(`playing`),f(null)},y=e=>{s!==`playing`||d!==null||(f(e),e===xF[t].answer?(_(800,.12),i(e=>e+10)):_(300,.2),setTimeout(()=>{f(null),t+1<xF.length?n(e=>e+1):(c(`launching`),_(400,.8),setTimeout(()=>{c(`won`)},2200))},600))},x=xF[t];return(0,R.jsxs)(`div`,{className:`game-container`,children:[(0,R.jsx)(`img`,{src:gF,className:`bg-img`,alt:`space background`}),(0,R.jsxs)(`div`,{className:`main-header`,children:[(0,R.jsxs)(`div`,{className:`stat-box header-stat`,children:[`الوقت: `,a]}),(0,R.jsxs)(`div`,{className:`center-info`,children:[(0,R.jsx)(`div`,{className:`title-box`,children:(0,R.jsx)(`h1`,{className:`header-title-text`,children:`مهمة الفضاء 🚀`})}),(0,R.jsx)(`div`,{className:`subtitle-box`,children:(0,R.jsxs)(`p`,{className:`header-sub-text`,children:[`السؤال: `,t+1,` /`,` `,xF.length]})})]}),(0,R.jsxs)(`div`,{className:`stat-box header-stat`,children:[`النقاط: `,r]})]}),(0,R.jsxs)(`div`,{className:`main-play-area`,children:[(0,R.jsx)(`div`,{className:`astronaut-wrapper`,children:(0,R.jsx)(`img`,{src:vF,className:`astronaut-img`,alt:`Astronaut`})}),(0,R.jsxs)(`div`,{className:`quiz-section`,children:[(0,R.jsxs)(`div`,{className:`question-card`,children:[(0,R.jsx)(`img`,{src:yF,className:`board-bg`,alt:`Question Board`}),(0,R.jsxs)(`div`,{className:`card-content`,children:[(0,R.jsx)(`span`,{className:`card-badge board-badge-text`,children:`الجملة`}),(0,R.jsx)(`h2`,{className:`sentence-text`,children:x?.sentence})]})]}),(0,R.jsx)(`div`,{className:`bubbles-wrapper`,children:x?.options.map((e,t)=>(0,R.jsxs)(W.div,{whileHover:{scale:1.1},whileTap:{scale:.95},className:`bubble-item ${d===e?e===x.answer?`correct`:`wrong`:``}`,onClick:()=>y(e),children:[(0,R.jsx)(`img`,{src:bF,className:`bubble-bg`,alt:`Bubble`}),(0,R.jsx)(`span`,{className:`symbol-text`,children:e})]},t))})]}),(0,R.jsx)(`div`,{className:`rocket-wrapper`,children:(0,R.jsx)(W.img,{src:_F,className:`rocket-img`,alt:`Rocket`,initial:{y:0,opacity:1},animate:s===`launching`||s===`won`?{y:`-120vh`,opacity:[1,1,0]}:{y:[0,-8,0],opacity:1},transition:s===`launching`||s===`won`?{duration:2,ease:`easeIn`}:{repeat:1/0,duration:2,ease:`easeInOut`}},`${s}-${t}`)})]}),(0,R.jsxs)(`div`,{className:`bottom-controls`,children:[(0,R.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,R.jsx)(V,{className:`icon-size`})}),(0,R.jsx)(`button`,{className:`ctrl-btn`,onClick:v,title:`إعادة`,children:(0,R.jsx)(Wa,{className:`icon-size`})}),(0,R.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>u(!l),title:`الصوت`,children:l?(0,R.jsx)(ho,{className:`icon-size`,style:{color:`#ef4444`}}):(0,R.jsx)(U,{className:`icon-size`})}),(0,R.jsx)(`button`,{className:`ctrl-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,R.jsx)(Si,{className:`icon-size`})})]}),(0,R.jsx)(py,{children:s===`won`&&(0,R.jsx)(W.div,{className:`overlay`,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:(0,R.jsxs)(`div`,{className:`win-modal`,children:[(0,R.jsx)(lo,{size:48,color:`#fbbf24`}),(0,R.jsx)(`h2`,{children:`انطلق الصاروخ بنجاح 🏆`}),(0,R.jsxs)(`p`,{className:`win-score`,children:[`مجموع النقاط: `,r]}),(0,R.jsxs)(`div`,{className:`win-actions`,children:[(0,R.jsx)(`button`,{className:`win-btn`,onClick:()=>e(`/home`),title:`الرئيسية`,children:(0,R.jsx)(V,{size:20})}),(0,R.jsx)(`button`,{className:`win-btn highlight`,onClick:v,title:`إعادة اللعب`,children:(0,R.jsx)(Wa,{size:22})}),(0,R.jsx)(`button`,{className:`win-btn`,onClick:()=>e(-1),title:`رجوع`,children:(0,R.jsx)(Si,{size:20})})]})]})})}),p&&(0,R.jsxs)(`div`,{className:`loading-overlay`,children:[(0,R.jsx)(`div`,{className:`space-loading-icon icon-planet`,children:`🪐`}),(0,R.jsx)(`div`,{className:`space-loading-icon icon-rocket`,children:`🚀`}),(0,R.jsx)(`div`,{className:`space-loading-icon icon-star`,children:`⭐`}),(0,R.jsx)(`div`,{className:`space-loading-icon icon-comet`,children:`☄️`}),(0,R.jsx)(`div`,{className:`space-loading-icon icon-astronaut`,children:`👨‍🚀`}),(0,R.jsx)(`div`,{className:`space-loading-icon icon-moon`,children:`🌙`}),(0,R.jsx)(`div`,{className:`space-loading-icon icon-star-two`,children:`✨`}),(0,R.jsx)(`div`,{className:`space-loading-icon icon-planet-two`,children:`🪐`}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-bar-container`,children:(0,R.jsx)(`div`,{className:`loading-bar`,style:{width:`${h}%`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[Math.round(h),`%`]})]})]}),(0,R.jsx)(`style`,{jsx:!0,children:`
+        `}),(0,R.jsxs)(`div`,{className:`game-page`,style:{...hF.page,backgroundImage:`url(${aw})`},children:[(0,R.jsxs)(`div`,{className:`game-top`,style:hF.top,children:[(0,R.jsxs)(`div`,{className:`game-box`,style:hF.box,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,R.jsx)(`span`,{className:`game-box-number`,children:o})]}),(0,R.jsx)(`div`,{className:`game-header`,style:hF.header,children:`لعبة علامات الترقيم`}),(0,R.jsxs)(`div`,{className:`game-box`,style:hF.box,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:`⏱️`}),(0,R.jsx)(`span`,{className:`game-box-number`,children:c})]})]}),g&&(0,R.jsx)(`div`,{style:hF.overlay,children:(0,R.jsx)(`div`,{style:hF.popup,children:`ممتاز 👏`})}),v&&(0,R.jsx)(`div`,{style:hF.overlay,children:(0,R.jsxs)(`div`,{style:hF.finalPopup,children:[`🎉 أحسنت`,(0,R.jsx)(`br`,{}),`⭐ حصلت على `,o,` نقطة`]})}),(0,R.jsxs)(`div`,{className:`game-card`,style:hF.card,children:[(0,R.jsx)(`p`,{className:`game-text`,style:hF.gameText,children:`استمع ثم اختر العلامة الصحيحة`}),(0,R.jsx)(`div`,{className:`game-sound`,style:hF.sound,onClick:()=>{j(i)},role:`button`,tabIndex:0,"aria-label":`تشغيل صوت العلامة`,children:(0,R.jsx)(U,{size:30,color:`white`})}),(0,R.jsx)(`div`,{className:`game-choices`,style:hF.choices,children:n.map((e,t)=>(0,R.jsx)(`div`,{className:`game-choice`,onClick:()=>ee(e),style:{...hF.choice,border:u===e?e===i?`4px solid green`:`4px solid red`:`2px solid #ddd`,transform:u===e?`scale(1.05)`:`scale(1)`},children:e},t))})]}),(0,R.jsxs)(`div`,{className:`game-bottom-buttons`,style:hF.bottomButtons,children:[(0,R.jsx)(`button`,{type:`button`,onClick:te,className:`game-circle-btn`,style:hF.circleBtn,"aria-label":`الرجوع`,children:(0,R.jsx)(B,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:ne,className:`game-circle-btn`,style:hF.circleBtn,"aria-label":`الرئيسية`,children:(0,R.jsx)(V,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:F,className:`game-circle-btn`,style:hF.circleBtn,"aria-label":`إعادة اللعب`,children:(0,R.jsx)(H,{color:`white`,size:24})})]}),x&&(0,R.jsxs)(`div`,{className:`loading-overlay`,children:[(0,R.jsx)(`div`,{className:`loading-icon loading-icon-1`,children:`🔊`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-2`,children:`🎵`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-3`,children:`أ`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-4`,children:`🎧`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-5`,children:`ب`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-6`,children:`🔔`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-7`,children:`✏️`}),(0,R.jsx)(`div`,{className:`loading-icon loading-icon-8`,children:`ت`}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-bar-container`,children:(0,R.jsx)(`div`,{className:`loading-bar`,style:{width:`${C}%`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[Math.round(C),`%`]})]})]})]})]})}var hF={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},top:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`28px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}},gF=`/Kids-Games/assets/space_bg-zk1j8VuS.jpeg`,_F=`/Kids-Games/assets/rocket-BxVpFpEv.png`,vF=`/Kids-Games/assets/astronaut-DSWuFWnH.png`,yF=`/Kids-Games/assets/question_board-DphvQXQY.png`,bF=`/Kids-Games/assets/bubble1-DB7XzD5r.png`,xF=[{text:`ما أجمل النجوم في السماء`,options:[`!`,`؟`,`.`],answer:`!`},{text:`هل تحب السفر إلى الفضاء`,options:[`.`,`!`,`؟`],answer:`؟`},{text:`الشمس كوكب مضيء وساطع`,options:[`!`,`.`,`؟`],answer:`.`},{text:`ما أروع انطلاق الصاروخ`,options:[`.`,`؟`,`!`],answer:`!`},{text:`كم عدداً للكواكب في المجموعة الشمسية`,options:[`؟`,`.`,`!`],answer:`؟`},{text:`يدور القمر حول الأرض`,options:[`:`,`.`,`؟`],answer:`.`},{text:`ما هو سبب انطلاق الصاروخ`,options:[`!`,`.`,`؟`],answer:`؟`}],SF=()=>{let e=I(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(7),[s,c]=(0,b.useState)(`playing`),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(null),[p,m]=(0,b.useState)(!0),[h,g]=(0,b.useState)(0),_=(0,b.useRef)(null),v=e=>{if(!l)try{_.current||=new(window.AudioContext||window.webkitAudioContext);let t=_.current;t.state===`suspended`&&t.resume();let n=t.createOscillator(),r=t.createGain();n.connect(r),r.connect(t.destination),e===`correct`?(n.frequency.setValueAtTime(600,t.currentTime),n.frequency.exponentialRampToValueAtTime(900,t.currentTime+.15)):e===`wrong`?(n.frequency.setValueAtTime(250,t.currentTime),n.frequency.exponentialRampToValueAtTime(120,t.currentTime+.2)):e===`win`&&(n.frequency.setValueAtTime(500,t.currentTime),n.frequency.exponentialRampToValueAtTime(1e3,t.currentTime+.4)),r.gain.setValueAtTime(1e-4,t.currentTime),r.gain.exponentialRampToValueAtTime(.15,t.currentTime+.02),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+.35),n.start(),n.stop(t.currentTime+.4)}catch(e){console.log(`Audio error:`,e)}};(0,b.useEffect)(()=>{let e=!0,t=[gF,_F,vF,yF,bF],n=Date.now();return(async()=>{let r=0;await Promise.all(t.map(n=>new Promise(i=>{let a=new Image;a.onload=()=>{r+=1,e&&g(Math.round(r/t.length*100)),i()},a.onerror=()=>{r+=1,e&&g(Math.round(r/t.length*100)),i()},a.src=n})));let i=Date.now()-n,a=Math.max(5e3-i,0);a>0&&await new Promise(e=>setTimeout(e,a)),e&&(g(100),setTimeout(()=>{e&&m(!1)},300))})(),()=>{e=!1}},[]),(0,b.useEffect)(()=>{if(p||s!==`playing`)return;if(a<=0){y(null);return}let e=setTimeout(()=>{o(e=>e-1)},1e3);return()=>clearTimeout(e)},[a,s,p]);let y=e=>{d!==null||s!==`playing`||(f(e),e===xF[t].answer?(i(e=>e+10),v(`correct`)):v(`wrong`),setTimeout(()=>{t<xF.length-1?(n(e=>e+1),f(null),o(7)):(c(`launching`),setTimeout(()=>{c(`won`),v(`win`)},1200))},700))},x=()=>{n(0),i(0),o(7),c(`playing`),f(null)},S=xF[t];return(0,R.jsxs)(`div`,{className:`space-game-wrapper`,children:[(0,R.jsx)(`style`,{children:`
+        * {
+          box-sizing: border-box;
+        }
 
         html,
+        body,
+        #root {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
         body {
-          margin: 0 !important;
-          padding: 0 !important;
+          overflow: hidden;
+        }
 
-          width: 100% !important;
-          height: 100dvh !important;
+        .space-game-wrapper {
+          width: 100%;
+          height: 100vh;
+          height: 100dvh;
+          position: relative;
+          overflow: hidden;
+          direction: rtl;
 
-          overflow: hidden !important;
+          --astro-width: 200px;
+          --astro-y: 115px;
 
-          position: fixed !important;
-          inset: 0 !important;
+          --rocket-width: 110px;
+          --rocket-y: 55px;
         }
 
         .game-container {
-          width: 100vw;
-          height: 100dvh;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          background-image: url(${gF});
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
 
-          position: fixed;
+        /* ==================================================
+           الهيدر
+        ================================================== */
+
+        .top-header {
+          position: absolute;
+          top: 14px;
+          left: 0;
+          right: 0;
+          z-index: 20;
+
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          padding: 0 38px;
+          pointer-events: none;
+        }
+
+        .score-box,
+        .timer-box {
+          background: rgba(255, 255, 255, 0.96);
+          color: #174ea6;
+
+          padding: 10px 22px;
+          border-radius: 20px;
+
+          font-size: 20px;
+          font-weight: 800;
+
+          box-shadow:
+            0 5px 15px rgba(0, 0, 0, 0.18),
+            inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+
+          white-space: nowrap;
+        }
+
+        .title-area {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+
+          top: 14px;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+
+          z-index: 25;
+        }
+
+        .game-title {
+          background: linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+          );
+
+          color: white;
+
+          padding: 11px 30px;
+
+          border-radius: 22px;
+
+          font-size: 24px;
+          font-weight: 900;
+
+          box-shadow:
+            0 7px 15px rgba(0, 0, 0, 0.22),
+            inset 0 2px 0 rgba(255, 255, 255, 0.25);
+
+          white-space: nowrap;
+        }
+
+        .question-number {
+          background: rgba(255, 255, 255, 0.96);
+          color: #193c8f;
+
+          padding: 7px 20px;
+
+          border-radius: 17px;
+
+          font-size: 17px;
+          font-weight: 900;
+
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ==================================================
+           منطقة اللعب
+        ================================================== */
+
+        .main-play-area {
+          position: absolute;
           inset: 0;
 
-          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          pointer-events: none;
+        }
+
+        /* ==================================================
+           رائد الفضاء
+        ================================================== */
+
+        .astronaut-wrapper {
+          position: absolute;
+
+          left: 7%;
+          bottom: 8%;
+
+          width: var(--astro-width);
+
+          z-index: 12;
+
+          pointer-events: none;
+        }
+
+        .astronaut-img {
+          display: block;
+          width: 100%;
+          height: auto;
+
+          filter: drop-shadow(
+            0 8px 10px rgba(0, 0, 0, 0.35)
+          );
+        }
+
+        /* ==================================================
+           الصاروخ
+        ================================================== */
+
+        .rocket-wrapper {
+          position: absolute;
+
+          right: 5%;
+          bottom: 7%;
+
+          width: var(--rocket-width);
+
+          z-index: 12;
+
+          pointer-events: none;
+        }
+
+        .rocket-img {
+          display: block;
+          width: 100%;
+          height: auto;
+
+          filter: drop-shadow(
+            0 8px 10px rgba(0, 0, 0, 0.35)
+          );
+        }
+
+        /* ==================================================
+           لوحة السؤال
+        ================================================== */
+
+        .quiz-section {
+          position: absolute;
+
+          top: 47%;
+          left: 50%;
+
+          transform: translate(-50%, -50%);
+
+          width: min(80vw, 900px);
+
+          z-index: 10;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .question-board {
+          position: relative;
+
+          width: 100%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .question-board-bg {
+          width: 100%;
+          height: auto;
+
+          display: block;
+        }
+
+        .question-content {
+          position: absolute;
+
+          left: 10%;
+          right: 10%;
+          top: 25%;
+          bottom: 15%;
 
           display: flex;
           flex-direction: column;
 
+          justify-content: center;
           align-items: center;
-          justify-content: space-between;
 
-          user-select: none;
+          text-align: center;
 
-          padding: 6px 10px;
-
-          box-sizing: border-box;
-
-          font-family: 'Cairo', sans-serif;
+          direction: rtl;
         }
 
-        /* ====================================================
+        .question-label {
+          position: absolute;
+
+          top: -11%;
+
+          background: linear-gradient(
+            135deg,
+            #0ea5e9,
+            #0284c7
+          );
+
+          color: white;
+
+          padding: 10px 30px;
+
+          border-radius: 18px;
+
+          font-size: 20px;
+          font-weight: 900;
+
+          box-shadow:
+            0 5px 10px rgba(0, 0, 0, 0.2),
+            inset 0 2px 0 rgba(255, 255, 255, 0.3);
+
+          z-index: 5;
+        }
+
+        .question-text {
+          color: white;
+
+          font-size: clamp(23px, 3vw, 40px);
+
+          font-weight: 900;
+
+          line-height: 1.5;
+
+          text-shadow:
+            2px 2px 3px rgba(0, 0, 0, 0.7),
+            0 0 5px rgba(255, 255, 255, 0.15);
+
+          margin: 0;
+
+          max-width: 90%;
+        }
+
+        /* ==================================================
+           الفقاعات
+        ================================================== */
+
+        .options-row {
+          position: absolute;
+
+          left: 50%;
+          bottom: -1%;
+
+          transform: translateX(-50%);
+
+          width: 75%;
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          direction: ltr;
+
+          z-index: 20;
+        }
+
+        .option-button {
+          position: relative;
+
+          width: 115px;
+          height: 115px;
+
+          border: none;
+          padding: 0;
+
+          background: transparent;
+
+          cursor: pointer;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          transition:
+            transform 0.2s ease,
+            filter 0.2s ease;
+
+          outline: none;
+        }
+
+        .option-button img {
+          position: absolute;
+
+          inset: 0;
+
+          width: 100%;
+          height: 100%;
+
+          object-fit: contain;
+        }
+
+        .option-symbol {
+          position: relative;
+          z-index: 2;
+
+          font-size: 54px;
+          font-weight: 900;
+
+          color: #ffd700;
+
+          text-shadow:
+            2px 2px 2px rgba(0, 0, 0, 0.35),
+            0 0 5px rgba(255, 255, 255, 0.3);
+        }
+
+        .option-button:hover {
+          transform: translateY(-7px) scale(1.05);
+          filter: brightness(1.1);
+        }
+
+        .option-button:active {
+          transform: scale(0.95);
+        }
+
+        .option-button.correct {
+          filter: drop-shadow(
+            0 0 15px #22c55e
+          );
+
+          transform: scale(1.08);
+        }
+
+        .option-button.wrong {
+          filter: drop-shadow(
+            0 0 15px #ef4444
+          );
+
+          transform: scale(0.95);
+        }
+
+        /* ==================================================
+           الأزرار السفلية
+        ================================================== */
+
+        .bottom-controls {
+          position: absolute;
+
+          bottom: 22px;
+          left: 50%;
+
+          transform: translateX(-50%);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          gap: 18px;
+
+          z-index: 30;
+
+          direction: ltr;
+        }
+
+        .control-button {
+          width: 70px;
+          height: 70px;
+
+          border: none;
+          border-radius: 50%;
+
+          background: rgba(255, 255, 255, 0.98);
+
+          color: #2161c4;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          cursor: pointer;
+
+          box-shadow:
+            0 5px 12px rgba(0, 0, 0, 0.22),
+            inset 0 0 0 2px rgba(255, 255, 255, 0.9);
+
+          transition:
+            transform 0.2s ease,
+            background 0.2s ease;
+        }
+
+        .control-button:hover {
+          transform: translateY(-4px) scale(1.05);
+        }
+
+        .control-button:active {
+          transform: scale(0.92);
+        }
+
+        /* ==================================================
+           شاشة الفوز
+        ================================================== */
+
+        .win-overlay {
+          position: absolute;
+
+          inset: 0;
+
+          z-index: 100;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background: rgba(3, 7, 30, 0.7);
+
+          backdrop-filter: blur(5px);
+        }
+
+        .win-card {
+          width: min(90%, 450px);
+
+          background: linear-gradient(
+            135deg,
+            #ffffff,
+            #eff6ff,
+            #f5f3ff
+          );
+
+          border-radius: 30px;
+
+          padding: 35px 25px;
+
+          text-align: center;
+
+          box-shadow:
+            0 20px 50px rgba(0, 0, 0, 0.35);
+
+          border: 4px solid #60a5fa;
+        }
+
+        .win-card h2 {
+          margin: 0 0 15px;
+
+          color: #2563eb;
+
+          font-size: 34px;
+          font-weight: 900;
+        }
+
+        .win-card p {
+          margin: 10px 0;
+
+          color: #334155;
+
+          font-size: 22px;
+          font-weight: 800;
+        }
+
+        .win-buttons {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+
+          margin-top: 25px;
+        }
+
+        /* ==================================================
            شاشة التحميل
-           ==================================================== */
+        ================================================== */
 
         .loading-overlay {
           position: fixed;
 
           inset: 0;
 
-          width: 100%;
-          height: 100%;
-
           z-index: 999999;
 
           display: flex;
-
           align-items: center;
           justify-content: center;
 
           overflow: hidden;
 
           background:
-            radial-gradient(
-              circle at 20% 20%,
-              rgba(147, 197, 253, 0.28),
-              transparent 25%
-            ),
-            radial-gradient(
-              circle at 80% 25%,
-              rgba(196, 181, 253, 0.28),
-              transparent 25%
-            ),
-            radial-gradient(
-              circle at 50% 80%,
-              rgba(165, 243, 252, 0.28),
-              transparent 30%
-            ),
             linear-gradient(
               135deg,
-              #182b52,
-              #293866,
-              #403466,
-              #21485b
+              #f8fbff 0%,
+              #f4f7ff 25%,
+              #faf7ff 50%,
+              #f1fbff 75%,
+              #fffaff 100%
             );
         }
 
-        /* ====================================================
-           مربع التحميل
-           لون أفتح
-           ==================================================== */
+        .loading-decoration {
+          position: absolute;
+
+          font-size: 30px;
+
+          user-select: none;
+          pointer-events: none;
+
+          opacity: 0.8;
+        }
 
         .loading-card {
           position: relative;
 
-          z-index: 20;
-
           width: 235px;
 
-          min-height: 94px;
+          padding: 24px 20px 22px;
 
-          padding: 8px 15px;
+          border-radius: 24px;
 
-          box-sizing: border-box;
-
-          border-radius: 20px;
-
+          /* ألوان فاتحة جدًا */
           background:
             linear-gradient(
               135deg,
-              #f4f9ff 0%,
-              #f0ecff 35%,
-              #f5f1ff 65%,
-              #e9fbff 100%
+              #ffffff 0%,
+              #f9f7ff 30%,
+              #f5faff 65%,
+              #fff9fd 100%
             );
 
-          border: 3px solid #a5b4fc;
+          border: 2px solid #c7d2fe;
 
           box-shadow:
-            0 10px 30px
-              rgba(0, 0, 0, 0.28),
-            0 0 25px
-              rgba(165, 180, 252, 0.32),
-            inset 0 0 0 2px
-              rgba(255, 255, 255, 0.9);
-
-          display: flex;
-
-          flex-direction: column;
-
-          align-items: center;
-
-          justify-content: center;
-        }
-
-        .loading-title {
-          margin: 0 0 7px;
-
-          color: #4c4a8a;
-
-          font-size: 17px;
-
-          font-weight: 900;
-
-          line-height: 1.2;
-
-          white-space: nowrap;
+            0 15px 35px rgba(99, 102, 241, 0.14),
+            0 5px 15px rgba(14, 165, 233, 0.08);
 
           text-align: center;
 
-          text-shadow:
-            0 1px 1px
-            rgba(255, 255, 255, 0.9);
+          z-index: 5;
         }
 
-        .loading-bar-container {
-          width: 100%;
+        .loading-title {
+          margin: 0 0 17px;
 
-          height: 11px;
+          color: #3157a8;
 
-          padding: 2px;
+          font-size: 20px;
 
-          box-sizing: border-box;
+          font-weight: 900;
 
-          background:
-            rgba(255, 255, 255, 0.98);
-
-          border-radius: 20px;
-
-          overflow: hidden;
-
-          box-shadow:
-            inset 0 1px 3px
-            rgba(0, 0, 0, 0.12);
+          white-space: nowrap;
         }
 
         .loading-bar {
-          height: 100%;
+          width: 100%;
+          height: 12px;
 
-          width: 0%;
+          overflow: hidden;
+
+          background: #e9eefb;
+
+          border-radius: 20px;
+
+          border: 1px solid #dbe4f5;
+        }
+
+        .loading-bar-fill {
+          height: 100%;
 
           border-radius: 20px;
 
           background:
             linear-gradient(
               90deg,
-              #67d5f7,
+              #60a5fa,
               #818cf8,
               #a78bfa,
-              #c4b5fd,
               #67e8f9
             );
 
-          transition:
-            width 0.2s ease;
+          transition: width 0.25s ease;
 
           box-shadow:
-            0 0 8px
-            rgba(129, 140, 248, 0.55);
+            0 0 8px rgba(96, 165, 250, 0.25);
         }
 
         .loading-percent {
-          margin-top: 5px;
+          margin-top: 9px;
 
-          font-size: 10px;
+          color: #6680b8;
 
-          font-weight: 900;
+          font-size: 13px;
 
-          color: #5b5ba6;
-
-          line-height: 1;
+          font-weight: 800;
         }
 
-        /* ====================================================
-           أيقونات الفضاء
-           ==================================================== */
+        /* ==================================================
+           التابلت
+        ================================================== */
 
-        .space-loading-icon {
-          position: absolute;
-
-          z-index: 5;
-
-          user-select: none;
-
-          pointer-events: none;
-
-          font-size: 29px;
-
-          filter:
-            drop-shadow(
-              0 4px 7px
-              rgba(0, 0, 0, 0.35)
-            );
-
-          animation:
-            spaceFloat
-            2.8s
-            ease-in-out
-            infinite;
-        }
-
-        .icon-planet {
-          top: 12%;
-          left: 13%;
-          animation-delay: 0s;
-        }
-
-        .icon-rocket {
-          top: 10%;
-          right: 14%;
-          animation-delay: 0.3s;
-        }
-
-        .icon-star {
-          top: 42%;
-          left: 7%;
-          animation-delay: 0.6s;
-        }
-
-        .icon-comet {
-          top: 42%;
-          right: 7%;
-          animation-delay: 0.9s;
-        }
-
-        .icon-astronaut {
-          bottom: 14%;
-          left: 13%;
-          animation-delay: 1.2s;
-        }
-
-        .icon-moon {
-          bottom: 12%;
-          right: 14%;
-          animation-delay: 1.5s;
-        }
-
-        .icon-star-two {
-          top: 7%;
-          left: 47%;
-          font-size: 23px;
-          animation-delay: 1.8s;
-        }
-
-        .icon-planet-two {
-          bottom: 6%;
-          left: 47%;
-          font-size: 24px;
-          animation-delay: 2.1s;
-        }
-
-        @keyframes spaceFloat {
-
-          0%,
-          100% {
-            transform:
-              translateY(0)
-              rotate(-6deg)
-              scale(1);
-          }
-
-          50% {
-            transform:
-              translateY(-11px)
-              rotate(7deg)
-              scale(1.08);
-          }
-        }
-
-        /* ====================================================
-           اللابتوب والتابلت
-           ==================================================== */
-
-        @media (min-width: 600px) {
-
-          .game-container {
-            --board-width: 460px;
-            --board-margin-top: -15px;
-            --sentence-size: 1.55rem;
-            --sentence-margin-top: -135px;
-            --sentence-translateX: 25px;
-
-            --badge-top:
-              calc(4% + 40px);
-
-            --badge-translateX: 25px;
-            --badge-text-size: 1.05rem;
-
-            --bubble-size: 78px;
-            --bubbles-gap: 20px;
-            --bubbles-y: -120px;
-            --symbol-size: 1.9rem;
-
-            --astro-width: 200px;
-            --astro-y: 115px;
-
-            --rocket-width: 110px;
-            --rocket-y: 55px;
-
-            --title-size: 1.45rem;
-            --sub-size: 1.05rem;
-            --stat-size: 1.15rem;
-
-            --btn-size: 46px;
-            --icon-size: 22px;
-          }
-
-          .main-play-area {
-            position: relative;
-
-            z-index: 5;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
-            width: 100%;
-
-            max-width: 1050px;
-
-            height: 100%;
-
-            padding: 0 10px;
+        @media (min-width: 601px) and (max-width: 1024px) {
+          .space-game-wrapper {
+            --astro-width: 165px;
+            --rocket-width: 95px;
           }
 
           .quiz-section {
-            display: flex;
-
-            flex-direction: column;
-
-            align-items: center;
-
-            justify-content: center;
-
-            flex-grow: 1;
-
-            gap: 8px;
-
-            position: static;
-
-            transform: none;
+            width: 78vw;
+            top: 48%;
           }
+
+          .question-text {
+            font-size: 29px;
+          }
+
+          .option-button {
+            width: 95px;
+            height: 95px;
+          }
+
+          .option-symbol {
+            font-size: 45px;
+          }
+
+          .control-button {
+            width: 62px;
+            height: 62px;
+          }
+        }
+
+        /* ==================================================
+           الموبايل
+        ================================================== */
+
+        @media (max-width: 599px) {
+          .space-game-wrapper {
+            --astro-width: 150px;
+            --rocket-width: 112px;
+          }
+
+          .game-container {
+            background-position: center center;
+          }
+
+          .top-header {
+            top: 13px;
+
+            padding: 0 7px;
+          }
+
+          .score-box,
+          .timer-box {
+            padding: 8px 13px;
+
+            border-radius: 17px;
+
+            font-size: 15px;
+          }
+
+          .title-area {
+            top: 13px;
+
+            gap: 6px;
+          }
+
+          .game-title {
+            padding: 9px 21px;
+
+            border-radius: 18px;
+
+            font-size: 18px;
+          }
+
+          .question-number {
+            padding: 6px 15px;
+
+            border-radius: 15px;
+
+            font-size: 14px;
+          }
+
+          /* اللوحة */
+          .quiz-section {
+            width: 92vw;
+
+            top: 48%;
+
+            transform: translate(-50%, -50%);
+          }
+
+          .question-content {
+            left: 8%;
+            right: 8%;
+
+            top: 24%;
+            bottom: 16%;
+          }
+
+          .question-label {
+            top: -10%;
+
+            padding: 8px 20px;
+
+            border-radius: 15px;
+
+            font-size: 16px;
+          }
+
+          .question-text {
+            font-size: clamp(21px, 5.3vw, 28px);
+
+            line-height: 1.5;
+
+            max-width: 95%;
+          }
+
+          .options-row {
+            width: 79%;
+
+            bottom: -1%;
+          }
+
+          .option-button {
+            width: 82px;
+            height: 82px;
+          }
+
+          .option-symbol {
+            font-size: 43px;
+          }
+
+          /* ==================================================
+             ولد الفضاء والصاروخ - موبايل فقط
+             أكبر شوية ومرفوعين فوق الأزرار
+             ================================================== */
 
           .astronaut-wrapper {
             width: var(--astro-width);
 
-            transform:
-              translateY(
-                var(--astro-y)
-              );
+            left: 4%;
 
-            position: static;
+            bottom: 7%;
+
+            transform: translateY(-52px);
           }
 
           .rocket-wrapper {
             width: var(--rocket-width);
 
-            height: 100%;
+            right: 3%;
 
-            display: flex;
+            bottom: 6%;
 
-            align-items: flex-end;
-
-            justify-content: center;
-
-            position: static;
-
-            transform:
-              translateY(
-                var(--rocket-y)
-              );
+            transform: translateY(-52px);
           }
 
-          .header-title-text {
-            font-size:
-              var(--title-size) !important;
+          .bottom-controls {
+            bottom: 15px;
+
+            gap: 10px;
           }
 
-          .header-sub-text {
-            font-size:
-              var(--sub-size) !important;
+          .control-button {
+            width: 62px;
+            height: 62px;
           }
 
-          .header-stat {
-            font-size:
-              var(--stat-size) !important;
-
-            padding:
-              7px 16px !important;
-          }
-
-          .board-badge-text {
-            font-size:
-              var(--badge-text-size) !important;
-
-            padding:
-              3px 16px !important;
-
-            transform:
-              translateX(
-                var(--badge-translateX)
-              ) !important;
-          }
-        }
-
-        /* ====================================================
-           الموبايل فقط
-           تصغير رائد الفضاء والصاروخ وتنزيلهم
-           ==================================================== */
-
-        @media (max-width: 599px) {
-
-          .game-container {
-            --board-width: 96%;
-            --board-margin-top: 25px;
-
-            --sentence-size: 1.35rem;
-
-            --sentence-margin-top: -24px;
-
-            --badge-top: 12%;
-
-            --sentence-translateX: 0px;
-
-            --badge-translateX: 0px;
-
-            --badge-text-size: 0.75rem;
-
-            --bubble-size: 72px;
-
-            --bubbles-gap: 12px;
-
-            --bubbles-y: -97px;
-
-            --symbol-size: 2.1rem;
-
-            /* رائد الفضاء أصغر */
-            --astro-width: 105px;
-
-            /* إنزاله لأسفل */
-            --astro-y: 82px;
-
-            /* الصاروخ أصغر */
-            --rocket-width: 75px;
-
-            /* إنزاله لأسفل */
-            --rocket-y: 78px;
-
-            --title-size: 0.9rem;
-
-            --sub-size: 0.7rem;
-
-            --stat-size: 0.7rem;
-
-            --btn-size: 40px;
-
-            --icon-size: 19px;
-          }
-
-          .main-play-area {
-            position: relative;
-
-            width: 100%;
-
-            height: 100%;
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-          }
-
-          .quiz-section {
-            position: absolute;
-
-            left: 50%;
-
-            top: 43%;
-
-            transform:
-              translate(
-                -50%,
-                -50%
-              );
-
-            width: 100%;
-
-            display: flex;
-
-            flex-direction: column;
-
-            align-items: center;
-
-            justify-content: center;
-
-            z-index: 6;
-          }
-
-          /* رائد الفضاء على الموبايل */
-
-          .astronaut-wrapper {
-            width:
-              var(--astro-width) !important;
-
-            transform:
-              translateY(
-                var(--astro-y)
-              ) !important;
-
-            position: absolute !important;
-
-            left: 5% !important;
-
-            bottom: 0 !important;
-
-            z-index: 4;
-          }
-
-          .astronaut-img {
-            width: 100% !important;
-
-            height: auto;
-
-            object-fit: contain;
-          }
-
-          /* الصاروخ على الموبايل */
-
-          .rocket-wrapper {
-            width:
-              var(--rocket-width) !important;
-
-            height: 100%;
-
-            position: absolute !important;
-
-            right: 5% !important;
-
-            bottom: 0 !important;
-
-            display: flex;
-
-            align-items: flex-end;
-
-            justify-content: center;
-
-            transform:
-              translateY(
-                var(--rocket-y)
-              ) !important;
-
-            z-index: 4;
-          }
-
-          .rocket-img {
-            width: 100% !important;
-
-            height: auto;
-
-            object-fit: contain;
-          }
-
-          .header-title-text {
-            font-size:
-              var(--title-size) !important;
-          }
-
-          .header-sub-text {
-            font-size:
-              var(--sub-size) !important;
-          }
-
-          .header-stat {
-            font-size:
-              var(--stat-size) !important;
-          }
-
-          .board-badge-text {
-            font-size:
-              var(--badge-text-size) !important;
-          }
-
-          /* ==================================================
-             مربع التحميل على الموبايل
-             ================================================== */
-
+          /* شاشة التحميل */
           .loading-card {
             width: 220px;
 
-            min-height: 92px;
+            padding: 22px 18px 20px;
 
-            padding:
-              8px 14px;
-
-            border-radius: 19px;
-
-            background:
-              linear-gradient(
-                135deg,
-                #f7fbff,
-                #f3f0ff,
-                #f5faff
-              );
+            border-radius: 22px;
           }
 
           .loading-title {
-            font-size: 16px;
+            font-size: 18px;
 
-            margin-bottom: 7px;
+            margin-bottom: 15px;
           }
 
-          .loading-bar-container {
-            height: 10px;
+          .loading-bar {
+            height: 11px;
           }
 
           .loading-percent {
-            font-size: 9px;
-
-            margin-top: 4px;
+            font-size: 12px;
           }
 
-          .space-loading-icon {
-            font-size: 26px;
-          }
-
-          .icon-star-two,
-          .icon-planet-two {
-            font-size: 21px;
+          .loading-decoration {
+            font-size: 25px;
           }
         }
 
-        /* ====================================================
+        /* ==================================================
            الشاشات الصغيرة جدًا
-           ==================================================== */
+        ================================================== */
 
         @media (max-width: 380px) {
-
-          .loading-card {
-            width: 200px;
-
-            min-height: 88px;
-
-            padding:
-              8px 12px;
-
-            border-radius: 18px;
-
-            border-width: 2px;
-          }
-
-          .loading-title {
-            font-size: 15px;
-
-            margin-bottom: 7px;
-          }
-
-          .loading-bar-container {
-            height: 10px;
-          }
-
-          .loading-percent {
-            font-size: 9px;
-          }
-
-          .space-loading-icon {
-            font-size: 23px;
-          }
-
-          .icon-star-two,
-          .icon-planet-two {
-            font-size: 19px;
-          }
-
-          .icon-planet {
-            left: 9%;
-          }
-
-          .icon-rocket {
-            right: 9%;
-          }
-
-          .icon-star {
-            left: 3%;
-          }
-
-          .icon-comet {
-            right: 3%;
-          }
-
-          .icon-astronaut {
-            left: 9%;
-          }
-
-          .icon-moon {
-            right: 9%;
-          }
-
-          .icon-star-two {
-            left: 45%;
-          }
-
-          .icon-planet-two {
-            left: 45%;
-          }
-
-          /* أصغر قليلًا جدًا للموبايلات الصغيرة */
-
-          .game-container {
-            --astro-width: 95px;
-            --astro-y: 88px;
-
-            --rocket-width: 68px;
-            --rocket-y: 84px;
+          .space-game-wrapper {
+            --astro-width: 138px;
+            --rocket-width: 103px;
           }
 
           .astronaut-wrapper {
-            left: 4% !important;
+            transform: translateY(-47px);
           }
 
           .rocket-wrapper {
-            right: 4% !important;
+            transform: translateY(-47px);
+          }
+
+          .score-box,
+          .timer-box {
+            padding: 7px 10px;
+            font-size: 13px;
+          }
+
+          .game-title {
+            font-size: 17px;
+            padding: 8px 18px;
+          }
+
+          .question-number {
+            font-size: 13px;
+          }
+
+          .control-button {
+            width: 57px;
+            height: 57px;
+          }
+
+          .bottom-controls {
+            gap: 8px;
+          }
+
+          .option-button {
+            width: 74px;
+            height: 74px;
+          }
+
+          .option-symbol {
+            font-size: 39px;
+          }
+
+          .loading-card {
+            width: 200px;
           }
         }
-
-        /* ====================================================
-           باقي كود اللعبة الأصلي
-           ==================================================== */
-
-        .question-card {
-          width:
-            var(--board-width) !important;
-
-          max-width:
-            var(--board-width) !important;
-
-          margin:
-            0 auto !important;
-
-          margin-top:
-            var(--board-margin-top) !important;
-        }
-
-        .card-content {
-          position: absolute;
-
-          inset: 0;
-
-          display: flex;
-
-          flex-direction: column;
-
-          align-items: center;
-
-          justify-content: center;
-
-          padding: 12px;
-        }
-
-        .card-badge {
-          position: absolute;
-
-          top:
-            var(--badge-top) !important;
-
-          background: #0284c7;
-
-          color: white;
-
-          padding: 2px 14px;
-
-          border-radius: 8px;
-
-          font-weight: bold;
-
-          z-index: 3;
-
-          transform:
-            translateX(
-              var(--badge-translateX, 0)
-            );
-        }
-
-        .sentence-text {
-          color: white;
-
-          font-size:
-            var(--sentence-size) !important;
-
-          font-weight: 900;
-
-          text-align: center;
-
-          margin: 0;
-
-          margin-top:
-            var(--sentence-margin-top) !important;
-
-          transform:
-            translateX(
-              var(--sentence-translateX, 0)
-            );
-
-          text-shadow:
-            0 2px 6px
-            rgba(0,0,0,0.8);
-        }
-
-        .bubbles-wrapper {
-          display: flex;
-
-          gap:
-            var(--bubbles-gap) !important;
-
-          justify-content: center;
-
-          align-items: center;
-
-          transform:
-            translateY(
-              var(--bubbles-y)
-            ) !important;
-
-          width: 100%;
-        }
-
-        .bubble-item {
-          position: relative;
-
-          width:
-            var(--bubble-size) !important;
-
-          height:
-            var(--bubble-size) !important;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          cursor: pointer;
-
-          border-radius: 50%;
-        }
-
-        .bubble-bg {
-          position: absolute;
-
-          inset: 0;
-
-          width: 100%;
-
-          height: 100%;
-
-          object-fit: contain;
-        }
-
-        .bubble-item.correct {
-          filter:
-            drop-shadow(
-              0 0 10px #22c55e
-            );
-        }
-
-        .bubble-item.wrong {
-          filter:
-            drop-shadow(
-              0 0 10px #ef4444
-            );
-        }
-
-        .symbol-text {
-          position: relative;
-
-          z-index: 2;
-
-          font-size:
-            var(--symbol-size) !important;
-
-          font-weight: 900;
-
-          color: #facc15;
-
-          text-shadow:
-            0 2px 6px
-            rgba(0, 0, 0, 0.8);
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          width: 100%;
-
-          height: 100%;
-        }
-
-        .bg-img {
-          position: absolute;
-
-          inset: 0;
-
-          width: 100%;
-
-          height: 100%;
-
-          object-fit: cover;
-
-          z-index: 0;
-        }
-
-        .main-header {
-          position: relative;
-
-          top: 2px;
-
-          display: flex;
-
-          justify-content: space-between;
-
-          align-items: center;
-
-          z-index: 10;
-
-          width: 94%;
-
-          max-width: 950px;
-        }
-
-        .stat-box {
-          background:
-            rgba(255,255,255,0.95);
-
-          padding:
-            5px 12px;
-
-          border-radius: 10px;
-
-          font-weight: 900;
-
-          color: #1e3a8a;
-
-          box-shadow:
-            0 4px 10px
-            rgba(0, 0, 0, 0.2);
-        }
-
-        .center-info {
-          display: flex;
-
-          flex-direction: column;
-
-          align-items: center;
-
-          gap: 3px;
-        }
-
-        .title-box {
-          background: #1d4ed8;
-
-          padding:
-            4px 18px;
-
-          border-radius: 12px;
-
-          color: white;
-
-          box-shadow:
-            0 4px 10px
-            rgba(0,0,0,0.3);
-        }
-
-        .title-box h1 {
-          margin: 0;
-
-          font-weight: 900;
-        }
-
-        .subtitle-box {
-          background:
-            rgba(255,255,255,0.95);
-
-          padding:
-            2px 12px;
-
-          border-radius: 8px;
-
-          color: #1e3a8a;
-
-          font-weight: 800;
-        }
-
-        .subtitle-box p {
-          margin: 0;
-        }
-
-        .astronaut-img {
-          width: 100%;
-
-          height: auto;
-
-          object-fit: contain;
-        }
-
-        .board-bg {
-          width: 100%;
-
-          height: auto;
-
-          display: block;
-
-          object-fit: contain;
-        }
-
-        .rocket-img {
-          width: 100%;
-
-          height: auto;
-
-          object-fit: contain;
-        }
-
-        .bottom-controls {
-          position: relative;
-
-          bottom: 10px;
-
-          display: flex;
-
-          gap: 12px;
-
-          z-index: 10;
-        }
-
-        .ctrl-btn {
-          width:
-            var(--btn-size);
-
-          height:
-            var(--btn-size);
-
-          border-radius: 50%;
-
-          border: none;
-
-          background: white;
-
-          color: #1d4ed8;
-
-          cursor: pointer;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          box-shadow:
-            0 4px 10px
-            rgba(0, 0, 0, 0.25);
-        }
-
-        :global(.icon-size) {
-          width:
-            var(--icon-size);
-
-          height:
-            var(--icon-size);
-        }
-
-        .overlay {
-          position: fixed;
-
-          inset: 0;
-
-          background:
-            rgba(0, 0, 0, 0.7);
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-
-          z-index: 100;
-        }
-
-        .win-modal {
-          background: white;
-
-          padding:
-            20px 28px;
-
-          border-radius: 20px;
-
-          text-align: center;
-
-          max-width: 90vw;
-
-          box-shadow:
-            0 10px 30px
-            rgba(0, 0, 0, 0.4);
-
-          display: flex;
-
-          flex-direction: column;
-
-          align-items: center;
-        }
-
-        .win-modal h2 {
-          margin:
-            10px 0 4px;
-
-          font-size: 1.25rem;
-
-          color: #0f172a;
-        }
-
-        .win-score {
-          margin:
-            4px 0;
-
-          font-size: 1rem;
-
-          color: #475569;
-
-          font-weight: bold;
-        }
-
-        .win-actions {
-          display: flex;
-
-          justify-content: center;
-
-          gap: 12px;
-
-          margin-top: 10px;
-        }
-
-        .win-btn {
-          width: 40px;
-
-          height: 42px;
-
-          border-radius: 50%;
-
-          border:
-            2px solid #bfdbfe;
-
-          background: #eff6ff;
-
-          color: #1d4ed8;
-
-          cursor: pointer;
-
-          display: flex;
-
-          align-items: center;
-
-          justify-content: center;
-        }
-
-        .win-btn.highlight {
-          background: #1d4ed8;
-
-          color: white;
-
-          border: none;
-        }
-
-      `})]})}var CF=`/Kids-Games/assets/sun-DwZ77ogM.png`,wF=`/Kids-Games/assets/cloud1-DwOllVqJ.png`,TF=`/Kids-Games/assets/birds-CAN-2KM3.png`;function EF(){let[e,t]=(0,b.useState)(null);return(0,R.jsxs)(`div`,{style:DF.wrapper,children:[(0,R.jsx)(`style`,{children:`
+      `}),(0,R.jsxs)(`div`,{className:`game-container`,children:[(0,R.jsxs)(`div`,{className:`top-header`,children:[(0,R.jsxs)(`div`,{className:`timer-box`,children:[`الوقت: `,a]}),(0,R.jsxs)(`div`,{className:`score-box`,children:[`النقاط: `,r]})]}),(0,R.jsxs)(`div`,{className:`title-area`,children:[(0,R.jsx)(`div`,{className:`game-title`,children:`🚀 مهمة الفضاء`}),(0,R.jsxs)(`div`,{className:`question-number`,children:[`السؤال: `,t+1,` / `,xF.length]})]}),(0,R.jsxs)(`div`,{className:`main-play-area`,children:[(0,R.jsx)(W.div,{className:`astronaut-wrapper`,animate:{y:[0,-5,0]},transition:{duration:3,repeat:1/0,ease:`easeInOut`},children:(0,R.jsx)(`img`,{src:vF,alt:`رائد الفضاء`,className:`astronaut-img`})}),(0,R.jsx)(W.div,{className:`rocket-wrapper`,animate:{y:[0,-8,0]},transition:{duration:2.5,repeat:1/0,ease:`easeInOut`},children:(0,R.jsx)(`img`,{src:_F,alt:`الصاروخ`,className:`rocket-img`})}),(0,R.jsx)(`div`,{className:`quiz-section`,children:(0,R.jsxs)(`div`,{className:`question-board`,children:[(0,R.jsx)(`img`,{src:yF,alt:`لوحة السؤال`,className:`question-board-bg`}),(0,R.jsxs)(`div`,{className:`question-content`,children:[(0,R.jsx)(`div`,{className:`question-label`,children:`الجملة`}),(0,R.jsx)(`h2`,{className:`question-text`,children:S.text}),(0,R.jsx)(`div`,{className:`options-row`,children:S.options.map((e,t)=>{let n=d===e,r=n&&e===S.answer,i=n&&e!==S.answer;return(0,R.jsxs)(`button`,{className:`
+                            option-button
+                            ${r?`correct`:``}
+                            ${i?`wrong`:``}
+                          `,onClick:()=>y(e),disabled:d!==null||s!==`playing`,children:[(0,R.jsx)(`img`,{src:bF,alt:``}),(0,R.jsx)(`span`,{className:`option-symbol`,children:e})]},`${e}-${t}`)})})]})]})})]}),(0,R.jsxs)(`div`,{className:`bottom-controls`,children:[(0,R.jsx)(`button`,{className:`control-button`,onClick:()=>e(`/home`),"aria-label":`الرئيسية`,children:(0,R.jsx)(V,{size:38,strokeWidth:2.8})}),(0,R.jsx)(`button`,{className:`control-button`,onClick:x,"aria-label":`إعادة`,children:(0,R.jsx)(Wa,{size:38,strokeWidth:2.8})}),(0,R.jsx)(`button`,{className:`control-button`,onClick:()=>u(e=>!e),"aria-label":`الصوت`,children:l?(0,R.jsx)(ho,{size:38,strokeWidth:2.8}):(0,R.jsx)(U,{size:38,strokeWidth:2.8})}),(0,R.jsx)(`button`,{className:`control-button`,onClick:()=>e(-1),"aria-label":`رجوع`,children:(0,R.jsx)(Si,{size:40,strokeWidth:2.8})})]}),(0,R.jsx)(py,{children:s===`won`&&(0,R.jsx)(W.div,{className:`win-overlay`,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:(0,R.jsxs)(W.div,{className:`win-card`,initial:{scale:.7,opacity:0},animate:{scale:1,opacity:1},transition:{type:`spring`,stiffness:180,damping:12},children:[(0,R.jsx)(lo,{size:75,color:`#f59e0b`,strokeWidth:2.5}),(0,R.jsx)(`h2`,{children:`رَائِعٌ جِدًّا يَا بَطَلُ 🏆`}),(0,R.jsxs)(`p`,{children:[`نتيجتك: `,r]}),(0,R.jsxs)(`div`,{className:`win-buttons`,children:[(0,R.jsx)(`button`,{className:`control-button`,onClick:x,children:(0,R.jsx)(Wa,{size:34,strokeWidth:2.8})}),(0,R.jsx)(`button`,{className:`control-button`,onClick:()=>e(`/home`),children:(0,R.jsx)(V,{size:34,strokeWidth:2.8})})]})]})})})]}),(0,R.jsx)(py,{children:p&&(0,R.jsxs)(W.div,{className:`loading-overlay`,initial:{opacity:1},animate:{opacity:1},exit:{opacity:0},transition:{duration:.35},children:[(0,R.jsx)(`div`,{className:`loading-decoration`,style:{top:`12%`,left:`12%`},children:`🪐`}),(0,R.jsx)(`div`,{className:`loading-decoration`,style:{top:`17%`,right:`14%`},children:`🚀`}),(0,R.jsx)(`div`,{className:`loading-decoration`,style:{top:`35%`,left:`8%`},children:`⭐`}),(0,R.jsx)(`div`,{className:`loading-decoration`,style:{top:`42%`,right:`8%`},children:`☄️`}),(0,R.jsx)(`div`,{className:`loading-decoration`,style:{bottom:`24%`,left:`13%`},children:`👨‍🚀`}),(0,R.jsx)(`div`,{className:`loading-decoration`,style:{bottom:`18%`,right:`14%`},children:`🌙`}),(0,R.jsx)(`div`,{className:`loading-decoration`,style:{bottom:`10%`,left:`43%`},children:`✨`}),(0,R.jsx)(`div`,{className:`loading-decoration`,style:{top:`22%`,left:`45%`},children:`🪐`}),(0,R.jsxs)(W.div,{className:`loading-card`,initial:{scale:.85,opacity:0},animate:{scale:1,opacity:1},transition:{duration:.35},children:[(0,R.jsx)(`h2`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-bar`,children:(0,R.jsx)(W.div,{className:`loading-bar-fill`,initial:{width:0},animate:{width:`${h}%`},transition:{duration:.25,ease:`easeOut`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[h,`%`]})]})]})})]})},CF=`/Kids-Games/assets/sun-DwZ77ogM.png`,wF=`/Kids-Games/assets/cloud1-DwOllVqJ.png`,TF=`/Kids-Games/assets/birds-CAN-2KM3.png`;function EF(){let[e,t]=(0,b.useState)(null);return(0,R.jsxs)(`div`,{style:DF.wrapper,children:[(0,R.jsx)(`style`,{children:`
           @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
