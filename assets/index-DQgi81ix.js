@@ -99,7 +99,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               margin-top: 30px;
             }
           }
-        `}),(0,R.jsxs)(`div`,{className:`lessons-page`,children:[(0,R.jsx)(`h2`,{className:`lessons-title`,children:`دروس الكتاب`}),(0,R.jsx)(`div`,{className:`lessons-grid`,children:t.map((e,t)=>(0,R.jsx)(`div`,{className:`lesson-card`,style:{backgroundColor:Kn[t%Kn.length]},onMouseEnter:n,onTouchStart:n,onClick:()=>r(e),children:e},t))})]})]})}var Kn=[`#cfe3e3`,`#e6dcc5`,`#dcd6dc`,`#e6cfcf`,`#cfdde6`,`#e6e3cf`,`#e6d5c3`,`#dcd6e6`,`#e6e6c3`],qn=()=>(0,R.jsx)(R.Fragment,{children:(0,R.jsx)(Gn,{})}),Jn={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Yn=b.createContext&&b.createContext(Jn),Xn=[`attr`,`size`,`title`];function Zn(e,t){if(e==null)return{};var n,r,i=Qn(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function Qn(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function $n(){return $n=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},$n.apply(null,arguments)}function er(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function tr(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?er(Object(n),!0).forEach(function(t){nr(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):er(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function nr(e,t,n){return(t=rr(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function rr(e){var t=ir(e,`string`);return typeof t==`symbol`?t:t+``}function ir(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function ar(e){return e&&e.map((e,t)=>b.createElement(e.tag,tr({key:t},e.attr),ar(e.child)))}function or(e){return t=>b.createElement(sr,$n({attr:tr({},e.attr)},t),ar(e.child))}function sr(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=Zn(e,Xn),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),b.createElement(`svg`,$n({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:tr(tr({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&b.createElement(`title`,null,i),e.children)};return Yn===void 0?t(Jn):b.createElement(Yn.Consumer,null,e=>t(e))}function cr(e){return or({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeMiterlimit:`10`,strokeWidth:`32`,d:`M416 432 64 80`},child:[]},{tag:`path`,attr:{d:`M243.33 98.86a23.89 23.89 0 0 0-25.55 1.82l-.66.51-28.52 23.35a8 8 0 0 0-.59 11.85l54.33 54.33a8 8 0 0 0 13.66-5.66v-64.49a24.51 24.51 0 0 0-12.67-21.71zm8 236.43L96.69 180.69A16 16 0 0 0 85.38 176H56a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h69.76l92 75.31a23.9 23.9 0 0 0 25.87 1.69A24.51 24.51 0 0 0 256 391.45v-44.86a16 16 0 0 0-4.67-11.3zM352 256c0-24.56-5.81-47.87-17.75-71.27a16 16 0 1 0-28.5 14.55C315.34 218.06 320 236.62 320 256q0 4-.31 8.13a8 8 0 0 0 2.32 6.25l14.36 14.36a8 8 0 0 0 13.55-4.31A146 146 0 0 0 352 256zm64 0c0-51.18-13.08-83.89-34.18-120.06a16 16 0 0 0-27.64 16.12C373.07 184.44 384 211.83 384 256c0 23.83-3.29 42.88-9.37 60.65a8 8 0 0 0 1.9 8.26L389 337.4a8 8 0 0 0 13.13-2.79C411 311.76 416 287.26 416 256z`},child:[]},{tag:`path`,attr:{d:`M480 256c0-74.25-20.19-121.11-50.51-168.61a16 16 0 1 0-27 17.22C429.82 147.38 448 189.5 448 256c0 46.19-8.43 80.27-22.43 110.53a8 8 0 0 0 1.59 9l11.92 11.92a8 8 0 0 0 12.92-2.16C471.6 344.9 480 305 480 256z`},child:[]}]})(e)}function lr(e){return or({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M232 416a23.88 23.88 0 0 1-14.2-4.68 8.27 8.27 0 0 1-.66-.51L125.76 336H56a24 24 0 0 1-24-24V200a24 24 0 0 1 24-24h69.75l91.37-74.81a8.27 8.27 0 0 1 .66-.51A24 24 0 0 1 256 120v272a24 24 0 0 1-24 24zm-106.18-80zm-.27-159.86zM320 336a16 16 0 0 1-14.29-23.19c9.49-18.87 14.3-38 14.3-56.81 0-19.38-4.66-37.94-14.25-56.73a16 16 0 0 1 28.5-14.54C346.19 208.12 352 231.44 352 256c0 23.86-6 47.81-17.7 71.19A16 16 0 0 1 320 336z`},child:[]},{tag:`path`,attr:{d:`M368 384a16 16 0 0 1-13.86-24C373.05 327.09 384 299.51 384 256c0-44.17-10.93-71.56-29.82-103.94a16 16 0 0 1 27.64-16.12C402.92 172.11 416 204.81 416 256c0 50.43-13.06 83.29-34.13 120a16 16 0 0 1-13.87 8z`},child:[]},{tag:`path`,attr:{d:`M416 432a16 16 0 0 1-13.39-24.74C429.85 365.47 448 323.76 448 256c0-66.5-18.18-108.62-45.49-151.39a16 16 0 1 1 27-17.22C459.81 134.89 480 181.74 480 256c0 64.75-14.66 113.63-50.6 168.74A16 16 0 0 1 416 432z`},child:[]}]})(e)}function ur(e){return or({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M261.56 101.28a8 8 0 0 0-11.06 0L66.4 277.15a8 8 0 0 0-2.47 5.79L63.9 448a32 32 0 0 0 32 32H192a16 16 0 0 0 16-16V328a8 8 0 0 1 8-8h80a8 8 0 0 1 8 8v136a16 16 0 0 0 16 16h96.06a32 32 0 0 0 32-32V282.94a8 8 0 0 0-2.47-5.79z`},child:[]},{tag:`path`,attr:{d:`m490.91 244.15-74.8-71.56V64a16 16 0 0 0-16-16h-48a16 16 0 0 0-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0 0 43 267.56L250.5 69.28a8 8 0 0 1 11.06 0l207.52 198.28a16 16 0 0 0 22.59-.44c6.14-6.36 5.63-16.86-.76-22.97z`},child:[]}]})(e)}var dr=`/Kids-Games/assets/hh12-C8e7BMQE.jpeg`,fr=`/Kids-Games/assets/cat1-4TrCDg4u.png`,pr=`/Kids-Games/assets/cat2-D5xChXUI.png`,mr=`/Kids-Games/assets/cat33-7NSsFc-y.png`,hr=`/Kids-Games/assets/cat44-DXtuvVPW.png`,gr=`/Kids-Games/assets/match-BKXkYpf0.png`,_r=`/Kids-Games/assets/drop-DFrZrEet.png`,vr=`/Kids-Games/assets/12333-D9LKWy95.png`,yr=`/Kids-Games/assets/ffff-93Zr9YwM.png`,br=`/Kids-Games/assets/1111111111112-SojhzGdI.png`,xr=`/Kids-Games/assets/dddd-DkexMVyI.png`,Sr=`/Kids-Games/assets/12lf-BcwSxrJS.png`,Cr=`/Kids-Games/assets/dddqq-CkSM9NcV.png`,wr=`/Kids-Games/assets/sbac-BXwxyfXS.png`,Tr=`/Kids-Games/assets/complet-C15l2EVh.png`,Er=`/Kids-Games/assets/wee-Dk5dgl3F.png`,Dr=`/Kids-Games/assets/licn-DGFfYDok.png`,Or=`/Kids-Games/assets/1111111111-D8u2rqos.png`,kr=`/Kids-Games/assets/jjjj-hDdlifM7.png`,Ar=`/Kids-Games/assets/fash-CxTetjhK.png`,jr=`/Kids-Games/assets/fffp-DRviz1F9.png`,Mr=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`15%`,left:`15%`,width:`33%`,height:`55%`},imgLion:{top:`25%`,left:`50%`,width:`33%`,height:`35%`},imgComplete:{top:`55%`,left:`15%`,width:`33%`,height:`36%`},imgBeeHive:{top:`55%`,left:`50%`,width:`32%`,height:`38%`},imgIce:{top:`28%`,left:`10%`,width:`45%`,height:`30%`},imgSpace:{top:`27%`,left:`48%`,width:`38%`,height:`30%`},imgBasket:{top:`55%`,left:`15%`,width:`33%`,height:`40%`},imgEgg:{top:`60%`,left:`44%`,width:`44%`,height:`30%`},imgBee:{top:`26%`,left:`11%`,width:`40%`,height:`30%`},imgIce2:{top:`25%`,left:`50%`,width:`34%`,height:`33%`},imgButterflies:{top:`59%`,left:`15%`,width:`33%`,height:`32%`},imgComplete2:{top:`58%`,left:`24%`,width:`84%`,height:`32%`},imgBee2:{top:`28%`,left:`10%`,width:`47%`,height:`29%`},imgIce3:{top:`27%`,left:`52%`,width:`31%`,height:`32%`},imgButterflies2:{top:`42%`,left:`17%`,width:`31%`,height:`63%`},imgComplete3:{top:`60%`,left:`43%`,width:`48%`,height:`28%`}},s=[{title:`حروف اللثوية`,board:fr,games:[{id:`imgBubbles`,img:gr,path:`/Interdentalparrot`},{id:`imgLion`,img:_r,path:`/Interdentaldrop`},{id:`imgComplete`,img:vr,path:`/Interdentaltreasure`},{id:`imgBeeHive`,img:yr,path:`/Interdentalspace`}]},{title:`حروف القطع`,board:pr,games:[{id:`imgIce`,img:br,path:`/Cutsbee`},{id:`imgSpace`,img:xr,path:`/Cutsfish`},{id:`imgBasket`,img:Sr,path:`/Cutsspace`},{id:`imgEgg`,img:Cr,path:`/Cutsfrog`}]},{title:`حروف المفخمة`,board:mr,games:[{id:`imgBee`,img:wr,path:`/EmphaticRace`},{id:`imgIce2`,img:Tr,path:`/CompleteWord`},{id:`imgButterflies`,img:Er,path:`/Emphaticolorl`},{id:`imgComplete2`,img:Dr,path:`/ListenChoose`}]},{title:`حروف المرققة`,board:hr,games:[{id:`imgBee2`,img:Or,path:`/Marqqaeats`},{id:`imgIce3`,img:kr,path:`/Marqqaapple`},{id:`imgButterflies2`,img:Ar,path:`/Marqqafish`},{id:`imgComplete3`,img:jr,path:`/Marqqabee`}]}];return(0,R.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${dr})`},children:[(0,R.jsx)(`style`,{children:`
+        `}),(0,R.jsxs)(`div`,{className:`lessons-page`,children:[(0,R.jsx)(`h2`,{className:`lessons-title`,children:`دروس الكتاب`}),(0,R.jsx)(`div`,{className:`lessons-grid`,children:t.map((e,t)=>(0,R.jsx)(`div`,{className:`lesson-card`,style:{backgroundColor:Kn[t%Kn.length]},onMouseEnter:n,onTouchStart:n,onClick:()=>r(e),children:e},t))})]})]})}var Kn=[`#cfe3e3`,`#e6dcc5`,`#dcd6dc`,`#e6cfcf`,`#cfdde6`,`#e6e3cf`,`#e6d5c3`,`#dcd6e6`,`#e6e6c3`],qn=()=>(0,R.jsx)(R.Fragment,{children:(0,R.jsx)(Gn,{})}),Jn={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Yn=b.createContext&&b.createContext(Jn),Xn=[`attr`,`size`,`title`];function Zn(e,t){if(e==null)return{};var n,r,i=Qn(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function Qn(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function $n(){return $n=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},$n.apply(null,arguments)}function er(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function tr(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?er(Object(n),!0).forEach(function(t){nr(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):er(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function nr(e,t,n){return(t=rr(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function rr(e){var t=ir(e,`string`);return typeof t==`symbol`?t:t+``}function ir(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function ar(e){return e&&e.map((e,t)=>b.createElement(e.tag,tr({key:t},e.attr),ar(e.child)))}function or(e){return t=>b.createElement(sr,$n({attr:tr({},e.attr)},t),ar(e.child))}function sr(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=Zn(e,Xn),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),b.createElement(`svg`,$n({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:tr(tr({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&b.createElement(`title`,null,i),e.children)};return Yn===void 0?t(Jn):b.createElement(Yn.Consumer,null,e=>t(e))}function cr(e){return or({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{fill:`none`,strokeLinecap:`round`,strokeMiterlimit:`10`,strokeWidth:`32`,d:`M416 432 64 80`},child:[]},{tag:`path`,attr:{d:`M243.33 98.86a23.89 23.89 0 0 0-25.55 1.82l-.66.51-28.52 23.35a8 8 0 0 0-.59 11.85l54.33 54.33a8 8 0 0 0 13.66-5.66v-64.49a24.51 24.51 0 0 0-12.67-21.71zm8 236.43L96.69 180.69A16 16 0 0 0 85.38 176H56a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h69.76l92 75.31a23.9 23.9 0 0 0 25.87 1.69A24.51 24.51 0 0 0 256 391.45v-44.86a16 16 0 0 0-4.67-11.3zM352 256c0-24.56-5.81-47.87-17.75-71.27a16 16 0 1 0-28.5 14.55C315.34 218.06 320 236.62 320 256q0 4-.31 8.13a8 8 0 0 0 2.32 6.25l14.36 14.36a8 8 0 0 0 13.55-4.31A146 146 0 0 0 352 256zm64 0c0-51.18-13.08-83.89-34.18-120.06a16 16 0 0 0-27.64 16.12C373.07 184.44 384 211.83 384 256c0 23.83-3.29 42.88-9.37 60.65a8 8 0 0 0 1.9 8.26L389 337.4a8 8 0 0 0 13.13-2.79C411 311.76 416 287.26 416 256z`},child:[]},{tag:`path`,attr:{d:`M480 256c0-74.25-20.19-121.11-50.51-168.61a16 16 0 1 0-27 17.22C429.82 147.38 448 189.5 448 256c0 46.19-8.43 80.27-22.43 110.53a8 8 0 0 0 1.59 9l11.92 11.92a8 8 0 0 0 12.92-2.16C471.6 344.9 480 305 480 256z`},child:[]}]})(e)}function lr(e){return or({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M232 416a23.88 23.88 0 0 1-14.2-4.68 8.27 8.27 0 0 1-.66-.51L125.76 336H56a24 24 0 0 1-24-24V200a24 24 0 0 1 24-24h69.75l91.37-74.81a8.27 8.27 0 0 1 .66-.51A24 24 0 0 1 256 120v272a24 24 0 0 1-24 24zm-106.18-80zm-.27-159.86zM320 336a16 16 0 0 1-14.29-23.19c9.49-18.87 14.3-38 14.3-56.81 0-19.38-4.66-37.94-14.25-56.73a16 16 0 0 1 28.5-14.54C346.19 208.12 352 231.44 352 256c0 23.86-6 47.81-17.7 71.19A16 16 0 0 1 320 336z`},child:[]},{tag:`path`,attr:{d:`M368 384a16 16 0 0 1-13.86-24C373.05 327.09 384 299.51 384 256c0-44.17-10.93-71.56-29.82-103.94a16 16 0 0 1 27.64-16.12C402.92 172.11 416 204.81 416 256c0 50.43-13.06 83.29-34.13 120a16 16 0 0 1-13.87 8z`},child:[]},{tag:`path`,attr:{d:`M416 432a16 16 0 0 1-13.39-24.74C429.85 365.47 448 323.76 448 256c0-66.5-18.18-108.62-45.49-151.39a16 16 0 1 1 27-17.22C459.81 134.89 480 181.74 480 256c0 64.75-14.66 113.63-50.6 168.74A16 16 0 0 1 416 432z`},child:[]}]})(e)}function ur(e){return or({tag:`svg`,attr:{viewBox:`0 0 512 512`},child:[{tag:`path`,attr:{d:`M261.56 101.28a8 8 0 0 0-11.06 0L66.4 277.15a8 8 0 0 0-2.47 5.79L63.9 448a32 32 0 0 0 32 32H192a16 16 0 0 0 16-16V328a8 8 0 0 1 8-8h80a8 8 0 0 1 8 8v136a16 16 0 0 0 16 16h96.06a32 32 0 0 0 32-32V282.94a8 8 0 0 0-2.47-5.79z`},child:[]},{tag:`path`,attr:{d:`m490.91 244.15-74.8-71.56V64a16 16 0 0 0-16-16h-48a16 16 0 0 0-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0 0 43 267.56L250.5 69.28a8 8 0 0 1 11.06 0l207.52 198.28a16 16 0 0 0 22.59-.44c6.14-6.36 5.63-16.86-.76-22.97z`},child:[]}]})(e)}var dr=`/Kids-Games/assets/hh12-C8e7BMQE.jpeg`,fr=`/Kids-Games/assets/cat1-4TrCDg4u.png`,pr=`/Kids-Games/assets/cat2-D5xChXUI.png`,mr=`/Kids-Games/assets/cat33-7NSsFc-y.png`,hr=`/Kids-Games/assets/cat44-DXtuvVPW.png`,gr=`/Kids-Games/assets/match-BKXkYpf0.png`,_r=`/Kids-Games/assets/drop-DFrZrEet.png`,vr=`/Kids-Games/assets/12333-D9LKWy95.png`,yr=`/Kids-Games/assets/ffff-93Zr9YwM.png`,br=`/Kids-Games/assets/1111111111112-SojhzGdI.png`,xr=`/Kids-Games/assets/dddd-DkexMVyI.png`,Sr=`/Kids-Games/assets/12lf-BcwSxrJS.png`,Cr=`/Kids-Games/assets/dddqq-CkSM9NcV.png`,wr=`/Kids-Games/assets/sbac-BXwxyfXS.png`,Tr=`/Kids-Games/assets/complet-C15l2EVh.png`,Er=`/Kids-Games/assets/wee-Dk5dgl3F.png`,Dr=`/Kids-Games/assets/licn-DGFfYDok.png`,Or=`/Kids-Games/assets/1111111111-D8u2rqos.png`,kr=`/Kids-Games/assets/jjjj-hDdlifM7.png`,Ar=`/Kids-Games/assets/fash-CxTetjhK.png`,jr=`/Kids-Games/assets/fffp-DRviz1F9.png`,Mr=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!0),[s,c]=(0,b.useState)(0);(0,b.useEffect)(()=>{let e=!1,t=[dr,fr,pr,mr,hr,gr,_r,vr,yr,br,xr,Sr,Cr,wr,Tr,Er,Dr,Or,kr,Ar,jr],n=0,r=t.length,i=()=>{n+=1,!e&&c(Math.round(n/r*100))};t.forEach(e=>{let t=new Image;t.onload=i,t.onerror=i,t.src=e});let a=Date.now(),s=setInterval(()=>{if(e)return;let t=Date.now()-a;n>=r&&t>=2200&&(c(100),clearInterval(s),setTimeout(()=>{e||o(!1)},250))},100);return()=>{e=!0,clearInterval(s)}},[]);let l=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},u={imgBubbles:{top:`15%`,left:`15%`,width:`33%`,height:`55%`},imgLion:{top:`25%`,left:`50%`,width:`33%`,height:`35%`},imgComplete:{top:`55%`,left:`15%`,width:`33%`,height:`36%`},imgBeeHive:{top:`55%`,left:`50%`,width:`32%`,height:`38%`},imgIce:{top:`28%`,left:`10%`,width:`45%`,height:`30%`},imgSpace:{top:`27%`,left:`48%`,width:`38%`,height:`30%`},imgBasket:{top:`55%`,left:`15%`,width:`33%`,height:`40%`},imgEgg:{top:`60%`,left:`44%`,width:`44%`,height:`30%`},imgBee:{top:`26%`,left:`11%`,width:`40%`,height:`30%`},imgIce2:{top:`25%`,left:`50%`,width:`34%`,height:`33%`},imgButterflies:{top:`59%`,left:`15%`,width:`33%`,height:`32%`},imgComplete2:{top:`58%`,left:`24%`,width:`84%`,height:`32%`},imgBee2:{top:`28%`,left:`10%`,width:`47%`,height:`29%`},imgIce3:{top:`27%`,left:`52%`,width:`31%`,height:`32%`},imgButterflies2:{top:`42%`,left:`17%`,width:`31%`,height:`63%`},imgComplete3:{top:`60%`,left:`43%`,width:`48%`,height:`28%`}},d=[{title:`حروف اللثوية`,board:fr,games:[{id:`imgBubbles`,img:gr,path:`/Interdentalparrot`},{id:`imgLion`,img:_r,path:`/Interdentaldrop`},{id:`imgComplete`,img:vr,path:`/Interdentaltreasure`},{id:`imgBeeHive`,img:yr,path:`/Interdentalspace`}]},{title:`حروف القطع`,board:pr,games:[{id:`imgIce`,img:br,path:`/Cutsbee`},{id:`imgSpace`,img:xr,path:`/Cutsfish`},{id:`imgBasket`,img:Sr,path:`/Cutsspace`},{id:`imgEgg`,img:Cr,path:`/Cutsfrog`}]},{title:`حروف المفخمة`,board:mr,games:[{id:`imgBee`,img:wr,path:`/EmphaticRace`},{id:`imgIce2`,img:Tr,path:`/CompleteWord`},{id:`imgButterflies`,img:Er,path:`/Emphaticolorl`},{id:`imgComplete2`,img:Dr,path:`/ListenChoose`}]},{title:`حروف المرققة`,board:hr,games:[{id:`imgBee2`,img:Or,path:`/Marqqaeats`},{id:`imgIce3`,img:kr,path:`/Marqqaapple`},{id:`imgButterflies2`,img:Ar,path:`/Marqqafish`},{id:`imgComplete3`,img:jr,path:`/Marqqabee`}]}];return(0,R.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${dr})`},children:[(0,R.jsx)(`style`,{children:`
 
         /* ======================================================
            RESET
@@ -156,12 +156,308 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
 
         /* ======================================================
+           شاشة التحميل
+        ====================================================== */
+
+        .loading-screen {
+
+          position: fixed;
+
+          inset: 0;
+
+          width: 100vw;
+
+          height: 100dvh;
+
+          z-index: 999999;
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          overflow: hidden;
+
+          background:
+            radial-gradient(
+              circle at 20% 20%,
+              rgba(255, 255, 255, 0.45),
+              transparent 25%
+            ),
+            radial-gradient(
+              circle at 80% 75%,
+              rgba(255, 255, 255, 0.35),
+              transparent 28%
+            ),
+            linear-gradient(
+              135deg,
+              #ffe8f1 0%,
+              #e8e7ff 35%,
+              #dff7ff 68%,
+              #fff0d9 100%
+            );
+
+          animation:
+            loadingBackground 5s ease-in-out infinite alternate;
+
+        }
+
+
+        /* دوائر زخرفية بالخلفية */
+
+        .loading-screen::before,
+        .loading-screen::after {
+
+          content: '';
+
+          position: absolute;
+
+          border-radius: 50%;
+
+          filter: blur(2px);
+
+          pointer-events: none;
+
+        }
+
+
+        .loading-screen::before {
+
+          width: 220px;
+
+          height: 220px;
+
+          top: -70px;
+
+          left: -60px;
+
+          background:
+            rgba(255, 182, 193, 0.28);
+
+        }
+
+
+        .loading-screen::after {
+
+          width: 260px;
+
+          height: 260px;
+
+          bottom: -100px;
+
+          right: -70px;
+
+          background:
+            rgba(174, 220, 255, 0.35);
+
+        }
+
+
+        /* ======================================================
+           صندوق التحميل
+        ====================================================== */
+
+        .loading-box {
+
+          position: relative;
+
+          z-index: 5;
+
+          width: 245px;
+
+          min-height: 125px;
+
+          padding: 18px 18px 15px;
+
+          border-radius: 25px;
+
+          display: flex;
+
+          flex-direction: column;
+
+          align-items: center;
+
+          justify-content: center;
+
+          background:
+            linear-gradient(
+              145deg,
+              rgba(255,255,255,0.96),
+              rgba(255,246,250,0.96)
+            );
+
+          border:
+            3px solid #f5a9c7;
+
+          box-shadow:
+            0 12px 35px rgba(99, 66, 103, 0.22),
+            inset 0 0 20px rgba(255,255,255,0.8);
+
+          animation:
+            loadingBoxFloat 2.4s ease-in-out infinite;
+
+        }
+
+
+        .loading-title {
+
+          margin: 0 0 15px;
+
+          color: #754f80;
+
+          font-size: 22px;
+
+          font-weight: 900;
+
+          text-align: center;
+
+          white-space: nowrap;
+
+        }
+
+
+        /* ======================================================
+           النقاط المتحركة
+        ====================================================== */
+
+        .loading-dots {
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          gap: 8px;
+
+          height: 25px;
+
+        }
+
+
+        .loading-dot {
+
+          width: 11px;
+
+          height: 11px;
+
+          border-radius: 50%;
+
+          background:
+            linear-gradient(
+              135deg,
+              #ff8fb1,
+              #a98cff
+            );
+
+          box-shadow:
+            0 3px 8px rgba(142, 93, 150, 0.25);
+
+          animation:
+            loadingDot 1.1s ease-in-out infinite;
+
+        }
+
+
+        .loading-dot:nth-child(2) {
+
+          animation-delay: 0.18s;
+
+          background:
+            linear-gradient(
+              135deg,
+              #7ddcff,
+              #8c9eff
+            );
+
+        }
+
+
+        .loading-dot:nth-child(3) {
+
+          animation-delay: 0.36s;
+
+          background:
+            linear-gradient(
+              135deg,
+              #ffc978,
+              #ff91ae
+            );
+
+        }
+
+
+        /* ======================================================
+           خلفية ملونة متحركة
+        ====================================================== */
+
+        @keyframes loadingBackground {
+
+          0% {
+
+            background-position: 0% 50%;
+
+          }
+
+          100% {
+
+            background-position: 100% 50%;
+
+          }
+
+        }
+
+
+        @keyframes loadingBoxFloat {
+
+          0%,
+          100% {
+
+            transform: translateY(0);
+
+          }
+
+          50% {
+
+            transform: translateY(-5px);
+
+          }
+
+        }
+
+
+        @keyframes loadingDot {
+
+          0%,
+          60%,
+          100% {
+
+            transform:
+              translateY(0)
+              scale(1);
+
+            opacity: 0.55;
+
+          }
+
+          30% {
+
+            transform:
+              translateY(-9px)
+              scale(1.2);
+
+            opacity: 1;
+
+          }
+
+        }
+
+
+        /* ======================================================
            الصفحة الرئيسية
 
-           مهم جدًا:
-           لا يوجد visibility:hidden
-           لا يوجد opacity:0
-           لا يوجد انتظار للصور
+           لا يوجد انتظار بعد شاشة التحميل
         ====================================================== */
 
         .tashkeel-page {
@@ -717,6 +1013,39 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           }
 
+
+          /* شاشة التحميل على الموبايل */
+
+          .loading-box {
+
+            width: 215px;
+
+            min-height: 108px;
+
+            padding: 15px 14px 13px;
+
+            border-radius: 22px;
+
+          }
+
+
+          .loading-title {
+
+            font-size: 19px;
+
+            margin-bottom: 13px;
+
+          }
+
+
+          .loading-dot {
+
+            width: 10px;
+
+            height: 10px;
+
+          }
+
         }
 
 
@@ -808,9 +1137,31 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           }
 
+
+          /* تصغير مربع التحميل أكثر */
+
+          .loading-box {
+
+            width: 200px;
+
+            min-height: 100px;
+
+            padding: 14px 12px;
+
+            border-radius: 20px;
+
+          }
+
+
+          .loading-title {
+
+            font-size: 18px;
+
+          }
+
         }
 
-      `}),(0,R.jsxs)(`div`,{className:`title-area`,children:[(0,R.jsxs)(`div`,{className:`top-buttons`,children:[(0,R.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})})]}),(0,R.jsx)(`div`,{className:`title-main`,children:(0,R.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,R.jsx)(`div`,{className:`title-sub`,children:(0,R.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:s.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-image`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>{n(null)},style:{...o[r.id],transform:i?`scale(1.15)`:`scale(1)`,filter:i?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:i?999:1}},r.id)})]},i))})]})},Nr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Pr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Fr=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Ir=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Lr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Rr=`/Kids-Games/assets/lion-BCc-x0Je.png`,zr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Br=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Vr=`/Kids-Games/assets/icce-DngGPNER.png`,Hr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Ur=`/Kids-Games/assets/eeee-DEyXLofj.png`,Wr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Gr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,Kr=`/Kids-Games/assets/btar-ISpqIK3P.png`,qr=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:Pr,games:[{id:`imgBubbles`,img:Lr,path:`/Fathaice`},{id:`imgLion`,img:Rr,path:`/Fathalion`},{id:`imgComplete`,img:zr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Br,path:`/Fathabee`}]},{title:`حركة الضم`,board:Fr,games:[{id:`imgIce`,img:Vr,path:`/Damasnow`},{id:`imgSpace`,img:Hr,path:`/Damaspace`},{id:`imgBasket`,img:Ur,path:`/Damamaze`},{id:`imgEgg`,img:Wr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Ir,games:[{id:`imgBee`,img:Gr,path:`/Kasrabee`},{id:`imgIce2`,img:Vr,path:`/Kasrasnow`},{id:`imgButterflies`,img:Kr,path:`/Kasratreas`},{id:`imgComplete2`,img:zr,path:`/Kasracomplete`}]}];return(0,R.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Nr})`},children:[(0,R.jsx)(`style`,{children:`
+      `}),a&&(0,R.jsx)(`div`,{className:`loading-screen`,children:(0,R.jsxs)(`div`,{className:`loading-box`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري التحميل`}),(0,R.jsxs)(`div`,{className:`loading-dots`,children:[(0,R.jsx)(`span`,{className:`loading-dot`}),(0,R.jsx)(`span`,{className:`loading-dot`}),(0,R.jsx)(`span`,{className:`loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`title-area`,children:[(0,R.jsxs)(`div`,{className:`top-buttons`,children:[(0,R.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})})]}),(0,R.jsx)(`div`,{className:`title-main`,children:(0,R.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,R.jsx)(`div`,{className:`title-sub`,children:(0,R.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:d.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-image`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>{n(null)},style:{...u[r.id],transform:i?`scale(1.15)`:`scale(1)`,filter:i?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:i?999:1}},r.id)})]},i))})]})},Nr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Pr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Fr=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Ir=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Lr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Rr=`/Kids-Games/assets/lion-BCc-x0Je.png`,zr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Br=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Vr=`/Kids-Games/assets/icce-DngGPNER.png`,Hr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Ur=`/Kids-Games/assets/eeee-DEyXLofj.png`,Wr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Gr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,Kr=`/Kids-Games/assets/btar-ISpqIK3P.png`,qr=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},s=[{title:`حركة الفتح`,board:Pr,games:[{id:`imgBubbles`,img:Lr,path:`/Fathaice`},{id:`imgLion`,img:Rr,path:`/Fathalion`},{id:`imgComplete`,img:zr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Br,path:`/Fathabee`}]},{title:`حركة الضم`,board:Fr,games:[{id:`imgIce`,img:Vr,path:`/Damasnow`},{id:`imgSpace`,img:Hr,path:`/Damaspace`},{id:`imgBasket`,img:Ur,path:`/Damamaze`},{id:`imgEgg`,img:Wr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Ir,games:[{id:`imgBee`,img:Gr,path:`/Kasrabee`},{id:`imgIce2`,img:Vr,path:`/Kasrasnow`},{id:`imgButterflies`,img:Kr,path:`/Kasratreas`},{id:`imgComplete2`,img:zr,path:`/Kasracomplete`}]}];return(0,R.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Nr})`},children:[(0,R.jsx)(`style`,{children:`
 
         /* =========================================================
            RESET
@@ -55558,10 +55909,6 @@ and
           inset: 0 !important;
         }
 
-        /* ====================================================
-           اللعبة الأساسية
-           ==================================================== */
-
         .game-container {
           width: 100vw;
           height: 100dvh;
@@ -55610,30 +55957,31 @@ and
           background:
             radial-gradient(
               circle at 20% 20%,
-              rgba(99, 102, 241, 0.35),
+              rgba(147, 197, 253, 0.28),
               transparent 25%
             ),
             radial-gradient(
               circle at 80% 25%,
-              rgba(168, 85, 247, 0.35),
+              rgba(196, 181, 253, 0.28),
               transparent 25%
             ),
             radial-gradient(
               circle at 50% 80%,
-              rgba(14, 165, 233, 0.35),
+              rgba(165, 243, 252, 0.28),
               transparent 30%
             ),
             linear-gradient(
               135deg,
-              #07142f,
-              #111c4a,
-              #21134d,
-              #082f49
+              #182b52,
+              #293866,
+              #403466,
+              #21485b
             );
         }
 
         /* ====================================================
            مربع التحميل
+           لون أفتح
            ==================================================== */
 
         .loading-card {
@@ -55654,21 +56002,21 @@ and
           background:
             linear-gradient(
               135deg,
-              #dbeafe 0%,
-              #ddd6fe 35%,
-              #e0e7ff 65%,
-              #cffafe 100%
+              #f4f9ff 0%,
+              #f0ecff 35%,
+              #f5f1ff 65%,
+              #e9fbff 100%
             );
 
-          border: 3px solid #818cf8;
+          border: 3px solid #a5b4fc;
 
           box-shadow:
             0 10px 30px
-              rgba(0, 0, 0, 0.35),
+              rgba(0, 0, 0, 0.28),
             0 0 25px
-              rgba(129, 140, 248, 0.35),
+              rgba(165, 180, 252, 0.32),
             inset 0 0 0 2px
-              rgba(255, 255, 255, 0.75);
+              rgba(255, 255, 255, 0.9);
 
           display: flex;
 
@@ -55682,7 +56030,7 @@ and
         .loading-title {
           margin: 0 0 7px;
 
-          color: #312e81;
+          color: #4c4a8a;
 
           font-size: 17px;
 
@@ -55696,7 +56044,7 @@ and
 
           text-shadow:
             0 1px 1px
-              rgba(255, 255, 255, 0.8);
+            rgba(255, 255, 255, 0.9);
         }
 
         .loading-bar-container {
@@ -55709,7 +56057,7 @@ and
           box-sizing: border-box;
 
           background:
-            rgba(255, 255, 255, 0.95);
+            rgba(255, 255, 255, 0.98);
 
           border-radius: 20px;
 
@@ -55717,7 +56065,7 @@ and
 
           box-shadow:
             inset 0 1px 3px
-              rgba(0, 0, 0, 0.15);
+            rgba(0, 0, 0, 0.12);
         }
 
         .loading-bar {
@@ -55730,11 +56078,11 @@ and
           background:
             linear-gradient(
               90deg,
-              #38bdf8,
-              #6366f1,
-              #8b5cf6,
-              #c084fc,
-              #22d3ee
+              #67d5f7,
+              #818cf8,
+              #a78bfa,
+              #c4b5fd,
+              #67e8f9
             );
 
           transition:
@@ -55742,7 +56090,7 @@ and
 
           box-shadow:
             0 0 8px
-              rgba(56, 189, 248, 0.65);
+            rgba(129, 140, 248, 0.55);
         }
 
         .loading-percent {
@@ -55752,13 +56100,13 @@ and
 
           font-weight: 900;
 
-          color: #3730a3;
+          color: #5b5ba6;
 
           line-height: 1;
         }
 
         /* ====================================================
-           أيقونات الفضاء حول مربع التحميل
+           أيقونات الفضاء
            ==================================================== */
 
         .space-loading-icon {
@@ -55788,60 +56136,50 @@ and
         .icon-planet {
           top: 12%;
           left: 13%;
-
           animation-delay: 0s;
         }
 
         .icon-rocket {
           top: 10%;
           right: 14%;
-
           animation-delay: 0.3s;
         }
 
         .icon-star {
           top: 42%;
           left: 7%;
-
           animation-delay: 0.6s;
         }
 
         .icon-comet {
           top: 42%;
           right: 7%;
-
           animation-delay: 0.9s;
         }
 
         .icon-astronaut {
           bottom: 14%;
           left: 13%;
-
           animation-delay: 1.2s;
         }
 
         .icon-moon {
           bottom: 12%;
           right: 14%;
-
           animation-delay: 1.5s;
         }
 
         .icon-star-two {
           top: 7%;
           left: 47%;
-
           font-size: 23px;
-
           animation-delay: 1.8s;
         }
 
         .icon-planet-two {
           bottom: 6%;
           left: 47%;
-
           font-size: 24px;
-
           animation-delay: 2.1s;
         }
 
@@ -56003,6 +56341,7 @@ and
 
         /* ====================================================
            الموبايل فقط
+           تصغير رائد الفضاء والصاروخ وتنزيلهم
            ==================================================== */
 
         @media (max-width: 599px) {
@@ -56031,11 +56370,17 @@ and
 
             --symbol-size: 2.1rem;
 
-            --astro-width: 135px;
+            /* رائد الفضاء أصغر */
+            --astro-width: 105px;
 
-            --astro-y: 45px;
+            /* إنزاله لأسفل */
+            --astro-y: 82px;
 
-            --rocket-width: 100px;
+            /* الصاروخ أصغر */
+            --rocket-width: 75px;
+
+            /* إنزاله لأسفل */
+            --rocket-y: 78px;
 
             --title-size: 0.9rem;
 
@@ -56088,6 +56433,70 @@ and
             z-index: 6;
           }
 
+          /* رائد الفضاء على الموبايل */
+
+          .astronaut-wrapper {
+            width:
+              var(--astro-width) !important;
+
+            transform:
+              translateY(
+                var(--astro-y)
+              ) !important;
+
+            position: absolute !important;
+
+            left: 5% !important;
+
+            bottom: 0 !important;
+
+            z-index: 4;
+          }
+
+          .astronaut-img {
+            width: 100% !important;
+
+            height: auto;
+
+            object-fit: contain;
+          }
+
+          /* الصاروخ على الموبايل */
+
+          .rocket-wrapper {
+            width:
+              var(--rocket-width) !important;
+
+            height: 100%;
+
+            position: absolute !important;
+
+            right: 5% !important;
+
+            bottom: 0 !important;
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: center;
+
+            transform:
+              translateY(
+                var(--rocket-y)
+              ) !important;
+
+            z-index: 4;
+          }
+
+          .rocket-img {
+            width: 100% !important;
+
+            height: auto;
+
+            object-fit: contain;
+          }
+
           .header-title-text {
             font-size:
               var(--title-size) !important;
@@ -56109,7 +56518,7 @@ and
           }
 
           /* ==================================================
-             مربع التحميل أصغر على الموبايل
+             مربع التحميل على الموبايل
              ================================================== */
 
           .loading-card {
@@ -56121,6 +56530,14 @@ and
               8px 14px;
 
             border-radius: 19px;
+
+            background:
+              linear-gradient(
+                135deg,
+                #f7fbff,
+                #f3f0ff,
+                #f5faff
+              );
           }
 
           .loading-title {
@@ -56221,6 +56638,24 @@ and
 
           .icon-planet-two {
             left: 45%;
+          }
+
+          /* أصغر قليلًا جدًا للموبايلات الصغيرة */
+
+          .game-container {
+            --astro-width: 95px;
+            --astro-y: 88px;
+
+            --rocket-width: 68px;
+            --rocket-y: 84px;
+          }
+
+          .astronaut-wrapper {
+            left: 4% !important;
+          }
+
+          .rocket-wrapper {
+            right: 4% !important;
           }
         }
 
