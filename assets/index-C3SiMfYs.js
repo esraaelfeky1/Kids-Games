@@ -19206,7 +19206,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       `})]})}var Lw={container:{width:`100vw`,height:`100dvh`,minHeight:`100dvh`,maxHeight:`100dvh`,background:`url(${kw}) center center / cover no-repeat`,display:`flex`,flexDirection:`column`,alignItems:`center`,padding:`clamp(8px, 2vw, 15px)`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,top:0,left:0,right:0,bottom:0},topBar:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`700px`,gap:`5px`,zIndex:500},headerGroup:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`3px`,flex:1},statBox:{background:`rgba(255,255,255,0.9)`,padding:`clamp(6px, 1.2vw, 10px) clamp(10px, 1.8vw, 14px)`,borderRadius:`10px`,fontWeight:`bold`,color:`#7b1fa2`,border:`2px solid #7b1fa2`,fontSize:`clamp(14px, 2vw, 17px)`,whiteSpace:`nowrap`,display:`flex`,alignItems:`center`,gap:`4px`},titleBg:{background:`rgba(255,255,255,0.85)`,padding:`4px 14px`,borderRadius:`12px`,marginBottom:`2px`},subHeaderBg:{background:`rgba(255,255,255,0.75)`,fontWeight:`bold`,padding:`4px 10px`,borderRadius:`10px`},header:{color:`#7b1fa2`,fontSize:`clamp(19px, 4.5vw, 26px)`,margin:`0`,fontWeight:`bold`},subHeader:{color:`#c46767`,fontSize:`clamp(13px, 2.5vw, 16px)`,margin:`0`,fontWeight:`bold`},gridContainer:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(8px, 2vw, 15px)`,width:`100%`,maxWidth:`480px`,marginTop:`clamp(15px, 3vw, 25px)`,padding:`0 10px`,boxSizing:`border-box`,justifyItems:`center`},wordCard:{background:`white`,width:`fit-content`,minWidth:`55px`,padding:`clamp(6px, 1.5vw, 10px) clamp(12px, 2vw, 18px)`,borderRadius:`8px`,cursor:`grab`,fontSize:`clamp(15px, 2.2vw, 18px)`,fontWeight:`bold`,textAlign:`center`,border:`2px solid #7b1fa2`,touchAction:`none`,boxShadow:`0 4px 8px rgba(0,0,0,0.15)`,position:`relative`,zIndex:3e3},fixedBoxesContainer:{position:`fixed`,left:`50%`,bottom:`65px`,transform:`translateX(-50%)`,display:`flex`,justifyContent:`center`,gap:`clamp(10px, 3vw, 25px)`,zIndex:200,width:`100%`},box:{width:`clamp(85px, 18vw, 120px)`,height:`clamp(85px, 18vw, 120px)`,backgroundSize:`contain`,backgroundRepeat:`no-repeat`,backgroundPosition:`center`},bottomButtons:{position:`fixed`,bottom:`10px`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`10px`,zIndex:1e3},circleBtn:{width:`38px`,height:`38px`,minWidth:`38px`,minHeight:`38px`,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`},winOverlay:{position:`fixed`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.7)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:2e3},winBox:{background:`white`,padding:`10px`,borderRadius:`12px`,textAlign:`center`,color:`#7b1fa2`,width:`75%`,maxWidth:`175px`},winTitle:{fontSize:`20px`,margin:`0 0 5px 0`},winText:{fontSize:`14px`,fontWeight:`bold`,marginBottom:`8px`},winButtonsHorizontal:{display:`flex`,flexDirection:`row`,gap:`8px`,justifyContent:`center`,marginTop:`5px`},winBtn:{width:`35px`,height:`35px`,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`}},Rw=`/Kids-Games/assets/sukoonbg-DiEXluF0.jpeg`,zw=`/Kids-Games/assets/sukoontitle-QKouizRP.png`,Bw=`/Kids-Games/assets/rabbit-BF-hsdhK.png`,Vw=`/Kids-Games/assets/squirrel-DO4P1tkn.png`,Hw=`/Kids-Games/assets/stargame-uHxmVjte.png`,Uw=`/Kids-Games/assets/listengame-ipsQLQST.png`,Ww=`/Kids-Games/assets/dinogame-CEUOt7-d.png`,Gw=`/Kids-Games/assets/balloonsgame-DtkqEDfs.png`,Kw=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!0);(0,b.useEffect)(()=>{let e=!0,t,n,r=Date.now(),i=[Rw,zw,Bw,Vw,Hw,Uw,Ww,Gw];return Promise.all(i.map(e=>new Promise(t=>{let n=new Image,r=!1,i=()=>{r||(r=!0,t())};n.onload=async()=>{try{n.decode&&await n.decode()}catch{}i()},n.onerror=i,n.src=e,n.complete&&(n.naturalWidth>0&&n.decode?n.decode().catch(()=>{}).finally(i):i())}))).then(()=>{if(!e)return;o(!0);let i=Date.now()-r,a=Math.max(0,2200-i);t=setTimeout(()=>{e&&(n=setTimeout(()=>{e&&c(!1)},250))},a)}),()=>{e=!1,clearTimeout(t),clearTimeout(n)}},[]);let l=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},u=[{id:`imgStar`,img:Hw,path:`/SukoonStar`},{id:`imgListen`,img:Uw,path:`/Sukoonlicen`},{id:`imgDino`,img:Ww,path:`/SukoonDino`},{id:`imgBalloons`,img:Gw,path:`/Sukoonballon`}];return(0,R.jsxs)(`div`,{className:`sukoon-container`,style:{backgroundImage:`url(${Rw})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,height:`100vh`,width:`100vw`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,position:`relative`,overflow:`hidden`,boxSizing:`border-box`,padding:`8px 10px`,backgroundColor:`transparent`},children:[(0,R.jsx)(`style`,{children:`
 
         /* =====================================
-           الإعدادات العامة
+           إعدادات الصفحة العامة
         ===================================== */
 
         html,
@@ -19236,8 +19236,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================
-           شاشة التحميل
-           تصميم مختلف عن Mad
+           شاشة التحميل الجديدة
         ===================================== */
 
         .sukoon-loading-screen {
@@ -19258,41 +19257,41 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           background:
             radial-gradient(
-              circle at 12% 16%,
-              rgba(239, 104, 88, 0.34),
-              transparent 24%
-            ),
-            radial-gradient(
-              circle at 88% 18%,
-              rgba(255, 198, 72, 0.4),
+              circle at 10% 18%,
+              rgba(255, 166, 181, 0.65),
               transparent 25%
             ),
             radial-gradient(
-              circle at 14% 88%,
-              rgba(214, 91, 57, 0.24),
+              circle at 88% 18%,
+              rgba(255, 218, 119, 0.65),
               transparent 27%
             ),
             radial-gradient(
-              circle at 90% 85%,
-              rgba(255, 218, 119, 0.38),
+              circle at 15% 88%,
+              rgba(255, 188, 146, 0.55),
               transparent 28%
+            ),
+            radial-gradient(
+              circle at 88% 85%,
+              rgba(255, 226, 158, 0.6),
+              transparent 30%
             ),
             linear-gradient(
               135deg,
-              #fff5df 0%,
-              #fce5c2 34%,
-              #ffe9b0 67%,
-              #f7d5b8 100%
+              #fff0e4 0%,
+              #ffe0e5 35%,
+              #fff0c9 70%,
+              #ffe1c9 100%
             );
 
           background-size: 180% 180%;
 
           animation:
-            sukoonBackgroundMove 9s ease-in-out infinite alternate;
+            sukoonLoadingBackground 8s ease-in-out infinite alternate;
         }
 
         /* =====================================
-           دوائر كبيرة مختلفة
+           الدوائر الكبيرة في الخلفية
         ===================================== */
 
         .sukoon-loading-screen::before {
@@ -19300,29 +19299,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           position: absolute;
 
-          width: 210px;
-          height: 210px;
+          width: 190px;
+          height: 190px;
 
-          top: -72px;
-          left: -55px;
+          top: -65px;
+          left: -50px;
 
-          border-radius: 38% 62% 57% 43% / 45% 38% 62% 55%;
+          border-radius: 50%;
 
           background:
-            linear-gradient(
-              145deg,
-              #f28a76,
-              #d95748
+            radial-gradient(
+              circle at 35% 30%,
+              #ffe0e6 0%,
+              #ffb5c4 58%,
+              #ff93aa 100%
             );
 
-          opacity: 0.72;
+          opacity: 0.8;
 
           box-shadow:
-            25px 28px 0 rgba(237, 118, 91, 0.12),
-            48px 53px 0 rgba(246, 166, 82, 0.08);
+            0 0 0 18px rgba(255, 188, 200, 0.15),
+            0 0 0 38px rgba(255, 188, 200, 0.08);
 
           animation:
-            sukoonShapeOne 6s ease-in-out infinite;
+            sukoonBubbleOne 5.5s ease-in-out infinite;
         }
 
         .sukoon-loading-screen::after {
@@ -19330,29 +19330,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           position: absolute;
 
-          width: 245px;
-          height: 245px;
+          width: 230px;
+          height: 230px;
 
-          right: -82px;
-          bottom: -95px;
+          right: -75px;
+          bottom: -80px;
 
-          border-radius: 62% 38% 42% 58% / 52% 62% 38% 48%;
+          border-radius: 50%;
 
           background:
-            linear-gradient(
-              145deg,
-              #f8c95b,
-              #e99a36
+            radial-gradient(
+              circle at 32% 30%,
+              #fff0b7 0%,
+              #ffd475 58%,
+              #ffb56d 100%
             );
 
-          opacity: 0.7;
+          opacity: 0.8;
 
           box-shadow:
-            -22px -24px 0 rgba(239, 165, 68, 0.13),
-            -45px -48px 0 rgba(219, 91, 55, 0.08);
+            0 0 0 20px rgba(255, 215, 125, 0.15),
+            0 0 0 42px rgba(255, 215, 125, 0.08);
 
           animation:
-            sukoonShapeTwo 7s ease-in-out infinite;
+            sukoonBubbleTwo 6s ease-in-out infinite;
         }
 
         /* =====================================
@@ -19361,50 +19362,50 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .sukoon-loading-card {
           position: relative;
-          z-index: 10;
+          z-index: 5;
 
           width: 255px;
           min-height: 132px;
 
-          padding: 22px 18px 17px;
+          padding: 20px 18px 17px;
 
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
 
-          border-radius: 24px;
+          border-radius: 28px;
 
           background:
             linear-gradient(
               145deg,
               rgba(255,255,255,0.98),
-              rgba(255,249,232,0.98)
+              rgba(255,249,239,0.97)
             );
 
-          border: 3px solid #d96b4d;
+          border: 3px solid #ffb58d;
 
           box-shadow:
-            0 14px 35px rgba(159, 72, 48, 0.2),
-            0 4px 10px rgba(238, 156, 75, 0.18),
-            inset 0 0 20px rgba(255,255,255,0.95);
+            0 14px 35px rgba(212, 120, 78, 0.2),
+            0 4px 12px rgba(255, 160, 130, 0.18),
+            inset 0 0 18px rgba(255,255,255,0.95);
 
           animation:
-            sukoonCardFloat 2.8s ease-in-out infinite;
+            sukoonLoadingFloat 2.8s ease-in-out infinite;
         }
 
-        /* خط زخرفي أعلى الكارد */
+        /* الشريط الزخرفي أعلى الكارد */
 
         .sukoon-loading-card::before {
           content: '';
 
           position: absolute;
 
+          width: 58px;
+          height: 8px;
+
           top: 9px;
           left: 50%;
-
-          width: 65px;
-          height: 7px;
 
           transform: translateX(-50%);
 
@@ -19413,20 +19414,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           background:
             linear-gradient(
               90deg,
-              #d95748,
-              #f4b840,
-              #d96b4d
+              #ff9caf,
+              #ffd36f,
+              #ffad7d
             );
         }
 
-        /* =====================================
-           النص
-        ===================================== */
-
         .sukoon-loading-title {
-          margin: 1px 0 17px;
+          margin: 2px 0 16px;
 
-          color: #b84f3d;
+          color: #d76b55;
 
           font-size: 22px;
           font-weight: 900;
@@ -19439,7 +19436,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================
-           الدوائر الصغيرة
+           النقاط
         ===================================== */
 
         .sukoon-loading-dots {
@@ -19448,9 +19445,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           align-items: center;
           justify-content: center;
 
-          gap: 10px;
+          gap: 9px;
 
-          height: 27px;
+          height: 26px;
         }
 
         .sukoon-loading-dot {
@@ -19460,57 +19457,57 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           border-radius: 50%;
 
           box-shadow:
-            0 3px 7px rgba(174, 88, 51, 0.2);
+            0 3px 7px rgba(220, 120, 80, 0.2);
 
           animation:
-            sukoonDot 1.15s ease-in-out infinite;
+            sukoonLoadingDot 1.15s ease-in-out infinite;
         }
 
-        /* أحمر مرجاني */
+        /* وردي */
 
         .sukoon-loading-dot:nth-child(1) {
           background:
             radial-gradient(
-              circle at 32% 28%,
-              #ffb3a6 0%,
-              #e96c5b 60%,
-              #c94c3d 100%
+              circle at 35% 30%,
+              #ffe0e7 0%,
+              #ff9fb1 65%,
+              #f17f99 100%
             );
         }
 
-        /* ذهبي */
+        /* أصفر */
 
         .sukoon-loading-dot:nth-child(2) {
           animation-delay: 0.18s;
 
           background:
             radial-gradient(
-              circle at 32% 28%,
-              #ffe9a5 0%,
-              #f6c54f 60%,
-              #df9c27 100%
+              circle at 35% 30%,
+              #fff5c7 0%,
+              #ffd96e 65%,
+              #f5b84d 100%
             );
         }
 
-        /* برتقالي */
+        /* خوخي */
 
         .sukoon-loading-dot:nth-child(3) {
           animation-delay: 0.36s;
 
           background:
             radial-gradient(
-              circle at 32% 28%,
-              #ffc7a1 0%,
-              #ed8b55 60%,
-              #d5683f 100%
+              circle at 35% 30%,
+              #ffe4d1 0%,
+              #ffad7e 65%,
+              #f18b63 100%
             );
         }
 
         /* =====================================
-           حركات شاشة التحميل
+           الحركات
         ===================================== */
 
-        @keyframes sukoonBackgroundMove {
+        @keyframes sukoonLoadingBackground {
           0% {
             background-position: 0% 45%;
           }
@@ -19520,18 +19517,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-        @keyframes sukoonCardFloat {
+        @keyframes sukoonLoadingFloat {
           0%,
           100% {
-            transform: translateY(0) rotate(0deg);
+            transform: translateY(0) scale(1);
           }
 
           50% {
-            transform: translateY(-6px) rotate(0.4deg);
+            transform: translateY(-6px) scale(1.015);
           }
         }
 
-        @keyframes sukoonDot {
+        @keyframes sukoonLoadingDot {
           0%,
           60%,
           100% {
@@ -19545,30 +19542,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-        @keyframes sukoonShapeOne {
+        @keyframes sukoonBubbleOne {
           0%,
           100% {
-            transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) scale(1);
           }
 
           50% {
-            transform: translate(18px, 13px) rotate(8deg);
+            transform: translate(18px, 12px) scale(1.06);
           }
         }
 
-        @keyframes sukoonShapeTwo {
+        @keyframes sukoonBubbleTwo {
           0%,
           100% {
-            transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) scale(1);
           }
 
           50% {
-            transform: translate(-16px, -14px) rotate(-7deg);
+            transform: translate(-15px, -12px) scale(1.05);
           }
         }
 
         /* =====================================
-           الصفحة الأصلية
+           الصفحة والخلفية الأصلية
         ===================================== */
 
         .sukoon-container,
@@ -19580,7 +19577,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .sukoon-container {
           width: 100vw !important;
-
           height: 100vh !important;
           height: 100dvh !important;
 
@@ -19591,12 +19587,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================
-           إظهار المحتوى بعد التحميل
+           إظهار المحتوى بعد تحميل الصور
         ===================================== */
 
         .sukoon-content {
           display: flex;
-
           flex-direction: column;
           align-items: center;
           justify-content: space-between;
@@ -19615,12 +19610,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================
-           حركة الحيوانات
+           الحركة الأصلية للحيوانات فقط
         ===================================== */
 
         @keyframes float {
-          0%,
-          100% {
+          0%, 100% {
             transform: translateY(0);
           }
 
@@ -19630,8 +19624,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .animate-float {
-          animation:
-            float 3s ease-in-out infinite !important;
+          animation: float 3s ease-in-out infinite !important;
         }
 
         /* =====================================
@@ -19640,7 +19633,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .sukoon-wrapper {
           display: flex;
-
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
@@ -19672,11 +19664,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         .games-grid {
           display: grid;
 
-          grid-template-columns:
-            repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
 
-          gap:
-            clamp(15px, 3.5vw, 25px);
+          gap: clamp(15px, 3.5vw, 25px);
 
           position: relative;
 
@@ -19687,21 +19677,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .game-btn {
-          width:
-            clamp(135px, 30vw, 190px);
-
+          width: clamp(135px, 30vw, 190px);
           height: auto;
 
-          transition:
-            transform 0.2s;
+          transition: transform 0.2s;
 
           cursor: pointer;
         }
 
         .side-animal {
-          width:
-            clamp(100px, 20vw, 160px) !important;
-
+          width: clamp(100px, 20vw, 160px) !important;
           height: auto;
 
           pointer-events: none;
@@ -19710,7 +19695,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =====================================
-           الموبايل
+           الموبايل فقط
         ===================================== */
 
         @media (max-width: 480px) {
@@ -19750,16 +19735,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             right: 12px !important;
           }
 
-          /* كارد التحميل */
+          /* كارد التحميل على الموبايل */
 
           .sukoon-loading-card {
             width: 215px;
             min-height: 108px;
 
-            padding:
-              15px 14px 13px;
+            padding: 15px 14px 13px;
 
-            border-radius: 22px;
+            border-radius: 23px;
           }
 
           .sukoon-loading-title {
@@ -19779,10 +19763,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             width: 200px;
             min-height: 102px;
 
-            padding:
-              14px 12px;
+            padding: 14px 12px;
 
-            border-radius: 20px;
+            border-radius: 21px;
           }
 
           .sukoon-loading-title {
@@ -19790,7 +19773,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-      `}),s&&(0,R.jsx)(`div`,{className:`sukoon-loading-screen`,role:`status`,"aria-live":`polite`,"aria-label":`جاري تحميل اللعبة`,children:(0,R.jsxs)(`div`,{className:`sukoon-loading-card`,children:[(0,R.jsx)(`div`,{className:`sukoon-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`sukoon-loading-dots`,children:[(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`sukoon-content ${a?`assets-ready`:``}`,children:[(0,R.jsx)(`button`,{className:`home-control`,onClick:()=>e(`/home`),style:{...qw,position:`absolute`,top:`10px`,left:`27px`,zIndex:10},"aria-label":`Home`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-control`,onClick:()=>i(!r),style:{...qw,position:`absolute`,top:`8px`,right:`25px`,zIndex:10},"aria-label":`Sound`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsxs)(`div`,{className:`sukoon-wrapper`,children:[(0,R.jsx)(`img`,{className:`title-img`,src:zw,alt:`عالم السكون`,loading:`eager`,decoding:`async`}),(0,R.jsxs)(`div`,{style:{position:`relative`,width:`100%`,display:`flex`,justifyContent:`center`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`85%`,height:`100%`,zIndex:1,pointerEvents:`none`,top:0,left:`7.5%`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`5%`,x2:`50%`,y2:`95%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`}),(0,R.jsx)(`line`,{x1:`5%`,y1:`50%`,x2:`95%`,y2:`50%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:u.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>{n(null)},style:{transform:i?`scale(1.08)`:`scale(1)`,filter:i?`drop-shadow(0 0 9px rgba(255,190,90,0.9))`:`none`}},r.id)})})]})]}),(0,R.jsxs)(`div`,{className:`side-animals`,style:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-end`,position:`relative`,pointerEvents:`none`,padding:`0 5px`},children:[(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}})]})]})]})},qw={width:`40px`,height:`40px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 250, 235, 0.96)`,fontSize:`20px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 7px rgba(139, 67, 45, 0.28)`,color:`#9d4939`},Jw=`/Kids-Games/assets/sukbg-BU79ekWX.jpeg`,Yw=`/Kids-Games/assets/star-BT2FBxC5.png`,Xw=`/Kids-Games/assets/starbox-BmPXKMOS.png`,Zw=`/Kids-Games/assets/astronautidle-BMPZXSbB.png`,Qw=`/Kids-Games/assets/astronautreach-COle1x_Q.png`,$w=e=>new Promise(t=>{let n=new Image;n.onload=()=>t(!0),n.onerror=()=>t(!0),n.src=e}),eT=e=>new Promise(t=>{try{let n=new Audio,r=!1,i=()=>{r||(r=!0,n.removeEventListener(`canplaythrough`,i),n.removeEventListener(`loadeddata`,i),n.removeEventListener(`error`,i),t(!0))};n.addEventListener(`canplaythrough`,i),n.addEventListener(`loadeddata`,i),n.addEventListener(`error`,i),n.preload=`auto`,n.src=e,n.load(),setTimeout(i,5e3)}catch{t(!0)}}),tT=15e3,nT=()=>{let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),a=(0,b.useRef)(new Audio(Vs)),o=(0,b.useRef)(new Audio(Hs)),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)([]),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(60),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(`idle`),[S,C]=(0,b.useState)(null),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(!1),O={left:`6%`,top:`86%`},[k,A]=(0,b.useState)(O),j={left:`34%`},M={top:-42,left:72},N=(0,b.useMemo)(()=>[{id:1,letter:`بْ`,x:`16%`,y:`24%`},{id:2,letter:`فُ`,x:`38%`,y:`21%`},{id:3,letter:`رْ`,x:`60%`,y:`25%`},{id:4,letter:`كُ`,x:`23%`,y:`37%`},{id:5,letter:`نْ`,x:`48%`,y:`35%`},{id:6,letter:`جْ`,x:`68%`,y:`44%`},{id:7,letter:`صَ`,x:`13%`,y:`46%`},{id:8,letter:`دْ`,x:`40%`,y:`51%`},{id:9,letter:`مْ`,x:`58%`,y:`56%`},{id:10,letter:`لْ`,x:`26%`,y:`60%`}],[]),P=N.filter(e=>e.letter.includes(`ْ`)).length;(0,b.useEffect)(()=>(a.current.volume=1,o.current.volume=1,()=>{a.current.pause(),o.current.pause()}),[]),(0,b.useEffect)(()=>((async()=>{await Promise.all([$w(Jw),$w(Yw),$w(Xw),$w(Zw),$w(Qw),eT(Vs),eT(Hs)])})(),()=>{}),[]),(0,b.useEffect)(()=>{if(!t)return;let e=Date.now(),r=setInterval(()=>{let t=Date.now()-e;i(Math.min(100,Math.floor(t/tT*100))),t>=tT&&(clearInterval(r),i(100),setTimeout(()=>{n(!1)},150))},50);return()=>{clearInterval(r)}},[t]);let ee=()=>{s&&(a.current.currentTime=0,a.current.play().catch(()=>{}))},F=()=>{s&&(o.current.currentTime=0,o.current.play().catch(()=>{}))};(0,b.useEffect)(()=>{if(t||p||_)return;let e=setInterval(()=>{g(t=>t<=1?(clearInterval(e),v(!0),D(!1),C(null),T(!1),x(`idle`),0):t-1)},1e3);return()=>clearInterval(e)},[t,p,_]);let te=async e=>{if(!(p||_||E||S||l.includes(e.id))){if(D(!0),x(`reach`),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),_){D(!1);return}if(C(e),await new Promise(e=>setTimeout(e,300)),_){C(null),D(!1);return}if(A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,950)),_){C(null),x(`idle`),D(!1);return}if(e.letter.includes(`ْ`)){ee(),T(!0),await new Promise(e=>setTimeout(e,1e3)),u(t=>[...t,e.id]),f(e=>{let t=e+1;return t>=P&&m(!0),t}),T(!1),C(null),x(`idle`),D(!1);return}F(),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),C(null),A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,900)),x(`idle`),D(!1)}},ne=()=>{u([]),f(0),m(!1),g(60),v(!1),C(null),T(!1),D(!1),x(`idle`),A({left:O.left,top:O.top})},re=()=>{c(e=>!e)};if(t)return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
+      `}),s&&(0,R.jsx)(`div`,{className:`sukoon-loading-screen`,role:`status`,"aria-live":`polite`,"aria-label":`جاري تحميل اللعبة`,children:(0,R.jsxs)(`div`,{className:`sukoon-loading-card`,children:[(0,R.jsx)(`div`,{className:`sukoon-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`sukoon-loading-dots`,children:[(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`sukoon-content ${a?`assets-ready`:``}`,children:[(0,R.jsx)(`button`,{className:`home-control`,onClick:()=>e(`/home`),style:{...qw,position:`absolute`,top:`10px`,left:`27px`,zIndex:10},"aria-label":`Home`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-control`,onClick:()=>i(!r),style:{...qw,position:`absolute`,top:`8px`,right:`25px`,zIndex:10},"aria-label":`Sound`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsxs)(`div`,{className:`sukoon-wrapper`,children:[(0,R.jsx)(`img`,{className:`title-img`,src:zw,alt:`عالم السكون`,loading:`eager`,decoding:`async`}),(0,R.jsxs)(`div`,{style:{position:`relative`,width:`100%`,display:`flex`,justifyContent:`center`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`85%`,height:`100%`,zIndex:1,pointerEvents:`none`,top:0,left:`7.5%`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`5%`,x2:`50%`,y2:`95%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`}),(0,R.jsx)(`line`,{x1:`5%`,y1:`50%`,x2:`95%`,y2:`50%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:u.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>{n(null)},style:{transform:i?`scale(1.08)`:`scale(1)`,filter:i?`drop-shadow(0 0 8px rgba(255,190,110,0.8))`:`none`}},r.id)})})]})]}),(0,R.jsxs)(`div`,{className:`side-animals`,style:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-end`,position:`relative`,pointerEvents:`none`,padding:`0 5px`},children:[(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}})]})]})]})},qw={width:`40px`,height:`40px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.95)`,fontSize:`20px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 5px rgba(0,0,0,0.3)`,color:`#4a2c2a`},Jw=`/Kids-Games/assets/sukbg-BU79ekWX.jpeg`,Yw=`/Kids-Games/assets/star-BT2FBxC5.png`,Xw=`/Kids-Games/assets/starbox-BmPXKMOS.png`,Zw=`/Kids-Games/assets/astronautidle-BMPZXSbB.png`,Qw=`/Kids-Games/assets/astronautreach-COle1x_Q.png`,$w=e=>new Promise(t=>{let n=new Image;n.onload=()=>t(!0),n.onerror=()=>t(!0),n.src=e}),eT=e=>new Promise(t=>{try{let n=new Audio,r=!1,i=()=>{r||(r=!0,n.removeEventListener(`canplaythrough`,i),n.removeEventListener(`loadeddata`,i),n.removeEventListener(`error`,i),t(!0))};n.addEventListener(`canplaythrough`,i),n.addEventListener(`loadeddata`,i),n.addEventListener(`error`,i),n.preload=`auto`,n.src=e,n.load(),setTimeout(i,5e3)}catch{t(!0)}}),tT=15e3,nT=()=>{let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),a=(0,b.useRef)(new Audio(Vs)),o=(0,b.useRef)(new Audio(Hs)),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)([]),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(60),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(`idle`),[S,C]=(0,b.useState)(null),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(!1),O={left:`6%`,top:`86%`},[k,A]=(0,b.useState)(O),j={left:`34%`},M={top:-42,left:72},N=(0,b.useMemo)(()=>[{id:1,letter:`بْ`,x:`16%`,y:`24%`},{id:2,letter:`فُ`,x:`38%`,y:`21%`},{id:3,letter:`رْ`,x:`60%`,y:`25%`},{id:4,letter:`كُ`,x:`23%`,y:`37%`},{id:5,letter:`نْ`,x:`48%`,y:`35%`},{id:6,letter:`جْ`,x:`68%`,y:`44%`},{id:7,letter:`صَ`,x:`13%`,y:`46%`},{id:8,letter:`دْ`,x:`40%`,y:`51%`},{id:9,letter:`مْ`,x:`58%`,y:`56%`},{id:10,letter:`لْ`,x:`26%`,y:`60%`}],[]),P=N.filter(e=>e.letter.includes(`ْ`)).length;(0,b.useEffect)(()=>(a.current.volume=1,o.current.volume=1,()=>{a.current.pause(),o.current.pause()}),[]),(0,b.useEffect)(()=>((async()=>{await Promise.all([$w(Jw),$w(Yw),$w(Xw),$w(Zw),$w(Qw),eT(Vs),eT(Hs)])})(),()=>{}),[]),(0,b.useEffect)(()=>{if(!t)return;let e=Date.now(),r=setInterval(()=>{let t=Date.now()-e;i(Math.min(100,Math.floor(t/tT*100))),t>=tT&&(clearInterval(r),i(100),setTimeout(()=>{n(!1)},150))},50);return()=>{clearInterval(r)}},[t]);let ee=()=>{s&&(a.current.currentTime=0,a.current.play().catch(()=>{}))},F=()=>{s&&(o.current.currentTime=0,o.current.play().catch(()=>{}))};(0,b.useEffect)(()=>{if(t||p||_)return;let e=setInterval(()=>{g(t=>t<=1?(clearInterval(e),v(!0),D(!1),C(null),T(!1),x(`idle`),0):t-1)},1e3);return()=>clearInterval(e)},[t,p,_]);let te=async e=>{if(!(p||_||E||S||l.includes(e.id))){if(D(!0),x(`reach`),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),_){D(!1);return}if(C(e),await new Promise(e=>setTimeout(e,300)),_){C(null),D(!1);return}if(A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,950)),_){C(null),x(`idle`),D(!1);return}if(e.letter.includes(`ْ`)){ee(),T(!0),await new Promise(e=>setTimeout(e,1e3)),u(t=>[...t,e.id]),f(e=>{let t=e+1;return t>=P&&m(!0),t}),T(!1),C(null),x(`idle`),D(!1);return}F(),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),C(null),A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,900)),x(`idle`),D(!1)}},ne=()=>{u([]),f(0),m(!1),g(60),v(!1),C(null),T(!1),D(!1),x(`idle`),A({left:O.left,top:O.top})},re=()=>{c(e=>!e)};if(t)return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
 
           .space-loading-screen {
             width: 100vw;
