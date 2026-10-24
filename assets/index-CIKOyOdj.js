@@ -2034,7 +2034,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* ======================================================
-           شاشة التحميل - تصميم جديد
+           شاشة التحميل الجديدة
+           وردي + خوخي + أصفر + برتقالي
         ====================================================== */
 
         .mad-loading-screen {
@@ -2044,57 +2045,106 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           height: 100vh;
           height: 100dvh;
           z-index: 999999;
+
           display: flex;
           align-items: center;
           justify-content: center;
+
           overflow: hidden;
 
           background:
             radial-gradient(
-              circle at 15% 20%,
-              rgba(255,255,255,0.7),
+              circle at 12% 18%,
+              rgba(255, 177, 191, 0.55),
               transparent 27%
             ),
             radial-gradient(
-              circle at 85% 78%,
-              rgba(255,255,255,0.6),
+              circle at 88% 22%,
+              rgba(255, 215, 126, 0.55),
+              transparent 28%
+            ),
+            radial-gradient(
+              circle at 20% 88%,
+              rgba(255, 190, 153, 0.48),
+              transparent 28%
+            ),
+            radial-gradient(
+              circle at 86% 82%,
+              rgba(255, 226, 151, 0.5),
               transparent 30%
             ),
             linear-gradient(
               135deg,
-              #d9fff3 0%,
-              #d9f3ff 32%,
-              #e5e7ff 64%,
-              #fff3d5 100%
+              #fff0e5 0%,
+              #ffe3e5 34%,
+              #fff1c9 68%,
+              #ffe1c7 100%
             );
 
           background-size: 180% 180%;
-          animation: madLoadingBackground 7s ease-in-out infinite alternate;
+
+          animation:
+            madLoadingBackground 8s ease-in-out infinite alternate;
         }
 
-        .mad-loading-screen::before,
+        /* دوائر ديكور كبيرة في الخلفية */
+
+        .mad-loading-screen::before {
+          content: '';
+          position: absolute;
+
+          width: 190px;
+          height: 190px;
+
+          top: -55px;
+          left: -45px;
+
+          border-radius: 50%;
+
+          background:
+            radial-gradient(
+              circle at 35% 35%,
+              #ffd4dc 0%,
+              #ffb7c4 58%,
+              #ff9eaf 100%
+            );
+
+          opacity: 0.72;
+
+          box-shadow:
+            0 0 0 18px rgba(255, 196, 204, 0.16),
+            0 0 0 38px rgba(255, 196, 204, 0.09);
+
+          animation: madBubbleOne 5s ease-in-out infinite;
+        }
+
         .mad-loading-screen::after {
           content: '';
           position: absolute;
-          border-radius: 50%;
-          pointer-events: none;
-          filter: blur(3px);
-        }
 
-        .mad-loading-screen::before {
-          width: 240px;
-          height: 240px;
-          top: -85px;
-          left: -65px;
-          background: rgba(74, 220, 190, 0.22);
-        }
+          width: 235px;
+          height: 235px;
 
-        .mad-loading-screen::after {
-          width: 280px;
-          height: 280px;
-          bottom: -110px;
           right: -80px;
-          background: rgba(135, 174, 255, 0.25);
+          bottom: -85px;
+
+          border-radius: 50%;
+
+          background:
+            radial-gradient(
+              circle at 35% 30%,
+              #ffeaa8 0%,
+              #ffd37c 58%,
+              #ffb86b 100%
+            );
+
+          opacity: 0.7;
+
+          box-shadow:
+            0 0 0 20px rgba(255, 220, 140, 0.16),
+            0 0 0 42px rgba(255, 220, 140, 0.08);
+
+          animation: madBubbleTwo 6s ease-in-out infinite;
         }
 
         /* ======================================================
@@ -2103,94 +2153,158 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .mad-loading-card {
           position: relative;
-          z-index: 2;
-          width: 245px;
-          min-height: 125px;
-          padding: 18px 18px 15px;
-          border-radius: 25px;
+          z-index: 5;
+
+          width: 255px;
+          min-height: 132px;
+
+          padding: 20px 18px 17px;
 
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
 
-          background: linear-gradient(
-            145deg,
-            rgba(255,255,255,0.98),
-            rgba(241,255,252,0.97)
-          );
+          border-radius: 28px;
 
-          border: 3px solid #72d8c6;
+          background:
+            linear-gradient(
+              145deg,
+              rgba(255,255,255,0.98),
+              rgba(255,249,239,0.97)
+            );
+
+          border: 3px solid #ffb28f;
 
           box-shadow:
-            0 12px 35px rgba(54, 125, 127, 0.2),
-            inset 0 0 20px rgba(255,255,255,0.9);
+            0 14px 35px rgba(210, 115, 78, 0.18),
+            0 4px 12px rgba(255, 164, 145, 0.2),
+            inset 0 0 18px rgba(255, 255, 255, 0.9);
 
-          animation: madLoadingFloat 2.5s ease-in-out infinite;
+          animation:
+            madLoadingFloat 2.8s ease-in-out infinite;
+        }
+
+        /* لمعة صغيرة أعلى الكارد */
+
+        .mad-loading-card::before {
+          content: '';
+          position: absolute;
+
+          width: 54px;
+          height: 8px;
+
+          top: 9px;
+          left: 50%;
+
+          transform: translateX(-50%);
+
+          border-radius: 20px;
+
+          background: linear-gradient(
+            90deg,
+            #ff9cae,
+            #ffd36f,
+            #ffb080
+          );
+
+          opacity: 0.9;
         }
 
         .mad-loading-title {
-          margin: 0 0 15px;
-          color: #287d7a;
+          margin: 2px 0 16px;
+
+          color: #d76b55;
+
           font-size: 22px;
           font-weight: 900;
+
           text-align: center;
           white-space: nowrap;
+
+          text-shadow:
+            0 1px 0 rgba(255,255,255,0.9);
         }
 
         /* ======================================================
-           النقاط المتحركة
+           الدوائر الصغيرة المتحركة
         ====================================================== */
 
         .mad-loading-dots {
           display: flex;
+
           align-items: center;
           justify-content: center;
-          gap: 8px;
-          height: 25px;
+
+          gap: 9px;
+
+          height: 26px;
         }
 
         .mad-loading-dot {
-          width: 11px;
-          height: 11px;
+          width: 12px;
+          height: 12px;
+
           border-radius: 50%;
 
-          background: linear-gradient(
-            135deg,
-            #42cdb5,
-            #68b9ff
-          );
+          box-shadow:
+            0 3px 7px rgba(220, 120, 80, 0.18);
 
-          box-shadow: 0 3px 8px rgba(69, 147, 157, 0.25);
-
-          animation: madLoadingDot 1.1s ease-in-out infinite;
+          animation:
+            madLoadingDot 1.15s ease-in-out infinite;
         }
+
+        /* وردي */
+
+        .mad-loading-dot:nth-child(1) {
+          background:
+            radial-gradient(
+              circle at 35% 30%,
+              #ffdce3 0%,
+              #ff9caf 65%,
+              #f47f98 100%
+            );
+        }
+
+        /* أصفر */
 
         .mad-loading-dot:nth-child(2) {
           animation-delay: 0.18s;
-          background: linear-gradient(
-            135deg,
-            #9a8cff,
-            #c69bff
-          );
+
+          background:
+            radial-gradient(
+              circle at 35% 30%,
+              #fff4bf 0%,
+              #ffd66f 65%,
+              #f7b94c 100%
+            );
         }
+
+        /* برتقالي خوخي */
 
         .mad-loading-dot:nth-child(3) {
           animation-delay: 0.36s;
-          background: linear-gradient(
-            135deg,
-            #ffd16d,
-            #ff9c91
-          );
+
+          background:
+            radial-gradient(
+              circle at 35% 30%,
+              #ffe0c7 0%,
+              #ffad7e 65%,
+              #f28b62 100%
+            );
         }
+
+        /* ======================================================
+           حركات شاشة التحميل
+        ====================================================== */
 
         @keyframes madLoadingBackground {
           0% {
-            background-position: 0% 50%;
+            background-position: 0% 45%;
           }
 
           100% {
-            background-position: 100% 50%;
+            background-position: 100% 55%;
           }
         }
 
@@ -2201,7 +2315,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           50% {
-            transform: translateY(-5px) scale(1.015);
+            transform: translateY(-6px) scale(1.015);
           }
         }
 
@@ -2214,8 +2328,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           30% {
-            transform: translateY(-9px) scale(1.2);
+            transform: translateY(-10px) scale(1.22);
             opacity: 1;
+          }
+        }
+
+        @keyframes madBubbleOne {
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+
+          50% {
+            transform: translate(18px, 12px) scale(1.06);
+          }
+        }
+
+        @keyframes madBubbleTwo {
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+
+          50% {
+            transform: translate(-15px, -12px) scale(1.05);
           }
         }
 
@@ -2227,23 +2363,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           width: 100%;
           min-height: 100vh;
           min-height: 100dvh;
+
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+
           background-color: transparent;
+
           display: flex;
           flex-direction: column;
           align-items: center;
+
           padding-bottom: 30px;
+
           position: relative;
           overflow-x: hidden;
         }
 
         .mad-page-content {
           width: 100%;
+
           display: flex;
           flex-direction: column;
           align-items: center;
+
           visibility: hidden;
         }
 
@@ -2251,13 +2394,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           visibility: visible;
         }
 
+        /* ======================================================
+           المحتوى الأصلي
+        ====================================================== */
+
         .main-wrapper {
           display: flex;
           justify-content: center;
           align-items: center;
+
           margin-top: 50px;
+
           flex-direction: row;
           gap: 20px;
+
           width: 100%;
           flex-wrap: nowrap;
         }
@@ -2265,12 +2415,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         .board-item {
           width: 405px;
           height: 340px;
+
           position: relative;
+
           display: flex;
           flex-direction: column;
           align-items: center;
+
           background-size: 100% 100%;
           background-repeat: no-repeat;
+
           flex-shrink: 0;
           overflow: hidden;
         }
@@ -2364,15 +2518,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         ====================================================== */
 
         @media (min-width: 769px) and (max-width: 1250px) {
+
           .main-wrapper {
             display: grid !important;
-            grid-template-columns: repeat(2, 405px) !important;
+
+            grid-template-columns:
+              repeat(2, 405px) !important;
+
             justify-content: center !important;
             justify-items: center !important;
+
             gap: 20px !important;
+
             margin-top: 30px !important;
+
             width: 100% !important;
             max-width: 900px !important;
+
             padding: 0 15px;
           }
 
@@ -2471,6 +2633,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         ====================================================== */
 
         @media (max-width: 768px) {
+
           .main-wrapper {
             flex-wrap: wrap !important;
             justify-content: center !important;
@@ -2597,12 +2760,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             height: 111px !important;
           }
 
-          /* كارد التحميل على الموبايل */
+          /* كارد التحميل للموبايل */
+
           .mad-loading-card {
             width: 215px;
             min-height: 108px;
             padding: 15px 14px 13px;
-            border-radius: 22px;
+            border-radius: 23px;
           }
 
           .mad-loading-title {
@@ -2617,11 +2781,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         @media (max-width: 400px) {
+
           .mad-loading-card {
             width: 200px;
-            min-height: 100px;
+            min-height: 102px;
             padding: 14px 12px;
-            border-radius: 20px;
+            border-radius: 21px;
           }
 
           .mad-loading-title {
@@ -2629,7 +2794,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-      `}),s&&(0,R.jsx)(`div`,{className:`mad-loading-screen`,role:`status`,"aria-live":`polite`,"aria-label":`جاري تحميل اللعبة`,children:(0,R.jsxs)(`div`,{className:`mad-loading-card`,children:[(0,R.jsx)(`div`,{className:`mad-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`mad-loading-dots`,children:[(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`mad-page-content ${a?`assets-ready`:``}`,"aria-busy":!a,children:[(0,R.jsx)(`button`,{className:`nav-btn home-control`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,style:{position:`absolute`,top:`18px`,left:`23px`,zIndex:100,width:`58px`,height:`58px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`37px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`},children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`nav-btn sound-control`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,style:{position:`absolute`,top:`18px`,right:`23px`,zIndex:100,width:`58px`,height:`58px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`37px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`},children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsxs)(`div`,{className:`title-area`,style:{marginTop:`17px`,textAlign:`center`},children:[(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.7)`,padding:`5px 20px`,borderRadius:`30px`,marginBottom:`10px`},children:(0,R.jsx)(`h1`,{style:{margin:0,fontSize:`27px`,color:`#111111`},children:`مرحبا بك في عالم المدود`})}),(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.5)`,padding:`5px 15px`,borderRadius:`40px`},children:(0,R.jsx)(`p`,{style:{margin:0,fontSize:`19px`,color:`#333`,fontWeight:`bold`},children:`اختر المد الذي تريد اللعب به`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:u.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{style:{color:`#b48484`,marginTop:`26px`,fontSize:`30px`,textShadow:`1px 1px 2px #000`},children:r.title}),r.games.map((r,i)=>{let a=t===r.id;return(0,R.jsx)(`img`,{src:r.img,loading:`eager`,decoding:`async`,className:`game-img-${r.id}`,alt:`لعبة`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>n(null),style:{position:`absolute`,cursor:`pointer`,objectFit:`contain`,transition:`none`,pointerEvents:`auto`,transform:a?`scale(1.15)`:`scale(1)`,filter:a?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:a?999:1}},i)})]},i))})]})]})},ui=(...e)=>e.filter((e,t,n)=>!!e&&e.trim()!==``&&n.indexOf(e)===t).join(` `).trim(),di=e=>e.replace(/([a-z0-9])([A-Z])/g,`$1-$2`).toLowerCase(),fi=e=>e.replace(/^([A-Z])|[\s-_]+(\w)/g,(e,t,n)=>n?n.toUpperCase():t.toLowerCase()),pi=e=>{let t=fi(e);return t.charAt(0).toUpperCase()+t.slice(1)},mi={xmlns:`http://www.w3.org/2000/svg`,width:24,height:24,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:2,strokeLinecap:`round`,strokeLinejoin:`round`},hi=e=>{for(let t in e)if(t.startsWith(`aria-`)||t===`role`||t===`title`)return!0;return!1},gi=(0,b.createContext)({}),_i=()=>(0,b.useContext)(gi),vi=(0,b.forwardRef)(({color:e,size:t,strokeWidth:n,absoluteStrokeWidth:r,className:i=``,children:a,iconNode:o,...s},c)=>{let{size:l=24,strokeWidth:u=2,absoluteStrokeWidth:d=!1,color:f=`currentColor`,className:p=``}=_i()??{},m=r??d?Number(n??u)*24/Number(t??l):n??u;return(0,b.createElement)(`svg`,{ref:c,...mi,width:t??l??mi.width,height:t??l??mi.height,stroke:e??f,strokeWidth:m,className:ui(`lucide`,p,i),...!a&&!hi(s)&&{"aria-hidden":`true`},...s},[...o.map(([e,t])=>(0,b.createElement)(e,t)),...Array.isArray(a)?a:[a]])}),z=(e,t)=>{let n=(0,b.forwardRef)(({className:n,...r},i)=>(0,b.createElement)(vi,{ref:i,iconNode:t,className:ui(`lucide-${di(pi(e))}`,`lucide-${e}`,n),...r}));return n.displayName=pi(e),n},yi=z(`alarm-clock`,[[`circle`,{cx:`12`,cy:`13`,r:`8`,key:`3y4lt7`}],[`path`,{d:`M12 9v4l2 2`,key:`1c63tq`}],[`path`,{d:`M5 3 2 6`,key:`18tl5t`}],[`path`,{d:`m22 6-3-3`,key:`1opdir`}],[`path`,{d:`M6.38 18.7 4 21`,key:`17xu3x`}],[`path`,{d:`M17.64 18.67 20 21`,key:`kv2oe2`}]]),bi=z(`anchor`,[[`path`,{d:`M12 6v16`,key:`nqf5sj`}],[`path`,{d:`m19 13 2-1a9 9 0 0 1-18 0l2 1`,key:`y7qv08`}],[`path`,{d:`M9 11h6`,key:`1fldmi`}],[`circle`,{cx:`12`,cy:`4`,r:`2`,key:`muu5ef`}]]),xi=z(`apple`,[[`path`,{d:`M12 6.528V3a1 1 0 0 1 1-1h0`,key:`11qiee`}],[`path`,{d:`M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21`,key:`110c12`}]]),Si=z(`arrow-left`,[[`path`,{d:`m12 19-7-7 7-7`,key:`1l729n`}],[`path`,{d:`M19 12H5`,key:`x3x0zl`}]]),B=z(`arrow-right`,[[`path`,{d:`M5 12h14`,key:`1ays0h`}],[`path`,{d:`m12 5 7 7-7 7`,key:`xquz4c`}]]),Ci=z(`audio-lines`,[[`path`,{d:`M2 10v3`,key:`1fnikh`}],[`path`,{d:`M6 6v11`,key:`11sgs0`}],[`path`,{d:`M10 3v18`,key:`yhl04a`}],[`path`,{d:`M14 8v7`,key:`3a1oy3`}],[`path`,{d:`M18 5v13`,key:`123xd1`}],[`path`,{d:`M22 10v3`,key:`154ddg`}]]),wi=z(`audio-waveform`,[[`path`,{d:`M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2`,key:`57tc96`}]]),Ti=z(`award`,[[`path`,{d:`m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526`,key:`1yiouv`}],[`circle`,{cx:`12`,cy:`8`,r:`6`,key:`1vp47v`}]]),Ei=z(`bird`,[[`path`,{d:`M16 7h.01`,key:`1kdx03`}],[`path`,{d:`M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20`,key:`oj1oa8`}],[`path`,{d:`m20 7 2 .5-2 .5`,key:`12nv4d`}],[`path`,{d:`M10 18v3`,key:`1yea0a`}],[`path`,{d:`M14 17.75V21`,key:`1pymcb`}],[`path`,{d:`M7 18a6 6 0 0 0 3.84-10.61`,key:`1npnn0`}]]),Di=z(`blocks`,[[`path`,{d:`M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2`,key:`1ah6g2`}],[`rect`,{x:`14`,y:`2`,width:`8`,height:`8`,rx:`1`,key:`88lufb`}]]),Oi=z(`bone`,[[`path`,{d:`M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z`,key:`w610uw`}]]),ki=z(`book-open`,[[`path`,{d:`M12 7v14`,key:`1akyts`}],[`path`,{d:`M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z`,key:`ruj8y`}]]),Ai=z(`bug`,[[`path`,{d:`M12 20v-9`,key:`1qisl0`}],[`path`,{d:`M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z`,key:`uouzyp`}],[`path`,{d:`M14.12 3.88 16 2`,key:`qol33r`}],[`path`,{d:`M21 21a4 4 0 0 0-3.81-4`,key:`1b0z45`}],[`path`,{d:`M21 5a4 4 0 0 1-3.55 3.97`,key:`5cxbf6`}],[`path`,{d:`M22 13h-4`,key:`1jl80f`}],[`path`,{d:`M3 21a4 4 0 0 1 3.81-4`,key:`1fjd4g`}],[`path`,{d:`M3 5a4 4 0 0 0 3.55 3.97`,key:`1d7oge`}],[`path`,{d:`M6 13H2`,key:`82j7cp`}],[`path`,{d:`m8 2 1.88 1.88`,key:`fmnt4t`}],[`path`,{d:`M9 7.13V6a3 3 0 1 1 6 0v1.13`,key:`1vgav8`}]]),ji=z(`candy`,[[`path`,{d:`M10 7v10.9`,key:`1gynux`}],[`path`,{d:`M14 6.1V17`,key:`116kdf`}],[`path`,{d:`M16 7V3a1 1 0 0 1 1.707-.707 2.5 2.5 0 0 0 2.152.717 1 1 0 0 1 1.131 1.131 2.5 2.5 0 0 0 .717 2.152A1 1 0 0 1 21 8h-4`,key:`gpb6xx`}],[`path`,{d:`M16.536 7.465a5 5 0 0 0-7.072 0l-2 2a5 5 0 0 0 0 7.07 5 5 0 0 0 7.072 0l2-2a5 5 0 0 0 0-7.07`,key:`1tsln4`}],[`path`,{d:`M8 17v4a1 1 0 0 1-1.707.707 2.5 2.5 0 0 0-2.152-.717 1 1 0 0 1-1.131-1.131 2.5 2.5 0 0 0-.717-2.152A1 1 0 0 1 3 16h4`,key:`qexcha`}]]),Mi=z(`car-front`,[[`path`,{d:`m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8`,key:`1imjwt`}],[`path`,{d:`M7 14h.01`,key:`1qa3f1`}],[`path`,{d:`M17 14h.01`,key:`7oqj8z`}],[`rect`,{width:`18`,height:`8`,x:`3`,y:`10`,rx:`2`,key:`a7itu8`}],[`path`,{d:`M5 18v2`,key:`ppbyun`}],[`path`,{d:`M19 18v2`,key:`gy7782`}]]),Ni=z(`car`,[[`path`,{d:`M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2`,key:`5owen`}],[`circle`,{cx:`7`,cy:`17`,r:`2`,key:`u2ysq9`}],[`path`,{d:`M9 17h6`,key:`r8uit2`}],[`circle`,{cx:`17`,cy:`17`,r:`2`,key:`axvx0g`}]]),Pi=z(`carrot`,[[`path`,{d:`M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.04M15.34 15l-2.46-2.46`,key:`rfqxbe`}],[`path`,{d:`M22 9s-1.33-2-3.5-2C16.86 7 15 9 15 9s1.33 2 3.5 2S22 9 22 9z`,key:`6b25w4`}],[`path`,{d:`M15 2s-2 1.33-2 3.5S15 9 15 9s2-1.84 2-3.5C17 3.33 15 2 15 2z`,key:`fn65lo`}]]),Fi=z(`chart-column`,[[`path`,{d:`M3 3v16a2 2 0 0 0 2 2h16`,key:`c24i48`}],[`path`,{d:`M18 17V9`,key:`2bz60n`}],[`path`,{d:`M13 17V5`,key:`1frdt8`}],[`path`,{d:`M8 17v-3`,key:`17ska0`}]]),Ii=z(`check`,[[`path`,{d:`M20 6 9 17l-5-5`,key:`1gmf2c`}]]),Li=z(`chef-hat`,[[`path`,{d:`M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z`,key:`1qvrer`}],[`path`,{d:`M6 17h12`,key:`1jwigz`}]]),Ri=z(`cherry`,[[`path`,{d:`M2 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z`,key:`cvxqlc`}],[`path`,{d:`M12 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z`,key:`1ostrc`}],[`path`,{d:`M7 14c3.22-2.91 4.29-8.75 5-12 1.66 2.38 4.94 9 5 12`,key:`hqx58h`}],[`path`,{d:`M22 9c-4.29 0-7.14-2.33-10-7 5.71 0 10 4.67 10 7Z`,key:`eykp1o`}]]),zi=z(`circle-check-big`,[[`path`,{d:`M21.801 10A10 10 0 1 1 17 3.335`,key:`yps3ct`}],[`path`,{d:`m9 11 3 3L22 4`,key:`1pflzl`}]]),Bi=z(`circle-dot`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`circle`,{cx:`12`,cy:`12`,r:`1`,key:`41hilf`}]]),Vi=z(`circle-plus`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M8 12h8`,key:`1wcyev`}],[`path`,{d:`M12 8v8`,key:`napkw2`}]]),Hi=z(`circle-question-mark`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3`,key:`1u773s`}],[`path`,{d:`M12 17h.01`,key:`p32p05`}]]),Ui=z(`circle-x`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`m15 9-6 6`,key:`1uzhvr`}],[`path`,{d:`m9 9 6 6`,key:`z0biqf`}]]),Wi=z(`circle`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}]]),Gi=z(`clock-3`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M12 6v6h4`,key:`135r8i`}]]),Ki=z(`clock`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M12 6v6l4 2`,key:`mmk7yg`}]]),qi=z(`cloud-snow`,[[`path`,{d:`M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242`,key:`1pljnt`}],[`path`,{d:`M8 15h.01`,key:`a7atzg`}],[`path`,{d:`M8 19h.01`,key:`puxtts`}],[`path`,{d:`M12 17h.01`,key:`p32p05`}],[`path`,{d:`M12 21h.01`,key:`h35vbk`}],[`path`,{d:`M16 15h.01`,key:`rnfrdf`}],[`path`,{d:`M16 19h.01`,key:`1vcnzz`}]]),Ji=z(`cloud`,[[`path`,{d:`M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z`,key:`p7xjir`}]]),Yi=z(`compass`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z`,key:`9ktpf1`}]]),Xi=z(`cookie`,[[`path`,{d:`M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5`,key:`laymnq`}],[`path`,{d:`M8.5 8.5v.01`,key:`ue8clq`}],[`path`,{d:`M16 15.5v.01`,key:`14dtrp`}],[`path`,{d:`M12 12v.01`,key:`u5ubse`}],[`path`,{d:`M11 17v.01`,key:`1hyl5a`}],[`path`,{d:`M7 14v.01`,key:`uct60s`}]]),Zi=z(`cooking-pot`,[[`path`,{d:`M2 12h20`,key:`9i4pu4`}],[`path`,{d:`M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8`,key:`u0tga0`}],[`path`,{d:`m4 8 16-4`,key:`16g0ng`}],[`path`,{d:`m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8`,key:`12cejc`}]]),Qi=z(`crosshair`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`line`,{x1:`22`,x2:`18`,y1:`12`,y2:`12`,key:`l9bcsi`}],[`line`,{x1:`6`,x2:`2`,y1:`12`,y2:`12`,key:`13hhkx`}],[`line`,{x1:`12`,x2:`12`,y1:`6`,y2:`2`,key:`10w3f3`}],[`line`,{x1:`12`,x2:`12`,y1:`22`,y2:`18`,key:`15g9kq`}]]),$i=z(`crown`,[[`path`,{d:`M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z`,key:`1vdc57`}],[`path`,{d:`M5 21h14`,key:`11awu3`}]]),ea=z(`download`,[[`path`,{d:`M12 15V3`,key:`m9g1x1`}],[`path`,{d:`M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4`,key:`ih7n3h`}],[`path`,{d:`m7 10 5 5 5-5`,key:`brsn70`}]]),ta=z(`droplets`,[[`path`,{d:`M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z`,key:`1ptgy4`}],[`path`,{d:`M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97`,key:`1sl1rz`}]]),na=z(`drumstick`,[[`path`,{d:`M15.4 15.63a7.875 6 135 1 1 6.23-6.23 4.5 3.43 135 0 0-6.23 6.23`,key:`1dtqwm`}],[`path`,{d:`m8.29 12.71-2.6 2.6a2.5 2.5 0 1 0-1.65 4.65A2.5 2.5 0 1 0 8.7 18.3l2.59-2.59`,key:`1oq1fw`}]]),ra=z(`ear`,[[`path`,{d:`M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0`,key:`1dfaln`}],[`path`,{d:`M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4`,key:`1qnva7`}]]),ia=z(`egg`,[[`path`,{d:`M12 2C8 2 4 8 4 14a8 8 0 0 0 16 0c0-6-4-12-8-12`,key:`1le142`}]]),aa=z(`eraser`,[[`path`,{d:`M21 21H8a2 2 0 0 1-1.42-.587l-3.994-3.999a2 2 0 0 1 0-2.828l10-10a2 2 0 0 1 2.829 0l5.999 6a2 2 0 0 1 0 2.828L12.834 21`,key:`g5wo59`}],[`path`,{d:`m5.082 11.09 8.828 8.828`,key:`1wx5vj`}]]),oa=z(`feather`,[[`path`,{d:`M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z`,key:`18jl4k`}],[`path`,{d:`M16 8 2 22`,key:`vp34q`}],[`path`,{d:`M17.5 15H9`,key:`1oz8nu`}]]),sa=z(`fish`,[[`path`,{d:`M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z`,key:`15baut`}],[`path`,{d:`M18 12v.5`,key:`18hhni`}],[`path`,{d:`M16 17.93a9.77 9.77 0 0 1 0-11.86`,key:`16dt7o`}],[`path`,{d:`M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33`,key:`l9di03`}],[`path`,{d:`M10.46 7.26C10.2 5.88 9.17 4.24 8 3h5.8a2 2 0 0 1 1.98 1.67l.23 1.4`,key:`1kjonw`}],[`path`,{d:`m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98`,key:`1zlm23`}]]),ca=z(`flag`,[[`path`,{d:`M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528`,key:`1jaruq`}]]),la=z(`flower-2`,[[`path`,{d:`M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1`,key:`3pnvol`}],[`circle`,{cx:`12`,cy:`8`,r:`2`,key:`1822b1`}],[`path`,{d:`M12 10v12`,key:`6ubwww`}],[`path`,{d:`M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z`,key:`9hd38g`}],[`path`,{d:`M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z`,key:`ufn41s`}]]),ua=z(`footprints`,[[`path`,{d:`M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z`,key:`1dudjm`}],[`path`,{d:`M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z`,key:`l2t8xc`}],[`path`,{d:`M16 17h4`,key:`1dejxt`}],[`path`,{d:`M4 13h4`,key:`1bwh8b`}]]),da=z(`gamepad-2`,[[`line`,{x1:`6`,x2:`10`,y1:`11`,y2:`11`,key:`1gktln`}],[`line`,{x1:`8`,x2:`8`,y1:`9`,y2:`13`,key:`qnk9ow`}],[`line`,{x1:`15`,x2:`15.01`,y1:`12`,y2:`12`,key:`krot7o`}],[`line`,{x1:`18`,x2:`18.01`,y1:`10`,y2:`10`,key:`1lcuu1`}],[`path`,{d:`M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z`,key:`mfqc10`}]]),fa=z(`gauge`,[[`path`,{d:`m12 14 4-4`,key:`9kzdfg`}],[`path`,{d:`M3.34 19a10 10 0 1 1 17.32 0`,key:`19p75a`}]]),pa=z(`gem`,[[`path`,{d:`M10.5 3 8 9l4 13 4-13-2.5-6`,key:`b3dvk1`}],[`path`,{d:`M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z`,key:`7w4byz`}],[`path`,{d:`M2 9h20`,key:`16fsjt`}]]),ma=z(`gift`,[[`path`,{d:`M12 7v14`,key:`1akyts`}],[`path`,{d:`M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8`,key:`1sqzm4`}],[`path`,{d:`M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5`,key:`kc0143`}],[`rect`,{x:`3`,y:`7`,width:`18`,height:`4`,rx:`1`,key:`1hberx`}]]),ha=z(`goal`,[[`path`,{d:`M12 13V2l8 4-8 4`,key:`5wlwwj`}],[`path`,{d:`M20.561 10.222a9 9 0 1 1-12.55-5.29`,key:`1c0wjv`}],[`path`,{d:`M8.002 9.997a5 5 0 1 0 8.9 2.02`,key:`gb1g7m`}]]),ga=z(`graduation-cap`,[[`path`,{d:`M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z`,key:`j76jl0`}],[`path`,{d:`M22 10v6`,key:`1lu8f3`}],[`path`,{d:`M6 12.5V16a6 3 0 0 0 12 0v-3.5`,key:`1r8lef`}]]),_a=z(`headphones`,[[`path`,{d:`M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3`,key:`1xhozi`}]]),va=z(`heart`,[[`path`,{d:`M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5`,key:`mvr1a0`}]]),ya=z(`hexagon`,[[`path`,{d:`M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z`,key:`yt0hxn`}]]),V=z(`house`,[[`path`,{d:`M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8`,key:`5wwlr5`}],[`path`,{d:`M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z`,key:`r6nss1`}]]),ba=z(`ice-cream-cone`,[[`path`,{d:`m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11`,key:`1v6356`}],[`path`,{d:`M17 7A5 5 0 0 0 7 7`,key:`151p3v`}],[`path`,{d:`M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4`,key:`1sdaij`}]]),xa=z(`key-round`,[[`path`,{d:`M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z`,key:`1s6t7t`}],[`circle`,{cx:`16.5`,cy:`7.5`,r:`.5`,fill:`currentColor`,key:`w0ekpg`}]]),Sa=z(`leaf`,[[`path`,{d:`M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z`,key:`nnexq3`}],[`path`,{d:`M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12`,key:`mt58a7`}]]),Ca=z(`lightbulb`,[[`path`,{d:`M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5`,key:`1gvzjb`}],[`path`,{d:`M9 18h6`,key:`x1upvd`}],[`path`,{d:`M10 22h4`,key:`ceow96`}]]),wa=z(`log-out`,[[`path`,{d:`m16 17 5-5-5-5`,key:`1bji2h`}],[`path`,{d:`M21 12H9`,key:`dn1m92`}],[`path`,{d:`M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4`,key:`1uf3rs`}]]),Ta=z(`magnet`,[[`path`,{d:`m12 15 4 4`,key:`lnac28`}],[`path`,{d:`M2.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.029-6.029a1 1 0 1 1 3 3l-6.029 6.029a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.365-6.367A1 1 0 0 0 8.716 4.282z`,key:`nlhkjb`}],[`path`,{d:`m5 8 4 4`,key:`j6kj7e`}]]),Ea=z(`map`,[[`path`,{d:`M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z`,key:`169xi5`}],[`path`,{d:`M15 5.764v15`,key:`1pn4in`}],[`path`,{d:`M9 3.236v15`,key:`1uimfh`}]]),Da=z(`medal`,[[`path`,{d:`M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15`,key:`143lza`}],[`path`,{d:`M11 12 5.12 2.2`,key:`qhuxz6`}],[`path`,{d:`m13 12 5.88-9.8`,key:`hbye0f`}],[`path`,{d:`M8 7h8`,key:`i86dvs`}],[`circle`,{cx:`12`,cy:`17`,r:`5`,key:`qbz8iq`}],[`path`,{d:`M12 18v-2h-.5`,key:`fawc4q`}]]),Oa=z(`mic-vocal`,[[`path`,{d:`m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12`,key:`80a601`}],[`path`,{d:`M16.5 21.174C15.5 20.5 14.372 20 13 20c-2.058 0-3.928 2.356-6 2-2.072-.356-2.775-3.369-1.5-4.5`,key:`j0ngtp`}],[`circle`,{cx:`16`,cy:`7`,r:`5`,key:`d08jfb`}]]),ka=z(`moon-star`,[[`path`,{d:`M18 5h4`,key:`1lhgn2`}],[`path`,{d:`M20 3v4`,key:`1olli1`}],[`path`,{d:`M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401`,key:`kfwtm`}]]),Aa=z(`moon`,[[`path`,{d:`M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401`,key:`kfwtm`}]]),ja=z(`mountain`,[[`path`,{d:`m8 3 4 8 5-5 5 15H2L8 3z`,key:`otkl63`}]]),Ma=z(`music-2`,[[`circle`,{cx:`8`,cy:`18`,r:`4`,key:`1fc0mg`}],[`path`,{d:`M12 18V2l7 4`,key:`g04rme`}]]),Na=z(`orbit`,[[`path`,{d:`M20.341 6.484A10 10 0 0 1 10.266 21.85`,key:`1enhxb`}],[`path`,{d:`M3.659 17.516A10 10 0 0 1 13.74 2.152`,key:`1crzgf`}],[`circle`,{cx:`12`,cy:`12`,r:`3`,key:`1v7zrd`}],[`circle`,{cx:`19`,cy:`5`,r:`2`,key:`mhkx31`}],[`circle`,{cx:`5`,cy:`19`,r:`2`,key:`v8kfzx`}]]),Pa=z(`paintbrush`,[[`path`,{d:`m14.622 17.897-10.68-2.913`,key:`vj2p1u`}],[`path`,{d:`M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z`,key:`18tc5c`}],[`path`,{d:`M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15`,key:`ytzfxy`}]]),Fa=z(`palette`,[[`path`,{d:`M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z`,key:`e79jfc`}],[`circle`,{cx:`13.5`,cy:`6.5`,r:`.5`,fill:`currentColor`,key:`1okk4w`}],[`circle`,{cx:`17.5`,cy:`10.5`,r:`.5`,fill:`currentColor`,key:`f64h9f`}],[`circle`,{cx:`6.5`,cy:`12.5`,r:`.5`,fill:`currentColor`,key:`qy21gx`}],[`circle`,{cx:`8.5`,cy:`7.5`,r:`.5`,fill:`currentColor`,key:`fotxhn`}]]),Ia=z(`party-popper`,[[`path`,{d:`M5.8 11.3 2 22l10.7-3.79`,key:`gwxi1d`}],[`path`,{d:`M4 3h.01`,key:`1vcuye`}],[`path`,{d:`M22 8h.01`,key:`1mrtc2`}],[`path`,{d:`M15 2h.01`,key:`1cjtqr`}],[`path`,{d:`M22 20h.01`,key:`1mrys2`}],[`path`,{d:`m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10`,key:`hbicv8`}],[`path`,{d:`m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17`,key:`1i94pl`}],[`path`,{d:`m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7`,key:`1cofks`}],[`path`,{d:`M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z`,key:`4kbmks`}]]),La=z(`paw-print`,[[`circle`,{cx:`11`,cy:`4`,r:`2`,key:`vol9p0`}],[`circle`,{cx:`18`,cy:`8`,r:`2`,key:`17gozi`}],[`circle`,{cx:`20`,cy:`16`,r:`2`,key:`1v9bxh`}],[`path`,{d:`M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z`,key:`1ydw1z`}]]),Ra=z(`pencil-line`,[[`path`,{d:`M13 21h8`,key:`1jsn5i`}],[`path`,{d:`m15 5 4 4`,key:`1mk7zo`}],[`path`,{d:`M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z`,key:`1a8usu`}]]),za=z(`pencil`,[[`path`,{d:`M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z`,key:`1a8usu`}],[`path`,{d:`m15 5 4 4`,key:`1mk7zo`}]]),Ba=z(`pickaxe`,[[`path`,{d:`m14 13-8.381 8.38a1 1 0 0 1-3.001-3L11 9.999`,key:`1lw9ds`}],[`path`,{d:`M15.973 4.027A13 13 0 0 0 5.902 2.373c-1.398.342-1.092 2.158.277 2.601a19.9 19.9 0 0 1 5.822 3.024`,key:`ffj4ej`}],[`path`,{d:`M16.001 11.999a19.9 19.9 0 0 1 3.024 5.824c.444 1.369 2.26 1.676 2.603.278A13 13 0 0 0 20 8.069`,key:`8tj4zw`}],[`path`,{d:`M18.352 3.352a1.205 1.205 0 0 0-1.704 0l-5.296 5.296a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l5.296-5.296a1.205 1.205 0 0 0 0-1.704z`,key:`hh6h97`}]]),Va=z(`pizza`,[[`path`,{d:`m12 14-1 1`,key:`11onhr`}],[`path`,{d:`m13.75 18.25-1.25 1.42`,key:`1yisr3`}],[`path`,{d:`M17.775 5.654a15.68 15.68 0 0 0-12.121 12.12`,key:`1qtqk6`}],[`path`,{d:`M18.8 9.3a1 1 0 0 0 2.1 7.7`,key:`fbbbr2`}],[`path`,{d:`M21.964 20.732a1 1 0 0 1-1.232 1.232l-18-5a1 1 0 0 1-.695-1.232A19.68 19.68 0 0 1 15.732 2.037a1 1 0 0 1 1.232.695z`,key:`1hyfdd`}]]),Ha=z(`plane`,[[`path`,{d:`M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z`,key:`1v9wt8`}]]),Ua=z(`puzzle`,[[`path`,{d:`M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z`,key:`w46dr5`}]]),Wa=z(`refresh-cw`,[[`path`,{d:`M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8`,key:`v9h5vc`}],[`path`,{d:`M21 3v5h-5`,key:`1q7to0`}],[`path`,{d:`M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16`,key:`3uifl3`}],[`path`,{d:`M8 16H3v5`,key:`1cv678`}]]),Ga=z(`rocket`,[[`path`,{d:`M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5`,key:`qeys4`}],[`path`,{d:`M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09`,key:`u4xsad`}],[`path`,{d:`M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z`,key:`676m9`}],[`path`,{d:`M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05`,key:`92ym6u`}]]),H=z(`rotate-ccw`,[[`path`,{d:`M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8`,key:`1357e3`}],[`path`,{d:`M3 3v5h5`,key:`1xhq8a`}]]),Ka=z(`satellite`,[[`path`,{d:`m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5`,key:`dzhfyz`}],[`path`,{d:`M16.5 7.5 19 5`,key:`1ltcjm`}],[`path`,{d:`m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5`,key:`nfoymv`}],[`path`,{d:`M9 21a6 6 0 0 0-6-6`,key:`1iajcf`}],[`path`,{d:`M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z`,key:`nv9zqy`}]]),qa=z(`shapes`,[[`path`,{d:`M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z`,key:`1bo67w`}],[`rect`,{x:`3`,y:`14`,width:`7`,height:`7`,rx:`1`,key:`1bkyp8`}],[`circle`,{cx:`17.5`,cy:`17.5`,r:`3.5`,key:`w3z12y`}]]),Ja=z(`shell`,[[`path`,{d:`M14 11a2 2 0 1 1-4 0 4 4 0 0 1 8 0 6 6 0 0 1-12 0 8 8 0 0 1 16 0 10 10 0 1 1-20 0 11.93 11.93 0 0 1 2.42-7.22 2 2 0 1 1 3.16 2.44`,key:`1cn552`}]]),Ya=z(`shield-check`,[[`path`,{d:`M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z`,key:`oel41y`}],[`path`,{d:`m9 12 2 2 4-4`,key:`dzmm74`}]]),Xa=z(`ship-wheel`,[[`circle`,{cx:`12`,cy:`12`,r:`8`,key:`46899m`}],[`path`,{d:`M12 2v7.5`,key:`1e5rl5`}],[`path`,{d:`m19 5-5.23 5.23`,key:`1ezxxf`}],[`path`,{d:`M22 12h-7.5`,key:`le1719`}],[`path`,{d:`m19 19-5.23-5.23`,key:`p3fmgn`}],[`path`,{d:`M12 14.5V22`,key:`dgcmos`}],[`path`,{d:`M10.23 13.77 5 19`,key:`qwopd4`}],[`path`,{d:`M9.5 12H2`,key:`r7bup8`}],[`path`,{d:`M10.23 10.23 5 5`,key:`k2y7lj`}],[`circle`,{cx:`12`,cy:`12`,r:`2.5`,key:`ix0uyj`}]]),Za=z(`shopping-basket`,[[`path`,{d:`m15 11-1 9`,key:`5wnq3a`}],[`path`,{d:`m19 11-4-7`,key:`cnml18`}],[`path`,{d:`M2 11h20`,key:`3eubbj`}],[`path`,{d:`m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4`,key:`yiazzp`}],[`path`,{d:`M4.5 15.5h15`,key:`13mye1`}],[`path`,{d:`m5 11 4-7`,key:`116ra9`}],[`path`,{d:`m9 11 1 9`,key:`1ojof7`}]]),Qa=z(`signpost`,[[`path`,{d:`M12 13v8`,key:`1l5pq0`}],[`path`,{d:`M12 3v3`,key:`1n5kay`}],[`path`,{d:`M2.354 10.354a1.207 1.207 0 0 1 0-1.708l2.06-2.06A2 2 0 0 1 5.828 6h12.344a2 2 0 0 1 1.414.586l2.06 2.06a1.207 1.207 0 0 1 0 1.708l-2.06 2.06a2 2 0 0 1-1.414.586H5.828a2 2 0 0 1-1.414-.586z`,key:`1tm261`}]]),$a=z(`smile`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M8 14s1.5 2 4 2 4-2 4-2`,key:`1y1vjs`}],[`line`,{x1:`9`,x2:`9.01`,y1:`9`,y2:`9`,key:`yxxnd0`}],[`line`,{x1:`15`,x2:`15.01`,y1:`9`,y2:`9`,key:`1p4y9e`}]]),eo=z(`snowflake`,[[`path`,{d:`m10 20-1.25-2.5L6 18`,key:`18frcb`}],[`path`,{d:`M10 4 8.75 6.5 6 6`,key:`7mghy3`}],[`path`,{d:`m14 20 1.25-2.5L18 18`,key:`1chtki`}],[`path`,{d:`m14 4 1.25 2.5L18 6`,key:`1b4wsy`}],[`path`,{d:`m17 21-3-6h-4`,key:`15hhxa`}],[`path`,{d:`m17 3-3 6 1.5 3`,key:`11697g`}],[`path`,{d:`M2 12h6.5L10 9`,key:`kv9z4n`}],[`path`,{d:`m20 10-1.5 2 1.5 2`,key:`1swlpi`}],[`path`,{d:`M22 12h-6.5L14 15`,key:`1mxi28`}],[`path`,{d:`m4 10 1.5 2L4 14`,key:`k9enpj`}],[`path`,{d:`m7 21 3-6-1.5-3`,key:`j8hb9u`}],[`path`,{d:`m7 3 3 6h4`,key:`1otusx`}]]),to=z(`sparkles`,[[`path`,{d:`M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z`,key:`1s2grr`}],[`path`,{d:`M20 2v4`,key:`1rf3ol`}],[`path`,{d:`M22 4h-4`,key:`gwowj6`}],[`circle`,{cx:`4`,cy:`20`,r:`2`,key:`6kqj1y`}]]),no=z(`sprout`,[[`path`,{d:`M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3`,key:`139s4v`}],[`path`,{d:`M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4`,key:`1dlkgp`}],[`path`,{d:`M5 21h14`,key:`11awu3`}]]),ro=z(`star`,[[`path`,{d:`M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z`,key:`r04s7s`}]]),io=z(`sun`,[[`circle`,{cx:`12`,cy:`12`,r:`4`,key:`4exip2`}],[`path`,{d:`M12 2v2`,key:`tus03m`}],[`path`,{d:`M12 20v2`,key:`1lh1kg`}],[`path`,{d:`m4.93 4.93 1.41 1.41`,key:`149t6j`}],[`path`,{d:`m17.66 17.66 1.41 1.41`,key:`ptbguv`}],[`path`,{d:`M2 12h2`,key:`1t8f8n`}],[`path`,{d:`M20 12h2`,key:`1q8mjw`}],[`path`,{d:`m6.34 17.66-1.41 1.41`,key:`1m8zz5`}],[`path`,{d:`m19.07 4.93-1.41 1.41`,key:`1shlcs`}]]),ao=z(`tag`,[[`path`,{d:`M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z`,key:`vktsd0`}],[`circle`,{cx:`7.5`,cy:`7.5`,r:`.5`,fill:`currentColor`,key:`kqv944`}]]),oo=z(`target`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`circle`,{cx:`12`,cy:`12`,r:`6`,key:`1vlfrh`}],[`circle`,{cx:`12`,cy:`12`,r:`2`,key:`1c9p78`}]]),so=z(`tree-pine`,[[`path`,{d:`m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z`,key:`cpyugq`}],[`path`,{d:`M12 22v-3`,key:`kmzjlo`}]]),co=z(`trees`,[[`path`,{d:`M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z`,key:`1l6gj6`}],[`path`,{d:`M7 16v6`,key:`1a82de`}],[`path`,{d:`M13 19v3`,key:`13sx9i`}],[`path`,{d:`M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5`,key:`1sj9kv`}]]),lo=z(`trophy`,[[`path`,{d:`M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978`,key:`1n3hpd`}],[`path`,{d:`M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978`,key:`rfe1zi`}],[`path`,{d:`M18 9h1.5a1 1 0 0 0 0-5H18`,key:`7xy6bh`}],[`path`,{d:`M4 22h16`,key:`57wxv0`}],[`path`,{d:`M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z`,key:`1mhfuq`}],[`path`,{d:`M6 9H4.5a1 1 0 0 1 0-5H6`,key:`tex48p`}]]),uo=z(`type`,[[`path`,{d:`M12 4v16`,key:`1654pz`}],[`path`,{d:`M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2`,key:`e0r10z`}],[`path`,{d:`M9 20h6`,key:`s66wpe`}]]),fo=z(`user-round`,[[`circle`,{cx:`12`,cy:`8`,r:`5`,key:`1hypcn`}],[`path`,{d:`M20 21a8 8 0 0 0-16 0`,key:`rfgkzh`}]]),po=z(`user`,[[`path`,{d:`M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2`,key:`975kel`}],[`circle`,{cx:`12`,cy:`7`,r:`4`,key:`17ys0d`}]]),mo=z(`utensils`,[[`path`,{d:`M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2`,key:`cjf0a3`}],[`path`,{d:`M7 2v20`,key:`1473qp`}],[`path`,{d:`M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7`,key:`j28e5`}]]),U=z(`volume-2`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`path`,{d:`M16 9a5 5 0 0 1 0 6`,key:`1q6k2b`}],[`path`,{d:`M19.364 18.364a9 9 0 0 0 0-12.728`,key:`ijwkga`}]]),ho=z(`volume-x`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`line`,{x1:`22`,x2:`16`,y1:`9`,y2:`15`,key:`1ewh16`}],[`line`,{x1:`16`,x2:`22`,y1:`9`,y2:`15`,key:`5ykzw1`}]]),go=z(`wand-sparkles`,[[`path`,{d:`m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72`,key:`ul74o6`}],[`path`,{d:`m14 7 3 3`,key:`1r5n42`}],[`path`,{d:`M5 6v4`,key:`ilb8ba`}],[`path`,{d:`M19 14v4`,key:`blhpug`}],[`path`,{d:`M10 2v2`,key:`7u0qdc`}],[`path`,{d:`M7 8H3`,key:`zfb6yr`}],[`path`,{d:`M21 16h-4`,key:`1cnmox`}],[`path`,{d:`M11 3H9`,key:`1obp7u`}]]),_o=z(`waves-horizontal`,[[`path`,{d:`M2 12q2.5 2 5 0t5 0 5 0 5 0`,key:`8ddzzs`}],[`path`,{d:`M2 19q2.5 2 5 0t5 0 5 0 5 0`,key:`1wj4st`}],[`path`,{d:`M2 5q2.5 2 5 0t5 0 5 0 5 0`,key:`69x50u`}]]),vo=z(`wheat`,[[`path`,{d:`M2 22 16 8`,key:`60hf96`}],[`path`,{d:`M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z`,key:`1rdhi6`}],[`path`,{d:`M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z`,key:`1sdzmb`}],[`path`,{d:`M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z`,key:`eoatbi`}],[`path`,{d:`M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z`,key:`19rau1`}],[`path`,{d:`M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z`,key:`tc8ph9`}],[`path`,{d:`M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z`,key:`2m8kc5`}],[`path`,{d:`M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z`,key:`vex3ng`}]]),yo=z(`wind`,[[`path`,{d:`M12.8 19.6A2 2 0 1 0 14 16H2`,key:`148xed`}],[`path`,{d:`M17.5 8a2.5 2.5 0 1 1 2 4H2`,key:`1u4tom`}],[`path`,{d:`M9.8 4.4A2 2 0 1 1 11 8H2`,key:`75valh`}]]),bo=z(`x`,[[`path`,{d:`M18 6 6 18`,key:`1bl5f8`}],[`path`,{d:`m6 6 12 12`,key:`d8bk6v`}]]),xo=z(`zap`,[[`path`,{d:`M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z`,key:`1xq2db`}]]);function So(){let e=I(),t=[{id:1,title:`لعبة الأكل السريع`,desc:`أطعم البطل الحروف المرققة فقط`,color:`#cfe8ff`,numberColor:`#4da6ff`},{id:2,title:`لعبة صيد الحروف`,desc:`إصطد الحروف المرققة فقط`,color:`#d9f7d9`,numberColor:`#4cd964`},{id:3,title:`لعبة سلة التفاح`,desc:`اجمع الحروف المرققة فقط`,color:`#fff2cc`,numberColor:`#ffb84d`},{id:4,title:`لعبة المدفع`,desc:` إضرب الحروف المرققة فقط`,color:`#eee0ff`,numberColor:`#b366ff`},{id:5,title:`لعبة  النحلة`,desc:`اضغط على الزهرة ذات الحروف المرققة`,color:`#ffd6e0`,numberColor:`#ff4d88`}],n=()=>{let e=new(window.AudioContext||window.webkitAudioContext),t=e.createOscillator(),n=e.createGain();t.type=`square`,t.frequency.setValueAtTime(900,e.currentTime),n.gain.setValueAtTime(.15,e.currentTime),n.gain.exponentialRampToValueAtTime(1e-4,e.currentTime+.1),t.connect(n),n.connect(e.destination),t.start(),t.stop(e.currentTime+.1)},r={page:{width:`100%`,minHeight:`100dvh`,fontFamily:`Cairo, sans-serif`,direction:`rtl`,padding:`15px 20px`,boxSizing:`border-box`,position:`relative`,backgroundColor:`#ffffff`,display:`flex`,flexDirection:`column`,opacity:1,visibility:`visible`},container:{maxWidth:`1050px`,margin:`0 auto`,width:`100%`,flex:1,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,position:`relative`,opacity:1,visibility:`visible`},header:{textAlign:`center`,background:`#fff4d6`,padding:`24px 30px`,margin:`30px auto 0 auto`,borderRadius:`25px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,width:`80%`,maxWidth:`480px`,zIndex:20,opacity:1,visibility:`visible`},title:{margin:`0 0 12px 0`,fontSize:`clamp(22px, 5vw, 28px)`,fontWeight:`bold`},highlight:{color:`#ff6b6b`},subtitle:{marginTop:`0px`,color:`#444444`,fontSize:`clamp(15px, 3vw, 18px)`},cardsContainer:{width:`100%`,display:`flex`,alignItems:`center`,justifyContent:`center`,marginTop:`60px`,marginBottom:`35px`,opacity:1,visibility:`visible`},cards:{display:`grid`,gridTemplateColumns:`repeat(3, 1fr)`,columnGap:`50px`,rowGap:`60px`,justifyItems:`center`,width:`100%`,opacity:1,visibility:`visible`},card:{position:`relative`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`250px`,gap:`15px`,minHeight:`115px`,padding:`15px 20px`,borderRadius:`100px`,boxShadow:`0 5px 12px rgba(0,0,0,0.12)`,transition:`0.25s`,cursor:`pointer`,overflow:`visible`,opacity:1,visibility:`visible`},cloud1:{position:`absolute`,width:`45px`,height:`45px`,borderRadius:`50%`,top:`-12px`,right:`30px`,zIndex:0},cloud2:{position:`absolute`,width:`60px`,height:`60px`,borderRadius:`50%`,top:`-25px`,right:`70px`,zIndex:0},cloud3:{position:`absolute`,width:`45px`,height:`45px`,borderRadius:`50%`,top:`-10px`,left:`30px`,zIndex:0},leftSide:{display:`flex`,alignItems:`center`,gap:`12px`,flex:1,zIndex:2},number:{width:`34px`,height:`34px`,borderRadius:`50%`,color:`#fff`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:`16px`,fontWeight:`bold`,flexShrink:0,zIndex:2},text:{flex:1,zIndex:2},titleText:{margin:0,fontSize:`17px`,fontWeight:`bold`,zIndex:2},desc:{margin:`3px 0 0`,fontSize:`14px`,color:`#2d2c2c`,zIndex:2},bottomButtons:{display:`flex`,gap:`15px`,zIndex:100,paddingBottom:`20px`,opacity:1,visibility:`visible`},circleBtn:{width:`55px`,height:`55px`,borderRadius:`50%`,border:`none`,background:`#7f57e7`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`}};return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
+      `}),s&&(0,R.jsx)(`div`,{className:`mad-loading-screen`,role:`status`,"aria-live":`polite`,"aria-label":`جاري تحميل اللعبة`,children:(0,R.jsxs)(`div`,{className:`mad-loading-card`,children:[(0,R.jsx)(`div`,{className:`mad-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`mad-loading-dots`,children:[(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`mad-page-content ${a?`assets-ready`:``}`,"aria-busy":!a,children:[(0,R.jsx)(`button`,{className:`nav-btn home-control`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,style:{position:`absolute`,top:`18px`,left:`23px`,zIndex:100,width:`58px`,height:`58px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`37px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`},children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`nav-btn sound-control`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,style:{position:`absolute`,top:`18px`,right:`23px`,zIndex:100,width:`58px`,height:`58px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`37px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`},children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsxs)(`div`,{className:`title-area`,style:{marginTop:`17px`,textAlign:`center`},children:[(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.7)`,padding:`5px 20px`,borderRadius:`30px`,marginBottom:`10px`},children:(0,R.jsx)(`h1`,{style:{margin:0,fontSize:`27px`,color:`#111111`},children:`مرحبا بك في عالم المدود`})}),(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.5)`,padding:`5px 15px`,borderRadius:`40px`},children:(0,R.jsx)(`p`,{style:{margin:0,fontSize:`19px`,color:`#333`,fontWeight:`bold`},children:`اختر المد الذي تريد اللعب به`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:u.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{style:{color:`#b48484`,marginTop:`26px`,fontSize:`30px`,textShadow:`1px 1px 2px #000`},children:r.title}),r.games.map((r,i)=>{let a=t===r.id;return(0,R.jsx)(`img`,{src:r.img,loading:`eager`,decoding:`async`,className:`game-img-${r.id}`,alt:`لعبة`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>n(null),style:{position:`absolute`,cursor:`pointer`,objectFit:`contain`,transition:`none`,pointerEvents:`auto`,transform:a?`scale(1.15)`:`scale(1)`,filter:a?`drop-shadow(0px 0px 10px rgba(255,190,110,0.8))`:`none`,zIndex:a?999:1}},i)})]},i))})]})]})},ui=(...e)=>e.filter((e,t,n)=>!!e&&e.trim()!==``&&n.indexOf(e)===t).join(` `).trim(),di=e=>e.replace(/([a-z0-9])([A-Z])/g,`$1-$2`).toLowerCase(),fi=e=>e.replace(/^([A-Z])|[\s-_]+(\w)/g,(e,t,n)=>n?n.toUpperCase():t.toLowerCase()),pi=e=>{let t=fi(e);return t.charAt(0).toUpperCase()+t.slice(1)},mi={xmlns:`http://www.w3.org/2000/svg`,width:24,height:24,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:2,strokeLinecap:`round`,strokeLinejoin:`round`},hi=e=>{for(let t in e)if(t.startsWith(`aria-`)||t===`role`||t===`title`)return!0;return!1},gi=(0,b.createContext)({}),_i=()=>(0,b.useContext)(gi),vi=(0,b.forwardRef)(({color:e,size:t,strokeWidth:n,absoluteStrokeWidth:r,className:i=``,children:a,iconNode:o,...s},c)=>{let{size:l=24,strokeWidth:u=2,absoluteStrokeWidth:d=!1,color:f=`currentColor`,className:p=``}=_i()??{},m=r??d?Number(n??u)*24/Number(t??l):n??u;return(0,b.createElement)(`svg`,{ref:c,...mi,width:t??l??mi.width,height:t??l??mi.height,stroke:e??f,strokeWidth:m,className:ui(`lucide`,p,i),...!a&&!hi(s)&&{"aria-hidden":`true`},...s},[...o.map(([e,t])=>(0,b.createElement)(e,t)),...Array.isArray(a)?a:[a]])}),z=(e,t)=>{let n=(0,b.forwardRef)(({className:n,...r},i)=>(0,b.createElement)(vi,{ref:i,iconNode:t,className:ui(`lucide-${di(pi(e))}`,`lucide-${e}`,n),...r}));return n.displayName=pi(e),n},yi=z(`alarm-clock`,[[`circle`,{cx:`12`,cy:`13`,r:`8`,key:`3y4lt7`}],[`path`,{d:`M12 9v4l2 2`,key:`1c63tq`}],[`path`,{d:`M5 3 2 6`,key:`18tl5t`}],[`path`,{d:`m22 6-3-3`,key:`1opdir`}],[`path`,{d:`M6.38 18.7 4 21`,key:`17xu3x`}],[`path`,{d:`M17.64 18.67 20 21`,key:`kv2oe2`}]]),bi=z(`anchor`,[[`path`,{d:`M12 6v16`,key:`nqf5sj`}],[`path`,{d:`m19 13 2-1a9 9 0 0 1-18 0l2 1`,key:`y7qv08`}],[`path`,{d:`M9 11h6`,key:`1fldmi`}],[`circle`,{cx:`12`,cy:`4`,r:`2`,key:`muu5ef`}]]),xi=z(`apple`,[[`path`,{d:`M12 6.528V3a1 1 0 0 1 1-1h0`,key:`11qiee`}],[`path`,{d:`M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21`,key:`110c12`}]]),Si=z(`arrow-left`,[[`path`,{d:`m12 19-7-7 7-7`,key:`1l729n`}],[`path`,{d:`M19 12H5`,key:`x3x0zl`}]]),B=z(`arrow-right`,[[`path`,{d:`M5 12h14`,key:`1ays0h`}],[`path`,{d:`m12 5 7 7-7 7`,key:`xquz4c`}]]),Ci=z(`audio-lines`,[[`path`,{d:`M2 10v3`,key:`1fnikh`}],[`path`,{d:`M6 6v11`,key:`11sgs0`}],[`path`,{d:`M10 3v18`,key:`yhl04a`}],[`path`,{d:`M14 8v7`,key:`3a1oy3`}],[`path`,{d:`M18 5v13`,key:`123xd1`}],[`path`,{d:`M22 10v3`,key:`154ddg`}]]),wi=z(`audio-waveform`,[[`path`,{d:`M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2`,key:`57tc96`}]]),Ti=z(`award`,[[`path`,{d:`m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526`,key:`1yiouv`}],[`circle`,{cx:`12`,cy:`8`,r:`6`,key:`1vp47v`}]]),Ei=z(`bird`,[[`path`,{d:`M16 7h.01`,key:`1kdx03`}],[`path`,{d:`M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20`,key:`oj1oa8`}],[`path`,{d:`m20 7 2 .5-2 .5`,key:`12nv4d`}],[`path`,{d:`M10 18v3`,key:`1yea0a`}],[`path`,{d:`M14 17.75V21`,key:`1pymcb`}],[`path`,{d:`M7 18a6 6 0 0 0 3.84-10.61`,key:`1npnn0`}]]),Di=z(`blocks`,[[`path`,{d:`M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2`,key:`1ah6g2`}],[`rect`,{x:`14`,y:`2`,width:`8`,height:`8`,rx:`1`,key:`88lufb`}]]),Oi=z(`bone`,[[`path`,{d:`M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z`,key:`w610uw`}]]),ki=z(`book-open`,[[`path`,{d:`M12 7v14`,key:`1akyts`}],[`path`,{d:`M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z`,key:`ruj8y`}]]),Ai=z(`bug`,[[`path`,{d:`M12 20v-9`,key:`1qisl0`}],[`path`,{d:`M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z`,key:`uouzyp`}],[`path`,{d:`M14.12 3.88 16 2`,key:`qol33r`}],[`path`,{d:`M21 21a4 4 0 0 0-3.81-4`,key:`1b0z45`}],[`path`,{d:`M21 5a4 4 0 0 1-3.55 3.97`,key:`5cxbf6`}],[`path`,{d:`M22 13h-4`,key:`1jl80f`}],[`path`,{d:`M3 21a4 4 0 0 1 3.81-4`,key:`1fjd4g`}],[`path`,{d:`M3 5a4 4 0 0 0 3.55 3.97`,key:`1d7oge`}],[`path`,{d:`M6 13H2`,key:`82j7cp`}],[`path`,{d:`m8 2 1.88 1.88`,key:`fmnt4t`}],[`path`,{d:`M9 7.13V6a3 3 0 1 1 6 0v1.13`,key:`1vgav8`}]]),ji=z(`candy`,[[`path`,{d:`M10 7v10.9`,key:`1gynux`}],[`path`,{d:`M14 6.1V17`,key:`116kdf`}],[`path`,{d:`M16 7V3a1 1 0 0 1 1.707-.707 2.5 2.5 0 0 0 2.152.717 1 1 0 0 1 1.131 1.131 2.5 2.5 0 0 0 .717 2.152A1 1 0 0 1 21 8h-4`,key:`gpb6xx`}],[`path`,{d:`M16.536 7.465a5 5 0 0 0-7.072 0l-2 2a5 5 0 0 0 0 7.07 5 5 0 0 0 7.072 0l2-2a5 5 0 0 0 0-7.07`,key:`1tsln4`}],[`path`,{d:`M8 17v4a1 1 0 0 1-1.707.707 2.5 2.5 0 0 0-2.152-.717 1 1 0 0 1-1.131-1.131 2.5 2.5 0 0 0-.717-2.152A1 1 0 0 1 3 16h4`,key:`qexcha`}]]),Mi=z(`car-front`,[[`path`,{d:`m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8`,key:`1imjwt`}],[`path`,{d:`M7 14h.01`,key:`1qa3f1`}],[`path`,{d:`M17 14h.01`,key:`7oqj8z`}],[`rect`,{width:`18`,height:`8`,x:`3`,y:`10`,rx:`2`,key:`a7itu8`}],[`path`,{d:`M5 18v2`,key:`ppbyun`}],[`path`,{d:`M19 18v2`,key:`gy7782`}]]),Ni=z(`car`,[[`path`,{d:`M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2`,key:`5owen`}],[`circle`,{cx:`7`,cy:`17`,r:`2`,key:`u2ysq9`}],[`path`,{d:`M9 17h6`,key:`r8uit2`}],[`circle`,{cx:`17`,cy:`17`,r:`2`,key:`axvx0g`}]]),Pi=z(`carrot`,[[`path`,{d:`M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM8.64 14l-2.05-2.04M15.34 15l-2.46-2.46`,key:`rfqxbe`}],[`path`,{d:`M22 9s-1.33-2-3.5-2C16.86 7 15 9 15 9s1.33 2 3.5 2S22 9 22 9z`,key:`6b25w4`}],[`path`,{d:`M15 2s-2 1.33-2 3.5S15 9 15 9s2-1.84 2-3.5C17 3.33 15 2 15 2z`,key:`fn65lo`}]]),Fi=z(`chart-column`,[[`path`,{d:`M3 3v16a2 2 0 0 0 2 2h16`,key:`c24i48`}],[`path`,{d:`M18 17V9`,key:`2bz60n`}],[`path`,{d:`M13 17V5`,key:`1frdt8`}],[`path`,{d:`M8 17v-3`,key:`17ska0`}]]),Ii=z(`check`,[[`path`,{d:`M20 6 9 17l-5-5`,key:`1gmf2c`}]]),Li=z(`chef-hat`,[[`path`,{d:`M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z`,key:`1qvrer`}],[`path`,{d:`M6 17h12`,key:`1jwigz`}]]),Ri=z(`cherry`,[[`path`,{d:`M2 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z`,key:`cvxqlc`}],[`path`,{d:`M12 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z`,key:`1ostrc`}],[`path`,{d:`M7 14c3.22-2.91 4.29-8.75 5-12 1.66 2.38 4.94 9 5 12`,key:`hqx58h`}],[`path`,{d:`M22 9c-4.29 0-7.14-2.33-10-7 5.71 0 10 4.67 10 7Z`,key:`eykp1o`}]]),zi=z(`circle-check-big`,[[`path`,{d:`M21.801 10A10 10 0 1 1 17 3.335`,key:`yps3ct`}],[`path`,{d:`m9 11 3 3L22 4`,key:`1pflzl`}]]),Bi=z(`circle-dot`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`circle`,{cx:`12`,cy:`12`,r:`1`,key:`41hilf`}]]),Vi=z(`circle-plus`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M8 12h8`,key:`1wcyev`}],[`path`,{d:`M12 8v8`,key:`napkw2`}]]),Hi=z(`circle-question-mark`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3`,key:`1u773s`}],[`path`,{d:`M12 17h.01`,key:`p32p05`}]]),Ui=z(`circle-x`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`m15 9-6 6`,key:`1uzhvr`}],[`path`,{d:`m9 9 6 6`,key:`z0biqf`}]]),Wi=z(`circle`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}]]),Gi=z(`clock-3`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M12 6v6h4`,key:`135r8i`}]]),Ki=z(`clock`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M12 6v6l4 2`,key:`mmk7yg`}]]),qi=z(`cloud-snow`,[[`path`,{d:`M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242`,key:`1pljnt`}],[`path`,{d:`M8 15h.01`,key:`a7atzg`}],[`path`,{d:`M8 19h.01`,key:`puxtts`}],[`path`,{d:`M12 17h.01`,key:`p32p05`}],[`path`,{d:`M12 21h.01`,key:`h35vbk`}],[`path`,{d:`M16 15h.01`,key:`rnfrdf`}],[`path`,{d:`M16 19h.01`,key:`1vcnzz`}]]),Ji=z(`cloud`,[[`path`,{d:`M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z`,key:`p7xjir`}]]),Yi=z(`compass`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z`,key:`9ktpf1`}]]),Xi=z(`cookie`,[[`path`,{d:`M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5`,key:`laymnq`}],[`path`,{d:`M8.5 8.5v.01`,key:`ue8clq`}],[`path`,{d:`M16 15.5v.01`,key:`14dtrp`}],[`path`,{d:`M12 12v.01`,key:`u5ubse`}],[`path`,{d:`M11 17v.01`,key:`1hyl5a`}],[`path`,{d:`M7 14v.01`,key:`uct60s`}]]),Zi=z(`cooking-pot`,[[`path`,{d:`M2 12h20`,key:`9i4pu4`}],[`path`,{d:`M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8`,key:`u0tga0`}],[`path`,{d:`m4 8 16-4`,key:`16g0ng`}],[`path`,{d:`m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8`,key:`12cejc`}]]),Qi=z(`crosshair`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`line`,{x1:`22`,x2:`18`,y1:`12`,y2:`12`,key:`l9bcsi`}],[`line`,{x1:`6`,x2:`2`,y1:`12`,y2:`12`,key:`13hhkx`}],[`line`,{x1:`12`,x2:`12`,y1:`6`,y2:`2`,key:`10w3f3`}],[`line`,{x1:`12`,x2:`12`,y1:`22`,y2:`18`,key:`15g9kq`}]]),$i=z(`crown`,[[`path`,{d:`M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z`,key:`1vdc57`}],[`path`,{d:`M5 21h14`,key:`11awu3`}]]),ea=z(`download`,[[`path`,{d:`M12 15V3`,key:`m9g1x1`}],[`path`,{d:`M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4`,key:`ih7n3h`}],[`path`,{d:`m7 10 5 5 5-5`,key:`brsn70`}]]),ta=z(`droplets`,[[`path`,{d:`M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z`,key:`1ptgy4`}],[`path`,{d:`M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97`,key:`1sl1rz`}]]),na=z(`drumstick`,[[`path`,{d:`M15.4 15.63a7.875 6 135 1 1 6.23-6.23 4.5 3.43 135 0 0-6.23 6.23`,key:`1dtqwm`}],[`path`,{d:`m8.29 12.71-2.6 2.6a2.5 2.5 0 1 0-1.65 4.65A2.5 2.5 0 1 0 8.7 18.3l2.59-2.59`,key:`1oq1fw`}]]),ra=z(`ear`,[[`path`,{d:`M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0`,key:`1dfaln`}],[`path`,{d:`M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4`,key:`1qnva7`}]]),ia=z(`egg`,[[`path`,{d:`M12 2C8 2 4 8 4 14a8 8 0 0 0 16 0c0-6-4-12-8-12`,key:`1le142`}]]),aa=z(`eraser`,[[`path`,{d:`M21 21H8a2 2 0 0 1-1.42-.587l-3.994-3.999a2 2 0 0 1 0-2.828l10-10a2 2 0 0 1 2.829 0l5.999 6a2 2 0 0 1 0 2.828L12.834 21`,key:`g5wo59`}],[`path`,{d:`m5.082 11.09 8.828 8.828`,key:`1wx5vj`}]]),oa=z(`feather`,[[`path`,{d:`M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z`,key:`18jl4k`}],[`path`,{d:`M16 8 2 22`,key:`vp34q`}],[`path`,{d:`M17.5 15H9`,key:`1oz8nu`}]]),sa=z(`fish`,[[`path`,{d:`M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z`,key:`15baut`}],[`path`,{d:`M18 12v.5`,key:`18hhni`}],[`path`,{d:`M16 17.93a9.77 9.77 0 0 1 0-11.86`,key:`16dt7o`}],[`path`,{d:`M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33`,key:`l9di03`}],[`path`,{d:`M10.46 7.26C10.2 5.88 9.17 4.24 8 3h5.8a2 2 0 0 1 1.98 1.67l.23 1.4`,key:`1kjonw`}],[`path`,{d:`m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98`,key:`1zlm23`}]]),ca=z(`flag`,[[`path`,{d:`M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528`,key:`1jaruq`}]]),la=z(`flower-2`,[[`path`,{d:`M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1`,key:`3pnvol`}],[`circle`,{cx:`12`,cy:`8`,r:`2`,key:`1822b1`}],[`path`,{d:`M12 10v12`,key:`6ubwww`}],[`path`,{d:`M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z`,key:`9hd38g`}],[`path`,{d:`M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z`,key:`ufn41s`}]]),ua=z(`footprints`,[[`path`,{d:`M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z`,key:`1dudjm`}],[`path`,{d:`M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z`,key:`l2t8xc`}],[`path`,{d:`M16 17h4`,key:`1dejxt`}],[`path`,{d:`M4 13h4`,key:`1bwh8b`}]]),da=z(`gamepad-2`,[[`line`,{x1:`6`,x2:`10`,y1:`11`,y2:`11`,key:`1gktln`}],[`line`,{x1:`8`,x2:`8`,y1:`9`,y2:`13`,key:`qnk9ow`}],[`line`,{x1:`15`,x2:`15.01`,y1:`12`,y2:`12`,key:`krot7o`}],[`line`,{x1:`18`,x2:`18.01`,y1:`10`,y2:`10`,key:`1lcuu1`}],[`path`,{d:`M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z`,key:`mfqc10`}]]),fa=z(`gauge`,[[`path`,{d:`m12 14 4-4`,key:`9kzdfg`}],[`path`,{d:`M3.34 19a10 10 0 1 1 17.32 0`,key:`19p75a`}]]),pa=z(`gem`,[[`path`,{d:`M10.5 3 8 9l4 13 4-13-2.5-6`,key:`b3dvk1`}],[`path`,{d:`M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z`,key:`7w4byz`}],[`path`,{d:`M2 9h20`,key:`16fsjt`}]]),ma=z(`gift`,[[`path`,{d:`M12 7v14`,key:`1akyts`}],[`path`,{d:`M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8`,key:`1sqzm4`}],[`path`,{d:`M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5`,key:`kc0143`}],[`rect`,{x:`3`,y:`7`,width:`18`,height:`4`,rx:`1`,key:`1hberx`}]]),ha=z(`goal`,[[`path`,{d:`M12 13V2l8 4-8 4`,key:`5wlwwj`}],[`path`,{d:`M20.561 10.222a9 9 0 1 1-12.55-5.29`,key:`1c0wjv`}],[`path`,{d:`M8.002 9.997a5 5 0 1 0 8.9 2.02`,key:`gb1g7m`}]]),ga=z(`graduation-cap`,[[`path`,{d:`M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z`,key:`j76jl0`}],[`path`,{d:`M22 10v6`,key:`1lu8f3`}],[`path`,{d:`M6 12.5V16a6 3 0 0 0 12 0v-3.5`,key:`1r8lef`}]]),_a=z(`headphones`,[[`path`,{d:`M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3`,key:`1xhozi`}]]),va=z(`heart`,[[`path`,{d:`M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5`,key:`mvr1a0`}]]),ya=z(`hexagon`,[[`path`,{d:`M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z`,key:`yt0hxn`}]]),V=z(`house`,[[`path`,{d:`M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8`,key:`5wwlr5`}],[`path`,{d:`M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z`,key:`r6nss1`}]]),ba=z(`ice-cream-cone`,[[`path`,{d:`m7 11 4.08 10.35a1 1 0 0 0 1.84 0L17 11`,key:`1v6356`}],[`path`,{d:`M17 7A5 5 0 0 0 7 7`,key:`151p3v`}],[`path`,{d:`M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4`,key:`1sdaij`}]]),xa=z(`key-round`,[[`path`,{d:`M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z`,key:`1s6t7t`}],[`circle`,{cx:`16.5`,cy:`7.5`,r:`.5`,fill:`currentColor`,key:`w0ekpg`}]]),Sa=z(`leaf`,[[`path`,{d:`M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z`,key:`nnexq3`}],[`path`,{d:`M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12`,key:`mt58a7`}]]),Ca=z(`lightbulb`,[[`path`,{d:`M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5`,key:`1gvzjb`}],[`path`,{d:`M9 18h6`,key:`x1upvd`}],[`path`,{d:`M10 22h4`,key:`ceow96`}]]),wa=z(`log-out`,[[`path`,{d:`m16 17 5-5-5-5`,key:`1bji2h`}],[`path`,{d:`M21 12H9`,key:`dn1m92`}],[`path`,{d:`M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4`,key:`1uf3rs`}]]),Ta=z(`magnet`,[[`path`,{d:`m12 15 4 4`,key:`lnac28`}],[`path`,{d:`M2.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.029-6.029a1 1 0 1 1 3 3l-6.029 6.029a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l6.365-6.367A1 1 0 0 0 8.716 4.282z`,key:`nlhkjb`}],[`path`,{d:`m5 8 4 4`,key:`j6kj7e`}]]),Ea=z(`map`,[[`path`,{d:`M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z`,key:`169xi5`}],[`path`,{d:`M15 5.764v15`,key:`1pn4in`}],[`path`,{d:`M9 3.236v15`,key:`1uimfh`}]]),Da=z(`medal`,[[`path`,{d:`M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15`,key:`143lza`}],[`path`,{d:`M11 12 5.12 2.2`,key:`qhuxz6`}],[`path`,{d:`m13 12 5.88-9.8`,key:`hbye0f`}],[`path`,{d:`M8 7h8`,key:`i86dvs`}],[`circle`,{cx:`12`,cy:`17`,r:`5`,key:`qbz8iq`}],[`path`,{d:`M12 18v-2h-.5`,key:`fawc4q`}]]),Oa=z(`mic-vocal`,[[`path`,{d:`m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12`,key:`80a601`}],[`path`,{d:`M16.5 21.174C15.5 20.5 14.372 20 13 20c-2.058 0-3.928 2.356-6 2-2.072-.356-2.775-3.369-1.5-4.5`,key:`j0ngtp`}],[`circle`,{cx:`16`,cy:`7`,r:`5`,key:`d08jfb`}]]),ka=z(`moon-star`,[[`path`,{d:`M18 5h4`,key:`1lhgn2`}],[`path`,{d:`M20 3v4`,key:`1olli1`}],[`path`,{d:`M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401`,key:`kfwtm`}]]),Aa=z(`moon`,[[`path`,{d:`M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401`,key:`kfwtm`}]]),ja=z(`mountain`,[[`path`,{d:`m8 3 4 8 5-5 5 15H2L8 3z`,key:`otkl63`}]]),Ma=z(`music-2`,[[`circle`,{cx:`8`,cy:`18`,r:`4`,key:`1fc0mg`}],[`path`,{d:`M12 18V2l7 4`,key:`g04rme`}]]),Na=z(`orbit`,[[`path`,{d:`M20.341 6.484A10 10 0 0 1 10.266 21.85`,key:`1enhxb`}],[`path`,{d:`M3.659 17.516A10 10 0 0 1 13.74 2.152`,key:`1crzgf`}],[`circle`,{cx:`12`,cy:`12`,r:`3`,key:`1v7zrd`}],[`circle`,{cx:`19`,cy:`5`,r:`2`,key:`mhkx31`}],[`circle`,{cx:`5`,cy:`19`,r:`2`,key:`v8kfzx`}]]),Pa=z(`paintbrush`,[[`path`,{d:`m14.622 17.897-10.68-2.913`,key:`vj2p1u`}],[`path`,{d:`M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z`,key:`18tc5c`}],[`path`,{d:`M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15`,key:`ytzfxy`}]]),Fa=z(`palette`,[[`path`,{d:`M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z`,key:`e79jfc`}],[`circle`,{cx:`13.5`,cy:`6.5`,r:`.5`,fill:`currentColor`,key:`1okk4w`}],[`circle`,{cx:`17.5`,cy:`10.5`,r:`.5`,fill:`currentColor`,key:`f64h9f`}],[`circle`,{cx:`6.5`,cy:`12.5`,r:`.5`,fill:`currentColor`,key:`qy21gx`}],[`circle`,{cx:`8.5`,cy:`7.5`,r:`.5`,fill:`currentColor`,key:`fotxhn`}]]),Ia=z(`party-popper`,[[`path`,{d:`M5.8 11.3 2 22l10.7-3.79`,key:`gwxi1d`}],[`path`,{d:`M4 3h.01`,key:`1vcuye`}],[`path`,{d:`M22 8h.01`,key:`1mrtc2`}],[`path`,{d:`M15 2h.01`,key:`1cjtqr`}],[`path`,{d:`M22 20h.01`,key:`1mrys2`}],[`path`,{d:`m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10`,key:`hbicv8`}],[`path`,{d:`m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17`,key:`1i94pl`}],[`path`,{d:`m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7`,key:`1cofks`}],[`path`,{d:`M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z`,key:`4kbmks`}]]),La=z(`paw-print`,[[`circle`,{cx:`11`,cy:`4`,r:`2`,key:`vol9p0`}],[`circle`,{cx:`18`,cy:`8`,r:`2`,key:`17gozi`}],[`circle`,{cx:`20`,cy:`16`,r:`2`,key:`1v9bxh`}],[`path`,{d:`M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z`,key:`1ydw1z`}]]),Ra=z(`pencil-line`,[[`path`,{d:`M13 21h8`,key:`1jsn5i`}],[`path`,{d:`m15 5 4 4`,key:`1mk7zo`}],[`path`,{d:`M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z`,key:`1a8usu`}]]),za=z(`pencil`,[[`path`,{d:`M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z`,key:`1a8usu`}],[`path`,{d:`m15 5 4 4`,key:`1mk7zo`}]]),Ba=z(`pickaxe`,[[`path`,{d:`m14 13-8.381 8.38a1 1 0 0 1-3.001-3L11 9.999`,key:`1lw9ds`}],[`path`,{d:`M15.973 4.027A13 13 0 0 0 5.902 2.373c-1.398.342-1.092 2.158.277 2.601a19.9 19.9 0 0 1 5.822 3.024`,key:`ffj4ej`}],[`path`,{d:`M16.001 11.999a19.9 19.9 0 0 1 3.024 5.824c.444 1.369 2.26 1.676 2.603.278A13 13 0 0 0 20 8.069`,key:`8tj4zw`}],[`path`,{d:`M18.352 3.352a1.205 1.205 0 0 0-1.704 0l-5.296 5.296a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l5.296-5.296a1.205 1.205 0 0 0 0-1.704z`,key:`hh6h97`}]]),Va=z(`pizza`,[[`path`,{d:`m12 14-1 1`,key:`11onhr`}],[`path`,{d:`m13.75 18.25-1.25 1.42`,key:`1yisr3`}],[`path`,{d:`M17.775 5.654a15.68 15.68 0 0 0-12.121 12.12`,key:`1qtqk6`}],[`path`,{d:`M18.8 9.3a1 1 0 0 0 2.1 7.7`,key:`fbbbr2`}],[`path`,{d:`M21.964 20.732a1 1 0 0 1-1.232 1.232l-18-5a1 1 0 0 1-.695-1.232A19.68 19.68 0 0 1 15.732 2.037a1 1 0 0 1 1.232.695z`,key:`1hyfdd`}]]),Ha=z(`plane`,[[`path`,{d:`M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z`,key:`1v9wt8`}]]),Ua=z(`puzzle`,[[`path`,{d:`M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z`,key:`w46dr5`}]]),Wa=z(`refresh-cw`,[[`path`,{d:`M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8`,key:`v9h5vc`}],[`path`,{d:`M21 3v5h-5`,key:`1q7to0`}],[`path`,{d:`M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16`,key:`3uifl3`}],[`path`,{d:`M8 16H3v5`,key:`1cv678`}]]),Ga=z(`rocket`,[[`path`,{d:`M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5`,key:`qeys4`}],[`path`,{d:`M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09`,key:`u4xsad`}],[`path`,{d:`M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z`,key:`676m9`}],[`path`,{d:`M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05`,key:`92ym6u`}]]),H=z(`rotate-ccw`,[[`path`,{d:`M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8`,key:`1357e3`}],[`path`,{d:`M3 3v5h5`,key:`1xhq8a`}]]),Ka=z(`satellite`,[[`path`,{d:`m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5`,key:`dzhfyz`}],[`path`,{d:`M16.5 7.5 19 5`,key:`1ltcjm`}],[`path`,{d:`m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5`,key:`nfoymv`}],[`path`,{d:`M9 21a6 6 0 0 0-6-6`,key:`1iajcf`}],[`path`,{d:`M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z`,key:`nv9zqy`}]]),qa=z(`shapes`,[[`path`,{d:`M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z`,key:`1bo67w`}],[`rect`,{x:`3`,y:`14`,width:`7`,height:`7`,rx:`1`,key:`1bkyp8`}],[`circle`,{cx:`17.5`,cy:`17.5`,r:`3.5`,key:`w3z12y`}]]),Ja=z(`shell`,[[`path`,{d:`M14 11a2 2 0 1 1-4 0 4 4 0 0 1 8 0 6 6 0 0 1-12 0 8 8 0 0 1 16 0 10 10 0 1 1-20 0 11.93 11.93 0 0 1 2.42-7.22 2 2 0 1 1 3.16 2.44`,key:`1cn552`}]]),Ya=z(`shield-check`,[[`path`,{d:`M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z`,key:`oel41y`}],[`path`,{d:`m9 12 2 2 4-4`,key:`dzmm74`}]]),Xa=z(`ship-wheel`,[[`circle`,{cx:`12`,cy:`12`,r:`8`,key:`46899m`}],[`path`,{d:`M12 2v7.5`,key:`1e5rl5`}],[`path`,{d:`m19 5-5.23 5.23`,key:`1ezxxf`}],[`path`,{d:`M22 12h-7.5`,key:`le1719`}],[`path`,{d:`m19 19-5.23-5.23`,key:`p3fmgn`}],[`path`,{d:`M12 14.5V22`,key:`dgcmos`}],[`path`,{d:`M10.23 13.77 5 19`,key:`qwopd4`}],[`path`,{d:`M9.5 12H2`,key:`r7bup8`}],[`path`,{d:`M10.23 10.23 5 5`,key:`k2y7lj`}],[`circle`,{cx:`12`,cy:`12`,r:`2.5`,key:`ix0uyj`}]]),Za=z(`shopping-basket`,[[`path`,{d:`m15 11-1 9`,key:`5wnq3a`}],[`path`,{d:`m19 11-4-7`,key:`cnml18`}],[`path`,{d:`M2 11h20`,key:`3eubbj`}],[`path`,{d:`m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4`,key:`yiazzp`}],[`path`,{d:`M4.5 15.5h15`,key:`13mye1`}],[`path`,{d:`m5 11 4-7`,key:`116ra9`}],[`path`,{d:`m9 11 1 9`,key:`1ojof7`}]]),Qa=z(`signpost`,[[`path`,{d:`M12 13v8`,key:`1l5pq0`}],[`path`,{d:`M12 3v3`,key:`1n5kay`}],[`path`,{d:`M2.354 10.354a1.207 1.207 0 0 1 0-1.708l2.06-2.06A2 2 0 0 1 5.828 6h12.344a2 2 0 0 1 1.414.586l2.06 2.06a1.207 1.207 0 0 1 0 1.708l-2.06 2.06a2 2 0 0 1-1.414.586H5.828a2 2 0 0 1-1.414-.586z`,key:`1tm261`}]]),$a=z(`smile`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`M8 14s1.5 2 4 2 4-2 4-2`,key:`1y1vjs`}],[`line`,{x1:`9`,x2:`9.01`,y1:`9`,y2:`9`,key:`yxxnd0`}],[`line`,{x1:`15`,x2:`15.01`,y1:`9`,y2:`9`,key:`1p4y9e`}]]),eo=z(`snowflake`,[[`path`,{d:`m10 20-1.25-2.5L6 18`,key:`18frcb`}],[`path`,{d:`M10 4 8.75 6.5 6 6`,key:`7mghy3`}],[`path`,{d:`m14 20 1.25-2.5L18 18`,key:`1chtki`}],[`path`,{d:`m14 4 1.25 2.5L18 6`,key:`1b4wsy`}],[`path`,{d:`m17 21-3-6h-4`,key:`15hhxa`}],[`path`,{d:`m17 3-3 6 1.5 3`,key:`11697g`}],[`path`,{d:`M2 12h6.5L10 9`,key:`kv9z4n`}],[`path`,{d:`m20 10-1.5 2 1.5 2`,key:`1swlpi`}],[`path`,{d:`M22 12h-6.5L14 15`,key:`1mxi28`}],[`path`,{d:`m4 10 1.5 2L4 14`,key:`k9enpj`}],[`path`,{d:`m7 21 3-6-1.5-3`,key:`j8hb9u`}],[`path`,{d:`m7 3 3 6h4`,key:`1otusx`}]]),to=z(`sparkles`,[[`path`,{d:`M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z`,key:`1s2grr`}],[`path`,{d:`M20 2v4`,key:`1rf3ol`}],[`path`,{d:`M22 4h-4`,key:`gwowj6`}],[`circle`,{cx:`4`,cy:`20`,r:`2`,key:`6kqj1y`}]]),no=z(`sprout`,[[`path`,{d:`M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3`,key:`139s4v`}],[`path`,{d:`M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4`,key:`1dlkgp`}],[`path`,{d:`M5 21h14`,key:`11awu3`}]]),ro=z(`star`,[[`path`,{d:`M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z`,key:`r04s7s`}]]),io=z(`sun`,[[`circle`,{cx:`12`,cy:`12`,r:`4`,key:`4exip2`}],[`path`,{d:`M12 2v2`,key:`tus03m`}],[`path`,{d:`M12 20v2`,key:`1lh1kg`}],[`path`,{d:`m4.93 4.93 1.41 1.41`,key:`149t6j`}],[`path`,{d:`m17.66 17.66 1.41 1.41`,key:`ptbguv`}],[`path`,{d:`M2 12h2`,key:`1t8f8n`}],[`path`,{d:`M20 12h2`,key:`1q8mjw`}],[`path`,{d:`m6.34 17.66-1.41 1.41`,key:`1m8zz5`}],[`path`,{d:`m19.07 4.93-1.41 1.41`,key:`1shlcs`}]]),ao=z(`tag`,[[`path`,{d:`M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z`,key:`vktsd0`}],[`circle`,{cx:`7.5`,cy:`7.5`,r:`.5`,fill:`currentColor`,key:`kqv944`}]]),oo=z(`target`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`circle`,{cx:`12`,cy:`12`,r:`6`,key:`1vlfrh`}],[`circle`,{cx:`12`,cy:`12`,r:`2`,key:`1c9p78`}]]),so=z(`tree-pine`,[[`path`,{d:`m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z`,key:`cpyugq`}],[`path`,{d:`M12 22v-3`,key:`kmzjlo`}]]),co=z(`trees`,[[`path`,{d:`M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z`,key:`1l6gj6`}],[`path`,{d:`M7 16v6`,key:`1a82de`}],[`path`,{d:`M13 19v3`,key:`13sx9i`}],[`path`,{d:`M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5`,key:`1sj9kv`}]]),lo=z(`trophy`,[[`path`,{d:`M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978`,key:`1n3hpd`}],[`path`,{d:`M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978`,key:`rfe1zi`}],[`path`,{d:`M18 9h1.5a1 1 0 0 0 0-5H18`,key:`7xy6bh`}],[`path`,{d:`M4 22h16`,key:`57wxv0`}],[`path`,{d:`M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z`,key:`1mhfuq`}],[`path`,{d:`M6 9H4.5a1 1 0 0 1 0-5H6`,key:`tex48p`}]]),uo=z(`type`,[[`path`,{d:`M12 4v16`,key:`1654pz`}],[`path`,{d:`M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2`,key:`e0r10z`}],[`path`,{d:`M9 20h6`,key:`s66wpe`}]]),fo=z(`user-round`,[[`circle`,{cx:`12`,cy:`8`,r:`5`,key:`1hypcn`}],[`path`,{d:`M20 21a8 8 0 0 0-16 0`,key:`rfgkzh`}]]),po=z(`user`,[[`path`,{d:`M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2`,key:`975kel`}],[`circle`,{cx:`12`,cy:`7`,r:`4`,key:`17ys0d`}]]),mo=z(`utensils`,[[`path`,{d:`M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2`,key:`cjf0a3`}],[`path`,{d:`M7 2v20`,key:`1473qp`}],[`path`,{d:`M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7`,key:`j28e5`}]]),U=z(`volume-2`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`path`,{d:`M16 9a5 5 0 0 1 0 6`,key:`1q6k2b`}],[`path`,{d:`M19.364 18.364a9 9 0 0 0 0-12.728`,key:`ijwkga`}]]),ho=z(`volume-x`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`line`,{x1:`22`,x2:`16`,y1:`9`,y2:`15`,key:`1ewh16`}],[`line`,{x1:`16`,x2:`22`,y1:`9`,y2:`15`,key:`5ykzw1`}]]),go=z(`wand-sparkles`,[[`path`,{d:`m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72`,key:`ul74o6`}],[`path`,{d:`m14 7 3 3`,key:`1r5n42`}],[`path`,{d:`M5 6v4`,key:`ilb8ba`}],[`path`,{d:`M19 14v4`,key:`blhpug`}],[`path`,{d:`M10 2v2`,key:`7u0qdc`}],[`path`,{d:`M7 8H3`,key:`zfb6yr`}],[`path`,{d:`M21 16h-4`,key:`1cnmox`}],[`path`,{d:`M11 3H9`,key:`1obp7u`}]]),_o=z(`waves-horizontal`,[[`path`,{d:`M2 12q2.5 2 5 0t5 0 5 0 5 0`,key:`8ddzzs`}],[`path`,{d:`M2 19q2.5 2 5 0t5 0 5 0 5 0`,key:`1wj4st`}],[`path`,{d:`M2 5q2.5 2 5 0t5 0 5 0 5 0`,key:`69x50u`}]]),vo=z(`wheat`,[[`path`,{d:`M2 22 16 8`,key:`60hf96`}],[`path`,{d:`M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z`,key:`1rdhi6`}],[`path`,{d:`M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z`,key:`1sdzmb`}],[`path`,{d:`M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z`,key:`eoatbi`}],[`path`,{d:`M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z`,key:`19rau1`}],[`path`,{d:`M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z`,key:`tc8ph9`}],[`path`,{d:`M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z`,key:`2m8kc5`}],[`path`,{d:`M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z`,key:`vex3ng`}]]),yo=z(`wind`,[[`path`,{d:`M12.8 19.6A2 2 0 1 0 14 16H2`,key:`148xed`}],[`path`,{d:`M17.5 8a2.5 2.5 0 1 1 2 4H2`,key:`1u4tom`}],[`path`,{d:`M9.8 4.4A2 2 0 1 1 11 8H2`,key:`75valh`}]]),bo=z(`x`,[[`path`,{d:`M18 6 6 18`,key:`1bl5f8`}],[`path`,{d:`m6 6 12 12`,key:`d8bk6v`}]]),xo=z(`zap`,[[`path`,{d:`M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z`,key:`1xq2db`}]]);function So(){let e=I(),t=[{id:1,title:`لعبة الأكل السريع`,desc:`أطعم البطل الحروف المرققة فقط`,color:`#cfe8ff`,numberColor:`#4da6ff`},{id:2,title:`لعبة صيد الحروف`,desc:`إصطد الحروف المرققة فقط`,color:`#d9f7d9`,numberColor:`#4cd964`},{id:3,title:`لعبة سلة التفاح`,desc:`اجمع الحروف المرققة فقط`,color:`#fff2cc`,numberColor:`#ffb84d`},{id:4,title:`لعبة المدفع`,desc:` إضرب الحروف المرققة فقط`,color:`#eee0ff`,numberColor:`#b366ff`},{id:5,title:`لعبة  النحلة`,desc:`اضغط على الزهرة ذات الحروف المرققة`,color:`#ffd6e0`,numberColor:`#ff4d88`}],n=()=>{let e=new(window.AudioContext||window.webkitAudioContext),t=e.createOscillator(),n=e.createGain();t.type=`square`,t.frequency.setValueAtTime(900,e.currentTime),n.gain.setValueAtTime(.15,e.currentTime),n.gain.exponentialRampToValueAtTime(1e-4,e.currentTime+.1),t.connect(n),n.connect(e.destination),t.start(),t.stop(e.currentTime+.1)},r={page:{width:`100%`,minHeight:`100dvh`,fontFamily:`Cairo, sans-serif`,direction:`rtl`,padding:`15px 20px`,boxSizing:`border-box`,position:`relative`,backgroundColor:`#ffffff`,display:`flex`,flexDirection:`column`,opacity:1,visibility:`visible`},container:{maxWidth:`1050px`,margin:`0 auto`,width:`100%`,flex:1,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,position:`relative`,opacity:1,visibility:`visible`},header:{textAlign:`center`,background:`#fff4d6`,padding:`24px 30px`,margin:`30px auto 0 auto`,borderRadius:`25px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,width:`80%`,maxWidth:`480px`,zIndex:20,opacity:1,visibility:`visible`},title:{margin:`0 0 12px 0`,fontSize:`clamp(22px, 5vw, 28px)`,fontWeight:`bold`},highlight:{color:`#ff6b6b`},subtitle:{marginTop:`0px`,color:`#444444`,fontSize:`clamp(15px, 3vw, 18px)`},cardsContainer:{width:`100%`,display:`flex`,alignItems:`center`,justifyContent:`center`,marginTop:`60px`,marginBottom:`35px`,opacity:1,visibility:`visible`},cards:{display:`grid`,gridTemplateColumns:`repeat(3, 1fr)`,columnGap:`50px`,rowGap:`60px`,justifyItems:`center`,width:`100%`,opacity:1,visibility:`visible`},card:{position:`relative`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`250px`,gap:`15px`,minHeight:`115px`,padding:`15px 20px`,borderRadius:`100px`,boxShadow:`0 5px 12px rgba(0,0,0,0.12)`,transition:`0.25s`,cursor:`pointer`,overflow:`visible`,opacity:1,visibility:`visible`},cloud1:{position:`absolute`,width:`45px`,height:`45px`,borderRadius:`50%`,top:`-12px`,right:`30px`,zIndex:0},cloud2:{position:`absolute`,width:`60px`,height:`60px`,borderRadius:`50%`,top:`-25px`,right:`70px`,zIndex:0},cloud3:{position:`absolute`,width:`45px`,height:`45px`,borderRadius:`50%`,top:`-10px`,left:`30px`,zIndex:0},leftSide:{display:`flex`,alignItems:`center`,gap:`12px`,flex:1,zIndex:2},number:{width:`34px`,height:`34px`,borderRadius:`50%`,color:`#fff`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:`16px`,fontWeight:`bold`,flexShrink:0,zIndex:2},text:{flex:1,zIndex:2},titleText:{margin:0,fontSize:`17px`,fontWeight:`bold`,zIndex:2},desc:{margin:`3px 0 0`,fontSize:`14px`,color:`#2d2c2c`,zIndex:2},bottomButtons:{display:`flex`,gap:`15px`,zIndex:100,paddingBottom:`20px`,opacity:1,visibility:`visible`},circleBtn:{width:`55px`,height:`55px`,borderRadius:`50%`,border:`none`,background:`#7f57e7`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`}};return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
         html,
         body,
         #root {
