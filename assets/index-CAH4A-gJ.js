@@ -1161,7 +1161,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         }
 
-      `}),a&&(0,R.jsx)(`div`,{className:`loading-screen`,children:(0,R.jsxs)(`div`,{className:`loading-box`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري التحميل`}),(0,R.jsxs)(`div`,{className:`loading-dots`,children:[(0,R.jsx)(`span`,{className:`loading-dot`}),(0,R.jsx)(`span`,{className:`loading-dot`}),(0,R.jsx)(`span`,{className:`loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`title-area`,children:[(0,R.jsxs)(`div`,{className:`top-buttons`,children:[(0,R.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})})]}),(0,R.jsx)(`div`,{className:`title-main`,children:(0,R.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,R.jsx)(`div`,{className:`title-sub`,children:(0,R.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:d.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-image`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>{n(null)},style:{...u[r.id],transform:i?`scale(1.15)`:`scale(1)`,filter:i?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:i?999:1}},r.id)})]},i))})]})},Nr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Pr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Fr=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Ir=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Lr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Rr=`/Kids-Games/assets/lion-BCc-x0Je.png`,zr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Br=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Vr=`/Kids-Games/assets/icce-DngGPNER.png`,Hr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Ur=`/Kids-Games/assets/eeee-DEyXLofj.png`,Wr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Gr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,Kr=`/Kids-Games/assets/btar-ISpqIK3P.png`,qr=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!0),s=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})};(0,b.useEffect)(()=>{let e=!1,t=Date.now(),n=[Nr,Pr,Fr,Ir,Lr,Rr,zr,Br,Vr,Hr,Ur,Wr,Gr,Kr],r=0,i=()=>{if(e)return;r+=1;let i=Date.now()-t;r>=n.length&&i>=5e3&&setTimeout(()=>{e||o(!1)},250)};n.forEach(e=>{let t=new Image;t.onload=i,t.onerror=i,t.src=e});let a=setTimeout(()=>{!e&&r>=n.length&&o(!1)},5250);return()=>{e=!0,clearTimeout(a)}},[]);let c={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},l=[{title:`حركة الفتح`,board:Pr,games:[{id:`imgBubbles`,img:Lr,path:`/Fathaice`},{id:`imgLion`,img:Rr,path:`/Fathalion`},{id:`imgComplete`,img:zr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Br,path:`/Fathabee`}]},{title:`حركة الضم`,board:Fr,games:[{id:`imgIce`,img:Vr,path:`/Damasnow`},{id:`imgSpace`,img:Hr,path:`/Damaspace`},{id:`imgBasket`,img:Ur,path:`/Damamaze`},{id:`imgEgg`,img:Wr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Ir,games:[{id:`imgBee`,img:Gr,path:`/Kasrabee`},{id:`imgIce2`,img:Vr,path:`/Kasrasnow`},{id:`imgButterflies`,img:Kr,path:`/Kasratreas`},{id:`imgComplete2`,img:zr,path:`/Kasracomplete`}]}];return(0,R.jsxs)(`div`,{className:`tashkeel-page`,style:{backgroundImage:`url(${Nr})`},children:[(0,R.jsxs)(`div`,{className:`page-content`,children:[(0,R.jsxs)(`div`,{className:`title-area`,children:[(0,R.jsxs)(`div`,{className:`top-buttons`,children:[(0,R.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})})]}),(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.7)`,padding:`5px 25px`,borderRadius:`30px`,marginBottom:`10px`},children:(0,R.jsx)(`h1`,{style:{margin:0,fontSize:`28px`,color:`#111111`},children:`مرحبا بك في عالم الحركات`})}),(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.5)`,padding:`5px 20px`,borderRadius:`40px`},children:(0,R.jsx)(`h3`,{style:{margin:0,fontSize:`17px`,color:`#333`,fontWeight:`bold`},children:`اختر الحركة التي تريد اللعب بها`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:l.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{style:{color:`#ffffff`,marginTop:`38px`,fontSize:`25px`,textShadow:`1px 1px 2px #000`},children:r.title}),r.games.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-img`,src:r.img,loading:`eager`,decoding:`async`,alt:`لعبة`,onClick:()=>{s(),e(r.path)},onMouseEnter:()=>{n(r.id),s()},onMouseLeave:()=>{n(null)},style:{...c[r.id],transform:i?`scale(1.15)`:`scale(1)`,filter:i?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:i?10:1}},r.id)})]},i))})]}),a&&(0,R.jsxs)(`div`,{className:`loading-screen`,children:[(0,R.jsx)(`div`,{className:`loading-decoration decoration-one`,children:`✨`}),(0,R.jsx)(`div`,{className:`loading-decoration decoration-two`,children:`⭐`}),(0,R.jsx)(`div`,{className:`loading-decoration decoration-three`,children:`🌈`}),(0,R.jsx)(`div`,{className:`loading-decoration decoration-four`,children:`🦋`}),(0,R.jsx)(`div`,{className:`loading-decoration decoration-five`,children:`✨`}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`loading-dots`,children:[(0,R.jsx)(`span`,{className:`loading-dot dot-one`}),(0,R.jsx)(`span`,{className:`loading-dot dot-two`}),(0,R.jsx)(`span`,{className:`loading-dot dot-three`})]})]})]}),(0,R.jsx)(`style`,{children:`
+      `}),a&&(0,R.jsx)(`div`,{className:`loading-screen`,children:(0,R.jsxs)(`div`,{className:`loading-box`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري التحميل`}),(0,R.jsxs)(`div`,{className:`loading-dots`,children:[(0,R.jsx)(`span`,{className:`loading-dot`}),(0,R.jsx)(`span`,{className:`loading-dot`}),(0,R.jsx)(`span`,{className:`loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`title-area`,children:[(0,R.jsxs)(`div`,{className:`top-buttons`,children:[(0,R.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})})]}),(0,R.jsx)(`div`,{className:`title-main`,children:(0,R.jsx)(`h1`,{children:`مرحبا بك في عالم الحروف`})}),(0,R.jsx)(`div`,{className:`title-sub`,children:(0,R.jsx)(`h3`,{children:`اختر الحرف الذي تريد اللعب به`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:d.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{className:`board-title`,children:r.title}),r.games.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-image`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>{n(null)},style:{...u[r.id],transform:i?`scale(1.15)`:`scale(1)`,filter:i?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:i?999:1}},r.id)})]},i))})]})},Nr=`/Kids-Games/assets/elhrofbg-FR0itf9p.jpeg`,Pr=`/Kids-Games/assets/lohdama-CHQObrWe.png`,Fr=`/Kids-Games/assets/lohfatha-ZvdyIr0D.png`,Ir=`/Kids-Games/assets/lohksraa-BUXHa8cL.png`,Lr=`/Kids-Games/assets/bbbb-5403vn8N.png`,Rr=`/Kids-Games/assets/lion-BCc-x0Je.png`,zr=`/Kids-Games/assets/cooopp-D4eqk9jN.png`,Br=`/Kids-Games/assets/sbee-CfIPi6Zx.png`,Vr=`/Kids-Games/assets/icce-DngGPNER.png`,Hr=`/Kids-Games/assets/spcee-C2TAqN9R.png`,Ur=`/Kids-Games/assets/eeee-DEyXLofj.png`,Wr=`/Kids-Games/assets/eggee-BTT_6uXo.png`,Gr=`/Kids-Games/assets/qwebee-CRoep1Qv.png`,Kr=`/Kids-Games/assets/btar-ISpqIK3P.png`,qr=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!0),s=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})};(0,b.useEffect)(()=>{let e=!1,t=[Nr,Pr,Fr,Ir,Lr,Rr,zr,Br,Vr,Hr,Ur,Wr,Gr,Kr],n=0,r=()=>{n+=1,n>=t.length&&!e&&setTimeout(()=>{e||o(!1)},500)};t.forEach(e=>{let t=new Image;t.onload=r,t.onerror=r,t.src=e});let i=setTimeout(()=>{e||o(!1)},6e3);return()=>{e=!0,clearTimeout(i)}},[]);let c={imgBubbles:{top:`95px`,left:`108px`,width:`134px`,height:`95px`},imgLion:{top:`94px`,left:`210px`,width:`125px`,height:`99px`},imgComplete:{top:`187px`,left:`90px`,width:`160px`,height:`99px`},imgBeeHive:{top:`188px`,left:`218px`,width:`110px`,height:`99px`},imgIce:{top:`96px`,left:`111px`,width:`130px`,height:`93px`},imgSpace:{top:`95px`,left:`210px`,width:`125px`,height:`93px`},imgBasket:{top:`184px`,left:`88px`,width:`147px`,height:`110px`},imgEgg:{top:`183px`,left:`222px`,width:`135px`,height:`110px`},imgBee:{top:`99px`,left:`115px`,width:`128px`,height:`87px`},imgIce2:{top:`96px`,left:`219px`,width:`110px`,height:`95px`},imgButterflies:{top:`136px`,left:`113px`,width:`120px`,height:`199px`},imgComplete2:{top:`184px`,left:`145px`,width:`250px`,height:`100px`}},l=[{title:`حركة الفتح`,board:Pr,games:[{id:`imgBubbles`,img:Lr,path:`/Fathaice`},{id:`imgLion`,img:Rr,path:`/Fathalion`},{id:`imgComplete`,img:zr,path:`/Fathacomplete`},{id:`imgBeeHive`,img:Br,path:`/Fathabee`}]},{title:`حركة الضم`,board:Fr,games:[{id:`imgIce`,img:Vr,path:`/Damasnow`},{id:`imgSpace`,img:Hr,path:`/Damaspace`},{id:`imgBasket`,img:Ur,path:`/Damamaze`},{id:`imgEgg`,img:Wr,path:`/Damaeggs`}]},{title:`حركة الكسر`,board:Ir,games:[{id:`imgBee`,img:Gr,path:`/Kasrabee`},{id:`imgIce2`,img:Vr,path:`/Kasrasnow`},{id:`imgButterflies`,img:Kr,path:`/Kasratreas`},{id:`imgComplete2`,img:zr,path:`/Kasracomplete`}]}];return(0,R.jsxs)(`div`,{className:`tashkeel-page ${a?`page-loading`:`page-ready`}`,style:{backgroundImage:`url(${Nr})`},children:[a&&(0,R.jsx)(`div`,{className:`loading-overlay`,children:(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`loading-dots`,children:[(0,R.jsx)(`span`,{}),(0,R.jsx)(`span`,{}),(0,R.jsx)(`span`,{})]})]})}),!a&&(0,R.jsxs)(`div`,{className:`page-content`,children:[(0,R.jsxs)(`div`,{className:`title-area`,children:[(0,R.jsxs)(`div`,{className:`top-buttons`,children:[(0,R.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),"aria-label":`الصفحة الرئيسية`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})})]}),(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.7)`,padding:`5px 25px`,borderRadius:`30px`,marginBottom:`10px`},children:(0,R.jsx)(`h1`,{style:{margin:0,fontSize:`28px`,color:`#111111`},children:`مرحبا بك في عالم الحركات`})}),(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.5)`,padding:`5px 20px`,borderRadius:`40px`},children:(0,R.jsx)(`h3`,{style:{margin:0,fontSize:`17px`,color:`#333`,fontWeight:`bold`},children:`اختر الحركة التي تريد اللعب بها`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:l.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{style:{color:`#ffffff`,marginTop:`38px`,fontSize:`25px`,textShadow:`1px 1px 2px #000`},children:r.title}),r.games.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-img`,src:r.img,loading:`eager`,decoding:`async`,alt:`لعبة`,onClick:()=>{s(),e(r.path)},onMouseEnter:()=>{n(r.id),s()},onMouseLeave:()=>{n(null)},style:{...c[r.id],transform:i?`scale(1.15)`:`scale(1)`,filter:i?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:i?10:1}},r.id)})]},i))})]}),(0,R.jsx)(`style`,{children:`
 
         /* =========================================================
            RESET
@@ -1173,6 +1173,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           width: 100%;
           min-width: 100%;
           min-height: 100%;
+
           margin: 0;
           padding: 0;
 
@@ -1206,6 +1207,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .tashkeel-page {
           width: 100%;
+
           min-height: 100vh;
           min-height: 100dvh;
 
@@ -1214,7 +1216,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           background-repeat: no-repeat;
 
           display: flex;
+
           flex-direction: column;
+
           align-items: center;
 
           position: relative;
@@ -1228,31 +1232,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         /* =========================================================
-           CONTENT
-        ========================================================= */
-
-        .page-content {
-          width: 100%;
-
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          visibility: visible;
-          opacity: 1;
-        }
-
-        /* =========================================================
            شاشة التحميل
         ========================================================= */
 
-        .loading-screen {
+        .loading-overlay {
           position: fixed;
 
           inset: 0;
 
           width: 100%;
-          height: 100dvh;
+          height: 100%;
 
           z-index: 999999;
 
@@ -1265,58 +1254,72 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           background:
             radial-gradient(
-              circle at 15% 20%,
-              rgba(255, 214, 245, 0.75),
-              transparent 28%
+              circle at 18% 18%,
+              rgba(191, 219, 254, 0.55),
+              transparent 26%
             ),
+
             radial-gradient(
-              circle at 85% 20%,
-              rgba(196, 231, 255, 0.75),
-              transparent 28%
+              circle at 82% 22%,
+              rgba(221, 214, 254, 0.55),
+              transparent 26%
             ),
+
             radial-gradient(
-              circle at 50% 85%,
-              rgba(220, 255, 218, 0.7),
+              circle at 50% 82%,
+              rgba(207, 250, 254, 0.55),
               transparent 30%
             ),
+
             linear-gradient(
               135deg,
-              #fff8fd 0%,
-              #f7f3ff 35%,
-              #f0faff 70%,
-              #fffdf5 100%
+              #ffffff 0%,
+              #f5f9ff 30%,
+              #faf7ff 60%,
+              #f1fcff 100%
             );
-
-          animation:
-            loadingFadeIn
-            0.35s
-            ease-out;
-        }
-
-        @keyframes loadingFadeIn {
-
-          from {
-            opacity: 0;
-          }
-
-          to {
-            opacity: 1;
-          }
-
         }
 
         /* =========================================================
-           مربع جاري التحميل
+           مربع التحميل
+           حركة خفيفة وناعمة
         ========================================================= */
 
         .loading-card {
-          width: 255px;
+          position: relative;
 
-          min-height: 125px;
+          z-index: 20;
+
+          width: 245px;
+
+          min-height: 100px;
 
           padding: 18px 20px;
 
-          border-radius: 26px;
+          box-sizing: border-box;
+
+          border-radius: 22px;
+
+          background:
+            linear-gradient(
+              135deg,
+              #ffffff 0%,
+              #f8f6ff 35%,
+              #f4faff 70%,
+              #fff9fd 100%
+            );
+
+          border: 2px solid #c7d2fe;
+
+          box-shadow:
+            0 12px 30px
+              rgba(99, 102, 241, 0.14),
+
+            0 5px 14px
+              rgba(14, 165, 233, 0.08),
+
+            inset 0 0 0 2px
+              rgba(255, 255, 255, 0.95);
 
           display: flex;
 
@@ -1326,60 +1329,49 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           justify-content: center;
 
-          position: relative;
-
-          z-index: 20;
-
-          background:
-            linear-gradient(
-              135deg,
-              #ffffff 0%,
-              #fff8fd 35%,
-              #f5f9ff 70%,
-              #f7fff8 100%
-            );
-
-          border: 3px solid rgba(
-            196,
-            181,
-            253,
-            0.8
-          );
-
-          box-shadow:
-            0 15px 35px
-            rgba(120, 100, 180, 0.16),
-
-            0 5px 15px
-            rgba(100, 160, 210, 0.12),
-
-            inset 0 0 0 2px
-            rgba(255,255,255,0.95);
+          animation:
+            loadingCardFloat
+            2.8s
+            ease-in-out
+            infinite;
         }
 
-        .loading-title {
-          font-size: 20px;
+        @keyframes loadingCardFloat {
 
-          font-weight: 900;
+          0%,
+          100% {
+            transform:
+              translateY(0px);
+          }
 
-          color: #6753a6;
-
-          text-align: center;
-
-          white-space: nowrap;
-
-          line-height: 1.3;
-
-          margin-bottom: 13px;
-
-          text-shadow:
-            0 2px 4px
-            rgba(103, 83, 166, 0.12);
+          50% {
+            transform:
+              translateY(-6px);
+          }
         }
 
         /* =========================================================
-           النقاط
-           أكبر شوية فقط
+           كلمة جاري تحميل اللعبة
+        ========================================================= */
+
+        .loading-title {
+          margin: 0;
+
+          color: #4b5fa8;
+
+          font-size: 18px;
+
+          font-weight: 900;
+
+          line-height: 1.2;
+
+          white-space: nowrap;
+
+          text-align: center;
+        }
+
+        /* =========================================================
+           النقاط المتحركة
         ========================================================= */
 
         .loading-dots {
@@ -1389,47 +1381,47 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           justify-content: center;
 
-          gap: 9px;
+          gap: 7px;
 
-          height: 22px;
+          margin-top: 13px;
+
+          height: 15px;
         }
 
-        .loading-dot {
-          width: 13px;
+        .loading-dots span {
+          width: 9px;
 
-          height: 13px;
+          height: 9px;
 
           border-radius: 50%;
-
-          display: block;
 
           background:
             linear-gradient(
               135deg,
-              #a78bfa,
-              #60a5fa
+              #60a5fa,
+              #a78bfa
             );
 
           box-shadow:
-            0 3px 7px
-            rgba(99, 102, 241, 0.25);
+            0 2px 6px
+            rgba(99, 102, 241, 0.2);
 
           animation:
             loadingDot
-            1.1s
+            1.2s
             ease-in-out
             infinite;
         }
 
-        .dot-one {
+        .loading-dots span:nth-child(1) {
           animation-delay: 0s;
         }
 
-        .dot-two {
+        .loading-dots span:nth-child(2) {
           animation-delay: 0.18s;
         }
 
-        .dot-three {
+        .loading-dots span:nth-child(3) {
           animation-delay: 0.36s;
         }
 
@@ -1440,105 +1432,34 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           100% {
             transform:
               translateY(0)
-              scale(0.85);
-
+              scale(1);
             opacity: 0.55;
           }
 
           30% {
             transform:
-              translateY(-8px)
-              scale(1.15);
-
+              translateY(-6px)
+              scale(1.18);
             opacity: 1;
           }
-
         }
 
         /* =========================================================
-           زخارف شاشة التحميل
+           CONTENT
         ========================================================= */
 
-        .loading-decoration {
-          position: absolute;
+        .page-content {
+          width: 100%;
 
-          z-index: 5;
+          display: flex;
 
-          font-size: 30px;
+          flex-direction: column;
 
-          pointer-events: none;
+          align-items: center;
 
-          user-select: none;
+          visibility: visible;
 
-          animation:
-            decorationFloat
-            3s
-            ease-in-out
-            infinite;
-
-          filter:
-            drop-shadow(
-              0 4px 8px
-              rgba(80,80,120,0.15)
-            );
-        }
-
-        .decoration-one {
-          top: 14%;
-          left: 14%;
-
-          animation-delay: 0s;
-        }
-
-        .decoration-two {
-          top: 17%;
-          right: 15%;
-
-          animation-delay: 0.5s;
-        }
-
-        .decoration-three {
-          bottom: 18%;
-          left: 12%;
-
-          animation-delay: 1s;
-
-          font-size: 34px;
-        }
-
-        .decoration-four {
-          bottom: 17%;
-          right: 14%;
-
-          animation-delay: 1.5s;
-        }
-
-        .decoration-five {
-          top: 8%;
-          left: 48%;
-
-          font-size: 23px;
-
-          animation-delay: 2s;
-        }
-
-        @keyframes decorationFloat {
-
-          0%,
-          100% {
-            transform:
-              translateY(0)
-              rotate(-5deg)
-              scale(1);
-          }
-
-          50% {
-            transform:
-              translateY(-10px)
-              rotate(6deg)
-              scale(1.08);
-          }
-
+          opacity: 1;
         }
 
         /* =========================================================
@@ -1551,7 +1472,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           width: 100%;
 
           display: flex;
+
           flex-direction: column;
+
           align-items: center;
 
           margin-top: 20px;
@@ -1567,6 +1490,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           position: relative;
 
           width: 100%;
+
           height: 0;
 
           z-index: 1000;
@@ -1582,6 +1506,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           height: 60px;
 
           border-radius: 50%;
+
           border: none;
 
           background-color:
@@ -1592,6 +1517,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           cursor: pointer;
 
           display: flex;
+
           align-items: center;
           justify-content: center;
 
@@ -1628,6 +1554,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           height: 60px;
 
           border-radius: 50%;
+
           border: none;
 
           background-color:
@@ -1638,6 +1565,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           cursor: pointer;
 
           display: flex;
+
           align-items: center;
           justify-content: center;
 
@@ -1672,6 +1600,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           display: flex;
 
           justify-content: center;
+
           align-items: center;
 
           margin-top: 70px;
@@ -1692,13 +1621,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           position: relative;
 
           display: flex;
+
           flex-direction: column;
+
           align-items: center;
 
           background-size: 100% 100%;
+
           background-repeat: no-repeat;
 
           margin-left: -95px;
+
           margin-right: -70px;
 
           flex-shrink: 0;
@@ -1716,6 +1649,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           object-fit: contain;
 
           opacity: 1;
+
           visibility: visible;
 
           transition:
@@ -1763,6 +1697,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .home-btn,
           .sound-btn {
             width: 48px !important;
+
             height: 48px !important;
 
             font-size: 30px !important;
@@ -1770,11 +1705,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .home-btn {
             top: 0 !important;
+
             left: 15px !important;
           }
 
           .sound-btn {
             top: 0 !important;
+
             right: 15px !important;
           }
         }
@@ -1827,6 +1764,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             left: 10px !important;
 
             width: 38px !important;
+
             height: 38px !important;
 
             font-size: 22px !important;
@@ -1838,60 +1776,52 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             right: 10px !important;
 
             width: 38px !important;
+
             height: 38px !important;
 
             font-size: 22px !important;
           }
 
           /* =====================================================
-             شاشة التحميل على الموبايل
-             ===================================================== */
+             مربع التحميل على الموبايل
+          ===================================================== */
 
           .loading-card {
-            width: 225px;
+            width: 220px;
 
-            min-height: 112px;
+            min-height: 94px;
 
-            padding: 16px 18px;
+            padding:
+              16px 14px;
 
-            border-radius: 23px;
+            border-radius: 20px;
+
+            animation:
+              loadingCardFloat
+              2.8s
+              ease-in-out
+              infinite;
           }
 
           .loading-title {
-            font-size: 18px;
-
-            margin-bottom: 12px;
+            font-size: 16px;
           }
-
-          /* الدوائر أكبر شوية على الموبايل */
 
           .loading-dots {
-            gap: 8px;
+            gap: 7px;
 
-            height: 21px;
+            margin-top: 12px;
           }
 
-          .loading-dot {
-            width: 12px;
+          .loading-dots span {
+            width: 9px;
 
-            height: 12px;
-          }
-
-          .loading-decoration {
-            font-size: 25px;
-          }
-
-          .decoration-three {
-            font-size: 29px;
-          }
-
-          .decoration-five {
-            font-size: 20px;
+            height: 9px;
           }
         }
 
         /* =========================================================
-           موبايلات صغيرة جدًا
+           الموبايلات الصغيرة جدًا
         ========================================================= */
 
         @media (max-width: 380px) {
@@ -1899,39 +1829,28 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .loading-card {
             width: 205px;
 
-            min-height: 105px;
+            min-height: 90px;
 
-            padding: 14px 16px;
+            padding:
+              15px 12px;
 
-            border-radius: 21px;
+            border-radius: 18px;
           }
 
           .loading-title {
-            font-size: 17px;
-
-            margin-bottom: 11px;
+            font-size: 15px;
           }
 
           .loading-dots {
-            gap: 7px;
+            gap: 6px;
+
+            margin-top: 11px;
           }
 
-          .loading-dot {
-            width: 11px;
+          .loading-dots span {
+            width: 8px;
 
-            height: 11px;
-          }
-
-          .loading-decoration {
-            font-size: 22px;
-          }
-
-          .decoration-three {
-            font-size: 26px;
-          }
-
-          .decoration-five {
-            font-size: 18px;
+            height: 8px;
           }
         }
 
