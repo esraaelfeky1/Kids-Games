@@ -6906,7 +6906,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             font-size: 13px !important;
           }
         }
-      `}),(0,R.jsxs)(`div`,{className:`emphatic-page`,style:r.page,children:[(0,R.jsx)(`button`,{className:`home-btn-custom`,style:r.homeBtn,onClick:()=>e(`/home`),onMouseEnter:e=>{n(),e.currentTarget.style.transform=`scale(1.07)`},onMouseLeave:e=>{e.currentTarget.style.transform=`scale(1)`},onTouchStart:n,children:`🏠 الرئيسية`}),(0,R.jsxs)(`div`,{className:`emphatic-container`,style:r.container,children:[(0,R.jsxs)(`div`,{className:`emphatic-header`,style:r.header,children:[(0,R.jsxs)(`h1`,{className:`emphatic-title`,style:r.title,children:[`مغامرات`,` `,(0,R.jsx)(`span`,{style:r.highlight,children:`الحروف المفخمة`})]}),(0,R.jsx)(`p`,{className:`emphatic-subtitle`,style:r.subtitle,children:`تعلم الحروف المفخمة بطريقة ممتعة ✨`})]}),(0,R.jsx)(`div`,{className:`emphatic-cards`,style:r.cards,children:t.map(t=>(0,R.jsxs)(`div`,{className:`emphatic-card`,style:{...r.card,background:t.color},onClick:()=>{n(),t.id===1&&e(`/listen-choose`),t.id===2&&e(`/complete-word`),t.id===3&&e(`/EmphaticRace`),t.id===4&&e(`/Emphaticolorl`)},onMouseEnter:e=>{n(),e.currentTarget.style.transform=`scale(1.02)`},onMouseLeave:e=>{e.currentTarget.style.transform=`scale(1)`},onTouchStart:n,children:[(0,R.jsxs)(`div`,{style:r.leftSide,children:[(0,R.jsx)(`div`,{className:`emphatic-number`,style:{...r.number,background:t.numberColor},children:t.id}),(0,R.jsxs)(`div`,{style:r.text,children:[(0,R.jsx)(`h3`,{className:`emphatic-title-text`,style:r.titleText,children:t.title}),(0,R.jsx)(`p`,{className:`emphatic-desc`,style:r.desc,children:t.desc})]})]}),(0,R.jsx)(`div`,{className:`emphatic-icon`,style:r.iconBox,children:t.icon})]},t.id))})]})]})]})}var Ps=`/Kids-Games/assets/beebg-BjA4N55d.jpeg`,Fs=`/Kids-Games/assets/bee-B0uh1Q6W.png`,Is=`/Kids-Games/assets/flower1-qAQAuaXE.png`,Ls=`/Kids-Games/assets/flower2-CK442Gth.png`,Rs=`/Kids-Games/assets/flower3-DGrYxDRz.png`,zs=`/Kids-Games/assets/flower4-Cl7ubMiA.png`,Bs=`/Kids-Games/assets/flower5-nfdw0AIb.png`,Vs=`/Kids-Games/sounds/hay1.mp3`,Hs=`/Kids-Games/sounds/pop.mp3`,Us=`/Kids-Games/sounds/bee.mp3`,Ws=[{Icon:la,left:`5%`,top:`9%`,color:`#E9A4C5`,size:34,duration:7,delay:0},{Icon:Ai,left:`24%`,top:`7%`,color:`#E9B83F`,size:31,duration:8,delay:1},{Icon:Sa,left:`45%`,top:`12%`,color:`#75B96D`,size:30,duration:6.5,delay:2},{Icon:io,left:`70%`,top:`7%`,color:`#E9B83F`,size:34,duration:8.5,delay:.5},{Icon:la,left:`91%`,top:`14%`,color:`#E9A4C5`,size:33,duration:7.5,delay:1.5},{Icon:Sa,left:`12%`,top:`29%`,color:`#75B96D`,size:30,duration:8,delay:2},{Icon:Ai,left:`87%`,top:`33%`,color:`#E9B83F`,size:32,duration:7,delay:.5},{Icon:to,left:`4%`,top:`52%`,color:`#E9B83F`,size:29,duration:7.5,delay:1},{Icon:la,left:`95%`,top:`55%`,color:`#E9A4C5`,size:34,duration:8.5,delay:2},{Icon:no,left:`15%`,top:`74%`,color:`#75B96D`,size:32,duration:8,delay:.8},{Icon:Ai,left:`37%`,top:`91%`,color:`#E9B83F`,size:30,duration:7,delay:2.5},{Icon:la,left:`60%`,top:`87%`,color:`#E9A4C5`,size:33,duration:7.5,delay:.3},{Icon:Sa,left:`81%`,top:`79%`,color:`#75B96D`,size:31,duration:8.5,delay:1.4},{Icon:to,left:`96%`,top:`91%`,color:`#E9B83F`,size:29,duration:6.5,delay:2}];function Gs(){let e=I(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(!0),[d,f]=(0,b.useState)(window.innerWidth<768),p=d?60:95,[m,h]=(0,b.useState)({x:d?45:90,y:window.innerHeight-(d?155:195)}),[g,_]=(0,b.useState)(null),[v,y]=(0,b.useState)(null),x=(0,b.useRef)(null),S=(0,b.useRef)(null),C=(0,b.useRef)(null),w=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=setTimeout(()=>{u(!1)},2400);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{let e=()=>{let e=window.innerWidth<768;f(e),!g&&!v&&h({x:e?45:90,y:window.innerHeight-(e?155:195)})};return window.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e)}},[g,v]),(0,b.useEffect)(()=>(x.current=new Audio(Vs),S.current=new Audio(Hs),C.current=new Audio(Us),C.current.loop=!0,()=>{x.current?.pause(),S.current?.pause(),C.current?.pause(),w.current&&cancelAnimationFrame(w.current)}),[]),(0,b.useEffect)(()=>{g&&s&&!l?C.current?.play().catch(()=>{}):(C.current?.pause(),C.current&&(C.current.currentTime=0))},[g,s,l]),(0,b.useEffect)(()=>{let e=document.documentElement,t=document.body,n=e.style.overflow,r=e.style.height,i=e.style.width,a=t.style.overflow,o=t.style.height,s=t.style.width,c=t.style.margin,l=t.style.padding,u=t.style.touchAction;return e.style.width=`100%`,e.style.height=`100%`,e.style.overflow=`hidden`,t.style.width=`100%`,t.style.height=`100%`,t.style.overflow=`hidden`,t.style.margin=`0`,t.style.padding=`0`,t.style.touchAction=`none`,()=>{e.style.overflow=n,e.style.height=r,e.style.width=i,t.style.overflow=a,t.style.height=o,t.style.width=s,t.style.margin=c,t.style.padding=l,t.style.touchAction=u}},[]);let T=[`خ`,`ص`,`ض`,`غ`,`ط`,`ق`,`ظ`],E=[`أ`,`ب`,`ت`,`ث`,`ج`,`ح`,`د`,`ذ`,`ر`,`ز`,`س`,`ش`,`ع`,`ف`,`ك`,`ل`,`م`,`ن`,`هـ`,`و`,`ي`],D=[Is,Ls,Rs,zs,Bs],O=()=>{let e=window.innerWidth,t=window.innerHeight,n=e<768?[{x:e*.15,y:t*.22},{x:e*.38,y:t*.2},{x:e*.62,y:t*.2},{x:e*.85,y:t*.22},{x:e*.23,y:t*.36},{x:e*.5,y:t*.34},{x:e*.77,y:t*.36},{x:e*.15,y:t*.51},{x:e*.38,y:t*.49},{x:e*.62,y:t*.49},{x:e*.85,y:t*.51},{x:e*.23,y:t*.66},{x:e*.5,y:t*.65},{x:e*.77,y:t*.66},{x:e*.5,y:t*.78}]:[{x:e*.12,y:t*.24},{x:e*.31,y:t*.22},{x:e*.5,y:t*.22},{x:e*.69,y:t*.22},{x:e*.88,y:t*.24},{x:e*.2,y:t*.4},{x:e*.4,y:t*.38},{x:e*.6,y:t*.36},{x:e*.8,y:t*.4},{x:e*.12,y:t*.58},{x:e*.31,y:t*.56},{x:e*.5,y:t*.56},{x:e*.69,y:t*.56},{x:e*.88,y:t*.58},{x:e*.5,y:t*.74}],r=[!1,!0,!1,!1,!0,!1,!1,!0,!1,!1,!0,!1,!1,!0,!1],i=[...T].sort(()=>Math.random()-.5),a=[...E].sort(()=>Math.random()-.5),o=0,s=0;return r.map((e,t)=>{let r=e?i[o++%i.length]:a[s++%a.length],c=D[Math.floor(Math.random()*D.length)];return{id:t+1,text:r,heavy:e,image:c,x:n[t].x,y:n[t].y}})},[k,A]=(0,b.useState)(()=>O());(0,b.useEffect)(()=>{if(l)return;let e=()=>{h(g?e=>{let t=g.x-e.x,n=g.y-e.y,r=Math.sqrt(t*t+n*n),i=d?2.9:4.6;return r<i?(j(),g):{x:e.x+t/r*i,y:e.y+n/r*i}}:e=>({x:e.x,y:e.y+Math.sin(Date.now()/180)*.3})),w.current=requestAnimationFrame(e)};return w.current=requestAnimationFrame(e),()=>{w.current&&cancelAnimationFrame(w.current)}},[g,d,l]);let j=()=>{if(v){if(v.id===`returning`){_(null),y(null);return}C.current?.pause(),v.heavy?s&&S.current?.play().catch(()=>{}):(s&&x.current?.play().catch(()=>{}),n(e=>e+10),A(e=>e.filter(e=>e.id!==v.id))),y({id:`returning`}),_({x:d?45:90,y:window.innerHeight-(d?155:195)})}},M=e=>{l||a||g||(y(e),_({x:e.x,y:e.y}))};(0,b.useEffect)(()=>{if(a||l)return;let e=setInterval(()=>{i(e=>e+1)},1e3);return()=>clearInterval(e)},[a,l]),(0,b.useEffect)(()=>{k.filter(e=>!e.heavy).length===0&&k.length>0&&!a&&(o(!0),_(null),y(null))},[k,a]);let N=()=>{n(0),i(0),o(!1),_(null),y(null),h({x:d?45:90,y:window.innerHeight-(d?155:195)}),A(O())};return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
+      `}),(0,R.jsxs)(`div`,{className:`emphatic-page`,style:r.page,children:[(0,R.jsx)(`button`,{className:`home-btn-custom`,style:r.homeBtn,onClick:()=>e(`/home`),onMouseEnter:e=>{n(),e.currentTarget.style.transform=`scale(1.07)`},onMouseLeave:e=>{e.currentTarget.style.transform=`scale(1)`},onTouchStart:n,children:`🏠 الرئيسية`}),(0,R.jsxs)(`div`,{className:`emphatic-container`,style:r.container,children:[(0,R.jsxs)(`div`,{className:`emphatic-header`,style:r.header,children:[(0,R.jsxs)(`h1`,{className:`emphatic-title`,style:r.title,children:[`مغامرات`,` `,(0,R.jsx)(`span`,{style:r.highlight,children:`الحروف المفخمة`})]}),(0,R.jsx)(`p`,{className:`emphatic-subtitle`,style:r.subtitle,children:`تعلم الحروف المفخمة بطريقة ممتعة ✨`})]}),(0,R.jsx)(`div`,{className:`emphatic-cards`,style:r.cards,children:t.map(t=>(0,R.jsxs)(`div`,{className:`emphatic-card`,style:{...r.card,background:t.color},onClick:()=>{n(),t.id===1&&e(`/listen-choose`),t.id===2&&e(`/complete-word`),t.id===3&&e(`/EmphaticRace`),t.id===4&&e(`/Emphaticolorl`)},onMouseEnter:e=>{n(),e.currentTarget.style.transform=`scale(1.02)`},onMouseLeave:e=>{e.currentTarget.style.transform=`scale(1)`},onTouchStart:n,children:[(0,R.jsxs)(`div`,{style:r.leftSide,children:[(0,R.jsx)(`div`,{className:`emphatic-number`,style:{...r.number,background:t.numberColor},children:t.id}),(0,R.jsxs)(`div`,{style:r.text,children:[(0,R.jsx)(`h3`,{className:`emphatic-title-text`,style:r.titleText,children:t.title}),(0,R.jsx)(`p`,{className:`emphatic-desc`,style:r.desc,children:t.desc})]})]}),(0,R.jsx)(`div`,{className:`emphatic-icon`,style:r.iconBox,children:t.icon})]},t.id))})]})]})]})}var Ps=`/Kids-Games/assets/WhatsApp%20Image%202026-06-01%20at%201.33.22%20AM-BjA4N55d.jpeg`,Fs=`/Kids-Games/assets/bee-B0uh1Q6W.png`,Is=`/Kids-Games/assets/flower1-qAQAuaXE.png`,Ls=`/Kids-Games/assets/flower2-CK442Gth.png`,Rs=`/Kids-Games/assets/flower3-DGrYxDRz.png`,zs=`/Kids-Games/assets/flower4-Cl7ubMiA.png`,Bs=`/Kids-Games/assets/flower5-nfdw0AIb.png`,Vs=`/Kids-Games/sounds/hay1.mp3`,Hs=`/Kids-Games/sounds/pop.mp3`,Us=`/Kids-Games/sounds/bee.mp3`,Ws=[{Icon:la,left:`5%`,top:`9%`,color:`#E9A4C5`,size:34,duration:7,delay:0},{Icon:Ai,left:`24%`,top:`7%`,color:`#E9B83F`,size:31,duration:8,delay:1},{Icon:Sa,left:`45%`,top:`12%`,color:`#75B96D`,size:30,duration:6.5,delay:2},{Icon:io,left:`70%`,top:`7%`,color:`#E9B83F`,size:34,duration:8.5,delay:.5},{Icon:la,left:`91%`,top:`14%`,color:`#E9A4C5`,size:33,duration:7.5,delay:1.5},{Icon:Sa,left:`12%`,top:`29%`,color:`#75B96D`,size:30,duration:8,delay:2},{Icon:Ai,left:`87%`,top:`33%`,color:`#E9B83F`,size:32,duration:7,delay:.5},{Icon:to,left:`4%`,top:`52%`,color:`#E9B83F`,size:29,duration:7.5,delay:1},{Icon:la,left:`95%`,top:`55%`,color:`#E9A4C5`,size:34,duration:8.5,delay:2},{Icon:no,left:`15%`,top:`74%`,color:`#75B96D`,size:32,duration:8,delay:.8},{Icon:Ai,left:`37%`,top:`91%`,color:`#E9B83F`,size:30,duration:7,delay:2.5},{Icon:la,left:`60%`,top:`87%`,color:`#E9A4C5`,size:33,duration:7.5,delay:.3},{Icon:Sa,left:`81%`,top:`79%`,color:`#75B96D`,size:31,duration:8.5,delay:1.4},{Icon:to,left:`96%`,top:`91%`,color:`#E9B83F`,size:29,duration:6.5,delay:2}];function Gs(){let e=I(),[t,n]=(0,b.useState)(0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(!0),[d,f]=(0,b.useState)(window.innerWidth<768),p=d?60:95,[m,h]=(0,b.useState)({x:d?45:90,y:window.innerHeight-(d?155:195)}),[g,_]=(0,b.useState)(null),[v,y]=(0,b.useState)(null),x=(0,b.useRef)(null),S=(0,b.useRef)(null),C=(0,b.useRef)(null),w=(0,b.useRef)(null);(0,b.useEffect)(()=>{let e=setTimeout(()=>{u(!1)},2400);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{let e=()=>{let e=window.innerWidth<768;f(e),!g&&!v&&h({x:e?45:90,y:window.innerHeight-(e?155:195)})};return window.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e)}},[g,v]),(0,b.useEffect)(()=>(x.current=new Audio(Vs),S.current=new Audio(Hs),C.current=new Audio(Us),C.current.loop=!0,()=>{x.current?.pause(),S.current?.pause(),C.current?.pause(),w.current&&cancelAnimationFrame(w.current)}),[]),(0,b.useEffect)(()=>{g&&s&&!l?C.current?.play().catch(()=>{}):(C.current?.pause(),C.current&&(C.current.currentTime=0))},[g,s,l]),(0,b.useEffect)(()=>{let e=document.documentElement,t=document.body,n=e.style.overflow,r=e.style.height,i=e.style.width,a=t.style.overflow,o=t.style.height,s=t.style.width,c=t.style.margin,l=t.style.padding,u=t.style.touchAction;return e.style.width=`100%`,e.style.height=`100%`,e.style.overflow=`hidden`,t.style.width=`100%`,t.style.height=`100%`,t.style.overflow=`hidden`,t.style.margin=`0`,t.style.padding=`0`,t.style.touchAction=`none`,()=>{e.style.overflow=n,e.style.height=r,e.style.width=i,t.style.overflow=a,t.style.height=o,t.style.width=s,t.style.margin=c,t.style.padding=l,t.style.touchAction=u}},[]);let T=[`خ`,`ص`,`ض`,`غ`,`ط`,`ق`,`ظ`],E=[`أ`,`ب`,`ت`,`ث`,`ج`,`ح`,`د`,`ذ`,`ر`,`ز`,`س`,`ش`,`ع`,`ف`,`ك`,`ل`,`م`,`ن`,`هـ`,`و`,`ي`],D=[Is,Ls,Rs,zs,Bs],O=()=>{let e=window.innerWidth,t=window.innerHeight,n=e<768?[{x:e*.15,y:t*.22},{x:e*.38,y:t*.2},{x:e*.62,y:t*.2},{x:e*.85,y:t*.22},{x:e*.23,y:t*.36},{x:e*.5,y:t*.34},{x:e*.77,y:t*.36},{x:e*.15,y:t*.51},{x:e*.38,y:t*.49},{x:e*.62,y:t*.49},{x:e*.85,y:t*.51},{x:e*.23,y:t*.66},{x:e*.5,y:t*.65},{x:e*.77,y:t*.66},{x:e*.5,y:t*.78}]:[{x:e*.12,y:t*.24},{x:e*.31,y:t*.22},{x:e*.5,y:t*.22},{x:e*.69,y:t*.22},{x:e*.88,y:t*.24},{x:e*.2,y:t*.4},{x:e*.4,y:t*.38},{x:e*.6,y:t*.36},{x:e*.8,y:t*.4},{x:e*.12,y:t*.58},{x:e*.31,y:t*.56},{x:e*.5,y:t*.56},{x:e*.69,y:t*.56},{x:e*.88,y:t*.58},{x:e*.5,y:t*.74}],r=[!1,!0,!1,!1,!0,!1,!1,!0,!1,!1,!0,!1,!1,!0,!1],i=[...T].sort(()=>Math.random()-.5),a=[...E].sort(()=>Math.random()-.5),o=0,s=0;return r.map((e,t)=>{let r=e?i[o++%i.length]:a[s++%a.length],c=D[Math.floor(Math.random()*D.length)];return{id:t+1,text:r,heavy:e,image:c,x:n[t].x,y:n[t].y}})},[k,A]=(0,b.useState)(()=>O());(0,b.useEffect)(()=>{if(l)return;let e=()=>{h(g?e=>{let t=g.x-e.x,n=g.y-e.y,r=Math.sqrt(t*t+n*n),i=d?2.9:4.6;return r<i?(j(),g):{x:e.x+t/r*i,y:e.y+n/r*i}}:e=>({x:e.x,y:e.y+Math.sin(Date.now()/180)*.3})),w.current=requestAnimationFrame(e)};return w.current=requestAnimationFrame(e),()=>{w.current&&cancelAnimationFrame(w.current)}},[g,d,l]);let j=()=>{if(v){if(v.id===`returning`){_(null),y(null);return}C.current?.pause(),v.heavy?s&&S.current?.play().catch(()=>{}):(s&&x.current?.play().catch(()=>{}),n(e=>e+10),A(e=>e.filter(e=>e.id!==v.id))),y({id:`returning`}),_({x:d?45:90,y:window.innerHeight-(d?155:195)})}},M=e=>{l||a||g||(y(e),_({x:e.x,y:e.y}))};(0,b.useEffect)(()=>{if(a||l)return;let e=setInterval(()=>{i(e=>e+1)},1e3);return()=>clearInterval(e)},[a,l]),(0,b.useEffect)(()=>{k.filter(e=>!e.heavy).length===0&&k.length>0&&!a&&(o(!0),_(null),y(null))},[k,a]);let N=()=>{n(0),i(0),o(!1),_(null),y(null),h({x:d?45:90,y:window.innerHeight-(d?155:195)}),A(O())};return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
         html,
         body,
         #root {
@@ -16260,7 +16260,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 `,style:{width:`${d}%`}})})]})]}),x&&(0,R.jsx)(`div`,{style:tw.winOverlay,children:(0,R.jsxs)(`div`,{style:tw.winBox,children:[(0,R.jsx)(`h1`,{style:{color:`#7b1fa2`,margin:`0 0 10px 0`},children:`أحسنت! 🎉`}),(0,R.jsxs)(`p`,{style:{fontSize:`20px`,margin:`0 0 20px 0`},children:[`لقد جمعت `,r,` نقاط!`]}),(0,R.jsxs)(`div`,{style:{display:`flex`,gap:`15px`,justifyContent:`center`},children:[(0,R.jsx)(`button`,{onClick:D,style:tw.smallBtn,children:(0,R.jsx)(H,{size:20})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Mad`),style:tw.smallBtn,children:(0,R.jsx)(B,{size:20})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:tw.smallBtn,children:(0,R.jsx)(V,{size:20})})]})]})}),(0,R.jsxs)(`div`,{style:tw.topBar,className:`mobile-top-bar`,children:[(0,R.jsxs)(`div`,{style:tw.box,className:`mobile-box`,children:[`⏱️ `,Math.floor(t/60),`:`,String(t%60).padStart(2,`0`)]}),(0,R.jsxs)(`div`,{style:tw.titleArea,children:[(0,R.jsx)(`h1`,{style:tw.mainTitle,className:`mobile-title`,children:`لعبة البولينج`}),(0,R.jsx)(`p`,{style:tw.instruction,className:`mobile-instruction`,children:`صوب على الكلمات التي بها مد بالياء`})]}),(0,R.jsxs)(`div`,{style:tw.box,className:`mobile-box`,children:[`⭐ `,r]})]}),(0,R.jsxs)(`div`,{style:tw.rowsWrapper,className:`rows-wrapper-desktop`,children:[(0,R.jsx)(`div`,{style:tw.row1,children:T.map((e,t)=>k(e,t))}),(0,R.jsx)(`div`,{style:tw.row2,children:E.map((e,t)=>k(e,t+4))})]}),(0,R.jsx)(`img`,{src:qC,alt:`ball`,style:{...tw.ball,left:m.x,top:m.y}}),(0,R.jsxs)(`div`,{style:tw.bottomButtons,className:`\r
           mobile-bottom-buttons\r
           desktop-bottom-buttons\r
-        `,children:[(0,R.jsx)(`button`,{onClick:()=>o(!a),style:tw.smallBtn,className:`mobile-sound`,children:a?(0,R.jsx)(U,{size:20}):(0,R.jsx)(ho,{size:20})}),(0,R.jsx)(`button`,{onClick:D,style:tw.smallBtn,children:(0,R.jsx)(H,{size:20})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Mad`),style:tw.smallBtn,children:(0,R.jsx)(B,{size:20})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:tw.smallBtn,children:(0,R.jsx)(V,{size:20})})]})]})}var tw={game:{width:`100vw`,height:`100vh`,background:`url(${KC}) center/cover no-repeat`,position:`fixed`,top:0,left:0,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,padding:`15px 10px`,boxSizing:`border-box`,overflow:`hidden`,direction:`rtl`},topBar:{display:`flex`,justifyContent:`space-between`,alignItems:`center`,width:`100%`,maxWidth:`850px`,zIndex:5},titleArea:{display:`flex`,flexDirection:`column`,alignItems:`center`},mainTitle:{margin:0,color:`#7b1fa2`,background:`white`,padding:`4px 20px`,borderRadius:16,fontSize:`20px`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},instruction:{margin:`6px 0 0 0`,padding:`4px 16px`,borderRadius:16,background:`#cca5e0`,fontSize:`15px`,fontWeight:`bold`,color:`#fff`,textShadow:`1px 1px 2px rgba(0,0,0,0.3)`,boxShadow:`0 3px 8px rgba(0,0,0,0.1)`},rowsWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`,width:`100%`,gap:`10px`,margin:`auto 0`,zIndex:2},row1:{display:`flex`,gap:`12px`,justifyContent:`center`},row2:{display:`flex`,gap:`12px`,justifyContent:`center`,marginTop:`-15px`},pinContainer:{display:`flex`,flexDirection:`column`,alignItems:`center`,cursor:`pointer`,position:`relative`,transition:`transform 0.2s`},pinText:{fontSize:`17px`,fontWeight:`bold`,color:`#000000`,position:`absolute`,top:`50%`,transform:`translateY(-50%)`,pointerEvents:`none`,textShadow:`0 1px 2px rgba(255,255,255,0.8)`},ball:{width:`70px`,position:`fixed`,transition:`0.5s ease-in-out`,transform:`translate(-50%, -50%)`,zIndex:10},bottomButtons:{display:`flex`,gap:`10px`,zIndex:5},smallBtn:{width:42,height:42,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`},box:{background:`white`,padding:`6px 14px`,borderRadius:14,fontWeight:`bold`,fontSize:`15px`,boxShadow:`0 3px 8px rgba(0,0,0,0.1)`},winOverlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winBox:{background:`white`,padding:`30px 40px`,borderRadius:`24px`,textAlign:`center`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`}},nw=`/Kids-Games/assets/beebg-BjA4N55d.jpeg`;function rw(){let e=I(),t=[{correct:`قَرِيب`,options:[`سَمَعَ`,`كَاتِب`,`قَرِيب`]},{correct:`كَرِيم`,options:[`كَرِيم`,`وَهَبَ`,`قَالَ`]},{correct:`جَمِيل`,options:[`عَادَ`,`جَمِيل`,`عَبَدَ`]},{correct:`سَمِين`,options:[`سَمِين`,`عَرَفَ`,`سَامِعُ`]},{correct:`بَعِيد`,options:[`شَمْسُ`,`رَفَعَ`,`بَعِيد`]},{correct:`صَغِير`,options:[`عَارِفَ`,`صَغِير`,`حَمَدَ`]},{correct:`كَبِير`,options:[`كَبِير`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(!0),C=(0,b.useRef)(null),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(!1),[O,k]=(0,b.useState)(0),A=w&&E;(0,b.useEffect)(()=>{let e=!1;T(!1),k(0);let t=new Image;return t.onload=()=>{e||(k(100),T(!0))},t.onerror=()=>{e||(k(100),T(!0))},t.src=nw,()=>{e=!0}},[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{D(!0)},5e3);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{if(!A||m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[A,m]);let j={كَرِيم:`/Kids-Games/sounds/%D9%83%D8%B1%D9%8A%D9%85.mp3`,قَرِيب:`/Kids-Games/sounds/%D9%82%D8%B1%D9%8A%D8%A8.mp3`,جَمِيل:`/Kids-Games/sounds/%D8%AC%D9%85%D9%8A%D9%84.mp3`,سَمِين:`/Kids-Games/sounds/%D8%B3%D9%85%D9%8A%D9%86.mp3`,بَعِيد:`/Kids-Games/sounds/%D8%A8%D8%B9%D9%8A%D8%AF.mp3`,صَغِير:`/Kids-Games/sounds/%D8%B5%D8%BA%D9%8A%D8%B1.mp3`,كَبِير:`/Kids-Games/sounds/%D9%83%D8%A8%D9%8A%D8%B1.mp3`},M=e=>{if(!x)return;let t=j[e];if(!t)return;C.current&&(C.current.pause(),C.current.currentTime=0);let n=new Audio(t);n.preload=`auto`,n.playbackRate=.85,n.volume=1,C.current=n,n.play().catch(e=>{console.log(`لم يتم تشغيل صوت الكلمة:`,e)})},N=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{M(n.correct)},500)};(0,b.useEffect)(()=>{A&&N(0)},[A]);let P=e=>{if(!(!A||u||m)){if(d(e),e===i){if(s(e=>e+1),_(!0),x){let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(()=>{})}setTimeout(()=>{_(!1)},1200)}else if(x){let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(()=>{})}setTimeout(()=>{let e=f+1;p(e),e>=7?(h(!0),y(!0),setTimeout(()=>{y(!1)},3e3)):N(e)},900)}},ee=()=>{s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),N(0)};return(0,R.jsxs)(`div`,{style:iw.page,children:[(0,R.jsx)(`style`,{children:`
+        `,children:[(0,R.jsx)(`button`,{onClick:()=>o(!a),style:tw.smallBtn,className:`mobile-sound`,children:a?(0,R.jsx)(U,{size:20}):(0,R.jsx)(ho,{size:20})}),(0,R.jsx)(`button`,{onClick:D,style:tw.smallBtn,children:(0,R.jsx)(H,{size:20})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Mad`),style:tw.smallBtn,children:(0,R.jsx)(B,{size:20})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:tw.smallBtn,children:(0,R.jsx)(V,{size:20})})]})]})}var tw={game:{width:`100vw`,height:`100vh`,background:`url(${KC}) center/cover no-repeat`,position:`fixed`,top:0,left:0,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,padding:`15px 10px`,boxSizing:`border-box`,overflow:`hidden`,direction:`rtl`},topBar:{display:`flex`,justifyContent:`space-between`,alignItems:`center`,width:`100%`,maxWidth:`850px`,zIndex:5},titleArea:{display:`flex`,flexDirection:`column`,alignItems:`center`},mainTitle:{margin:0,color:`#7b1fa2`,background:`white`,padding:`4px 20px`,borderRadius:16,fontSize:`20px`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`},instruction:{margin:`6px 0 0 0`,padding:`4px 16px`,borderRadius:16,background:`#cca5e0`,fontSize:`15px`,fontWeight:`bold`,color:`#fff`,textShadow:`1px 1px 2px rgba(0,0,0,0.3)`,boxShadow:`0 3px 8px rgba(0,0,0,0.1)`},rowsWrapper:{display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`center`,width:`100%`,gap:`10px`,margin:`auto 0`,zIndex:2},row1:{display:`flex`,gap:`12px`,justifyContent:`center`},row2:{display:`flex`,gap:`12px`,justifyContent:`center`,marginTop:`-15px`},pinContainer:{display:`flex`,flexDirection:`column`,alignItems:`center`,cursor:`pointer`,position:`relative`,transition:`transform 0.2s`},pinText:{fontSize:`17px`,fontWeight:`bold`,color:`#000000`,position:`absolute`,top:`50%`,transform:`translateY(-50%)`,pointerEvents:`none`,textShadow:`0 1px 2px rgba(255,255,255,0.8)`},ball:{width:`70px`,position:`fixed`,transition:`0.5s ease-in-out`,transform:`translate(-50%, -50%)`,zIndex:10},bottomButtons:{display:`flex`,gap:`10px`,zIndex:5},smallBtn:{width:42,height:42,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`},box:{background:`white`,padding:`6px 14px`,borderRadius:14,fontWeight:`bold`,fontSize:`15px`,boxShadow:`0 3px 8px rgba(0,0,0,0.1)`},winOverlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.6)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winBox:{background:`white`,padding:`30px 40px`,borderRadius:`24px`,textAlign:`center`,boxShadow:`0 10px 25px rgba(0,0,0,0.3)`}},nw=`/Kids-Games/assets/WhatsApp%20Image%202026-06-01%20at%201.33.22%20AM-BjA4N55d.jpeg`;function rw(){let e=I(),t=[{correct:`قَرِيب`,options:[`سَمَعَ`,`كَاتِب`,`قَرِيب`]},{correct:`كَرِيم`,options:[`كَرِيم`,`وَهَبَ`,`قَالَ`]},{correct:`جَمِيل`,options:[`عَادَ`,`جَمِيل`,`عَبَدَ`]},{correct:`سَمِين`,options:[`سَمِين`,`عَرَفَ`,`سَامِعُ`]},{correct:`بَعِيد`,options:[`شَمْسُ`,`رَفَعَ`,`بَعِيد`]},{correct:`صَغِير`,options:[`عَارِفَ`,`صَغِير`,`حَمَدَ`]},{correct:`كَبِير`,options:[`كَبِير`,`كَتَبَ`,`وَاهِبُ`]}],[n,r]=(0,b.useState)([]),[i,a]=(0,b.useState)(``),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(0),[u,d]=(0,b.useState)(null),[f,p]=(0,b.useState)(0),[m,h]=(0,b.useState)(!1),[g,_]=(0,b.useState)(!1),[v,y]=(0,b.useState)(!1),[x,S]=(0,b.useState)(!0),C=(0,b.useRef)(null),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(!1),[O,k]=(0,b.useState)(0),A=w&&E;(0,b.useEffect)(()=>{let e=!1;T(!1),k(0);let t=new Image;return t.onload=()=>{e||(k(100),T(!0))},t.onerror=()=>{e||(k(100),T(!0))},t.src=nw,()=>{e=!0}},[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{D(!0)},5e3);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{if(!A||m)return;let e=setInterval(()=>{l(e=>e+1)},1e3);return()=>clearInterval(e)},[A,m]);let j={كَرِيم:`/Kids-Games/sounds/%D9%83%D8%B1%D9%8A%D9%85.mp3`,قَرِيب:`/Kids-Games/sounds/%D9%82%D8%B1%D9%8A%D8%A8.mp3`,جَمِيل:`/Kids-Games/sounds/%D8%AC%D9%85%D9%8A%D9%84.mp3`,سَمِين:`/Kids-Games/sounds/%D8%B3%D9%85%D9%8A%D9%86.mp3`,بَعِيد:`/Kids-Games/sounds/%D8%A8%D8%B9%D9%8A%D8%AF.mp3`,صَغِير:`/Kids-Games/sounds/%D8%B5%D8%BA%D9%8A%D8%B1.mp3`,كَبِير:`/Kids-Games/sounds/%D9%83%D8%A8%D9%8A%D8%B1.mp3`},M=e=>{if(!x)return;let t=j[e];if(!t)return;C.current&&(C.current.pause(),C.current.currentTime=0);let n=new Audio(t);n.preload=`auto`,n.playbackRate=.85,n.volume=1,C.current=n,n.play().catch(e=>{console.log(`لم يتم تشغيل صوت الكلمة:`,e)})},N=e=>{let n=t[e];r(n.options),a(n.correct),d(null),setTimeout(()=>{M(n.correct)},500)};(0,b.useEffect)(()=>{A&&N(0)},[A]);let P=e=>{if(!(!A||u||m)){if(d(e),e===i){if(s(e=>e+1),_(!0),x){let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3`);e.volume=.7,e.play().catch(()=>{})}setTimeout(()=>{_(!1)},1200)}else if(x){let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3`);e.volume=.7,e.play().catch(()=>{})}setTimeout(()=>{let e=f+1;p(e),e>=7?(h(!0),y(!0),setTimeout(()=>{y(!1)},3e3)):N(e)},900)}},ee=()=>{s(0),l(0),p(0),h(!1),d(null),_(!1),y(!1),N(0)};return(0,R.jsxs)(`div`,{style:iw.page,children:[(0,R.jsx)(`style`,{children:`
 
         /* =================================================
            شاشة التحميل
@@ -21853,36 +21853,26 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           html,
           body,
           #root {
-            width: 100%;
-            min-height: 100%;
             margin: 0;
             padding: 0;
+            width: 100%;
           }
 
-          /*
-            مهم جدًا:
-            شاشة التحميل نفسها Fixed + overflow hidden
-            حتى لا يظهر Scroll مهما كان حجم الشاشة.
-          */
           .mad-loading-screen {
             position: fixed;
             inset: 0;
 
             width: 100vw;
+            height: 100vh;
             height: 100dvh;
 
-            min-width: 0;
-            min-height: 0;
-
-            overflow: hidden !important;
+            overflow: hidden;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
             box-sizing: border-box;
-
-            padding: 16px;
 
             background:
               radial-gradient(
@@ -21905,14 +21895,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             z-index: 999999;
 
             overscroll-behavior: none;
-            touch-action: none;
           }
 
-
-          /*
-            دوائر ديكورية
-            داخل حدود الشاشة فقط حتى لا تسبب Scroll.
-          */
           .mad-loading-circle {
             position: absolute;
 
@@ -21922,12 +21906,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
             opacity: 0.42;
 
-            animation: madCircleFloat 4s ease-in-out infinite;
-
-            max-width: 35vw;
-            max-height: 35vw;
+            animation:
+              madCircleFloat
+              4s
+              ease-in-out
+              infinite;
           }
-
 
           .mad-loading-circle.one {
             width: 170px;
@@ -21936,9 +21920,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             top: -65px;
             left: -55px;
 
-            background: rgba(183, 156, 255, 0.40);
+            background:
+              rgba(183, 156, 255, 0.40);
           }
-
 
           .mad-loading-circle.two {
             width: 190px;
@@ -21947,30 +21931,32 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             right: -70px;
             bottom: -70px;
 
-            background: rgba(101, 205, 226, 0.38);
+            background:
+              rgba(101, 205, 226, 0.38);
 
             animation-delay: 1.3s;
           }
 
-
-          /*
-            كارت التحميل
-          */
           .mad-loading-card {
             position: relative;
 
             z-index: 2;
 
             width: 245px;
-            max-width: calc(100vw - 32px);
 
-            min-width: 0;
-
-            padding: 22px 22px 18px;
+            padding:
+              22px
+              22px
+              18px;
 
             box-sizing: border-box;
 
             border-radius: 22px;
+
+            /*
+              الخط حول مربع التحميل
+            */
+            border: 2px solid #8d70d9;
 
             background:
               linear-gradient(
@@ -21979,30 +21965,31 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 rgba(246, 240, 255, 0.72)
               );
 
-            border: 2px solid rgba(157, 127, 235, 0.25);
-
             box-shadow:
-              0 16px 35px rgba(115, 93, 170, 0.18);
+              0 16px 35px
+              rgba(115, 93, 170, 0.18);
 
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
 
             text-align: center;
 
-            animation: madCardFloat 2.8s ease-in-out infinite;
+            animation:
+              madCardFloat
+              2.8s
+              ease-in-out
+              infinite;
 
             overflow: hidden;
           }
 
-
           .mad-loading-title {
             margin: 0;
-
             padding: 0;
 
             font-family:
               Arial,
-              "Tahoma",
+              Tahoma,
               sans-serif;
 
             font-size: 21px;
@@ -22014,16 +22001,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             color: #7656c8;
 
             white-space: nowrap;
-
-            overflow: hidden;
-
-            text-overflow: clip;
           }
 
-
-          /*
-            النقط المتحركة
-          */
           .mad-loading-dots {
             display: flex;
 
@@ -22036,7 +22015,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
             margin-top: 10px;
           }
-
 
           .mad-loading-dot {
             width: 8px;
@@ -22055,21 +22033,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               ease-in-out;
           }
 
-
           .mad-loading-dot:nth-child(1) {
             animation-delay: 0s;
           }
-
 
           .mad-loading-dot:nth-child(2) {
             animation-delay: 0.2s;
           }
 
-
           .mad-loading-dot:nth-child(3) {
             animation-delay: 0.4s;
           }
-
 
           @keyframes madDotBounce {
 
@@ -22092,7 +22066,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             }
           }
 
-
           @keyframes madCardFloat {
 
             0%,
@@ -22105,28 +22078,29 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             }
           }
 
-
           @keyframes madCircleFloat {
 
             0%,
             100% {
-              transform: translate3d(0, 0, 0);
+              transform:
+                translate3d(0, 0, 0);
             }
 
             50% {
-              transform: translate3d(0, -10px, 0);
+              transform:
+                translate3d(0, -10px, 0);
             }
           }
 
-
-          /*
-            التابلت
-          */
           @media (max-width: 1024px) {
 
             .mad-loading-card {
               width: 225px;
-              padding: 20px 20px 17px;
+
+              padding:
+                20px
+                20px
+                17px;
             }
 
             .mad-loading-title {
@@ -22144,26 +22118,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             }
           }
 
-
           /*
-            الموبايل
+            الموبايل فقط:
+            تكبير المربع شوية عن النسخة السابقة
           */
           @media (max-width: 768px) {
 
-            .mad-loading-screen {
-              padding: 12px;
-            }
-
             .mad-loading-card {
-              width: 205px;
-              max-width: calc(100vw - 24px);
+              width: 220px;
 
               padding:
+                19px
                 18px
-                16px
-                15px;
+                16px;
 
-              border-radius: 19px;
+              border-radius: 20px;
+
+              border-width: 2px;
             }
 
             .mad-loading-title {
@@ -22198,49 +22169,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             }
           }
 
-
-          /*
-            الشاشات الصغيرة جدًا
-          */
           @media (max-width: 380px) {
 
             .mad-loading-card {
-              width: 185px;
-              max-width: calc(100vw - 20px);
+              width: 205px;
 
               padding:
-                16px
-                13px
-                13px;
-
-              border-radius: 17px;
+                17px
+                15px
+                14px;
             }
 
             .mad-loading-title {
-              font-size: 16px;
-            }
-
-            .mad-loading-dots {
-              gap: 5px;
-            }
-
-            .mad-loading-dot {
-              width: 6px;
-              height: 6px;
-              flex-basis: 6px;
-            }
-          }
-
-
-          /*
-            منع الـ overscroll على الشاشات الصغيرة
-          */
-          @media (pointer: coarse) {
-
-            .mad-loading-screen {
-              overscroll-behavior:
-                none
-                contain;
+              font-size: 17px;
             }
           }
 
@@ -22249,7 +22190,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         * {
           box-sizing: border-box;
         }
-
 
         html,
         body {
@@ -22261,18 +22201,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           overflow-x: hidden;
         }
 
-
         body {
           overflow-y: auto;
 
           scrollbar-width: none;
         }
 
-
         body::-webkit-scrollbar {
           display: none;
         }
-
 
         .mad-page {
           width: 100%;
@@ -22297,7 +22234,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             40px;
         }
 
-
         .mad-top-bar {
           width: 100%;
 
@@ -22309,7 +22245,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           margin-bottom: 10px;
         }
 
-
         .mad-icon-button {
           width: 45px;
           height: 45px;
@@ -22317,7 +22252,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           border: none;
           border-radius: 50%;
 
-          background: rgba(255,255,255,0.85);
+          background:
+            rgba(255,255,255,0.85);
 
           display: flex;
           align-items: center;
@@ -22326,21 +22262,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           cursor: pointer;
 
           box-shadow:
-            0 5px 12px rgba(0,0,0,0.12);
+            0 5px 12px
+            rgba(0,0,0,0.12);
 
           transition:
             transform .2s ease,
             box-shadow .2s ease;
         }
 
-
         .mad-icon-button:hover {
-          transform: translateY(-2px) scale(1.05);
+          transform:
+            translateY(-2px)
+            scale(1.05);
 
           box-shadow:
-            0 8px 16px rgba(0,0,0,0.15);
+            0 8px 16px
+            rgba(0,0,0,0.15);
         }
-
 
         .main-wrapper {
           width: 100%;
@@ -22357,7 +22295,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           flex-wrap: wrap;
         }
 
-
         .board-item {
           position: relative;
 
@@ -22368,7 +22305,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           overflow: hidden;
         }
-
 
         .board-image {
           position: absolute;
@@ -22384,7 +22320,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           user-select: none;
         }
-
 
         .board-title {
           position: absolute;
@@ -22407,7 +22342,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           margin: 0;
         }
 
-
         .game-image {
           position: absolute;
 
@@ -22424,16 +22358,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           user-select: none;
         }
 
-
         .game-image:hover {
           transform: scale(1.06);
 
           filter:
             drop-shadow(
-              0 8px 10px rgba(0,0,0,.16)
+              0 8px 10px
+              rgba(0,0,0,.16)
             );
         }
-
 
         .sound-button {
           position: fixed;
@@ -22459,9 +22392,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           cursor: pointer;
 
           box-shadow:
-            0 5px 15px rgba(0,0,0,.15);
+            0 5px 15px
+            rgba(0,0,0,.15);
         }
-
 
         @media (max-width: 1024px) {
 
@@ -22476,18 +22409,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             gap: 18px;
           }
 
-
           .board-item {
             width: 350px;
             height: 360px;
           }
 
-
           .board-title {
             font-size: 24px;
           }
         }
-
 
         @media (max-width: 768px) {
 
@@ -22497,7 +22427,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               10px
               30px;
           }
-
 
           .main-wrapper {
             display: flex;
@@ -22511,7 +22440,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             margin-top: 15px;
           }
 
-
           .board-item {
             width: 275px;
             height: 300px;
@@ -22519,13 +22447,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             flex: 0 0 300px;
           }
 
-
           .board-title {
             top: 65px;
 
             font-size: 23px;
           }
-
 
           .sound-button {
             width: 43px;
@@ -22535,7 +22461,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             bottom: 12px;
           }
         }
-
 
         @media (max-width: 380px) {
 
