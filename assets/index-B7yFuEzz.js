@@ -49995,7 +49995,338 @@ and
     font-size: .8rem !important;
   }
 }
-`,fN={container:{width:`100vw`,height:`100vh`,position:`relative`,overflow:`hidden`,fontFamily:`'Cairo', sans-serif`,direction:`rtl`,backgroundColor:`#38bdf8`,userSelect:`none`,touchAction:`none`},bgImg:{width:`100%`,height:`100%`,objectFit:`cover`,position:`absolute`,top:0,left:0,zIndex:0},loadingOverlay:{position:`fixed`,inset:0,width:`100%`,height:`100%`,background:`linear-gradient(135deg, #f9a8d4 0%, #fde68a 28%, #bbf7d0 52%, #bae6fd 75%, #ddd6fe 100%)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:1e4,overflow:`hidden`},loadingCard:{position:`relative`,zIndex:10,width:`270px`,minWidth:`220px`,padding:`20px 21px 18px`,borderRadius:`22px`,background:`linear-gradient(145deg, rgba(255,255,255,.96), rgba(255,248,252,.94))`,border:`3px solid rgba(255,255,255,.95)`,boxShadow:`0 8px 30px rgba(124,58,237,.22), 0 0 0 3px rgba(255,255,255,.35)`,textAlign:`center`,boxSizing:`border-box`},loadingText:{position:`relative`,zIndex:4,color:`#6d28d9`,fontSize:`1.03rem`,fontWeight:`900`,marginBottom:`12px`,whiteSpace:`nowrap`,textShadow:`0 1px 3px rgba(109,40,217,.15)`},loadingProgressTrack:{position:`relative`,zIndex:4,width:`100%`,height:`9px`,background:`rgba(226,232,240,.9)`,borderRadius:`20px`,overflow:`hidden`,border:`1px solid rgba(148,163,184,.35)`,boxShadow:`inset 0 1px 4px rgba(0,0,0,.12)`},loadingProgressBar:{height:`100%`,borderRadius:`20px`,background:`linear-gradient(90deg, #ef4444 0%, #f97316 18%, #facc15 36%, #22c55e 54%, #3b82f6 72%, #8b5cf6 88%, #ec4899 100%)`,boxShadow:`0 0 10px rgba(168,85,247,.35)`,transition:`width .3s ease`},headerContainer:{},titleBox:{backgroundColor:`rgba(15,23,42,.75)`,color:`#fff`,padding:`5px 18px`,borderRadius:`14px`,fontSize:`1.25rem`,fontWeight:`900`,textAlign:`center`,border:`2px solid #38bdf8`,boxShadow:`0 4px 15px rgba(0,0,0,.3)`,letterSpacing:`.5px`},subtitleBox:{backgroundColor:`rgba(234,179,8,.85)`,color:`#0f172a`,padding:`3px 14px`,borderRadius:`10px`,fontSize:`.9rem`,fontWeight:`800`,textAlign:`center`,boxShadow:`0 2px 10px rgba(0,0,0,.2)`},wordCard:{},wordText:{},speakerBtn:{background:`rgba(255,255,255,.2)`,border:`1px solid rgba(255,255,255,.4)`,borderRadius:`50%`,padding:`6px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`},rainbowContainer:{},cloudsContainer:{},cloudWrapper:{display:`flex`,justifyContent:`center`,alignItems:`center`},cloudImg:{width:`100%`,height:`100%`,objectFit:`contain`,position:`absolute`,top:0,left:0},cloudText:{position:`relative`,zIndex:2,marginTop:`5px`,pointerEvents:`none`},scoreBadge:{background:`rgba(15,23,42,.85)`,borderRadius:`18px`,display:`flex`,alignItems:`center`,gap:`6px`,fontWeight:`bold`,color:`#f57c00`,border:`2px solid #f57c00`,boxShadow:`0 4px 12px rgba(0,0,0,.4)`},timerBadge:{background:`rgba(15,23,42,.85)`,borderRadius:`18px`,display:`flex`,alignItems:`center`,gap:`6px`,fontWeight:`bold`,color:`#38bdf8`,border:`2px solid #38bdf8`,boxShadow:`0 4px 12px rgba(0,0,0,.4)`},feedbackMessage:{position:`absolute`,top:`25%`,left:`50%`,transform:`translateX(-50%)`,zIndex:60,borderRadius:`12px`,fontWeight:`bold`,color:`#fff`,padding:`5px 16px`,fontSize:`1rem`,textAlign:`center`,boxShadow:`0 4px 15px rgba(0,0,0,.3)`,pointerEvents:`none`},success:{backgroundColor:`#15803d`},error:{backgroundColor:`#b91c1c`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,.8)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winCard:{background:`#0f172a`,border:`3px solid #38bdf8`,borderRadius:`20px`,textAlign:`center`,boxShadow:`0 0 30px rgba(56,189,248,.4)`,display:`flex`,flexDirection:`column`,alignItems:`center`},trophyWrapper:{marginBottom:`2px`,filter:`drop-shadow(0 0 8px #ffd700)`},winTitle:{color:`#f8fafc`,fontWeight:`800`},winStatsBox:{background:`rgba(255,255,255,.08)`,borderRadius:`12px`,border:`1px solid rgba(255,255,255,.2)`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`100%`,boxSizing:`border-box`},winStatLabel:{display:`flex`,alignItems:`center`,gap:`5px`,fontWeight:`bold`,color:`#fde047`},winActionButtons:{display:`flex`,justifyContent:`center`,gap:`10px`},winIconBtn:{background:`#1e293b`,border:`2px solid #38bdf8`,borderRadius:`50%`,cursor:`pointer`,color:`#38bdf8`,boxShadow:`0 3px 10px rgba(0,0,0,.3)`,display:`flex`,alignItems:`center`,justifyContent:`center`},controlsBarBottom:{},iconBtn:{background:`rgba(15,23,42,.9)`,border:`2px solid #38bdf8`,borderRadius:`50%`,cursor:`pointer`,color:`#38bdf8`,boxShadow:`0 4px 14px rgba(0,0,0,.5)`,display:`flex`,alignItems:`center`,justifyContent:`center`}},pN=`/Kids-Games/assets/sukoobg7-BHSTc4IY.jpeg`,mN=`/Kids-Games/assets/suktitle7-Dv2UPnAn.png`,hN=`/Kids-Games/assets/strgame7-3FnmVgYK.png`,gN=`/Kids-Games/assets/listengame7-xhzz3sBa.png`,_N=`/Kids-Games/assets/dinogame8-COOFIkRf.png`,vN=`/Kids-Games/assets/fh7-Cpi245Vd.png`,yN=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1);(0,b.useEffect)(()=>{let e=new Image;e.src=pN,[mN,Bw,Vw,hN,gN,_N,vN].forEach(e=>{let t=new Image;t.src=e})},[]);let a=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},o=[{id:`imgStar`,img:hN,path:`/Hamzaoctups`},{id:`imgListen`,img:gN,path:`/Hamzaanimal`},{id:`imgDino`,img:_N,path:`/Hamzacandy`},{id:`imgBalloons`,img:vN,path:`/Hamzawaslicen`}];return(0,R.jsxs)(`div`,{className:`sukoon-container`,style:{backgroundImage:`url(${pN})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,minHeight:`100vh`,width:`100vw`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`,overflow:`hidden`},children:[(0,R.jsx)(`style`,{children:`
+`,fN={container:{width:`100vw`,height:`100vh`,position:`relative`,overflow:`hidden`,fontFamily:`'Cairo', sans-serif`,direction:`rtl`,backgroundColor:`#38bdf8`,userSelect:`none`,touchAction:`none`},bgImg:{width:`100%`,height:`100%`,objectFit:`cover`,position:`absolute`,top:0,left:0,zIndex:0},loadingOverlay:{position:`fixed`,inset:0,width:`100%`,height:`100%`,background:`linear-gradient(135deg, #f9a8d4 0%, #fde68a 28%, #bbf7d0 52%, #bae6fd 75%, #ddd6fe 100%)`,display:`flex`,alignItems:`center`,justifyContent:`center`,zIndex:1e4,overflow:`hidden`},loadingCard:{position:`relative`,zIndex:10,width:`270px`,minWidth:`220px`,padding:`20px 21px 18px`,borderRadius:`22px`,background:`linear-gradient(145deg, rgba(255,255,255,.96), rgba(255,248,252,.94))`,border:`3px solid rgba(255,255,255,.95)`,boxShadow:`0 8px 30px rgba(124,58,237,.22), 0 0 0 3px rgba(255,255,255,.35)`,textAlign:`center`,boxSizing:`border-box`},loadingText:{position:`relative`,zIndex:4,color:`#6d28d9`,fontSize:`1.03rem`,fontWeight:`900`,marginBottom:`12px`,whiteSpace:`nowrap`,textShadow:`0 1px 3px rgba(109,40,217,.15)`},loadingProgressTrack:{position:`relative`,zIndex:4,width:`100%`,height:`9px`,background:`rgba(226,232,240,.9)`,borderRadius:`20px`,overflow:`hidden`,border:`1px solid rgba(148,163,184,.35)`,boxShadow:`inset 0 1px 4px rgba(0,0,0,.12)`},loadingProgressBar:{height:`100%`,borderRadius:`20px`,background:`linear-gradient(90deg, #ef4444 0%, #f97316 18%, #facc15 36%, #22c55e 54%, #3b82f6 72%, #8b5cf6 88%, #ec4899 100%)`,boxShadow:`0 0 10px rgba(168,85,247,.35)`,transition:`width .3s ease`},headerContainer:{},titleBox:{backgroundColor:`rgba(15,23,42,.75)`,color:`#fff`,padding:`5px 18px`,borderRadius:`14px`,fontSize:`1.25rem`,fontWeight:`900`,textAlign:`center`,border:`2px solid #38bdf8`,boxShadow:`0 4px 15px rgba(0,0,0,.3)`,letterSpacing:`.5px`},subtitleBox:{backgroundColor:`rgba(234,179,8,.85)`,color:`#0f172a`,padding:`3px 14px`,borderRadius:`10px`,fontSize:`.9rem`,fontWeight:`800`,textAlign:`center`,boxShadow:`0 2px 10px rgba(0,0,0,.2)`},wordCard:{},wordText:{},speakerBtn:{background:`rgba(255,255,255,.2)`,border:`1px solid rgba(255,255,255,.4)`,borderRadius:`50%`,padding:`6px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`},rainbowContainer:{},cloudsContainer:{},cloudWrapper:{display:`flex`,justifyContent:`center`,alignItems:`center`},cloudImg:{width:`100%`,height:`100%`,objectFit:`contain`,position:`absolute`,top:0,left:0},cloudText:{position:`relative`,zIndex:2,marginTop:`5px`,pointerEvents:`none`},scoreBadge:{background:`rgba(15,23,42,.85)`,borderRadius:`18px`,display:`flex`,alignItems:`center`,gap:`6px`,fontWeight:`bold`,color:`#f57c00`,border:`2px solid #f57c00`,boxShadow:`0 4px 12px rgba(0,0,0,.4)`},timerBadge:{background:`rgba(15,23,42,.85)`,borderRadius:`18px`,display:`flex`,alignItems:`center`,gap:`6px`,fontWeight:`bold`,color:`#38bdf8`,border:`2px solid #38bdf8`,boxShadow:`0 4px 12px rgba(0,0,0,.4)`},feedbackMessage:{position:`absolute`,top:`25%`,left:`50%`,transform:`translateX(-50%)`,zIndex:60,borderRadius:`12px`,fontWeight:`bold`,color:`#fff`,padding:`5px 16px`,fontSize:`1rem`,textAlign:`center`,boxShadow:`0 4px 15px rgba(0,0,0,.3)`,pointerEvents:`none`},success:{backgroundColor:`#15803d`},error:{backgroundColor:`#b91c1c`},overlay:{position:`absolute`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,.8)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:100},winCard:{background:`#0f172a`,border:`3px solid #38bdf8`,borderRadius:`20px`,textAlign:`center`,boxShadow:`0 0 30px rgba(56,189,248,.4)`,display:`flex`,flexDirection:`column`,alignItems:`center`},trophyWrapper:{marginBottom:`2px`,filter:`drop-shadow(0 0 8px #ffd700)`},winTitle:{color:`#f8fafc`,fontWeight:`800`},winStatsBox:{background:`rgba(255,255,255,.08)`,borderRadius:`12px`,border:`1px solid rgba(255,255,255,.2)`,display:`flex`,alignItems:`center`,justifyContent:`center`,width:`100%`,boxSizing:`border-box`},winStatLabel:{display:`flex`,alignItems:`center`,gap:`5px`,fontWeight:`bold`,color:`#fde047`},winActionButtons:{display:`flex`,justifyContent:`center`,gap:`10px`},winIconBtn:{background:`#1e293b`,border:`2px solid #38bdf8`,borderRadius:`50%`,cursor:`pointer`,color:`#38bdf8`,boxShadow:`0 3px 10px rgba(0,0,0,.3)`,display:`flex`,alignItems:`center`,justifyContent:`center`},controlsBarBottom:{},iconBtn:{background:`rgba(15,23,42,.9)`,border:`2px solid #38bdf8`,borderRadius:`50%`,cursor:`pointer`,color:`#38bdf8`,boxShadow:`0 4px 14px rgba(0,0,0,.5)`,display:`flex`,alignItems:`center`,justifyContent:`center`}},pN=`/Kids-Games/assets/sukoobg7-BHSTc4IY.jpeg`,mN=`/Kids-Games/assets/suktitle7-Dv2UPnAn.png`,hN=`/Kids-Games/assets/strgame7-3FnmVgYK.png`,gN=`/Kids-Games/assets/listengame7-xhzz3sBa.png`,_N=`/Kids-Games/assets/dinogame8-COOFIkRf.png`,vN=`/Kids-Games/assets/fh7-Cpi245Vd.png`,yN=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!0);(0,b.useEffect)(()=>{let e=!0,t=[pN,mN,Bw,Vw,hN,gN,_N,vN],n=e=>new Promise(t=>{let n=new Image;n.onload=async()=>{try{n.decode&&await n.decode()}catch{}t()},n.onerror=()=>{t()},n.src=e});return(async()=>{let r=Date.now();await Promise.all(t.map(e=>n(e)));let i=Date.now()-r,a=Math.max(0,2200-i);setTimeout(()=>{e&&o(!1)},a)})(),()=>{e=!1}},[]);let s=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},c=[{id:`imgStar`,img:hN,path:`/Hamzaoctups`},{id:`imgListen`,img:gN,path:`/Hamzaanimal`},{id:`imgDino`,img:_N,path:`/Hamzacandy`},{id:`imgBalloons`,img:vN,path:`/Hamzawaslicen`}];return a?(0,R.jsxs)(`div`,{className:`sukoon-loading-screen`,children:[(0,R.jsx)(`style`,{children:`
+          html,
+          body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+
+          #root {
+            width: 100%;
+            height: 100%;
+          }
+
+          .sukoon-loading-screen {
+            width: 100vw;
+            height: 100vh;
+            min-height: 100vh;
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+              radial-gradient(
+                circle at 18% 20%,
+                rgba(255, 255, 255, 0.55) 0 7%,
+                transparent 7.5%
+              ),
+              radial-gradient(
+                circle at 82% 18%,
+                rgba(255, 255, 255, 0.38) 0 9%,
+                transparent 9.5%
+              ),
+              radial-gradient(
+                circle at 15% 82%,
+                rgba(157, 226, 218, 0.28) 0 11%,
+                transparent 11.5%
+              ),
+              radial-gradient(
+                circle at 88% 84%,
+                rgba(231, 211, 181, 0.4) 0 10%,
+                transparent 10.5%
+              ),
+              linear-gradient(
+                135deg,
+                #f3eadb 0%,
+                #eee3d0 35%,
+                #dcefea 68%,
+                #cfe9e5 100%
+              );
+
+            font-family:
+              Arial,
+              "Tahoma",
+              sans-serif;
+
+            z-index: 99999;
+          }
+
+          /* دوائر ديكورية */
+          .sukoon-loading-circle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+          }
+
+          .sukoon-loading-circle-one {
+            width: 150px;
+            height: 150px;
+            left: -55px;
+            top: 12%;
+            background: rgba(179, 224, 218, 0.34);
+            animation: loadingCircleOne 5s ease-in-out infinite;
+          }
+
+          .sukoon-loading-circle-two {
+            width: 190px;
+            height: 190px;
+            right: -70px;
+            bottom: 8%;
+            background: rgba(225, 204, 169, 0.34);
+            animation: loadingCircleTwo 6s ease-in-out infinite;
+          }
+
+          .sukoon-loading-circle-three {
+            width: 70px;
+            height: 70px;
+            right: 17%;
+            top: 11%;
+            background: rgba(154, 216, 209, 0.38);
+            animation: loadingCircleThree 4s ease-in-out infinite;
+          }
+
+          .sukoon-loading-circle-four {
+            width: 52px;
+            height: 52px;
+            left: 17%;
+            bottom: 15%;
+            background: rgba(238, 216, 184, 0.5);
+            animation: loadingCircleFour 4.5s ease-in-out infinite;
+          }
+
+          /* كارت التحميل */
+          .sukoon-loading-card {
+            width: 275px;
+            min-height: 145px;
+            padding: 25px 25px 22px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            box-sizing: border-box;
+
+            border-radius: 28px;
+
+            background:
+              linear-gradient(
+                145deg,
+                rgba(255, 249, 238, 0.97),
+                rgba(225, 242, 238, 0.96)
+              );
+
+            border: 3px solid #74bdb5;
+
+            box-shadow:
+              0 15px 35px rgba(101, 139, 133, 0.22),
+              inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+            animation: loadingCardFloat 2.8s ease-in-out infinite;
+
+            position: relative;
+            z-index: 10;
+          }
+
+          .sukoon-loading-title {
+            direction: rtl;
+            text-align: center;
+
+            font-size: 25px;
+            font-weight: 800;
+
+            color: #397c78;
+
+            line-height: 1.5;
+
+            white-space: nowrap;
+
+            text-shadow:
+              0 1px 0 rgba(255, 255, 255, 0.8);
+
+            margin-bottom: 14px;
+          }
+
+          .sukoon-loading-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 20px;
+          }
+
+          .sukoon-loading-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+
+            background: #64b3ab;
+
+            opacity: 0.25;
+
+            animation:
+              loadingDot 1.25s ease-in-out infinite;
+          }
+
+          .sukoon-loading-dot:nth-child(1) {
+            animation-delay: 0s;
+          }
+
+          .sukoon-loading-dot:nth-child(2) {
+            animation-delay: 0.18s;
+          }
+
+          .sukoon-loading-dot:nth-child(3) {
+            animation-delay: 0.36s;
+          }
+
+          @keyframes loadingCardFloat {
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+
+            50% {
+              transform: translateY(-7px);
+            }
+          }
+
+          @keyframes loadingDot {
+            0%,
+            100% {
+              opacity: 0.25;
+              transform: translateY(0) scale(0.8);
+            }
+
+            45% {
+              opacity: 1;
+              transform: translateY(-5px) scale(1);
+            }
+
+            70% {
+              opacity: 0.65;
+              transform: translateY(0) scale(0.9);
+            }
+          }
+
+          @keyframes loadingCircleOne {
+            0%,
+            100% {
+              transform: translate(0, 0);
+            }
+
+            50% {
+              transform: translate(20px, 18px);
+            }
+          }
+
+          @keyframes loadingCircleTwo {
+            0%,
+            100% {
+              transform: translate(0, 0);
+            }
+
+            50% {
+              transform: translate(-18px, -15px);
+            }
+          }
+
+          @keyframes loadingCircleThree {
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+
+            50% {
+              transform: translateY(12px);
+            }
+          }
+
+          @keyframes loadingCircleFour {
+            0%,
+            100% {
+              transform: translate(0, 0);
+            }
+
+            50% {
+              transform: translate(12px, -10px);
+            }
+          }
+
+          /* تابلت */
+          @media (max-width: 992px) {
+            .sukoon-loading-card {
+              width: 250px;
+              min-height: 135px;
+              border-radius: 25px;
+            }
+
+            .sukoon-loading-title {
+              font-size: 23px;
+            }
+          }
+
+          /* موبايل */
+          @media (max-width: 600px) {
+            .sukoon-loading-card {
+              width: 235px;
+              min-height: 130px;
+              padding: 22px 18px 20px;
+              border-radius: 24px;
+              border-width: 2.5px;
+            }
+
+            .sukoon-loading-title {
+              font-size: 22px;
+              margin-bottom: 12px;
+            }
+
+            .sukoon-loading-dot {
+              width: 9px;
+              height: 9px;
+            }
+
+            .sukoon-loading-circle-one {
+              width: 115px;
+              height: 115px;
+            }
+
+            .sukoon-loading-circle-two {
+              width: 145px;
+              height: 145px;
+            }
+
+            .sukoon-loading-circle-three {
+              width: 55px;
+              height: 55px;
+            }
+
+            .sukoon-loading-circle-four {
+              width: 42px;
+              height: 42px;
+            }
+          }
+
+          /* شاشات الموبايل الصغيرة جدًا */
+          @media (max-width: 380px) {
+            .sukoon-loading-card {
+              width: 220px;
+              min-height: 122px;
+            }
+
+            .sukoon-loading-title {
+              font-size: 20px;
+            }
+          }
+        `}),(0,R.jsx)(`div`,{className:`sukoon-loading-circle sukoon-loading-circle-one`}),(0,R.jsx)(`div`,{className:`sukoon-loading-circle sukoon-loading-circle-two`}),(0,R.jsx)(`div`,{className:`sukoon-loading-circle sukoon-loading-circle-three`}),(0,R.jsx)(`div`,{className:`sukoon-loading-circle sukoon-loading-circle-four`}),(0,R.jsxs)(`div`,{className:`sukoon-loading-card`,children:[(0,R.jsx)(`div`,{className:`sukoon-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`sukoon-loading-dots`,children:[(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`})]})]})]}):(0,R.jsxs)(`div`,{className:`sukoon-container`,style:{backgroundImage:`url(${pN})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,minHeight:`100vh`,width:`100vw`,display:`flex`,flexDirection:`column`,alignItems:`center`,position:`relative`,overflow:`hidden`},children:[(0,R.jsx)(`style`,{children:`
         html, body {
           margin: 0;
           padding: 0;
@@ -50110,7 +50441,7 @@ and
             bottom: 55px !important;
           }
         }
-      `}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:{...bN,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{onClick:()=>i(!r),style:{...bN,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsx)(`img`,{className:`title-img`,src:mN,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,R.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#ce6d4c`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,R.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#cf5e29`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},bN={width:`45px`,height:`45px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},xN=`/Kids-Games/assets/forestB-Bc14KDTU.jpeg`,SN=`/Kids-Games/assets/basket1-CRGVtZVd.png`,CN=`/Kids-Games/assets/key-CLSQO5-B.png`,wN=`/Kids-Games/assets/rainbowTitleBoard1-D9FvS7wc.png`,TN=`/Kids-Games/assets/lionclosed-BMmV9vU6.png`,EN=`/Kids-Games/assets/lionopen-DCgDWkjW.png`,DN=`/Kids-Games/assets/rabbit_closed-EoVeSnom.png`,ON=`/Kids-Games/assets/rabbit_open-DM8zc095.png`,kN=`/Kids-Games/assets/goose_closed-QEoEtx4p.png`,AN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,jN=`/Kids-Games/assets/octopus_closed-hF6-LhyX.png`,MN=`/Kids-Games/assets/octopus_open-Du2g0Urq.png`,NN=`/Kids-Games/assets/snake_closed-CpPhlRkM.png`,PN=`/Kids-Games/assets/snake_open-1mRHa0xr.png`,FN=`/Kids-Games/assets/elephant_closed-B9y4oFj6.png`,IN=`/Kids-Games/assets/camel_open-CeHePenA.png`,LN=`/Kids-Games/assets/deer_closed-CdDn_w_v.png`,RN=`/Kids-Games/assets/deer_open-GPGCBXEA.png`,zN=`/Kids-Games/assets/centipede_closed-DptoISVp.png`,BN=`/Kids-Games/assets/centipede_open-Kd9GZNUE.png`,VN=`/Kids-Games/assets/lioness_closed-CxqZ3V-Y.png`,HN=`/Kids-Games/assets/lioness_open-DRRoBgp_.png`,UN=`/Kids-Games/assets/elephant_closed-B9y4oFj6.png`,WN=`/Kids-Games/assets/camel_open-CeHePenA.png`,GN=`/Kids-Games/assets/monkey_closed-CWQ9uOf-.png`,KN=`/Kids-Games/assets/monkey_open-BWUXkxzP.png`,qN=`/Kids-Games/assets/goose_closed-QEoEtx4p.png`,JN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,YN=[{id:1,name:`أَسَد`,isCorrect:!0,closedImg:TN,openImg:EN},{id:2,name:`أَرْنَب`,isCorrect:!0,closedImg:DN,openImg:ON},{id:3,name:`إِوَّزَة`,isCorrect:!0,closedImg:kN,openImg:AN},{id:4,name:`أَخْطَبُوط`,isCorrect:!0,closedImg:jN,openImg:MN},{id:5,name:`أَفْعَى`,isCorrect:!0,closedImg:NN,openImg:PN},{id:6,name:`إِبِل`,isCorrect:!0,closedImg:FN,openImg:IN},{id:7,name:`أُيَّل`,isCorrect:!0,closedImg:LN,openImg:RN},{id:8,name:`أبو قردان`,isCorrect:!0,closedImg:zN,openImg:BN},{id:9,name:`إبل`,isCorrect:!0,closedImg:UN,openImg:WN}],XN=[{id:10,name:`زرافة`,isCorrect:!1,closedImg:VN,openImg:HN},{id:11,name:`فيل`,isCorrect:!1,closedImg:GN,openImg:KN},{id:12,name:`بَطَّة`,isCorrect:!1,closedImg:qN,openImg:JN}];function ZN(){let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5);return e.shift(),e}),[s,c]=(0,b.useState)(()=>{let e=[...XN].sort(()=>Math.random()-.5);return e.shift(),e}),[l,u]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5),t=[...XN].sort(()=>Math.random()-.5),n=e[0],r=t[0];return Math.random()>.5?[n,r]:[r,n]}),[d,f]=(0,b.useState)({}),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(0),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(!0),[S,C]=(0,b.useState)({text:``,type:``}),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(null),[O,k]=(0,b.useState)(null);(0,b.useEffect)(()=>{let e=!0,t=[xN,SN,CN,wN,TN,EN,DN,ON,kN,AN,jN,MN,NN,PN,FN,IN,LN,RN,zN,BN,VN,HN,UN,WN,GN,KN,qN,JN],r=Date.now(),a=0,o=()=>{if(a+=1,!e)return;let n=Math.round(a/t.length*100);i(e=>Math.max(e,Math.min(n,100)))},s=t.map(e=>new Promise(t=>{let n=new Image;n.onload=()=>{o(),t()},n.onerror=()=>{o(),t()},n.src=e}));return Promise.all(s).then(()=>{if(!e)return;let t=Date.now()-r,a=Math.max(0,5e3-t),o=setInterval(()=>{i(e=>e>=100?(clearInterval(o),100):Math.min(e+2,100))},45);setTimeout(()=>{clearInterval(o),e&&(i(100),setTimeout(()=>{e&&n(!1)},250))},a)}),()=>{e=!1}},[]);let A=(e,t)=>{let n=[...e],r=[...t];if(n.length===0)return{pair:[],nextC:[],nextW:[]};r.length===0&&(r=[...XN].sort(()=>Math.random()-.5));let i=n.shift(),a=r.shift();return{pair:Math.random()>.5?[i,a]:[a,i],nextC:n,nextW:r}},j=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:523.25,time:0},{frequency:659.25,time:.13},{frequency:783.99,time:.26}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.25,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.24),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.25)}),setTimeout(()=>{t.close()},750)}catch{}},M=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:330,time:0},{frequency:277.18,time:.12}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.2,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.2),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.22)}),setTimeout(()=>{t.close()},550)}catch{}};(0,b.useEffect)(()=>{let e=null;return!t&&!_&&(e=setInterval(()=>{g(e=>e+1)},1e3)),()=>clearInterval(e)},[t,_]);let N=(e,t)=>{e.preventDefault(),k(t),D({x:e.clientX,y:e.clientY})};(0,b.useEffect)(()=>{let e=e=>{O!==null&&D({x:e.clientX,y:e.clientY})},t=e=>{if(O===null||!E)return;let t=document.elementFromPoint(e.clientX,e.clientY)?.closest(`.cage-card`);if(t){let e=t.getAttribute(`data-animal-id`),n=l.find(t=>t.id===Number(e));n&&P(n)}k(null),D(null)};return O!==null&&(window.addEventListener(`pointermove`,e),window.addEventListener(`pointerup`,t),window.addEventListener(`pointercancel`,t)),()=>{window.removeEventListener(`pointermove`,e),window.removeEventListener(`pointerup`,t),window.removeEventListener(`pointercancel`,t)}},[O,E,l]);let P=e=>{w||_||d[e.id]||(e.isCorrect?(T(!0),j(),f(t=>({...t,[e.id]:!0})),m(e=>e+10),C({text:`أحسنت 🔓`,type:`success`}),setTimeout(()=>{let{pair:e,nextC:t,nextW:n}=A(a,s);e.length>0?(u(e),o(t),c(n),f({})):v(!0),C({text:``,type:``}),T(!1),p+10>=90&&v(!0)},450)):(M(),C({text:`خطأ❌`,type:`error`}),setTimeout(()=>{C({text:``,type:``})},1e3)))};return(0,R.jsxs)(`div`,{className:`game-container`,style:$N.container,children:[(0,R.jsx)(`style`,{children:QN}),t&&(0,R.jsxs)(`div`,{className:`loading-screen`,children:[(0,R.jsxs)(`div`,{className:`loading-decor`,children:[(0,R.jsx)(`span`,{className:`loading-icon loading-icon-1`,children:`🦁`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-2`,children:`🌿`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-3`,children:`🐰`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-4`,children:`🦌`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-5`,children:`🐾`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-6`,children:`🌳`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-7`,children:`🐘`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-8`,children:`🦋`})]}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-progress`,children:(0,R.jsx)(`div`,{className:`loading-progress-fill`,style:{width:`${r}%`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[r,`%`]})]})]}),(0,R.jsx)(`img`,{src:xN,alt:`خلفية اللعبة`,style:$N.bgImg}),(0,R.jsxs)(`div`,{className:`game-badge badge-left`,children:[`⭐ `,p]}),(0,R.jsxs)(`div`,{className:`game-badge badge-right badge-timer`,children:[`⏱️ `,(e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${n<10?`0`:``}${n}`})(h)]}),(0,R.jsxs)(`div`,{className:`header-resp`,children:[(0,R.jsxs)(`div`,{style:{position:`relative`,display:`inline-flex`,justifyContent:`center`,alignItems:`center`},children:[(0,R.jsx)(`img`,{src:wN,alt:`لوحة العنوان`,className:`title-board-img`}),(0,R.jsx)(`h1`,{className:`game-title`,children:`إنْقَاذُ الحَيَوَانَات`})]}),(0,R.jsx)(`p`,{className:`instruction-text`,children:`افْتَحِ القَفَصَ لِلْحَيَوَانِ الَّذِي يَبْدَأُ اسْمُهُ بِحَرْفِ الأَلِفِ`})]}),(0,R.jsx)(`div`,{className:`cages-grid`,children:l.map(e=>{let t=!!d[e.id];return(0,R.jsxs)(`div`,{"data-animal-id":e.id,className:`cage-card`,children:[(0,R.jsx)(`img`,{src:t?e.openImg:e.closedImg,alt:e.name,className:`cage-img-element`}),(0,R.jsx)(`div`,{className:`animal-nametag`,children:e.name})]},e.id)})}),(0,R.jsx)(`div`,{className:`bottom-bar`,children:(0,R.jsxs)(`div`,{className:`bottom-content-wrapper`,children:[(0,R.jsxs)(`div`,{style:$N.footerBtns,children:[(0,R.jsx)(`button`,{onClick:()=>x(!y),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(U,{className:`btn-icon`,color:y?`#000`:`gray`})}),(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(H,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(V,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(B,{className:`btn-icon`})})]}),(0,R.jsxs)(`div`,{className:`basket-area`,children:[(0,R.jsx)(`img`,{src:SN,alt:`السلة الخشبية`,className:`basket-img`}),(0,R.jsx)(`div`,{className:`keys-group`,children:[0,1].map(e=>(0,R.jsx)(`img`,{src:CN,alt:`مفتاح`,className:`draggable-key`,onPointerDown:t=>N(t,e),style:{opacity:O===e?0:1}},e))})]})]})}),O!==null&&E&&(0,R.jsx)(`img`,{src:`/Kids-Games/assets/key-CLSQO5-B.png`,alt:`مفتاح حقيقي محمول`,style:{position:`fixed`,left:`${E.x}px`,top:`${E.y}px`,transform:`translate(-50%, -50%) scale(1.2) rotate(-20deg)`,zIndex:9999,pointerEvents:`none`,width:`50px`,height:`auto`,filter:`drop-shadow(0 10px 15px rgba(0,0,0,0.5))`}}),S.text&&(0,R.jsx)(`div`,{style:{...$N.messageBox,backgroundColor:S.type===`success`?`#15803d`:`#b91c1c`},children:S.text}),_&&(0,R.jsx)(`div`,{style:$N.overlay,children:(0,R.jsxs)(`div`,{style:$N.winCard,children:[(0,R.jsx)(Ti,{size:35,color:`#f59e0b`}),(0,R.jsx)(`h2`,{style:{fontSize:`1.5rem`,margin:`15px 0`,color:`#1e3a8a`},children:`أَحْسَنْتَ يَا بَطَلُ! 🥳`}),(0,R.jsxs)(`p`,{style:{fontSize:`1.5rem`,fontWeight:`bold`,margin:`5px 0`},children:[`عدد النقاط:`,` `,(0,R.jsx)(`span`,{style:{color:`#d97706`},children:p})]}),(0,R.jsxs)(`div`,{style:{display:`flex`,gap:`15px`},children:[(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.winIconBtn,title:`إعادة المحاولة`,children:(0,R.jsx)(H,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.winIconBtn,title:`الرئيسية`,children:(0,R.jsx)(V,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.winIconBtn,title:`المرحلة التالية`,children:(0,R.jsx)(B,{size:26,color:`#fff`})})]})]})})]})}var QN=`
+      `}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:{...bN,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{onClick:()=>i(!r),style:{...bN,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsx)(`img`,{className:`title-img`,src:mN,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,R.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#ce6d4c`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,R.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#cf5e29`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:c.map(r=>(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{s(),e(r.path)},onMouseEnter:()=>{n(r.id),s()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},bN={width:`45px`,height:`45px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},xN=`/Kids-Games/assets/forestB-Bc14KDTU.jpeg`,SN=`/Kids-Games/assets/basket1-CRGVtZVd.png`,CN=`/Kids-Games/assets/key-CLSQO5-B.png`,wN=`/Kids-Games/assets/rainbowTitleBoard1-D9FvS7wc.png`,TN=`/Kids-Games/assets/lionclosed-BMmV9vU6.png`,EN=`/Kids-Games/assets/lionopen-DCgDWkjW.png`,DN=`/Kids-Games/assets/rabbit_closed-EoVeSnom.png`,ON=`/Kids-Games/assets/rabbit_open-DM8zc095.png`,kN=`/Kids-Games/assets/goose_closed-QEoEtx4p.png`,AN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,jN=`/Kids-Games/assets/octopus_closed-hF6-LhyX.png`,MN=`/Kids-Games/assets/octopus_open-Du2g0Urq.png`,NN=`/Kids-Games/assets/snake_closed-CpPhlRkM.png`,PN=`/Kids-Games/assets/snake_open-1mRHa0xr.png`,FN=`/Kids-Games/assets/camel_closed-B9y4oFj6.png`,IN=`/Kids-Games/assets/camel_open-CeHePenA.png`,LN=`/Kids-Games/assets/deer_closed-CdDn_w_v.png`,RN=`/Kids-Games/assets/deer_open-GPGCBXEA.png`,zN=`/Kids-Games/assets/centipede_closed-DptoISVp.png`,BN=`/Kids-Games/assets/centipede_open-Kd9GZNUE.png`,VN=`/Kids-Games/assets/lioness_closed-CxqZ3V-Y.png`,HN=`/Kids-Games/assets/lioness_open-DRRoBgp_.png`,UN=`/Kids-Games/assets/camel_closed-B9y4oFj6.png`,WN=`/Kids-Games/assets/camel_open-CeHePenA.png`,GN=`/Kids-Games/assets/monkey_closed-CWQ9uOf-.png`,KN=`/Kids-Games/assets/monkey_open-BWUXkxzP.png`,qN=`/Kids-Games/assets/goose_closed-QEoEtx4p.png`,JN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,YN=[{id:1,name:`أَسَد`,isCorrect:!0,closedImg:TN,openImg:EN},{id:2,name:`أَرْنَب`,isCorrect:!0,closedImg:DN,openImg:ON},{id:3,name:`إِوَّزَة`,isCorrect:!0,closedImg:kN,openImg:AN},{id:4,name:`أَخْطَبُوط`,isCorrect:!0,closedImg:jN,openImg:MN},{id:5,name:`أَفْعَى`,isCorrect:!0,closedImg:NN,openImg:PN},{id:6,name:`إِبِل`,isCorrect:!0,closedImg:FN,openImg:IN},{id:7,name:`أُيَّل`,isCorrect:!0,closedImg:LN,openImg:RN},{id:8,name:`أبو قردان`,isCorrect:!0,closedImg:zN,openImg:BN},{id:9,name:`إبل`,isCorrect:!0,closedImg:UN,openImg:WN}],XN=[{id:10,name:`زرافة`,isCorrect:!1,closedImg:VN,openImg:HN},{id:11,name:`فيل`,isCorrect:!1,closedImg:GN,openImg:KN},{id:12,name:`بَطَّة`,isCorrect:!1,closedImg:qN,openImg:JN}];function ZN(){let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5);return e.shift(),e}),[s,c]=(0,b.useState)(()=>{let e=[...XN].sort(()=>Math.random()-.5);return e.shift(),e}),[l,u]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5),t=[...XN].sort(()=>Math.random()-.5),n=e[0],r=t[0];return Math.random()>.5?[n,r]:[r,n]}),[d,f]=(0,b.useState)({}),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(0),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(!0),[S,C]=(0,b.useState)({text:``,type:``}),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(null),[O,k]=(0,b.useState)(null);(0,b.useEffect)(()=>{let e=!0,t=[xN,SN,CN,wN,TN,EN,DN,ON,kN,AN,jN,MN,NN,PN,FN,IN,LN,RN,zN,BN,VN,HN,UN,WN,GN,KN,qN,JN],r=Date.now(),a=0,o=()=>{if(a+=1,!e)return;let n=Math.round(a/t.length*100);i(e=>Math.max(e,Math.min(n,100)))},s=t.map(e=>new Promise(t=>{let n=new Image;n.onload=()=>{o(),t()},n.onerror=()=>{o(),t()},n.src=e}));return Promise.all(s).then(()=>{if(!e)return;let t=Date.now()-r,a=Math.max(0,5e3-t),o=setInterval(()=>{i(e=>e>=100?(clearInterval(o),100):Math.min(e+2,100))},45);setTimeout(()=>{clearInterval(o),e&&(i(100),setTimeout(()=>{e&&n(!1)},250))},a)}),()=>{e=!1}},[]);let A=(e,t)=>{let n=[...e],r=[...t];if(n.length===0)return{pair:[],nextC:[],nextW:[]};r.length===0&&(r=[...XN].sort(()=>Math.random()-.5));let i=n.shift(),a=r.shift();return{pair:Math.random()>.5?[i,a]:[a,i],nextC:n,nextW:r}},j=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:523.25,time:0},{frequency:659.25,time:.13},{frequency:783.99,time:.26}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.25,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.24),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.25)}),setTimeout(()=>{t.close()},750)}catch{}},M=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:330,time:0},{frequency:277.18,time:.12}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.2,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.2),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.22)}),setTimeout(()=>{t.close()},550)}catch{}};(0,b.useEffect)(()=>{let e=null;return!t&&!_&&(e=setInterval(()=>{g(e=>e+1)},1e3)),()=>clearInterval(e)},[t,_]);let N=(e,t)=>{e.preventDefault(),k(t),D({x:e.clientX,y:e.clientY})};(0,b.useEffect)(()=>{let e=e=>{O!==null&&D({x:e.clientX,y:e.clientY})},t=e=>{if(O===null||!E)return;let t=document.elementFromPoint(e.clientX,e.clientY)?.closest(`.cage-card`);if(t){let e=t.getAttribute(`data-animal-id`),n=l.find(t=>t.id===Number(e));n&&P(n)}k(null),D(null)};return O!==null&&(window.addEventListener(`pointermove`,e),window.addEventListener(`pointerup`,t),window.addEventListener(`pointercancel`,t)),()=>{window.removeEventListener(`pointermove`,e),window.removeEventListener(`pointerup`,t),window.removeEventListener(`pointercancel`,t)}},[O,E,l]);let P=e=>{w||_||d[e.id]||(e.isCorrect?(T(!0),j(),f(t=>({...t,[e.id]:!0})),m(e=>e+10),C({text:`أحسنت 🔓`,type:`success`}),setTimeout(()=>{let{pair:e,nextC:t,nextW:n}=A(a,s);e.length>0?(u(e),o(t),c(n),f({})):v(!0),C({text:``,type:``}),T(!1),p+10>=90&&v(!0)},450)):(M(),C({text:`خطأ❌`,type:`error`}),setTimeout(()=>{C({text:``,type:``})},1e3)))};return(0,R.jsxs)(`div`,{className:`game-container`,style:$N.container,children:[(0,R.jsx)(`style`,{children:QN}),t&&(0,R.jsxs)(`div`,{className:`loading-screen`,children:[(0,R.jsxs)(`div`,{className:`loading-decor`,children:[(0,R.jsx)(`span`,{className:`loading-icon loading-icon-1`,children:`🦁`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-2`,children:`🌿`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-3`,children:`🐰`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-4`,children:`🦌`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-5`,children:`🐾`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-6`,children:`🌳`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-7`,children:`🐘`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-8`,children:`🦋`})]}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-progress`,children:(0,R.jsx)(`div`,{className:`loading-progress-fill`,style:{width:`${r}%`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[r,`%`]})]})]}),(0,R.jsx)(`img`,{src:xN,alt:`خلفية اللعبة`,style:$N.bgImg}),(0,R.jsxs)(`div`,{className:`game-badge badge-left`,children:[`⭐ `,p]}),(0,R.jsxs)(`div`,{className:`game-badge badge-right badge-timer`,children:[`⏱️ `,(e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${n<10?`0`:``}${n}`})(h)]}),(0,R.jsxs)(`div`,{className:`header-resp`,children:[(0,R.jsxs)(`div`,{style:{position:`relative`,display:`inline-flex`,justifyContent:`center`,alignItems:`center`},children:[(0,R.jsx)(`img`,{src:wN,alt:`لوحة العنوان`,className:`title-board-img`}),(0,R.jsx)(`h1`,{className:`game-title`,children:`إنْقَاذُ الحَيَوَانَات`})]}),(0,R.jsx)(`p`,{className:`instruction-text`,children:`افْتَحِ القَفَصَ لِلْحَيَوَانِ الَّذِي يَبْدَأُ اسْمُهُ بِحَرْفِ الأَلِفِ`})]}),(0,R.jsx)(`div`,{className:`cages-grid`,children:l.map(e=>{let t=!!d[e.id];return(0,R.jsxs)(`div`,{"data-animal-id":e.id,className:`cage-card`,children:[(0,R.jsx)(`img`,{src:t?e.openImg:e.closedImg,alt:e.name,className:`cage-img-element`}),(0,R.jsx)(`div`,{className:`animal-nametag`,children:e.name})]},e.id)})}),(0,R.jsx)(`div`,{className:`bottom-bar`,children:(0,R.jsxs)(`div`,{className:`bottom-content-wrapper`,children:[(0,R.jsxs)(`div`,{style:$N.footerBtns,children:[(0,R.jsx)(`button`,{onClick:()=>x(!y),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(U,{className:`btn-icon`,color:y?`#000`:`gray`})}),(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(H,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(V,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(B,{className:`btn-icon`})})]}),(0,R.jsxs)(`div`,{className:`basket-area`,children:[(0,R.jsx)(`img`,{src:SN,alt:`السلة الخشبية`,className:`basket-img`}),(0,R.jsx)(`div`,{className:`keys-group`,children:[0,1].map(e=>(0,R.jsx)(`img`,{src:CN,alt:`مفتاح`,className:`draggable-key`,onPointerDown:t=>N(t,e),style:{opacity:O===e?0:1}},e))})]})]})}),O!==null&&E&&(0,R.jsx)(`img`,{src:`/Kids-Games/assets/key-CLSQO5-B.png`,alt:`مفتاح حقيقي محمول`,style:{position:`fixed`,left:`${E.x}px`,top:`${E.y}px`,transform:`translate(-50%, -50%) scale(1.2) rotate(-20deg)`,zIndex:9999,pointerEvents:`none`,width:`50px`,height:`auto`,filter:`drop-shadow(0 10px 15px rgba(0,0,0,0.5))`}}),S.text&&(0,R.jsx)(`div`,{style:{...$N.messageBox,backgroundColor:S.type===`success`?`#15803d`:`#b91c1c`},children:S.text}),_&&(0,R.jsx)(`div`,{style:$N.overlay,children:(0,R.jsxs)(`div`,{style:$N.winCard,children:[(0,R.jsx)(Ti,{size:35,color:`#f59e0b`}),(0,R.jsx)(`h2`,{style:{fontSize:`1.5rem`,margin:`15px 0`,color:`#1e3a8a`},children:`أَحْسَنْتَ يَا بَطَلُ! 🥳`}),(0,R.jsxs)(`p`,{style:{fontSize:`1.5rem`,fontWeight:`bold`,margin:`5px 0`},children:[`عدد النقاط:`,` `,(0,R.jsx)(`span`,{style:{color:`#d97706`},children:p})]}),(0,R.jsxs)(`div`,{style:{display:`flex`,gap:`15px`},children:[(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.winIconBtn,title:`إعادة المحاولة`,children:(0,R.jsx)(H,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.winIconBtn,title:`الرئيسية`,children:(0,R.jsx)(V,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.winIconBtn,title:`المرحلة التالية`,children:(0,R.jsx)(B,{size:26,color:`#fff`})})]})]})})]})}var QN=`
 
   /* ===================================
      شاشة التحميل
