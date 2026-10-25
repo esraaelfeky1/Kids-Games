@@ -21848,672 +21848,710 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               height: 50px !important;
             }
           }
-        `}),(0,R.jsxs)(`div`,{className:`game-page`,style:{...OT.page,backgroundImage:`url(${aw})`},children:[(0,R.jsxs)(`div`,{className:`game-top`,style:OT.topContainer,children:[(0,R.jsxs)(`div`,{className:`game-box`,style:OT.box,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,R.jsx)(`span`,{className:`game-box-number`,children:h})]}),(0,R.jsx)(`div`,{className:`game-header`,style:OT.header,children:`لعبة استمع واختر الكلمة الصحيحة`}),(0,R.jsxs)(`div`,{className:`game-box`,style:OT.box,onClick:ae,title:`تشغيل وإيقاف الصوت`,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:O?(0,R.jsx)(U,{size:18}):(0,R.jsx)(ho,{size:18})}),(0,R.jsx)(`span`,{className:`game-box-number`,children:_})]})]}),w&&(0,R.jsx)(`div`,{style:OT.overlay,children:(0,R.jsx)(`div`,{style:OT.popup,children:`ممتاز 👏`})}),E&&(0,R.jsx)(`div`,{style:OT.overlay,children:(0,R.jsxs)(`div`,{style:OT.finalPopup,children:[`🎉 أحسنت`,(0,R.jsx)(`br`,{}),`⭐ حصلت على `,h,` نقطة`]})}),(0,R.jsxs)(`div`,{className:`game-card`,style:OT.card,children:[(0,R.jsx)(`p`,{className:`game-text`,style:OT.gameText,children:`استمع ثم اختر الكلمة الصحيحة`}),(0,R.jsx)(`button`,{type:`button`,className:`game-sound`,style:OT.sound,onClick:ie,"aria-label":`تشغيل صوت الكلمة`,children:(0,R.jsx)(U,{size:30,color:`white`})}),(0,R.jsx)(`div`,{className:`game-choices`,style:OT.choices,children:d.map((e,t)=>{let n=y===e,r=e===p,i=`#ddd`;return n&&(i=r?`green`:`red`),(0,R.jsx)(`button`,{type:`button`,className:`game-choice`,onClick:()=>re(e),disabled:y!==null||S,style:{...OT.choice,border:n?`4px solid ${i}`:`2px solid #ddd`,transform:n?`scale(1.05)`:`scale(1)`},children:e},`${e}-${t}`)})})]}),(0,R.jsxs)(`div`,{className:`game-bottom-buttons`,style:OT.bottomButtons,children:[(0,R.jsx)(`button`,{type:`button`,onClick:se,className:`game-circle-btn`,style:OT.circleBtn,"aria-label":`رجوع`,children:(0,R.jsx)(B,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:ce,className:`game-circle-btn`,style:OT.circleBtn,"aria-label":`الرئيسية`,children:(0,R.jsx)(V,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:oe,className:`game-circle-btn`,style:OT.circleBtn,"aria-label":`إعادة اللعبة`,children:(0,R.jsx)(H,{color:`white`,size:24})})]})]})]})}var OT={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},topContainer:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`,cursor:`pointer`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`,padding:0},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`22px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`,fontFamily:`inherit`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`,padding:0},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}},kT=`/Kids-Games/assets/Nunationbg-C0PujwBr.jpeg`,AT=`/Kids-Games/assets/Nunation1-mHE5JU7S.png`,jT=`/Kids-Games/assets/nn-BX7SPBxI.png`,MT=`/Kids-Games/assets/ff-DDW0yIX4.png`,NT=`/Kids-Games/assets/pizza1-BaYNiTe6.png`,PT=`/Kids-Games/assets/oo-Kt5P9ECP.png`,FT=`/Kids-Games/assets/11-B9P6-3Vg.png`,IT=`/Kids-Games/assets/rr-DJFN8dOn.png`,LT=`/Kids-Games/assets/es12-zWdthg0m.png`,RT=`/Kids-Games/assets/balls-Dmh718R9.png`,zT=`/Kids-Games/assets/rul-CmW8PzHZ.png`,BT=`/Kids-Games/assets/lir-C5lCJsfP.png`,VT=`/Kids-Games/assets/33-DuMaDnfr.png`,HT=`/Kids-Games/assets/12li-BNFAh2ni.png`,UT=`/Kids-Games/assets/tt-CZGw5fyt.png`,WT=`/Kids-Games/assets/t3-2I4_iFjF.png`,GT=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(`desktop`),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!0);(0,b.useEffect)(()=>{let e=!0,t=Date.now(),n=[kT,AT,jT,MT,NT,PT,FT,IT,LT,RT,zT,BT,VT,HT,UT,WT];return Promise.all(n.map(e=>new Promise(t=>{let n=new Image,r=!1,i=()=>{r||(r=!0,t())};n.onload=async()=>{try{n.decode&&await n.decode()}catch{}i()},n.onerror=i,n.src=e,n.complete&&i()}))).then(()=>{let n=Date.now()-t,r=Math.max(2200-n,0);setTimeout(()=>{e&&(c(!0),u(!1))},r)}),()=>{e=!1}},[]),(0,b.useEffect)(()=>{let e=()=>{let e=window.innerWidth;o(e<=768?`mobile`:e<=1024?`tablet`:`desktop`)};return e(),window.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e)}},[]);let d=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},f=(e=>{let t={desktop:{imgBubbles:{top:`125px`,left:`19px`,width:`195px`,height:`121px`},imgLion:{top:`129px`,left:`146px`,width:`179px`,height:`110px`},imgComplete:{top:`240px`,left:`45px`,width:`140px`,height:`100px`},imgBeeHive:{top:`238px`,left:`141px`,width:`190px`,height:`109px`},imgIce:{top:`130px`,left:`42px`,width:`150px`,height:`105px`},imgSpace:{top:`127px`,left:`141px`,width:`199px`,height:`106px`},imgBasket:{top:`232px`,left:`55px`,width:`120px`,height:`110px`},imgEgg:{top:`232px`,left:`183px`,width:`120px`,height:`109px`},imgBee:{top:`141px`,left:`15px`,width:`200px`,height:`92px`},imgIce2:{top:`140px`,left:`150px`,width:`170px`,height:`95px`},imgButterflies:{top:`174px`,left:`50px`,width:`129px`,height:`230px`},imgComplete2:{top:`242px`,left:`100px`,width:`280px`,height:`95px`}},tablet:{imgBubbles:{top:`115px`,left:`16px`,width:`170px`,height:`105px`},imgLion:{top:`120px`,left:`131px`,width:`155px`,height:`95px`},imgComplete:{top:`215px`,left:`39px`,width:`125px`,height:`90px`},imgBeeHive:{top:`200px`,left:`126px`,width:`165px`,height:`95px`},imgIce:{top:`117px`,left:`36px`,width:`135px`,height:`95px`},imgSpace:{top:`115px`,left:`126px`,width:`175px`,height:`95px`},imgBasket:{top:`207px`,left:`49px`,width:`108px`,height:`98px`},imgEgg:{top:`209px`,left:`160px`,width:`105px`,height:`96px`},imgBee:{top:`125px`,left:`12px`,width:`175px`,height:`85px`},imgIce2:{top:`126px`,left:`133px`,width:`150px`,height:`85px`},imgButterflies:{top:`158px`,left:`40px`,width:`113px`,height:`203px`},imgComplete2:{top:`218px`,left:`90px`,width:`240px`,height:`85px`}},mobile:{imgBubbles:{top:`99px`,left:`14px`,width:`150px`,height:`95px`},imgLion:{top:`103px`,left:`115px`,width:`140px`,height:`85px`},imgComplete:{top:`189px`,left:`35px`,width:`110px`,height:`80px`},imgBeeHive:{top:`187px`,left:`113px`,width:`145px`,height:`85px`},imgIce:{top:`103px`,left:`32px`,width:`120px`,height:`85px`},imgSpace:{top:`103px`,left:`114px`,width:`150px`,height:`85px`},imgBasket:{top:`182px`,left:`46px`,width:`95px`,height:`89px`},imgEgg:{top:`184px`,left:`144px`,width:`93px`,height:`85px`},imgBee:{top:`111px`,left:`14px`,width:`150px`,height:`75px`},imgIce2:{top:`111px`,left:`120px`,width:`130px`,height:`75px`},imgButterflies:{top:`138px`,left:`39px`,width:`100px`,height:`180px`},imgComplete2:{top:`192px`,left:`82px`,width:`210px`,height:`75px`}}};return t[e]||t.desktop})(a),p=[{title:`تنوين بالفتح`,board:AT,games:[{id:`imgBubbles`,img:NT,path:`/Nunationpiza`},{id:`imgLion`,img:PT,path:`/Nunationice`},{id:`imgComplete`,img:FT,path:`/Nunationlicen`},{id:`imgBeeHive`,img:IT,path:`/Nunationsalth`}]},{title:`تنوين بالضم`,board:jT,games:[{id:`imgIce`,img:LT,path:`/Nunationdampuzzle`},{id:`imgSpace`,img:RT,path:`/Nunationdamballe`},{id:`imgBasket`,img:zT,path:`/Nunationdamrul`},{id:`imgEgg`,img:BT,path:`/Nunationdamlice`}]},{title:`تنوين بالكسر`,board:MT,games:[{id:`imgBee`,img:VT,path:`/Nunakasrsp`},{id:`imgIce2`,img:UT,path:`/Nunationkasrtree`},{id:`imgButterflies`,img:HT,path:`/Nunationkaslicon`},{id:`imgComplete2`,img:WT,path:`/Nunationkslo`}]}];return(0,R.jsxs)(`div`,{className:`mad-page`,style:{backgroundImage:`url(${kT})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundColor:`transparent`,minHeight:`100vh`,display:`flex`,flexDirection:`column`,alignItems:`center`,width:`100%`,paddingBottom:`30px`,position:`relative`},children:[(0,R.jsx)(`style`,{children:`
+        `}),(0,R.jsxs)(`div`,{className:`game-page`,style:{...OT.page,backgroundImage:`url(${aw})`},children:[(0,R.jsxs)(`div`,{className:`game-top`,style:OT.topContainer,children:[(0,R.jsxs)(`div`,{className:`game-box`,style:OT.box,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:`⭐`}),(0,R.jsx)(`span`,{className:`game-box-number`,children:h})]}),(0,R.jsx)(`div`,{className:`game-header`,style:OT.header,children:`لعبة استمع واختر الكلمة الصحيحة`}),(0,R.jsxs)(`div`,{className:`game-box`,style:OT.box,onClick:ae,title:`تشغيل وإيقاف الصوت`,children:[(0,R.jsx)(`span`,{className:`game-box-icon`,children:O?(0,R.jsx)(U,{size:18}):(0,R.jsx)(ho,{size:18})}),(0,R.jsx)(`span`,{className:`game-box-number`,children:_})]})]}),w&&(0,R.jsx)(`div`,{style:OT.overlay,children:(0,R.jsx)(`div`,{style:OT.popup,children:`ممتاز 👏`})}),E&&(0,R.jsx)(`div`,{style:OT.overlay,children:(0,R.jsxs)(`div`,{style:OT.finalPopup,children:[`🎉 أحسنت`,(0,R.jsx)(`br`,{}),`⭐ حصلت على `,h,` نقطة`]})}),(0,R.jsxs)(`div`,{className:`game-card`,style:OT.card,children:[(0,R.jsx)(`p`,{className:`game-text`,style:OT.gameText,children:`استمع ثم اختر الكلمة الصحيحة`}),(0,R.jsx)(`button`,{type:`button`,className:`game-sound`,style:OT.sound,onClick:ie,"aria-label":`تشغيل صوت الكلمة`,children:(0,R.jsx)(U,{size:30,color:`white`})}),(0,R.jsx)(`div`,{className:`game-choices`,style:OT.choices,children:d.map((e,t)=>{let n=y===e,r=e===p,i=`#ddd`;return n&&(i=r?`green`:`red`),(0,R.jsx)(`button`,{type:`button`,className:`game-choice`,onClick:()=>re(e),disabled:y!==null||S,style:{...OT.choice,border:n?`4px solid ${i}`:`2px solid #ddd`,transform:n?`scale(1.05)`:`scale(1)`},children:e},`${e}-${t}`)})})]}),(0,R.jsxs)(`div`,{className:`game-bottom-buttons`,style:OT.bottomButtons,children:[(0,R.jsx)(`button`,{type:`button`,onClick:se,className:`game-circle-btn`,style:OT.circleBtn,"aria-label":`رجوع`,children:(0,R.jsx)(B,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:ce,className:`game-circle-btn`,style:OT.circleBtn,"aria-label":`الرئيسية`,children:(0,R.jsx)(V,{color:`white`,size:24})}),(0,R.jsx)(`button`,{type:`button`,onClick:oe,className:`game-circle-btn`,style:OT.circleBtn,"aria-label":`إعادة اللعبة`,children:(0,R.jsx)(H,{color:`white`,size:24})})]})]})]})}var OT={page:{minHeight:`100vh`,height:`100vh`,width:`100%`,padding:`10px`,textAlign:`center`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,flexDirection:`column`,justifyContent:`space-between`,alignItems:`center`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,inset:0},topContainer:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`95%`,padding:`0 5px`,boxSizing:`border-box`},box:{background:`white`,padding:`5px 8px`,borderRadius:`12px`,fontWeight:`bold`,fontSize:`16px`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,display:`flex`,flexDirection:`row`,alignItems:`center`,justifyContent:`center`,gap:`3px`,width:`fit-content`,minWidth:`unset`,whiteSpace:`nowrap`,boxSizing:`border-box`,cursor:`pointer`},header:{background:`#fcbf49`,padding:`8px 20px`,borderRadius:`18px`,fontSize:`17px`,fontWeight:`bold`,textAlign:`center`,boxShadow:`0 4px 10px rgba(0,0,0,0.1)`,color:`#000`,lineHeight:`1.5`},card:{background:`rgba(255,255,255,0.95)`,width:`250px`,margin:`auto`,padding:`20px 15px`,borderRadius:`24px`,boxShadow:`0 8px 20px rgba(0,0,0,0.15)`,backdropFilter:`blur(6px)`,display:`flex`,flexDirection:`column`,alignItems:`center`},gameText:{fontSize:`19px`,fontWeight:`bold`,marginTop:`0`,marginBottom:`12px`,color:`#333`,lineHeight:`1.5`},sound:{width:`55px`,height:`55px`,background:`#6a4c93`,color:`white`,borderRadius:`50%`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,margin:`0 auto 15px auto`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.2)`,transition:`0.2s`,padding:0},choices:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`10px`,width:`100%`},choice:{width:`75%`,padding:`9px 10px`,background:`#f8fafc`,borderRadius:`14px`,fontSize:`22px`,fontWeight:`bold`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,transition:`0.2s`,boxShadow:`0 3px 8px rgba(0,0,0,0.08)`,boxSizing:`border-box`,fontFamily:`inherit`},bottomButtons:{display:`flex`,justifyContent:`center`,alignItems:`center`,gap:`15px`,marginBottom:`15px`},circleBtn:{width:`48px`,height:`48px`,borderRadius:`50%`,background:`#7f57e7`,border:`none`,display:`flex`,alignItems:`center`,justifyContent:`center`,cursor:`pointer`,boxShadow:`0 4px 10px rgba(0,0,0,0.15)`,padding:0},overlay:{position:`fixed`,inset:0,background:`rgba(0,0,0,0.35)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:999},popup:{background:`#41c441`,color:`white`,padding:`12px 25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`},finalPopup:{background:`white`,padding:`25px`,borderRadius:`20px`,fontSize:`22px`,fontWeight:`bold`,lineHeight:`1.8`,boxShadow:`0 8px 18px rgba(0,0,0,0.2)`,color:`#333`,textAlign:`center`}},kT=`/Kids-Games/assets/Nunationbg-C0PujwBr.jpeg`,AT=`/Kids-Games/assets/Nunation1-mHE5JU7S.png`,jT=`/Kids-Games/assets/nn-BX7SPBxI.png`,MT=`/Kids-Games/assets/ff-DDW0yIX4.png`,NT=`/Kids-Games/assets/pizza1-BaYNiTe6.png`,PT=`/Kids-Games/assets/oo-Kt5P9ECP.png`,FT=`/Kids-Games/assets/11-B9P6-3Vg.png`,IT=`/Kids-Games/assets/rr-DJFN8dOn.png`,LT=`/Kids-Games/assets/es12-zWdthg0m.png`,RT=`/Kids-Games/assets/balls-Dmh718R9.png`,zT=`/Kids-Games/assets/rul-CmW8PzHZ.png`,BT=`/Kids-Games/assets/lir-C5lCJsfP.png`,VT=`/Kids-Games/assets/33-DuMaDnfr.png`,HT=`/Kids-Games/assets/12li-BNFAh2ni.png`,UT=`/Kids-Games/assets/tt-CZGw5fyt.png`,WT=`/Kids-Games/assets/t3-2I4_iFjF.png`,GT=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(`desktop`),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!0);(0,b.useEffect)(()=>{let e=[kT,AT,jT,MT,NT,PT,FT,IT,LT,RT,zT,BT,VT,HT,UT,WT],t=Date.now(),n=e=>new Promise(t=>{let n=new Image;n.onload=t,n.onerror=t,n.src=e});(async()=>{await Promise.all(e.map(n));let r=Date.now()-t,i=Math.max(0,2200-r);setTimeout(()=>{c(!0),u(!1)},i)})()},[]),(0,b.useEffect)(()=>{let e=()=>{let e=window.innerWidth;o(e<=768?`mobile`:e<=1024?`tablet`:`desktop`)};return e(),window.addEventListener(`resize`,e),()=>{window.removeEventListener(`resize`,e)}},[]);let d=()=>{if(r)return;let e=new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`);e.volume=.25,e.play().catch(()=>{})},f=()=>{i(e=>!e)},p=[{title:`تنوين بالفتح`,board:AT,games:[{id:`imgBubbles`,img:NT,path:`/Nunationpiza`},{id:`imgLion`,img:PT,path:`/Nunationice`},{id:`imgComplete`,img:FT,path:`/Nunationlicen`},{id:`imgBeeHive`,img:IT,path:`/Nunationsalth`}]},{title:`تنوين بالضم`,board:jT,games:[{id:`imgIce`,img:LT,path:`/Nunationdampuzzle`},{id:`imgSpace`,img:RT,path:`/Nunationdamballe`},{id:`imgBasket`,img:zT,path:`/Nunationdamrul`},{id:`imgEgg`,img:BT,path:`/Nunationdamlice`}]},{title:`تنوين بالكسر`,board:MT,games:[{id:`imgBee`,img:VT,path:`/Nunakasrsp`},{id:`imgIce2`,img:UT,path:`/Nunationkasrtree`},{id:`imgButterflies`,img:HT,path:`/Nunationkaslicon`},{id:`imgComplete2`,img:WT,path:`/Nunationkslo`}]}],m=e=>a===`mobile`?{imgBubbles:{top:99,left:14,width:150,height:95},imgLion:{top:103,left:115,width:140,height:85},imgComplete:{top:189,left:35,width:110,height:80},imgBeeHive:{top:187,left:113,width:145,height:85},imgIce:{top:103,left:32,width:120,height:85},imgSpace:{top:103,left:114,width:150,height:85},imgBasket:{top:182,left:46,width:95,height:89},imgEgg:{top:184,left:144,width:93,height:85},imgBee:{top:111,left:14,width:150,height:75},imgIce2:{top:111,left:120,width:130,height:75},imgButterflies:{top:138,left:39,width:100,height:180},imgComplete2:{top:192,left:82,width:210,height:75}}[e]||{}:a===`tablet`?{imgBubbles:{top:115,left:16,width:170,height:105},imgLion:{top:120,left:131,width:155,height:95},imgComplete:{top:215,left:39,width:125,height:90},imgBeeHive:{top:200,left:126,width:165,height:95},imgIce:{top:117,left:36,width:135,height:95},imgSpace:{top:115,left:126,width:175,height:95},imgBasket:{top:207,left:49,width:108,height:98},imgEgg:{top:209,left:160,width:105,height:96},imgBee:{top:125,left:12,width:175,height:85},imgIce2:{top:126,left:133,width:150,height:85},imgButterflies:{top:158,left:40,width:113,height:203},imgComplete2:{top:218,left:90,width:240,height:85}}[e]||{}:{imgBubbles:{top:125,left:19,width:195,height:121},imgLion:{top:129,left:146,width:179,height:110},imgComplete:{top:240,left:45,width:140,height:100},imgBeeHive:{top:238,left:141,width:190,height:109},imgIce:{top:130,left:42,width:150,height:105},imgSpace:{top:127,left:141,width:199,height:106},imgBasket:{top:232,left:55,width:120,height:110},imgEgg:{top:232,left:183,width:120,height:109},imgBee:{top:141,left:15,width:200,height:92},imgIce2:{top:140,left:150,width:170,height:95},imgButterflies:{top:174,left:50,width:129,height:230},imgComplete2:{top:242,left:100,width:280,height:95}}[e]||{};return l||!s?(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
 
-        /* ==========================================
-           الأساسيات
-        ========================================== */
+          html,
+          body,
+          #root {
+            width: 100%;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+
+          /*
+            مهم جدًا:
+            شاشة التحميل نفسها Fixed + overflow hidden
+            حتى لا يظهر Scroll مهما كان حجم الشاشة.
+          */
+          .mad-loading-screen {
+            position: fixed;
+            inset: 0;
+
+            width: 100vw;
+            height: 100dvh;
+
+            min-width: 0;
+            min-height: 0;
+
+            overflow: hidden !important;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            box-sizing: border-box;
+
+            padding: 16px;
+
+            background:
+              radial-gradient(
+                circle at 15% 20%,
+                rgba(183, 156, 255, 0.45),
+                transparent 28%
+              ),
+              radial-gradient(
+                circle at 85% 75%,
+                rgba(101, 205, 226, 0.40),
+                transparent 30%
+              ),
+              linear-gradient(
+                135deg,
+                #eee7ff 0%,
+                #ddd3ff 45%,
+                #d7f7ff 100%
+              );
+
+            z-index: 999999;
+
+            overscroll-behavior: none;
+            touch-action: none;
+          }
+
+
+          /*
+            دوائر ديكورية
+            داخل حدود الشاشة فقط حتى لا تسبب Scroll.
+          */
+          .mad-loading-circle {
+            position: absolute;
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            opacity: 0.42;
+
+            animation: madCircleFloat 4s ease-in-out infinite;
+
+            max-width: 35vw;
+            max-height: 35vw;
+          }
+
+
+          .mad-loading-circle.one {
+            width: 170px;
+            height: 170px;
+
+            top: -65px;
+            left: -55px;
+
+            background: rgba(183, 156, 255, 0.40);
+          }
+
+
+          .mad-loading-circle.two {
+            width: 190px;
+            height: 190px;
+
+            right: -70px;
+            bottom: -70px;
+
+            background: rgba(101, 205, 226, 0.38);
+
+            animation-delay: 1.3s;
+          }
+
+
+          /*
+            كارت التحميل
+          */
+          .mad-loading-card {
+            position: relative;
+
+            z-index: 2;
+
+            width: 245px;
+            max-width: calc(100vw - 32px);
+
+            min-width: 0;
+
+            padding: 22px 22px 18px;
+
+            box-sizing: border-box;
+
+            border-radius: 22px;
+
+            background:
+              linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.68),
+                rgba(246, 240, 255, 0.72)
+              );
+
+            border: 2px solid rgba(157, 127, 235, 0.25);
+
+            box-shadow:
+              0 16px 35px rgba(115, 93, 170, 0.18);
+
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            text-align: center;
+
+            animation: madCardFloat 2.8s ease-in-out infinite;
+
+            overflow: hidden;
+          }
+
+
+          .mad-loading-title {
+            margin: 0;
+
+            padding: 0;
+
+            font-family:
+              Arial,
+              "Tahoma",
+              sans-serif;
+
+            font-size: 21px;
+
+            font-weight: 800;
+
+            line-height: 1.4;
+
+            color: #7656c8;
+
+            white-space: nowrap;
+
+            overflow: hidden;
+
+            text-overflow: clip;
+          }
+
+
+          /*
+            النقط المتحركة
+          */
+          .mad-loading-dots {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 7px;
+
+            height: 18px;
+
+            margin-top: 10px;
+          }
+
+
+          .mad-loading-dot {
+            width: 8px;
+            height: 8px;
+
+            flex: 0 0 8px;
+
+            border-radius: 50%;
+
+            background: #65cde2;
+
+            animation:
+              madDotBounce
+              1.2s
+              infinite
+              ease-in-out;
+          }
+
+
+          .mad-loading-dot:nth-child(1) {
+            animation-delay: 0s;
+          }
+
+
+          .mad-loading-dot:nth-child(2) {
+            animation-delay: 0.2s;
+          }
+
+
+          .mad-loading-dot:nth-child(3) {
+            animation-delay: 0.4s;
+          }
+
+
+          @keyframes madDotBounce {
+
+            0%,
+            60%,
+            100% {
+              transform:
+                translateY(0)
+                scale(1);
+
+              opacity: 0.4;
+            }
+
+            30% {
+              transform:
+                translateY(-7px)
+                scale(1.3);
+
+              opacity: 1;
+            }
+          }
+
+
+          @keyframes madCardFloat {
+
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+
+            50% {
+              transform: translateY(-5px);
+            }
+          }
+
+
+          @keyframes madCircleFloat {
+
+            0%,
+            100% {
+              transform: translate3d(0, 0, 0);
+            }
+
+            50% {
+              transform: translate3d(0, -10px, 0);
+            }
+          }
+
+
+          /*
+            التابلت
+          */
+          @media (max-width: 1024px) {
+
+            .mad-loading-card {
+              width: 225px;
+              padding: 20px 20px 17px;
+            }
+
+            .mad-loading-title {
+              font-size: 20px;
+            }
+
+            .mad-loading-circle.one {
+              width: 145px;
+              height: 145px;
+            }
+
+            .mad-loading-circle.two {
+              width: 160px;
+              height: 160px;
+            }
+          }
+
+
+          /*
+            الموبايل
+          */
+          @media (max-width: 768px) {
+
+            .mad-loading-screen {
+              padding: 12px;
+            }
+
+            .mad-loading-card {
+              width: 205px;
+              max-width: calc(100vw - 24px);
+
+              padding:
+                18px
+                16px
+                15px;
+
+              border-radius: 19px;
+            }
+
+            .mad-loading-title {
+              font-size: 18px;
+            }
+
+            .mad-loading-dots {
+              margin-top: 8px;
+              gap: 6px;
+            }
+
+            .mad-loading-dot {
+              width: 7px;
+              height: 7px;
+              flex-basis: 7px;
+            }
+
+            .mad-loading-circle.one {
+              width: 115px;
+              height: 115px;
+
+              top: -45px;
+              left: -42px;
+            }
+
+            .mad-loading-circle.two {
+              width: 130px;
+              height: 130px;
+
+              right: -48px;
+              bottom: -48px;
+            }
+          }
+
+
+          /*
+            الشاشات الصغيرة جدًا
+          */
+          @media (max-width: 380px) {
+
+            .mad-loading-card {
+              width: 185px;
+              max-width: calc(100vw - 20px);
+
+              padding:
+                16px
+                13px
+                13px;
+
+              border-radius: 17px;
+            }
+
+            .mad-loading-title {
+              font-size: 16px;
+            }
+
+            .mad-loading-dots {
+              gap: 5px;
+            }
+
+            .mad-loading-dot {
+              width: 6px;
+              height: 6px;
+              flex-basis: 6px;
+            }
+          }
+
+
+          /*
+            منع الـ overscroll على الشاشات الصغيرة
+          */
+          @media (pointer: coarse) {
+
+            .mad-loading-screen {
+              overscroll-behavior:
+                none
+                contain;
+            }
+          }
+
+        `}),(0,R.jsxs)(`div`,{className:`mad-loading-screen`,children:[(0,R.jsx)(`div`,{className:`mad-loading-circle one`}),(0,R.jsx)(`div`,{className:`mad-loading-circle two`}),(0,R.jsxs)(`div`,{className:`mad-loading-card`,children:[(0,R.jsx)(`h2`,{className:`mad-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`mad-loading-dots`,children:[(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`})]})]})]})]}):(0,R.jsxs)(`div`,{className:`mad-page`,children:[(0,R.jsx)(`style`,{children:`
+
+        * {
+          box-sizing: border-box;
+        }
+
 
         html,
         body {
           margin: 0;
           padding: 0;
 
-          overflow-y: auto !important;
-          overflow-x: hidden !important;
-
-          width: 100vw !important;
-
-          -webkit-overflow-scrolling: touch;
-
-          background-color:
-            transparent !important;
-
-          animation: none !important;
-        }
-
-        #root {
           width: 100%;
-          min-height: 100%;
 
-          background-color:
-            transparent !important;
+          overflow-x: hidden;
         }
 
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
+
+        body {
+          overflow-y: auto;
+
+          scrollbar-width: none;
         }
 
-        html::-webkit-scrollbar,
+
         body::-webkit-scrollbar {
-          display: none !important;
-          width: 0 !important;
-          background: transparent !important;
+          display: none;
         }
 
-        html {
-          scrollbar-width: none !important;
-          -ms-overflow-style: none !important;
-        }
-
-        /* ==========================================
-           لا نوقف أنيميشن شاشة التحميل
-        ========================================== */
 
         .mad-page {
-          contain: layout style;
-        }
+          width: 100%;
+          min-height: 100vh;
 
-        /* ==========================================
-           شاشة التحميل
-        ========================================== */
+          overflow-x: hidden;
 
-        .mad-loading-screen {
-          position: fixed;
-
-          inset: 0;
-
-          z-index: 99999;
-
-          display: flex;
-
-          justify-content: center;
-
-          align-items: center;
-
-          overflow: hidden;
-
-          background:
-            radial-gradient(
-              circle at 14% 18%,
-              rgba(191, 174, 255, 0.8) 0%,
-              transparent 25%
-            ),
-
-            radial-gradient(
-              circle at 86% 82%,
-              rgba(117, 221, 239, 0.7) 0%,
-              transparent 27%
-            ),
-
+          background-image:
             linear-gradient(
-              135deg,
-              #eee6ff 0%,
-              #dcd2ff 45%,
-              #c9f5ff 100%
-            );
-        }
+              rgba(255,255,255,0.12),
+              rgba(255,255,255,0.12)
+            ),
+            url(${kT});
 
-        /* ==========================================
-           زخرفة دائرية علوية
-        ========================================== */
-
-        .mad-loading-screen::before {
-          content: "";
-
-          position: absolute;
-
-          width: 280px;
-          height: 280px;
-
-          border-radius: 50%;
-
-          border:
-            12px solid
-            rgba(255, 255, 255, 0.45);
-
-          background:
-            radial-gradient(
-              circle,
-              rgba(177, 156, 255, 0.22),
-              transparent 68%
-            );
-
-          top: -110px;
-          left: -90px;
-
-          animation:
-            madTopCircle
-            5.5s
-            ease-in-out
-            infinite;
-        }
-
-        /* ==========================================
-           زخرفة دائرية سفلية
-        ========================================== */
-
-        .mad-loading-screen::after {
-          content: "";
-
-          position: absolute;
-
-          width: 235px;
-          height: 235px;
-
-          border-radius: 50%;
-
-          border:
-            10px solid
-            rgba(255, 255, 255, 0.4);
-
-          background:
-            radial-gradient(
-              circle,
-              rgba(90, 207, 229, 0.2),
-              transparent 68%
-            );
-
-          right: -80px;
-          bottom: -85px;
-
-          animation:
-            madBottomCircle
-            6s
-            ease-in-out
-            infinite;
-        }
-
-        /* ==========================================
-           مربع التحميل الصغير
-        ========================================== */
-
-        .mad-loading-card {
-          position: relative;
-
-          z-index: 2;
-
-          width: 245px;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
 
           padding:
-            22px
-            22px
-            18px;
-
-          border-radius: 23px;
-
-          background:
-            linear-gradient(
-              145deg,
-              rgba(255, 255, 255, 0.94),
-              rgba(241, 237, 255, 0.94)
-            );
-
-          border:
-            3px solid
-            rgba(145, 122, 224, 0.45);
-
-          box-shadow:
-            0 13px 30px
-            rgba(101, 83, 170, 0.2),
-
-            inset 0 0 16px
-            rgba(255, 255, 255, 0.8);
-
-          text-align: center;
-
-          box-sizing: border-box;
-
-          animation:
-            madLoadingCardFloat
-            2.8s
-            ease-in-out
-            infinite;
+            20px
+            20px
+            40px;
         }
 
-        /* ==========================================
-           رسالة التحميل
-        ========================================== */
 
-        .mad-loading-title {
-          margin: 0;
-
-          direction: rtl;
-
-          font-family:
-            "Arial",
-            "Tahoma",
-            sans-serif;
-
-          font-size: 20px;
-
-          font-weight: 800;
-
-          color: #7560c9;
-
-          text-shadow:
-            0 2px 0
-            rgba(255, 255, 255, 0.95);
-        }
-
-        /* ==========================================
-           النقاط المتحركة
-        ========================================== */
-
-        .mad-loading-dots {
-          display: flex;
-
-          justify-content: center;
-
-          align-items: center;
-
-          gap: 7px;
-
-          height: 17px;
-
-          margin-top: 10px;
-        }
-
-        .mad-loading-dot {
-          width: 8px;
-          height: 8px;
-
-          flex-shrink: 0;
-
-          display: block;
-
-          border-radius: 50%;
-
-          background: #65cde2;
-
-          box-shadow:
-            0 2px 6px
-            rgba(65, 170, 194, 0.3);
-
-          animation:
-            madDotBounce
-            1.2s
-            infinite
-            ease-in-out;
-        }
-
-        .mad-loading-dot:nth-child(1) {
-          animation-delay: 0s;
-        }
-
-        .mad-loading-dot:nth-child(2) {
-          animation-delay: 0.2s;
-        }
-
-        .mad-loading-dot:nth-child(3) {
-          animation-delay: 0.4s;
-        }
-
-        @keyframes madDotBounce {
-
-          0%,
-          60%,
-          100% {
-            transform:
-              translateY(0)
-              scale(1);
-
-            opacity: 0.4;
-          }
-
-          30% {
-            transform:
-              translateY(-7px)
-              scale(1.3);
-
-            opacity: 1;
-          }
-        }
-
-        /* ==========================================
-           حركة مربع التحميل
-        ========================================== */
-
-        @keyframes madLoadingCardFloat {
-
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-
-          50% {
-            transform: translateY(-5px);
-          }
-        }
-
-        /* ==========================================
-           حركة الدائرة العلوية
-        ========================================== */
-
-        @keyframes madTopCircle {
-
-          0%,
-          100% {
-            transform:
-              translate(0, 0)
-              rotate(0deg);
-          }
-
-          50% {
-            transform:
-              translate(18px, 14px)
-              rotate(10deg);
-          }
-        }
-
-        /* ==========================================
-           حركة الدائرة السفلية
-        ========================================== */
-
-        @keyframes madBottomCircle {
-
-          0%,
-          100% {
-            transform:
-              translate(0, 0)
-              rotate(0deg);
-          }
-
-          50% {
-            transform:
-              translate(-18px, -15px)
-              rotate(-10deg);
-          }
-        }
-
-        /* ==========================================
-           محتوى اللعبة
-        ========================================== */
-
-        .mad-content {
+        .mad-top-bar {
           width: 100%;
 
           display: flex;
 
-          flex-direction: column;
-
+          justify-content: space-between;
           align-items: center;
 
-          visibility: hidden;
+          margin-bottom: 10px;
         }
 
-        .mad-content.assets-ready {
-          visibility: visible;
+
+        .mad-icon-button {
+          width: 45px;
+          height: 45px;
+
+          border: none;
+          border-radius: 50%;
+
+          background: rgba(255,255,255,0.85);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          cursor: pointer;
+
+          box-shadow:
+            0 5px 12px rgba(0,0,0,0.12);
+
+          transition:
+            transform .2s ease,
+            box-shadow .2s ease;
         }
+
+
+        .mad-icon-button:hover {
+          transform: translateY(-2px) scale(1.05);
+
+          box-shadow:
+            0 8px 16px rgba(0,0,0,0.15);
+        }
+
 
         .main-wrapper {
+          width: 100%;
+
           display: flex;
 
           justify-content: center;
-
-          align-items: center;
-
-          margin-top: 50px;
-
-          flex-direction: row;
+          align-items: flex-start;
 
           gap: 20px;
 
-          width: 100%;
+          margin-top: 50px;
 
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
         }
 
+
         .board-item {
-          width: 350px;
-
-          height: 380px;
-
           position: relative;
 
-          display: flex;
+          width: 350px;
+          height: 380px;
 
-          flex-direction: column;
-
-          align-items: center;
-
-          background-size: 100% 100%;
-
-          background-repeat: no-repeat;
-
-          flex-shrink: 0;
+          flex: 0 0 350px;
 
           overflow: hidden;
         }
 
-        .board-item h2 {
-          margin-top: 85px;
 
-          font-size: 30px;
+        .board-image {
+          position: absolute;
+
+          inset: 0;
+
+          width: 100%;
+          height: 100%;
+
+          object-fit: contain;
+
+          pointer-events: none;
+
+          user-select: none;
         }
 
-        /* ==========================================
-           Tablet
-        ========================================== */
 
-        @media (min-width: 769px) and (max-width: 1150px) {
+        .board-title {
+          position: absolute;
+
+          top: 23px;
+          left: 0;
+
+          width: 100%;
+
+          text-align: center;
+
+          z-index: 5;
+
+          font-size: 28px;
+
+          font-weight: 900;
+
+          color: #7656c8;
+
+          margin: 0;
+        }
+
+
+        .game-image {
+          position: absolute;
+
+          object-fit: contain;
+
+          cursor: pointer;
+
+          z-index: 6;
+
+          transition:
+            transform .25s ease,
+            filter .25s ease;
+
+          user-select: none;
+        }
+
+
+        .game-image:hover {
+          transform: scale(1.06);
+
+          filter:
+            drop-shadow(
+              0 8px 10px rgba(0,0,0,.16)
+            );
+        }
+
+
+        .sound-button {
+          position: fixed;
+
+          right: 20px;
+          bottom: 20px;
+
+          z-index: 100;
+
+          width: 50px;
+          height: 50px;
+
+          border: none;
+
+          border-radius: 50%;
+
+          background: #ffffff;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          cursor: pointer;
+
+          box-shadow:
+            0 5px 15px rgba(0,0,0,.15);
+        }
+
+
+        @media (max-width: 1024px) {
 
           .main-wrapper {
-            display: grid !important;
+            display: grid;
 
             grid-template-columns:
-              repeat(2, 350px) !important;
+              repeat(2, 350px);
 
-            justify-content: center !important;
+            justify-content: center;
 
-            justify-items: center !important;
-
-            gap: 20px !important;
-
-            margin-top: 30px !important;
-
-            width: 100% !important;
-
-            max-width: 760px !important;
-
-            padding: 0 15px;
+            gap: 18px;
           }
+
 
           .board-item {
-            width: 350px !important;
-
-            height: 380px !important;
-
-            margin: 0 !important;
+            width: 350px;
+            height: 360px;
           }
 
-          .board-item:nth-child(3) {
-            grid-column: span 2;
 
-            justify-self: center;
-          }
-
-          .title-area h1 {
-            font-size: 24px !important;
-          }
-
-          .title-area p {
-            font-size: 15px !important;
-          }
-
-          .home-btn,
-          .sound-btn {
-            width: 57px !important;
-            height: 57px !important;
-          }
-
-          .mad-loading-card {
-            width: 225px;
-
-            padding:
-              20px
-              20px
-              17px;
-          }
-
-          .mad-loading-title {
-            font-size: 19px;
+          .board-title {
+            font-size: 24px;
           }
         }
 
-        /* ==========================================
-           Mobile
-        ========================================== */
 
         @media (max-width: 768px) {
 
-          .main-wrapper {
-            display: flex !important;
-
-            flex-direction: column !important;
-
-            align-items: center !important;
-
-            justify-content: center !important;
-
-            gap: 15px !important;
-
-            margin-top: 15px !important;
-
-            width: 100% !important;
-
-            padding: 0 !important;
+          .mad-page {
+            padding:
+              10px
+              10px
+              30px;
           }
+
+
+          .main-wrapper {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-top: 15px;
+          }
+
 
           .board-item {
-            width: 275px !important;
+            width: 275px;
+            height: 300px;
 
-            height: 300px !important;
-
-            margin: 0 !important;
+            flex: 0 0 300px;
           }
 
-          .board-item h2 {
-            margin-top: 65px !important;
 
-            font-size: 23px !important;
+          .board-title {
+            top: 65px;
+
+            font-size: 23px;
           }
 
-          .title-area {
-            margin-top: 15px !important;
 
-            padding: 0 10px !important;
-          }
+          .sound-button {
+            width: 43px;
+            height: 43px;
 
-          .title-area h1 {
-            font-size: 18px !important;
-          }
-
-          .title-area p {
-            font-size: 12px !important;
-
-            font-weight: 700 !important;
-          }
-
-          .home-btn {
-            top: 10px !important;
-
-            left: 10px !important;
-
-            width: 37px !important;
-
-            height: 37px !important;
-
-            font-size: 22px !important;
-          }
-
-          .sound-btn {
-            top: 10px !important;
-
-            right: 10px !important;
-
-            left: auto !important;
-
-            width: 37px !important;
-
-            height: 37px !important;
-
-            font-size: 22px !important;
-          }
-
-          .mad-loading-card {
-            width: 205px;
-
-            padding:
-              19px
-              18px
-              16px;
-
-            border-radius: 20px;
-          }
-
-          .mad-loading-title {
-            font-size: 17px;
-          }
-
-          .mad-loading-dots {
-            gap: 6px;
-
-            margin-top: 8px;
-          }
-
-          .mad-loading-dot {
-            width: 7px;
-            height: 7px;
-          }
-
-          .mad-loading-screen::before {
-            width: 195px;
-            height: 195px;
-
-            border-width: 9px;
-
-            top: -75px;
-            left: -65px;
-          }
-
-          .mad-loading-screen::after {
-            width: 170px;
-            height: 170px;
-
-            border-width: 8px;
-
-            right: -60px;
-            bottom: -60px;
+            right: 12px;
+            bottom: 12px;
           }
         }
 
-        /* ==========================================
-           Mobile صغير
-        ========================================== */
 
         @media (max-width: 380px) {
 
-          .mad-loading-card {
-            width: 185px;
+          .board-item {
+            width: 260px;
+            height: 285px;
 
-            padding:
-              17px
-              15px
-              14px;
-
-            border-radius: 18px;
+            flex-basis: 285px;
           }
 
-          .mad-loading-title {
-            font-size: 15px;
-          }
-
-          .mad-loading-dots {
-            gap: 5px;
-
-            margin-top: 7px;
-          }
-
-          .mad-loading-dot {
-            width: 6px;
-            height: 6px;
+          .board-title {
+            font-size: 21px;
           }
         }
 
-      `}),l&&(0,R.jsx)(`div`,{className:`mad-loading-screen`,children:(0,R.jsxs)(`div`,{className:`mad-loading-card`,children:[(0,R.jsx)(`h2`,{className:`mad-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`mad-loading-dots`,children:[(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`}),(0,R.jsx)(`span`,{className:`mad-loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`mad-content ${s?`assets-ready`:``}`,children:[(0,R.jsx)(`button`,{className:`home-btn`,onClick:()=>e(`/home`),style:{position:`absolute`,top:`20px`,left:`20px`,width:`57px`,height:`57px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`30px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`,zIndex:100},children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-btn`,onClick:()=>i(!r),style:{position:`absolute`,top:`20px`,right:`20px`,width:`57px`,height:`57px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`30px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 8px rgba(0,0,0,0.3)`,color:`#4a2c2a`,zIndex:100},children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsxs)(`div`,{className:`title-area`,style:{marginTop:`20px`,textAlign:`center`},children:[(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.7)`,padding:`5px 25px`,borderRadius:`30px`,marginBottom:`10px`},children:(0,R.jsx)(`h1`,{style:{margin:0,fontSize:`24px`,color:`#111111`},children:`مرحبا بك في عالم التنوين`})}),(0,R.jsx)(`div`,{style:{backgroundColor:`rgba(255, 255, 255, 0.5)`,padding:`5px 20px`,borderRadius:`40px`},children:(0,R.jsx)(`p`,{style:{margin:0,fontSize:`15px`,color:`#333`,fontWeight:`bold`},children:`اختر التنوين الذي تريد اللعب به`})})]}),(0,R.jsx)(`main`,{className:`main-wrapper`,children:p.map((r,i)=>(0,R.jsxs)(`div`,{className:`board-item`,style:{backgroundImage:`url(${r.board})`},children:[(0,R.jsx)(`h2`,{style:{color:`#e0961e`,textShadow:`1px 1px 2px #000`,textAlign:`center`},children:r.title}),r.games.map((r,i)=>{let a=t===r.id;return(0,R.jsx)(`img`,{className:`game-img`,src:r.img,loading:`eager`,decoding:`async`,onClick:()=>{d(),e(r.path)},onMouseEnter:()=>{n(r.id),d()},onMouseLeave:()=>{n(null)},style:{position:`absolute`,cursor:`pointer`,objectFit:`contain`,pointerEvents:`auto`,transform:a?`scale(1.12)`:`scale(1)`,filter:a?`drop-shadow(0px 0px 10px rgba(255,255,255,0.8))`:`none`,zIndex:a?999:1,...f[r.id]||{}},alt:`لعبة`},i)})]},i))})]})]})},KT=`/Kids-Games/assets/pp-CbJEttl8.jpeg`,qT=`/Kids-Games/assets/chef-m3jpBHQ6.png`,JT=`/Kids-Games/assets/tray-CbRtffzG.png`,YT=`/Kids-Games/assets/pizza-DoqA29KA.png`,XT=[{id:1,text:`كتابًا`,isTanween:!0},{id:2,text:`قلمٌ`,isTanween:!1},{id:3,text:`شارعًا`,isTanween:!0},{id:4,text:`بابٌ`,isTanween:!1},{id:5,text:`تفاحًا`,isTanween:!0},{id:6,text:`عنبٌ`,isTanween:!1},{id:7,text:`صديقًا`,isTanween:!0},{id:8,text:`بيتًا`,isTanween:!0}],ZT=[{top:`12%`,left:`15%`},{top:`12%`,left:`48%`},{top:`48%`,left:`15%`},{top:`48%`,left:`48%`}];function QT(){let e=I(),[t,n]=(0,b.useState)(XT),[r,i]=(0,b.useState)([]),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(!1),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(0),_=d&&p;(0,b.useEffect)(()=>{let e=!1;f(!1),g(0);let t=[KT,qT,JT,YT],n=0,r=()=>{n+=1,!e&&(g(Math.round(n/t.length*100)),n>=t.length&&f(!0))},i=t.map(e=>{let t=new Image;return t.onload=r,t.onerror=r,t.src=e,t});return()=>{e=!0,i.forEach(e=>{e.onload=null,e.onerror=null})}},[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{m(!0)},5e3);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{if(!_||l)return;let e=setInterval(()=>{o(e=>e+1)},1e3);return()=>clearInterval(e)},[_,l]);let v=e=>{s||new Audio(e?Vs:Hs).play().catch(()=>{})},y=e=>{if(!(!e||!_))if(e.isTanween){v(!0);let a=[...r,e];i(a),n(t.filter(t=>t.id!==e.id)),a.length===XT.filter(e=>e.isTanween).length&&u(!0)}else v(!1)},x=(e,t)=>{_&&e.dataTransfer.setData(`pieceId`,t.id)};return(0,R.jsxs)(`div`,{style:eE.container,children:[(0,R.jsx)(`style`,{children:$T}),!_&&(0,R.jsxs)(`div`,{className:`pizza-loading-overlay`,children:[(0,R.jsx)(`div`,{className:`\r
+      `}),(0,R.jsxs)(`div`,{className:`mad-top-bar`,children:[(0,R.jsx)(`button`,{className:`mad-icon-button`,onClick:()=>e(`/`),"aria-label":`الرئيسية`,children:(0,R.jsx)(ur,{size:24,color:`#7656c8`})}),(0,R.jsx)(`button`,{className:`mad-icon-button`,onClick:f,"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{size:24,color:`#65cde2`}):(0,R.jsx)(lr,{size:24,color:`#7656c8`})})]}),(0,R.jsx)(`div`,{className:`main-wrapper`,children:p.map((t,r)=>(0,R.jsxs)(`div`,{className:`board-item`,children:[(0,R.jsx)(`img`,{src:t.board,alt:``,className:`board-image`,draggable:`false`}),(0,R.jsx)(`h2`,{className:`board-title`,children:t.title}),t.games.map(t=>{let r=m(t.id);return(0,R.jsx)(`img`,{src:t.img,alt:``,className:`game-image`,draggable:`false`,style:{top:`${r.top}px`,left:`${r.left}px`,width:`${r.width}px`,height:`${r.height}px`},onMouseEnter:()=>{n(t.id)},onMouseLeave:()=>{n(null)},onClick:()=>{d(),e(t.path)},onTouchStart:()=>{n(t.id)}},t.id)})]},r))}),(0,R.jsx)(`button`,{className:`sound-button`,onClick:f,"aria-label":r?`تشغيل الصوت`:`كتم الصوت`,children:r?(0,R.jsx)(cr,{size:25,color:`#65cde2`}):(0,R.jsx)(lr,{size:25,color:`#7656c8`})})]})},KT=`/Kids-Games/assets/pp-CbJEttl8.jpeg`,qT=`/Kids-Games/assets/chef-m3jpBHQ6.png`,JT=`/Kids-Games/assets/tray-CbRtffzG.png`,YT=`/Kids-Games/assets/pizza-DoqA29KA.png`,XT=[{id:1,text:`كتابًا`,isTanween:!0},{id:2,text:`قلمٌ`,isTanween:!1},{id:3,text:`شارعًا`,isTanween:!0},{id:4,text:`بابٌ`,isTanween:!1},{id:5,text:`تفاحًا`,isTanween:!0},{id:6,text:`عنبٌ`,isTanween:!1},{id:7,text:`صديقًا`,isTanween:!0},{id:8,text:`بيتًا`,isTanween:!0}],ZT=[{top:`12%`,left:`15%`},{top:`12%`,left:`48%`},{top:`48%`,left:`15%`},{top:`48%`,left:`48%`}];function QT(){let e=I(),[t,n]=(0,b.useState)(XT),[r,i]=(0,b.useState)([]),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!1),[l,u]=(0,b.useState)(!1),[d,f]=(0,b.useState)(!1),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(0),_=d&&p;(0,b.useEffect)(()=>{let e=!1;f(!1),g(0);let t=[KT,qT,JT,YT],n=0,r=()=>{n+=1,!e&&(g(Math.round(n/t.length*100)),n>=t.length&&f(!0))},i=t.map(e=>{let t=new Image;return t.onload=r,t.onerror=r,t.src=e,t});return()=>{e=!0,i.forEach(e=>{e.onload=null,e.onerror=null})}},[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{m(!0)},5e3);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{if(!_||l)return;let e=setInterval(()=>{o(e=>e+1)},1e3);return()=>clearInterval(e)},[_,l]);let v=e=>{s||new Audio(e?Vs:Hs).play().catch(()=>{})},y=e=>{if(!(!e||!_))if(e.isTanween){v(!0);let a=[...r,e];i(a),n(t.filter(t=>t.id!==e.id)),a.length===XT.filter(e=>e.isTanween).length&&u(!0)}else v(!1)},x=(e,t)=>{_&&e.dataTransfer.setData(`pieceId`,t.id)};return(0,R.jsxs)(`div`,{style:eE.container,children:[(0,R.jsx)(`style`,{children:$T}),!_&&(0,R.jsxs)(`div`,{className:`pizza-loading-overlay`,children:[(0,R.jsx)(`div`,{className:`\r
               pizza-loading-decor\r
               pizza-decor-pizza\r
             `,children:(0,R.jsx)(Va,{size:46})}),(0,R.jsx)(`div`,{className:`\r
