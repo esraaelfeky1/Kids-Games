@@ -19203,577 +19203,574 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
         }
 
-      `})]})}var Lw={container:{width:`100vw`,height:`100dvh`,minHeight:`100dvh`,maxHeight:`100dvh`,background:`url(${kw}) center center / cover no-repeat`,display:`flex`,flexDirection:`column`,alignItems:`center`,padding:`clamp(8px, 2vw, 15px)`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,top:0,left:0,right:0,bottom:0},topBar:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`700px`,gap:`5px`,zIndex:500},headerGroup:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`3px`,flex:1},statBox:{background:`rgba(255,255,255,0.9)`,padding:`clamp(6px, 1.2vw, 10px) clamp(10px, 1.8vw, 14px)`,borderRadius:`10px`,fontWeight:`bold`,color:`#7b1fa2`,border:`2px solid #7b1fa2`,fontSize:`clamp(14px, 2vw, 17px)`,whiteSpace:`nowrap`,display:`flex`,alignItems:`center`,gap:`4px`},titleBg:{background:`rgba(255,255,255,0.85)`,padding:`4px 14px`,borderRadius:`12px`,marginBottom:`2px`},subHeaderBg:{background:`rgba(255,255,255,0.75)`,fontWeight:`bold`,padding:`4px 10px`,borderRadius:`10px`},header:{color:`#7b1fa2`,fontSize:`clamp(19px, 4.5vw, 26px)`,margin:`0`,fontWeight:`bold`},subHeader:{color:`#c46767`,fontSize:`clamp(13px, 2.5vw, 16px)`,margin:`0`,fontWeight:`bold`},gridContainer:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(8px, 2vw, 15px)`,width:`100%`,maxWidth:`480px`,marginTop:`clamp(15px, 3vw, 25px)`,padding:`0 10px`,boxSizing:`border-box`,justifyItems:`center`},wordCard:{background:`white`,width:`fit-content`,minWidth:`55px`,padding:`clamp(6px, 1.5vw, 10px) clamp(12px, 2vw, 18px)`,borderRadius:`8px`,cursor:`grab`,fontSize:`clamp(15px, 2.2vw, 18px)`,fontWeight:`bold`,textAlign:`center`,border:`2px solid #7b1fa2`,touchAction:`none`,boxShadow:`0 4px 8px rgba(0,0,0,0.15)`,position:`relative`,zIndex:3e3},fixedBoxesContainer:{position:`fixed`,left:`50%`,bottom:`65px`,transform:`translateX(-50%)`,display:`flex`,justifyContent:`center`,gap:`clamp(10px, 3vw, 25px)`,zIndex:200,width:`100%`},box:{width:`clamp(85px, 18vw, 120px)`,height:`clamp(85px, 18vw, 120px)`,backgroundSize:`contain`,backgroundRepeat:`no-repeat`,backgroundPosition:`center`},bottomButtons:{position:`fixed`,bottom:`10px`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`10px`,zIndex:1e3},circleBtn:{width:`38px`,height:`38px`,minWidth:`38px`,minHeight:`38px`,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`},winOverlay:{position:`fixed`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.7)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:2e3},winBox:{background:`white`,padding:`10px`,borderRadius:`12px`,textAlign:`center`,color:`#7b1fa2`,width:`75%`,maxWidth:`175px`},winTitle:{fontSize:`20px`,margin:`0 0 5px 0`},winText:{fontSize:`14px`,fontWeight:`bold`,marginBottom:`8px`},winButtonsHorizontal:{display:`flex`,flexDirection:`row`,gap:`8px`,justifyContent:`center`,marginTop:`5px`},winBtn:{width:`35px`,height:`35px`,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`}},Rw=`/Kids-Games/assets/sukoonbg-DiEXluF0.jpeg`,zw=`/Kids-Games/assets/sukoontitle-QKouizRP.png`,Bw=`/Kids-Games/assets/rabbit-BF-hsdhK.png`,Vw=`/Kids-Games/assets/squirrel-DO4P1tkn.png`,Hw=`/Kids-Games/assets/stargame-uHxmVjte.png`,Uw=`/Kids-Games/assets/listengame-ipsQLQST.png`,Ww=`/Kids-Games/assets/dinogame-CEUOt7-d.png`,Gw=`/Kids-Games/assets/balloonsgame-DtkqEDfs.png`,Kw=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!0);(0,b.useEffect)(()=>{let e=!0,t,n,r=Date.now(),i=[Rw,zw,Bw,Vw,Hw,Uw,Ww,Gw];return Promise.all(i.map(e=>new Promise(t=>{let n=new Image,r=!1,i=()=>{r||(r=!0,t())};n.onload=async()=>{try{n.decode&&await n.decode()}catch{}i()},n.onerror=i,n.src=e,n.complete&&(n.naturalWidth>0&&n.decode?n.decode().catch(()=>{}).finally(i):i())}))).then(()=>{if(!e)return;o(!0);let i=Date.now()-r,a=Math.max(0,2200-i);t=setTimeout(()=>{e&&(n=setTimeout(()=>{e&&c(!1)},250))},a)}),()=>{e=!1,clearTimeout(t),clearTimeout(n)}},[]);let l=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},u=[{id:`imgStar`,img:Hw,path:`/SukoonStar`},{id:`imgListen`,img:Uw,path:`/Sukoonlicen`},{id:`imgDino`,img:Ww,path:`/SukoonDino`},{id:`imgBalloons`,img:Gw,path:`/Sukoonballon`}];return(0,R.jsxs)(`div`,{className:`sukoon-container`,style:{backgroundImage:`url(${Rw})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,height:`100vh`,width:`100vw`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,position:`relative`,overflow:`hidden`,boxSizing:`border-box`,padding:`8px 10px`,backgroundColor:`transparent`},children:[(0,R.jsx)(`style`,{children:`
+      `})]})}var Lw={container:{width:`100vw`,height:`100dvh`,minHeight:`100dvh`,maxHeight:`100dvh`,background:`url(${kw}) center center / cover no-repeat`,display:`flex`,flexDirection:`column`,alignItems:`center`,padding:`clamp(8px, 2vw, 15px)`,boxSizing:`border-box`,overflow:`hidden`,position:`fixed`,top:0,left:0,right:0,bottom:0},topBar:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`center`,maxWidth:`700px`,gap:`5px`,zIndex:500},headerGroup:{display:`flex`,flexDirection:`column`,alignItems:`center`,gap:`3px`,flex:1},statBox:{background:`rgba(255,255,255,0.9)`,padding:`clamp(6px, 1.2vw, 10px) clamp(10px, 1.8vw, 14px)`,borderRadius:`10px`,fontWeight:`bold`,color:`#7b1fa2`,border:`2px solid #7b1fa2`,fontSize:`clamp(14px, 2vw, 17px)`,whiteSpace:`nowrap`,display:`flex`,alignItems:`center`,gap:`4px`},titleBg:{background:`rgba(255,255,255,0.85)`,padding:`4px 14px`,borderRadius:`12px`,marginBottom:`2px`},subHeaderBg:{background:`rgba(255,255,255,0.75)`,fontWeight:`bold`,padding:`4px 10px`,borderRadius:`10px`},header:{color:`#7b1fa2`,fontSize:`clamp(19px, 4.5vw, 26px)`,margin:`0`,fontWeight:`bold`},subHeader:{color:`#c46767`,fontSize:`clamp(13px, 2.5vw, 16px)`,margin:`0`,fontWeight:`bold`},gridContainer:{display:`grid`,gridTemplateColumns:`repeat(4, 1fr)`,gap:`clamp(8px, 2vw, 15px)`,width:`100%`,maxWidth:`480px`,marginTop:`clamp(15px, 3vw, 25px)`,padding:`0 10px`,boxSizing:`border-box`,justifyItems:`center`},wordCard:{background:`white`,width:`fit-content`,minWidth:`55px`,padding:`clamp(6px, 1.5vw, 10px) clamp(12px, 2vw, 18px)`,borderRadius:`8px`,cursor:`grab`,fontSize:`clamp(15px, 2.2vw, 18px)`,fontWeight:`bold`,textAlign:`center`,border:`2px solid #7b1fa2`,touchAction:`none`,boxShadow:`0 4px 8px rgba(0,0,0,0.15)`,position:`relative`,zIndex:3e3},fixedBoxesContainer:{position:`fixed`,left:`50%`,bottom:`65px`,transform:`translateX(-50%)`,display:`flex`,justifyContent:`center`,gap:`clamp(10px, 3vw, 25px)`,zIndex:200,width:`100%`},box:{width:`clamp(85px, 18vw, 120px)`,height:`clamp(85px, 18vw, 120px)`,backgroundSize:`contain`,backgroundRepeat:`no-repeat`,backgroundPosition:`center`},bottomButtons:{position:`fixed`,bottom:`10px`,left:`50%`,transform:`translateX(-50%)`,display:`flex`,gap:`10px`,zIndex:1e3},circleBtn:{width:`38px`,height:`38px`,minWidth:`38px`,minHeight:`38px`,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 6px rgba(0,0,0,0.2)`},winOverlay:{position:`fixed`,top:0,left:0,width:`100%`,height:`100%`,background:`rgba(0,0,0,0.7)`,display:`flex`,justifyContent:`center`,alignItems:`center`,zIndex:2e3},winBox:{background:`white`,padding:`10px`,borderRadius:`12px`,textAlign:`center`,color:`#7b1fa2`,width:`75%`,maxWidth:`175px`},winTitle:{fontSize:`20px`,margin:`0 0 5px 0`},winText:{fontSize:`14px`,fontWeight:`bold`,marginBottom:`8px`},winButtonsHorizontal:{display:`flex`,flexDirection:`row`,gap:`8px`,justifyContent:`center`,marginTop:`5px`},winBtn:{width:`35px`,height:`35px`,borderRadius:`50%`,border:`none`,background:`#7b1fa2`,color:`white`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`}},Rw=`/Kids-Games/assets/sukoonbg-DiEXluF0.jpeg`,zw=`/Kids-Games/assets/sukoontitle-QKouizRP.png`,Bw=`/Kids-Games/assets/rabbit-BF-hsdhK.png`,Vw=`/Kids-Games/assets/squirrel-DO4P1tkn.png`,Hw=`/Kids-Games/assets/stargame-uHxmVjte.png`,Uw=`/Kids-Games/assets/listengame-ipsQLQST.png`,Ww=`/Kids-Games/assets/dinogame-CEUOt7-d.png`,Gw=`/Kids-Games/assets/balloonsgame-DtkqEDfs.png`,Kw=()=>{let e=I(),[t,n]=(0,b.useState)(null),[r,i]=(0,b.useState)(!1),[a,o]=(0,b.useState)(!1),[s,c]=(0,b.useState)(!0);(0,b.useEffect)(()=>{let e=!0,t=Date.now(),n=[Rw,zw,Bw,Vw,Hw,Uw,Ww,Gw];return Promise.all(n.map(e=>new Promise(t=>{let n=new Image,r=!1,i=()=>{r||(r=!0,t())};n.onload=async()=>{try{n.decode&&await n.decode()}catch{}i()},n.onerror=i,n.src=e,n.complete&&i()}))).then(()=>{let n=Date.now()-t,r=Math.max(2200-n,0);setTimeout(()=>{e&&(o(!0),c(!1))},r)}),()=>{e=!1}},[]);let l=()=>{r||new Audio(`https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3`).play().catch(()=>{})},u=[{id:`imgStar`,img:Hw,path:`/SukoonStar`},{id:`imgListen`,img:Uw,path:`/Sukoonlicen`},{id:`imgDino`,img:Ww,path:`/SukoonDino`},{id:`imgBalloons`,img:Gw,path:`/Sukoonballon`}];return(0,R.jsxs)(`div`,{className:`sukoon-container`,style:{backgroundImage:`url(${Rw})`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,height:`100vh`,width:`100vw`,display:`flex`,flexDirection:`column`,alignItems:`center`,justifyContent:`space-between`,position:`relative`,overflow:`hidden`,boxSizing:`border-box`,padding:`8px 10px`,backgroundColor:`transparent`},children:[(0,R.jsx)(`style`,{children:`
 
         /* =====================================
-           إعدادات الصفحة العامة
-        ===================================== */
-
-        html,
-        body,
-        #root {
-          margin: 0 !important;
-          padding: 0 !important;
-
-          width: 100% !important;
-          min-width: 100% !important;
-
-          height: 100% !important;
-          min-height: 100% !important;
-
-          overflow: hidden !important;
-
-          background: transparent !important;
-          background-color: transparent !important;
-
-          animation: none !important;
-        }
-
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
-        }
-
-        /* =====================================
-           شاشة التحميل الجديدة
-        ===================================== */
+           شاشة التحميل - ألوان مختلفة
+        ====================================== */
 
         .sukoon-loading-screen {
           position: fixed;
           inset: 0;
-
-          width: 100%;
-          height: 100vh;
-          height: 100dvh;
-
-          z-index: 999999;
+          z-index: 99999;
 
           display: flex;
-          align-items: center;
           justify-content: center;
+          align-items: center;
 
           overflow: hidden;
 
           background:
             radial-gradient(
-              circle at 10% 18%,
-              rgba(255, 166, 181, 0.65),
+              circle at 12% 18%,
+              rgba(255, 229, 130, 0.72) 0%,
               transparent 25%
             ),
             radial-gradient(
-              circle at 88% 18%,
-              rgba(255, 218, 119, 0.65),
-              transparent 27%
-            ),
-            radial-gradient(
-              circle at 15% 88%,
-              rgba(255, 188, 146, 0.55),
+              circle at 88% 82%,
+              rgba(255, 177, 105, 0.7) 0%,
               transparent 28%
-            ),
-            radial-gradient(
-              circle at 88% 85%,
-              rgba(255, 226, 158, 0.6),
-              transparent 30%
             ),
             linear-gradient(
               135deg,
-              #fff0e4 0%,
-              #ffe0e5 35%,
-              #fff0c9 70%,
-              #ffe1c9 100%
+              #fff8d9 0%,
+              #ffe9a8 45%,
+              #ffc98f 100%
             );
-
-          background-size: 180% 180%;
-
-          animation:
-            sukoonLoadingBackground 8s ease-in-out infinite alternate;
         }
 
-        /* =====================================
-           الدوائر الكبيرة في الخلفية
-        ===================================== */
-
+        /* الدائرة العلوية */
         .sukoon-loading-screen::before {
-          content: '';
+          content: "";
 
           position: absolute;
 
-          width: 190px;
-          height: 190px;
-
-          top: -65px;
-          left: -50px;
+          width: 330px;
+          height: 330px;
 
           border-radius: 50%;
 
+          border:
+            15px solid
+            rgba(255, 255, 255, 0.4);
+
           background:
             radial-gradient(
-              circle at 35% 30%,
-              #ffe0e6 0%,
-              #ffb5c4 58%,
-              #ff93aa 100%
+              circle,
+              rgba(255, 215, 94, 0.18),
+              transparent 68%
             );
 
-          opacity: 0.8;
-
-          box-shadow:
-            0 0 0 18px rgba(255, 188, 200, 0.15),
-            0 0 0 38px rgba(255, 188, 200, 0.08);
+          top: -125px;
+          left: -105px;
 
           animation:
-            sukoonBubbleOne 5.5s ease-in-out infinite;
+            sukoonCircleTop
+            5.5s
+            ease-in-out
+            infinite;
         }
 
+        /* الدائرة السفلية */
         .sukoon-loading-screen::after {
-          content: '';
+          content: "";
 
           position: absolute;
 
-          width: 230px;
-          height: 230px;
-
-          right: -75px;
-          bottom: -80px;
+          width: 280px;
+          height: 280px;
 
           border-radius: 50%;
 
+          border:
+            12px solid
+            rgba(255, 255, 255, 0.36);
+
           background:
             radial-gradient(
-              circle at 32% 30%,
-              #fff0b7 0%,
-              #ffd475 58%,
-              #ffb56d 100%
+              circle,
+              rgba(255, 168, 92, 0.2),
+              transparent 68%
             );
 
-          opacity: 0.8;
-
-          box-shadow:
-            0 0 0 20px rgba(255, 215, 125, 0.15),
-            0 0 0 42px rgba(255, 215, 125, 0.08);
+          right: -95px;
+          bottom: -105px;
 
           animation:
-            sukoonBubbleTwo 6s ease-in-out infinite;
+            sukoonCircleBottom
+            6s
+            ease-in-out
+            infinite;
         }
 
         /* =====================================
-           كارد التحميل
-        ===================================== */
+           كارت التحميل
+        ====================================== */
 
         .sukoon-loading-card {
           position: relative;
-          z-index: 5;
+          z-index: 2;
 
-          width: 255px;
-          min-height: 132px;
+          min-width: 285px;
 
-          padding: 20px 18px 17px;
+          padding:
+            31px
+            38px
+            28px;
 
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-
-          border-radius: 28px;
+          border-radius: 30px;
 
           background:
             linear-gradient(
               145deg,
-              rgba(255,255,255,0.98),
-              rgba(255,249,239,0.97)
+              rgba(255, 255, 255, 0.92),
+              rgba(255, 248, 218, 0.94)
             );
 
-          border: 3px solid #ffb58d;
+          border:
+            4px solid
+            rgba(244, 173, 68, 0.55);
 
           box-shadow:
-            0 14px 35px rgba(212, 120, 78, 0.2),
-            0 4px 12px rgba(255, 160, 130, 0.18),
-            inset 0 0 18px rgba(255,255,255,0.95);
+            0 16px 38px
+            rgba(191, 120, 35, 0.22),
+
+            inset 0 0 18px
+            rgba(255, 255, 255, 0.75);
+
+          text-align: center;
 
           animation:
-            sukoonLoadingFloat 2.8s ease-in-out infinite;
-        }
-
-        /* الشريط الزخرفي أعلى الكارد */
-
-        .sukoon-loading-card::before {
-          content: '';
-
-          position: absolute;
-
-          width: 58px;
-          height: 8px;
-
-          top: 9px;
-          left: 50%;
-
-          transform: translateX(-50%);
-
-          border-radius: 20px;
-
-          background:
-            linear-gradient(
-              90deg,
-              #ff9caf,
-              #ffd36f,
-              #ffad7d
-            );
+            sukoonCardFloat
+            2.8s
+            ease-in-out
+            infinite;
         }
 
         .sukoon-loading-title {
-          margin: 2px 0 16px;
+          margin: 0;
 
-          color: #d76b55;
+          direction: rtl;
 
-          font-size: 22px;
-          font-weight: 900;
+          font-family:
+            "Arial",
+            "Tahoma",
+            sans-serif;
 
-          text-align: center;
-          white-space: nowrap;
+          font-size: 24px;
+          font-weight: 800;
+
+          color: #d87827;
 
           text-shadow:
-            0 1px 0 rgba(255,255,255,0.95);
+            0 2px 0
+            rgba(255, 255, 255, 0.9);
         }
 
         /* =====================================
-           النقاط
-        ===================================== */
+           النقاط المتحركة
+        ====================================== */
 
         .sukoon-loading-dots {
           display: flex;
 
-          align-items: center;
           justify-content: center;
+          align-items: center;
 
           gap: 9px;
 
-          height: 26px;
+          height: 20px;
+
+          margin-top: 15px;
         }
 
         .sukoon-loading-dot {
-          width: 12px;
-          height: 12px;
+          width: 10px;
+          height: 10px;
+
+          flex-shrink: 0;
+
+          display: block;
 
           border-radius: 50%;
 
+          background: #ef942f;
+
           box-shadow:
-            0 3px 7px rgba(220, 120, 80, 0.2);
+            0 3px 7px
+            rgba(206, 125, 25, 0.28);
 
           animation:
-            sukoonLoadingDot 1.15s ease-in-out infinite;
+            sukoonDotBounce
+            1.2s
+            infinite
+            ease-in-out;
         }
-
-        /* وردي */
 
         .sukoon-loading-dot:nth-child(1) {
-          background:
-            radial-gradient(
-              circle at 35% 30%,
-              #ffe0e7 0%,
-              #ff9fb1 65%,
-              #f17f99 100%
-            );
+          animation-delay: 0s;
         }
-
-        /* أصفر */
 
         .sukoon-loading-dot:nth-child(2) {
-          animation-delay: 0.18s;
-
-          background:
-            radial-gradient(
-              circle at 35% 30%,
-              #fff5c7 0%,
-              #ffd96e 65%,
-              #f5b84d 100%
-            );
+          animation-delay: 0.2s;
         }
-
-        /* خوخي */
 
         .sukoon-loading-dot:nth-child(3) {
-          animation-delay: 0.36s;
-
-          background:
-            radial-gradient(
-              circle at 35% 30%,
-              #ffe4d1 0%,
-              #ffad7e 65%,
-              #f18b63 100%
-            );
+          animation-delay: 0.4s;
         }
 
-        /* =====================================
-           الحركات
-        ===================================== */
-
-        @keyframes sukoonLoadingBackground {
-          0% {
-            background-position: 0% 45%;
-          }
-
-          100% {
-            background-position: 100% 55%;
-          }
-        }
-
-        @keyframes sukoonLoadingFloat {
-          0%,
-          100% {
-            transform: translateY(0) scale(1);
-          }
-
-          50% {
-            transform: translateY(-6px) scale(1.015);
-          }
-        }
-
-        @keyframes sukoonLoadingDot {
+        @keyframes sukoonDotBounce {
           0%,
           60%,
           100% {
-            transform: translateY(0) scale(1);
-            opacity: 0.55;
+            transform:
+              translateY(0)
+              scale(1);
+
+            opacity: 0.4;
           }
 
           30% {
-            transform: translateY(-10px) scale(1.22);
+            transform:
+              translateY(-9px)
+              scale(1.35);
+
             opacity: 1;
           }
         }
 
-        @keyframes sukoonBubbleOne {
+        /* =====================================
+           حركة كارت التحميل
+        ====================================== */
+
+        @keyframes sukoonCardFloat {
           0%,
           100% {
-            transform: translate(0, 0) scale(1);
-          }
-
-          50% {
-            transform: translate(18px, 12px) scale(1.06);
-          }
-        }
-
-        @keyframes sukoonBubbleTwo {
-          0%,
-          100% {
-            transform: translate(0, 0) scale(1);
-          }
-
-          50% {
-            transform: translate(-15px, -12px) scale(1.05);
-          }
-        }
-
-        /* =====================================
-           الصفحة والخلفية الأصلية
-        ===================================== */
-
-        .sukoon-container,
-        .sukoon-container *,
-        .sukoon-container::before,
-        .sukoon-container::after {
-          animation: none !important;
-        }
-
-        .sukoon-container {
-          width: 100vw !important;
-          height: 100vh !important;
-          height: 100dvh !important;
-
-          background-repeat: no-repeat;
-          background-color: transparent !important;
-
-          contain: layout style;
-        }
-
-        /* =====================================
-           إظهار المحتوى بعد تحميل الصور
-        ===================================== */
-
-        .sukoon-content {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-
-          width: 100%;
-          height: 100%;
-          min-height: 0;
-
-          position: relative;
-
-          visibility: hidden;
-        }
-
-        .sukoon-content.assets-ready {
-          visibility: visible;
-        }
-
-        /* =====================================
-           الحركة الأصلية للحيوانات فقط
-        ===================================== */
-
-        @keyframes float {
-          0%, 100% {
             transform: translateY(0);
           }
 
           50% {
-            transform: translateY(-10px);
+            transform: translateY(-7px);
           }
         }
 
-        .animate-float {
-          animation: float 3s ease-in-out infinite !important;
+        /* =====================================
+           حركة الدائرة العلوية
+        ====================================== */
+
+        @keyframes sukoonCircleTop {
+          0%,
+          100% {
+            transform:
+              translate(0, 0)
+              rotate(0deg);
+          }
+
+          50% {
+            transform:
+              translate(22px, 16px)
+              rotate(12deg);
+          }
         }
 
         /* =====================================
-           المحتوى
-        ===================================== */
+           حركة الدائرة السفلية
+        ====================================== */
 
-        .sukoon-wrapper {
+        @keyframes sukoonCircleBottom {
+          0%,
+          100% {
+            transform:
+              translate(0, 0)
+              rotate(0deg);
+          }
+
+          50% {
+            transform:
+              translate(-20px, -17px)
+              rotate(-12deg);
+          }
+        }
+
+        /* =====================================
+           محتوى اللعبة
+        ====================================== */
+
+        .sukoon-content {
+          width: 100%;
+          height: 100%;
+
           display: flex;
           flex-direction: column;
+
           align-items: center;
-          justify-content: flex-start;
+          justify-content: space-between;
 
+          opacity: 0;
+
+          transition:
+            opacity 0.45s ease;
+        }
+
+        .sukoon-content.assets-ready {
+          opacity: 1;
+        }
+
+        .sukoon-wrapper {
           width: 100%;
-          max-width: 550px;
+          max-width: 850px;
 
-          position: relative;
+          display: flex;
+          flex-direction: column;
 
-          margin-top: 0px;
+          align-items: center;
+          justify-content: center;
+
+          gap: 8px;
+
+          margin-top: 5px;
         }
 
         .title-img {
-          width: clamp(180px, 30vw, 250px);
+          width: min(48vw, 330px);
+
+          max-width: 330px;
+
           height: auto;
 
-          z-index: 5;
+          object-fit: contain;
 
-          margin-top: -19px;
-          margin-bottom: 35px;
-
-          animation: none !important;
+          display: block;
         }
 
-        /* =====================================
-           الألعاب
-        ===================================== */
-
         .games-grid {
-          display: grid;
-
-          grid-template-columns: repeat(2, 1fr);
-
-          gap: clamp(15px, 3.5vw, 25px);
-
           position: relative;
-
           z-index: 2;
 
-          justify-items: center;
+          width: 85%;
+
+          display: grid;
+
+          grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+          gap: 12px;
+
           align-items: center;
+          justify-items: center;
         }
 
         .game-btn {
-          width: clamp(135px, 30vw, 190px);
+          width: 100%;
+
+          max-width: 190px;
+
           height: auto;
 
-          transition: transform 0.2s;
+          object-fit: contain;
 
           cursor: pointer;
+
+          transition:
+            transform 0.2s ease,
+            filter 0.2s ease;
+
+          user-select: none;
+
+          -webkit-user-drag: none;
         }
 
         .side-animal {
-          width: clamp(100px, 20vw, 160px) !important;
+          width: min(18vw, 135px);
+
+          max-width: 135px;
+
           height: auto;
 
-          pointer-events: none;
+          object-fit: contain;
 
-          z-index: 3;
+          user-select: none;
+
+          -webkit-user-drag: none;
+        }
+
+        .animate-float {
+          animation:
+            sukoonAnimalFloat
+            3s
+            ease-in-out
+            infinite;
+        }
+
+        @keyframes sukoonAnimalFloat {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-5px);
+          }
         }
 
         /* =====================================
-           الموبايل فقط
-        ===================================== */
+           أزرار التحكم
+        ====================================== */
 
-        @media (max-width: 480px) {
+        .home-control,
+        .sound-control {
+          transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+        }
 
-          .sukoon-container {
-            padding: 5px 8px !important;
-          }
+        .home-control:hover,
+        .sound-control:hover {
+          transform: scale(1.08);
+        }
 
-          .title-img {
-            margin-top: -15px !important;
-            margin-bottom: 30px !important;
+        /* =====================================
+           الشاشات المتوسطة
+        ====================================== */
+
+        @media (max-width: 900px) {
+
+          .sukoon-wrapper {
+            max-width: 720px;
           }
 
           .games-grid {
-            gap: 14px !important;
+            width: 90%;
+            gap: 9px;
           }
 
           .game-btn {
-            width: 140px !important;
+            max-width: 165px;
           }
 
-          .side-animals {
-            margin-bottom: 72px !important;
-          }
-
-          .side-animal {
-            width: 105px !important;
-          }
-
-          .home-control {
-            top: 14px !important;
-            left: 14px !important;
-          }
-
-          .sound-control {
-            top: 12px !important;
-            right: 12px !important;
-          }
-
-          /* كارد التحميل على الموبايل */
-
-          .sukoon-loading-card {
-            width: 215px;
-            min-height: 108px;
-
-            padding: 15px 14px 13px;
-
-            border-radius: 23px;
-          }
-
-          .sukoon-loading-title {
-            font-size: 19px;
-            margin-bottom: 13px;
-          }
-
-          .sukoon-loading-dot {
-            width: 10px;
-            height: 10px;
+          .title-img {
+            width: min(52vw, 300px);
           }
         }
 
-        @media (max-width: 400px) {
+        /* =====================================
+           الموبايل
+        ====================================== */
+
+        @media (max-width: 600px) {
 
           .sukoon-loading-card {
+            min-width: 235px;
+
+            padding:
+              25px
+              25px
+              22px;
+
+            border-radius: 25px;
+          }
+
+          .sukoon-loading-title {
+            font-size: 20px;
+          }
+
+          .sukoon-loading-dots {
+            gap: 8px;
+            margin-top: 13px;
+          }
+
+          .sukoon-loading-dot {
+            width: 8px;
+            height: 8px;
+          }
+
+          .sukoon-loading-screen::before {
+            width: 230px;
+            height: 230px;
+
+            border-width: 12px;
+
+            top: -85px;
+            left: -75px;
+          }
+
+          .sukoon-loading-screen::after {
             width: 200px;
-            min-height: 102px;
+            height: 200px;
 
-            padding: 14px 12px;
+            border-width: 10px;
 
-            border-radius: 21px;
+            right: -70px;
+            bottom: -70px;
+          }
+
+          .title-img {
+            width: min(65vw, 260px);
+          }
+
+          .games-grid {
+            width: 92%;
+            gap: 6px 8px;
+          }
+
+          .game-btn {
+            max-width: 145px;
+          }
+
+          .side-animal {
+            width: min(22vw, 105px);
+          }
+
+          .home-control,
+          .sound-control {
+            width: 36px !important;
+            height: 36px !important;
+
+            font-size: 18px !important;
+          }
+
+          .home-control {
+            left: 12px !important;
+          }
+
+          .sound-control {
+            right: 12px !important;
+          }
+        }
+
+        /* =====================================
+           موبايل صغير جدًا
+        ====================================== */
+
+        @media (max-width: 380px) {
+
+          .sukoon-loading-card {
+            min-width: 215px;
+
+            padding:
+              22px
+              20px
+              20px;
           }
 
           .sukoon-loading-title {
             font-size: 18px;
           }
+
+          .title-img {
+            width: 60vw;
+          }
+
+          .game-btn {
+            max-width: 125px;
+          }
+
+          .games-grid {
+            gap: 4px 6px;
+          }
         }
 
-      `}),s&&(0,R.jsx)(`div`,{className:`sukoon-loading-screen`,role:`status`,"aria-live":`polite`,"aria-label":`جاري تحميل اللعبة`,children:(0,R.jsxs)(`div`,{className:`sukoon-loading-card`,children:[(0,R.jsx)(`div`,{className:`sukoon-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`sukoon-loading-dots`,children:[(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`sukoon-content ${a?`assets-ready`:``}`,children:[(0,R.jsx)(`button`,{className:`home-control`,onClick:()=>e(`/home`),style:{...qw,position:`absolute`,top:`10px`,left:`27px`,zIndex:10},"aria-label":`Home`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-control`,onClick:()=>i(!r),style:{...qw,position:`absolute`,top:`8px`,right:`25px`,zIndex:10},"aria-label":`Sound`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsxs)(`div`,{className:`sukoon-wrapper`,children:[(0,R.jsx)(`img`,{className:`title-img`,src:zw,alt:`عالم السكون`,loading:`eager`,decoding:`async`}),(0,R.jsxs)(`div`,{style:{position:`relative`,width:`100%`,display:`flex`,justifyContent:`center`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`85%`,height:`100%`,zIndex:1,pointerEvents:`none`,top:0,left:`7.5%`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`5%`,x2:`50%`,y2:`95%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`}),(0,R.jsx)(`line`,{x1:`5%`,y1:`50%`,x2:`95%`,y2:`50%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:u.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>{n(null)},style:{transform:i?`scale(1.08)`:`scale(1)`,filter:i?`drop-shadow(0 0 8px rgba(255,190,110,0.8))`:`none`}},r.id)})})]})]}),(0,R.jsxs)(`div`,{className:`side-animals`,style:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-end`,position:`relative`,pointerEvents:`none`,padding:`0 5px`},children:[(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}})]})]})]})},qw={width:`40px`,height:`40px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.95)`,fontSize:`20px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 5px rgba(0,0,0,0.3)`,color:`#4a2c2a`},Jw=`/Kids-Games/assets/sukbg-BU79ekWX.jpeg`,Yw=`/Kids-Games/assets/star-BT2FBxC5.png`,Xw=`/Kids-Games/assets/starbox-BmPXKMOS.png`,Zw=`/Kids-Games/assets/astronautidle-BMPZXSbB.png`,Qw=`/Kids-Games/assets/astronautreach-COle1x_Q.png`,$w=e=>new Promise(t=>{let n=new Image;n.onload=()=>t(!0),n.onerror=()=>t(!0),n.src=e}),eT=e=>new Promise(t=>{try{let n=new Audio,r=!1,i=()=>{r||(r=!0,n.removeEventListener(`canplaythrough`,i),n.removeEventListener(`loadeddata`,i),n.removeEventListener(`error`,i),t(!0))};n.addEventListener(`canplaythrough`,i),n.addEventListener(`loadeddata`,i),n.addEventListener(`error`,i),n.preload=`auto`,n.src=e,n.load(),setTimeout(i,5e3)}catch{t(!0)}}),tT=15e3,nT=()=>{let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),a=(0,b.useRef)(new Audio(Vs)),o=(0,b.useRef)(new Audio(Hs)),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)([]),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(60),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(`idle`),[S,C]=(0,b.useState)(null),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(!1),O={left:`6%`,top:`86%`},[k,A]=(0,b.useState)(O),j={left:`34%`},M={top:-42,left:72},N=(0,b.useMemo)(()=>[{id:1,letter:`بْ`,x:`16%`,y:`24%`},{id:2,letter:`فُ`,x:`38%`,y:`21%`},{id:3,letter:`رْ`,x:`60%`,y:`25%`},{id:4,letter:`كُ`,x:`23%`,y:`37%`},{id:5,letter:`نْ`,x:`48%`,y:`35%`},{id:6,letter:`جْ`,x:`68%`,y:`44%`},{id:7,letter:`صَ`,x:`13%`,y:`46%`},{id:8,letter:`دْ`,x:`40%`,y:`51%`},{id:9,letter:`مْ`,x:`58%`,y:`56%`},{id:10,letter:`لْ`,x:`26%`,y:`60%`}],[]),P=N.filter(e=>e.letter.includes(`ْ`)).length;(0,b.useEffect)(()=>(a.current.volume=1,o.current.volume=1,()=>{a.current.pause(),o.current.pause()}),[]),(0,b.useEffect)(()=>((async()=>{await Promise.all([$w(Jw),$w(Yw),$w(Xw),$w(Zw),$w(Qw),eT(Vs),eT(Hs)])})(),()=>{}),[]),(0,b.useEffect)(()=>{if(!t)return;let e=Date.now(),r=setInterval(()=>{let t=Date.now()-e;i(Math.min(100,Math.floor(t/tT*100))),t>=tT&&(clearInterval(r),i(100),setTimeout(()=>{n(!1)},150))},50);return()=>{clearInterval(r)}},[t]);let ee=()=>{s&&(a.current.currentTime=0,a.current.play().catch(()=>{}))},F=()=>{s&&(o.current.currentTime=0,o.current.play().catch(()=>{}))};(0,b.useEffect)(()=>{if(t||p||_)return;let e=setInterval(()=>{g(t=>t<=1?(clearInterval(e),v(!0),D(!1),C(null),T(!1),x(`idle`),0):t-1)},1e3);return()=>clearInterval(e)},[t,p,_]);let te=async e=>{if(!(p||_||E||S||l.includes(e.id))){if(D(!0),x(`reach`),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),_){D(!1);return}if(C(e),await new Promise(e=>setTimeout(e,300)),_){C(null),D(!1);return}if(A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,950)),_){C(null),x(`idle`),D(!1);return}if(e.letter.includes(`ْ`)){ee(),T(!0),await new Promise(e=>setTimeout(e,1e3)),u(t=>[...t,e.id]),f(e=>{let t=e+1;return t>=P&&m(!0),t}),T(!1),C(null),x(`idle`),D(!1);return}F(),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),C(null),A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,900)),x(`idle`),D(!1)}},ne=()=>{u([]),f(0),m(!1),g(60),v(!1),C(null),T(!1),D(!1),x(`idle`),A({left:O.left,top:O.top})},re=()=>{c(e=>!e)};if(t)return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
+      `}),s&&(0,R.jsx)(`div`,{className:`sukoon-loading-screen`,children:(0,R.jsxs)(`div`,{className:`sukoon-loading-card`,children:[(0,R.jsx)(`h2`,{className:`sukoon-loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsxs)(`div`,{className:`sukoon-loading-dots`,children:[(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`}),(0,R.jsx)(`span`,{className:`sukoon-loading-dot`})]})]})}),(0,R.jsxs)(`div`,{className:`sukoon-content ${a?`assets-ready`:``}`,children:[(0,R.jsx)(`button`,{className:`home-control`,onClick:()=>e(`/home`),style:{...qw,position:`absolute`,top:`10px`,left:`27px`,zIndex:10},"aria-label":`Home`,children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{className:`sound-control`,onClick:()=>i(!r),style:{...qw,position:`absolute`,top:`8px`,right:`25px`,zIndex:10},"aria-label":`Sound`,children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsxs)(`div`,{className:`sukoon-wrapper`,children:[(0,R.jsx)(`img`,{className:`title-img`,src:zw,alt:`عالم السكون`,loading:`eager`,decoding:`async`}),(0,R.jsxs)(`div`,{style:{position:`relative`,width:`100%`,display:`flex`,justifyContent:`center`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`85%`,height:`100%`,zIndex:1,pointerEvents:`none`,top:0,left:`7.5%`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`5%`,x2:`50%`,y2:`95%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`}),(0,R.jsx)(`line`,{x1:`5%`,y1:`50%`,x2:`95%`,y2:`50%`,stroke:`#fff`,strokeWidth:`3`,strokeDasharray:`6 6`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:u.map(r=>{let i=t===r.id;return(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`async`,onClick:()=>{l(),e(r.path)},onMouseEnter:()=>{n(r.id),l()},onMouseLeave:()=>{n(null)},style:{transform:i?`scale(1.08)`:`scale(1)`,filter:i?`drop-shadow(0 0 8px rgba(255,255,255,0.8))`:`none`}},r.id)})})]})]}),(0,R.jsxs)(`div`,{className:`side-animals`,style:{width:`100%`,display:`flex`,justifyContent:`space-between`,alignItems:`flex-end`,position:`relative`,pointerEvents:`none`,padding:`0 5px`},children:[(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`async`,style:{marginBottom:`-8px`}})]})]})]})},qw={width:`40px`,height:`40px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.95)`,fontSize:`20px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 3px 5px rgba(0,0,0,0.3)`,color:`#4a2c2a`},Jw=`/Kids-Games/assets/sukbg-BU79ekWX.jpeg`,Yw=`/Kids-Games/assets/star-BT2FBxC5.png`,Xw=`/Kids-Games/assets/starbox-BmPXKMOS.png`,Zw=`/Kids-Games/assets/astronautidle-BMPZXSbB.png`,Qw=`/Kids-Games/assets/astronautreach-COle1x_Q.png`,$w=e=>new Promise(t=>{let n=new Image;n.onload=()=>t(!0),n.onerror=()=>t(!0),n.src=e}),eT=e=>new Promise(t=>{try{let n=new Audio,r=!1,i=()=>{r||(r=!0,n.removeEventListener(`canplaythrough`,i),n.removeEventListener(`loadeddata`,i),n.removeEventListener(`error`,i),t(!0))};n.addEventListener(`canplaythrough`,i),n.addEventListener(`loadeddata`,i),n.addEventListener(`error`,i),n.preload=`auto`,n.src=e,n.load(),setTimeout(i,5e3)}catch{t(!0)}}),tT=15e3,nT=()=>{let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),a=(0,b.useRef)(new Audio(Vs)),o=(0,b.useRef)(new Audio(Hs)),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)([]),[d,f]=(0,b.useState)(0),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(60),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(`idle`),[S,C]=(0,b.useState)(null),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(!1),O={left:`6%`,top:`86%`},[k,A]=(0,b.useState)(O),j={left:`34%`},M={top:-42,left:72},N=(0,b.useMemo)(()=>[{id:1,letter:`بْ`,x:`16%`,y:`24%`},{id:2,letter:`فُ`,x:`38%`,y:`21%`},{id:3,letter:`رْ`,x:`60%`,y:`25%`},{id:4,letter:`كُ`,x:`23%`,y:`37%`},{id:5,letter:`نْ`,x:`48%`,y:`35%`},{id:6,letter:`جْ`,x:`68%`,y:`44%`},{id:7,letter:`صَ`,x:`13%`,y:`46%`},{id:8,letter:`دْ`,x:`40%`,y:`51%`},{id:9,letter:`مْ`,x:`58%`,y:`56%`},{id:10,letter:`لْ`,x:`26%`,y:`60%`}],[]),P=N.filter(e=>e.letter.includes(`ْ`)).length;(0,b.useEffect)(()=>(a.current.volume=1,o.current.volume=1,()=>{a.current.pause(),o.current.pause()}),[]),(0,b.useEffect)(()=>((async()=>{await Promise.all([$w(Jw),$w(Yw),$w(Xw),$w(Zw),$w(Qw),eT(Vs),eT(Hs)])})(),()=>{}),[]),(0,b.useEffect)(()=>{if(!t)return;let e=Date.now(),r=setInterval(()=>{let t=Date.now()-e;i(Math.min(100,Math.floor(t/tT*100))),t>=tT&&(clearInterval(r),i(100),setTimeout(()=>{n(!1)},150))},50);return()=>{clearInterval(r)}},[t]);let ee=()=>{s&&(a.current.currentTime=0,a.current.play().catch(()=>{}))},F=()=>{s&&(o.current.currentTime=0,o.current.play().catch(()=>{}))};(0,b.useEffect)(()=>{if(t||p||_)return;let e=setInterval(()=>{g(t=>t<=1?(clearInterval(e),v(!0),D(!1),C(null),T(!1),x(`idle`),0):t-1)},1e3);return()=>clearInterval(e)},[t,p,_]);let te=async e=>{if(!(p||_||E||S||l.includes(e.id))){if(D(!0),x(`reach`),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),_){D(!1);return}if(C(e),await new Promise(e=>setTimeout(e,300)),_){C(null),D(!1);return}if(A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,950)),_){C(null),x(`idle`),D(!1);return}if(e.letter.includes(`ْ`)){ee(),T(!0),await new Promise(e=>setTimeout(e,1e3)),u(t=>[...t,e.id]),f(e=>{let t=e+1;return t>=P&&m(!0),t}),T(!1),C(null),x(`idle`),D(!1);return}F(),A({left:e.x,top:e.y}),await new Promise(e=>setTimeout(e,900)),C(null),A({left:O.left,top:O.top}),await new Promise(e=>setTimeout(e,900)),x(`idle`),D(!1)}},ne=()=>{u([]),f(0),m(!1),g(60),v(!1),C(null),T(!1),D(!1),x(`idle`),A({left:O.left,top:O.top})},re=()=>{c(e=>!e)};if(t)return(0,R.jsxs)(R.Fragment,{children:[(0,R.jsx)(`style`,{children:`
 
           .space-loading-screen {
             width: 100vw;
@@ -48231,7 +48228,7 @@ and
             bottom: 55px !important;
           }
         }
-      `}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:{...bN,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{onClick:()=>i(!r),style:{...bN,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsx)(`img`,{className:`title-img`,src:mN,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,R.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#ce6d4c`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,R.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#cf5e29`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},bN={width:`45px`,height:`45px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},xN=`/Kids-Games/assets/forestB-Bc14KDTU.jpeg`,SN=`/Kids-Games/assets/basket1-CRGVtZVd.png`,CN=`/Kids-Games/assets/key-CLSQO5-B.png`,wN=`/Kids-Games/assets/rainbowTitleBoard1-D9FvS7wc.png`,TN=`/Kids-Games/assets/lionclosed-BMmV9vU6.png`,EN=`/Kids-Games/assets/lionopen-DCgDWkjW.png`,DN=`/Kids-Games/assets/rabbit_closed-EoVeSnom.png`,ON=`/Kids-Games/assets/rabbit_open-DM8zc095.png`,kN=`/Kids-Games/assets/goose_closed-QEoEtx4p.png`,AN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,jN=`/Kids-Games/assets/octopus_closed-hF6-LhyX.png`,MN=`/Kids-Games/assets/octopus_open-Du2g0Urq.png`,NN=`/Kids-Games/assets/snake_closed-CpPhlRkM.png`,PN=`/Kids-Games/assets/snake_open-1mRHa0xr.png`,FN=`/Kids-Games/assets/camel_closed-B9y4oFj6.png`,IN=`/Kids-Games/assets/camel_open-CeHePenA.png`,LN=`/Kids-Games/assets/deer_closed-CdDn_w_v.png`,RN=`/Kids-Games/assets/deer_open-GPGCBXEA.png`,zN=`/Kids-Games/assets/centipede_closed-DptoISVp.png`,BN=`/Kids-Games/assets/centipede_open-Kd9GZNUE.png`,VN=`/Kids-Games/assets/lioness_closed-CxqZ3V-Y.png`,HN=`/Kids-Games/assets/lioness_open-DRRoBgp_.png`,UN=`/Kids-Games/assets/camel_closed-B9y4oFj6.png`,WN=`/Kids-Games/assets/camel_open-CeHePenA.png`,GN=`/Kids-Games/assets/monkey_closed-CWQ9uOf-.png`,KN=`/Kids-Games/assets/monkey_open-BWUXkxzP.png`,qN=`/Kids-Games/assets/goose_closed-QEoEtx4p.png`,JN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,YN=[{id:1,name:`أَسَد`,isCorrect:!0,closedImg:TN,openImg:EN},{id:2,name:`أَرْنَب`,isCorrect:!0,closedImg:DN,openImg:ON},{id:3,name:`إِوَّزَة`,isCorrect:!0,closedImg:kN,openImg:AN},{id:4,name:`أَخْطَبُوط`,isCorrect:!0,closedImg:jN,openImg:MN},{id:5,name:`أَفْعَى`,isCorrect:!0,closedImg:NN,openImg:PN},{id:6,name:`إِبِل`,isCorrect:!0,closedImg:FN,openImg:IN},{id:7,name:`أُيَّل`,isCorrect:!0,closedImg:LN,openImg:RN},{id:8,name:`أبو قردان`,isCorrect:!0,closedImg:zN,openImg:BN},{id:9,name:`إبل`,isCorrect:!0,closedImg:UN,openImg:WN}],XN=[{id:10,name:`زرافة`,isCorrect:!1,closedImg:VN,openImg:HN},{id:11,name:`فيل`,isCorrect:!1,closedImg:GN,openImg:KN},{id:12,name:`بَطَّة`,isCorrect:!1,closedImg:qN,openImg:JN}];function ZN(){let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5);return e.shift(),e}),[s,c]=(0,b.useState)(()=>{let e=[...XN].sort(()=>Math.random()-.5);return e.shift(),e}),[l,u]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5),t=[...XN].sort(()=>Math.random()-.5),n=e[0],r=t[0];return Math.random()>.5?[n,r]:[r,n]}),[d,f]=(0,b.useState)({}),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(0),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(!0),[S,C]=(0,b.useState)({text:``,type:``}),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(null),[O,k]=(0,b.useState)(null);(0,b.useEffect)(()=>{let e=!0,t=[xN,SN,CN,wN,TN,EN,DN,ON,kN,AN,jN,MN,NN,PN,FN,IN,LN,RN,zN,BN,VN,HN,UN,WN,GN,KN,qN,JN],r=Date.now(),a=0,o=()=>{if(a+=1,!e)return;let n=Math.round(a/t.length*100);i(e=>Math.max(e,Math.min(n,100)))},s=t.map(e=>new Promise(t=>{let n=new Image;n.onload=()=>{o(),t()},n.onerror=()=>{o(),t()},n.src=e}));return Promise.all(s).then(()=>{if(!e)return;let t=Date.now()-r,a=Math.max(0,5e3-t),o=setInterval(()=>{i(e=>e>=100?(clearInterval(o),100):Math.min(e+2,100))},45);setTimeout(()=>{clearInterval(o),e&&(i(100),setTimeout(()=>{e&&n(!1)},250))},a)}),()=>{e=!1}},[]);let A=(e,t)=>{let n=[...e],r=[...t];if(n.length===0)return{pair:[],nextC:[],nextW:[]};r.length===0&&(r=[...XN].sort(()=>Math.random()-.5));let i=n.shift(),a=r.shift();return{pair:Math.random()>.5?[i,a]:[a,i],nextC:n,nextW:r}},j=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:523.25,time:0},{frequency:659.25,time:.13},{frequency:783.99,time:.26}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.25,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.24),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.25)}),setTimeout(()=>{t.close()},750)}catch{}},M=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:330,time:0},{frequency:277.18,time:.12}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.2,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.2),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.22)}),setTimeout(()=>{t.close()},550)}catch{}};(0,b.useEffect)(()=>{let e=null;return!t&&!_&&(e=setInterval(()=>{g(e=>e+1)},1e3)),()=>clearInterval(e)},[t,_]);let N=(e,t)=>{e.preventDefault(),k(t),D({x:e.clientX,y:e.clientY})};(0,b.useEffect)(()=>{let e=e=>{O!==null&&D({x:e.clientX,y:e.clientY})},t=e=>{if(O===null||!E)return;let t=document.elementFromPoint(e.clientX,e.clientY)?.closest(`.cage-card`);if(t){let e=t.getAttribute(`data-animal-id`),n=l.find(t=>t.id===Number(e));n&&P(n)}k(null),D(null)};return O!==null&&(window.addEventListener(`pointermove`,e),window.addEventListener(`pointerup`,t),window.addEventListener(`pointercancel`,t)),()=>{window.removeEventListener(`pointermove`,e),window.removeEventListener(`pointerup`,t),window.removeEventListener(`pointercancel`,t)}},[O,E,l]);let P=e=>{w||_||d[e.id]||(e.isCorrect?(T(!0),j(),f(t=>({...t,[e.id]:!0})),m(e=>e+10),C({text:`أحسنت 🔓`,type:`success`}),setTimeout(()=>{let{pair:e,nextC:t,nextW:n}=A(a,s);e.length>0?(u(e),o(t),c(n),f({})):v(!0),C({text:``,type:``}),T(!1),p+10>=90&&v(!0)},450)):(M(),C({text:`خطأ❌`,type:`error`}),setTimeout(()=>{C({text:``,type:``})},1e3)))};return(0,R.jsxs)(`div`,{className:`game-container`,style:$N.container,children:[(0,R.jsx)(`style`,{children:QN}),t&&(0,R.jsxs)(`div`,{className:`loading-screen`,children:[(0,R.jsxs)(`div`,{className:`loading-decor`,children:[(0,R.jsx)(`span`,{className:`loading-icon loading-icon-1`,children:`🦁`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-2`,children:`🌿`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-3`,children:`🐰`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-4`,children:`🦌`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-5`,children:`🐾`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-6`,children:`🌳`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-7`,children:`🐘`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-8`,children:`🦋`})]}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-progress`,children:(0,R.jsx)(`div`,{className:`loading-progress-fill`,style:{width:`${r}%`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[r,`%`]})]})]}),(0,R.jsx)(`img`,{src:xN,alt:`خلفية اللعبة`,style:$N.bgImg}),(0,R.jsxs)(`div`,{className:`game-badge badge-left`,children:[`⭐ `,p]}),(0,R.jsxs)(`div`,{className:`game-badge badge-right badge-timer`,children:[`⏱️ `,(e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${n<10?`0`:``}${n}`})(h)]}),(0,R.jsxs)(`div`,{className:`header-resp`,children:[(0,R.jsxs)(`div`,{style:{position:`relative`,display:`inline-flex`,justifyContent:`center`,alignItems:`center`},children:[(0,R.jsx)(`img`,{src:wN,alt:`لوحة العنوان`,className:`title-board-img`}),(0,R.jsx)(`h1`,{className:`game-title`,children:`إنْقَاذُ الحَيَوَانَات`})]}),(0,R.jsx)(`p`,{className:`instruction-text`,children:`افْتَحِ القَفَصَ لِلْحَيَوَانِ الَّذِي يَبْدَأُ اسْمُهُ بِحَرْفِ الأَلِفِ`})]}),(0,R.jsx)(`div`,{className:`cages-grid`,children:l.map(e=>{let t=!!d[e.id];return(0,R.jsxs)(`div`,{"data-animal-id":e.id,className:`cage-card`,children:[(0,R.jsx)(`img`,{src:t?e.openImg:e.closedImg,alt:e.name,className:`cage-img-element`}),(0,R.jsx)(`div`,{className:`animal-nametag`,children:e.name})]},e.id)})}),(0,R.jsx)(`div`,{className:`bottom-bar`,children:(0,R.jsxs)(`div`,{className:`bottom-content-wrapper`,children:[(0,R.jsxs)(`div`,{style:$N.footerBtns,children:[(0,R.jsx)(`button`,{onClick:()=>x(!y),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(U,{className:`btn-icon`,color:y?`#000`:`gray`})}),(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(H,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(V,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(B,{className:`btn-icon`})})]}),(0,R.jsxs)(`div`,{className:`basket-area`,children:[(0,R.jsx)(`img`,{src:SN,alt:`السلة الخشبية`,className:`basket-img`}),(0,R.jsx)(`div`,{className:`keys-group`,children:[0,1].map(e=>(0,R.jsx)(`img`,{src:CN,alt:`مفتاح`,className:`draggable-key`,onPointerDown:t=>N(t,e),style:{opacity:O===e?0:1}},e))})]})]})}),O!==null&&E&&(0,R.jsx)(`img`,{src:`/Kids-Games/assets/key-CLSQO5-B.png`,alt:`مفتاح حقيقي محمول`,style:{position:`fixed`,left:`${E.x}px`,top:`${E.y}px`,transform:`translate(-50%, -50%) scale(1.2) rotate(-20deg)`,zIndex:9999,pointerEvents:`none`,width:`50px`,height:`auto`,filter:`drop-shadow(0 10px 15px rgba(0,0,0,0.5))`}}),S.text&&(0,R.jsx)(`div`,{style:{...$N.messageBox,backgroundColor:S.type===`success`?`#15803d`:`#b91c1c`},children:S.text}),_&&(0,R.jsx)(`div`,{style:$N.overlay,children:(0,R.jsxs)(`div`,{style:$N.winCard,children:[(0,R.jsx)(Ti,{size:35,color:`#f59e0b`}),(0,R.jsx)(`h2`,{style:{fontSize:`1.5rem`,margin:`15px 0`,color:`#1e3a8a`},children:`أَحْسَنْتَ يَا بَطَلُ! 🥳`}),(0,R.jsxs)(`p`,{style:{fontSize:`1.5rem`,fontWeight:`bold`,margin:`5px 0`},children:[`عدد النقاط:`,` `,(0,R.jsx)(`span`,{style:{color:`#d97706`},children:p})]}),(0,R.jsxs)(`div`,{style:{display:`flex`,gap:`15px`},children:[(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.winIconBtn,title:`إعادة المحاولة`,children:(0,R.jsx)(H,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.winIconBtn,title:`الرئيسية`,children:(0,R.jsx)(V,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.winIconBtn,title:`المرحلة التالية`,children:(0,R.jsx)(B,{size:26,color:`#fff`})})]})]})})]})}var QN=`
+      `}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:{...bN,position:`absolute`,top:`15px`,left:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:(0,R.jsx)(ur,{})}),(0,R.jsx)(`button`,{onClick:()=>i(!r),style:{...bN,position:`absolute`,top:`15px`,right:`25px`,zIndex:10,opacity:1,visibility:`visible`},children:r?(0,R.jsx)(cr,{}):(0,R.jsx)(lr,{})}),(0,R.jsx)(`img`,{className:`title-img`,src:mN,alt:`عالم السكون`,loading:`eager`,decoding:`sync`}),(0,R.jsxs)(`div`,{style:{position:`relative`,marginTop:`20px`},children:[(0,R.jsxs)(`svg`,{style:{position:`absolute`,width:`100%`,height:`100%`,zIndex:1,pointerEvents:`none`},children:[(0,R.jsx)(`line`,{x1:`50%`,y1:`0%`,x2:`50%`,y2:`100%`,stroke:`#ce6d4c`,strokeWidth:`4`,strokeDasharray:`10 10`}),(0,R.jsx)(`line`,{x1:`0%`,y1:`50%`,x2:`100%`,y2:`50%`,stroke:`#cf5e29`,strokeWidth:`4`,strokeDasharray:`10 10`})]}),(0,R.jsx)(`div`,{className:`games-grid`,children:o.map(r=>(0,R.jsx)(`img`,{className:`game-btn`,src:r.img,alt:`لعبة`,loading:`eager`,decoding:`sync`,onClick:()=>{a(),e(r.path)},onMouseEnter:()=>{n(r.id),a()},onMouseLeave:()=>n(null),style:{transform:t===r.id?`scale(1.1)`:`scale(1)`,filter:t===r.id?`drop-shadow(0 0 10px rgba(255,255,255,0.7))`:`none`,opacity:1,visibility:`visible`}},r.id))})]}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Bw,alt:`أرنب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,left:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}}),(0,R.jsx)(`img`,{className:`side-animal animate-float`,src:Vw,alt:`سنجاب`,loading:`eager`,decoding:`sync`,style:{position:`absolute`,bottom:`55px`,right:`10px`,width:`125px`,pointerEvents:`none`,opacity:1,visibility:`visible`}})]})},bN={width:`45px`,height:`45px`,borderRadius:`50%`,border:`none`,backgroundColor:`rgba(255, 255, 255, 0.9)`,fontSize:`25px`,cursor:`pointer`,display:`flex`,alignItems:`center`,justifyContent:`center`,boxShadow:`0 4px 6px rgba(0,0,0,0.3)`,color:`#4a2c2a`,opacity:1,visibility:`visible`},xN=`/Kids-Games/assets/forestB-Bc14KDTU.jpeg`,SN=`/Kids-Games/assets/basket1-CRGVtZVd.png`,CN=`/Kids-Games/assets/key-CLSQO5-B.png`,wN=`/Kids-Games/assets/rainbowTitleBoard1-D9FvS7wc.png`,TN=`/Kids-Games/assets/lionclosed-BMmV9vU6.png`,EN=`/Kids-Games/assets/lionopen-DCgDWkjW.png`,DN=`/Kids-Games/assets/rabbit_closed-EoVeSnom.png`,ON=`/Kids-Games/assets/rabbit_open-DM8zc095.png`,kN=`/Kids-Games/assets/duck_closed-QEoEtx4p.png`,AN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,jN=`/Kids-Games/assets/octopus_closed-hF6-LhyX.png`,MN=`/Kids-Games/assets/octopus_open-Du2g0Urq.png`,NN=`/Kids-Games/assets/snake_closed-CpPhlRkM.png`,PN=`/Kids-Games/assets/snake_open-1mRHa0xr.png`,FN=`/Kids-Games/assets/camel_closed-B9y4oFj6.png`,IN=`/Kids-Games/assets/camel_open-CeHePenA.png`,LN=`/Kids-Games/assets/deer_closed-CdDn_w_v.png`,RN=`/Kids-Games/assets/deer_open-GPGCBXEA.png`,zN=`/Kids-Games/assets/centipede_closed-DptoISVp.png`,BN=`/Kids-Games/assets/centipede_open-Kd9GZNUE.png`,VN=`/Kids-Games/assets/lioness_closed-CxqZ3V-Y.png`,HN=`/Kids-Games/assets/lioness_open-DRRoBgp_.png`,UN=`/Kids-Games/assets/camel_closed-B9y4oFj6.png`,WN=`/Kids-Games/assets/camel_open-CeHePenA.png`,GN=`/Kids-Games/assets/monkey_closed-CWQ9uOf-.png`,KN=`/Kids-Games/assets/monkey_open-BWUXkxzP.png`,qN=`/Kids-Games/assets/duck_closed-QEoEtx4p.png`,JN=`/Kids-Games/assets/duck_open-XmM_-NOK.png`,YN=[{id:1,name:`أَسَد`,isCorrect:!0,closedImg:TN,openImg:EN},{id:2,name:`أَرْنَب`,isCorrect:!0,closedImg:DN,openImg:ON},{id:3,name:`إِوَّزَة`,isCorrect:!0,closedImg:kN,openImg:AN},{id:4,name:`أَخْطَبُوط`,isCorrect:!0,closedImg:jN,openImg:MN},{id:5,name:`أَفْعَى`,isCorrect:!0,closedImg:NN,openImg:PN},{id:6,name:`إِبِل`,isCorrect:!0,closedImg:FN,openImg:IN},{id:7,name:`أُيَّل`,isCorrect:!0,closedImg:LN,openImg:RN},{id:8,name:`أبو قردان`,isCorrect:!0,closedImg:zN,openImg:BN},{id:9,name:`إبل`,isCorrect:!0,closedImg:UN,openImg:WN}],XN=[{id:10,name:`زرافة`,isCorrect:!1,closedImg:VN,openImg:HN},{id:11,name:`فيل`,isCorrect:!1,closedImg:GN,openImg:KN},{id:12,name:`بَطَّة`,isCorrect:!1,closedImg:qN,openImg:JN}];function ZN(){let e=I(),[t,n]=(0,b.useState)(!0),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5);return e.shift(),e}),[s,c]=(0,b.useState)(()=>{let e=[...XN].sort(()=>Math.random()-.5);return e.shift(),e}),[l,u]=(0,b.useState)(()=>{let e=[...YN].sort(()=>Math.random()-.5),t=[...XN].sort(()=>Math.random()-.5),n=e[0],r=t[0];return Math.random()>.5?[n,r]:[r,n]}),[d,f]=(0,b.useState)({}),[p,m]=(0,b.useState)(0),[h,g]=(0,b.useState)(0),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(!0),[S,C]=(0,b.useState)({text:``,type:``}),[w,T]=(0,b.useState)(!1),[E,D]=(0,b.useState)(null),[O,k]=(0,b.useState)(null);(0,b.useEffect)(()=>{let e=!0,t=[xN,SN,CN,wN,TN,EN,DN,ON,kN,AN,jN,MN,NN,PN,FN,IN,LN,RN,zN,BN,VN,HN,UN,WN,GN,KN,qN,JN],r=Date.now(),a=0,o=()=>{if(a+=1,!e)return;let n=Math.round(a/t.length*100);i(e=>Math.max(e,Math.min(n,100)))},s=t.map(e=>new Promise(t=>{let n=new Image;n.onload=()=>{o(),t()},n.onerror=()=>{o(),t()},n.src=e}));return Promise.all(s).then(()=>{if(!e)return;let t=Date.now()-r,a=Math.max(0,5e3-t),o=setInterval(()=>{i(e=>e>=100?(clearInterval(o),100):Math.min(e+2,100))},45);setTimeout(()=>{clearInterval(o),e&&(i(100),setTimeout(()=>{e&&n(!1)},250))},a)}),()=>{e=!1}},[]);let A=(e,t)=>{let n=[...e],r=[...t];if(n.length===0)return{pair:[],nextC:[],nextW:[]};r.length===0&&(r=[...XN].sort(()=>Math.random()-.5));let i=n.shift(),a=r.shift();return{pair:Math.random()>.5?[i,a]:[a,i],nextC:n,nextW:r}},j=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:523.25,time:0},{frequency:659.25,time:.13},{frequency:783.99,time:.26}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.25,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.24),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.25)}),setTimeout(()=>{t.close()},750)}catch{}},M=()=>{if(y)try{let e=window.AudioContext||window.webkitAudioContext;if(!e)return;let t=new e;[{frequency:330,time:0},{frequency:277.18,time:.12}].forEach(e=>{let n=t.createOscillator(),r=t.createGain();n.type=`sine`,n.frequency.setValueAtTime(e.frequency,t.currentTime+e.time),r.gain.setValueAtTime(1e-4,t.currentTime+e.time),r.gain.exponentialRampToValueAtTime(.2,t.currentTime+e.time+.025),r.gain.exponentialRampToValueAtTime(1e-4,t.currentTime+e.time+.2),n.connect(r),r.connect(t.destination),n.start(t.currentTime+e.time),n.stop(t.currentTime+e.time+.22)}),setTimeout(()=>{t.close()},550)}catch{}};(0,b.useEffect)(()=>{let e=null;return!t&&!_&&(e=setInterval(()=>{g(e=>e+1)},1e3)),()=>clearInterval(e)},[t,_]);let N=(e,t)=>{e.preventDefault(),k(t),D({x:e.clientX,y:e.clientY})};(0,b.useEffect)(()=>{let e=e=>{O!==null&&D({x:e.clientX,y:e.clientY})},t=e=>{if(O===null||!E)return;let t=document.elementFromPoint(e.clientX,e.clientY)?.closest(`.cage-card`);if(t){let e=t.getAttribute(`data-animal-id`),n=l.find(t=>t.id===Number(e));n&&P(n)}k(null),D(null)};return O!==null&&(window.addEventListener(`pointermove`,e),window.addEventListener(`pointerup`,t),window.addEventListener(`pointercancel`,t)),()=>{window.removeEventListener(`pointermove`,e),window.removeEventListener(`pointerup`,t),window.removeEventListener(`pointercancel`,t)}},[O,E,l]);let P=e=>{w||_||d[e.id]||(e.isCorrect?(T(!0),j(),f(t=>({...t,[e.id]:!0})),m(e=>e+10),C({text:`أحسنت 🔓`,type:`success`}),setTimeout(()=>{let{pair:e,nextC:t,nextW:n}=A(a,s);e.length>0?(u(e),o(t),c(n),f({})):v(!0),C({text:``,type:``}),T(!1),p+10>=90&&v(!0)},450)):(M(),C({text:`خطأ❌`,type:`error`}),setTimeout(()=>{C({text:``,type:``})},1e3)))};return(0,R.jsxs)(`div`,{className:`game-container`,style:$N.container,children:[(0,R.jsx)(`style`,{children:QN}),t&&(0,R.jsxs)(`div`,{className:`loading-screen`,children:[(0,R.jsxs)(`div`,{className:`loading-decor`,children:[(0,R.jsx)(`span`,{className:`loading-icon loading-icon-1`,children:`🦁`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-2`,children:`🌿`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-3`,children:`🐰`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-4`,children:`🦌`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-5`,children:`🐾`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-6`,children:`🌳`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-7`,children:`🐘`}),(0,R.jsx)(`span`,{className:`loading-icon loading-icon-8`,children:`🦋`})]}),(0,R.jsxs)(`div`,{className:`loading-card`,children:[(0,R.jsx)(`div`,{className:`loading-title`,children:`جاري تحميل اللعبة`}),(0,R.jsx)(`div`,{className:`loading-progress`,children:(0,R.jsx)(`div`,{className:`loading-progress-fill`,style:{width:`${r}%`}})}),(0,R.jsxs)(`div`,{className:`loading-percent`,children:[r,`%`]})]})]}),(0,R.jsx)(`img`,{src:xN,alt:`خلفية اللعبة`,style:$N.bgImg}),(0,R.jsxs)(`div`,{className:`game-badge badge-left`,children:[`⭐ `,p]}),(0,R.jsxs)(`div`,{className:`game-badge badge-right badge-timer`,children:[`⏱️ `,(e=>{let t=Math.floor(e/60),n=e%60;return`${t}:${n<10?`0`:``}${n}`})(h)]}),(0,R.jsxs)(`div`,{className:`header-resp`,children:[(0,R.jsxs)(`div`,{style:{position:`relative`,display:`inline-flex`,justifyContent:`center`,alignItems:`center`},children:[(0,R.jsx)(`img`,{src:wN,alt:`لوحة العنوان`,className:`title-board-img`}),(0,R.jsx)(`h1`,{className:`game-title`,children:`إنْقَاذُ الحَيَوَانَات`})]}),(0,R.jsx)(`p`,{className:`instruction-text`,children:`افْتَحِ القَفَصَ لِلْحَيَوَانِ الَّذِي يَبْدَأُ اسْمُهُ بِحَرْفِ الأَلِفِ`})]}),(0,R.jsx)(`div`,{className:`cages-grid`,children:l.map(e=>{let t=!!d[e.id];return(0,R.jsxs)(`div`,{"data-animal-id":e.id,className:`cage-card`,children:[(0,R.jsx)(`img`,{src:t?e.openImg:e.closedImg,alt:e.name,className:`cage-img-element`}),(0,R.jsx)(`div`,{className:`animal-nametag`,children:e.name})]},e.id)})}),(0,R.jsx)(`div`,{className:`bottom-bar`,children:(0,R.jsxs)(`div`,{className:`bottom-content-wrapper`,children:[(0,R.jsxs)(`div`,{style:$N.footerBtns,children:[(0,R.jsx)(`button`,{onClick:()=>x(!y),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(U,{className:`btn-icon`,color:y?`#000`:`gray`})}),(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(H,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(V,{className:`btn-icon`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.iconBtn,className:`control-btn`,children:(0,R.jsx)(B,{className:`btn-icon`})})]}),(0,R.jsxs)(`div`,{className:`basket-area`,children:[(0,R.jsx)(`img`,{src:SN,alt:`السلة الخشبية`,className:`basket-img`}),(0,R.jsx)(`div`,{className:`keys-group`,children:[0,1].map(e=>(0,R.jsx)(`img`,{src:CN,alt:`مفتاح`,className:`draggable-key`,onPointerDown:t=>N(t,e),style:{opacity:O===e?0:1}},e))})]})]})}),O!==null&&E&&(0,R.jsx)(`img`,{src:`/Kids-Games/assets/key-CLSQO5-B.png`,alt:`مفتاح حقيقي محمول`,style:{position:`fixed`,left:`${E.x}px`,top:`${E.y}px`,transform:`translate(-50%, -50%) scale(1.2) rotate(-20deg)`,zIndex:9999,pointerEvents:`none`,width:`50px`,height:`auto`,filter:`drop-shadow(0 10px 15px rgba(0,0,0,0.5))`}}),S.text&&(0,R.jsx)(`div`,{style:{...$N.messageBox,backgroundColor:S.type===`success`?`#15803d`:`#b91c1c`},children:S.text}),_&&(0,R.jsx)(`div`,{style:$N.overlay,children:(0,R.jsxs)(`div`,{style:$N.winCard,children:[(0,R.jsx)(Ti,{size:35,color:`#f59e0b`}),(0,R.jsx)(`h2`,{style:{fontSize:`1.5rem`,margin:`15px 0`,color:`#1e3a8a`},children:`أَحْسَنْتَ يَا بَطَلُ! 🥳`}),(0,R.jsxs)(`p`,{style:{fontSize:`1.5rem`,fontWeight:`bold`,margin:`5px 0`},children:[`عدد النقاط:`,` `,(0,R.jsx)(`span`,{style:{color:`#d97706`},children:p})]}),(0,R.jsxs)(`div`,{style:{display:`flex`,gap:`15px`},children:[(0,R.jsx)(`button`,{onClick:()=>window.location.reload(),style:$N.winIconBtn,title:`إعادة المحاولة`,children:(0,R.jsx)(H,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/home`),style:$N.winIconBtn,title:`الرئيسية`,children:(0,R.jsx)(V,{size:26,color:`#fff`})}),(0,R.jsx)(`button`,{onClick:()=>e(`/Hamza`),style:$N.winIconBtn,title:`المرحلة التالية`,children:(0,R.jsx)(B,{size:26,color:`#fff`})})]})]})})]})}var QN=`
 
   /* ===================================
      شاشة التحميل
