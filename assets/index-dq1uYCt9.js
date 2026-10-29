@@ -4908,7 +4908,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             flex-shrink: 0 !important;
           }
         }
-      `}),(0,R.jsx)(`div`,{style:{...es.page,backgroundImage:`url("${Vo}")`},className:`tafkheem-page`,children:(0,R.jsxs)(`div`,{style:es.card,className:`tafkheem-card`,children:[(0,R.jsxs)(`div`,{style:es.topBar,children:[(0,R.jsxs)(`div`,{style:es.infoBox,children:[`⭐ `,m]}),(0,R.jsxs)(`div`,{style:es.infoBox,children:[`⏰ `,O(C)]})]}),(0,R.jsx)(`div`,{style:es.titleBox,className:`tafkheem-title-box`,children:(0,R.jsx)(`h1`,{style:es.title,className:`tafkheem-title`,children:`كمل الكلمة`})}),(0,R.jsx)(`p`,{style:es.subtitle,className:`tafkheem-subtitle`,children:`اختر الحرف المفخم المناسب`}),(0,R.jsxs)(`div`,{style:es.questionWrapper,children:[x&&(0,R.jsxs)(`div`,{style:es.finalPopup,children:[(0,R.jsx)(`div`,{style:es.finalTitle,children:`🎉 أحسنت`}),(0,R.jsxs)(`div`,{style:es.finalScore,children:[`لقد حصلت على `,m,` نقطة`]})]}),f&&(0,R.jsx)(`div`,{style:es.successPopup,children:`ممتاز 👏`}),(0,R.jsxs)(`div`,{style:es.questionBox,className:`tafkheem-question-box`,children:[(0,R.jsx)(`div`,{style:es.imageContainer,className:`tafkheem-image-container`,children:(0,R.jsx)(`img`,{src:D.image,alt:D.word,style:es.image,className:`tafkheem-image`,draggable:`false`})}),(0,R.jsx)(`div`,{style:es.wordBox,className:`tafkheem-word-box`,children:(0,R.jsx)(`div`,{style:es.word,className:`tafkheem-word`,children:f?D.word:D.display})})]})]}),(0,R.jsx)(`div`,{style:es.choices,className:`tafkheem-choices`,children:D.choices.map((e,t)=>(0,R.jsx)(`button`,{onClick:()=>M(e),className:`tafkheem-choice-btn`,style:{...es.choiceBtn,backgroundColor:u===e?e===D.missing?`#7CFC6A`:`#ff8c8c`:`#fff`},children:e},t))}),(0,R.jsx)(`div`,{style:es.dots,className:`tafkheem-dots`,children:s.map((e,t)=>(0,R.jsx)(`span`,{style:{...es.dot,backgroundColor:t<=c?`#67d84f`:`#d3d3d3`}},t))}),(0,R.jsxs)(`div`,{style:es.bottomButtons,className:`tafkheem-bottom-buttons`,children:[(0,R.jsx)(`button`,{onClick:N,style:es.circleBtn,className:`tafkheem-circle-btn`,children:T?(0,R.jsx)(U,{color:`white`,size:20}):(0,R.jsx)(fo,{color:`white`,size:20})}),(0,R.jsx)(`button`,{onClick:k,style:es.circleBtn,className:`tafkheem-circle-btn`,children:(0,R.jsx)(H,{color:`white`,size:16})}),(0,R.jsx)(`button`,{onClick:A,style:es.circleBtn,className:`tafkheem-circle-btn`,children:(0,R.jsx)(B,{color:`white`,size:16})}),(0,R.jsx)(`button`,{onClick:j,style:es.circleBtn,className:`tafkheem-circle-btn`,children:(0,R.jsx)(V,{color:`white`,size:16})})]})]})})]})}var es={page:{minHeight:`100vh`,padding:`20px`,fontFamily:`Arial`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,justifyContent:`center`,alignItems:`center`,boxSizing:`border-box`,position:`relative`},topBar:{display:`flex`,justifyContent:`space-between`,marginBottom:`5px`,gap:`10px`},infoBox:{background:`#fff`,padding:`6px 14px`,borderRadius:`20px`,fontWeight:`bold`,fontSize:`14px`,display:`flex`,alignItems:`center`,justifyContent:`center`},card:{width:`100%`,maxWidth:`420px`,padding:`22px 20px 30px 20px`,background:`#cfeaf9b2`,borderRadius:`32px`,border:`3px solid #8cccece3`,textAlign:`center`,boxSizing:`border-box`,position:`relative`},titleBox:{margin:`0 auto`,background:`#1684ff`,borderRadius:`25px`,position:`relative`,top:`-38px`,marginBottom:`-20px`,padding:`4px 20px`,width:`fit-content`,display:`flex`,justifyContent:`center`,alignItems:`center`},title:{color:`#fff`,margin:0,fontSize:`24px`,fontWeight:`bold`,textAlign:`center`},subtitle:{fontSize:`18px`,fontWeight:`bold`,marginTop:`5px`,marginBottom:`22px`},questionWrapper:{position:`relative`,display:`flex`,justifyContent:`center`},successPopup:{position:`absolute`,top:`-25px`,background:`#41c441`,color:`#fff`,padding:`6px 18px`,borderRadius:`18px`,fontSize:`20px`,fontWeight:`bold`,zIndex:5,boxShadow:`0 4px 12px rgba(0,0,0,0.2)`},finalPopup:{position:`absolute`,top:`-10px`,background:`#ffffffed`,width:`220px`,padding:`15px`,borderRadius:`20px`,border:`3px solid #b8daf7`,boxShadow:`0 6px 15px rgba(0,0,0,0.15)`,zIndex:10},finalTitle:{fontSize:`22px`,fontWeight:`bold`,color:`#2eb82e`,marginBottom:`10px`},finalScore:{fontSize:`18px`,fontWeight:`bold`,color:`#2e2e2e`},questionBox:{background:`#ffffffe2`,width:`90%`,margin:`auto`,borderRadius:`24px`,border:`3px solid #beddf0`,padding:`20px 14px`,display:`flex`,alignItems:`center`,justifyContent:`space-around`,flexWrap:`wrap`,gap:`15px`},imageContainer:{width:`85px`,height:`85px`,display:`flex`,alignItems:`center`,justifyContent:`center`,flexShrink:0},image:{width:`85px`,height:`85px`,objectFit:`contain`,display:`block`},wordBox:{background:`#f8fbff`,border:`3px solid #a7d3f7f1`,borderRadius:`20px`,width:`110px`,height:`62px`,display:`flex`,alignItems:`center`,justifyContent:`center`,flexShrink:0},word:{fontSize:`32px`,fontWeight:`bold`},choices:{display:`flex`,justifyContent:`center`,gap:`15px`,marginTop:`28px`,flexWrap:`wrap`},choiceBtn:{width:`60px`,height:`60px`,borderRadius:`20px`,border:`3px solid #bbdcf9`,fontSize:`30px`,fontWeight:`bold`,cursor:`pointer`},dots:{display:`flex`,justifyContent:`center`,gap:`6px`,marginTop:`28px`,background:`#fff`,width:`150px`,maxWidth:`90%`,marginInline:`auto`,padding:`8px`,borderRadius:`25px`},dot:{width:`8px`,height:`8px`,borderRadius:`50%`},bottomButtons:{display:`flex`,justifyContent:`center`,gap:`12px`,marginTop:`28px`,flexWrap:`wrap`},circleBtn:{width:`44px`,height:`44px`,borderRadius:`50%`,border:`none`,background:`#7f57e7`,cursor:`pointer`,display:`flex`,justifyContent:`center`,alignItems:`center`}},ts=`/Kids-Games/assets/tileyellow-CT5Go-OH.png`,ns=`/Kids-Games/assets/tilepink-2lCKKF4G.png`,rs=`/Kids-Games/assets/tileblue-CVobgjDe.png`,is=`/Kids-Games/assets/tilegreen-QryFrW3H.png`,as=[`خ`,`ص`,`ض`,`غ`,`ط`,`ق`,`ظ`],os=[`ب`,`ت`,`ث`,`ج`,`ح`,`د`,`ذ`,`ر`,`ز`,`س`,`ش`,`ع`,`ف`,`ك`,`ل`,`م`,`ن`,`ه`,`و`,`ي`],ss=[ts,ns,rs,is],cs=10;function ls(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function us(){let e=as[Math.floor(Math.random()*as.length)];return{correct:e,options:ls([e,...ls(os).slice(0,3)]).map((e,t)=>({id:`${e}-${t}`,letter:e,image:ss[t]}))}}function ds(e){let t=Math.floor(e/60),n=e%60;return`${String(t).padStart(2,`0`)}:${String(n).padStart(2,`0`)}`}function fs(){let e=I(),[t,n]=(0,b.useState)(us),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(``),[d,f]=(0,b.useState)(null),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(!1),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(50),[S,C]=(0,b.useState)(!1),w=(0,b.useRef)(!1),T=(0,b.useRef)(null),E=(0,b.useRef)(null),D=(0,b.useRef)(!0);(0,b.useEffect)(()=>{D.current=s},[s]);let O=e=>{if(!D.current)return;let t=new Audio(e);t.volume=.8,t.play().catch(()=>{})};(0,b.useEffect)(()=>{if(_)return;let e=setInterval(()=>{o(e=>e+1)},1e3);return()=>clearInterval(e)},[_]),(0,b.useEffect)(()=>()=>{T.current&&clearTimeout(T.current)},[]);let k=()=>{T.current&&=(clearTimeout(T.current),null),w.current=!1,n(us()),i(0),o(0),u(``),f(null),m(!1),g(!1),v(!1),x(50),C(!1)},A=e=>{if(w.current||_)return;if(e.letter!==t.correct){u(`حاول مرة تانية يا بطل`),f(e.id),m(!1),O(`/sounds/hay1.mp3`),T.current&&clearTimeout(T.current),T.current=setTimeout(()=>{u(``),f(null),T.current=null},800);return}w.current=!0,g(!0);let a=r+10;if(i(a),u(`ممتاز! يلا نكمل السباق`),f(e.id),m(!0),C(!0),O(`/sounds/pop.mp3`),a>=cs*10){T.current=setTimeout(()=>{v(!0),C(!1),u(``),g(!1),w.current=!1,T.current=null},900);return}T.current=setTimeout(()=>{n(us()),u(``),f(null),m(!1),C(!1),g(!1),w.current=!1,T.current=null},900)},j=e=>{h||_||x(t=>Math.max(13,Math.min(87,t+e*9)))};return(0,b.useEffect)(()=>{let e=e=>{e.key===`ArrowLeft`&&j(-1),e.key===`ArrowRight`&&j(1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[h,_]),(0,R.jsxs)(`main`,{className:`race-game ${S?`race-is-moving`:``}`,onTouchStart:e=>{let t=e.changedTouches[0];E.current={x:t.clientX,y:t.clientY}},onTouchEnd:e=>{if(!E.current)return;let t=e.changedTouches[0],n=t.clientX-E.current.x,r=t.clientY-E.current.y;Math.abs(n)>35&&Math.abs(n)>Math.abs(r)&&j(n>0?1:-1),E.current=null},children:[(0,R.jsxs)(`div`,{className:`race-scenery`,children:[(0,R.jsx)(`div`,{className:`race-sun`}),(0,R.jsx)(`div`,{className:`race-cloud cloud-a`}),(0,R.jsx)(`div`,{className:`race-cloud cloud-b`}),(0,R.jsx)(`div`,{className:`scenery-hill hill-a`}),(0,R.jsx)(`div`,{className:`scenery-hill hill-b`}),(0,R.jsxs)(`div`,{className:`roadside roadside-left`,children:[(0,R.jsx)(`span`,{className:`tree tree-one`,children:`🌳`}),(0,R.jsx)(`span`,{className:`tree tree-two`,children:`🌲`}),(0,R.jsx)(`span`,{className:`tree tree-three`,children:`🌳`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-one`,children:`🌼`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-two`,children:`🌷`})]}),(0,R.jsxs)(`div`,{className:`roadside roadside-right`,children:[(0,R.jsx)(`span`,{className:`tree tree-one`,children:`🌳`}),(0,R.jsx)(`span`,{className:`tree tree-two`,children:`🌲`}),(0,R.jsx)(`span`,{className:`tree tree-three`,children:`🌳`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-one`,children:`🌼`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-two`,children:`🌷`})]})]}),(0,R.jsxs)(`header`,{className:`race-heading`,children:[(0,R.jsx)(`span`,{className:`heading-flag`,children:`🏁`}),(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`h1`,{children:`سباق حروف التفخيم`}),(0,R.jsx)(`p`,{children:`اختار حرف التفخيم الصحيح وانطلق!`})]})]}),(0,R.jsxs)(`div`,{className:`race-hud`,children:[(0,R.jsxs)(`div`,{className:`hud-card points-card`,children:[(0,R.jsx)(`span`,{className:`hud-icon`,children:`⭐`}),(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{className:`hud-label`,children:`النقاط`}),(0,R.jsx)(`strong`,{children:r})]})]}),(0,R.jsxs)(`div`,{className:`hud-progress`,children:[(0,R.jsx)(`span`,{children:`السباق`}),(0,R.jsxs)(`strong`,{children:[Math.min(r/10,cs),`/`,cs]}),(0,R.jsx)(`div`,{className:`progress-track`,children:(0,R.jsx)(`div`,{className:`progress-fill`,style:{width:`${r}%`}})})]}),(0,R.jsxs)(`div`,{className:`hud-card time-card`,children:[(0,R.jsx)(`span`,{className:`hud-icon`,children:`⏱️`}),(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{className:`hud-label`,children:`الوقت`}),(0,R.jsx)(`strong`,{children:ds(a)})]})]})]}),(0,R.jsxs)(`section`,{className:`race-road`,"aria-label":`طريق السباق`,children:[(0,R.jsx)(`div`,{className:`road-shoulder shoulder-left`}),(0,R.jsx)(`div`,{className:`road-shoulder shoulder-right`}),(0,R.jsxs)(`div`,{className:`road-surface`,children:[(0,R.jsx)(`div`,{className:`road-texture`}),(0,R.jsx)(`div`,{className:`road-edge-line road-edge-left`}),(0,R.jsx)(`div`,{className:`road-edge-line road-edge-right`}),(0,R.jsx)(`div`,{className:`lane-divider lane-divider-one`,children:(0,R.jsx)(`div`,{className:`lane-dashes`})}),(0,R.jsx)(`div`,{className:`lane-divider lane-divider-two`,children:(0,R.jsx)(`div`,{className:`lane-dashes`})}),(0,R.jsx)(`div`,{className:`road-lights road-lights-left`,children:Array.from({length:9},(e,t)=>(0,R.jsx)(`span`,{},`left-light-${t}`))}),(0,R.jsx)(`div`,{className:`road-lights road-lights-right`,children:Array.from({length:9},(e,t)=>(0,R.jsx)(`span`,{},`right-light-${t}`))}),!_&&(0,R.jsx)(`div`,{className:`race-tiles ${S?`tiles-driving`:``}`,dir:`rtl`,children:t.options.map(e=>{let t=d===e.id,n=``;return t&&(n=p?`tile-correct`:`tile-wrong`),(0,R.jsxs)(`button`,{type:`button`,className:`race-tile ${n}`,onClick:()=>A(e),disabled:h,"aria-label":`اختيار حرف ${e.letter}`,children:[(0,R.jsx)(`img`,{src:e.image,alt:``}),(0,R.jsx)(`span`,{children:e.letter})]},e.id)})}),!_&&(0,R.jsxs)(`div`,{className:`race-car ${S?`car-driving`:``}`,style:{left:`${y}%`},children:[(0,R.jsx)(`div`,{className:`car-shadow`}),(0,R.jsx)(`img`,{src:`/Kids-Games/assets/car-CLbZM4BF.png`,alt:`سيارة السباق`})]}),(0,R.jsx)(`div`,{className:`finish-stripe`,"aria-hidden":`true`,children:Array.from({length:18},(e,t)=>(0,R.jsx)(`span`,{},`finish-${t}`))})]})]}),(0,R.jsx)(`div`,{className:`race-feedback ${l?`feedback-visible`:``} ${p?`feedback-success`:``}`,"aria-live":`polite`,children:l}),(0,R.jsxs)(`nav`,{className:`race-controls`,"aria-label":`أزرار التحكم`,children:[(0,R.jsx)(`button`,{type:`button`,className:`race-control sound-control`,onClick:()=>c(e=>!e),"aria-label":s?`إيقاف الصوت`:`تشغيل الصوت`,title:s?`إيقاف الصوت`:`تشغيل الصوت`,children:s?(0,R.jsx)(U,{}):(0,R.jsx)(fo,{})}),(0,R.jsx)(`button`,{type:`button`,className:`race-control`,onClick:k,"aria-label":`إعادة اللعب`,title:`إعادة اللعب`,children:(0,R.jsx)(H,{})}),(0,R.jsx)(`button`,{type:`button`,className:`race-control`,onClick:()=>e(`/AlHorof123`),"aria-label":`العودة للألعاب`,title:`العودة للألعاب`,children:(0,R.jsx)(B,{})}),(0,R.jsx)(`button`,{type:`button`,className:`race-control`,onClick:()=>e(`/home`),"aria-label":`الرئيسية`,title:`الرئيسية`,children:(0,R.jsx)(V,{})})]}),_&&(0,R.jsx)(`div`,{className:`race-win-overlay`,children:(0,R.jsxs)(`div`,{className:`race-win-card`,children:[(0,R.jsx)(`div`,{className:`win-trophy`,children:`🏆`}),(0,R.jsx)(`h2`,{children:`أحسنت يا بطل!`}),(0,R.jsx)(`p`,{children:`وصلت لخط النهاية وأجبت عن 10 أسئلة صحيحة.`}),(0,R.jsxs)(`div`,{className:`win-stats`,children:[(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{children:`النقاط`}),(0,R.jsx)(`strong`,{children:r})]}),(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{children:`الوقت`}),(0,R.jsx)(`strong`,{children:ds(a)})]})]}),(0,R.jsxs)(`button`,{type:`button`,className:`play-again`,onClick:k,children:[(0,R.jsx)(H,{size:20}),`العب من جديد`]})]})}),(0,R.jsx)(`style`,{children:`
+      `}),(0,R.jsx)(`div`,{style:{...es.page,backgroundImage:`url("${Vo}")`},className:`tafkheem-page`,children:(0,R.jsxs)(`div`,{style:es.card,className:`tafkheem-card`,children:[(0,R.jsxs)(`div`,{style:es.topBar,children:[(0,R.jsxs)(`div`,{style:es.infoBox,children:[`⭐ `,m]}),(0,R.jsxs)(`div`,{style:es.infoBox,children:[`⏰ `,O(C)]})]}),(0,R.jsx)(`div`,{style:es.titleBox,className:`tafkheem-title-box`,children:(0,R.jsx)(`h1`,{style:es.title,className:`tafkheem-title`,children:`كمل الكلمة`})}),(0,R.jsx)(`p`,{style:es.subtitle,className:`tafkheem-subtitle`,children:`اختر الحرف المفخم المناسب`}),(0,R.jsxs)(`div`,{style:es.questionWrapper,children:[x&&(0,R.jsxs)(`div`,{style:es.finalPopup,children:[(0,R.jsx)(`div`,{style:es.finalTitle,children:`🎉 أحسنت`}),(0,R.jsxs)(`div`,{style:es.finalScore,children:[`لقد حصلت على `,m,` نقطة`]})]}),f&&(0,R.jsx)(`div`,{style:es.successPopup,children:`ممتاز 👏`}),(0,R.jsxs)(`div`,{style:es.questionBox,className:`tafkheem-question-box`,children:[(0,R.jsx)(`div`,{style:es.imageContainer,className:`tafkheem-image-container`,children:(0,R.jsx)(`img`,{src:D.image,alt:D.word,style:es.image,className:`tafkheem-image`,draggable:`false`})}),(0,R.jsx)(`div`,{style:es.wordBox,className:`tafkheem-word-box`,children:(0,R.jsx)(`div`,{style:es.word,className:`tafkheem-word`,children:f?D.word:D.display})})]})]}),(0,R.jsx)(`div`,{style:es.choices,className:`tafkheem-choices`,children:D.choices.map((e,t)=>(0,R.jsx)(`button`,{onClick:()=>M(e),className:`tafkheem-choice-btn`,style:{...es.choiceBtn,backgroundColor:u===e?e===D.missing?`#7CFC6A`:`#ff8c8c`:`#fff`},children:e},t))}),(0,R.jsx)(`div`,{style:es.dots,className:`tafkheem-dots`,children:s.map((e,t)=>(0,R.jsx)(`span`,{style:{...es.dot,backgroundColor:t<=c?`#67d84f`:`#d3d3d3`}},t))}),(0,R.jsxs)(`div`,{style:es.bottomButtons,className:`tafkheem-bottom-buttons`,children:[(0,R.jsx)(`button`,{onClick:N,style:es.circleBtn,className:`tafkheem-circle-btn`,children:T?(0,R.jsx)(U,{color:`white`,size:20}):(0,R.jsx)(fo,{color:`white`,size:20})}),(0,R.jsx)(`button`,{onClick:k,style:es.circleBtn,className:`tafkheem-circle-btn`,children:(0,R.jsx)(H,{color:`white`,size:16})}),(0,R.jsx)(`button`,{onClick:A,style:es.circleBtn,className:`tafkheem-circle-btn`,children:(0,R.jsx)(B,{color:`white`,size:16})}),(0,R.jsx)(`button`,{onClick:j,style:es.circleBtn,className:`tafkheem-circle-btn`,children:(0,R.jsx)(V,{color:`white`,size:16})})]})]})})]})}var es={page:{minHeight:`100vh`,padding:`20px`,fontFamily:`Arial`,direction:`rtl`,backgroundSize:`cover`,backgroundPosition:`center`,backgroundRepeat:`no-repeat`,backgroundAttachment:`fixed`,display:`flex`,justifyContent:`center`,alignItems:`center`,boxSizing:`border-box`,position:`relative`},topBar:{display:`flex`,justifyContent:`space-between`,marginBottom:`5px`,gap:`10px`},infoBox:{background:`#fff`,padding:`6px 14px`,borderRadius:`20px`,fontWeight:`bold`,fontSize:`14px`,display:`flex`,alignItems:`center`,justifyContent:`center`},card:{width:`100%`,maxWidth:`420px`,padding:`22px 20px 30px 20px`,background:`#cfeaf9b2`,borderRadius:`32px`,border:`3px solid #8cccece3`,textAlign:`center`,boxSizing:`border-box`,position:`relative`},titleBox:{margin:`0 auto`,background:`#1684ff`,borderRadius:`25px`,position:`relative`,top:`-38px`,marginBottom:`-20px`,padding:`4px 20px`,width:`fit-content`,display:`flex`,justifyContent:`center`,alignItems:`center`},title:{color:`#fff`,margin:0,fontSize:`24px`,fontWeight:`bold`,textAlign:`center`},subtitle:{fontSize:`18px`,fontWeight:`bold`,marginTop:`5px`,marginBottom:`22px`},questionWrapper:{position:`relative`,display:`flex`,justifyContent:`center`},successPopup:{position:`absolute`,top:`-25px`,background:`#41c441`,color:`#fff`,padding:`6px 18px`,borderRadius:`18px`,fontSize:`20px`,fontWeight:`bold`,zIndex:5,boxShadow:`0 4px 12px rgba(0,0,0,0.2)`},finalPopup:{position:`absolute`,top:`-10px`,background:`#ffffffed`,width:`220px`,padding:`15px`,borderRadius:`20px`,border:`3px solid #b8daf7`,boxShadow:`0 6px 15px rgba(0,0,0,0.15)`,zIndex:10},finalTitle:{fontSize:`22px`,fontWeight:`bold`,color:`#2eb82e`,marginBottom:`10px`},finalScore:{fontSize:`18px`,fontWeight:`bold`,color:`#2e2e2e`},questionBox:{background:`#ffffffe2`,width:`90%`,margin:`auto`,borderRadius:`24px`,border:`3px solid #beddf0`,padding:`20px 14px`,display:`flex`,alignItems:`center`,justifyContent:`space-around`,flexWrap:`wrap`,gap:`15px`},imageContainer:{width:`85px`,height:`85px`,display:`flex`,alignItems:`center`,justifyContent:`center`,flexShrink:0},image:{width:`85px`,height:`85px`,objectFit:`contain`,display:`block`},wordBox:{background:`#f8fbff`,border:`3px solid #a7d3f7f1`,borderRadius:`20px`,width:`110px`,height:`62px`,display:`flex`,alignItems:`center`,justifyContent:`center`,flexShrink:0},word:{fontSize:`32px`,fontWeight:`bold`},choices:{display:`flex`,justifyContent:`center`,gap:`15px`,marginTop:`28px`,flexWrap:`wrap`},choiceBtn:{width:`60px`,height:`60px`,borderRadius:`20px`,border:`3px solid #bbdcf9`,fontSize:`30px`,fontWeight:`bold`,cursor:`pointer`},dots:{display:`flex`,justifyContent:`center`,gap:`6px`,marginTop:`28px`,background:`#fff`,width:`150px`,maxWidth:`90%`,marginInline:`auto`,padding:`8px`,borderRadius:`25px`},dot:{width:`8px`,height:`8px`,borderRadius:`50%`},bottomButtons:{display:`flex`,justifyContent:`center`,gap:`12px`,marginTop:`28px`,flexWrap:`wrap`},circleBtn:{width:`44px`,height:`44px`,borderRadius:`50%`,border:`none`,background:`#7f57e7`,cursor:`pointer`,display:`flex`,justifyContent:`center`,alignItems:`center`}},ts=`/Kids-Games/assets/tileyellow-CT5Go-OH.png`,ns=`/Kids-Games/assets/tilepink-2lCKKF4G.png`,rs=`/Kids-Games/assets/tileblue-CVobgjDe.png`,is=`/Kids-Games/assets/tilegreen-QryFrW3H.png`,as=[`خ`,`ص`,`ض`,`غ`,`ط`,`ق`,`ظ`],os=[`ب`,`ت`,`ث`,`ج`,`ح`,`د`,`ذ`,`ر`,`ز`,`س`,`ش`,`ع`,`ف`,`ك`,`ل`,`م`,`ن`,`ه`,`و`,`ي`],ss=[ts,ns,rs,is],cs=10;function ls(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function us(){let e=as[Math.floor(Math.random()*as.length)];return{correct:e,options:ls([e,...ls(os).slice(0,3)]).map((e,t)=>({id:`${e}-${t}`,letter:e,image:ss[t]}))}}function ds(e){let t=Math.floor(e/60),n=e%60;return`${String(t).padStart(2,`0`)}:${String(n).padStart(2,`0`)}`}function fs(){let e=I(),[t,n]=(0,b.useState)(us),[r,i]=(0,b.useState)(0),[a,o]=(0,b.useState)(0),[s,c]=(0,b.useState)(!0),[l,u]=(0,b.useState)(``),[d,f]=(0,b.useState)(null),[p,m]=(0,b.useState)(!1),[h,g]=(0,b.useState)(!1),[_,v]=(0,b.useState)(!1),[y,x]=(0,b.useState)(50),[S,C]=(0,b.useState)(0),w=(0,b.useRef)(!1),T=(0,b.useRef)(null),E=(0,b.useRef)(null),D=(0,b.useRef)(!0);(0,b.useEffect)(()=>{D.current=s},[s]);let O=e=>{if(!D.current)return;let t=new Audio(e);t.volume=.8,t.play().catch(()=>{})};(0,b.useEffect)(()=>{if(_)return;let e=setInterval(()=>{o(e=>e+1)},1e3);return()=>clearInterval(e)},[_]),(0,b.useEffect)(()=>()=>{T.current&&clearTimeout(T.current)},[]);let k=()=>{T.current&&=(clearTimeout(T.current),null),w.current=!1,n(us()),i(0),o(0),u(``),f(null),m(!1),g(!1),v(!1),x(50),C(0)},A=e=>{if(w.current||_)return;if(e.letter!==t.correct){u(`حاول مرة تانية يا بطل`),f(e.id),m(!1),O(`/sounds/hay1.mp3`),T.current&&clearTimeout(T.current),T.current=setTimeout(()=>{u(``),f(null),T.current=null},800);return}w.current=!0,g(!0);let a=r+10;if(i(a),u(`ممتاز! يلا نكمل السباق`),f(e.id),m(!0),C(e=>e+1),O(`/sounds/pop.mp3`),a>=cs*10){T.current=setTimeout(()=>{v(!0),u(``),g(!1),w.current=!1,T.current=null},950);return}T.current=setTimeout(()=>{n(us()),u(``),f(null),m(!1),g(!1),w.current=!1,T.current=null},950)},j=e=>{h||_||x(t=>Math.max(12,Math.min(88,t+e*9)))};return(0,b.useEffect)(()=>{let e=e=>{e.key===`ArrowLeft`&&j(-1),e.key===`ArrowRight`&&j(1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[h,_]),(0,R.jsxs)(`main`,{className:`race-game`,onTouchStart:e=>{let t=e.changedTouches[0];E.current={x:t.clientX,y:t.clientY}},onTouchEnd:e=>{if(!E.current)return;let t=e.changedTouches[0],n=t.clientX-E.current.x,r=t.clientY-E.current.y;Math.abs(n)>35&&Math.abs(n)>Math.abs(r)&&j(n>0?1:-1),E.current=null},children:[(0,R.jsxs)(`div`,{className:`race-scenery`,children:[(0,R.jsx)(`div`,{className:`race-sun`}),(0,R.jsx)(`div`,{className:`race-cloud cloud-a`}),(0,R.jsx)(`div`,{className:`race-cloud cloud-b`}),(0,R.jsx)(`div`,{className:`scenery-hill hill-a`}),(0,R.jsx)(`div`,{className:`scenery-hill hill-b`}),(0,R.jsxs)(`div`,{className:`roadside roadside-left`,children:[(0,R.jsx)(`span`,{className:`tree tree-one`,children:`🌳`}),(0,R.jsx)(`span`,{className:`tree tree-two`,children:`🌲`}),(0,R.jsx)(`span`,{className:`tree tree-three`,children:`🌳`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-one`,children:`🌼`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-two`,children:`🌷`})]}),(0,R.jsxs)(`div`,{className:`roadside roadside-right`,children:[(0,R.jsx)(`span`,{className:`tree tree-one`,children:`🌳`}),(0,R.jsx)(`span`,{className:`tree tree-two`,children:`🌲`}),(0,R.jsx)(`span`,{className:`tree tree-three`,children:`🌳`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-one`,children:`🌼`}),(0,R.jsx)(`span`,{className:`roadside-flower flower-two`,children:`🌷`})]})]}),(0,R.jsxs)(`header`,{className:`race-heading`,children:[(0,R.jsx)(`span`,{className:`heading-flag`,children:`🏁`}),(0,R.jsxs)(`div`,{className:`heading-copy`,children:[(0,R.jsx)(`h1`,{children:`سباق حروف التفخيم`}),(0,R.jsx)(`p`,{children:`اختار حرف التفخيم الصحيح وانطلق!`})]})]}),(0,R.jsxs)(`div`,{className:`race-hud`,children:[(0,R.jsxs)(`div`,{className:`hud-card points-card`,children:[(0,R.jsx)(`span`,{className:`hud-icon`,children:`⭐`}),(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{className:`hud-label`,children:`النقاط`}),(0,R.jsx)(`strong`,{children:r})]})]}),(0,R.jsxs)(`div`,{className:`hud-progress`,children:[(0,R.jsx)(`span`,{children:`السباق`}),(0,R.jsxs)(`strong`,{children:[Math.min(r/10,cs),`/`,cs]}),(0,R.jsx)(`div`,{className:`progress-track`,children:(0,R.jsx)(`div`,{className:`progress-fill`,style:{width:`${r}%`}})})]}),(0,R.jsxs)(`div`,{className:`hud-card time-card`,children:[(0,R.jsx)(`span`,{className:`hud-icon`,children:`⏱️`}),(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{className:`hud-label`,children:`الوقت`}),(0,R.jsx)(`strong`,{children:ds(a)})]})]})]}),(0,R.jsxs)(`section`,{className:`race-road`,"aria-label":`طريق السباق`,children:[(0,R.jsx)(`div`,{className:`road-shoulder shoulder-left`}),(0,R.jsx)(`div`,{className:`road-shoulder shoulder-right`}),(0,R.jsxs)(`div`,{className:`road-surface ${_?`road-stopped`:``}`,style:{"--drive-round":S},children:[(0,R.jsx)(`div`,{className:`road-texture`}),(0,R.jsx)(`div`,{className:`road-edge-line road-edge-left`}),(0,R.jsx)(`div`,{className:`road-edge-line road-edge-right`}),(0,R.jsx)(`div`,{className:`lane-divider lane-divider-one`,children:(0,R.jsx)(`div`,{className:`lane-dashes`})}),(0,R.jsx)(`div`,{className:`lane-divider lane-divider-two`,children:(0,R.jsx)(`div`,{className:`lane-dashes`})}),(0,R.jsx)(`div`,{className:`road-lights road-lights-left`,children:Array.from({length:9},(e,t)=>(0,R.jsx)(`span`,{},`left-light-${t}`))}),(0,R.jsx)(`div`,{className:`road-lights road-lights-right`,children:Array.from({length:9},(e,t)=>(0,R.jsx)(`span`,{},`right-light-${t}`))}),!_&&(0,R.jsx)(`div`,{className:`race-tiles ${h&&p?`tiles-driving`:``}`,dir:`rtl`,children:t.options.map(e=>{let t=d===e.id,n=``;return t&&(n=p?`tile-correct`:`tile-wrong`),(0,R.jsxs)(`button`,{type:`button`,className:`race-tile ${n}`,onClick:()=>A(e),disabled:h,"aria-label":`اختيار حرف ${e.letter}`,children:[(0,R.jsx)(`img`,{src:e.image,alt:``}),(0,R.jsx)(`span`,{children:e.letter})]},e.id)})},t.options.map(e=>e.id).join(`-`)),!_&&(0,R.jsxs)(`div`,{className:`race-car`,style:{left:`${y}%`},children:[(0,R.jsx)(`div`,{className:`car-shadow`}),(0,R.jsx)(`img`,{src:`/Kids-Games/assets/car-CLbZM4BF.png`,alt:`سيارة السباق`})]}),(0,R.jsx)(`div`,{className:`finish-stripe`,"aria-hidden":`true`,children:Array.from({length:18},(e,t)=>(0,R.jsx)(`span`,{},`finish-${t}`))})]})]}),(0,R.jsx)(`div`,{className:`race-feedback ${l?`feedback-visible`:``} ${p?`feedback-success`:``}`,"aria-live":`polite`,children:l}),(0,R.jsxs)(`nav`,{className:`race-controls`,"aria-label":`أزرار التحكم`,children:[(0,R.jsx)(`button`,{type:`button`,className:`race-control`,onClick:()=>c(e=>!e),"aria-label":s?`إيقاف الصوت`:`تشغيل الصوت`,title:s?`إيقاف الصوت`:`تشغيل الصوت`,children:s?(0,R.jsx)(U,{}):(0,R.jsx)(fo,{})}),(0,R.jsx)(`button`,{type:`button`,className:`race-control`,onClick:k,"aria-label":`إعادة اللعب`,title:`إعادة اللعب`,children:(0,R.jsx)(H,{})}),(0,R.jsx)(`button`,{type:`button`,className:`race-control`,onClick:()=>e(`/AlHorof123`),"aria-label":`العودة للألعاب`,title:`العودة للألعاب`,children:(0,R.jsx)(B,{})}),(0,R.jsx)(`button`,{type:`button`,className:`race-control`,onClick:()=>e(`/home`),"aria-label":`الرئيسية`,title:`الرئيسية`,children:(0,R.jsx)(V,{})})]}),_&&(0,R.jsx)(`div`,{className:`race-win-overlay`,children:(0,R.jsxs)(`div`,{className:`race-win-card`,children:[(0,R.jsx)(`div`,{className:`win-trophy`,children:`🏆`}),(0,R.jsx)(`h2`,{children:`أحسنت يا بطل!`}),(0,R.jsx)(`p`,{children:`وصلت لخط النهاية وأجبت عن 10 أسئلة صحيحة.`}),(0,R.jsxs)(`div`,{className:`win-stats`,children:[(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{children:`النقاط`}),(0,R.jsx)(`strong`,{children:r})]}),(0,R.jsxs)(`div`,{children:[(0,R.jsx)(`span`,{children:`الوقت`}),(0,R.jsx)(`strong`,{children:ds(a)})]})]}),(0,R.jsxs)(`button`,{type:`button`,className:`play-again`,onClick:k,children:[(0,R.jsx)(H,{size:20}),`العب من جديد`]})]})}),(0,R.jsx)(`style`,{children:`
         * {
           box-sizing: border-box;
         }
@@ -4926,23 +4926,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           color: #163754;
           user-select: none;
           -webkit-user-select: none;
-          touch-action: pan-y;
         }
 
-        /* خلفية سماوية مع جوانب طبيعية */
+        /* الخلفية الطبيعية */
         .race-scenery {
           position: absolute;
           z-index: -3;
           inset: 0;
           overflow: hidden;
-          background:
-            linear-gradient(
-              180deg,
-              #76cef4 0%,
-              #b9eaff 38%,
-              #e2f6d3 68%,
-              #83ce75 100%
-            );
+          background: linear-gradient(
+            180deg,
+            #76cef4 0%,
+            #b9eaff 38%,
+            #e2f6d3 68%,
+            #83ce75 100%
+          );
         }
 
         .race-sun {
@@ -5044,7 +5042,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           position: absolute;
           font-size: clamp(23px, 4vw, 50px);
           filter: drop-shadow(0 4px 2px rgba(0,0,0,.15));
-          animation: scenery-pass 3s linear infinite;
+          animation: scenery-pass 2.5s linear infinite;
         }
 
         .tree-one {
@@ -5055,13 +5053,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         .tree-two {
           top: 57%;
           right: 8%;
-          animation-delay: -1s;
+          animation-delay: -.8s;
         }
 
         .tree-three {
           top: 77%;
           left: 15%;
-          animation-delay: -2s;
+          animation-delay: -1.6s;
         }
 
         .roadside-flower {
@@ -5079,7 +5077,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           right: 12%;
         }
 
-        /* عنوان اللعبة */
+        /* العنوان بخلفية مستقلة والفقرة بدون خلفية */
         .race-heading {
           position: absolute;
           z-index: 8;
@@ -5090,93 +5088,111 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           align-items: center;
           justify-content: center;
           gap: 10px;
-          width: min(65%, 510px);
-          padding: 8px 16px;
-          border: 2px solid rgba(255,255,255,.95);
-          border-radius: 17px;
-          background: rgba(255,255,255,.94);
-          box-shadow: 0 4px 14px rgba(28,76,105,.14);
+          width: min(65%, 540px);
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          background: transparent;
+          box-shadow: none;
           text-align: center;
         }
 
         .heading-flag {
-          font-size: clamp(22px, 3vw, 30px);
+          font-size: clamp(22px, 3vw, 31px);
+          flex-shrink: 0;
+        }
+
+        .heading-copy {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
         }
 
         .race-heading h1 {
-          margin: 0 0 3px;
+          display: inline-block;
+          margin: 0;
+          padding: 6px 18px;
+          border: 2px solid rgba(255,255,255,.95);
+          border-radius: 14px;
+          background: rgba(255,255,255,.96);
+          box-shadow: 0 4px 14px rgba(28,76,105,.14);
           color: #17466c;
-          font-size: clamp(16px, 2.3vw, 25px);
+          font-size: clamp(17px, 2.4vw, 26px);
           font-weight: 900;
-          line-height: 1.3;
+          line-height: 1.35;
         }
 
         .race-heading p {
           margin: 0;
-          color: #48677d;
-          font-size: clamp(10px, 1.3vw, 13px);
-          font-weight: 700;
+          padding: 0;
+          background: transparent;
+          color: #31566e;
+          font-size: clamp(11px, 1.4vw, 14px);
+          font-weight: 800;
           line-height: 1.4;
+          text-shadow: 0 1px 3px rgba(255,255,255,.75);
         }
 
-        /* لوحة معلومات صغيرة أعلى الشاشة */
+        /* الوقت والنقاط */
         .race-hud {
           position: absolute;
           z-index: 8;
-          top: clamp(90px, 15%, 115px);
+          top: clamp(90px, 14%, 120px);
           left: 0;
           right: 0;
           display: flex;
           align-items: center;
           justify-content: space-between;
           gap: 10px;
-          padding: 0 clamp(10px, 2.5vw, 26px);
+          padding: 0 clamp(12px, 2.5vw, 28px);
           pointer-events: none;
         }
 
         .hud-card {
           display: flex;
           align-items: center;
-          gap: 7px;
-          min-width: 85px;
-          padding: 6px 11px;
-          border: 1px solid rgba(255,255,255,.95);
-          border-radius: 13px;
-          background: rgba(255,255,255,.94);
-          box-shadow: 0 3px 10px rgba(25,65,90,.12);
+          gap: 9px;
+          min-width: 108px;
+          padding: 8px 13px;
+          border: 2px solid rgba(255,255,255,.98);
+          border-radius: 14px;
+          background: rgba(255,255,255,.96);
+          box-shadow: 0 4px 12px rgba(25,65,90,.14);
           color: #17466c;
         }
 
         .hud-icon {
-          font-size: 19px;
+          font-size: 23px;
         }
 
         .hud-card div {
           display: flex;
           flex-direction: column;
-          gap: 1px;
+          gap: 2px;
         }
 
         .hud-label {
-          font-size: 10px;
-          font-weight: 700;
+          font-size: 12px;
+          font-weight: 800;
         }
 
         .hud-card strong {
-          font-size: 16px;
+          font-size: 21px;
           font-weight: 900;
           direction: ltr;
+          line-height: 1.1;
         }
 
         .hud-progress {
           display: flex;
           align-items: center;
           gap: 7px;
-          width: min(32%, 230px);
-          padding: 7px 10px;
+          width: min(30%, 230px);
+          padding: 8px 10px;
           border: 1px solid rgba(255,255,255,.95);
           border-radius: 12px;
-          background: rgba(255,255,255,.88);
+          background: rgba(255,255,255,.9);
           color: #17466c;
           font-size: 11px;
           font-weight: 800;
@@ -5202,7 +5218,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           transition: width .35s ease;
         }
 
-        /* الطريق العريض */
+        /* الطريق */
         .race-road {
           position: absolute;
           z-index: 1;
@@ -5236,15 +5252,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           position: absolute;
           inset: 0 5%;
           overflow: hidden;
-          background:
-            linear-gradient(
-              90deg,
-              #3e4854 0%,
-              #555f6b 9%,
-              #414b57 50%,
-              #555f6b 91%,
-              #3e4854 100%
-            );
+          background: linear-gradient(
+            90deg,
+            #3e4854 0%,
+            #555f6b 9%,
+            #414b57 50%,
+            #555f6b 91%,
+            #3e4854 100%
+          );
           box-shadow:
             inset 12px 0 18px rgba(0,0,0,.13),
             inset -12px 0 18px rgba(0,0,0,.13);
@@ -5253,9 +5268,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         .road-texture {
           position: absolute;
           inset: 0;
-          opacity: .2;
-          background-image:
-            radial-gradient(#dbe2e8 0.7px, transparent 1px);
+          opacity: .18;
+          background-image: radial-gradient(
+            #dbe2e8 .7px,
+            transparent 1px
+          );
           background-size: 19px 23px;
           pointer-events: none;
         }
@@ -5277,13 +5294,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           right: 1.2%;
         }
 
-        /* ثلاث حارات */
         .lane-divider {
           position: absolute;
           top: 0;
           bottom: 0;
           width: 0;
-          border-left: 5px dashed rgba(255,255,255,.85);
+          border-left: 4px dashed rgba(255,255,255,.9);
         }
 
         .lane-divider-one {
@@ -5299,22 +5315,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           top: 0;
           left: -3px;
           width: 5px;
-          height: 100%;
+          height: 200%;
           background: repeating-linear-gradient(
             to bottom,
-            transparent 0 22px,
-            rgba(255,255,255,.92) 22px 58px,
-            transparent 58px 95px
+            rgba(255,255,255,.9) 0 37px,
+            transparent 37px 90px
           );
-          animation: lane-flow .8s linear infinite;
+          animation: lane-flow .65s linear infinite;
+        }
+
+        .road-stopped .lane-dashes,
+        .road-stopped .road-lights span {
           animation-play-state: paused;
         }
 
-        .race-is-moving .lane-dashes {
-          animation-play-state: running;
-        }
-
-        /* علامات جانبية متحركة */
         .road-lights {
           position: absolute;
           top: 0;
@@ -5323,6 +5337,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           display: flex;
           flex-direction: column;
           justify-content: space-around;
+          overflow: hidden;
         }
 
         .road-lights-left {
@@ -5335,22 +5350,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         .road-lights span {
           display: block;
+          flex-shrink: 0;
           width: 7px;
-          height: 25px;
+          height: 26px;
           border-radius: 3px;
           background: #ffdf76;
           box-shadow: 0 0 6px rgba(255,223,118,.35);
+          animation: light-flow .7s linear infinite;
         }
 
-        .race-is-moving .road-lights span {
-          animation: light-flow .65s linear infinite;
+        .road-lights span:nth-child(2n) {
+          animation-delay: -.35s;
         }
 
-        .race-is-moving .road-lights span:nth-child(2n) {
-          animation-delay: -.3s;
-        }
-
-        /* الحروف في منتصف الطريق */
+        /* صف الحروف */
         .race-tiles {
           position: absolute;
           z-index: 5;
@@ -5359,8 +5372,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           transform: translateX(-50%);
           display: grid;
           grid-template-columns: repeat(4, minmax(0, 1fr));
-          gap: clamp(7px, 2vw, 23px);
-          width: min(84%, 740px);
+          gap: clamp(7px, 1.5vw, 18px);
+          width: min(78%, 680px);
           direction: rtl;
           pointer-events: auto;
         }
@@ -5378,10 +5391,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           background: transparent;
           cursor: pointer;
           -webkit-tap-highlight-color: transparent;
-          transition:
-            transform .2s ease,
-            filter .2s ease,
-            opacity .2s ease;
+          transition: transform .2s ease, filter .2s ease;
         }
 
         .race-tile img {
@@ -5425,19 +5435,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         .tiles-driving {
-          animation: tiles-pass .9s ease-in forwards;
+          animation: tiles-pass .95s ease-in forwards;
         }
 
-        /* السيارة في مقدمة المشهد */
+        /* العربية: رفعناها لتكون قريبة من صف الحروف */
         .race-car {
           position: absolute;
           z-index: 6;
           left: 50%;
-          bottom: 12%;
-          width: clamp(82px, 12vw, 145px);
+          bottom: 24%;
+          width: clamp(115px, 15vw, 180px);
           transform: translateX(-50%);
           transition: left .25s ease;
           pointer-events: none;
+          animation: car-bounce .55s ease-in-out infinite;
         }
 
         .race-car img {
@@ -5461,11 +5472,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           filter: blur(8px);
         }
 
-        .car-driving {
-          animation: car-forward .9s ease-in-out;
-        }
-
-        /* خط النهاية عند اكتمال السباق */
         .finish-stripe {
           position: absolute;
           bottom: -20px;
@@ -5485,7 +5491,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           background: #202630;
         }
 
-        /* رسالة الإجابة */
+        /* رسائل الإجابة */
         .race-feedback {
           position: absolute;
           z-index: 10;
@@ -5520,27 +5526,26 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           color: #197747;
         }
 
-        /* أزرار التحكم */
+        /* الأزرار */
         .race-controls {
           position: absolute;
           z-index: 12;
-          bottom: max(12px, env(safe-area-inset-bottom));
-          left: 50%;
-          transform: translateX(-50%);
+          bottom: max(18px, env(safe-area-inset-bottom));
+          left: 18px;
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: clamp(9px, 2vw, 17px);
+          gap: 12px;
           width: max-content;
-          max-width: 95%;
         }
 
         .race-control {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: clamp(40px, 5vw, 49px);
-          height: clamp(40px, 5vw, 49px);
+          width: clamp(44px, 5vw, 54px);
+          height: clamp(44px, 5vw, 54px);
           border: 2px solid #fff;
           border-radius: 50%;
           background: #217bad;
@@ -5565,7 +5570,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           stroke-width: 2.5;
         }
 
-        /* الفوز */
+        /* شاشة الفوز */
         .race-win-overlay {
           position: absolute;
           z-index: 30;
@@ -5651,23 +5656,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
         @keyframes lane-flow {
           from { background-position-y: 0; }
-          to { background-position-y: 95px; }
+          to { background-position-y: 90px; }
         }
 
         @keyframes light-flow {
-          from { transform: translateY(-30px); opacity: .4; }
-          to { transform: translateY(30px); opacity: 1; }
+          from { transform: translateY(-25px); }
+          to { transform: translateY(25px); }
         }
 
-        @keyframes car-forward {
-          0% {
-            transform: translateX(-50%) translateY(0) scale(1);
+        @keyframes car-bounce {
+          0%, 100% {
+            transform: translateX(-50%) translateY(0);
           }
-          45% {
-            transform: translateX(-50%) translateY(-55px) scale(1.04);
-          }
-          100% {
-            transform: translateX(-50%) translateY(0) scale(1);
+          50% {
+            transform: translateX(-50%) translateY(-5px);
           }
         }
 
@@ -5687,8 +5689,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         @keyframes scenery-pass {
-          0%, 100% { filter: drop-shadow(0 4px 2px rgba(0,0,0,.15)); }
-          50% { filter: drop-shadow(0 6px 3px rgba(0,0,0,.2)); }
+          0% {
+            transform: translateY(-18px);
+          }
+          100% {
+            transform: translateY(18px);
+          }
         }
 
         @keyframes shake {
@@ -5702,84 +5708,84 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           to { opacity: 1; transform: scale(1); }
         }
 
-        /* الشاشات المتوسطة */
+        /* التابلت واللاب */
         @media (max-width: 800px) {
           .race-heading {
-            width: min(70%, 440px);
+            width: min(65%, 460px);
           }
 
-          .race-road {
-            inset: 0;
-          }
-
-          .roadside {
-            width: 7%;
-          }
-
-          .road-surface {
-            inset-left: 7%;
-            inset-right: 7%;
+          .race-hud {
+            padding: 0 12px;
           }
 
           .race-tiles {
-            width: 84%;
-            gap: 8px;
+            width: 76%;
+            gap: 10px;
           }
 
           .race-car {
-            width: clamp(78px, 14vw, 120px);
+            bottom: 25%;
+            width: clamp(110px, 17vw, 155px);
+          }
+
+          .race-controls {
+            left: 12px;
           }
         }
 
-        /* الموبايل والتابلت الصغير */
+        /* الموبايل */
         @media (max-width: 600px) {
           .race-heading {
             top: max(8px, env(safe-area-inset-top));
-            width: min(76%, 390px);
-            padding: 7px 9px;
+            width: min(90%, 390px);
+            padding: 0;
             gap: 6px;
-            border-radius: 13px;
           }
 
           .heading-flag {
             font-size: 21px;
           }
 
+          .heading-copy {
+            gap: 3px;
+          }
+
           .race-heading h1 {
+            padding: 5px 12px;
             font-size: clamp(14px, 4vw, 19px);
           }
 
           .race-heading p {
-            font-size: clamp(9px, 2.7vw, 12px);
+            font-size: clamp(10px, 2.7vw, 12px);
           }
 
           .race-hud {
-            top: 83px;
+            top: 84px;
             gap: 5px;
             padding: 0 7px;
           }
 
           .hud-card {
-            min-width: 76px;
+            min-width: 84px;
             gap: 5px;
-            padding: 5px 7px;
+            padding: 6px 7px;
             border-radius: 11px;
           }
 
           .hud-icon {
-            font-size: 16px;
+            font-size: 18px;
           }
 
           .hud-label {
-            font-size: 9px;
+            font-size: 10px;
           }
 
           .hud-card strong {
-            font-size: 14px;
+            font-size: 17px;
           }
 
           .hud-progress {
-            width: 31%;
+            width: 30%;
             gap: 4px;
             padding: 6px;
             font-size: 9px;
@@ -5825,13 +5831,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             font-size: clamp(25px, 8vw, 39px);
           }
 
+          /* العربية أقرب للصف على الموبايل */
           .race-car {
-            bottom: 15%;
-            width: clamp(74px, 20vw, 105px);
+            bottom: 31%;
+            width: clamp(92px, 23vw, 125px);
           }
 
           .race-feedback {
-            bottom: calc(72px + env(safe-area-inset-bottom));
+            bottom: calc(75px + env(safe-area-inset-bottom));
           }
 
           .feedback-visible {
@@ -5839,7 +5846,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .race-controls {
+            left: 50%;
             bottom: max(9px, env(safe-area-inset-bottom));
+            transform: translateX(-50%);
+            flex-direction: row;
             gap: 9px;
           }
 
@@ -5854,10 +5864,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .race-heading {
             top: 5px;
             width: min(42%, 350px);
-            padding: 5px 10px;
           }
 
           .race-heading h1 {
+            padding: 4px 10px;
             font-size: 16px;
           }
 
@@ -5870,7 +5880,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .hud-card {
-            padding: 4px 8px;
+            padding: 5px 8px;
           }
 
           .race-tiles {
@@ -5883,22 +5893,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .race-car {
-            bottom: 12%;
-            width: 70px;
+            bottom: 24%;
+            width: 95px;
           }
 
           .race-controls {
-            bottom: 4px;
+            left: 8px;
+            bottom: 5px;
             gap: 6px;
           }
 
           .race-control {
-            width: 33px;
-            height: 33px;
+            width: 36px;
+            height: 36px;
           }
 
           .race-feedback {
-            bottom: 43px;
+            bottom: 45px;
           }
         }
 
@@ -5907,8 +5918,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .race-tile,
           .lane-dashes,
           .road-lights span {
-            animation: none !important;
-            transition: none !important;
+            animation-duration: 2s;
           }
         }
       `})]})}var ps=`/Kids-Games/assets/yyyy-DDv1Yufy.jpeg`;function ms(){let e=I(),t=[`خ`,`ص`,`ض`,`غ`,`ط`,`ق`,`ظ`],n=[{word:`صديق`,emphatic:[0]},{word:`طعام`,emphatic:[0]},{word:`ضفدع`,emphatic:[0]},{word:`قفل`,emphatic:[0]},{word:`غروب`,emphatic:[0]},{word:`ظرف`,emphatic:[0]},{word:`طاووس`,emphatic:[0]},{word:`قصة`,emphatic:[0]},{word:`قلم`,emphatic:[0]},{word:`غزال`,emphatic:[0]},{word:`ضرس`,emphatic:[0]},{word:`طين`,emphatic:[0]},{word:`خروف`,emphatic:[0]}],r=[`#ff4f93`,`#ff8800`,`#ffd000`,`#78c800`,`#1da1ff`,`#8e5cff`],[i,a]=(0,b.useState)(!0),[o,s]=(0,b.useState)(0),[c,l]=(0,b.useState)(`#ff4f93`),[u,d]=(0,b.useState)({}),[f,p]=(0,b.useState)(!1),[m,h]=(0,b.useState)(0),[g,_]=(0,b.useState)(60),[v,y]=(0,b.useState)(``),[x,S]=(0,b.useState)(!1),[C,w]=(0,b.useState)(!1),[T,E]=(0,b.useState)(!0),D=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3`)),O=(0,b.useRef)(new Audio(`https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3`)),k=(0,b.useRef)(null),A=[{Icon:ki,x:`10%`,y:`16%`,delay:`0s`,color:`#1da1ff`},{Icon:Na,x:`82%`,y:`19%`,delay:`.4s`,color:`#ff4f93`},{Icon:Ma,x:`12%`,y:`72%`,delay:`.8s`,color:`#8e5cff`},{Icon:Qa,x:`84%`,y:`72%`,delay:`.6s`,color:`#ff8800`},{Icon:Ia,x:`74%`,y:`43%`,delay:`1s`,color:`#78c800`}];(0,b.useEffect)(()=>(D.current.preload=`auto`,O.current.preload=`auto`,D.current.volume=1,O.current.volume=1,()=>{D.current.pause(),O.current.pause()}),[]),(0,b.useEffect)(()=>{let e=setTimeout(()=>{a(!1)},2500);return()=>clearTimeout(e)},[]),(0,b.useEffect)(()=>{if(i||x)return;if(g<=0){S(!0),w(!0);return}let e=setInterval(()=>{_(e=>Math.max(0,e-1))},1e3);return()=>clearInterval(e)},[g,x,i]),(0,b.useEffect)(()=>()=>{k.current&&clearTimeout(k.current)},[]);let j=e=>{if(!(!T||!e.current))try{e.current.pause(),e.current.currentTime=0;let t=e.current.play();t&&typeof t.catch==`function`&&t.catch(()=>{})}catch(e){console.log(e)}},M=e=>{n[o].emphatic.every(t=>e[`${o}-${t}`])&&(j(O),h(e=>e+10),y(`👏 أحسنت`),k.current&&clearTimeout(k.current),k.current=setTimeout(()=>{o<n.length-1?(s(e=>e+1),y(``)):(y(``),S(!0),w(!0))},1500))},N=e=>{if(x||i||v)return;let r=n[o].word[e];if(!t.includes(r))return;j(D);let a=`${o}-${e}`;if(f){let e={...u};delete e[a],d(e);return}let s={...u,[a]:c};d(s),M(s)},P=()=>{j(D),k.current&&clearTimeout(k.current),s(0),d({}),h(0),_(60),S(!1),w(!1),y(``),l(`#ff4f93`),p(!1)},ee=()=>{k.current&&clearTimeout(k.current),D.current.pause(),O.current.pause(),e(`/AlHorof1`,{replace:!0})},F=()=>{k.current&&clearTimeout(k.current),D.current.pause(),O.current.pause(),e(`/home`,{replace:!0})},te=()=>{E(e=>!e)};return i?(0,R.jsxs)(`div`,{className:`color-loading-page`,children:[(0,R.jsx)(`style`,{children:`
